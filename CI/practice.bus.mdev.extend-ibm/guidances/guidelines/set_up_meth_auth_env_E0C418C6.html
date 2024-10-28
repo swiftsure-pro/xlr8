@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Setting Up a Method Authoring Environment</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="set_up_meth_auth_env">
+<meta name="uma.presentationName" content="Setting Up a Method Authoring Environment">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_Xa4k8LYQEd-MO7zNCxGm2w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Setting Up a Method Authoring Environment</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.bus.mdev.extend-ibm/guidances/toolmentors/setup_method_auth_env_rmc_B141D8D0.html" guid="_fl4gIEGTEd-bmYzvomIdMg">Setup Method Authoring Environment using Rational Method Composer</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This guideline describes how to identify, install, and configure the tools and other resources needed to support method
+    development.
+</p>
+<h3>
+    Determine environment needs
+</h3>
+<p>
+    Consider the following questions to identify required tools and other resources:
+</p>
+<ul>
+    <li>
+        What software is required? For example: 
+        <ul>
+            <li>
+                IBM(R) Rational(R) Method Composer (RMC)
+            </li>
+            <li>
+                A graphics editing program
+            </li>
+            <li>
+                Configuration Management, such as IBM Rational ClearCase(R)
+            </li>
+            <li>
+                Change Request and Enhancement Tracking and Management, such as IBM Rational ClearQuest (R)
+            </li>
+            <li>
+                A web server for hosting published content
+            </li>
+        </ul>
+    </li>
+    <li>
+        What hardware is needed to run the software? For example: 
+        <ul>
+            <li>
+                Method author workstations for RMC
+            </li>
+            <li>
+                Servers for ClearCase, website hosting, file storage, and testing
+            </li>
+            <li>
+                What method authoring processes and quality assurance procedures must be documented?
+            </li>
+            <li>
+                What are the training and ongoing support needs to deploy and maintain the environment?
+            </li>
+            <li>
+                What physical work space is needed?
+            </li>
+        </ul>
+    </li>
+</ul>
+<h3>
+    Install and configure tools
+</h3>
+<p>
+    If working as part of a team of process authors, set up the shared location in which any shared content libraries and
+    content files will be stored. This location will represent the "integration" area to combine and integrate completed
+    work.<br />
+    As a general recommendation, you should consider hosting both the integration workspace and the individual process
+    authors private workspace using a configuration management system like IBM Rational ClearCase that provides for
+    versioning of the method asset files, distributed development and parallel file authoring if required.
+</p>
+<p>
+    See <a class="elementLink" href="./../../../practice.bus.mdev.extend-ibm/guidances/toolmentors/setup_method_auth_env_rmc_B141D8D0.html" guid="_fl4gIEGTEd-bmYzvomIdMg">Setup Method Authoring Environment using Rational Method Composer</a>&nbsp;for more
+    information about installing RMC and integration with ClearCase or Concurrent Versions System (CVS).
+</p>
+<h3>
+    Pilot and adjust the environment
+</h3>
+<p>
+    Try out the environment out as soon as possible, even in a basic or rudimentary form. This enables you to identify
+    issues or potential problems, and start to address them as soon as they become apparent.<br />
+    Using feedback from the pilot, adjust and fine-tune the environment to better support the needs of the method
+    development teams.
+</p>
+<h3>
+    Deploy the environment
+</h3>
+<p>
+    This will typically require some level of planning and coordination, the formality of which is generally dependent on
+    the size and distribution of the team.<br />
+    Try to coordinate training activities immediately before or as part of the deployment effort. Conducting the training
+    just prior to deployment of the tools gives the method authors opportunity to contribute knowledgeably to any decisions
+    that need to be made and to indicate any preferences they may have. Conducting training too far in advance of being
+    able to apply the skills learned is generally regarded as a bad idea.<br />
+    <br />
+    Monitor usage of the environment on method development projects and incorporate feedback to continuously improve
+    it.<br />
+    <br />
+    <br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tool Mentors</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.bus.mdev.extend-ibm/guidances/toolmentors/setup_method_auth_env_rmc_B141D8D0.html" guid="_fl4gIEGTEd-bmYzvomIdMg">Setup Method Authoring Environment using Rational Method Composer</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

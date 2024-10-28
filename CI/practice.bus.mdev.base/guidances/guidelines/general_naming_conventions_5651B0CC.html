@@ -1,0 +1,1482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: General Naming Conventions</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="general_naming_conventions">
+<meta name="uma.presentationName" content="General Naming Conventions">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="__I8S0D2kEd-lU6YVR9_PJQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: General Naming Conventions</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline provides recommendations on how to name method elements and writing brief descriptions.  It also includes the UMF naming conventions and IBM licensing styles.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.bus.mdev.extend-ibm/tasks/architect_method_library_276CA114.html" guid="_UjkDIEmfEd-CwKa38aS3Iw">Architect the Method Library</a>
+</li>
+<li>
+<a href="./../../../practice.bus.mdev.extend-ibm/tasks/design_method_asset_93DAD19A.html" guid="_tBQ3kOxoEdydutqrlpQKOw">Design Method Asset</a>
+</li>
+<li>
+<a href="./../../../practice.bus.mdev.extend-ibm/tasks/imp_method_asset_D86CEB87.html" guid="_RNws4OyTEdyqmvtIFY3mOg">Implement Method Asset</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    General Naming Conventions
+</h3>
+<p>
+    This guidance provides general information on naming method elements.&nbsp; For method element-specific naming
+    guidance, see the attached guidance.
+</p>
+<h5>
+    Abbreviations
+</h5>
+<p>
+    It is a good practice is to provide a list of approved abbreviations for your project.&nbsp;Using a standard set of
+    abbreviations simplifies searches for not only the method authoring team, but also for users of your published web
+    site.
+</p>
+<h4>
+    Name fields
+</h4>
+<p>
+    Most method elements have two name fields:
+</p>
+<ul>
+    <li>
+        The&nbsp;<strong>Name</strong> is always present since it is the internal name&nbsp;for the element.<br />
+    </li>
+    <li>
+        The <strong>Presentation Name</strong> is present for some elements; it is the name&nbsp;displayed in the published
+        web site for the element. Thus, a friendly name&nbsp;should be used.
+    </li>
+</ul>
+<h4>
+    General naming guidelines
+</h4>
+<p>
+    In general, all method elements should following the following recommendations:
+</p>
+<ul>
+    <li>
+        Name should reflect the essence of the element
+    </li>
+    <li>
+        Where an element has both a name and a Presentation Name field, try to name them consistently (though abbreviations
+        may be used in the internal name)
+    </li>
+    <li>
+        Abbreviations should be either very common to the plug-in domain (for example, J2EE for Java 2 Enterprise Edition)
+        or they should be taken out of a list of common abbreviations for the project. If abbreviations are not
+        standardized, it is very likely that similar but not quite identical abbreviations will occur here and there,
+        introducing confusion and errors later on
+    </li>
+</ul>
+<p>
+    For general guidelines on naming variants, see the section on that topic later in this guideline.<br />
+</p>
+<h4>
+    Method element-specific naming guidelines
+</h4>
+<p>
+    Table 1 provides element-specific guidelines for naming the different types of method elements.&nbsp;
+</p>
+<p>
+    <strong>Table 1: Method Element Naming Conventions</strong><br />
+    <br />
+</p>
+<table id="table3" border="1">
+    <tbody>
+        <tr align="middle">
+            <td width="20%">
+                <strong>Element</strong>
+            </td>
+            <td width="25%">
+                <strong>Guideline</strong>
+            </td>
+            <td width="55%">
+                <strong>Reason</strong>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                Plug-in
+            </td>
+            <td valign="top" width="30%">
+                <ul>
+                    <li>
+                        use&nbsp; internal name&nbsp;for the Name field
+                    </li>
+                    <li>
+                        use friendly name&nbsp;for the Presentation name field
+                    </li>
+                    <li>
+                        Omit the word "plug-in" in the names (it is redundant)
+                    </li>
+                </ul>
+            </td>
+            <td width="50%">
+                <p>
+                    The value&nbsp;of the&nbsp;Name field determines the directory name used in the file
+                    system.&nbsp;&nbsp;
+                </p>
+                <p>
+                    Compound names, separated by periods, can be used in the Name field to organize the list of plug-ins in
+                    the library view to make them easier to navigate for process authors.&nbsp;
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                <p>
+                    Method content package
+                </p>
+            </td>
+            <td valign="top" width="30%">
+                <ul>
+                    <li>
+                        use&nbsp; internal name&nbsp;for the Name field
+                    </li>
+                    <li>
+                        use friendly name&nbsp;for the Presentation name field
+                    </li>
+                </ul>
+            </td>
+            <td width="50%">
+                <p>
+                    Method content package names are displayed when viewing the method library. They are also the elements
+                    that users can choose to include or exclude from their configurations. Thus, these names need to be
+                    easy to understand and&nbsp;self-explanatory.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                <p>
+                    Process package
+                </p>
+            </td>
+            <td valign="top" width="30%">
+                <ul>
+                    <li>
+                        use friendly name&nbsp;friendly name&nbsp;for Name field (process&nbsp;packages only have a single
+                        name field)
+                    </li>
+                </ul>
+            </td>
+            <td width="50%">
+                <p>
+                    Process package names are displayed when viewing the method library. They are also the elements that
+                    users can choose to include or exclude from their configurations. Thus, these names should be easy to
+                    understand and&nbsp;self-explanatory.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                Standard category
+            </td>
+            <td valign="top" width="30%">
+                <ul class="noindent">
+                    <li>
+                        use internal name&nbsp;for the Name field
+                    </li>
+                    <li>
+                        use friendly name&nbsp;for the Presentation name field
+                    </li>
+                </ul>
+            </td>
+            <td width="50%">
+                <p>
+                    Standard Category names are displayed when viewing the method library. They are also the elements that
+                    users can choose to include or exclude from their configurations, as well as to include or exclude from
+                    other custom categories. Thus, these names should be easy to understand and&nbsp;self-explanatory.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                Custom category
+            </td>
+            <td valign="top" width="30%">
+                <ul class="noindent">
+                    <li>
+                        use internal name&nbsp;for the Name field
+                    </li>
+                    <li>
+                        use friendly name&nbsp;for the Presentation name field
+                    </li>
+                </ul>
+                <p>
+                    If the custom category is to be used for a navigation view, include "view" in both name fields.&nbsp;
+                </p>
+            </td>
+            <td width="50%">
+                <p>
+                    Custom Category names are displayed when viewing the method library. They are also the elements that
+                    users can choose to include or exclude from their configurations, as well as to include or exclude from
+                    other custom categories. Thus, these names should be easy to understand and&nbsp;self-explanatory.
+                </p>
+                <p>
+                    The Presentation name of a custom category that is used as a navigation view&nbsp;is also used as the
+                    name of the tab that is published for that view.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                Configuration
+            </td>
+            <td valign="top" width="30%">
+                <ul>
+                    <li>
+                        use internal name&nbsp;for the Name field
+                    </li>
+                    <li>
+                        use friendly name&nbsp;for the Presentation name field
+                    </li>
+                    <li>
+                        Omit the word "configuration" in the names (it is redundant)
+                    </li>
+                </ul>
+            </td>
+            <td width="50%">
+                <p>
+                    The Name field determines the file name used in the file system.&nbsp;
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                Role
+            </td>
+            <td valign="top" width="30%">
+                <ul>
+                    <li>
+                        use internal name&nbsp;for the Name field
+                    </li>
+                    <li>
+                        use friendly name&nbsp;for the Presentation name field
+                    </li>
+                </ul>
+            </td>
+            <td width="50%">
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                Task
+            </td>
+            <td valign="top" width="30%">
+                <ul>
+                    <li>
+                        use internal name&nbsp;for the Name field
+                    </li>
+                    <li>
+                        use friendly name&nbsp;for the Presentation name field
+                    </li>
+                </ul>
+            </td>
+            <td width="50%">
+                <p>
+                    Task names should form a verb object phrase. The verb should be carefully chosen to ensure that the
+                    action to be performed is clear to the practitioner. For a list of acceptable verbs, see the
+                    "Acceptable Verbs" table in a later section.&nbsp; The object should be closely related to the output
+                    work product.
+                </p>
+                <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                    <p>
+                        For example:&nbsp; Define Test Specification<br />
+                        "Define" is the verb and means "to determine the essential qualities". (see Table 2). "Test
+                        Specification" is the main output work product for the task.
+                    </p>
+                </blockquote>
+                <p dir="ltr">
+                    Alternatively, the task name may reflect the objective of performing the task, instead of being closely
+                    related to the output work product.
+                </p>
+                <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                    <p dir="ltr">
+                        For example: Plan the Project.
+                    </p>
+                </blockquote>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                Work product: Artifact
+            </td>
+            <td valign="top" width="30%">
+                <ul>
+                    <li>
+                        use internal name&nbsp;for the Name field
+                    </li>
+                    <li>
+                        use friendly name&nbsp;for the Presentation name field
+                    </li>
+                </ul>
+            </td>
+            <td width="50%">
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                Work product: Deliverable
+            </td>
+            <td valign="top" width="30%">
+                <ul>
+                    <li>
+                        use internal name&nbsp;for the Name field
+                    </li>
+                    <li>
+                        use friendly name&nbsp;for the Presentation name field
+                    </li>
+                </ul>
+            </td>
+            <td width="50%">
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                Work product: Outcome
+            </td>
+            <td valign="top" width="30%">
+                <ul>
+                    <li>
+                        use internal name&nbsp;for the Name field
+                    </li>
+                    <li>
+                        use friendly name&nbsp;for the Presentation name field
+                    </li>
+                </ul>
+            </td>
+            <td width="50%">
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                Guidance
+            </td>
+            <td valign="top" width="30%">
+                <ul>
+                    <li>
+                        use internal name&nbsp;for the Name field
+                    </li>
+                    <li>
+                        use friendly name&nbsp;for the Presentation name field
+                    </li>
+                </ul>
+            </td>
+            <td width="50%">
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                Capability pattern
+            </td>
+            <td valign="top" width="30%">
+                <ul>
+                    <li>
+                        use internal name&nbsp;for the Name field
+                    </li>
+                    <li>
+                        use friendly name&nbsp;for the Presentation name field
+                    </li>
+                </ul>
+            </td>
+            <td width="50%">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                Delivery process
+            </td>
+            <td valign="top" width="30%">
+                <ul>
+                    <li>
+                        use internal name&nbsp;for the Name field
+                    </li>
+                    <li>
+                        use friendly name&nbsp;for the Presentation name field
+                    </li>
+                </ul>
+            </td>
+            <td width="50%">
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<h4>
+    Acceptable verbs
+</h4>
+<p>
+    Table 2 provides a starter set of verbs. Method authors may add verbs but they should do so in such a way that avoids
+    duplication. If a new verb is created, ensure that the definition of what it means is included in the configuration.
+</p>
+<p>
+    <strong>Table 2: Acceptable Verbs</strong><br />
+</p>
+<table id="table4" border="1" width="100%">
+    <tbody>
+        <tr>
+            <td width="20%">
+                <strong>Verb</strong>
+            </td>
+            <td width="60%">
+                <strong>Meaning</strong>
+            </td>
+            <td width="20%">
+                <strong>Comments</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Acquire
+            </td>
+            <td>
+                To come into possession of
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Analyze
+            </td>
+            <td>
+                To determine the relationship of component parts
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Assemble
+            </td>
+            <td>
+                To fit parts together
+            </td>
+            <td>
+                Especially useful for deliverables
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Assess
+            </td>
+            <td>
+                To make a judgment of worth
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Assign
+            </td>
+            <td>
+                To appoint to a post or duty
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Build
+            </td>
+            <td>
+                To construct by putting parts or materials together
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Capture
+            </td>
+            <td>
+                To document
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Categorize
+            </td>
+            <td>
+                To analyze and group according to a particular criteria
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Cleanse
+            </td>
+            <td>
+                To purify
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Communicate
+            </td>
+            <td>
+                To transmit information so that it is understood
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Conduct
+            </td>
+            <td>
+                To direct or manage
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Configure
+            </td>
+            <td>
+                To set up for operation
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Confirm
+            </td>
+            <td>
+                To verify that you have what's needed
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Define
+            </td>
+            <td>
+                To determine the essential qualities
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Detail
+            </td>
+            <td>
+                To provide the details for an outlined artifact
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Develop
+            </td>
+            <td>
+                To bring to maturity;&nbsp; to provide a more specific definition
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Elicit
+            </td>
+            <td>
+                To draw out or evoke
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enable
+            </td>
+            <td>
+                To make operational
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Estimate
+            </td>
+            <td>
+                To judge approximate value
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Evaluate
+            </td>
+            <td>
+                To determine significance or worth
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Gather
+            </td>
+            <td>
+                To bring together into one collection
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Gather
+            </td>
+            <td>
+                To locate and bring together
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Identify
+            </td>
+            <td>
+                To establish identity
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Implement
+            </td>
+            <td>
+                To fulfill; to realize
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Initiate
+            </td>
+            <td>
+                To facilitate the beginning
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Install
+            </td>
+            <td>
+                To place in position of use
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Manage
+            </td>
+            <td>
+                To direct or supervise
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Obtain
+            </td>
+            <td>
+                To get or attain by planned action or effort
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Outline
+            </td>
+            <td>
+                To describe key elements
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Perform
+            </td>
+            <td>
+                To do
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Plan
+            </td>
+            <td>
+                To describe objectives, as well as a sequence and deadline for reaching a goal; to specify how to reach a
+                goal
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Prepare
+            </td>
+            <td>
+                To make ready
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Prioritize
+            </td>
+            <td>
+                To set priorities
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Receive
+            </td>
+            <td>
+                To <span                 style="FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">acquire,
+                come into possession</span>
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Reconcile
+            </td>
+            <td>
+                To check against another for accuracy and make them match
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Release
+            </td>
+            <td>
+                To make available for use
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Review
+            </td>
+            <td>
+                To examine carefully, looking for errors, omissions, ambiguity, inconsistency&nbsp;&nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Run
+            </td>
+            <td>
+                To perform, generally by executing a program on a computer
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Select
+            </td>
+            <td>
+                To choose
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Specify
+            </td>
+            <td>
+                To name or state explicitly or in detail
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ship
+            </td>
+            <td>
+                To transport an item
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Train
+            </td>
+            <td>
+                To teach a task or job
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Understand
+            </td>
+            <td>
+                To comprehend meaning
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Validate
+            </td>
+            <td>
+                To confirm that a solution or process is correct
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Verify
+            </td>
+            <td>
+                To ensure correctness according to specific criteria
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+Do not use <em>leverage</em> because it is marketing jargon and also outdated jargon. We avoid jargon because it always
+becomes outdated and doesn't translate accurately.<br />
+<br />
+<h4>
+    Naming method variants
+</h4>
+<p>
+    This section provides specific recommendations on how to name elements that have a variability relationship to another
+    element.
+</p>
+<p>
+    The following table provides guidance about naming specific variants.
+</p>
+<table id="table3" border="1">
+    <tbody>
+        <tr align="middle">
+            <td width="20%">
+                <strong>Element</strong>
+            </td>
+            <td width="25%">
+                <strong>Guideline</strong>
+            </td>
+            <td width="55%">
+                <strong>Reason</strong>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                <strong>Base element</strong>
+            </td>
+            <td valign="top" width="30%">
+                <ul>
+                    <li>
+                        use internal name&nbsp;for the Name field
+                    </li>
+                    <li>
+                        use friendly name&nbsp;for the Presentation Name field&nbsp;
+                    </li>
+                </ul>
+            </td>
+            <td width="50%">
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                <strong>Contributor</strong>
+            </td>
+            <td valign="top" width="30%">
+                <ul>
+                    <li>
+                        use internal name&nbsp;for the Name field 
+                        <ul>
+                            <li>
+                                use exactly the same name as the element to which the contribution is being made
+                            </li>
+                            <li>
+                                add a suffix that identifies the plug-in providing the contribution
+                            </li>
+                            <li>
+                                if there are multiple contributions to the same element from different packages in the same
+                                plug-in, it may also be necessary to identify the content package in the suffix
+                            </li>
+                            <li>
+                                the suffix should be distinct from the name. Use a period (.) to separate a suffix from the
+                                name<br />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        leave&nbsp;Presentation Name field blank (it is inherited)
+                    </li>
+                </ul>
+            </td>
+            <td width="50%">
+                <p>
+                    Do not specify a presentation name for contributing elements because&nbsp;it is inherited from the base
+                    element.
+                </p>
+                <p>
+                    The Method Composer tool often provides an indication of the variability type, the content element
+                    affected and the plug-in containing the content element affected. It does not do so everywhere,
+                    especially in search dialogs. Thus, it is recommended to use the same name as the base as the first
+                    part of the name and then include a post-fix to help clarify the plug-in or content package that
+                    contains the variant.
+                </p>
+                <p>
+                    To aid in distinguishing between different contributors and the base element, it is a good idea to name
+                    contributors differently from the base element.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                <strong>Replacement</strong>
+            </td>
+            <td valign="top" width="30%">
+                <ul class="noindent">
+                    <li>
+                        use internal name&nbsp;for the Name field
+                    </li>
+                    <li>
+                        use friendly name&nbsp;for the Presentation name field
+                    </li>
+                </ul>
+                <p>
+                    Note:&nbsp; If the presentation name of the replacement is identical to the element that it replaces,
+                    then follow the naming convention for naming a contributor.
+                </p>
+            </td>
+            <td width="50%">
+                A <em>replacing element</em> replaces the original and results in a new element; therefore, follow the
+                conventions for naming a new element. If you are not changing the presentation name, follow the naming
+                convention for naming a contributor.
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                <strong>Extension</strong>
+            </td>
+            <td valign="top" width="30%">
+                <ul>
+                    <li>
+                        use internal name&nbsp;for the Name field
+                    </li>
+                    <li>
+                        use friendly name&nbsp;for the Presentation Name field
+                    </li>
+                </ul>
+            </td>
+            <td width="50%">
+                <p>
+                    An extending element is a new element.&nbsp; Thus, the name of an extending element should be different
+                    from the element being extended.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h4>
+    UMF naming conventions
+</h4>
+<p>
+    The Unified Method Framework (UMF)&nbsp;defines a naming convention for each library element: <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/method_plugin_190B9F5E.html" guid="_D4TLgMaGEduMlb2cQZNTYw">method plug-in</a>s, <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/method_configuration_C2B8FA8A.html" guid="__V7pAMaEEduMlb2cQZNTYw">method configuration</a>s, plug-in projects, configuration projects and tag groups.
+</p>
+<p>
+    The UMF naming convention divides the element names into name parts, where each name part is separated by a dot
+    (‘.').&nbsp;For example, the plug-in name "core.tech.com.base" has&nbsp;four name parts.
+</p>
+<p>
+    The benefits of UMF's naming convention is that it takes advantage of Method Composer support for a hierarchical
+    library view where a new level is introduced for each name part. The resulting hierarchy is defined to optimize
+    configuration of the method.&nbsp;The most important categorization for someone configuring the process is listed
+    first: the plug-in or configuration type.&nbsp; Licensing level is applied as a suffix and no suffix means open source
+    (in other words, open source method elements do not have a licensing level suffix).
+</p>
+<h5>
+    UMF plug-in naming conventions
+</h5>
+<p>
+    UMF plug-in naming convention: &lt;<strong>plug-in
+    type</strong>&gt;.[&lt;<strong>context</strong>&gt;].&lt;<strong>descriptive name</strong>&gt;.&lt;<strong>plug-in
+    part</strong>&gt;[_&lt;<strong>part qualifier</strong>&gt;][-&lt;<strong>source/licensing level</strong>&gt;]
+</p>
+<p>
+    Where:
+</p>
+<ul>
+    <li>
+        <strong>Plug-in type</strong>:&nbsp; The following are the possible values for the plug-in type.&nbsp; For more
+        information on the plug-in types, see [Concept: Practice Library Plug-In Types]. 
+        <ul>
+            <li>
+                core = Core
+            </li>
+            <li>
+                practice = Practice
+            </li>
+            <li>
+                process = Process
+            </li>
+            <li>
+                publish = Publish
+            </li>
+            <li>
+                meth_mgmt = Method Management
+            </li>
+        </ul>
+    </li>
+</ul>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+    <br />
+</blockquote>
+<ul>
+    <li>
+        <strong>Context</strong>: Not required (some plug-ins are "context-free" meaning that they are not specific to any
+        context).&nbsp;&nbsp;The following are some examples of contexts:&nbsp; 
+        <ul>
+            <li>
+                gen = general purpose (<em>general purpose</em> means applies across multiple contexts.&nbsp; This is NOT
+                the same as context-free)
+            </li>
+            <li>
+                tech = technology
+            </li>
+            <li>
+                bus = business
+            </li>
+            <li>
+                mgmt = management
+            </li>
+            <li>
+                legacy = legacy
+            </li>
+            <li>
+                mdev&nbsp;= method development&nbsp;
+            </li>
+            <li>
+                sdpl = solution deployment
+            </li>
+        </ul>
+    </li>
+</ul>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+    <p>
+        Note: If you would like to implement "nested" contexts, you can break the context name into multiple "parts", where
+        each of those parts are separated by a dot (period) so that Method Composer creates a hierarchical view of the
+        related plug-ins. For example: You could define an authoring&nbsp;(auth)&nbsp;context that is a sub-context of
+        method development (mdev).&nbsp;In such a case,&nbsp;the name of the context would be
+        "mdev.auth".&nbsp;&nbsp;&nbsp;
+    </p>
+</blockquote>
+<ul>
+    <li>
+        <strong>Descriptive name</strong>: The following conventions apply to the Descriptive name part of of a plug-in
+        name:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Actual names will vary, but the name should be descriptive of what the plug-in contains, should be pretty
+                close to the presentation name for the plug-in, using UMF Approved Acronyms.&nbsp;&nbsp;
+            </li>
+            <li>
+                For example:&nbsp;Descriptive name:&nbsp;practice_auth;&nbsp;Presentation name: Practice Authoring.<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Plug-in part</strong>: The following are the possible values for the plug-in part.&nbsp; For more
+        information on the plug-in parts, see [Concept: Practice Library Plug-In Types]. 
+        <ul>
+            <li>
+                base = base plug-in
+            </li>
+            <li>
+                assign = assign plug-in
+            </li>
+            <li>
+                extend = extend plug-in<br />
+                &nbsp;&nbsp;&nbsp;
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Part qualifier</strong>: Not required. This can be used to provide some additional information about the
+        plug-in part.&nbsp; This is most applicable for Extend plug-ins, where the part qualifier can be used to indicate
+        the reason for the extension.&nbsp; For example, UMF-specific extensions to an existing plug-in may be indicated
+        with a "_umf" part qualifier (e.g., "&lt;some plug-in&gt;.extend_umf").&nbsp;&nbsp; Another example of a qualifier
+        is "gbl" for globalization".<br />
+    </li>
+    <li>
+        <strong>Source/licensing level suffix</strong>.&nbsp; Can be used to indicate the company that the plug-in applies
+        to and/or the licensing level of the plug-in. Open source plug-ins do not include a licensing level in their
+        names.<br />
+        Note: The use of a hyphen (-) rather than a dot or period (.) is intentional because the
+        source/licensing&nbsp;level&nbsp;is not intended to be another hierarchical level.&nbsp; Do no use a hyphen in any
+        other place in the name&nbsp;except to separate the actual plug-in name from the suffix.
+    </li>
+</ul>
+<p>
+    Note the following:
+</p>
+<ul>
+    <li>
+        All practices are grouped together because the first part of their names is "practice"
+    </li>
+    <li>
+        All the practices that support a specific context are grouped under the content name
+    </li>
+    <li>
+        All plug-in "parts" for a practice are grouped together because the practice descriptive name is the same
+    </li>
+    <li>
+        The reason for the extension is included as part of the Extend plug-in name, separated from the word "extend" with
+        an underscore and not a&nbsp;hyphen.
+    </li>
+    <li>
+        The licensing level is separated from the rest of the plug-in name with a hyphen.
+    </li>
+</ul>
+<h5>
+    UMF plug-in project naming conventions
+</h5>
+<p>
+    Plug-in projects should be named exactly the same as the plug-ins they contain. See the earlier section on plug-in
+    naming conventions for more information.
+</p>
+<h5>
+    UMF configuration naming conventions
+</h5>
+<p>
+    UMF configuration naming convention: &lt;<strong>configuration
+    type</strong>&gt;[.<strong>context</strong>].&lt;<strong>descriptive name&gt;[-&lt;source/licensing level&gt;]</strong>
+</p>
+<p>
+    Where:
+</p>
+<ul>
+    <li>
+        <strong>Configuration type</strong>: The following are the possible values for the&nbsp;configuration
+        type.&nbsp;For more information on UMF configuration types, see [Concept: Practice Library Configuration Types]. 
+        <ul>
+            <li>
+                publish = Publish Configuration
+            </li>
+            <li>
+                zconstruct = Process Construction Configuration (not commonly used since the advent of configuration-free
+                processes)<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Context</strong>: Same as for plug-ins.<br />
+    </li>
+    <li>
+        <strong>Descriptive name</strong>: The following conventions apply to the Descriptive name part of of a
+        configuration name:&nbsp;&nbsp; 
+        <ul>
+            <li>
+                For Publish configurations, the Practice Configuration&nbsp;name being published&nbsp;makes a&nbsp;good
+                descriptive name
+            </li>
+            <li>
+                For Process Construction configurations, the name of the plug-in that contains the process makes a good
+                descriptive name<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Source/licensing level</strong>: Same as for plug-ins.
+    </li>
+</ul>
+<p>
+    Note the following :
+</p>
+<ul>
+    <li>
+        All configurations of the same type are grouped together because the first part of the configuration name is the
+        configuration type
+    </li>
+    <li>
+        All configurations that support a specific context are grouped under the content name
+    </li>
+    <li>
+        The publish configurations for a specific configuration are easy to spot because the configuration name is in the
+        descriptive name
+    </li>
+    <li>
+        The configuration to be used as the default configuration when constructing a process in a plug-in is easy to spot
+        because the owning plug-in name is in the descriptive name
+    </li>
+    <li>
+        The unique identifier suffix is used to indicate the licensing level of the configurations (e.g., -ibm for
+        commercial content and -ibm_int for internal IBM content)
+    </li>
+</ul>
+<h5>
+    UMF configuration project naming conventions
+</h5>
+<p>
+    UMF configuration project naming convention: <strong>configs[-</strong>&lt;<strong>descriptive
+    name&gt;][-&lt;source/licensing level&gt;]</strong>
+</p>
+<p>
+    Where:
+</p>
+<p>
+    Descriptive name: This is optional (i.e., you may only have one tag group per licensing level).&nbsp; If you use one,
+    the descriptive name should be a name that represents a specific set or category of configurations.&nbsp;
+</p>
+<p>
+    Source/licensing level: Same as for plug-ins.
+</p>
+<h5>
+    UMF tag group naming conventions
+</h5>
+<p>
+    UMF tag group naming convention: <strong>tags-</strong>&lt;<strong>descriptive name&gt;[-&lt;source/licensing
+    level&gt;]</strong>
+</p>
+<p>
+    Where:
+</p>
+<ul>
+    <li>
+        Descriptive name: A name that represents a specific set or category of tags.&nbsp; For example: mdev: Method
+        Development
+    </li>
+    <li>
+        Source/licensing level: Same as for plug-ins.
+    </li>
+</ul>
+<h4>
+    IBM Licensing Levels
+</h4>
+<p>
+    The following are the unique identifiers being used for elements defined at the commercial level and above (they
+    reflect IBM's licensing Levels:
+</p>
+<ul>
+    <li>
+        ibm = part of IBM's commercial methods (licensing level =&nbsp; commercial)
+    </li>
+    <li>
+        ibm_int = part of IBM's internal methods (licensing level =&nbsp; internal)
+    </li>
+    <li>
+        ibm_lic = part of IBM's licensable methods (licensing level = licensable)
+    </li>
+    <li>
+        ibm_prp = part of IBM's licensable methods (licensing level = proprietary)&nbsp;
+    </li>
+</ul>
+<p>
+    Other companies may defined their own licensing levels following similar conventions.
+</p>
+<h3>
+    Writing Brief Descriptions
+</h3>
+<p>
+    In general, all non-contributing method elements&nbsp;need a brief description. A brief description provides a one or
+    two sentence description of what the element is (in other words, what content the element contains).
+</p>
+<p>
+    Brief descriptions should be written at the time the element is identified.&nbsp;A well-written description is
+    important because if you find it hard to describe what an element is, it may not be a good element
+</p>
+<p>
+    Follow these guidelines when developing method element brief descriptions:
+</p>
+<ul>
+    <li>
+        Do not include presentation names in brief descriptions because that makes it harder to change the presentation
+        name. Instead, refer to "this &lt;element type&gt;", where &lt;element type&gt; is the type of method element. For
+        example, "this role"... or "this guidance".
+    </li>
+    <li>
+        Do not state the obvious. The brief description should not just repeat what can be understood from the element type
+        and the presentation name. For example, for Concept: Pattern, don't just say, "This concept describes what a
+        Pattern is".&nbsp;Such information does not provide any value.&nbsp;Instead,&nbsp;provide a one or two sentence
+        summary of what the element contains.&nbsp;For example, "This concept describes&nbsp;s generalized solution that
+        can be implemented and applied in a problem situation (a context) and thereby eliminate one or more of the inherent
+        problems."
+    </li>
+    <li>
+        Avoid repeating the brief description in other fields of the method element. If there is nothing more to add to
+        what is in the brief description, then omit the other description fields.
+    </li>
+    <li>
+        Make sure that there is a period at the end of the brief description.
+    </li>
+    <li>
+        Check for general spelling and spacing errors.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    This program and the accompanying materials are made available under the<br />
+    <a href="http://www.eclipse.org/org/documents/epl-v10.php" target="_blank">Eclipse Public License V1.0</a>, which
+    accompanies this distribution.
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.base/guidances/supportingmaterials/epf_copyright_C3031062.html" guid="_UaGfECcTEduSX6N2jUafGA">EPF Copyright</a>.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

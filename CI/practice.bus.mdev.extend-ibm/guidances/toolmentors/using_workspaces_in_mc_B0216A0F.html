@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Using Workspaces in Method Composer</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="using_workspaces_in_mc">
+<meta name="uma.presentationName" content="Using Workspaces in Method Composer">
+<meta name="uma.category" content="Tool:method_composer_tool:Method Composer">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="Method Composer">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_e_qaIEckEd-4puF-aYib8w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Using Workspaces in Method Composer</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor describes how to use workspaces in Method Composer, including how to create them, load them and update them.</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.default.tool_def.base/tools/method_composer_tool_3D9F7C0.html" guid="_mHQIMMYbEdyXeo04os5BOw">Method Composer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This tool mentor includes some recommended best practices for setting up and working with workspaces in Method
+    Composer. For general information on setting up and using workspace libraries in Method Composer, see the Method
+    Composer online help topic: <strong>Collaborating</strong> &gt; <strong>Sharing method libraries and elements with
+    version control systems</strong> &gt; <strong>Workspace method libraries</strong>.&nbsp;The latest information on this
+    topic is also available from the <a href="http://publib.boulder.ibm.com/infocenter/rmchelp/v7r5m1/index.jsp" target="_blank">RMC Information Center</a>.
+</p>
+<h3>
+    General conventions
+</h3>
+<p>
+    When using workspaces, you generally define three different physical directories:
+</p>
+<ul>
+    <li>
+        <strong>External Baseline</strong>: Directory where the content you are <em>using</em>, but <em>not
+        developing,</em>&nbsp;is located. These should be treated as read-only and should not be placed under version
+        control since they are not being developed.<br />
+        Note: There&nbsp;can be more than one external baseline directory. For example, you may be dependent on content
+        that exists in multiple different repositories.<br />
+        &nbsp;&nbsp;&nbsp;
+    </li>
+    <li>
+        <strong>Development Repository</strong>: Directory where you keep the projects that are under
+        development.&nbsp;These should be placed under version control.<br />
+        Note: There&nbsp;can be more than one development repository directory. For example, you may be developing content
+        that is controlled using multiple version control systems.<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    </li>
+    <li>
+        <strong>Personal Workspace</strong>.&nbsp; Directory where each method author maintains a selected set of elements
+        loaded from the External Baseline and the Development Repository.&nbsp;This is the method
+        author's&nbsp;"development method library".&nbsp;<br />
+        Name: mam_ws.&lt;rmc version number&gt; (e.g., mam_ws.75). You may define as many of these as you like. For
+        example, you may want a workspace that contains everything and you may want a workspace that only includes a
+        specific set of elements. The files in the the personal workspace directory should not be placed under source
+        control, since the information kept in the workspace is specific to your particular instance of Method Composer.
+    </li>
+</ul>
+<p>
+    Note: If you are not placing your elements under version control, a personal workspace could also serve as the
+    development repository (though it is recommended that a version control system be used).
+</p>
+<p>
+    For specific information on creating, loading and synchronizing a workspace-based method library, see the sections
+    below.&nbsp;
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;
+</p>
+<h3>
+    Creating an external baseline
+</h3>
+<p>
+    External baselines should be placed in a location with read only access.&nbsp; You can also choose to lock the plug-ins
+    to avoid inadvertent changes.&nbsp; Note that configurations can not be locked.
+</p>
+<p>
+    If you are using the content that ships with Method Composer as an external baseline, then you can just use the
+    directories in the Method Composer install directory that contains the content as the External Baseline directories,
+    and there is no need to create new directories.
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<h3>
+    Creating a development repository
+</h3>
+<p>
+    Now you need to create a place where you can place the files that are under development.&nbsp; This is typically a
+    directory structure within a version control system.
+</p>
+<h4>
+    Loading content from CVS into a workspace
+</h4>
+<p>
+    This section provides step-by-step instructions for loading from CVS. For general information on loading workspaces,
+    see the Method Composer online help topic: <strong>Collaborating</strong> &gt; <strong>Sharing method libraries and
+    elements with version control systems</strong> &gt; <strong>Workspace method libraries</strong> &gt; <strong>Importing
+    method plug-in projects or method configuration projects into a workspace method library</strong>. The latest
+    information on this topic is also available from the <a href="http://publib.boulder.ibm.com/infocenter/rmchelp/v7r5m1/index.jsp" target="_blank">RMC Information Center</a>.
+</p>
+<p>
+    Perform the following steps to load an Method Composer workspace with content from CVS:
+</p>
+<ol>
+    <li>
+        Set the preferences for CVS (open source content that has been donated resides in CVS).<br />
+        Select <strong>Windows &gt; Preferences</strong>.<br />
+        Click on <strong>Team &gt; CVS &gt; Watch/Edit</strong> and select the following options:<br />
+        Click <strong>OK</strong>.<br />
+        Note: These preferences must be set for each individual workspace!<br />
+    </li>
+    <li>
+        Indicate what CVS repository you want to load from.&nbsp; In this example, we use the CVS repository that contains
+        the content we have donated to the EPF project (the open source UMF content).<br />
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                In RMC, open the "<strong>CVS Repository Exploring</strong>" perspective<br />
+            </li>
+            <li>
+                Create a new repository location in the <strong>CVS Repositories</strong> view:<br />
+            </li>
+            <li>
+                Enter the repository and your account information and review other settings<br />
+                <br />
+                &nbsp;Note: Non-committers use 'anonymous' for the user, leave the password empty, and select 'pserver' for
+                the connection type. Committers use their Eclipse account user ID and password, and select extssh for the
+                connection type.<br />
+                <br />
+                Click Finish.<br />
+            </li>
+            <li>
+                Expand the HEAD branch of the tree.<br />
+            </li>
+            <li>
+                Expand org.eclipse.epf, and find the library folders you are interested in importing.<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Select the content you want to load (you can shift-click and/or control-click to select multiple
+        elements).&nbsp;<br />
+        In this example, we will be importing content from libraries/EPF_Practices_Library (all core.gen and core.default
+        folders).<br />
+        <br />
+    </li>
+    <li>
+        Right-click and select "Check Out As".&nbsp; Don't worry, you are not really checking anything out ;-).<br />
+    </li>
+    <li>
+        On the next dialog box, select "Check out into the workspace as projects" option as shown below:&nbsp;<br />
+        <br />
+        Click Next.<br />
+    </li>
+    <li>
+        On the next screen, select the project location. Check the "use default workspace location" option. Click Next.
+        Click Finish.
+    </li>
+</ol>
+<p>
+    Note: You can just ignore any errors that you get or see in the Problems view.&nbsp; Re-opening the library should
+    eliminate those errors.&nbsp; If it does not,&nbsp;you may have not loaded a library element that is needed by another
+    library element that you did load (i.e., you missed a needed plug-in), or the plug-in you are trying to import has
+    improper references.&nbsp; For more information on processing errors&nbsp;reported in the Problem View, see the Method
+    Composer online help topic:<strong>Designing and managing process</strong> &gt; <strong>Getting started with
+    authoring</strong> &gt; <strong>Working with Problems view</strong>. The latest information on this topic is also
+    available from the <a href="http://publib.boulder.ibm.com/infocenter/rmchelp/v7r5m1/index.jsp" target="_blank">RMC
+    Information Center</a>.
+</p>
+<p>
+    Now you have loaded the CVS content into your workspace.&nbsp;To see the result, go back to the RMC Authoring
+    perspective and select <strong>File</strong> &gt; <strong>Open</strong> <strong>Method</strong>
+    <strong>Library</strong> (being sure to check the "open from workspace" option).&nbsp; You should see the loaded
+    content in your library.
+</p>
+<h3>
+    Renaming plug-ins in a workspace that reside in a separate version control system&nbsp;
+</h3>
+<p>
+    When a plug-in is created in a workspace-based method library, three elements are created:
+</p>
+<ol>
+    <li>
+        A directory to contain all of the plug-in files (the directory name is the same as the plug-in name,
+    </li>
+    <li>
+        A plug-in.xmi file the defines the structure of the plug-in (the plug-in name is specified in the file),
+    </li>
+    <li>
+        A .project file that defines the associated project (the plug-in name is specified in the file as the project
+        name).
+    </li>
+</ol>
+<p>
+    Method Composer works fine if the name used for the plug-in and project are different, but it can get confusing, so
+    it's best to keep them the same. Thus, when you change the name of a plug-in, you need to make sure you rename the
+    associated plug-in directory and the project name in the .project file.
+</p>
+<p>
+    Perform the following steps to rename a version controlled plug-in:
+</p>
+<p>
+    1.&nbsp;Rename the plug-in in Method Composer. Right click the plug-in and select Rename. Enter the new name. Edit the
+    plug-in description, adjusting the <strong>Presentation name</strong> and <strong>Brief description</strong>, as
+    needed.
+</p>
+<p>
+    2.&nbsp;Remove the project associated with the plug-in from your workspace without deleting the source.&nbsp;
+</p>
+<ul>
+    <li>
+        Right click on plug-in name in the <strong>Library</strong> view.&nbsp;Select "<strong>Show in Resource
+        Navigator</strong>".&nbsp; The associated plug-in,xmi file will be highlighted in the <strong>Navigator</strong>
+        view.
+    </li>
+    <li>
+        Right click the containing folder in the <strong>Navigator</strong> view and select
+        <strong>Delete</strong>.&nbsp;Click the "<strong>Do Not Delete Contents</strong>" button.&nbsp;The plug-in will be
+        removed from the workspace and method library, but not from the file system.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </li>
+</ul>
+<p>
+    3.&nbsp;Rename the plug-in project elements in your version control system:<br />
+</p>
+<ul>
+    <li>
+        Rename the folder
+    </li>
+    <li>
+        Check out and edit the .project file and change the &lt;name&gt; tag to the new plug-in name.
+    </li>
+    <li>
+        Check in the .project file
+    </li>
+</ul>
+<p>
+    4. Reimport the plug-in project into your workspace.&nbsp;Be sure to import a reference and not "copy the projects"
+    into your workspace. For more information, see the "import" section above.&nbsp;
+</p>
+<h3>
+    Moving elements from the workspace to&nbsp;another location
+</h3>
+<p>
+    Perform the following steps to move&nbsp;elements in a workspace from the workspace to another location:
+</p>
+<ol>
+    <li>
+        Remove the project from your workspace without deleting the source.&nbsp;
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Right click on the element name in the <strong>Library</strong> view.&nbsp; Select "<strong>Show in
+                Resource Navigator</strong>". The element will be highlighted in the <strong>Navigator</strong> view.
+            </li>
+            <li>
+                Right click the element name in the <strong>Navigator</strong> view and select
+                <strong>Delete</strong>.&nbsp;Click the "<strong>Do Not Delete Contents</strong>" button.&nbsp; The element
+                will be removed from the workspace and method library, but not from the file system.<br />
+                &nbsp;&nbsp;&nbsp; &nbsp;
+            </li>
+        </ul>
+    </li>
+    <li>
+        Manually move the element from the workspace directory to the new location.
+    </li>
+    <li>
+        Reimport the elements from the new location.&nbsp;For more information, see the "import" section above.
+    </li>
+</ol>
+<h3>
+    Removing elements from the workspace
+</h3>
+<p>
+    Perform the following steps to remove&nbsp;elements from a workspace:
+</p>
+<ol>
+    <li>
+        Right click on the element name in the <strong>Library</strong> view.&nbsp; Select "<strong>Show in Resource
+        Navigator</strong>".&nbsp;The element will be highlighted in the <strong>Navigator</strong> view.&nbsp;
+    </li>
+    <li>
+        Right click the element name in the <strong>Navigator</strong> view and select "<strong>Delete</strong>".&nbsp;
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                If you want to remove the element from the file system too, click "<strong>Yes</strong>" button when asked
+                if the source should be deleted.&nbsp;The element will be removed&nbsp;from the workspace, method library
+                and file system.
+            </li>
+            <li>
+                If you want the element to remain on the file system, but want it to be removed from the workspace and
+                hence the&nbsp;method library, click "<strong>do not delete contents</strong>". The element will be
+                removed&nbsp;from the workspace and method library, but not the file system.
+            </li>
+        </ul>
+    </li>
+</ol></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

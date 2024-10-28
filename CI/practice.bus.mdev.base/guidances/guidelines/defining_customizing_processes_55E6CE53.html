@@ -1,0 +1,787 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Defining and Customizing Processes</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="defining_customizing_processes">
+<meta name="uma.presentationName" content="Defining and Customizing Processes">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_E9J1kD9EEd-Xgadv74rzHA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Defining and Customizing Processes</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guidelines outlines defining, structuring and scaling method elements</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.bus.mdev.extend-ibm/tasks/design_method_asset_93DAD19A.html" guid="_tBQ3kOxoEdydutqrlpQKOw">Design Method Asset</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Defining Processes
+</h3>
+<p>
+    There are two kinds of process structures available: <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/delivery_process_BCDF50B7.html" guid="_ZufeMCO3EdqaNq6Ptg8uyA">delivery process</a>es and <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/capability_pattern_F5DDC5F.html" guid="_2RUJACO4EdqaNq6Ptg8uyA">capability pattern</a>s. The fundamental difference between a capability pattern and a
+    delivery process is that capability patterns are reusable chunks of process that are intended to reused, whereas
+    delivery processes are intended to be executed as a whole on projects (a delivery process can be used as a template for
+    planning and running a project.). Capability patterns are typically used as building blocks which are then assembled
+    into&nbsp;delivery processes or larger capability patterns ensuring optimal reuse.&nbsp;
+</p>
+<p>
+    Defining a process involves creating the plug-in that will contain the process (if&nbsp;it does not already exist),
+    naming the process and briefly describing it.&nbsp;Any issues naming an element and briefly describing it may indicate
+    that the element is not a&nbsp;good element after all.
+</p>
+<p>
+    Defining a process also involves defining the&nbsp;<a class="elementLinkWithUserText" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/activity_1D028230.html" guid="_yoVhMB_IEdq6CKKKq4D7YA">activities</a> that make up the process and the relationships (i.e., flow) between the
+    activities.&nbsp;For information on defining the activities (including <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/phase_6ACBC4E8.html" guid="_K9eecMaGEduMlb2cQZNTYw">phase</a>s and&nbsp;<a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/iteration_985D797A.html" guid="_5vWoEKNcEdyMFYhoCpD11Q">iteration</a>s) and milestones that make up a process, see the "Defining Activities"
+    section below. When you define process, you define a flow through the method content, which validates that you have the
+    right method content with the right separation of concerns.
+</p>
+<p>
+    Every process must have a default <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/method_configuration_C2B8FA8A.html" guid="__V7pAMaEEduMlb2cQZNTYw">method configuration</a>&nbsp;that specifies exactly what method elements can be
+    included in the process.&nbsp;
+</p>
+<p>
+    When defining processes, it is a good idea to capture the source of the information for the process.&nbsp;This
+    information is important if you ever need to provide source information for the process for documenting ownership
+    rights. It is also important to maintain accurate change histories, as well as making sure your trademarks and
+    copyrights are accurate.&nbsp;
+</p>
+<p>
+    When defining processes, you may find that you want to introduce some packages in order to better organize the
+    processes.&nbsp;For more information, see the topic Packaging Method Elements in&nbsp;<a class="elementLinkWithType" href="./../../../practice.bus.mdev.base/guidances/guidelines/creating_plugins_practices_configurations_4C84B4C2.html" guid="_EXvLwD3NEd-realK_We5vA">Guideline: Creating Plug-ins, Practices and Configurations</a>.&nbsp;&nbsp;
+</p>
+<p>
+    Note: A process can be defined by mimicking an existing process. In that case, you can either define the new process,
+    using the existing process as inspiration, or actually copy the original process, changing the default configuration
+    and process contents, as needed.
+</p>
+<h4>
+    Descriptors
+</h4>
+<p>
+    The separation of concern between method content and processes is achieved through the use of <em><a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/descriptor_D52B7BB3.html" guid="_7rS6AB_JEdq6CKKKq4D7YA">descriptor</a>s</em>. Descriptors provide a&nbsp;representation of a method content
+    element in the&nbsp;context of a process. Descriptors may contain additional information that is only relevant to the
+    process under construction.&nbsp;Changes to the descriptors in one process do not affect the base definition of the
+    method content element, nor do they affect&nbsp;other descriptors for that method content element in other
+    processes.&nbsp;This allows the author to make local changes&nbsp;to a method content element and its relationships in
+    a specific process.
+</p>
+<p>
+    Descriptors are created in a process when method content elements are added to a process, one descriptor for each
+    method content element. Such descriptors are linked to their source method content elements.&nbsp; Descriptors may also
+    be created from scratch and may be left standalone or linked to an existing method content element.
+</p>
+<p>
+    The relationships that a descriptor has to other descriptors is determined by the default configuration of the process
+    at the time the method content element was added to the process. If the source method content element or the
+    configuration changes at a later time, the process must be resynchronized to get the latest changes. Only descriptors
+    that are linked to a method content element are synchronized.
+</p>
+<h4>
+    Activity diagrams
+</h4>
+<p>
+    Activity diagrams can be used to represent the flow between activities or task descriptors in a process. The control
+    flow between elements in an activity diagram are represented as predecessors in the work breakdown structure of the
+    process. For example, if there is a control flow on an activity diagram from Activity1 to Activity2, Activity1 is
+    listed as a predecessor for Activity2. Changes in activity diagrams are reflected in the work breakdown structure and
+    changes to the work breakdown structure are reflected in the activity diagrams.
+</p>
+<p>
+    Activity diagrams may occur at any level in the breakdown structure. For example, there may be an activity diagram for
+    the overall process (includes the first level of activities in the breakdown structure) or an activity diagram for a
+    specific activity in the process that&nbsp;includes&nbsp;only the&nbsp;elements in that activity.
+</p>
+<p>
+    Activity diagrams are optional, but it is recommended that they be created whenever you have a specific flow between
+    elements. It is strongly recommended that for any activity that includes other activities that an activity diagram be
+    created as having a visual representation of the flow will not only be helpful to practitioners that will be following
+    the process, but it is also helpful to the process author as it may point out potential problems or complexities in the
+    process that need to be addressed.
+</p>
+<p>
+    Activity diagrams are more popular for representing the flow between activities, especially for representing the
+    overall flow of a process. However, they can be used to represent the flow between task descriptors. However, if the
+    flow between task descriptors is more implied by the flow&nbsp;of input and&nbsp;output work products between the
+    tasks, then an activity detail diagram may be a better choice. For more information, see the "Activity detail diagrams"
+    section of this guideline.&nbsp;
+</p>
+<h4>
+    Activity detail diagrams
+</h4>
+<p>
+    Activity detail diagrams can be used to provide an overview of an activity that just includes task descriptors (not
+    activities). Activity detail diagrams include the descriptors for the tasks, their primary performing roles, their
+    mandatory input and their output work products. They are organized by performing roles and thus provide a great
+    overview of what a specific role does in a specific activity in the process.
+</p>
+<p>
+    You cannot create an activity detail diagram for an activity that includes other activities. In such a case, an
+    activity diagram may be a better choice. Thus, activity detail diagrams only apply at the "bottom" level of the
+    process. For more information, see the "Activity diagrams" section of this guideline.&nbsp;&nbsp;
+</p>
+<p>
+    You also cannot create an activity detail diagram for an activity that contains tasks that do not have
+    a&nbsp;performing role specified since an activity detail diagram is developed from the role&nbsp;perspective&nbsp;.
+</p>
+<p>
+    Activity detail diagrams are optional, though they are quite popular for those activities where&nbsp;flow of the tasks
+    in the activity&nbsp;is determined by the flow&nbsp;of input and&nbsp;output work products between the tasks.
+</p>
+<h4>
+    Populating a process
+</h4>
+<p>
+    There are several ways to populate a process with method elements:
+</p>
+<ol>
+    <li>
+        Drag individual method content elements onto an activity in a process. A descriptor for the method content element
+        is created in the process
+    </li>
+    <li>
+        Drag individual capability patterns into an activity in a process.&nbsp;A copy of the capability pattern or a link
+        to the source capability pattern can be created.&nbsp;If a copy is created, a copy of all descriptors in the
+        process are created.
+    </li>
+    <li>
+        Drag individual activities from existing process into an activity in a process.&nbsp;A copy of the activity or a
+        link to the source activity can be created. If a copy is created, a copy of all descriptors in the activity are
+        created.
+    </li>
+    <li>
+        Create descriptors directly in the process, which are either unrelated to any method content or related to method
+        content at a later point in time.
+    </li>
+</ol>
+<p>
+    Options 1 and 2 are the recommended means of populating a process.
+</p>
+<p>
+    Every task descriptor and activity can have predecessors (these are what specify the flow between these elements).
+    These predecessors can be set by specifying them as part of the work breakdown structure for the process or by
+    specifying the flow between elements in an activity diagram. For more information on activity diagrams, see the
+    "Activity diagrams" section of this guideline.&nbsp;
+</p>
+<h4>
+    Setting the breakdown element flags
+</h4>
+<p>
+    Every <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/breakdown_element_E6E32412.html" guid="_cvdpEB_LEdq6CKKKq4D7YA">breakdown element</a>&nbsp;has a set of flags associated with it.&nbsp;Part of defining
+    a process is setting these flags. The following are some guidelines for setting these flags:
+</p>
+<ul>
+    <li>
+        <strong>Planned</strong>: Set this flag for elements that a project manager would want to include in a project plan
+        or work items list. Planned elements are intended to be assigned to a specific person for completion by a specific
+        due date. This flag is used to indicate what elements should be included in the exported project planning template.
+        It does not impact whether the item is actually performed, but rather is used to show the expected level the
+        project is to be tracked to.&nbsp;For planning purposes the contents of non-planned elements are rolled up to the
+        first planned item in the hierarchy. In general, activities, not tasks, are planned. However, not all activities
+        are planned. Usually the larger-grained activities are planned, whereas the fine-grained activities are
+        not.&nbsp;However, ultimately the choice of what to plan is based on the style of project management for a project.
+    </li>
+    <li>
+        <strong>Repeatable</strong>: Set this flag for activities whose sub-activities and tasks are run more than once for
+        the same subject or content serially (not in parallel).&nbsp;For example, patterns that represent iterations are
+        generally marked as being repeatable.
+    </li>
+    <li>
+        <strong>Multiple Occurrences</strong>: Set this flag for activities that are executed more than once for different
+        areas of concern, but they can be done in parallel to one another and are not restricted to be performed serially,
+        like Repeatable is.
+    </li>
+    <li>
+        <strong>Ongoing</strong>: Set this flag for activities that do not have a particular start/stop date, but rather
+        are scheduled by the amount of time they take up. Support and management activities often are ongoing.
+    </li>
+    <li>
+        <strong>Event-Driven</strong>: Set this flag for activities that occur when a particular event occurs (for example,
+        Manage Changing Requirements)
+    </li>
+    <li>
+        <strong>Optional</strong>: Set this flag for activities that are considered to be optional (not required). This
+        flag identifies whether the related element can be removed from the process without a large impact. This is
+        intended to provide general guidance to those tailoring the process on the likelihood of removing something having
+        a negative impact on the integrity of the resulting process. It is not intended to show whether the related item is
+        mandatory in terms of compliance nor is it intended to show what items have to be done while executing the process.
+        In other words you would not switch this attribute to mandatory for all elements once a process had been tailored.
+        Just because something is not marked as optional does not mean it has to always used in that process but is rather
+        intended to be used as a filter when generating reports to alert the user of tailoring decisions they should
+        validate. The use of this attribute should not be confused with mandatory and optional inputs which are used to
+        identify which inputs are critical to performing a task versus (i.e. the task can not be performed without those
+        inputs) those that should be used if available or may prove useful as additional information.
+    </li>
+</ul>
+<p>
+    Based on these definitions not all attributes are valid for all types of process elements and in some cases may require
+    a slightly different interpretation of their meaning.
+</p>
+<p>
+    Depending on the situation, some or all the above properties can have a dramatic impact on how a breakdown element is
+    understood. It is therefore useful to emphasize the presence of certain of the above properties through a special
+    naming convention of the breakdown element. For example:
+</p>
+<ul>
+    <li>
+        <strong>Repeatable</strong>: To indicate that there may be more than one execution of an activity, name the
+        activity with [n] at the end of the name.&nbsp; For example: Inception Iteration [n].
+    </li>
+    <li>
+        <strong>Multiple occurrences</strong>: To indicate that there may be more than one occurrence of an activity,
+        include [within Scope] in their name. Therefore, the only instances of a Multiple Occurrence activity&nbsp;are
+        those&nbsp; with [within Scope] in their name.
+    </li>
+</ul>
+<p>
+    Regardless of what conventions are adopted, it is important that are applied uniformly, as haphazard compliance with a
+    convention may create more confusion than help.<br />
+    &nbsp;
+</p>
+<p>
+    The following sections provide some process-type-specific guidelines:
+</p>
+<h4>
+    Defining activities
+</h4>
+<p>
+    An activity&nbsp;allows the method author to sequence units of work described by tasks. Activities are the basic
+    process element in a method. Activities may be sequenced and nested and so very complex structures can be created.
+    However, as complexity goes up, understandability goes down.&nbsp;
+</p>
+<p>
+    Consider the following when defining an activity:
+</p>
+<ul>
+    <li>
+        Reuse existing activities and capability patterns wherever possible.
+    </li>
+    <li>
+        An activity should:<br />
+        <ul>
+            <li>
+                Be a simple building block
+            </li>
+            <li>
+                Address one topic and have a simple internal structure
+            </li>
+            <li>
+                Be as self-contained as possible with few input work products, that is, the external dependencies are
+                minimized
+            </li>
+        </ul>
+    </li>
+    <li>
+        For each activity, its predecessors and successors should be defined, ideally&nbsp;in an activity diagram. For more
+        information, see the "Activity diagrams" section of this guideline.&nbsp;
+    </li>
+    <li>
+        If an activity contains a milestone, it is normally placed at the end of the sequence of tasks in the activity. A
+        milestone might mark the completion of the deliverable or some other significant event in the engagement.
+    </li>
+</ul>
+<h4>
+    Defining capability patterns
+</h4>
+<p>
+    The following provides some guidelines for defining capability patterns:
+</p>
+<ul>
+    <li>
+        Make capability patterns relatively small and self contained&nbsp;with relatively&nbsp;few dependencies on external
+        inputs.
+    </li>
+    <li>
+        Create capability patterns for workflows that are intended to be reused.
+    </li>
+    <li>
+        Create capability patterns for sets of tasks are planned as&nbsp;a group on a project, as opposed to being planned
+        individually.
+    </li>
+    <li>
+        Create capability patterns if there is a workflow fragment that is shared between two or more capability patterns.
+        Yes, you can share activities between processes, but it is much easier to find the reusable things if they are
+        capability patterns.
+    </li>
+    <li>
+        Resist creating a proliferation of capability patterns because the can get tedious to create and having many, many
+        capability patterns makes finding the activity of interest even more difficult. Consider organizing processes into
+        process packages to reduce complexity.
+    </li>
+</ul>
+<h4>
+    Defining delivery processes
+</h4>
+<p>
+    The following provides some guidelines for defining delivery processes:
+</p>
+<ul>
+    <li>
+        Define a delivery process for a particular type of project that reflects the specific planning and project
+        management needs.&nbsp;
+    </li>
+    <li>
+        Define a delivery process by assembling existing capability patterns and adding additional process elements as
+        necessary (for example, milestones, phases, etc.) to tie to capability patterns together.
+    </li>
+</ul>
+<h3>
+    Customizing a Process
+</h3>
+<div>
+    When customizing a process, it is important to explicitly identify what process you will actually customize (remember:
+    a specific process may be defined in one place and "applied" in many other processes,&nbsp;either copied or linked to).
+    Once you have identified what process to customize, you can execute the scenarios described in this document on that
+    process.
+</div>
+<div>
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+</div>
+<div>
+    The following questions can help you decide what process to customize:
+</div>
+<ul>
+    <li>
+        Do you want to change an overall process?
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                If so, then that process is the process&nbsp;to be customized.<br />
+                &nbsp;&nbsp;
+            </li>
+        </ul>
+    </li>
+    <li>
+        Do you want to change an activity in a process (i.e., the elements it contains or its flow)?
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                If so, is the activity you want to change a reference to process/activity that is defined elsewhere (i.e.,
+                what it created by extending or copying a capability pattern/activity defined in another process)?
+            </li>
+            <li style="LIST-STYLE-TYPE: none">
+                <ul>
+                    <li>
+                        If so, do you want to change all instances of the activity?
+                    </li>
+                    <li style="LIST-STYLE-TYPE: none">
+                        <ul>
+                            <li>
+                                If so, find the base definition of the process that the activity was created from. That
+                                process is the process to be customized.
+                            </li>
+                            <li>
+                                If not, the current process is the process to be customized.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        If not, then the activity you want to change is defined in this process, so this process is the
+                        process to be customized.<br />
+                        &nbsp;&nbsp;&nbsp;
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Do you want to change a role, task or work product descriptor in the process?&nbsp;
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                If so, is the descriptor linked to a method content element?
+            </li>
+            <li style="LIST-STYLE-TYPE: none">
+                <ul>
+                    <li>
+                        If so, do you want the change to affect all occurrences of the role, task or work product?&nbsp;
+                    </li>
+                    <li style="LIST-STYLE-TYPE: none">
+                        <ul>
+                            <li>
+                                If so, you need to customize the method content elements&nbsp; and then update the process
+                                to pick up the changes (see the "Update a process to include changes made to the underlying
+                                method content " scenario in this guideline).
+                            </li>
+                            <li>
+                                If not, you will be making a local process change&nbsp;to the descriptors. For more
+                                information, see the "Change the role, task or work product descriptors" scenario in this
+                                guideline.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        If not, you will be making a local process change&nbsp;to the descriptors. For more information,
+                        see the "Change the role, task or work product descriptors" scenario in this guideline.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<div>
+    Once the process has been customized, you need to decide if you want to customize other processes that were originally
+    dependent on (or built from) the process that you customized. If so, then you need to perform the "Replace an existing
+    activity with another activity " scenario for those processes so they reflect the customizations you
+    made.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+</div>
+<p>
+    It is assumed that the process&nbsp;being customized cannot be modified directly. Thus, all process changes must be
+    stored in a separate plug-in from the process being customized. To see the resulting changes, you need to browse or
+    publish a configuration that includes the element being customized and the customizations. If&nbsp;you can modify the
+    process directly, you&nbsp;need to&nbsp;follow the guidelines described in the topic Defining Processes above.
+</p>
+<p>
+    The following are some ways you can customize a process:
+</p>
+<ul>
+    <li>
+        Update a process to include changes made to the underlying method content
+    </li>
+    <li>
+        Change the textual descriptions of the process itself or its elements
+    </li>
+    <li>
+        Add new activities
+    </li>
+    <li>
+        Add new roles, tasks or work products
+    </li>
+    <li>
+        Replace an existing activity with another activity
+    </li>
+    <li>
+        Change the role, task or work product descriptors
+    </li>
+    <li>
+        Change the process flow
+    </li>
+    <li>
+        Add a new, or change an existing, process diagram
+    </li>
+</ul>
+<p>
+    The following sections describe these scenarios in more detail.&nbsp;&nbsp;
+</p>
+<h4>
+    Customizing a process in the UMF
+</h4>
+<p>
+    When customizing processes that are to existing within the Unified Method Framework (UMF), the UMF plug-in types need
+    to be considered.&nbsp;These types affect what elements can be placed in what plug-in.&nbsp;For example, customizations
+    of process elements are defined in Extend plug-ins.&nbsp;
+</p>
+<h4>
+    Update a process to include changes made to the underlying method content
+</h4>
+<p>
+    Perform the following steps to customize a process to include changes made to underlying method content:
+</p>
+<ul>
+    <li>
+        If one does not already exist, create a new plug-in to contain the customized process.
+    </li>
+    <li>
+        Make a copy of the default configuration for the process to be customized.
+    </li>
+    <li>
+        In the new configuration, add the new plug-in and the plug-ins that contain the method content changes.
+    </li>
+    <li>
+        Copy the original process and place the copy in the new plug-in.
+    </li>
+    <li>
+        Change the default configuration of the new process to the new configuration.
+    </li>
+    <li>
+        Synchronize the new process against the new configuration.&nbsp;
+    </li>
+</ul>
+<p>
+    The method content changes should now be picked up.&nbsp;&nbsp;
+</p>
+<h4>
+    Add a new role, task or work product to the process
+</h4>
+<p>
+    Roles, tasks and work products are represented as descriptors in a process. For more information on descriptors, see
+    the topic Defining Processes above.
+</p>
+<p>
+    Perform the following steps to add a new role, task or work product (descriptor) to an existing process:
+</p>
+<ul>
+    <li>
+        If one does not already exist, create a new plug-in to contain the customized process.
+    </li>
+    <li>
+        Make a copy of the default configuration for the process to be customized.
+    </li>
+    <li>
+        In the new configuration, add the new plug-in and the plug-ins that contain the method content elements to be
+        added.
+    </li>
+    <li>
+        Copy the original process and place the copy in the new plug-in.
+    </li>
+    <li>
+        Change the default configuration of the new process to the new configuration.
+    </li>
+    <li>
+        Synchronize the new process against the new configuration.&nbsp;
+    </li>
+    <li>
+        Drag and drop the role, task or work product to be added into the process. Descriptors are created.
+    </li>
+    <li>
+        Refine the flow between the new element and the existing element, as needed (for example, adding predecessors to
+        the new task descriptor, or specifying the new task descriptor&nbsp;as a predecessor to an existing task
+        descriptor). The method content elements are now part of the process.
+    </li>
+    <li>
+        Change the definition of the new process to specify that it is to replace the original
+        process.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </li>
+</ul>
+<h4>
+    Replace an existing activity with another activity
+</h4>
+<p>
+    Perform the following steps to replace an activity with another activity:
+</p>
+<ul>
+    <li>
+        Create a new plug-in to contain the customized process.
+    </li>
+    <li>
+        Make a copy of the default configuration for the process to be customized.
+    </li>
+    <li>
+        In the new configuration, add the new plug-in and the plug-ins that contain the method content changes.
+    </li>
+    <li>
+        Copy the original process and place the copy in the new plug-in.
+    </li>
+    <li>
+        Change the default configuration of the new process to the new configuration.
+    </li>
+    <li>
+        Synchronize the new process against the new configuration.&nbsp;
+    </li>
+    <li>
+        Change the definition of the activity to be replaced so that the activity is an extension of the new activity. The
+        process now includes the new activity.
+    </li>
+    <li>
+        Change the definition of the new process to specify that it is to replace the original process.&nbsp;&nbsp;
+    </li>
+</ul>
+<h4>
+    Change the role, task or work product descriptors
+</h4>
+<p>
+    Roles, tasks and work products are represented as descriptors in a process. The relationships between the descriptors
+    are created at the time the elements are added to the process and those relationships reflect the relationships as
+    resolved in the processes' default configuration.
+</p>
+<p>
+    The descriptor text and relationships can be changed directly in the process. If the descriptors are associated with
+    method content elements, such descriptor changes do not affect the associated method content elements (they are
+    considered local process changes).
+</p>
+<p>
+    Perform the following steps to change the role, task or work product descriptors directly in a customized process:
+</p>
+<ul>
+    <li>
+        Create a new plug-in to contain the customized process.
+    </li>
+    <li>
+        Copy the original process and place the copy in the new plug-in.
+    </li>
+    <li>
+        Change the descriptor textual descriptions or relationships directly in the new process. The process now includes
+        the descriptor changes.&nbsp;
+    </li>
+    <li>
+        Change the definition of the new process to specify that it is to replace the original process.
+    </li>
+</ul>
+<h4>
+    Change the process flow
+</h4>
+<p>
+    The process flow is the flow between the activities or task descriptors in the process. You can change the flow by
+    changing the predecessors of the activities and the task descriptors. This can be done directly in the work breakdown
+    structure, or, if there is an associated activity diagram,&nbsp;by changing the control flow between the elements on
+    the activity diagram. For more information creating a new or changing and existing activity diagram, see the process
+    diagram section of this guideline.
+</p>
+<p>
+    Even if the elements in the process are associated with method content elements, changing the flow between the elements
+    in a process does not affect the associated method content elements (flow changes are considered local process
+    changes).
+</p>
+<p>
+    Perform the following steps to change the process flow of an existing process:
+</p>
+<ul>
+    <li>
+        Create a new plug-in to contain the customized process.
+    </li>
+    <li>
+        Copy the original process and place the copy in the new plug-in.
+    </li>
+    <li>
+        Change the predecessors in the work breakdown structure, as needed to obtain the desired flow, or, if there is an
+        associated activity diagram,&nbsp;change the control flow in the activity diagram. The process flow is now
+        changed.&nbsp;&nbsp;
+    </li>
+    <li>
+        Change the definition of the new process to specify that it is to replace the original process.
+    </li>
+</ul>
+<h4>
+    Add a new, or change an existing, process diagram&nbsp;&nbsp;
+</h4>
+<p>
+    There are two types of process diagrams, activity diagrams and activity detail diagrams. For more information on these
+    diagrams and when and how they can be used, see the topic Defining Processes above.
+</p>
+<p>
+    Perform the following steps to add a new, or change an existing, process diagram:
+</p>
+<ul>
+    <li>
+        Create a new plug-in to contain the customized process.
+    </li>
+    <li>
+        Copy the original process and place the copy in the new plug-in.
+    </li>
+    <li>
+        Create a new or change an existing process diagram, at the desired levels in the process. The process now contains
+        the desired process diagram.&nbsp;&nbsp;
+    </li>
+    <li>
+        Change the definition of the new process to specify that it is to replace the original process.
+    </li>
+</ul>
+<h3>
+    Defining a Practice Configuration Process
+</h3>
+<p>
+    Defining a cross-practice process is where you turn your attention to the process/lifecycle side of things. How should
+    the <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/task_6C1FF051.html" guid="_x459ktnmEdmO6L4XMImrsA">task</a>s and/or <a class="elementLinkWithUserText" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/activity_1D028230.html" guid="_yoVhMB_IEdq6CKKKq4D7YA">activities</a> (i.e., <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/capability_pattern_F5DDC5F.html" guid="_2RUJACO4EdqaNq6Ptg8uyA">capability pattern</a>s) from the individual <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/concepts/practice_F5C8EAAB.html" guid="_qhCTAFRREd2CWscN8Mx6rg">Practice</a>s "flow" together? Are there any activities that always appear together and
+    in what order do they appear? Are there specific sets of activities that can be reused together in more course-grained
+    flows?&nbsp;What does an overall lifecycle look like? Define cross-practice processes to&nbsp;reflect these
+    decisions.&nbsp;Specifically, define&nbsp;capability patterns for sets of capability patterns that always appear
+    together and can be reused in other capability patterns, and define <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/delivery_process_BCDF50B7.html" guid="_ZufeMCO3EdqaNq6Ptg8uyA">delivery process</a>es for overall lifecycles. Defining cross-practice
+    processes&nbsp;defines an overall flow through the practices and validates that you have the right practice content
+    with the right separation of concerns.
+</p>
+<p>
+    Perform the following steps to create a cross-practice process:
+</p>
+<ul>
+    <li>
+        If one does not exist, create a Publish Base plug-in to contain the new process.&nbsp;&nbsp;
+    </li>
+    <li>
+        Create a Publishable&nbsp;<a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/method_configuration_C2B8FA8A.html" guid="__V7pAMaEEduMlb2cQZNTYw">method configuration</a>&nbsp;that includes the the necessary core plug-ins (include
+        role and standard category definitions), the&nbsp;new Publish plug-in, the practices (including the desired
+        practice role assignments),&nbsp;and any cross-practice processes you are interested in including in your
+        cross-practice process (remember all processes must have a default configuration).<br />
+    </li>
+    <li>
+        Create the cross-practice process, specifying the new configuration as the default configuration. Assemble the
+        cross-practice process using the method elements (<a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/task_6C1FF051.html" guid="_x459ktnmEdmO6L4XMImrsA">task</a>s, <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/capability_pattern_F5DDC5F.html" guid="_2RUJACO4EdqaNq6Ptg8uyA">capability pattern</a>s) from the Process Construction configuration, defining as
+        many levels (i.e., nested activities) as are needed. In some cases, there may even be reference workflows from the
+        individual practices that you can use for ideas for the process you are building. When assembling cross-practice
+        processes, the processes that are used (i.e., the capability patterns that are applied) from the practices must be
+        <u><em>copied</em></u> instead of <u><em>extended</em></u> so that the process descriptors are built using the
+        default configuration for the cross-practice process.&nbsp;
+    </li>
+</ul>
+<p>
+    In summary, practices provide the pieces parts (tasks and capability patterns) and may even provide some good process
+    patterns e.g., reference workflows), but in the end, it is the person creating the a process that must decide the order
+    and levels (the level of nesting of the activities) of the process, using any and all available method content elements
+    and/or process patterns.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    This program and the accompanying materials are made available under the<br />
+    <a href="http://www.eclipse.org/org/documents/epl-v10.php" target="_blank">Eclipse Public License V1.0</a>, which
+    accompanies this distribution.
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.base/guidances/supportingmaterials/epf_copyright_C3031062.html" guid="_UaGfECcTEduSX6N2jUafGA">EPF Copyright</a>.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

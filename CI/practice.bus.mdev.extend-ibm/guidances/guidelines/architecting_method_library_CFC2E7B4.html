@@ -1,0 +1,711 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Architecting a Method Library</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="architecting_method_library">
+<meta name="uma.presentationName" content="Architecting a Method Library">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_EgX2cDt0Ed-0GPJdQkFa_A"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Architecting a Method Library</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline provides recommendations for architecting a method library.  This includes sketching a method library, structuring elements in a practice framework architecture, and defining work product slots.<br/>&#xD;&#xA; </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.bus.mdev.extend-ibm/tasks/architect_method_library_276CA114.html" guid="_UjkDIEmfEd-CwKa38aS3Iw">Architect the Method Library</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Sketching a Method
+</h3>
+<p>
+    Sketching a method is all about brainstorming about what the method should contain and how it should be
+    organized.&nbsp;
+</p>
+<p>
+    Sketching is usually performed in a team environment in the context of a series of brainstorming sessions involving
+    method SMEs.
+</p>
+<p>
+    When sketching a method, it is important to identify the key method elements and their relationships, as well as an
+    early draft of a brief description. The key method elements may include any or all of the following:
+</p>
+<ul>
+    <li>
+        <strong>Key content areas</strong>, especially if the method is large, and these may evolve into domains and
+        disciplines.
+    </li>
+    <li>
+        <strong>Key method content elements and their relationships</strong>: what work products are produced and what
+        roles are responsible for them?&nbsp; What work products are consumed by the process (e.g., what are the input work
+        products)?
+    </li>
+    <li>
+        <strong>Key activities</strong>: What activities are performed to produce the work products, what work products do
+        those activities produce and consume?
+    </li>
+    <li>
+        <strong>Overall lifecycle and milestones</strong>.&nbsp;What is the overall lifecycle that you are trying to
+        represent, organized by key milestones and milestone criteria?
+    </li>
+</ul>
+<p>
+    When sketching a method, it is important to leverage as much existing content as you can, both from the current
+    context, as well as from existing methods.&nbsp;This is especially important if the ultimate objective is to customize
+    an existing method for the current context.
+</p>
+<p>
+    The following describes an approach for&nbsp;sketching a method:
+</p>
+<ol>
+    <li>
+        <strong>Identify key work products</strong>. Sometimes starting with the key work products can be easiest, as this
+        gives you a set of terms to start working with. What are the key work products that are produced? Provide a brief
+        description that indicates their purpose and key contents. If the work products have significant state, it is a
+        good idea to capture that, as well. In addition to the work products that are produce by the method, it is
+        important to identify work products that are consumed by the method. What are the inputs to the method? What is
+        their expected contents? Can they be refined in any way, or should they be treated as input only?
+    </li>
+    <li>
+        <strong>Identify key activities</strong>. Once you have an initial list of work products, you can turn your
+        attention to the key activities that are performed and how those activities produce/consume the work products. If
+        they produce or refine a work product, what is the work product's resulting state after the activity is complete?
+    </li>
+    <li>
+        <strong>Identify key roles</strong>. You can also start thinking about what key roles that participate in the
+        process, what work products they are responsible for and any key activities they participate in.
+    </li>
+    <li>
+        <strong>Outline overall lifecycle, including key milestones</strong>. Once you have an idea of the key activities,
+        you can start to organize them into an overall lifecycle. First identify the key milestones and describe the
+        milestone criteria in terms of the work products produced and their state. You can then map the identified
+        activities to the milestones they support (i.e., the activities that support the reaching of the goal of the
+        milestone). This may result in additional activities. At this point, don't worry too much about individual tasks,
+        just capture the overall lifecycle in terms of milestones, key activities and their affect on key work products.
+    </li>
+</ol>
+<p>
+    Applying the above approach results in a high-level definition of an end-to-end process, including work products,
+    roles, activities,&nbsp;milestones and overall lifecycle.
+</p>
+<h3>
+    Sketching a Practice
+</h3>
+<p>
+    When sketching a practice, you&nbsp;must first name and briefly describe the practice.&nbsp; Then identify the
+    practice's relationship with other practice and with other method framework elements.&nbsp; Specifically, identify
+    what&nbsp;work product slots will provide the inputs to the practices what the practice will produce in terms of work
+    products and what work product slots those work products will fill.&nbsp; In addition you may want to identify any
+    known guidance that will be shared.
+</p>
+<p>
+    Once you have an understanding of&nbsp;how the practice fits into the method framework, you can turn your attention to
+    what the practice&nbsp;needs to&nbsp;contain (method content&nbsp;and/or process) and the relationships between these
+    practice elements.&nbsp; If known, it is also a good idea to identify where the content will come from so decisions can
+    be made about the development of the practice.
+</p>
+<p>
+    Structuring a practice&nbsp;is where the elements of the practice and their relationships are defined. Specifically,
+    structuring a practice involves:
+</p>
+<ul>
+    <li>
+        Defining the practice -- where the practice fits in the overall practice framework&nbsp;and what are its external
+        dependencies
+    </li>
+    <li>
+        Defining the practice elements -- what elements are contained within the practice and what are their relationships
+    </li>
+    <li>
+        Categorizing the practice elements into standard and custom categories
+    </li>
+</ul>
+<p>
+    Each of these topics&nbsp;are described in the following sections.
+</p>
+<h4>
+    General practice structuring guidelines
+</h4>
+<p>
+    The practice structure must be developed within the guiding principles and constraints of the practice
+    framework&nbsp;in which the practice resides.
+</p>
+<p>
+    When structuring a practice, resist the temptation to enter detailed descriptions into the defined method
+    elements.&nbsp;Instead, just name and briefly describe the elements and enter a few outline details, if they help to
+    more clearly describe the element's basic definition.&nbsp;For more information, see the topics Method Element Naming
+    Conventions and Writing Brief Descriptions in&nbsp;the <a class="elementLinkWithType" href="./../../../practice.bus.mdev.base/guidances/guidelines/general_naming_conventions_5651B0CC.html" guid="__I8S0D2kEd-lU6YVR9_PJQ">Guideline: General Naming Conventions</a>.
+</p>
+<p>
+    When structuring a practice, be sure to look for opportunities to leverage existing information in core elements and/or
+    in other practices.&nbsp;If you find existing method elements in another practice that you would like to share, work
+    with the method architects to get the common information moved to&nbsp;the core where it can be shared. Likewise,
+    method elements should be defined to maximize reuse.&nbsp;If while structuring a practice you define an element that
+    can be shared across practices, it should be defined in&nbsp;in the core where it can be shared, instead of in the
+    practice.&nbsp;
+</p>
+<h3>
+    Develop a Proof-of-Concept
+</h3>
+<p>
+    The proof-of-concept of a <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/method_content_6972AE81.html" guid="_Ts2joB_MEdq6CKKKq4D7YA">method content</a>&nbsp;should be done using the implementation environment you plan to
+    use to author the actual method. That way you can test the technical feasibility of your architectural ideas in the
+    actual implementation environment.
+</p>
+<p>
+    The following are some things that you may want to test out:
+</p>
+<ul>
+    <li>
+        Your proposed library structure, including the types of plug-ins you are considering creating, their relationships
+        and the types of configurations you are considering creating.
+    </li>
+    <li>
+        Strategy for defining navigation views, identifying any common navigation elements that you may want to share
+        between views and configurations.
+    </li>
+    <li>
+        Strategy for handling copyrights and release information.
+    </li>
+</ul>
+<p>
+    As you develop the proof-of-concept, it is important to document any issues and risks that you encounter so that these
+    can be addressed when more formally defining the method.
+</p>
+<p>
+    When developing an proof-of-concept for a practice framework, be sure to include a set of <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/practice_94B5C550.html" guid="_wxYvkMaGEduMlb2cQZNTYw">practice</a>s, some interfaces between those practices (e.g., <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/work_product_826E4C22.html" guid="_H4JXwB_SEdq6CKKKq4D7YA">work product</a>&nbsp;slots), as well as some configurations representing the <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/method_configuration_C2B8FA8A.html" guid="__V7pAMaEEduMlb2cQZNTYw">method configuration</a>s those practices will be included in.&nbsp;You may also want to
+    take into consideration any defined plug-in types and/or configuration types.&nbsp;
+</p>
+<h3>
+    Structuring the Practice Framework Core
+</h3>
+<p>
+    Structuring the Practice Framework&nbsp;core is where the core elements of the framework and their relationships are
+    defined. The core structure must be developed within the guiding principles and constraints of the practice
+    framework&nbsp;in which the core resides.
+</p>
+<p>
+    When structuring a practice, resist the temptation to enter detailed descriptions into the defined core
+    elements.&nbsp;Instead, just name and briefly describe the elements and enter a few outline details, if they help to
+    more clearly describe the element's basic definition.&nbsp;
+</p>
+<p>
+    When structuring the core elements, be sure to look for opportunities to leverage existing information in other core
+    elements (for example, core elements for a specific context may extend, customize and reuse elements from a more
+    general core). If you find existing core elements in another context-specific core that you would like to share, work
+    with the method architects to get the common information moved to&nbsp;a more general core where it can be shared.
+    Likewise, core elements should be defined to maximize reuse.&nbsp;If while structuring the core elements for a specific
+    context,&nbsp;you define an element that can be shared across contexts, it should be defined in&nbsp;in a more general
+    core where it can be shared.&nbsp;
+</p>
+<p>
+    Core elements are physically packaged in&nbsp;Core plug-ins. For more information on Core plug-ins and what elements
+    should be placed in what plug-ins, see [Concept: Practice Library Plug-In Types]. For more information on defining
+    plug-ins, see the topic Defining Plug-ins in the&nbsp;<a class="elementLinkWithType" href="./../../../practice.bus.mdev.base/guidances/guidelines/creating_plugins_practices_configurations_4C84B4C2.html" guid="_EXvLwD3NEd-realK_We5vA">Guideline: Creating Plug-ins, Practices and Configurations</a>.
+</p>
+<p>
+    Structuring the core elements involves:
+</p>
+<ul>
+    <li>
+        <strong>Defining the Work Product Slot</strong><strong>s</strong>. For more information, see the topic
+        Defining&nbsp;Work Product Slots below.
+    </li>
+    <li>
+        <strong>Defining the common method content</strong><strong>&nbsp;elements and their relationships</strong>
+        (including shared roles, work products and guidance). For more information, see the "Defining the common method
+        content elements" section of this guideline.
+    </li>
+    <li>
+        <strong>Defining the shared standard categories</strong> (e.g., domains and disciplines). For more information, see
+        the "Defining shared standard categories" section of this guideline.&nbsp;
+    </li>
+    <li>
+        <strong>Defining the shared custom categories</strong> (including shared navigation views). For more information,
+        see the "Defining shared custom categories" section of this guideline.
+    </li>
+</ul>
+<p>
+    Additional information on defining these core elements is provided in the following sections.
+</p>
+<h4>
+    Defining a work product slot
+</h4>
+<p>
+    Work Product Slots are defined when you need to pass information between Practices.&nbsp;They are defined in Core
+    plug-ins where their definition can be shared.
+</p>
+<p>
+    Work product slots are implemented as work products. However, they are "special" work products in that they are
+    implementation/representation agnostic. Thus, for general information on defining work products, see the topic Defining
+    Method Content Elements in the <a class="elementLinkWithType" href="./../../../practice.bus.mdev.base/guidances/guidelines/defining_method_elements_CADE4FF6.html" guid="_fx7TMD3REd-realK_We5vA">Guideline: Defining Method Elements</a>.
+</p>
+<p>
+    It&nbsp;is important to remember that work products slots are not "real" elements, in the method sense.&nbsp;Thus,
+    there are some additional authoring guidelines:
+</p>
+<ul>
+    <li>
+        Work product slots may appear as inputs to tasks
+    </li>
+    <li>
+        Work product slots may not appear as an output to tasks
+    </li>
+    <li>
+        Work product slots are filled by real work products in specific practices&nbsp;&nbsp;
+    </li>
+    <li>
+        Work product slots should not be categorized using standard categories
+    </li>
+    <li>
+        When naming separate work product slots, use a descriptive name that indicates explicitly that the element is a
+        slot.&nbsp;Specifically, the slot's presentation name should be between brackets and it's internal name should end
+        in ("_slot").&nbsp; Such conventions make it easy to see what is a slot and what is an actual artifact that fills a
+        slot.&nbsp;<br />
+        For example:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Presentation Name: [Specified System]
+            </li>
+            <li>
+                Name: specified_system_slot
+            </li>
+        </ul>
+    </li>
+</ul>
+<h4>
+    Defining the common method content elements
+</h4>
+<p>
+    In a practice framework, the common method elements usually include common roles definitions, work product definitions
+    and guidance. Tasks are not considered common elements (they defined in specific practices).
+</p>
+<p>
+    The following sections provide core-specific recommendations for defining the common method content elements. For
+    general guidelines on defining method content elements, see the topic Defining Method Content Elements in the <a class="elementLinkWithType" href="./../../../practice.bus.mdev.base/guidances/guidelines/defining_method_elements_CADE4FF6.html" guid="_fx7TMD3REd-realK_We5vA">Guideline: Defining Method Elements</a>.&nbsp;
+</p>
+<h5>
+    Defining common work products
+</h5>
+<p>
+    Work product definitions are provided in core to allow practices to share the common definition, even though they may
+    use the work product differently (e.g., provide different techniques for producing and consuming the work product).
+</p>
+<p>
+    Work products are not specified as fulfilling specific slots in the core. The fulfillment of slots is defined within
+    the practice (not in common).&nbsp;<br />
+    Note: Even though common work products are defined in&nbsp;Core, they do not really "exist" as part of the method being
+    defined until they are placed in a slot by a practice. In that case, the work product is considered conceptually part
+    of that practice.&nbsp;The only reason these work product definitions are physically placed in&nbsp;the core&nbsp;is so
+    their definition can be shared.&nbsp;
+</p>
+<p>
+    Work products in the core are generally "state free".&nbsp;Specific work product states are considered
+    practice-specific information.
+</p>
+<p>
+    Work products in the core do not have an associated responsible role. What role is responsible for what work product is
+    a practice-specific decision.
+</p>
+<h5>
+    Defining common roles
+</h5>
+<p>
+    Practice frameworks generally implement a Delayed Assignment&nbsp;approach for roles and role&nbsp;assignments so the
+    role definitions and/or assignments can be easily changed. Common role definitions are included in the core, but they
+    are not assigned to work products or tasks. These assignments are defined as part of the practice.
+</p>
+<h5>
+    Defining common guidance
+</h5>
+<p>
+    Common guidance is guidance that can be shared across practices.&nbsp;Such guidance is not associated to any method
+    content elements in the core. Such associations are done as part of defining the practice.<br />
+    Note: Even though common guidance is defined in&nbsp;the core, such guidance is considered conceptually part of the
+    practice where the guidance is associated to specific practice elements.
+</p>
+<h4>
+    Defining shared standard categories
+</h4>
+<p>
+    Standard category definitions (domains, disciplines, work product kinds, role sets, tools) are are generally shared
+    across practices, so they are defined in the practice framework core. However, practice frameworks generally implement
+    a Delayed Assignment&nbsp;approach for standard categories, except for tools (since what tool mentors are assigned to
+    what tools usually does not change). Thus these categories are defined in the core, but elements are not categorized
+    using these categories in the core. The categorization happens as part of the practice. For more information on
+    categorizing method elements into standard categories, see the topic Categorizing&nbsp;Method Elements Using Standard
+    Categories in the <a class="elementLinkWithType" href="./../../../practice.bus.mdev.base/guidances/guidelines/categorizing_7B37E584.html" guid="_kY8j4EH-Ed-bmYzvomIdMg">Guideline: Categorizing</a>.
+</p>
+<h4>
+    Defining shared custom categories
+</h4>
+<p>
+    Custom categories may be defined in the core that can be shared across practices. A common example of a shared custom
+    category is a navigation view, but other custom categories may be defined, as well.
+</p>
+<p>
+    Elements are added to the shared custom categories in the core and in practices, as desired. For more information on
+    categorizing method elements into custom categories, see the topic Categorizing Method Elements&nbsp;Using
+    Custom&nbsp;Categories&nbsp;in the <a class="elementLinkWithType" href="./../../../practice.bus.mdev.base/guidances/guidelines/categorizing_7B37E584.html" guid="_kY8j4EH-Ed-bmYzvomIdMg">Guideline: Categorizing</a>.
+</p>
+<p>
+    These custom categories&nbsp;can then be&nbsp;included, as desired, as part of&nbsp;publishable method configurations.
+    For more information on publishable configurations, see [Concept: Practice Library Configuration Types].&nbsp;
+</p>
+<h3>
+    Customizing Practice Framework Core Elements
+</h3>
+<p>
+    Practice Framework&nbsp;core&nbsp;customizations are stored in a separate plug-ins from the&nbsp;core elements being
+    customized. Specifically, all core element customizations should be defined in an Extend plug-in for the Core plug-in
+    that contains the element to be customized. For more information on Core and Extend plug-ins, see [Concept: Practice
+    Library Plug-In Types].
+</p>
+<p>
+    There are a number of different ways that you can customize the practice framework core.&nbsp;You can:&nbsp;
+</p>
+<ul>
+    <li>
+        Add a new work product slot
+    </li>
+    <li>
+        Customize an existing work product slot
+    </li>
+    <li>
+        Add a new common method content element (e.g., role, work product or guidance;&nbsp;tasks are&nbsp;generally stored
+        in <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/concepts/practice_F5C8EAAB.html" guid="_qhCTAFRREd2CWscN8Mx6rg">Practice</a>s)&nbsp;
+    </li>
+    <li>
+        Customize an existing common method content element&nbsp;
+    </li>
+    <li>
+        Add new shared domains or disciplines
+    </li>
+    <li>
+        Customize existing shared domains or disciplines
+    </li>
+</ul>
+<p>
+    The following sections describe how you would structure these customizations.&nbsp;
+</p>
+<p>
+    <strong>Add a new work product slot</strong>
+</p>
+<p>
+    Perform the following steps to define a new Work Product Slot:
+</p>
+<ul>
+    <li>
+        If it does not already exist, create an Extend plug-in to contain the new slot.
+    </li>
+    <li>
+        Define a new artifact and indicate that it is a slot.
+    </li>
+</ul>
+<p>
+    <strong>Customize an existing work product slot</strong>
+</p>
+<p>
+    Perform the following steps to customize (not just by adding guidance) an existing Work Product Slot:
+</p>
+<ul>
+    <li>
+        If one does not exist, create an Extends&nbsp;plug-in to contain the slot customizations.
+    </li>
+    <li>
+        Customize the slot the same way you customize any work product. However, since slots are shared across practices,
+        be sure that they adhere to guidelines for slots and that the changes are applicable across practices. For more
+        information on customizing work products, see the topic Customizing a Method Content Element in the&nbsp;<a class="elementLinkWithType" href="./../../../practice.bus.mdev.base/guidances/guidelines/defining_method_elements_CADE4FF6.html" guid="_fx7TMD3REd-realK_We5vA">Guideline: Defining Method Elements</a>.&nbsp;&nbsp;
+    </li>
+</ul>
+<p>
+    <strong>Add a new common method content element</strong>
+</p>
+<p>
+    Perform the following steps to add a new common method content&nbsp;element (e.g., role, work product,
+    guidance)&nbsp;to the core (tasks are generally not common, but are considered practice-specific):&nbsp;
+</p>
+<ul>
+    <li>
+        If it does not already exist, create an Extend plug-in to contain the new common element.<br />
+        Note: Practice frameworks generally&nbsp;implement a Delayed Assignment&nbsp;approach for roles, so it is
+        recommended that role definitions be placed in their own plug-in.
+    </li>
+    <li>
+        In the new plug-in, define the new element.&nbsp;These elements are common so be sure to only include information
+        that is common across practices. Do not include any associations between elements as such relationships are
+        better-defined in practices. For more information, see the topic Defining Method Content Elements in the&nbsp;<a class="elementLinkWithType" href="./../../../practice.bus.mdev.base/guidances/guidelines/defining_method_elements_CADE4FF6.html" guid="_fx7TMD3REd-realK_We5vA">Guideline: Defining Method Elements</a>.
+    </li>
+</ul>
+<p>
+    <strong>Customize an existing&nbsp;common method content element</strong>
+</p>
+<p>
+    Perform the following steps to customize&nbsp;an existing common method content&nbsp;element (e.g., role, work product,
+    guidance)&nbsp;to the core (tasks are generally not common, but are considered practice-specific):
+</p>
+<ul>
+    <li>
+        If one does not exist, create an Extends&nbsp;plug-in to contain the customizations.
+    </li>
+    <li>
+        Customize the elements the same way you customize any element. However, since common elements are shared across
+        practices, be sure to only include information that is common across practices. Do not include any associations
+        between elements as such relationships are better-defined in practices. For more information, see the topic
+        Customizing a Method Content Element in the&nbsp;<a class="elementLinkWithType" href="./../../../practice.bus.mdev.base/guidances/guidelines/defining_method_elements_CADE4FF6.html" guid="_fx7TMD3REd-realK_We5vA">Guideline: Defining Method Elements</a>.&nbsp;&nbsp;
+    </li>
+</ul>
+<h4>
+    Add a new shared domain or discipline
+</h4>
+<p>
+    Perform the following steps to add a new shared domain or discipline:
+</p>
+<ul class="noindent">
+    <li>
+        If one does not exist, create an Extends&nbsp;plug-in to contain the domain or discipline definitions.<br />
+        Note: Practice frameworks generally&nbsp;implement a Delayed Assignment&nbsp;approach for standard categories, so
+        it is recommended that domain and discipline definitions be placed in their own plug-in.&nbsp;
+    </li>
+    <li>
+        In the new plug-in, define the new standard category. Do not assign any elements to the categories as the
+        categorization of elements to standard categories is done in the practices.
+    </li>
+</ul>
+<h4>
+    Customize existing shared domains or disciplines
+</h4>
+<p>
+    Perform the following steps to customize and existing shared domain&nbsp;or discipline:
+</p>
+<ul class="noindent">
+    <li>
+        If one does not exist, create an Extends&nbsp;plug-in to contain the domain or discipline customizations.<br />
+        Note: Practice frameworks generally&nbsp;implement a Delayed Assignment&nbsp;approach for standard categories, so
+        it is recommended that domain and discipline definitions be placed in their own plug-in.&nbsp;
+    </li>
+    <li>
+        In the new plug-in, customize the standard category. Do not add any elements to the categories as the
+        categorization of elements to standard categories is done in the practices.
+    </li>
+</ul>
+<h3>
+    Documenting the Practice Framework Architecture
+</h3>
+<p>
+    Documenting the architecture of a Practice Framework&nbsp;is critical to making sure that key decisions are captured
+    and communicated to the development team. Documenting the practice framework architecture involves defining and
+    capturing the key guiding principles and a consistent approaches for structuring the framework, as well as documenting
+    the key structural elements.&nbsp;
+</p>
+<p>
+    In general, don't spend much time:
+</p>
+<ul>
+    <li>
+        getting the architecture perfect -- it can evolve over time as the individual method elements are defined and
+        detailed.&nbsp;
+    </li>
+    <li>
+        providing detailed descriptions of the method elements -- just name and briefly describe the elements and enter a
+        few outline details if it helps to more clearly describe the element's basic definition.
+    </li>
+</ul>
+<p>
+    Note: While documenting the architecture is important, it is not enough to just define&nbsp;it on paper.&nbsp;It is
+    important that the architecturally-significant method elements be actually built using your selected method
+    implementation environment.
+</p>
+<p>
+    When documenting the architecture, there are two key decisions that you need to make: what to include in the
+    architecture description and what level of detail. Each of these are described in the following sections.
+</p>
+<h4>
+    Architecture content
+</h4>
+<p>
+    The <strong><em>architecturally-significant method elements</em></strong> in a practice framework&nbsp;are the
+    following:
+</p>
+<ul>
+    <li>
+        Practices<br />
+        &nbsp;&nbsp;
+    </li>
+    <li>
+        Core elements: Elements shared across practices:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Work Product Slots: Information that passes between the practices,
+            </li>
+            <li>
+                Common method content elements (especially, roles, guidance, work products) such as the definitions that
+                are shared across practices,
+            </li>
+            <li>
+                Common&nbsp;standard categories (especially domains, disciplines, work product kinds, role sets, tools),
+            </li>
+            <li>
+                Common custom categories.<br />
+                &nbsp;
+            </li>
+        </ul>
+    </li>
+    <li>
+        Practice Configurations:&nbsp;Assemble practices into usable methods for practitioners
+    </li>
+</ul>
+<p>
+    The following are some examples of the <strong><em>types of decisions</em></strong> you might make (and document) when
+    architecting a method framework:
+</p>
+<ul>
+    <li>
+        Use a Delayed Assignment&nbsp;approach for role&nbsp;assignments and standard category assignments (except for
+        tools) in order to improve the flexibility and ability to configure the framework
+    </li>
+    <li>
+        Use a specific set of method plug-in&nbsp;and method configuration&nbsp;types in order to provide a consistent
+        approach for structuring the framework. We recommend the plug-in types defined in [Concept: Practice Library
+        Plug-In Types]&nbsp;and the configuration types defined in [Concept: Practice Library Configuration Types].
+    </li>
+    <li>
+        Follow a consistent set of naming conventions. We recommend the ones&nbsp;defined in&nbsp;<a class="elementLinkWithType" href="./../../../practice.bus.mdev.base/guidances/guidelines/general_naming_conventions_5651B0CC.html" guid="__I8S0D2kEd-lU6YVR9_PJQ">Guideline: General Naming Conventions</a>.&nbsp;
+    </li>
+    <li>
+        Provide recommendations and constraints for the following:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                How navigation view should be built
+            </li>
+            <li>
+                How standard categorization should be handled (as well as any common standard categories)
+            </li>
+            <li>
+                Approach for assigning roles&nbsp;(as well as any common roles)
+            </li>
+            <li>
+                Approach for scaling elements
+            </li>
+            <li>
+                Approach for associating guidance
+            </li>
+            <li>
+                Approach for dividing the architecture into smaller chunks to reduce complexity
+            </li>
+        </ul>
+    </li>
+</ul>
+<h4>
+    Level of detail
+</h4>
+<p>
+    There is a range of&nbsp;options for the information that can be captured in an architecture description. In some
+    cases, where there is an architectural decision to be made, there are a set of architecture notes that are written up
+    proposing what to do, discussing all the choices and the tradeoffs that have been made. These notes can be an email
+    thread, a forum thread, or a wiki. Then, the final decision is captured in an architecture document. The notes serve as
+    a historical record of decisions (if you keep them) and not a polished, maintained view of the architecture. The
+    maintained architecture document is a separate work product that is mainly targeted at new developers and maintainers
+    of the system, and to ensure the architecture does not degrade. The notes get filed in a notebook for later reference
+    in case people are curious why the team did something.
+</p>
+<p>
+    In summary, the following are the range of options for the architecture documentation:
+</p>
+<ol>
+    <li>
+        Keep a set of notes that are a historical collection of architecture notes that are not maintained
+    </li>
+    <li>
+        Keep a set of notes, plus define a high-level overview of the architecture
+    </li>
+    <li>
+        Keep a set of notes, an architectural overview, plus a set of distilled key decisions
+    </li>
+    <li>
+        Keep a set of notes, an architectural overview, a set of distilled key decisions and a set of evolutionary models
+    </li>
+    <li>
+        Keep a set of notes, an architectural overview, a set of distilled key decisions and a set of formal models at
+        different levels of abstraction
+    </li>
+</ol>
+<p>
+    For each project, it is important to decide which of the above options makes the most sense.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

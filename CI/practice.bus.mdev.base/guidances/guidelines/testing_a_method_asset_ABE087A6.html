@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Testing a Method Asset</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="testing_a_method_asset">
+<meta name="uma.presentationName" content="Testing a Method Asset">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_ytd9kKDhEd-nMJcdx60YsA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Testing a Method Asset</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes how to test method assets created with Method Composer.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1.0 Introduction
+</h3>
+<p>
+    Testing&nbsp;method assets is important because errors tend to build up over time.&nbsp; Some reasons for errors are:
+</p>
+<ul>
+    <li>
+        parallel work on method assets that have dependencies
+    </li>
+    <li>
+        forgetting to make updates to all dependent plug-ins
+    </li>
+    <li>
+        inexperienced method authors
+    </li>
+</ul>
+<p>
+    Before releasing a method asset, there are a number of types of tests that should be executed.&nbsp; These are
+    described in the following sections.
+</p>
+<h3>
+    2.0 Tools
+</h3>
+<p>
+    The following tools can be helpful for testing.
+</p>
+<ul>
+    <li>
+        IBM(R) Rational(R) Method Composer - adds features useful for testing that aren't available in EPF Composer, such
+        as BIRT reporting and spell checking.
+    </li>
+    <li>
+        Funduc Search and replace - excellent tool for global search and replace
+    </li>
+    <li>
+        Parasoft(R) WebKing(R) - checks for accessibility, spelling
+    </li>
+    <li>
+        Adobe(R) Dreamweaver(R) - fully-featured HTML editor
+    </li>
+    <li>
+        Scooter Software Beyond Compare - tool for comparing files and directories
+    </li>
+    <li>
+        IBM Automated Content Testing - scripts that check for a variety of issues and inconsistencies.&nbsp; This is part
+        of the Rational Method Authoring Quality Assessor packaged service asset.<br />
+    </li>
+</ul>
+<h3>
+    3.0 Orphans/Invalid Files/Dependencies
+</h3>
+<h4>
+    Invalid files
+</h4>
+<p>
+    Search and delete files left by&nbsp;Windows or&nbsp;the version control system.
+</p>
+<p>
+    *.keep - IBM(R) Rational(R) ClearCase(R)
+</p>
+<p>
+    thumbs - Microsoft(R) Windows(R)
+</p>
+<p>
+    Also, many file types are difficult to translate, and so we try to standardize on jpg for graphics and keep all text in
+    xmi or xml formats.
+</p>
+<p>
+    IBM Automated Content Testing provides a script "Test for File Types" which lists non-standard file types.
+</p>
+<h4>
+    All elements are categorized
+</h4>
+<p>
+    Browse the "all practices" configuration for disciplines and domains&nbsp;and confirm that the "uncategorized" category
+    is empty.<br />
+    Work product slots are an exception.
+</p>
+<h4>
+    Orphan files
+</h4>
+<p>
+    Make a copy of the library and delete all packages, custom categories, processes. Do not delete the plug-ins, as that
+    will delete all files including orphans.&nbsp; Any remaining xmi files must be orphans, and should be removed from
+    ClearCase. Caution – get the team to confirm before doing the delete – the problem may be that the file should be added
+    back in rather than be removed.
+</p>
+<h4>
+    Orphan resource files
+</h4>
+<p>
+    Try RMC's "Edit&gt;Clean Resources" in a copy of the library, then use beyond compare to determine what changes were
+    made.
+</p>
+<h4>
+    All tasks and work products have a responsible role
+</h4>
+<p>
+    Browse the published web site looking at each role and work product.&nbsp; Can create BIRT reports to detect this.
+</p>
+<p>
+    IBM Automated Content Testing includes a report "Check for Primary Performer" that reports on tasks that have no
+    primary role and work products that have no responsible role.
+</p>
+<h4>
+    All tasks have an input and output work product
+</h4>
+<p>
+    Strictly speaking, a task might not have any input work products, but generally if a task is missing inputs and/or
+    outputs, it is usually an oversight.&nbsp; Browse the published web site looking at each task.&nbsp; Can create BIRT
+    reports to detect this.
+</p>
+<p>
+    IBM Automated Content Testing includes a report "Check for Input and Output Artifact" that reports on tasks that are
+    missing inputs and outputs.
+</p>
+<h4>
+    Unreferenced core elements
+</h4>
+<p>
+    Every element in "core" should be referenced by at least once practice in the library.<br />
+    A BIRT report can be used for this.&nbsp; Unused elements should be moved out of the release.
+</p>
+<h4>
+    External broken links
+</h4>
+<p>
+    Choose the publishing option to check external hyperlinks.
+</p>
+<h4>
+    Dependency Testing
+</h4>
+<p>
+    Publish each practice on its own (can use the RMC Process Builder).
+</p>
+<p>
+    Confirm that there are no broken link errors (there may be errors if, for example, there is a link to a guideline, but
+    that guideline is not explicitly attached to any elements in the plug-in).
+</p>
+<p>
+    Create a configuration that has no practices, just Core.&nbsp; Confirm that there are no errors (that no core plug-ins
+    depend on practice plug-ins).
+</p>
+<p>
+    Confirm that there are no unnecessary dependencies.&nbsp; Publish a configuration with all practices, but no assign
+    plug-ins or definition plug-ins for those assignments.
+</p>
+<h3>
+    4.0 Method composer error reports and logs
+</h3>
+<h4>
+    Publication errors
+</h4>
+<p>
+    Fix or explain every error in the publication log for each of the available configurations.
+</p>
+<h4>
+    Configuration errors
+</h4>
+<p>
+    Fix or explain every error and warning in the error log tab for each of the available configurations.
+</p>
+<h4>
+    Library problem view
+</h4>
+<p>
+    Fix or explain every error in the library problem view.<br />
+    - open every configuration to make sure errors are loaded
+</p>
+<h4>
+    Library validation
+</h4>
+<p>
+    Enable Preferences/Method/Authoring/Debug/Enable method library validation.
+</p>
+<p>
+    Run "Validate Method Library".
+</p>
+<p>
+    View the logs and correct any errors.
+</p>
+<h3>
+    5.0 Regression testing
+</h3>
+<p>
+    When upgrading to a new version of Method Composer, check that contributes, extends, replace work as expected.&nbsp;
+    Find an example in the library, confirm it works as expected.
+</p>
+<p>
+    Use Beyond Compare to list the differences in the published sites. Confirm that the changes were expected.
+</p>
+<h3>
+    6.0 Standards
+</h3>
+<p>
+    The tests below describe how to test and correct the most common violations of authoring standards.
+</p>
+<h4>
+    File naming conventions
+</h4>
+<p>
+    Use windows search and scan for mixed-case file names, spaces in filenames, or long filenames.
+</p>
+<h4>
+    Bad HTML
+</h4>
+<p>
+    Microsoft fonts: Search for MsoNormal, Font-family, and Microsoft to detect Microsoft word originated HTML. Use word
+    cleanup macro in Method Composer, Dreamweaver and manual means to clean it up.<br />
+    <br />
+    Extra fonts on links (inserted by old version of Method Composer)
+</p>
+<p>
+    Search for font color="#0000ff and check if is part of a link. If lots, use search/replace script to do a global
+    replace.
+</p>
+<h4>
+    Bad character testing
+</h4>
+<p>
+    Certain non-ASCII characters cause problems with some browsers and translation tools.&nbsp; The most common problem
+    characters are curly quotes and bullets inserted when pasting from Microsoft(R) Word(R).
+</p>
+<p>
+    Use search and replace – search for [~-ÿ]. For any unexpected characters, replace with correct characters.
+</p>
+<ul>
+    <li>
+        curly single and double quotes - replace with straight quotes typed from the keyboard (" and ')
+    </li>
+    <li>
+        bullets and dash/emdash&nbsp;- replace with hyphen
+    </li>
+    <li>
+        guillemets - replace with double angle brackets &lt;&lt; &gt;&gt;&gt;
+    </li>
+</ul>
+<p>
+    Remember that the XMI files contain escaped HTML, so be careful with characters that are defined with an ampersand,
+    such as trademarks&nbsp;- in XMI you may need an additional ampersand.
+</p>
+<h4>
+    Brief descriptions
+</h4>
+<p>
+    Run a BIRT report to extract brief descriptions.&nbsp; Everything except checklists should have brief descriptions.
+</p>
+<h4>
+    Project and directory names
+</h4>
+<p>
+    When using workspaces, it is easy for plug-in name, plug-in folder name, and plug-in project names to become
+    inconsistent.&nbsp; Use search-replace to find all plug-in names and project names.
+</p>
+<ul>
+    <li>
+        search for methodplugin*name in all plugin.xmi files
+    </li>
+    <li>
+        search for &lt;NAME&gt; tags&nbsp;in all .project files
+    </li>
+</ul>
+<p>
+    Copy results into a text file (including filenames), remove non-name text, sort in Excel, and look for differences
+    between directories, project names, and plug-in names.
+</p>
+<h4>
+    Version and copyright information
+</h4>
+<p>
+    Every practice and the library as a whole should have a "release info" page that describes the latest release.
+</p>
+<p>
+    Confirm that these pages are included in the published configurations' views
+</p>
+<ul>
+    <li>
+        In EPF Composer&nbsp;- you need to check the views by hand
+    </li>
+    <li>
+        In Rational Method Composer&nbsp;&nbsp;- you need to check that every "release_info" page is tagged
+    </li>
+</ul>
+<p>
+    Confirm that every plug-in has the appropriate copyright (open source has EPF copyright, company owned content has
+    company copyright), and confirm it publishes correctly.
+</p>
+<p>
+    Confirm that licencing/legal information is attached and publishes.
+</p>
+<h4>
+    Accessibility
+</h4>
+<p>
+    Use Parasoft WebKing to check compliance with accessibility standards.
+</p>
+<h4>
+    Spelling/Grammar/Readiness for translation
+</h4>
+<p>
+    Spell check is provided by Rational Method Composer on a per element and per plug-in basis.&nbsp; You can also check an
+    entire library using WebKing.
+</p>
+<p>
+    IBM Automated Content Testing also has a script "Style Search" that checks for common style problems, such as words
+    that are difficult to translate.
+</p>
+<p>
+    Content that is intended to be translated has to go through additional checks in order to ensure that it will work with
+    translation memory tools.
+</p>
+<p>
+    For example, IBM uses IBM internal tools - SEGCHK to check for grammar errors, and CHKPII for bad characters, prior to
+    translation.&nbsp;Commercial translation tools will have their own validation tools.
+</p>
+<h4>
+    Browser Compatibility
+</h4>
+<p>
+    Open up a published configuration in the supported browsers and compare each kind of page. A work product, a guideline,
+    a checklist, a task and an activity with an activity diagram and work breakdown structure. Confirm that they look
+    reasonably similar - that no odd fonts are appearing, that text is readable, links are working, and so on.
+</p>
+<p>
+    Then expand your screen to as large as possible (to allow maximum viewing of each page) and use the keypad to open each
+    page in the treebrowser and confirm that nothing strange appears (missing graphics, corrupted HTML, and so on).
+</p>
+<h4>
+    Publication options
+</h4>
+<p>
+    Review the publication options, and confirm that they are correct.
+</p>
+<p>
+    Make sure the feedback for each configuration is directed to the right location, and works after publishing.
+</p>
+<h4>
+    Synchronization
+</h4>
+<p>
+    Confirm that processes that require synchronization have been synchronized after any and all method content was
+    finalized.
+</p>
+<h4>
+    Index, glossary, search
+</h4>
+<p>
+    Confirm that the index, glossary, and search all work.
+</p>
+<h4>
+    Supporting plug-ins
+</h4>
+<p>
+    Confirm that the "is_supporting" flag has been used correctly on core plug-ins.&nbsp;Publish a configuration that only
+    has a few practices, and look for additional elements that don't belong, such as&nbsp;unused roles, unused tasks, and
+    unused work products.
+</p>
+<h4>
+    Locking
+</h4>Confirm that the released library has all plug-ins locked so that users that extend the library do no inadvertently
+modify them.<br />
+<br />
+<h3>
+    7.0 Rational Method Composer-only Tests
+</h3>
+<p>
+    The following tests do not apply to EPF Composer.
+</p>
+<h4>
+    Process Builders
+</h4>
+<p>
+    Confirm that process builders work correctly.<br />
+    - all practices are presented in the builders<br />
+    - every practice has a brief description that is readable in the builder, and matches the brief description for the
+    practice.
+</p>
+<p>
+    Confirm that the "all practices" configuration matches what is displayed by the IBM practices builder.&nbsp; (The
+    builder may do further decomposition to identify alternative practices).
+</p>
+<h4>
+    Orphaned tags
+</h4>Unused tags should be found and removed.</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    This program and the accompanying materials are made available under the<br />
+    <a href="http://www.eclipse.org/org/documents/epl-v10.php" target="_blank">Eclipse Public License V1.0</a>, which
+    accompanies this distribution.
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.base/guidances/supportingmaterials/epf_copyright_C3031062.html" guid="_UaGfECcTEduSX6N2jUafGA">EPF Copyright</a>.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

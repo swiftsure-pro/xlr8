@@ -1,0 +1,492 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Creating Plug-ins, Practices and Configurations</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="creating_plugins_practices_configurations">
+<meta name="uma.presentationName" content="Creating Plug-ins, Practices and Configurations">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_EXvLwD3NEd-realK_We5vA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Creating Plug-ins, Practices and Configurations</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline explains how to name and briefly describe a method plugin.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.bus.mdev.extend-ibm/tasks/design_method_asset_93DAD19A.html" guid="_tBQ3kOxoEdydutqrlpQKOw">Design Method Asset</a>
+</li>
+<li>
+<a href="./../../../practice.bus.mdev.extend-ibm/tasks/imp_method_asset_D86CEB87.html" guid="_RNws4OyTEdyqmvtIFY3mOg">Implement Method Asset</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Defining Plug-ins
+</h3>
+<p>
+    &nbsp;The following are some general guidelines when defining <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/method_plugin_190B9F5E.html" guid="_D4TLgMaGEduMlb2cQZNTYw">method plug-in</a>s:
+</p>
+<ul class="noindent">
+    <li>
+        Name and briefly describe the plug-in.&nbsp;<br />
+        &nbsp;&nbsp;
+    </li>
+    <li>
+        Capture the source of the information for the plug-in.&nbsp;This information is important if you ever need to
+        provide source information for the plug-in for documenting ownership rights.<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    </li>
+    <li>
+        Maintain accurate change histories, as well as making sure your trademarks and copyrights are accurate.&nbsp;<br />
+        &nbsp;
+    </li>
+    <li>
+        Identify any plug-ins that the plug-in must reference (in other words, the plug-ins the new plug-in depends
+        on).<br />
+        &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>
+            Define content packages to contain the method elements.&nbsp;Alternatively, those packages can be created on
+            demand, as method elements are defined in the plug-in.
+        </p>
+    </li>
+</ul>
+<p style="LIST-STYLE-TYPE: none">
+    Consider the following when deciding whether or not to create a new plug-in:
+</p>
+<ul class="noindent">
+    <li>
+        Don't modify content in plug-ins that are locked or owned by other parties. Instead, create a new plug-in that
+        extends or replaces the base content. Standard plug-ins provided as part of a standard library should be locked to
+        avoid inadvertent changes. Lock any third-party plug-ins after importing them.
+    </li>
+    <li>
+        Each plug-in has a physical file that contains information about all of the other content elements in the plug-in.
+        Therefore, if several individuals are working on content for the same plug-in, that file will need to be carefully
+        controlled. In such cases, you may want to consider dividing the method content that will be added to the base
+        method content into more than one plug-in to avoid contention over the plug-in file.
+    </li>
+    <li>
+        Before defining new plug-ins, be sure to review the structure and content of existing method plug-ins.&nbsp;This is
+        especially important in those cases where you are customizing or building on an existing method.
+    </li>
+</ul>
+<h4>
+    Defining plug-ins in&nbsp;UMF&nbsp;&nbsp;
+</h4>
+<p>
+    When defining plug-ins that are to exist within the Unified Method Framework (UMF), the practice framework plug-in
+    types need to be considered. These types affect what elements can be placed in what plug-in.&nbsp; For example, base
+    definitions for practice-specific method elements are defined in Practice Base (or Extend) plug-ins, and base
+    definitions for non-practice-specific method elements are defined in Core Base (or Extend) plug-ins. However,
+    assignments that are delayed are defined in Assign plug-ins.&nbsp;&nbsp;&nbsp;
+</p>
+<p>
+    In addition, all UMF plug-ins must have a specified copyright (see the topic Copyrights in the UMF below), as well as
+    release information.
+</p>
+<h3>
+    Defining Plug-ins using Templates
+</h3>
+<p>
+    Method content&nbsp;descriptions can be written using templates.&nbsp; The resulting documents can then be used to
+    collaboratively complete the content.
+</p>
+<p>
+    This method of method element authoring is appropriate when:
+</p>
+<ul>
+    <li>
+        A method authoring tool is not being used.
+    </li>
+    <li>
+        There is a need for support for markup and reviews of the content being developed that is not provided in the
+        method authoring tool being used.
+    </li>
+    <li>
+        There is a reason not to have each author use the authoring tool directly for authoring the content (for example,
+        the desire to not have to train all the SMEs to use the tool before they can provide content).
+    </li>
+</ul>
+<p>
+    To use templates:
+</p>
+<ul>
+    <li>
+        Create a template that represents the information you want to capture for each type of method element.
+    </li>
+    <li>
+        Make the templates available to the content authors (e.g., via a customized Method Authoring Method).
+    </li>
+    <li>
+        Complete and review the content for each content element to be authored in this fashion.
+    </li>
+    <li>
+        Once the content has been reviewed and approved, migrate the content into the the method authoring tool.
+    </li>
+</ul>
+<p>
+    Once the content in the template has been reviewed and is fairly stable, if a method authoring tool is being used, the
+    content can be migrated to the tool.
+</p>
+<h3>
+    Packaging Method Elements
+</h3>
+<p>
+    Method packages represent a set of selectable method content elements that provide the user with flexibility in
+    choosing what portions of the method he wants to publish. Method elements in one package can reference elements in
+    another package.
+</p>
+<p>
+    Method packages should be used to represent logical units for useful configurations – sets of elements that should
+    either be included together in a configuration or excluded from a configuration. The user can choose which packages to
+    include in the published site by making selections in the configuration.
+</p>
+<p>
+    Consider packaging very carefully to provide flexibility in what is published. For example, you could put all of the
+    tool mentors for a specific tool into a single content package.&nbsp; This makes it very easy for someone to deselect
+    the tool mentors from publication.<br />
+    <br />
+    Packages should be defined so that selecting all packages does not result in overlapping or conflicting content. If
+    alternatives are needed, separate plug-ins should be defined, not just separate packages.
+</p>
+<p>
+    Method packages can also be used to collect obvious categories of content to make it easy to find things, as opposed to
+    just seeing a long list of elements.&nbsp;
+</p>
+<p>
+    The following sections provide guidelines on the use of the two types of packages: method content packages and process
+    packages.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<h4>
+    Method content packages
+</h4>
+<p>
+    There are several organizational strategies that can be applied to refine the method content packaging structure.&nbsp;
+</p>
+<h5>
+    Option 1: Organizing the content packages along the major areas of concern of the plug-in.
+</h5>
+<p>
+    When organizing the method content packages of the plug-in along the plug-in's major areas of concern, group all method
+    content that supports a specific area of concern together in the same (or sub-) content packages.
+</p>
+<p>
+    The pros of organizing the content packages along the plug-in's major areas of concern are as follows:
+</p>
+<ul>
+    <li>
+        It is easy for users configuring the method to select only those areas of concern that they are interested in.
+    </li>
+    <li>
+        The method package structure truly reflects the architecture of the plug-in itself, where each content package is
+        cohesive, but loosely coupled with other packages.
+    </li>
+    <li>
+        A plug-in's content package structure should not be dependent on the base library package structure, which may
+        change at any time.
+    </li>
+</ul>
+<p>
+    The cons of organizing the content packages along the plug-in's major areas of concern are as follows:
+</p>
+<ul>
+    <li>
+        When the plug-in's package structure is not aligned the base library's package structure, it is harder to see what
+        plug-in content packages should be selected when specific base content packages are selected. When the packages are
+        aligned, it is easy to see where the plug-in content fits into the base content.
+    </li>
+</ul>
+<h5>
+    Option 2: Echo the packaging used in the base plug-in.
+</h5>
+<p>
+    In this approach, align the content package with the base plug-ins content packages. Define a content package structure
+    that looks just like the base plug-in's and place the method content elements in the most appropriate package.
+</p>
+<p>
+    If content is contributed to only one or two packages of the base plug-in, rather than to most packages, echo only that
+    portion of the base plug-in structure that is needed. For instance, if the base package \Design\Visual Modeling is the
+    only package modified, echo only the base plug-in packaging structure of \Visual Modeling and its eventual
+    sub-packages.
+</p>
+<p>
+    The pros of aligning the plug-in package structure with the base content's are as follows:
+</p>
+<ul>
+    <li>
+        When the packages are aligned, it is easy to see where the plug-in contents fit into the base plug-in.
+    </li>
+    <li>
+        It also preserves the package selection choices provided by the base plug-in for publication.
+    </li>
+</ul>
+<p>
+    The cons of aligning the plug-in package structure with the base plug-in's are as follows:
+</p>
+<ul>
+    <li>
+        The plug-in structure does not reflect its architecture, but instead reflects the base plug-in's architecture,
+        which can change at any time.
+    </li>
+</ul>
+<p>
+    Method elements that support specific aspects of the plug-in are not packaged together, so it is not easy to select
+    relevant subsets of content to be included in a configuration.
+</p>
+<h4>
+    Process packages
+</h4>
+<p>
+    Process packages organize processes so they can be managed and located easily. The Configuration View is often used
+    when defining new processes because drag and drop is enabled from this view into the process editors. In this view,
+    plug-in divisions are not shown, so it can sometimes be helpful to define process packages in plug-ins as the process
+    packaging hierarchy for each plug-in is preserved.&nbsp;For example, you may want to put all processes in a plug-in in
+    a process package that is named&nbsp;to represent the plug-in.&nbsp; If a plug-in has many processes, you may want to
+    define subpackages.&nbsp;
+</p>
+<p>
+    In most cases,&nbsp;process packages are used for capability patterns only (the number of delivery processes is usually
+    so small,&nbsp;packages are not&nbsp; needed).&nbsp;
+</p>
+<h3>
+    Defining Method Configurations
+</h3>
+<p>
+    This guideline describes how to define <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/method_configuration_C2B8FA8A.html" guid="__V7pAMaEEduMlb2cQZNTYw">method configuration</a>s.&nbsp; Method configurations&nbsp;may be defined for multiple
+    reasons.&nbsp;Some of the most common reasons are to support the <em>construction of processes</em> (process
+    construction configurations) and to support the <em>publishing of the method</em> (publishable method configurations).
+</p>
+<p>
+    Defining a configuration involves identifying the configuration, naming&nbsp;it and briefly describing it. It is also
+    important to maintain accurate change histories, as well as make sure your trademarks and copyrights are accurate.
+</p>
+<h4>
+    Defining process construction configurations
+</h4>
+<p>
+    Every process must have a default configuration.&nbsp;Thus, some configurations may be defined just to serve as the
+    default configuration for a process, as opposed to being published.&nbsp;Process construction configurations include
+    just those plug-ins that contain elements that are needed to construct the process and no more. They do not have
+    associated navigation views (they are not intended to be published).&nbsp;When naming and describing construction
+    configurations, it is recommended that you include the name of the plug-in containing the processes the configuration
+    is the default for in the name of the configuration.
+</p>
+<h4>
+    Defining publishable configurations
+</h4>
+<p>
+    Defining publishable configurations is where you think about how you might like to see the elements get
+    published.&nbsp;Which plug-ins should be published together? How many different web sites do you need?&nbsp; A
+    publishable configuration should be defined for each target audience/variant of the method. For example, if you need a
+    version of the method that focuses on small projects, provide a small projects configuration. If you need a version of
+    the method for more large, complex and formal projects, provide a configuration with more content appropriate to that
+    context. When defining configurations that are intended to be published, try to minimize the size and maximize
+    effectiveness of the published method. Defining configurations is a key part of method authoring. However, selecting
+    the correct set of elements to be included in a configuration can be a difficult and time consuming activity. A few
+    well chosen and high quality elements are worth far more to the end user than a plethora of elements that really don't
+    address the problem at hand. Publishable configurations identify navigation views that are to be published.
+</p>
+<p>
+    When defining a publishable configuration, in the Main description describe the target audience for the configuration
+    and any other relevant details about it. This information is not published; it is intended primarily for the users of
+    method content to decide if they want to use this configuration.
+</p>
+<p>
+    As with all configurations, an important part of defining a publishable configuration is selecting the plug-ins and/or
+    packages that are to be published, as well as specifying those elements that should not be published.&nbsp;
+</p>
+<p>
+    In addition, the navigation views that are to be published for the configuration should be specified, as well as any
+    publish options.
+</p>
+<h3>
+    Defining Practice Configurations
+</h3>
+<p>
+    Practice Configurations are an important artifact in a Practice Framework&nbsp;as they assemble a specific set of <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/concepts/practice_F5C8EAAB.html" guid="_qhCTAFRREd2CWscN8Mx6rg">Practice</a>s into something a practitioner can use.&nbsp;When defining the practice
+    configuration, you must adhere to the architecture of the framework in which the configuration is to exist.
+</p>
+<p>
+    Thus, when trying to decide what practice configurations to produce, it is important to take the time to understand the
+    nature of the business problem the practice configuration is intended to solve (the configuration's purpose) and who
+    will be the primary consumers of the configuration (the configuration's intended audience). Understand what the scope
+    of the problem is and the approach to solving it. This understanding forms the basic information that will guide many
+    decisions that will affect the ultimate usefulness of the process configuration. It will also guide you in choosing an
+    applicable name for the practice configuration.&nbsp;
+</p>
+<p>
+    At this point, its even a good idea to identify practices that will be included in the practice configuration, as well
+    as any cross-practice processes that may be included and what practices they will be assembled from.&nbsp;These are not
+    defined in detail at this stage, but identifying them can help clarify the scope of the practice configuration.
+</p>
+<p>
+    In summary, the following are some key pieces of information that you should capture for a practice configuration and
+    some examples for that information:
+</p>
+<ul>
+    <li>
+        Name: MAM for Organization X
+    </li>
+    <li>
+        Purpose: Describe the best practices for authoring practice frameworks at Organization X.
+    </li>
+    <li>
+        Scope: All MAM practice framework practices plus Organization X customizations.
+    </li>
+    <li>
+        Intended Audience: Process Engineers at Organization X<br />
+    </li>
+</ul>
+<p>
+    Practice configurations are physically represented by publishable configurations. Thus, defining a practice
+    configuration involves identifying, naming and briefly describing that publishable configuration, and including the
+    above information in the definition of the publishable configuration.&nbsp;For more information on publishable
+    configurations, see [Concept: Practice Library Configuration Types].&nbsp;
+</p>
+<p>
+    Note: A practice configuration can be defined by mimicking an existing practice configuration. In that case, you can
+    define the new practice configuration by copying components of the original practice configuration, including the
+    existing practice configuration's method configuration and practice configuration-specific Publish plug-in.
+</p>
+<h3>
+    Defining Practice Configuration Welcome Page
+</h3>
+<p>
+    Every Practice Configuration&nbsp;should have a Welcome page that&nbsp;clearly states the purpose, scope and intended
+    audience for the configuration.&nbsp;
+</p>
+<p>
+    It is also a good idea to describe, at a high-level, how the practices included in the configuration fit together
+    (remember, a practice configuration is more than just a collection of practices).&nbsp;This high-level description may
+    be in any format, whether that be textual (like a roadmap) or graphical (like an activity diagram, flow chart,
+    capability pattern, etc.).&nbsp;Treat this overview as though it were the introduction to a book (where the practice
+    configuration is the book).&nbsp; It should give the reader the lay of the land without going into too much detail.
+</p>
+<p>
+    In addition, if the practice configuration includes multiple navigation views, each addressing the navigation needs of
+    a particular type of user, it is usually a good idea to describe what navigation views are available and when you
+    should use one versus the other.&nbsp;
+</p>
+<p>
+    The Welcome page is also a good place to link to release&nbsp;information for the configuration.
+</p>
+<p>
+    Welcome pages are defined as <a class="elementLink" href="./../../../core.default.uma_concept.base/guidances/termdefinitions/supporting_material_F91C8C5B.html" guid="_SwvUgMaIEduMlb2cQZNTYw">supporting material</a>&nbsp;guidance elements with a special icon.
+</p>
+<h3>
+    Copyrights in the UMF
+</h3>
+<p>
+    In the Unified Method Framework (UMF), every plug-in must have an associated copyright (and every plug-in can only have
+    one copyright).&nbsp;
+</p>
+<p>
+    Copyrights are defined in Release Copyright plug-ins. There is one Release Copyright plug-in per licensing
+    level&nbsp;that contains the copyright elements (defined as supporting material guidance elements) for that level.
+    Every plug-in at a particular licensing level needs to be associated with the copyright for that licensing level.
+    Copyrights are associated to plug-ins as part of the plug-in's definition.
+</p>
+<p>
+    If a specific copyright is needed for a specific plug-in, then perform the following to create a specialized copyright:
+</p>
+<ol>
+    <li>
+        Define an Extends plug-in for the Release Copyright plug-in at the licensing level of the plug-in requiring the
+        special copyright.
+    </li>
+    <li>
+        In the Extends plug-in, define a supporting material guidance element that extends the copyright element for that
+        licensing level. This results in a new copyright element that looks just like the original copyright element that
+        was extended.&nbsp;
+    </li>
+    <li>
+        Also in the Extends plug-in, define a supporting material guidance element that contributes to the extending
+        copyright element and add whatever special copyright information is needed. Now you have a specialized copyright
+        that includes the appropriate copyright&nbsp;information for the licensing level plus the special copyright
+        information.&nbsp;<br />
+        Note: The extending element and the contributing element are both needed. If you add the specialized copyright
+        information to the extending element, then that information would override the text in the original base, and in
+        this case, that is not what we want (we want to add the specialized copyright information to the general licensing
+        level copyright information).&nbsp;By using the extend-contributes pair, you can create a new element that includes
+        the same content as an existing element plus more. For more information on method content variability, see the
+        topic Using Method Content Variability in the <a class="elementLinkWithType" href="./../../../practice.bus.mdev.base/guidances/guidelines/defining_method_elements_CADE4FF6.html" guid="_fx7TMD3REd-realK_We5vA">Guideline: Defining Method Elements</a>.
+    </li>
+    <li>
+        Associate the specialized copyright to the plug-ins (or individual method elements) that need it (copyrights
+        associated with a plug-in are automatically associated with all elements in the plug-in).
+    </li>
+</ol></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    This program and the accompanying materials are made available under the<br />
+    <a href="http://www.eclipse.org/org/documents/epl-v10.php" target="_blank">Eclipse Public License V1.0</a>, which
+    accompanies this distribution.
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.base/guidances/supportingmaterials/epf_copyright_C3031062.html" guid="_UaGfECcTEduSX6N2jUafGA">EPF Copyright</a>.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

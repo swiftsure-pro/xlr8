@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Task: Architect the Method Library</title>
+<meta name="uma.type" content="Task">
+<meta name="uma.name" content="architect_method_library">
+<meta name="uma.presentationName" content="Architect the Method Library">
+<meta name="uma.category" content="Discipline:sw_capability_improv:Software Capability Improvement">
+<meta name="element_type" content="activity">
+<meta name="filetype" content="description">
+<meta name="role" content="Solution Architect">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, '', true, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_UjkDIEmfEd-CwKa38aS3Iw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Task: Architect the Method Library</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/task.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This task describes how to define the static structure of a method, as well as the operational structure for deploying and using method assets.</td>
+</tr>
+<tr>
+<td>Disciplines: <a href="./../../core.default.cat_def.extend-ibm/disciplines/sw_capability_improv_D7E4D34.html" guid="_waeqoK-wEd-DJdCOr1QLDg">Software Capability Improvement</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The purpose of this task is to define the key structure of a method library to support the method needs of the
+    organization.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Primary Performer:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.extend-ibm/roles/solution_architect_3A414157.html" guid="_MEx2UD_tEd6ILenFiz636g">Solution Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Additional Performers:
+								</span></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Mandatory:
+								</span>
+<ul>
+<li>
+<a href="./../../core.bus.slot.base-ibm/workproducts/business_requirements_slot_D4719911.html" guid="_LQx4cBYREd2eavK0BKAMiA">[Business Requirements]</a>
+</li>
+</ul>
+<ul></ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Optional:
+								</span>
+<ul>
+<li>
+<a href="./../../core.bus.slot.base-ibm/workproducts/business_design_slot_E033C894.html" guid="_OIXJkBYREd2eavK0BKAMiA">[Business Design]</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Outputs</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../practice.bus.mdev.extend-ibm/workproducts/method_arch_D42175BA.html" guid="_aZI2ECy3Ed2TPpbydIQMow">Method Architecture</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">Architecting a new&nbsp;method library&nbsp;involves prototyping the framework, defining the framework and detailing the
+core framework elements (those elements that are shared across the practices). Depending on the "newness" and/or complexity
+of the intended practice framework, you may decide to do some prototyping. Once you feel comfortable with the scope,
+general "shape" and technical feasibility of what you are building, it is time to capture the practice framework more
+formally. Once the practice framework architecture is established, you can turn your attention to detailing the core method
+elements. All detailing work must be performed within the constraints of the practice framework architecture. <br />
+<br />
+The primary results include the practice framework prototype, the initial practice framework definition, including the core
+elements and the practice framework architecture documentation .</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Steps</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="sectionTableSingleCell">
+<div class="stepHeading">Sketch the practice framework</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Develop a proof-of-concept</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Structure the practice framework</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Detail practice core elements</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Document the practice framework</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../practice.bus.mdev.extend-ibm/guidances/guidelines/architecting_method_library_CFC2E7B4.html" guid="_EgX2cDt0Ed-0GPJdQkFa_A">Architecting a Method Library</a>
+</li>
+<li>
+<a href="./../../practice.bus.mdev.base/guidances/guidelines/general_naming_conventions_5651B0CC.html" guid="__I8S0D2kEd-lU6YVR9_PJQ">General Naming Conventions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>
