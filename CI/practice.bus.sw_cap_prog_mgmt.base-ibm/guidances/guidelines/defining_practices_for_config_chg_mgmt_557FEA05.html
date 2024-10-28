@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Defining Practices for Configuration and Change Management</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="defining_practices_for_config_chg_mgmt">
+<meta name="uma.presentationName" content="Defining Practices for Configuration and Change Management">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_LZWHYE5iEd-TbrfwCHSPcA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Defining Practices for Configuration and Change Management</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline provides considerations for defining practices that projects will use for configuration and change management.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/considerations_for_org_process_def_4CB1533A.html" guid="_TSiRME5iEd-TbrfwCHSPcA">Considerations for Organizational Process Definition by Process Area</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Change Management and Configuration Management are closely related process areas. Change management is the process of
+    planning and coordinating the implementation of product changes in a planned, authorized, logical, and orderly fashion.
+    It does not develop changes, nor does it implement them. Configuration Management is the process of controlling and
+    synchronizing the evolution of the set of work products composing a software system
+</p>
+<p>
+    In order to understand the impact of changes and to plan for verification, change requests must identify which versions
+    of which artifacts were affected by the change. A common problem with stand-alone change management practices and tools
+    is a lack of traceability to the affected configuration items. For this reason, it is critical to integrate your
+    Configuration Management and Change Management processes.
+</p>
+<p>
+    Change and Configuration management are also related to Product Integration. The purpose of this process area is to
+    incrementally assemble the product from its components, ensuring&nbsp;that the integrated product functions properly.
+    Milestone builds and releases must have traceability to all implemented changes and their associated configuration
+    items.
+</p>
+<p>
+    Reference the following&nbsp;typical activities and key considerations for&nbsp;these three process areas as you define
+    practices&nbsp;for your organization.
+</p>
+<h3>
+    Configuration Management&nbsp;
+</h3>
+<h4>
+    Identification of&nbsp;configuration items
+</h4>
+<p>
+    Organizations should specify which work products and what parts of work products should be placed under configuration
+    management, and what specific controls are required, and when those controls are applied.
+</p>
+<p>
+    One way to represent this is with a table that lists work products or parts of work products, and lists the type of
+    configuration control required, and in what phase they are placed under configuration control.&nbsp; A separate
+    guideline (or practice) then describes the different types of configuration control, if there is more than one.&nbsp;
+    You may also wish to specify how configuration controls change for a single work product through different phases of
+    the project.
+</p>
+<p>
+    Another approach is to have a general policy that can be used to determine whether work products need to be under
+    configuration control.&nbsp; For example, you might just mandate that all project deliverables are placed under
+    configuration control, rather than have a separate table.&nbsp; You might also have a policy that says project
+    deliverables are placed under configuration control in the phase where they are first formally reviewed.
+</p>
+<h4>
+    Levels of configuration control
+</h4>
+<p>
+    Typical levels of configuration control on projects are:
+</p>
+<ul>
+    <li>
+        No controls - this typically applies to work products that have no long-term value, such as results of
+        brainstorming efforts, throw away prototypes, and so on.
+    </li>
+    <li>
+        Version control only - in this case, you may capture past versions of a work product, but not have any controls on
+        what changes are made, by who, or why.
+    </li>
+</ul>
+<h4>
+    Naming conventions
+</h4>
+<p>
+    Organizations may wish to specify naming conventions for different kinds of configuration items.
+</p>
+<h4>
+    Configuration management audits
+</h4>
+<p>
+    Define the policies for configuration audits.&nbsp;These audits ensure&nbsp;that the system satisfies the specified
+    requirements, including all approved change requests, and nothing more.&nbsp;
+</p><br />
+<h4>
+    Configuration management environments
+</h4>
+<p>
+    Organizations should specify tools and tooling configurations that automate the configuration management process and
+    enforce configuration management policies.
+</p>
+<p>
+    This includes the following.
+</p>
+<h5>
+    Role authorization and notification
+</h5>
+<p>
+    You may wish to limit access to certain kinds of information to particular project roles.&nbsp; For example, project
+    plans may not be available to customer representatives directly.&nbsp;&nbsp;Project plans&nbsp;may be updateable only
+    by the project manager.&nbsp; You may also set up automatic notifications so that certain roles are notified when
+    configurations items are changed.
+</p>
+<p>
+    The level of controls applied may be different for different project types.&nbsp; For example, you may wish to have a
+    high trust environment with very few controls in order to encourage high levels of collaboration.
+</p>
+<h5>
+    Archival policies and mechanisms
+</h5>
+<p>
+    Certain work products may be important to archive for metrics, compliance, or other reasons.&nbsp; These may be
+    identified using a table that lists work products that need to be archived.&nbsp; Or you may have a general policy to
+    identify which items to archive, such as "archive all configuration controlled items".
+</p>
+<h5>
+    Product directory structure
+</h5>
+<p>
+    Organizations may propose one or more standard product directory structures to organize configuration items.
+</p>
+<h5>
+    Baselining
+</h5>
+<p>
+    You may wish to establish policies on who can create a baseline, what kinds of work products are included, and what
+    approvals are required.
+</p>
+<p>
+    Baselines should be created from approved configuration items only.&nbsp;
+</p>
+<h3>
+    Change management
+</h3>Define Change Management practices to provide project teams with explicit approaches for controlling changes,
+including defining states for&nbsp;change requests&nbsp;and tasks for transitioning change requests&nbsp;between their
+specified states. 
+<p>
+    A good rule of thumb is to have as much formality as you require, and no more. Generally, it is most efficient to
+    minimize formal change control to highly visible features, and allow the project team to manage lower-level details
+    with a minimum of overhead. Organizations typically define a formal Change Management practice and an informal Change
+    Management practice so that teams&nbsp;can select the most appropriate approach for their project.
+</p>
+<p>
+    An informal practice provides a simple change management process&nbsp;which is integrated into project managment
+    activities.&nbsp;&nbsp;In this approach, any&nbsp;team member may&nbsp;request a change to the system (or supporting
+    artifacts) at any time, either to correct a defect identified or to add an enhancement. The request for change is
+    captured&nbsp;in the&nbsp;backlog.&nbsp;During project planning the team reviews the backlog, prioritizes work, and
+    decides which changes will be implemented next. A more formal practice is used when additional governance is needed in
+    the Change Management process&nbsp;when&nbsp;there is a group of stakeholders outside the project team that needs to
+    approve and verify certain kinds of changes or changes need to be tightly controlled (such as late in an iteration or
+    release cycle) for stabilization purposes.
+</p>
+<p>
+    Confirm your Change Management practices addess the following concerns:
+</p>
+<ul>
+    <li>
+        work products and kinds of changes that are controlled by the practice.
+    </li>
+    <li>
+        change request types (e.g. defect, enhancement request).
+    </li>
+    <li>
+        change request states (e.g. approved, assigned, deferred).
+    </li>
+    <li>
+        how often are changes reviewed?
+    </li>
+    <li>
+        what roles participate in the change-request process?
+    </li>
+    <li>
+        what metrics are tracked?
+    </li>
+</ul>
+<h3>
+    Product integration
+</h3>
+<p>
+    Product Integration practices help teams progressively assemble the product components in incremental stages according
+    to a specified integration strategy.
+</p>
+<p>
+    Enterprise policies for product integration prevent:
+</p>
+<ul>
+    <li>
+        subsystems that don't integrate/ operate together.
+    </li>
+    <li>
+        installing a product that does not integrate with the customer's production systems.
+    </li>
+    <li>
+        delayed testing and increased integration times.
+    </li>
+</ul>
+<p>
+    Establish enterprise procedures and the environments required to support the integration of product components.
+</p>
+<ul>
+    <li>
+        Product integration environments&nbsp;may include equipment for testing and simulation, production hardware and
+        other devices.
+    </li>
+    <li>
+        Make build or buy decisions based on the the availability of existing organizational resources and the enterprise
+        product integration strategy.
+    </li>
+    <li>
+        Practices for the integration of product components&nbsp;typically describe such procedures as the types of tests
+        to be carried out at each stage, criteria for managing interface descriptions and repositories, and guidelines for
+        determining system build procedures.
+    </li>
+    <li>
+        Create tailoring guidelines describing how projects can tailor their project-specific process and integration
+        environment (including build/ buy decisions).
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>
