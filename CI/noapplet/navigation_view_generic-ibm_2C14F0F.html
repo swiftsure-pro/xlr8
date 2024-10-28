@@ -1,0 +1,840 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Contents</title>
+<style type="text/css">
+/*******************************************************************************
+ * Copyright (c) 2000, 2004, 2005 IBM Corporation. All Rights Reserved. 
+ *
+ * Contributors:
+ *     IBM Corporation - initial API and implementation
+ *******************************************************************************/
+
+* {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 9pt;
+	margin: 0;
+	padding: 0;
+}
+
+BODY {
+	background-color: Window;
+	font: icon;
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+UL {
+	border-width:0;
+	margin-left:15px;
+}
+
+#root {
+	margin-top:5px;
+	margin-left:5px;
+}
+
+UL.expanded {
+	display:block;
+}
+
+UL.collapsed {
+	display: none;
+}
+
+LI {
+	margin-top:3px;
+	list-style-image:none;
+	list-style-type:none;
+		white-space: nowrap;
+}
+
+IMG {
+	vertical-align: top;
+	border:0px;
+	margin:0px;
+	padding:0px;
+	margin-right:4px;
+}
+
+
+A {
+	text-decoration:none;
+	color:#258
+	padding-right:2px;
+	/* this works in ie5.5, but not in ie5.0  */
+	white-space: nowrap;
+}
+
+A:hover{
+	text-decoration:underline;
+}
+
+A.active{
+	background:Highlight;
+	color:HighlightText;
+	width:100%;
+}
+
+A.active:hover{
+	text-decoration:underline;
+	background:Highlight;
+	color:HighlightText;
+	width:100%;
+}
+
+
+
+.h {
+	visibility:hidden;
+}
+
+</style>
+<base target="ory_doc">
+<script language="JavaScript">
+
+// Preload images
+minus = new Image();
+minus.src = "images"+"/minus.gif";
+plus = new Image();
+plus.src = "images"+"/plus.gif";
+altTopicClosed = "Topic\u0020closed";
+altTopicOpen = "Topic\u0020open";
+</script><script language="JavaScript" src="toc.js"></script><script language="JavaScript" src="tree.js"></script>
+</head>
+<body dir="ltr" onload="setLoaded();">
+<ul dir="ltr" class="expanded" id="root">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="16b00a9b" parentId="" guid="_9bpMEFO0Ed-zW66LaSLsZQ" href="./../publish.bus.practices_for_sw_cap_improv.base-ibm/guidances/supportingmaterials/welcome_EF5CAB58.html?nodeId=16b00a9b"><img src="./images/customized/mic.gif" alt="" title="">Welcome to the IBM Practices for Software Capability Improvement</a>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="13296c9c" parentId="" guid="_WCIHYMRdEdyD76CYS6Ta7A" href="./../core.default.nav_view.base/customcategories/getting_started_list_87D18B69.html?nodeId=13296c9c"><img src="./images/customized/mic.gif" alt="" title="">Getting Started</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="19b5c5f2" parentId="13296c9c" guid="_FxJEkFUKEd2_rMtRMt_EMg" href="./../core.default.uma_concept.base/guidances/concepts/basic_process_concepts_C90EF089.html?nodeId=19b5c5f2"><img src="./images/Concept.gif" alt="" title="">Basic Process Concepts</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="10a7d278" parentId="13296c9c" guid="_qhCTAFRREd2CWscN8Mx6rg" href="./../core.default.uma_concept.base/guidances/concepts/practice_F5C8EAAB.html?nodeId=10a7d278"><img src="./images/Concept.gif" alt="" title="">Practice</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="1e4a04d5" parentId="" guid="_WCIHYsRdEdyD76CYS6Ta7A" href="./../core.default.nav_view.base/customcategories/delivery_process_list_81087F8F.html?nodeId=1e4a04d5"><img src="./images/customized/delproc_obj.gif" alt="" title="">Delivery Processes</a>
+<ul class="collapsed">
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="1bb3ae55" parentId="1e4a04d5" guid="_GAkJ4W0kEd-YO-9WR8nljQ" href="./../process.sw_cap_improv.base-ibm/deliveryprocesses/sw_capability_improvement_C6A00628.html?nodeId=1bb3ae55"><img src="./images/DeliveryProcess.gif" alt="" title="">Software Capability Improvement</a>
+<ul class="collapsed">
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="1ffce054" parentId="1bb3ae55" guid="_QQjXIW9BEd-tVs43SjMiDA" href="./../process.sw_cap_improv.base-ibm/deliveryprocesses/Understand and Assess_4C83F636.html?proc=_GAkJ4W0kEd-YO-9WR8nljQ&amp;path=_GAkJ4W0kEd-YO-9WR8nljQ,_QQjXIW9BEd-tVs43SjMiDA&amp;nodeId=1ffce054"><img src="./images/Phase.gif" alt="" title="">Understand and Assess</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="19fadc5c" parentId="1ffce054" guid="_4iwPoG9BEd-tVs43SjMiDA" href="./../process.sw_cap_improv.base-ibm/deliveryprocesses/Improvement Opportunities Validated_B6A35BA0.html?proc=_GAkJ4W0kEd-YO-9WR8nljQ&amp;path=_GAkJ4W0kEd-YO-9WR8nljQ,_QQjXIW9BEd-tVs43SjMiDA,_4iwPoG9BEd-tVs43SjMiDA&amp;nodeId=19fadc5c"><img src="./images/Milestone.gif" alt="" title="">Improvement Opportunities Validated</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="c11e90a3" parentId="1bb3ae55" guid="_YQ__gW9BEd-tVs43SjMiDA" href="./../process.sw_cap_improv.base-ibm/deliveryprocesses/Plan Develop Prove_357EC102.html?proc=_GAkJ4W0kEd-YO-9WR8nljQ&amp;path=_GAkJ4W0kEd-YO-9WR8nljQ,_YQ__gW9BEd-tVs43SjMiDA&amp;nodeId=c11e90a3"><img src="./images/Phase.gif" alt="" title="">Plan, Develop, and Prove</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="66ad1294" parentId="c11e90a3" guid="_SMubAW9kEd-DHdJeyJM4Rg" href="./../process.sw_cap_improv.base-ibm/deliveryprocesses/Plan_EDDA3BC8.html?proc=_GAkJ4W0kEd-YO-9WR8nljQ&amp;path=_GAkJ4W0kEd-YO-9WR8nljQ,_YQ__gW9BEd-tVs43SjMiDA,_SMubAW9kEd-DHdJeyJM4Rg&amp;nodeId=66ad1294"><img src="./images/Activity.gif" alt="" title="">Plan</a>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="68bac66c" parentId="c11e90a3" guid="_OgsOIW9kEd-DHdJeyJM4Rg" href="./../process.sw_cap_improv.base-ibm/deliveryprocesses/Develop_2CF2634D.html?proc=_GAkJ4W0kEd-YO-9WR8nljQ&amp;path=_GAkJ4W0kEd-YO-9WR8nljQ,_YQ__gW9BEd-tVs43SjMiDA,_OgsOIW9kEd-DHdJeyJM4Rg&amp;nodeId=68bac66c"><img src="./images/Activity.gif" alt="" title="">Develop</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="bf0283ad" parentId="68bac66c" guid="_EIBNIbYQEd-MO7zNCxGm2w" href="./../process.sw_cap_improv.base-ibm/deliveryprocesses/Setup Method Authoring Environment_1155F95B.html?proc=_GAkJ4W0kEd-YO-9WR8nljQ&amp;path=_GAkJ4W0kEd-YO-9WR8nljQ,_YQ__gW9BEd-tVs43SjMiDA,_OgsOIW9kEd-DHdJeyJM4Rg,_EIBNIbYQEd-MO7zNCxGm2w&amp;nodeId=bf0283ad"><img src="./images/Activity.gif" alt="" title="">Set Up Method Authoring Environment</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="748d18d4" parentId="c11e90a3" guid="_TOI0sG9kEd-DHdJeyJM4Rg" href="./../process.sw_cap_improv.base-ibm/deliveryprocesses/Prove_EC5A3B61.html?proc=_GAkJ4W0kEd-YO-9WR8nljQ&amp;path=_GAkJ4W0kEd-YO-9WR8nljQ,_YQ__gW9BEd-tVs43SjMiDA,_TOI0sG9kEd-DHdJeyJM4Rg&amp;nodeId=748d18d4"><img src="./images/Activity.gif" alt="" title="">Prove</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6cad0265" parentId="c11e90a3" guid="_xR3mgG9CEd-tVs43SjMiDA" href="./../process.sw_cap_improv.base-ibm/deliveryprocesses/Improvements Developed_4B075A2F.html?proc=_GAkJ4W0kEd-YO-9WR8nljQ&amp;path=_GAkJ4W0kEd-YO-9WR8nljQ,_YQ__gW9BEd-tVs43SjMiDA,_xR3mgG9CEd-tVs43SjMiDA&amp;nodeId=6cad0265"><img src="./images/Milestone.gif" alt="" title="">Improvements Developed and Proven</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="65ec4254" parentId="1bb3ae55" guid="_bH_awW9BEd-tVs43SjMiDA" href="./../process.sw_cap_improv.base-ibm/deliveryprocesses/Deploy_63449482.html?proc=_GAkJ4W0kEd-YO-9WR8nljQ&amp;path=_GAkJ4W0kEd-YO-9WR8nljQ,_bH_awW9BEd-tVs43SjMiDA&amp;nodeId=65ec4254"><img src="./images/Phase.gif" alt="" title="">Deploy</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="bc4fe250" parentId="65ec4254" guid="_DnvnEG9CEd-tVs43SjMiDA" href="./../process.sw_cap_improv.base-ibm/deliveryprocesses/Improvements Deployed_AA3DC07F.html?proc=_GAkJ4W0kEd-YO-9WR8nljQ&amp;path=_GAkJ4W0kEd-YO-9WR8nljQ,_bH_awW9BEd-tVs43SjMiDA,_DnvnEG9CEd-tVs43SjMiDA&amp;nodeId=bc4fe250"><img src="./images/Milestone.gif" alt="" title="">Improvements Deployed</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="72e06ea5" parentId="1bb3ae55" guid="_pbhKwW9BEd-tVs43SjMiDA" href="./../process.sw_cap_improv.base-ibm/deliveryprocesses/Adopt_7E29DB0F.html?proc=_GAkJ4W0kEd-YO-9WR8nljQ&amp;path=_GAkJ4W0kEd-YO-9WR8nljQ,_pbhKwW9BEd-tVs43SjMiDA&amp;nodeId=72e06ea5"><img src="./images/Phase.gif" alt="" title="">Adopt</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6b044e07" parentId="72e06ea5" guid="_AlBAcG9DEd-tVs43SjMiDA" href="./../process.sw_cap_improv.base-ibm/deliveryprocesses/Solution Adopted_2C9BD54A.html?proc=_GAkJ4W0kEd-YO-9WR8nljQ&amp;path=_GAkJ4W0kEd-YO-9WR8nljQ,_pbhKwW9BEd-tVs43SjMiDA,_AlBAcG9DEd-tVs43SjMiDA&amp;nodeId=6b044e07"><img src="./images/Milestone.gif" alt="" title="">Improvements Adopted</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="18ef8e3b" parentId="1bb3ae55" guid="_o7cYYW0kEd-YO-9WR8nljQ" href="./../process.sw_cap_improv.base-ibm/deliveryprocesses/Program Monitoring and Control_868E4DC8.html?proc=_GAkJ4W0kEd-YO-9WR8nljQ&amp;path=_GAkJ4W0kEd-YO-9WR8nljQ,_o7cYYW0kEd-YO-9WR8nljQ&amp;nodeId=18ef8e3b"><img src="./images/Activity.gif" alt="" title="">Program Monitoring and Control</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="131d0387" parentId="" guid="_qdO80MRhEdyD76CYS6Ta7A" href="./../core.default.nav_view.base/customcategories/guidance_50538167.html?nodeId=131d0387"><img src="./images/customized/bookc.gif" alt="" title="">Guidance</a>
+<ul class="collapsed">
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="769eb7e3" parentId="131d0387" guid="_pGt9MMReEdyD76CYS6Ta7A" href="./../core.default.nav_view.base/customcategories/checklist_list_DB7CB367.html?nodeId=769eb7e3"><img src="./images/customized/checklist_obj.gif" alt="" title="">Checklists</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="64f4c611" parentId="769eb7e3" guid="_DWLpAPP0Ed-RAdOJjvxPzA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/checklists/adoption_plan_DCCCE8B2.html?nodeId=64f4c611"><img src="./images/Checklist.gif" alt="" title="">Adoption Plan</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="be2f2ac0" parentId="769eb7e3" guid="_r73LQPQBEd-RAdOJjvxPzA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/checklists/dev_org_assessment_670F8B1A.html?nodeId=be2f2ac0"><img src="./images/Checklist.gif" alt="" title="">Development Organization Assessment</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1e37ed9e" parentId="769eb7e3" guid="_FkHVQJRyEd-wra7Saw_VYw" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/checklists/mentor_exit_criteria_C5C07AB1.html?nodeId=1e37ed9e"><img src="./images/Checklist.gif" alt="" title="">Mentor Exit Criteria</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="c2f7c36e" parentId="769eb7e3" guid="_q1WxQO6SEd-jAIoRH1n83g" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/checklists/mentoring_program_plan_153F4589.html?nodeId=c2f7c36e"><img src="./images/Checklist.gif" alt="" title="">Mentoring Program Plan</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="741a8737" parentId="131d0387" guid="_WCR4Y8RdEdyD76CYS6Ta7A" href="./../core.default.nav_view.base/customcategories/concept_list_FD433B97.html?nodeId=741a8737"><img src="./images/customized/concept_obj.gif" alt="" title="">Concepts</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="16adce48" parentId="741a8737" guid="_CzvFMJ8vEd-dppiOhprtkA" href="./../practice.bus.mdev.extend-ibm/guidances/whitepapers/roadmap_to_meth_dev_E75A54FD.html?nodeId=16adce48"><img src="./images/Whitepaper.gif" alt="" title="">A Roadmap to Method Development</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="70d407e8" parentId="741a8737" guid="_BM_wUJT8Ed-0-OAVgoUtMw" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/whitepapers/adoption_thru_execution_B030BFE5.html?nodeId=70d407e8"><img src="./images/Whitepaper.gif" alt="" title="">Adoption Through Execution: Project-level Mentoring to Improve Software Capability</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1fd2c551" parentId="741a8737" guid="_FxJEkFUKEd2_rMtRMt_EMg" href="./../core.default.uma_concept.base/guidances/concepts/basic_process_concepts_C90EF089.html?nodeId=1fd2c551"><img src="./images/Concept.gif" alt="" title="">Basic Process Concepts</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="c22a58c9" parentId="741a8737" guid="_g9_r8JR8Ed-6LOUj4yirMg" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/concepts/five_learning_levels_14F721C4.html?nodeId=c22a58c9"><img src="./images/Concept.gif" alt="" title="">Learning Theory: Five Learning Levels</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="182e133d" parentId="741a8737" guid="_cBlnQG23Ed-vK5B6ZgVtPg" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/concepts/managing_org_change_46D3611F.html?nodeId=182e133d"><img src="./images/Concept.gif" alt="" title="">Managing Organizational Change</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="faf92c3" parentId="741a8737" guid="_Bb4xMJ8eEd-1Fp7x64HaLA" href="./../practice.bus.mdev.base/guidances/concepts/method_authoring_C70EB587.html?nodeId=faf92c3"><img src="./images/Concept.gif" alt="" title="">Method Authoring</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="706ddf8e" parentId="741a8737" guid="_fGGpoG6SEd-ylqwPC08wUA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/concepts/pilot_project_B7FB495F.html?nodeId=706ddf8e"><img src="./images/Concept.gif" alt="" title="">Pilot Project</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6da19fff" parentId="741a8737" guid="_qhCTAFRREd2CWscN8Mx6rg" href="./../core.default.uma_concept.base/guidances/concepts/practice_F5C8EAAB.html?nodeId=6da19fff"><img src="./images/Concept.gif" alt="" title="">Practice</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="65139cda" parentId="741a8737" guid="_WBtggJ8wEd-dppiOhprtkA" href="./../practice.bus.mdev.base/guidances/concepts/practice_ACB683BB.html?nodeId=65139cda"><img src="./images/Concept.gif" alt="" title="">Practice</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="76339987" parentId="741a8737" guid="_n80coFzAEd-AA77g_dZNHA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/concepts/process_area_FFE24645.html?nodeId=76339987"><img src="./images/Concept.gif" alt="" title="">Process Area</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="be05259d" parentId="741a8737" guid="_TMCWEG5rEd-oCKFuc0HsDQ" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/whitepapers/quick_wins_-_breaking_broader_goals_down_into_smart_objectives_A1049BA8.html?nodeId=be05259d"><img src="./images/Whitepaper.gif" alt="" title="">Quick Wins - Breaking Broader Goals Down into SMART Objectives</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="74b26ab6" parentId="741a8737" guid="_McgnsJQ2Ed-evbQfNx9dTg" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/concepts/kotter_framework_F80242B4.html?nodeId=74b26ab6"><img src="./images/Concept.gif" alt="" title="">The Kotter Framework for Introducing Change</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="df6b231" parentId="741a8737" guid="_wtFW8J8wEd-dppiOhprtkA" href="./../practice.bus.mdev.base/guidances/concepts/umf_62CAA5FA.html?nodeId=df6b231"><img src="./images/Concept.gif" alt="" title="">Unified Method Framework</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="61ccbbc0" parentId="131d0387" guid="_WCR4ZMRdEdyD76CYS6Ta7A" href="./../core.default.nav_view.base/customcategories/example_list_5FC453CB.html?nodeId=61ccbbc0"><img src="./images/customized/example_obj.gif" alt="" title="">Examples</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1939d5ac" parentId="61ccbbc0" guid="_OmQn4KcNEd-VVeY9V5Zf-g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/examples/assessment_findings_and_recommend_B2F2A198.html?nodeId=1939d5ac"><img src="./images/Example.gif" alt="" title="">Big Box Company Assessment Findings and Recommendations</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="65c91a4d" parentId="61ccbbc0" guid="_DjNUUG6dEd-ylqwPC08wUA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/examples/communication_plan_3857B54D.html?nodeId=65c91a4d"><img src="./images/Example.gif" alt="" title="">Communication Plan</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6a090fd4" parentId="61ccbbc0" guid="_j57ogO6YEd-jAIoRH1n83g" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/examples/mentoring_program_plan_6A70B1BB.html?nodeId=6a090fd4"><img src="./images/Example.gif" alt="" title="">Mentoring Program Plan</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="7164af3c" parentId="61ccbbc0" guid="_1ANSMKb1Ed-VVeY9V5Zf-g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/examples/sdlc_gap_analysis_7FF0EC1D.html?nodeId=7164af3c"><img src="./images/Example.gif" alt="" title="">Software Development Lifecycle Gap Analysis</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="1bc0ac3c" parentId="131d0387" guid="_WCR4ZcRdEdyD76CYS6Ta7A" href="./../core.default.nav_view.base/customcategories/guideline_list_4E5D67E1.html?nodeId=1bc0ac3c"><img src="./images/customized/guide_obj.gif" alt="" title="">Guidelines</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="bad1c192" parentId="1bc0ac3c" guid="_EgX2cDt0Ed-0GPJdQkFa_A" href="./../practice.bus.mdev.extend-ibm/guidances/guidelines/architecting_method_library_CFC2E7B4.html?nodeId=bad1c192"><img src="./images/Guideline.gif" alt="" title="">Architecting a Method Library</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="14a5f664" parentId="1bc0ac3c" guid="_jMatsG2gEd-Mm_K-F15OKw" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/assessing_the_dev_org_4B0D6662.html?nodeId=14a5f664"><img src="./images/Guideline.gif" alt="" title="">Assessing the Development Organization</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="167e1556" parentId="1bc0ac3c" guid="_kY8j4EH-Ed-bmYzvomIdMg" href="./../practice.bus.mdev.base/guidances/guidelines/categorizing_7B37E584.html?nodeId=167e1556"><img src="./images/Guideline.gif" alt="" title="">Categorizing</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="7228fb91" parentId="1bc0ac3c" guid="_0sYDEGqjEd-xSa1ixq-krw" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/conduct_assessment_workshop_AE1F7574.html?nodeId=7228fb91"><img src="./images/Guideline.gif" alt="" title="">Conduct an Assessment Workshop</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1409ca30" parentId="1bc0ac3c" guid="_TSiRME5iEd-TbrfwCHSPcA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/considerations_for_org_process_def_4CB1533A.html?nodeId=1409ca30"><img src="./images/Guideline.gif" alt="" title="">Considerations for Organizational Process Definition by Process Area</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="64da28be" parentId="1bc0ac3c" guid="_EXvLwD3NEd-realK_We5vA" href="./../practice.bus.mdev.base/guidances/guidelines/creating_plugins_practices_configurations_4C84B4C2.html?nodeId=64da28be"><img src="./images/Guideline.gif" alt="" title="">Creating Plug-ins, Practices and Configurations</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="bc2db27d" parentId="1bc0ac3c" guid="_1V5psEH9Ed-bmYzvomIdMg" href="./../practice.bus.mdev.base/guidances/guidelines/customizing_method_content_elements_8C692511.html?nodeId=bc2db27d"><img src="./images/Guideline.gif" alt="" title="">Customizing Method Content Elements</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="117306c8" parentId="1bc0ac3c" guid="_E9J1kD9EEd-Xgadv74rzHA" href="./../practice.bus.mdev.base/guidances/guidelines/defining_customizing_processes_55E6CE53.html?nodeId=117306c8"><img src="./images/Guideline.gif" alt="" title="">Defining and Customizing Processes</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="15c7459f" parentId="1bc0ac3c" guid="_fx7TMD3REd-realK_We5vA" href="./../practice.bus.mdev.base/guidances/guidelines/defining_method_elements_CADE4FF6.html?nodeId=15c7459f"><img src="./images/Guideline.gif" alt="" title="">Defining Method Elements</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="770b5979" parentId="1bc0ac3c" guid="_LZWHYE5iEd-TbrfwCHSPcA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/defining_practices_for_config_chg_mgmt_557FEA05.html?nodeId=770b5979"><img src="./images/Guideline.gif" alt="" title="">Defining Practices for Configuration and Change Management</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="f942a7e" parentId="1bc0ac3c" guid="_upW3AFzJEd-AA77g_dZNHA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/defining_practices_for_pm_FF3583D6.html?nodeId=f942a7e"><img src="./images/Guideline.gif" alt="" title="">Defining Practices for Project Management</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="7716b0f3" parentId="1bc0ac3c" guid="_tQ8ZQKcdEd-VVeY9V5Zf-g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/defining_practices_for_rqmt_def_10CFED35.html?nodeId=7716b0f3"><img src="./images/Guideline.gif" alt="" title="">Defining Practices for Requirements Definition</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="653ea7d8" parentId="1bc0ac3c" guid="_zgfXUFzEEd-AA77g_dZNHA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/defining_practices_for_rqmts_mgmt_14A9CF05.html?nodeId=653ea7d8"><img src="./images/Guideline.gif" alt="" title="">Defining Practices for Requirements Management</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6c9d25b2" parentId="1bc0ac3c" guid="_wu8KwH-4Ed-00Ob5ZX285w" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/defining_practices_for_risk_mgmt_EBEDAE62.html?nodeId=6c9d25b2"><img src="./images/Guideline.gif" alt="" title="">Defining Practices for Risk Management</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="c1a0ff64" parentId="1bc0ac3c" guid="_LTh3kFlhEeC6GvclGUoSxQ" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/defining_practices_for_validation_872C6FF.html?nodeId=c1a0ff64"><img src="./images/Guideline.gif" alt="" title="">Defining Practices for Validation</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="f8053fd" parentId="1bc0ac3c" guid="_hvcdQFlcEeC6GvclGUoSxQ" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/defining_practices_for_verification_8ABD4730.html?nodeId=f8053fd"><img src="./images/Guideline.gif" alt="" title="">Defining Practices for Verification</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="c412c5d3" parentId="1bc0ac3c" guid="_ghjHwDusEd-0GPJdQkFa_A" href="./../practice.bus.mdev.base/guidances/guidelines/formatting_writing_tips_for_method_authors_718876E5.html?nodeId=c412c5d3"><img src="./images/Guideline.gif" alt="" title="">Formatting and Writing Tips for Method Authors</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6af534b1" parentId="1bc0ac3c" guid="__I8S0D2kEd-lU6YVR9_PJQ" href="./../practice.bus.mdev.base/guidances/guidelines/general_naming_conventions_5651B0CC.html?nodeId=6af534b1"><img src="./images/Guideline.gif" alt="" title="">General Naming Conventions</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6af6c6d6" parentId="1bc0ac3c" guid="_vK0aMHc0Ed-H66PvPQta3g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/how_to_conduct_org_assessment_F513600F.html?nodeId=6af6c6d6"><img src="./images/Guideline.gif" alt="" title="">How to Conduct and Organizational Assessment</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="c41218fa" parentId="1bc0ac3c" guid="_nmwMgKbvEd-VVeY9V5Zf-g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/identify_opps_for_improv_2DFA3B88.html?nodeId=c41218fa"><img src="./images/Guideline.gif" alt="" title="">Identify Opportunities for Software Capability Improvement</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="c16578d5" parentId="1bc0ac3c" guid="_PTzXQE8REd-xRf1mYeAI9w" href="./../practice.bus.mdev.base/guidances/guidelines/implementing_method_asset_6412B73B.html?nodeId=c16578d5"><img src="./images/Guideline.gif" alt="" title="">Implementing a Method Asset</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="78f555e6" parentId="1bc0ac3c" guid="_tP6YkG50Ed-oCKFuc0HsDQ" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/mng_cap_imprv_as_project_72B9DC92.html?nodeId=78f555e6"><img src="./images/Guideline.gif" alt="" title="">Managing Capability Improvement as a Project</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6a4ad5cf" parentId="1bc0ac3c" guid="_pMq0wJUEEd-0-OAVgoUtMw" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/guidelines/plan_mentoring_schedule_A86E89E8.html?nodeId=6a4ad5cf"><img src="./images/Guideline.gif" alt="" title="">Plan the Mentoring Schedule</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1ad18d55" parentId="1bc0ac3c" guid="_lMLtYG2dEd-Mm_K-F15OKw" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/planning_method_adoption_536F0FEC.html?nodeId=1ad18d55"><img src="./images/Guideline.gif" alt="" title="">Planning Method Adoption</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6bcd40bb" parentId="1bc0ac3c" guid="_O3v9oHdDEd-H66PvPQta3g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/prepare_assess_findings_recommend_7E1478A1.html?nodeId=6bcd40bb"><img src="./images/Guideline.gif" alt="" title="">Preparing Assessment Findings and Recommendations</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6388dccb" parentId="1bc0ac3c" guid="_Z7gHED08Ed-lU6YVR9_PJQ" href="./../practice.bus.mdev.base/guidances/guidelines/publishing_F975969F.html?nodeId=6388dccb"><img src="./images/Guideline.gif" alt="" title="">Publishing</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6aaefeda" parentId="1bc0ac3c" guid="_26QKMG5kEd-oCKFuc0HsDQ" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/select_cap_improv_rolllout_strat_57F0114A.html?nodeId=6aaefeda"><img src="./images/Guideline.gif" alt="" title="">Selecting a Capability Improvement Roll-Out Strategy</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="be2d6681" parentId="1bc0ac3c" guid="_KmGOcG6AEd-ylqwPC08wUA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/selecting_pilot_projects_5B5A5FD9.html?nodeId=be2d6681"><img src="./images/Guideline.gif" alt="" title="">Selecting Pilot Projects</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="61c4c715" parentId="1bc0ac3c" guid="_Xa4k8LYQEd-MO7zNCxGm2w" href="./../practice.bus.mdev.extend-ibm/guidances/guidelines/set_up_meth_auth_env_E0C418C6.html?nodeId=61c4c715"><img src="./images/Guideline.gif" alt="" title="">Setting Up a Method Authoring Environment</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6b35b307" parentId="1bc0ac3c" guid="_dxRsUEH-Ed-bmYzvomIdMg" href="./../practice.bus.mdev.base/guidances/guidelines/structuring_practice_6C50E138.html?nodeId=6b35b307"><img src="./images/Guideline.gif" alt="" title="">Structuring a Practice</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6a88a2c0" parentId="1bc0ac3c" guid="_ytd9kKDhEd-nMJcdx60YsA" href="./../practice.bus.mdev.base/guidances/guidelines/testing_a_method_asset_ABE087A6.html?nodeId=6a88a2c0"><img src="./images/Guideline.gif" alt="" title="">Testing a Method Asset</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="1314fbb5" parentId="131d0387" guid="_WCIHY8RdEdyD76CYS6Ta7A" href="./../core.default.nav_view.base/customcategories/practice_list_E9E25554.html?nodeId=1314fbb5"><img src="./images/customized/practice_set_obj.gif" alt="" title="">Practices</a>
+<ul class="collapsed">
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="7304295b" parentId="1314fbb5" guid="_F5OpAG23Ed-vK5B6ZgVtPg" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/practices/adopt_through_execution_7ACA1E5E.html?nodeId=7304295b"><img src="./images/Practice.gif" alt="" title="">Adoption Through Execution</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="65055669" parentId="7304295b" guid="_m4qJYG21Ed-vK5B6ZgVtPg" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/roadmaps/how_to_adopt_E2BAEB74.html?nodeId=65055669"><img src="./images/Roadmap.gif" alt="" title="">How to Adopt the Adoption Through Execution Practice</a>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="73d7e589" parentId="7304295b" guid="_ORaZ0Jo4EeqXaLKNXW_R3Q" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/practices/Key Concepts_adopt_through_execution_7ACA1E5E.html?nodeId=73d7e589"><img src="./images/Concepts.gif" alt="" title="">Key Concepts</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6a4635ef" parentId="73d7e589" guid="_g9_r8JR8Ed-6LOUj4yirMg" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/concepts/five_learning_levels_14F721C4.html?nodeId=6a4635ef"><img src="./images/Concept.gif" alt="" title="">Learning Theory: Five Learning Levels</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6a0e59be" parentId="73d7e589" guid="_McgnsJQ2Ed-evbQfNx9dTg" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/concepts/kotter_framework_F80242B4.html?nodeId=6a0e59be"><img src="./images/Concept.gif" alt="" title="">The Kotter Framework for Introducing Change</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6af8a17e" parentId="73d7e589" guid="_BM_wUJT8Ed-0-OAVgoUtMw" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/whitepapers/adoption_thru_execution_B030BFE5.html?nodeId=6af8a17e"><img src="./images/Whitepaper.gif" alt="" title="">Adoption Through Execution: Project-level Mentoring to Improve Software Capability</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="13304832" parentId="7304295b" guid="_OR_BkJo4EeqXaLKNXW_R3Q" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/practices/Work Products_adopt_through_execution_7ACA1E5E.html?nodeId=13304832"><img src="./images/WorkProducts.gif" alt="" title="">Work Products</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6e972435" parentId="13304832" guid="_XoqkwJT_Ed-0-OAVgoUtMw" href="./../practice.bus.adopt_through_execution.base-ibm/workproducts/mentoring_action_plan_5D311A58.html?nodeId=6e972435"><img src="./images/Artifact.gif" alt="" title="">Mentoring Action Plan</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6d90c507" parentId="13304832" guid="_54HA8JRMEd-vC9c7YTOFSA" href="./../practice.bus.adopt_through_execution.base-ibm/workproducts/mentoring_program_plan_7EAE776.html?nodeId=6d90c507"><img src="./images/Artifact.gif" alt="" title="">Mentoring Program Plan</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="65bc11bb" parentId="13304832" guid="_RRT60JQzEd-CKqh65Qu_Jw" href="./../practice.bus.adopt_through_execution.base-ibm/workproducts/est_center_of_capability_865F2860.html?nodeId=65bc11bb"><img src="./images/Outcome.gif" alt="" title="">Center of Capability Established</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1ffee497" parentId="13304832" guid="_zehBcHlMEd-G3uEvaukjMw" href="./../practice.bus.adopt_through_execution.base-ibm/workproducts/developed_mentors_CE60A8D3.html?nodeId=1ffee497"><img src="./images/Outcome.gif" alt="" title="">Developed Mentors</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="bc5ea841" parentId="7304295b" guid="_OSYDIJo4EeqXaLKNXW_R3Q" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/practices/Tasks_adopt_through_execution_7ACA1E5E.html?nodeId=bc5ea841"><img src="./images/Tasks.gif" alt="" title="">Tasks</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="13d29f68" parentId="bc5ea841" guid="_CJhqgG8fEd-5uY9TsHC53A" href="./../practice.bus.adopt_through_execution.base-ibm/tasks/develop_mentors_8E9C3398.html?nodeId=13d29f68"><img src="./images/Task.gif" alt="" title="">Develop Mentors</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6f8d50ca" parentId="bc5ea841" guid="_7zPsMJQxEd-CKqh65Qu_Jw" href="./../practice.bus.adopt_through_execution.base-ibm/tasks/establish_mentoring_prog_420C9045.html?nodeId=6f8d50ca"><img src="./images/Task.gif" alt="" title="">Establish the Mentoring Program</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="116062d9" parentId="bc5ea841" guid="_PZTbcHdXEd-H66PvPQta3g" href="./../practice.bus.adopt_through_execution.base-ibm/tasks/manage_the_mentoring_program_EB007CD2.html?nodeId=116062d9"><img src="./images/Task.gif" alt="" title="">Manage the Mentoring Program</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="68c8ce2a" parentId="bc5ea841" guid="_wL8h4CMzEd-VobohmWswkw" href="./../practice.bus.adopt_through_execution.base-ibm/tasks/prov_meth_adoption_supp_1C59E22E.html?nodeId=68c8ce2a"><img src="./images/Task.gif" alt="" title="">Provide Method Adoption Support</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="7310589a" parentId="bc5ea841" guid="_a-3KEEmIEd-H4JlF2fadEg" href="./../practice.bus.adopt_through_execution.base-ibm/tasks/provide_ent_tool_adopt_supp_E82C53E2.html?nodeId=7310589a"><img src="./images/Task.gif" alt="" title="">Provide Enterprise Tool Adoption Support</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="644b3858" parentId="7304295b" guid="_OSq-EJo4EeqXaLKNXW_R3Q" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/practices/Guidance_adopt_through_execution_7ACA1E5E.html?nodeId=644b3858"><img src="./images/GuidanceFolder.gif" alt="" title="">Guidance</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="15873251" parentId="644b3858" guid="_FkHVQJRyEd-wra7Saw_VYw" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/checklists/mentor_exit_criteria_C5C07AB1.html?nodeId=15873251"><img src="./images/Checklist.gif" alt="" title="">Mentor Exit Criteria</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6689180c" parentId="644b3858" guid="_q1WxQO6SEd-jAIoRH1n83g" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/checklists/mentoring_program_plan_153F4589.html?nodeId=6689180c"><img src="./images/Checklist.gif" alt="" title="">Mentoring Program Plan</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="20118050" parentId="644b3858" guid="_j57ogO6YEd-jAIoRH1n83g" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/examples/mentoring_program_plan_6A70B1BB.html?nodeId=20118050"><img src="./images/Example.gif" alt="" title="">Mentoring Program Plan</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="c068b258" parentId="644b3858" guid="_MrD84O6SEd-jAIoRH1n83g" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/templates/mentoring_program_plan_7D25661E.html?nodeId=c068b258"><img src="./images/Template.gif" alt="" title="">Mentoring Program Plan</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="65b90fd0" parentId="644b3858" guid="_pMq0wJUEEd-0-OAVgoUtMw" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/guidelines/plan_mentoring_schedule_A86E89E8.html?nodeId=65b90fd0"><img src="./images/Guideline.gif" alt="" title="">Plan the Mentoring Schedule</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="1654ea81" parentId="1314fbb5" guid="_lFYasFImEd-S-5uzDh9e9Q" href="./../practice.bus.mdev.base/guidances/practices/method_development_99621E52.html?nodeId=1654ea81"><img src="./images/Practice.gif" alt="" title="">Method Development</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="66e395e6" parentId="1654ea81" guid="_sh3v4iMmEd-VobohmWswkw" href="./../practice.bus.mdev.base/guidances/roadmaps/how_to_adopt_mdev_8538895A.html?nodeId=66e395e6"><img src="./images/Roadmap.gif" alt="" title="">How To Adopt This Practice</a>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="1abaa533" parentId="1654ea81" guid="_OTA8UJo4EeqXaLKNXW_R3Q" href="./../practice.bus.mdev.base/guidances/practices/Key Concepts_method_development_99621E52.html?nodeId=1abaa533"><img src="./images/Concepts.gif" alt="" title="">Key Concepts</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6fbd7a9e" parentId="1abaa533" guid="_Bb4xMJ8eEd-1Fp7x64HaLA" href="./../practice.bus.mdev.base/guidances/concepts/method_authoring_C70EB587.html?nodeId=6fbd7a9e"><img src="./images/Concept.gif" alt="" title="">Method Authoring</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="19fe0c71" parentId="1abaa533" guid="_FxJEkFUKEd2_rMtRMt_EMg" href="./../core.default.uma_concept.base/guidances/concepts/basic_process_concepts_C90EF089.html?nodeId=19fe0c71"><img src="./images/Concept.gif" alt="" title="">Basic Process Concepts</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="749b5f52" parentId="1abaa533" guid="_WBtggJ8wEd-dppiOhprtkA" href="./../practice.bus.mdev.base/guidances/concepts/practice_ACB683BB.html?nodeId=749b5f52"><img src="./images/Concept.gif" alt="" title="">Practice</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="c12c3766" parentId="1abaa533" guid="_wtFW8J8wEd-dppiOhprtkA" href="./../practice.bus.mdev.base/guidances/concepts/umf_62CAA5FA.html?nodeId=c12c3766"><img src="./images/Concept.gif" alt="" title="">Unified Method Framework</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6fcda103" parentId="1abaa533" guid="_CzvFMJ8vEd-dppiOhprtkA" href="./../practice.bus.mdev.extend-ibm/guidances/whitepapers/roadmap_to_meth_dev_E75A54FD.html?nodeId=6fcda103"><img src="./images/Whitepaper.gif" alt="" title="">A Roadmap to Method Development</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="beeb51a7" parentId="1654ea81" guid="_OTTQMJo4EeqXaLKNXW_R3Q" href="./../practice.bus.mdev.base/guidances/practices/Work Products_method_development_99621E52.html?nodeId=beeb51a7"><img src="./images/WorkProducts.gif" alt="" title="">Work Products</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="64146bb3" parentId="beeb51a7" guid="_aZI2ECy3Ed2TPpbydIQMow" href="./../practice.bus.mdev.extend-ibm/workproducts/method_arch_D42175BA.html?nodeId=64146bb3"><img src="./images/Artifact.gif" alt="" title="">Method Architecture</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="19226e56" parentId="beeb51a7" guid="_9SBbUIHjEdyGM7kcmyhhtQ" href="./../practice.bus.mdev.extend-ibm/workproducts/method_design_DF9FDB87.html?nodeId=19226e56"><img src="./images/Artifact.gif" alt="" title="">Method Design</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="76356d7e" parentId="beeb51a7" guid="_uAX9IDLUEd-hcqtZbe2lFg" href="./../practice.bus.mdev.extend-ibm/workproducts/method_asset_E5E935C.html?nodeId=76356d7e"><img src="./images/Artifact.gif" alt="" title="">Method Asset</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="13e2b209" parentId="beeb51a7" guid="_IaVnQCMuEd-VobohmWswkw" href="./../practice.bus.mdev.extend-ibm/workproducts/meth_user_guidelines_73117117.html?nodeId=13e2b209"><img src="./images/Artifact.gif" alt="" title="">Method User Guidelines</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="190542a7" parentId="beeb51a7" guid="{1528A028-9206-49A5-9B3A-EE32F8FF6F23}" href="./../core.bus.common.base-ibm/workproducts/method_library_A9A01A3E.html?nodeId=190542a7"><img src="./images/customized/datastore.gif" alt="" title="">Method Library</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="bd1379ca" parentId="1654ea81" guid="_OTqckJo4EeqXaLKNXW_R3Q" href="./../practice.bus.mdev.base/guidances/practices/Tasks_method_development_99621E52.html?nodeId=bd1379ca"><img src="./images/Tasks.gif" alt="" title="">Tasks</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6bdbf02a" parentId="bd1379ca" guid="_UjkDIEmfEd-CwKa38aS3Iw" href="./../practice.bus.mdev.extend-ibm/tasks/architect_method_library_276CA114.html?nodeId=6bdbf02a"><img src="./images/Task.gif" alt="" title="">Architect the Method Library</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="69645454" parentId="bd1379ca" guid="_OTC-wEmIEd-H4JlF2fadEg" href="./../practice.bus.mdev.extend-ibm/tasks/define_ent_tool_configs_22B6B6BB.html?nodeId=69645454"><img src="./images/Task.gif" alt="" title="">Define Enterprise Tool Configurations</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1ad0db3c" parentId="bd1379ca" guid="{6CEF1949-3F88-40DF-B588-947B30F5250C}" href="./../practice.bus.mdev.extend-ibm/tasks/deploy_method_library_CAD19927.html?nodeId=1ad0db3c"><img src="./images/Task.gif" alt="" title="">Deploy Method Library</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6bdb3c06" parentId="bd1379ca" guid="_tBQ3kOxoEdydutqrlpQKOw" href="./../practice.bus.mdev.extend-ibm/tasks/design_method_asset_93DAD19A.html?nodeId=6bdb3c06"><img src="./images/Task.gif" alt="" title="">Design Method Asset</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1c790f8f" parentId="bd1379ca" guid="_mmd1YCMzEd-VobohmWswkw" href="./../practice.bus.mdev.extend-ibm/tasks/dev_method_usr_guide_8423C3F1.html?nodeId=1c790f8f"><img src="./images/Task.gif" alt="" title="">Develop Method Library User Guidelines</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="7562274b" parentId="bd1379ca" guid="_RNws4OyTEdyqmvtIFY3mOg" href="./../practice.bus.mdev.extend-ibm/tasks/imp_method_asset_D86CEB87.html?nodeId=7562274b"><img src="./images/Task.gif" alt="" title="">Implement Method Asset</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="c130ff9e" parentId="1654ea81" guid="_OT6UMJo4EeqXaLKNXW_R3Q" href="./../practice.bus.mdev.base/guidances/practices/Guidance_method_development_99621E52.html?nodeId=c130ff9e"><img src="./images/GuidanceFolder.gif" alt="" title="">Guidance</a>
+<ul class="collapsed">
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="636b5716" parentId="c130ff9e" guid="_OT8wcJo4EeqXaLKNXW_R3Q" href="./../practice.bus.mdev.base/guidances/practices/Tool Mentors_method_development_99621E52.html?nodeId=636b5716"><img src="./images/ToolMentors.gif" alt="" title="">Tool Mentors</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6dac0f65" parentId="636b5716" guid="_KknwgELKEd-WaYm2VdKGnA" href="./../practice.bus.mdev.extend-ibm/guidances/toolmentors/design_method_asset_rmc_BA167F28.html?nodeId=6dac0f65"><img src="./images/ToolMentor.gif" alt="" title="">Design Method Asset using Rational Method Composer</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="73e4a061" parentId="636b5716" guid="_fdHCUELKEd-WaYm2VdKGnA" href="./../practice.bus.mdev.extend-ibm/guidances/toolmentors/imp_method_asset_rmc_971EE3EA.html?nodeId=73e4a061"><img src="./images/ToolMentor.gif" alt="" title="">Implement Method Asset using Rational Method Composer</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="c42fae1b" parentId="636b5716" guid="_fl4gIEGTEd-bmYzvomIdMg" href="./../practice.bus.mdev.extend-ibm/guidances/toolmentors/setup_method_auth_env_rmc_B141D8D0.html?nodeId=c42fae1b"><img src="./images/ToolMentor.gif" alt="" title="">Setup Method Authoring Environment using Rational Method Composer</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="6da6356c" parentId="c130ff9e" guid="_OUPrYJo4EeqXaLKNXW_R3Q" href="./../practice.bus.mdev.base/guidances/practices/Guidelines_method_development_99621E52.html?nodeId=6da6356c"><img src="./images/WorkProductGuidelines.gif" alt="" title="">Guidelines</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="becab348" parentId="6da6356c" guid="__I8S0D2kEd-lU6YVR9_PJQ" href="./../practice.bus.mdev.base/guidances/guidelines/general_naming_conventions_5651B0CC.html?nodeId=becab348"><img src="./images/Guideline.gif" alt="" title="">General Naming Conventions</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="651a0465" parentId="6da6356c" guid="_EXvLwD3NEd-realK_We5vA" href="./../practice.bus.mdev.base/guidances/guidelines/creating_plugins_practices_configurations_4C84B4C2.html?nodeId=651a0465"><img src="./images/Guideline.gif" alt="" title="">Creating Plug-ins, Practices and Configurations</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="be3b8174" parentId="6da6356c" guid="_fx7TMD3REd-realK_We5vA" href="./../practice.bus.mdev.base/guidances/guidelines/defining_method_elements_CADE4FF6.html?nodeId=be3b8174"><img src="./images/Guideline.gif" alt="" title="">Defining Method Elements</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="69401c94" parentId="6da6356c" guid="_1V5psEH9Ed-bmYzvomIdMg" href="./../practice.bus.mdev.base/guidances/guidelines/customizing_method_content_elements_8C692511.html?nodeId=69401c94"><img src="./images/Guideline.gif" alt="" title="">Customizing Method Content Elements</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="bef5a2a7" parentId="6da6356c" guid="_E9J1kD9EEd-Xgadv74rzHA" href="./../practice.bus.mdev.base/guidances/guidelines/defining_customizing_processes_55E6CE53.html?nodeId=bef5a2a7"><img src="./images/Guideline.gif" alt="" title="">Defining and Customizing Processes</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6cfe38e7" parentId="6da6356c" guid="_dxRsUEH-Ed-bmYzvomIdMg" href="./../practice.bus.mdev.base/guidances/guidelines/structuring_practice_6C50E138.html?nodeId=6cfe38e7"><img src="./images/Guideline.gif" alt="" title="">Structuring a Practice</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1d272bef" parentId="6da6356c" guid="_kY8j4EH-Ed-bmYzvomIdMg" href="./../practice.bus.mdev.base/guidances/guidelines/categorizing_7B37E584.html?nodeId=1d272bef"><img src="./images/Guideline.gif" alt="" title="">Categorizing</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="babf1ad6" parentId="6da6356c" guid="_PTzXQE8REd-xRf1mYeAI9w" href="./../practice.bus.mdev.base/guidances/guidelines/implementing_method_asset_6412B73B.html?nodeId=babf1ad6"><img src="./images/Guideline.gif" alt="" title="">Implementing a Method Asset</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6513abb2" parentId="6da6356c" guid="_ghjHwDusEd-0GPJdQkFa_A" href="./../practice.bus.mdev.base/guidances/guidelines/formatting_writing_tips_for_method_authors_718876E5.html?nodeId=6513abb2"><img src="./images/Guideline.gif" alt="" title="">Formatting and Writing Tips for Method Authors</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="7709880e" parentId="6da6356c" guid="_Z7gHED08Ed-lU6YVR9_PJQ" href="./../practice.bus.mdev.base/guidances/guidelines/publishing_F975969F.html?nodeId=7709880e"><img src="./images/Guideline.gif" alt="" title="">Publishing</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="16956f9e" parentId="6da6356c" guid="_ytd9kKDhEd-nMJcdx60YsA" href="./../practice.bus.mdev.base/guidances/guidelines/testing_a_method_asset_ABE087A6.html?nodeId=16956f9e"><img src="./images/Guideline.gif" alt="" title="">Testing a Method Asset</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1180a2b3" parentId="6da6356c" guid="_Xa4k8LYQEd-MO7zNCxGm2w" href="./../practice.bus.mdev.extend-ibm/guidances/guidelines/set_up_meth_auth_env_E0C418C6.html?nodeId=1180a2b3"><img src="./images/Guideline.gif" alt="" title="">Setting Up a Method Authoring Environment</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="73e5d96b" parentId="1314fbb5" guid="_sh3v6CMmEd-VobohmWswkw" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/practices/sw_cap_prog_mgmt_15255972.html?nodeId=73e5d96b"><img src="./images/Practice.gif" alt="" title="">Software Capability Program Management</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="73db2aa6" parentId="73e5d96b" guid="_ynh3cG0JEd-MM6Kf4mJ3bQ" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/roadmaps/how_to_adopt_1366D1B1.html?nodeId=73db2aa6"><img src="./images/Roadmap.gif" alt="" title="">How to Adopt the Software Capability Program Management Practice</a>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="64fd566c" parentId="73e5d96b" guid="_OUwowJo4EeqXaLKNXW_R3Q" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/practices/Key Concepts_sw_cap_prog_mgmt_15255972.html?nodeId=64fd566c"><img src="./images/Concepts.gif" alt="" title="">Key Concepts</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="731829bb" parentId="64fd566c" guid="_cBlnQG23Ed-vK5B6ZgVtPg" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/concepts/managing_org_change_46D3611F.html?nodeId=731829bb"><img src="./images/Concept.gif" alt="" title="">Managing Organizational Change</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6b3fa01f" parentId="64fd566c" guid="_fGGpoG6SEd-ylqwPC08wUA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/concepts/pilot_project_B7FB495F.html?nodeId=6b3fa01f"><img src="./images/Concept.gif" alt="" title="">Pilot Project</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="73bb4f64" parentId="64fd566c" guid="_n80coFzAEd-AA77g_dZNHA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/concepts/process_area_FFE24645.html?nodeId=73bb4f64"><img src="./images/Concept.gif" alt="" title="">Process Area</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="64c04718" parentId="64fd566c" guid="_TMCWEG5rEd-oCKFuc0HsDQ" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/whitepapers/quick_wins_-_breaking_broader_goals_down_into_smart_objectives_A1049BA8.html?nodeId=64c04718"><img src="./images/Whitepaper.gif" alt="" title="">Quick Wins - Breaking Broader Goals Down into SMART Objectives</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="6e00f0b8" parentId="73e5d96b" guid="_OU9dEJo4EeqXaLKNXW_R3Q" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/practices/Work Products_sw_cap_prog_mgmt_15255972.html?nodeId=6e00f0b8"><img src="./images/WorkProducts.gif" alt="" title="">Work Products</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="c240ac3b" parentId="6e00f0b8" guid="{A106554F-3BDA-418D-A1F8-026AE2647AD8}" href="./../core.bus.common.base-ibm/workproducts/adoption_plan_4B4334E9.html?nodeId=c240ac3b"><img src="./images/Artifact.gif" alt="" title="">Adoption Plan</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="710ec251" parentId="6e00f0b8" guid="{3D77E5C1-1FA3-4F5B-B9BE-014EE03CF264}" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/workproducts/devorg_assessment_657D7D1E.html?nodeId=710ec251"><img src="./images/Artifact.gif" alt="" title="">Development Organization Assessment</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1d84fd84" parentId="6e00f0b8" guid="_a1vGIGqsEd-xSa1ixq-krw" href="./../core.bus.common.base-ibm/workproducts/enterprise_tools_F9B956C.html?nodeId=1d84fd84"><img src="./images/Artifact.gif" alt="" title="">Enterprise Tools</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6f7706bc" parentId="6e00f0b8" guid="_EpZOgPNeEd-8OLor5VGqYg" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/workproducts/process_assurance_rev_rec_54B7762.html?nodeId=6f7706bc"><img src="./images/Artifact.gif" alt="" title="">Process Assurance Review Record</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="17f163a0" parentId="73e5d96b" guid="_OVXFsJo4EeqXaLKNXW_R3Q" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/practices/Tasks_sw_cap_prog_mgmt_15255972.html?nodeId=17f163a0"><img src="./images/Tasks.gif" alt="" title="">Tasks</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="770a6e35" parentId="17f163a0" guid="{3E402EFE-C970-4CEE-9650-AAD489AAA106}" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/tasks/assess_organization_7E007613.html?nodeId=770a6e35"><img src="./images/Task.gif" alt="" title="">Assess the Organization</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="64e640dc" parentId="17f163a0" guid="_osjRsGq8Ed-gOYgCf-l1EQ" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/tasks/manage_cap_improv_prog_C5F4B2FD.html?nodeId=64e640dc"><img src="./images/Task.gif" alt="" title="">Manage the Capability Improvement Program</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="10b6df60" parentId="17f163a0" guid="_25tFQCMxEd-VobohmWswkw" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/tasks/monitor_capability_improv_42AD925F.html?nodeId=10b6df60"><img src="./images/Task.gif" alt="" title="">Monitor Capability Improvement</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="7220d2d0" parentId="17f163a0" guid="{15C9A42D-885A-4107-9426-ED2B91381309}" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/tasks/plan_adoption_E41E6733.html?nodeId=7220d2d0"><img src="./images/Task.gif" alt="" title="">Plan Adoption</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="64f61b05" parentId="17f163a0" guid="_ziLYkEvdEd-XW6-Lpfbaaw" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/tasks/select_acquire_tools_A8E624B6.html?nodeId=64f61b05"><img src="./images/Task.gif" alt="" title="">Select and Acquire Tools</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="c0c63070" parentId="73e5d96b" guid="_OVkhEJo4EeqXaLKNXW_R3Q" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/practices/Guidance_sw_cap_prog_mgmt_15255972.html?nodeId=c0c63070"><img src="./images/GuidanceFolder.gif" alt="" title="">Guidance</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6521ccbf" parentId="c0c63070" guid="_DWLpAPP0Ed-RAdOJjvxPzA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/checklists/adoption_plan_DCCCE8B2.html?nodeId=6521ccbf"><img src="./images/Checklist.gif" alt="" title="">Adoption Plan</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1692e565" parentId="c0c63070" guid="_r73LQPQBEd-RAdOJjvxPzA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/checklists/dev_org_assessment_670F8B1A.html?nodeId=1692e565"><img src="./images/Checklist.gif" alt="" title="">Development Organization Assessment</a>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="6dbd2e53" parentId="c0c63070" guid="_OVpZkJo4EeqXaLKNXW_R3Q" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/practices/Examples_sw_cap_prog_mgmt_15255972.html?nodeId=6dbd2e53"><img src="./images/Examples.gif" alt="" title="">Examples</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="693a01e2" parentId="6dbd2e53" guid="_OmQn4KcNEd-VVeY9V5Zf-g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/examples/assessment_findings_and_recommend_B2F2A198.html?nodeId=693a01e2"><img src="./images/Example.gif" alt="" title="">Big Box Company Assessment Findings and Recommendations</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="c346daaa" parentId="6dbd2e53" guid="_DjNUUG6dEd-ylqwPC08wUA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/examples/communication_plan_3857B54D.html?nodeId=c346daaa"><img src="./images/Example.gif" alt="" title="">Communication Plan</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="67934d70" parentId="6dbd2e53" guid="_1ANSMKb1Ed-VVeY9V5Zf-g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/examples/sdlc_gap_analysis_7FF0EC1D.html?nodeId=67934d70"><img src="./images/Example.gif" alt="" title="">Software Development Lifecycle Gap Analysis</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6957117b" parentId="c0c63070" guid="_LpiT4KcUEd-VVeY9V5Zf-g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/reports/process_tool_improvement_log_8E0A6553.html?nodeId=6957117b"><img src="./images/Report.gif" alt="" title="">Process and Tool Improvement Log</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="714e24b3" parentId="c0c63070" guid="_8MWOUOanEd-bWKmQqKCHcQ" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/supportingmaterials/ratl_mi_overview_C432222C.html?nodeId=714e24b3"><img src="./images/SupportingMaterial.gif" alt="" title="">Rational Measured Improvement Overview</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6aedfc7d" parentId="c0c63070" guid="_E2QN8OapEd-bWKmQqKCHcQ" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/supportingmaterials/ratl_selfcheck_789586A8.html?nodeId=6aedfc7d"><img src="./images/SupportingMaterial.gif" alt="" title="">Introducing IBM Rational Self Check for Software Teams</a>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="73c4274b" parentId="c0c63070" guid="_OWB0EJo4EeqXaLKNXW_R3Q" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/practices/Templates_sw_cap_prog_mgmt_15255972.html?nodeId=73c4274b"><img src="./images/Templates.gif" alt="" title="">Templates</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="c59567ab" parentId="73c4274b" guid="_h6Hd0G6cEd-ylqwPC08wUA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/templates/communication_plan_7053B0CE.html?nodeId=c59567ab"><img src="./images/Template.gif" alt="" title="">Communication Plan</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="c25d86c1" parentId="73c4274b" guid="_4CvMsPJwEd-SGuS9jDpL2g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/templates/dev_org_assess_A24C78B3.html?nodeId=c25d86c1"><img src="./images/Template.gif" alt="" title="">Development Organization Assessment</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6df514a0" parentId="73c4274b" guid="_CxRAwKcWEd-VVeY9V5Zf-g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/templates/proc_tool_improve_log_4AD40087.html?nodeId=6df514a0"><img src="./images/Template.gif" alt="" title="">Process and Tool Improvement Log</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="14a6d6a6" parentId="73c4274b" guid="_dJfcEKbyEd-VVeY9V5Zf-g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/templates/tool_comparison_70EEC19B.html?nodeId=14a6d6a6"><img src="./images/Template.gif" alt="" title="">Tool Comparison</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="e08d699" parentId="73c4274b" guid="_jgjhQKbxEd-VVeY9V5Zf-g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/templates/tool_information_853B6266.html?nodeId=e08d699"><img src="./images/Template.gif" alt="" title="">Tool Information</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="6a971c43" parentId="c0c63070" guid="_OWXyUJo4EeqXaLKNXW_R3Q" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/practices/Guidelines_sw_cap_prog_mgmt_15255972.html?nodeId=6a971c43"><img src="./images/WorkProductGuidelines.gif" alt="" title="">Guidelines</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="bc9739f6" parentId="6a971c43" guid="_jMatsG2gEd-Mm_K-F15OKw" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/assessing_the_dev_org_4B0D6662.html?nodeId=bc9739f6"><img src="./images/Guideline.gif" alt="" title="">Assessing the Development Organization</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6602c98d" parentId="6a971c43" guid="_0sYDEGqjEd-xSa1ixq-krw" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/conduct_assessment_workshop_AE1F7574.html?nodeId=6602c98d"><img src="./images/Guideline.gif" alt="" title="">Conduct an Assessment Workshop</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="ba78e07b" parentId="6a971c43" guid="_TSiRME5iEd-TbrfwCHSPcA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/considerations_for_org_process_def_4CB1533A.html?nodeId=ba78e07b"><img src="./images/Guideline.gif" alt="" title="">Considerations for Organizational Process Definition by Process Area</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1af4c2d8" parentId="6a971c43" guid="_LZWHYE5iEd-TbrfwCHSPcA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/defining_practices_for_config_chg_mgmt_557FEA05.html?nodeId=1af4c2d8"><img src="./images/Guideline.gif" alt="" title="">Defining Practices for Configuration and Change Management</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="bf94ea2e" parentId="6a971c43" guid="_upW3AFzJEd-AA77g_dZNHA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/defining_practices_for_pm_FF3583D6.html?nodeId=bf94ea2e"><img src="./images/Guideline.gif" alt="" title="">Defining Practices for Project Management</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6bf60d5a" parentId="6a971c43" guid="_wu8KwH-4Ed-00Ob5ZX285w" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/defining_practices_for_risk_mgmt_EBEDAE62.html?nodeId=6bf60d5a"><img src="./images/Guideline.gif" alt="" title="">Defining Practices for Risk Management</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1abb9a5a" parentId="6a971c43" guid="_tQ8ZQKcdEd-VVeY9V5Zf-g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/defining_practices_for_rqmt_def_10CFED35.html?nodeId=1abb9a5a"><img src="./images/Guideline.gif" alt="" title="">Defining Practices for Requirements Definition</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1d5a86a0" parentId="6a971c43" guid="_zgfXUFzEEd-AA77g_dZNHA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/defining_practices_for_rqmts_mgmt_14A9CF05.html?nodeId=1d5a86a0"><img src="./images/Guideline.gif" alt="" title="">Defining Practices for Requirements Management</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="7222e611" parentId="6a971c43" guid="_hvcdQFlcEeC6GvclGUoSxQ" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/defining_practices_for_verification_8ABD4730.html?nodeId=7222e611"><img src="./images/Guideline.gif" alt="" title="">Defining Practices for Verification</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="68b131ff" parentId="6a971c43" guid="_vK0aMHc0Ed-H66PvPQta3g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/how_to_conduct_org_assessment_F513600F.html?nodeId=68b131ff"><img src="./images/Guideline.gif" alt="" title="">How to Conduct and Organizational Assessment</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="e140ab7" parentId="6a971c43" guid="_nmwMgKbvEd-VVeY9V5Zf-g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/identify_opps_for_improv_2DFA3B88.html?nodeId=e140ab7"><img src="./images/Guideline.gif" alt="" title="">Identify Opportunities for Software Capability Improvement</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="72f76dbc" parentId="6a971c43" guid="_tP6YkG50Ed-oCKFuc0HsDQ" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/mng_cap_imprv_as_project_72B9DC92.html?nodeId=72f76dbc"><img src="./images/Guideline.gif" alt="" title="">Managing Capability Improvement as a Project</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="bf95c758" parentId="6a971c43" guid="_lMLtYG2dEd-Mm_K-F15OKw" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/planning_method_adoption_536F0FEC.html?nodeId=bf95c758"><img src="./images/Guideline.gif" alt="" title="">Planning Method Adoption</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6b0b83a4" parentId="6a971c43" guid="_O3v9oHdDEd-H66PvPQta3g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/prepare_assess_findings_recommend_7E1478A1.html?nodeId=6b0b83a4"><img src="./images/Guideline.gif" alt="" title="">Preparing Assessment Findings and Recommendations</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1bb16b34" parentId="6a971c43" guid="_26QKMG5kEd-oCKFuc0HsDQ" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/select_cap_improv_rolllout_strat_57F0114A.html?nodeId=1bb16b34"><img src="./images/Guideline.gif" alt="" title="">Selecting a Capability Improvement Roll-Out Strategy</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1e6b77ea" parentId="6a971c43" guid="_KmGOcG6AEd-ylqwPC08wUA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/guidelines/selecting_pilot_projects_5B5A5FD9.html?nodeId=1e6b77ea"><img src="./images/Guideline.gif" alt="" title="">Selecting Pilot Projects</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="131c0116" parentId="131d0387" guid="__nHToFndEd2EdJKkAyeBng" href="./../core.default.nav_view.base/guidances/supportingmaterials/references_C6FF2A8D.html?nodeId=131c0116"><img src="./images/SupportingMaterial.gif" alt="" title="">References</a>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="bf793c0f" parentId="131d0387" guid="_sJd8gMReEdyD76CYS6Ta7A" href="./../core.default.nav_view.base/customcategories/report_list_43E1F33C.html?nodeId=bf793c0f"><img src="./images/customized/report_obj.gif" alt="" title="">Reports</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="132add6d" parentId="bf793c0f" guid="_LpiT4KcUEd-VVeY9V5Zf-g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/reports/process_tool_improvement_log_8E0A6553.html?nodeId=132add6d"><img src="./images/Report.gif" alt="" title="">Process and Tool Improvement Log</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="1158e26a" parentId="131d0387" guid="_WCR4ZsRdEdyD76CYS6Ta7A" href="./../core.default.nav_view.base/customcategories/roadmap_list_58FB47F1.html?nodeId=1158e26a"><img src="./images/customized/roadmap16.gif" alt="" title="">Roadmaps</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="178b6113" parentId="1158e26a" guid="_m4qJYG21Ed-vK5B6ZgVtPg" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/roadmaps/how_to_adopt_E2BAEB74.html?nodeId=178b6113"><img src="./images/Roadmap.gif" alt="" title="">How to Adopt the Adoption Through Execution Practice</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="fe3e6fe" parentId="1158e26a" guid="_ynh3cG0JEd-MM6Kf4mJ3bQ" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/roadmaps/how_to_adopt_1366D1B1.html?nodeId=fe3e6fe"><img src="./images/Roadmap.gif" alt="" title="">How to Adopt the Software Capability Program Management Practice</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="66dd77c3" parentId="1158e26a" guid="_sh3v4iMmEd-VobohmWswkw" href="./../practice.bus.mdev.base/guidances/roadmaps/how_to_adopt_mdev_8538895A.html?nodeId=66dd77c3"><img src="./images/Roadmap.gif" alt="" title="">How To Adopt This Practice</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="c0670001" parentId="131d0387" guid="_WCR4Z8RdEdyD76CYS6Ta7A" href="./../core.default.nav_view.base/customcategories/template_list_C1D51DB6.html?nodeId=c0670001"><img src="./images/customized/template_obj.gif" alt="" title="">Templates</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="766f8e94" parentId="c0670001" guid="_h6Hd0G6cEd-ylqwPC08wUA" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/templates/communication_plan_7053B0CE.html?nodeId=766f8e94"><img src="./images/Template.gif" alt="" title="">Communication Plan</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="bfa38c8d" parentId="c0670001" guid="_4CvMsPJwEd-SGuS9jDpL2g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/templates/dev_org_assess_A24C78B3.html?nodeId=bfa38c8d"><img src="./images/Template.gif" alt="" title="">Development Organization Assessment</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6be21f5e" parentId="c0670001" guid="_MrD84O6SEd-jAIoRH1n83g" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/templates/mentoring_program_plan_7D25661E.html?nodeId=6be21f5e"><img src="./images/Template.gif" alt="" title="">Mentoring Program Plan</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="c0685bfc" parentId="c0670001" guid="_CxRAwKcWEd-VVeY9V5Zf-g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/templates/proc_tool_improve_log_4AD40087.html?nodeId=c0685bfc"><img src="./images/Template.gif" alt="" title="">Process and Tool Improvement Log</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6c6259c5" parentId="c0670001" guid="_dJfcEKbyEd-VVeY9V5Zf-g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/templates/tool_comparison_70EEC19B.html?nodeId=6c6259c5"><img src="./images/Template.gif" alt="" title="">Tool Comparison</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6a6f237d" parentId="c0670001" guid="_jgjhQKbxEd-VVeY9V5Zf-g" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/templates/tool_information_853B6266.html?nodeId=6a6f237d"><img src="./images/Template.gif" alt="" title="">Tool Information</a>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="1a3b6020" parentId="131d0387" guid="_WCR4acRdEdyD76CYS6Ta7A" href="./../core.default.nav_view.base/customcategories/whitepaper_list_AE5A96BA.html?nodeId=1a3b6020"><img src="./images/customized/white_obj.gif" alt="" title="">White papers</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="74c82869" parentId="1a3b6020" guid="_CzvFMJ8vEd-dppiOhprtkA" href="./../practice.bus.mdev.extend-ibm/guidances/whitepapers/roadmap_to_meth_dev_E75A54FD.html?nodeId=74c82869"><img src="./images/Whitepaper.gif" alt="" title="">A Roadmap to Method Development</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="c3443ad6" parentId="1a3b6020" guid="_BM_wUJT8Ed-0-OAVgoUtMw" href="./../practice.bus.adopt_through_execution.base-ibm/guidances/whitepapers/adoption_thru_execution_B030BFE5.html?nodeId=c3443ad6"><img src="./images/Whitepaper.gif" alt="" title="">Adoption Through Execution: Project-level Mentoring to Improve Software Capability</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="6c3db96c" parentId="1a3b6020" guid="_TMCWEG5rEd-oCKFuc0HsDQ" href="./../practice.bus.sw_cap_prog_mgmt.base-ibm/guidances/whitepapers/quick_wins_-_breaking_broader_goals_down_into_smart_objectives_A1049BA8.html?nodeId=6c3db96c"><img src="./images/Whitepaper.gif" alt="" title="">Quick Wins - Breaking Broader Goals Down into SMART Objectives</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="6a52459a" parentId="" guid="_VTspMMRfEdyD76CYS6Ta7A" href="./../core.default.nav_view.base/customcategories/tool_list_7780CB27.html?nodeId=6a52459a"><img src="./images/customized/toolment_obj.gif" alt="" title="">Tools</a>
+<ul class="collapsed">
+<li>
+<img src="images/plus.gif" class="collapsed" alt="" title="" showIcon="true"><a id="69315760" parentId="6a52459a" guid="_mHQIMMYbEdyXeo04os5BOw" href="./../core.default.tool_def.base/tools/method_composer_tool_3D9F7C0.html?nodeId=69315760"><img src="./images/Tool.gif" alt="" title="">Method Composer</a>
+<ul class="collapsed">
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="678aa94c" parentId="69315760" guid="_4IkDIEciEd-4puF-aYib8w" href="./../practice.bus.mdev.extend-ibm/guidances/toolmentors/faq_rmc_6D94AAF1.html?nodeId=678aa94c"><img src="./images/ToolMentor.gif" alt="" title="">A List of Method Composer Frequently Asked Questions</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="66c17d73" parentId="69315760" guid="_s2HgQELJEd-WaYm2VdKGnA" href="./../practice.bus.mdev.extend-ibm/guidances/toolmentors/deploy_method_library_rmc_75DC3732.html?nodeId=66c17d73"><img src="./images/ToolMentor.gif" alt="" title="">Deploy Method Library using Rational Method Composer</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1798f2d6" parentId="69315760" guid="_KknwgELKEd-WaYm2VdKGnA" href="./../practice.bus.mdev.extend-ibm/guidances/toolmentors/design_method_asset_rmc_BA167F28.html?nodeId=1798f2d6"><img src="./images/ToolMentor.gif" alt="" title="">Design Method Asset using Rational Method Composer</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="bc549fd9" parentId="69315760" guid="_fdHCUELKEd-WaYm2VdKGnA" href="./../practice.bus.mdev.extend-ibm/guidances/toolmentors/imp_method_asset_rmc_971EE3EA.html?nodeId=bc549fd9"><img src="./images/ToolMentor.gif" alt="" title="">Implement Method Asset using Rational Method Composer</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="1d8958be" parentId="69315760" guid="_fl4gIEGTEd-bmYzvomIdMg" href="./../practice.bus.mdev.extend-ibm/guidances/toolmentors/setup_method_auth_env_rmc_B141D8D0.html?nodeId=1d8958be"><img src="./images/ToolMentor.gif" alt="" title="">Setup Method Authoring Environment using Rational Method Composer</a>
+</li>
+<li>
+<img src="images/noplus.gif" class="collapsed" alt="" title="" showIcon="false"><a id="dc55d63" parentId="69315760" guid="_e_qaIEckEd-4puF-aYib8w" href="./../practice.bus.mdev.extend-ibm/guidances/toolmentors/using_workspaces_in_mc_B0216A0F.html?nodeId=dc55d63"><img src="./images/ToolMentor.gif" alt="" title="">Using Workspaces in Method Composer</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</body>
+</html>
