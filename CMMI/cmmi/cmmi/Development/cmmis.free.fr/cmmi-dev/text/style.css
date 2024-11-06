@@ -1,0 +1,1441 @@
+/* Document body (background properties (image or color) are ignored here : they are defined in the layout model.)          */ 
+.Body {  
+font-family : verdana, arial;
+font-size:9pt;
+margin:3px;
+
+SCROLLBAR-FACE-COLOR: #ffffff; 
+SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; 
+SCROLLBAR-SHADOW-COLOR: #a4a4ff; 
+SCROLLBAR-3DLIGHT-COLOR: #a4a4ff; 
+SCROLLBAR-ARROW-COLOR:RGB(115, 84, 205);
+SCROLLBAR-TRACK-COLOR: #ffffff; 
+SCROLLBAR-DARKSHADOW-COLOR: #ffffff;} 
+
+/* Container          */ 
+DIV#Container {  
+text-align:justify;
+margin:0px;
+padding:0px;} 
+
+/* Link appearance          */ 
+a:link {  
+color:rgb(131, 104, 208);
+text-decoration:none;} 
+
+/* Link appearance when flied by by mouse          */ 
+a:active {  
+color:RGB(255, 128, 64);
+text-decoration:underline overline;} 
+
+/* Appearance of already visited links          */ 
+a:visited {  
+color:rgb(131, 104, 208);
+text-decoration:none;} 
+
+/* Appearance of hovered links          */ 
+a:hover {  
+text-decoration:underline overline;
+color:RGB(128, 0, 64);} 
+
+/* Characters in bold style          */ 
+B {  
+font-weight:600;} 
+
+/* Characters in italique style          */ 
+I {  
+font-style:italic;} 
+
+/* Underligned characters          */ 
+U {  
+text-decoration:underline;} 
+
+/* ALL tables          */ 
+table {  
+font-size:100%;
+margin:0;} 
+
+/* ALL images          */ 
+img {  
+vertical-align:middle;} 
+
+/* Separator          */ 
+.Separator {  
+text-align:center;
+clear:both;} 
+
+/* UserClass          */ 
+.CmmiTitle {  
+FONT-SIZE: 22pt; 
+LINE-HEIGHT: 26pt} 
+
+/* UserClass          */ 
+.TopHeader {  
+margin-left:7px;} 
+
+/* UserClass          */ 
+.reference-subp {  
+font-style:italic;
+margin-left:3px;} 
+
+/* UserClass          */ 
+p.body {  
+margin-top:15px;
+margin-bottom:15px;} 
+
+/* UserClass          */ 
+.sp-statement {  
+margin-left:0px;
+margin-top:0px;
+font-size:110%;
+background-color:RGB(247, 247, 247);
+font-style:italic;
+font-weight:900;
+padding:5px;} 
+
+/* UserClass          */ 
+.goal-statement {  
+margin-left:0px;
+margin-top:0px;
+font-size:110%;
+background-color:RGB(247, 247, 247);
+font-style:italic;
+font-weight:900;
+padding:5px;} 
+
+/* UserClass          */ 
+.Bottom {  
+background-color:RGB(255, 233, 254);
+padding:5px;
+margin-left:0px;
+margin-right:0px;
+text-align:right;
+padding-bottom:9px;} 
+
+/* UserClass          */ 
+.MenuLeft {  
+background-color:RGB(234, 234, 234);
+padding:5px;
+height:100%;
+border-right:4 dotted RGB(234, 234, 234);} 
+
+/* UserClass          */ 
+.NavRight {  
+float:right;} 
+
+/* UserClass          */ 
+.list-bullet {  
+text-indent:20pt;
+margin:3px;
+padding:0pt;} 
+
+/* UserClass          */ 
+.MsoTableGrid {  
+font-size:100%;
+margin:0pt;
+padding:0pt;} 
+
+/* UserClass          */ 
+p.H-sp-name-2 {  
+font-size:80%;
+text-indent:75pt;
+font-family:arial-narrow;
+margin:0pt;
+padding:0pt;} 
+
+/* UserClass          */ 
+p.goal-name-2 {  
+text-indent:50pt;
+font-size:80%;
+margin:0pt;
+padding:0pt;} 
+
+/* UserClass          */ 
+.reference-addition {  
+font-style:italic;
+margin-left:3px;} 
+
+/* UserClass          */ 
+.amp-title-addition {  
+font-weight:800;} 
+
+/* UserClass          */ 
+.H-goals-PtGtable {  
+font-family:arial;
+font-weight:800;
+font-size:110%;
+text-align:center;
+margin-left:3px;} 
+
+/* UserClass          */ 
+.H-related-process-areas {  
+font-family:arial;
+font-weight:800;
+font-size:110%;
+margin-left:3px;} 
+
+/* UserClass          */ 
+.reference {  
+font-style:italic;
+font-size:110%;
+margin-left:3px;} 
+
+/* UserClass          */ 
+.H-notes {  
+font-family:arial;
+font-weight:800;
+font-size:110%;
+margin-left:3px;} 
+
+/* UserClass          */ 
+.H-purpose {  
+font-family:arial;
+font-weight:800;
+font-size:110%;
+margin-left:3px;} 
+
+/* UserClass          */ 
+.Menu {  
+border-left:1 dashed silver;
+padding-left:3pt;} 
+
+/* UserClass          */ 
+UL LI {  
+list-style-image:url(../extra/Tick.gif);} 
+
+/* UserClass          */ 
+.RightMenu {  
+padding:9px:
+padding-bottom:9px;} 
+
+/* UserClass          */ 
+_DIV {  
+border:1 solid red;} 
+
+/* Help tags and style tags CSS style.          */ 
+.HelpTag {  
+position:absolute;
+z-index:0;
+margin-top:-9px;} 
+
+/* Help tags and style tags CSS style (2)          */ 
+.HelpTag2 {  
+position:relative;
+z-index:0;
+margin-top:0px;
+margin-left:3px;} 
+
+/* Main title          */ 
+.PageHeader {  
+text-align:justify;
+clear:left;
+font-size:100%;} 
+
+/* Table for right, middle and left panes          */ 
+.TablePanes {  
+width:100%;
+clear:both;} 
+
+/* Table for right, middle and left panes          */ 
+TABLE.TablePanes TR, TABLE.TablePanes TD {  
+margin:0px;
+padding:0px;
+/*border:1 dashed green;*/} 
+
+/* Row for right, middle and left panes          */ 
+.RowPanes {  
+} 
+
+/* Panneau gauche de chaque page          */ 
+.PageLeftPane {  
+width:100px;
+vertical-align:top;
+background-color:RGB(240, 240, 240);} 
+
+/* Panneau droit de chaque page          */ 
+.PageRightPane {  
+width:100px;
+vertical-align:top;
+background-color:RGB(240, 240, 240);} 
+
+/*           */ 
+.PageMiddlePane {  
+vertical-align:top;} 
+
+/* Idea block          */ 
+.Idea {  
+} 
+
+/* Horizontal ruler          */ 
+hr {  
+margin-right:3px;
+margin-left:3px;
+border-top:2 dotted RGB(155, 155, 255);} 
+
+/* Level 1 title          */ 
+.H1 {  
+background-image:url('../extra/water.jpg');
+background-repeat:repeat;
+color:white;
+font-size:180%;
+margin-top:0px;
+margin-left:3px;
+margin-right:3px;
+clear:both;
+padding-left:10px;
+padding-top:5px;
+padding-bottom:5px} 
+
+/* Level 2 title          */ 
+.H2 {  
+font-size:90%;
+padding-left:5pt;} 
+
+/* Level 3 title          */ 
+.H3 {  
+font-size:90%;
+padding-left:10pt;} 
+
+/* Level 4 title          */ 
+.H4 {  
+font-size:90%;
+padding-left:15pt;} 
+
+/* Level 5 title          */ 
+.H5 {  
+font-size:90%;
+color:blue;
+padding-left:20pt;} 
+
+/* Level 6 title          */ 
+.H6 {  
+font-size:90%;
+padding-left:25pt;} 
+
+/* Level 7 title          */ 
+.H7 {  
+padding-left:15px;} 
+
+/* Level 8 title          */ 
+.H8 {  
+padding-left:15px;} 
+
+/* Level 9 title          */ 
+.H9 {  
+padding-left:15px;} 
+
+/* Level 10 title          */ 
+.H10 {  
+padding-left:15px;} 
+
+/* Level >10 title          */ 
+.Hx {  
+padding-left:15px;} 
+
+/* Text of idea          */ 
+.TextGroup {  
+text-align:justify;
+clear:left;
+margin-top:1em;
+margin-bottom:0.5em;
+margin-left:3px;
+margin-right:3px;
+
+line-height:13pt;} 
+
+/* Main text          */ 
+.Text {  
+margin-top:0.5em;} 
+
+/*           */ 
+.FoldTitle {  
+border-bottom : 1 dotted gray;} 
+
+/*           */ 
+.FoldText {  
+border : 1 dotted gray;} 
+
+/* Footnote block          */ 
+.FootNote {  
+margin-left:0px;
+padding-left:5px;
+border-left-width:2;
+border-left-style: solid;
+border-left-color: silver;} 
+
+/* Footnote call          */ 
+.FootNoteCall {  
+vertical-align:top;
+font-size:80%;
+font-weight:bold;} 
+
+/* Footnote text          */ 
+.FootNoteText {  
+font-style:normal;
+font-size:90%;} 
+
+/* Properties for images manually inserted in the text          */ 
+.TextImage {  
+/* Properties for images manually inserted in the text */
+float:left;
+vertical-align:bottom;} 
+
+/* Placeholder for FreeMind applet (experimental)          */ 
+div#freemindapplet {  
+border:1 solid silver;
+clear:both;
+color:silver;} 
+
+/* Placeholder for visorFreeMind Flash browser (experimental)          */ 
+div#freemindflash {  
+border:1 solid silver;
+color:silver;
+z-index:90;} 
+
+/* WIT Simple Gallery placeholder style          */ 
+div#WITsimplegallery1 {  
+} 
+
+/* Images for WIT Simple Gallery          */ 
+.WITSimpleGalleryImg {  
+width:100%;
+border-width:0;
+border:5px;} 
+
+/* WIT Simple Gallery : caption style          */ 
+.gallerydesctext {  
+text-align:center;
+color:orange;} 
+
+/* Page position in site map block          */ 
+.HierarchyGroup {  
+font-size:90%;
+margin-bottom:3px;
+
+margin-left:3px;
+margin-right:3px;
+clear:both;
+padding:5px;
+background-color:RGB(219, 237, 255);} 
+
+/* Current position group subtitle          */ 
+.HierarchySubtitle {  
+font-weight:800;} 
+
+/* Links to parent pages          */ 
+.HierarchyPos {  
+color:RGB(64, 128, 128);} 
+
+/* Children ideas block          */ 
+.ChildrenLinkGroup {  
+clear:left;
+margin-top:1em;
+margin-bottom:3em;
+margin-left:30pt;
+font-weight:500;
+font-family:arial;} 
+
+/* Children ideas group subtitle          */ 
+.ChildrenSubtitle {  
+font-weight:800;} 
+
+/* Links to children ideas          */ 
+.ChildLink {  
+} 
+
+/* Keywords section          */ 
+.KeywordsGroup {  
+font-family:arial;
+font-size:90%;
+margin-top:2em;
+float:left;
+background-color:RGB(234, 234, 234);
+margin-left:3px;
+margin-right:3px;
+clear:both;
+padding:5px;} 
+
+/* Keywords subtitle          */ 
+.KeywordsSubtitle {  
+} 
+
+/* Keywords subtitle          */ 
+.Keywords {  
+} 
+
+/* Images section          */ 
+.ImageGroup {  
+clear:left;
+margin-left:10 pt;
+margin-right:10pt;
+margin-top:2em;
+font-size:90%;} 
+
+/* Images subsection          */ 
+.ImageSubgroup {  
+margin-bottom:1em;
+margin-right:10pt;
+float:left;} 
+
+/* Image legend          */ 
+.ImageText {  
+font-size:90%;
+padding:3pt;
+color:black;
+background:rgb(219,224,253);
+margin-top:4pt;} 
+
+/* ALL images          */ 
+.Image {  
+} 
+
+/* Geometry of main images (width, height)          */ 
+div.Image img {  
+} 
+
+/* Custom field block          */ 
+.CustomFieldsGroup {  
+font-size:90%;
+font-family:arial;
+margin-left:3px;
+margin-right:1px;
+background:RGB(255, 255, 255);
+margin-top:10px;
+float:right;} 
+
+/* Custom fields subtitle          */ 
+.CustomFieldsSubtitle {  
+font-weight:800;
+background-color:RGB(210, 210, 255);} 
+
+/* Custom field name          */ 
+.CustomFieldName {  
+font-weight:100;
+background-color:RGB(226, 226, 226);
+padding:9px;} 
+
+/* Custom field          */ 
+.CustomField {  
+background-color:RGB(210, 210, 255);
+font-weight:100;
+padding:5px;} 
+
+/* Custom field value (all)          */ 
+.CFs {  
+padding:5px;} 
+
+/* Custom field value (1)          */ 
+.CF1 {  
+} 
+
+/* Custom field value (2)          */ 
+.CF2 {  
+} 
+
+/* Custom field value (3)          */ 
+.CF3 {  
+} 
+
+/* Custom field value (4)          */ 
+.CF4 {  
+} 
+
+/* Custom field value (5)          */ 
+.CF5 {  
+} 
+
+/* Custom field value (6)          */ 
+.CF6 {  
+} 
+
+/* Custom field value (7)          */ 
+.CF7 {  
+} 
+
+/* Custom field value (8)          */ 
+.CF8 {  
+} 
+
+/* Custom field value (9)          */ 
+.CF9 {  
+} 
+
+/* Custom field value (10)          */ 
+.CF10 {  
+} 
+
+/* Custom field value (11)          */ 
+.CF11 {  
+} 
+
+/* Custom field value (12)          */ 
+.CF12 {  
+} 
+
+/* Custom field value (13)          */ 
+.CF13 {  
+} 
+
+/* Custom field value (14)          */ 
+.CF14 {  
+} 
+
+/* Custom field value (15)          */ 
+.CF15 {  
+} 
+
+/* Custom field value (16)          */ 
+.CF16 {  
+} 
+
+/* Custom field value (17)          */ 
+.CF17 {  
+} 
+
+/* Custom field value (18)          */ 
+.CF18 {  
+} 
+
+/* Custom field value (19)          */ 
+.CF19 {  
+} 
+
+/* Custom field value (20)          */ 
+.CF20 {  
+} 
+
+/* Custom field value (21)          */ 
+.CF21 {  
+} 
+
+/* Custom field value (22)          */ 
+.CF22 {  
+} 
+
+/* Custom field value (23)          */ 
+.CF23 {  
+} 
+
+/* Custom field value (24)          */ 
+.CF24 {  
+} 
+
+/* Custom field value (25)          */ 
+.CF25 {  
+} 
+
+/* Custom field value (26)          */ 
+.CF26 {  
+} 
+
+/* Custom field value (27)          */ 
+.CF27 {  
+} 
+
+/* Custom field value (28)          */ 
+.CF28 {  
+} 
+
+/* Custom field value (29)          */ 
+.CF29 {  
+} 
+
+/* Custom field value (30)          */ 
+.CF30 {  
+} 
+
+/* Custom field value (31)          */ 
+.CF31 {  
+} 
+
+/* Custom field value (32)          */ 
+.CF32 {  
+} 
+
+/* Custom field Widget table of contents          */ 
+.CFWidgetToc {  
+padding-left:5px;} 
+
+/* Title of custom field Widget          */ 
+.CFWidgetTitle {  
+border-bottom:1 dashed silver;} 
+
+/* Set of values of custom field Widget          */ 
+.CFWidgetValues {  
+font-size:90%;
+font-weight:100;
+padding-left:10px;} 
+
+/* Single value in the custom field Widget          */ 
+.CFWidgetValue {  
+/* Insert properties */} 
+
+/* Number of occurences of values in the custom field Widget          */ 
+.CFWidgetNb {  
+font-size:90%;
+color:gray;} 
+
+/* Group of task fields          */ 
+.TaskFieldsGroup {  
+font-size:90%;
+font-family:arial;
+margin-left:10pt;
+margin-right:5 pt;
+background-color:RGB(255,255,255);
+float:right;} 
+
+/* Titre pour les champs tâches          */ 
+.TaskFieldsSubtitle {  
+font-weight:800;
+background-color:RGB(210, 210, 255);} 
+
+/* Nom du champ tâche          */ 
+.TaskFieldName {  
+font-weight:500;
+background-color:RGB(226, 226, 226);} 
+
+/* Champ tâche          */ 
+.TaskField {  
+background-color:RGB(210, 210, 255);
+font-weight:800;} 
+
+/* Task field Widget table of contents          */ 
+.TFWidgetToc {  
+padding-left:5px;} 
+
+/* Title of task field Widget          */ 
+.TFWidgetTitle {  
+border-bottom:1 dashed silver;} 
+
+/* Set of values of task field Widget          */ 
+.TFWidgetValues {  
+font-size:90%;
+font-weight:100;
+padding-left:10px;} 
+
+/* Single value in the task field Widget          */ 
+.TFWidgetValue {  
+/* Insert properties */} 
+
+/* Number of occurences of values in the task field Widget          */ 
+.TFWidgetNb {  
+font-size:90%;
+color:gray;} 
+
+/* Idea associations section          */ 
+.AssociationsGroup {  
+margin-left:30pt;
+margin-right:10pt;
+color:blue;
+margin-top:2em;
+clear:both;} 
+
+/* Idea associations subtitle          */ 
+.AssociationsSubtitle {  
+font-size:90%;} 
+
+/* Links to associated idea          */ 
+.AssociationLink {  
+} 
+
+/* Internal documents section          */ 
+.DocumentsGroup {  
+margin-top:2em;
+margin-left:30pt;
+margin-right:10pt;
+color:blue;
+clear:both;} 
+
+/* Internal documents subtitle          */ 
+.DocumentsSubtitle {  
+font-size:90%;} 
+
+/* Internal document name          */ 
+.DocumentName {  
+} 
+
+/* Links to internal document          */ 
+.DocumentLink {  
+} 
+
+/* External Urls block          */ 
+.UrlsGroup {  
+margin-top:2em;
+margin-left:30pt;
+margin-right:10pt;
+color:blue;
+clear:both;} 
+
+/* External URLs subtitle          */ 
+.UrlsSubtitle {  
+font-size:90%;} 
+
+/* URL name          */ 
+.UrlName {  
+} 
+
+/* Links to external Url          */ 
+.UrlLink {  
+} 
+
+/* Navigation bar section          */ 
+.NavBarGroup {  
+clear:both;
+font-family:arial;
+margin-left:3px;
+margin-right:3px;
+color:green;
+text-align:right;} 
+
+/* Buttons and text of navigation bar          */ 
+.NavBarPages {  
+} 
+
+/* Sibling pages numbers          */ 
+.NavBarNumbers {  
+font-weight:800;
+color:RGB(0, 255, 0);} 
+
+/* Access button and text to parent page          */ 
+.NavBarUp {  
+} 
+
+/* Indexes section          */ 
+.IndexesGroup {  
+font-size:90%;
+text-align:right;
+font-family:arial;
+margin-left:10pt;
+margin-right:10pt;
+margin-top:1pt;
+color:blue;} 
+
+/* Access to table of contents          */ 
+.IndexToc {  
+} 
+
+/* Access to bibliography          */ 
+.IndexBibliography {  
+} 
+
+/* Access to glossary          */ 
+.IndexGlossary {  
+} 
+
+/* Access to keyword index          */ 
+.IndexKeywords {  
+} 
+
+/* Table of contents section          */ 
+.TocGroup {  
+font-family:arial;
+clear:both; 
+margin-left:30pt;} 
+
+/* Main title of table of contents          */ 
+.TocTitle {  
+font-size:150%;
+margin-top:1em;
+margin-bottom:1em;
+margin-left:10pt;
+margin-right:10pt;
+clear:both;
+background:RGB(196, 225, 255);
+padding-left:10pt;
+border-bottom:4 inset RGB(235, 220, 252);} 
+
+/* 1st level item of table of contents          */ 
+.TocLevel1 {  
+margin-left:20pt;
+font-weight:800;
+font-size:120%;} 
+
+/* 2nd level item of table of contents          */ 
+.TocLevel2 {  
+margin-left:20pt;
+font-weight:800;} 
+
+/* 3rd level item of table of contents          */ 
+.TocLevel3 {  
+margin-left:20pt;
+font-size:90%;
+font-weight:800;} 
+
+/* 4th level item of table of contents          */ 
+.TocLevel4 {  
+margin-left:20pt;
+font-size:90%;
+font-weight:800;} 
+
+/* 5th level item of table of contents          */ 
+.TocLevel5 {  
+margin-left:20pt;
+font-weight:100;} 
+
+/* 6th level item of table of contents          */ 
+.TocLevel6 {  
+margin-left:20pt;} 
+
+/* 7th level item of table of contents          */ 
+.TocLevel7 {  
+margin-left:20pt;} 
+
+/* >7 level item of table of contents          */ 
+.TocLevelN {  
+margin-left:20pt;} 
+
+/* Groupe de la table des images          */ 
+.TocImagesGroup {  
+margin:20pt;} 
+
+/* Image dans la table des images          */ 
+.TocImage {  
+margin:4pt; float:left;} 
+
+/* Glossary section          */ 
+.GlossaryGroup {  
+margin-left:30pt;
+margin-right:20pt;} 
+
+/* Glossary title          */ 
+.GlossaryTitle {  
+font-size:150%;
+margin-top:1em;
+margin-bottom:1em;
+margin-left:10pt;
+margin-right:10pt;
+clear:both;
+background:RGB(196, 225, 255);
+padding-left:10pt;
+border-bottom:4 inset RGB(235, 220, 252);} 
+
+/* Alphabetical access bar to glossary          */ 
+.GlossaryAccessBar {  
+text-align:center;
+font-weight:800;} 
+
+/* Glossary body          */ 
+.GlossaryBody {  
+/* Insert properties */} 
+
+/* First letter of a sorted definition group          */ 
+.GlossaryLetter {  
+font-size:250%;
+font-weight:800;} 
+
+/* Glossary letter body          */ 
+.GlossaryLetterBody {  
+-moz-column-count:2;
+-webkit-column-count:2;
+-o-column-count:2;
+column-count:2;} 
+
+/* Glossary term          */ 
+.GlossaryItem {  
+font-weight:800;
+border-top:medium dotted silver;
+font-size:90%;} 
+
+/* Glossary word definition          */ 
+.GlossaryDefinition {  
+margin-left:30pt;
+font-size:90%;} 
+
+/* Note (book reference) section          */ 
+.NoteGroup {  
+margin-left:30pt;} 
+
+/* Note title          */ 
+.NoteSubtitle {  
+} 
+
+/* Link to a book          */ 
+.NoteLink {  
+font-size:0.8em;} 
+
+/* Book section          */ 
+.BookGroup {  
+font-size:0.8em;
+margin-top:1em;
+margin-left:30pt;} 
+
+/* Book title          */ 
+.BookTitle {  
+font-weight:800;} 
+
+/* Author(s) of the book          */ 
+.BookAuthor {  
+} 
+
+/* Book publisher          */ 
+.BookPublisher {  
+} 
+
+/* International Serial Book Number of this book          */ 
+.BookIsbn {  
+} 
+
+/* Quotation for this book          */ 
+.BookNotes  {  
+} 
+
+/* Number of book pages          */ 
+.BookPages {  
+} 
+
+/* Book reference          */ 
+.BookShortTitle {  
+} 
+
+/* Review          */ 
+.BookAltTitle {  
+} 
+
+/* Book summary          */ 
+.BookAbstract {  
+} 
+
+/* Volume          */ 
+.BookVolume {  
+} 
+
+/* Book theme          */ 
+.BookKeywords {  
+} 
+
+/* Year published :          */ 
+.BookYear {  
+} 
+
+/* URL          */ 
+.BookUrl {  
+} 
+
+/* Reference Type          */ 
+.BookReferenceType {  
+} 
+
+/* Place where published          */ 
+.BookPlacePublished {  
+} 
+
+/* Edition          */ 
+.BookEdition {  
+} 
+
+/* Original publication          */ 
+.BookOriginalPublication {  
+} 
+
+/* Reprint edition          */ 
+.BookReprintEdition {  
+} 
+
+/* Number of volumes          */ 
+.BookNbVolumes {  
+} 
+
+/* Number          */ 
+.BookNumber {  
+} 
+
+/* Date          */ 
+.BookDate {  
+} 
+
+/* Section          */ 
+.BookSection {  
+} 
+
+/* Secondary author          */ 
+.BookAuthor2 {  
+} 
+
+/* Secondary title          */ 
+.BookTitle2 {  
+} 
+
+/* Tertiary author          */ 
+.BookAuthor3 {  
+} 
+
+/* Tertiary title          */ 
+.BookTitle3 {  
+} 
+
+/* Subsidiary author, translater          */ 
+.BookSubsidiaryAuthor {  
+} 
+
+/* Type of work          */ 
+.BookTypeOfWork {  
+} 
+
+/* Reviewed item          */ 
+.BookReviewedItem {  
+} 
+
+/* Label          */ 
+.BookLabel {  
+} 
+
+/* Image          */ 
+.BookImage {  
+} 
+
+/* Image caption          */ 
+.BookCaption {  
+} 
+
+/* User 1          */ 
+.BookUser1 {  
+} 
+
+/* User 2          */ 
+.BookUser2 {  
+} 
+
+/* User 3          */ 
+.BookUser3 {  
+} 
+
+/* User 4          */ 
+.BookUser4 {  
+} 
+
+/* User 5          */ 
+.BookUser5 {  
+} 
+
+/* Author address          */ 
+.BookAuthorAddress {  
+} 
+
+/* Accession number          */ 
+.BookAccessionNumber {  
+} 
+
+/* Call number          */ 
+.BookCallNumber {  
+} 
+
+/* Bibliography section          */ 
+.BibliographyGroup {  
+} 
+
+/* Bibliography title          */ 
+.BibliographyTitle {  
+font-size:150%;
+margin-top:1em;
+margin-bottom:1em;
+margin-left:10pt;
+margin-right:10pt;
+clear:both;
+background:RGB(196, 225, 255);
+padding-left:10pt;
+border-bottom:4 inset RGB(235, 220, 252);} 
+
+/* Alphabetical access bar to bibliography          */ 
+.BibliographyAccessBar {  
+text-align:center;
+font-weight:800;} 
+
+/* Bibliography Body          */ 
+.BibliographyBody {  
+/* Insert properties */} 
+
+/* First letter of a sorted group of books          */ 
+.BibliographyLetter {  
+font-size:250%;
+font-weight:800;
+margin-top:30pt;} 
+
+/* Bibliography letter body          */ 
+.BibliographyLetterBody {  
+-moz-column-count:2;
+-webkit-column-count:2;
+-o-column-count:2;
+column-count:2;} 
+
+/* 1er tri par :          */ 
+.BibliographyPrimarySort {  
+font-size:140%;
+font-weight:800;
+margin-top:1em;} 
+
+/* 2ème tri par :          */ 
+.BibliographySecondarySort {  
+font-size:110%;
+font-weight:500;
+margin-top:1em;
+margin-left:10pt;} 
+
+/* Link to a book          */ 
+.BibliographyLink {  
+font-size:90%;
+font-weight:800;} 
+
+/* Groupe Index          */ 
+.IndexGroup {  
+margin-left:30pt;
+margin-right:20pt;} 
+
+/* Titre de l'index          */ 
+.IndexTitle {  
+font-size:150%;
+margin-top:1em;
+margin-bottom:1em;
+margin-left:10pt;
+margin-right:10pt;
+clear:both;
+background:RGB(196, 225, 255);
+padding-left:10pt;
+border-bottom:4 inset RGB(235, 220, 252);} 
+
+/* Barre d'accès alphabétique de l'index          */ 
+.IndexAccessBar {  
+text-align:center;
+font-weight:800;} 
+
+/* Facet bar style          */ 
+.IndexFacetBar {  
+text-align:center;
+font-weight:100;} 
+
+/* Index Body          */ 
+.IndexBody {  
+} 
+
+/* Première lettre d'un groupe de mots clés          */ 
+.IndexLetter {  
+font-size:250%;
+font-weight:800;} 
+
+/* Index letter body          */ 
+.IndexLetterBody {  
+-moz-column-count:2;
+-webkit-column-count:2;
+-o-column-count:2;
+column-count:2;} 
+
+/* Facet name (primary sort)          */ 
+.IndexFacet {  
+font-size:140%;
+font-weight:800;
+margin-top:1em;} 
+
+/* Mot clé          */ 
+.IndexKeyword {  
+font-weight:800;
+border-top:medium dotted silver;
+font-size:90%;
+margin-top:5px;} 
+
+/* Facet name in faceted index          */ 
+.IndexFacetName {  
+color:silver;
+font-weight:100;} 
+
+/* Références du mot clé          */ 
+.IndexReference {  
+margin-left:30pt;
+font-size:90%;} 
+
+/* Index keyword item parent reference          */ 
+.IndexKeywordParent {  
+font-size:smaller;
+color:silver;} 
+
+/* Top image (.IndexGroup, .GlossaryGroup, .BibliographyGroup)          */ 
+.Top {  
+float:right;
+margin-top:10px;} 
+
+/* Top image (.IndexGroup, .GlossaryGroup, .BibliographyGroup)          */ 
+div.Top img {  
+height:8pt;} 
+
+/*           */ 
+.PaneImage {  
+} 
+
+/* Texte of page footer          */ 
+.PageFooter {  
+font-size:8pt;
+text-align:justify;
+color:red;} 
+
+/* Copyright          */ 
+.Copyright {  
+font-size:8pt;
+text-align:right;
+font-style:italic;
+color:blue;
+display:none;} 
+
+/* WIT wrapping of CSS Simple Tree Menu (courtesy of www.dynamicdrive.com)          */ 
+.WITTree {  
+font-family:arial;
+font-size:90%;
+margin:5px;} 
+
+/* Inner container of WIT Simple Tree Menu          */ 
+.WITTreeInner {  
+margin-left: -38px;padding: 0;} 
+
+/* Links in WIT menu, active          */ 
+a.WITTreeLink:active {  
+color:navy;} 
+
+/* Links in WIT menu, visited          */ 
+a.WITTreeLink:visited {  
+color:navy;} 
+
+/* Links in WIT menu, visited          */ 
+a.WITTreeLink:hover {  
+color:orange;
+text-decoration:none;} 
+
+/* Links in WIT menu, link          */ 
+a.WITTreeLink:link {  
+color:navy;} 
+
+/* CSS for Simple Tree Menu : Main list          */ 
+ul.treeview {  
+margin-top:0px;
+margin-bottom:0px;} 
+
+/* CSS for Simple Tree Menu          */ 
+.treeview ul {  
+/*CSS for Simple Tree Menu*/
+margin: 0px;
+padding: 0px;} 
+
+/* Style for LI elements in general (excludes an LI that contains sub lists)          */ 
+.treeview li {  
+/*Style for LI elements in general (excludes an LI that contains sub lists)*/
+background: transparent  url(../extra/list.gif) no-repeat 0px 2px;
+list-style-type: none;
+padding-left: 16px;
+padding-bottom:2px;
+margin-bottom: 3px;} 
+
+/* Style for LI that contains sub lists (other ULs).          */ 
+.treeview li.submenu {  
+/* Style for LI that contains sub lists (other ULs). */
+background: transparent  url(../extra/closed.gif) no-repeat -9px -7px;
+cursor: hand !important;
+cursor: pointer !important;} 
+
+/* Style for ULs that are children of LIs (submenu)           */ 
+.treeview li.submenu ul  {  
+/*Style for ULs that are children of LIs (submenu) */
+display: none; /*Hide them by default. Don't delete. */
+padding-top:5px;} 
+
+/* Style for LIs of ULs that are children of LIs (submenu)           */ 
+.treeview .submenu ul li {  
+/*Style for LIs of ULs that are children of LIs (submenu) */
+cursor: default;} 
+
+/* WIT wrapping of Chrome CSS Drop Down Menu (courtesy of www.dynamicdrive.com)          */ 
+.WITChromeMenu {  
+/* Insert properties */
+clear:both;
+margin-left:7px;
+margin-right:3px;} 
+
+/* Chrome CSS Drop Down menu bar          */ 
+.chromestyle  {  
+margin:0px;
+padding:0px;} 
+
+/* Chrome CSS Drop Down Menu          */ 
+.chromestyle:after {  
+/*Add margin between menu and rest of content in Firefox*/
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;} 
+
+/* Chrome CSS Drop Down menu : horizontal bar          */ 
+.chromestyle ul {  
+border: 1px solid #BBB;
+width:100%;
+background: url(../extra/chromebg.gif) center center repeat-x; /*THEME CHANGE HERE*/
+padding: 4px 0;
+margin: 0px;
+font-size:80%;
+font-weight: 100;
+font-family:arial, verdana;
+text-align: left; /*set value to "left", "center", or "right"*/} 
+
+/* Chrome CSS Drop Down Menu : horizontal bar elements list          */ 
+.chromestyle ul li {  
+display: inline;} 
+
+/* Chrome CSS Drop Down Menu : horizontal bar links          */ 
+.chromestyle ul li a {  
+color: #494949;
+padding: 4px 7px;
+margin: 0;
+text-decoration: none;
+border-right: 1px solid #DADADA;} 
+
+/* Chrome CSS Drop Down Menu : horizontal bar links, hovered          */ 
+.chromestyle ul li a:hover {  
+text-decoration: none;
+background: url(../extra/chromebg-over.gif) center center repeat-x; /*THEME CHANGE HERE*/} 
+
+/* Chrome CSS Drop Down Menu : horizontal bar links, visited          */ 
+.chromestyle ul li a:visited {  
+color: #494949;} 
+
+/* Chrome CSS Drop Down Menu : trick...          */ 
+.chromestyle ul li a[rel]:after {  
+/*HTML to indicate drop down link*/
+/*content: " v";
+/*content: " " url(../extra/downimage.gif); /*uncomment this line to use an image instead*/} 
+
+/* Chrome CSS Drop Down Menu : Dropdown pane          */ 
+.dropmenudiv {  
+border: 1px solid #BBB; /*THEME CHANGE HERE*/
+border-bottom-width: 0;
+font-size:80%;
+line-height:15px;
+text-align:left;
+background-color: white;
+color:grey;
+width: 280px;
+/* Do not change below */
+position:absolute;
+top: 0;
+z-index:100;
+visibility: hidden;
+filter: progid:DXImageTransform.Microsoft.Shadow(color=#CACACA,direction=135,strength=4); /*Add Shadow in IE. Remove if desired*/} 
+
+/* Chrome CSS Drop Down Menu : dropdown pane links          */ 
+.dropmenudiv a {  
+width: auto;
+display: block;
+text-indent: 3px;
+border-bottom: 1px solid #BBB; /*THEME CHANGE HERE*/
+padding: 2px 2px;
+text-decoration: none;
+font-weight: 100;
+color: #666666;} 
+
+/* Chrome CSS Drop Down Menu : IE only hack          */ 
+* html .dropmenudiv a {  
+width: 100%;} 
+
+/* Chrome CSS Drop Down Menu : dropdown link, hovered          */ 
+.dropmenudiv a:hover {  
+background-color: #F0F0F0;
+text-decoration: none;} 
+
+/* Chrome CSS Drop Down Menu : dropdown link, visited          */ 
+.dropmenudiv a:visited {  
+color: #666666;} 
+

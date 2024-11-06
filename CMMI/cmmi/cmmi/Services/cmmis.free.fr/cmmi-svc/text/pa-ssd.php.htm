@@ -1,0 +1,629 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="index, follow">
+<meta name="generator" content="WebIdeaTree">
+<meta name="author" content="Christophe Guibert">
+<meta name="copyright" content="Christophe Guibert, 2001-2013">
+<meta name="description" content="Service System Development (appropriate, architecture, as needed, cmm, cmmi, cmmi-dev, customer, dar, development, document, end user, formal evaluation process, goal, maturity level, operational concept, organization, outsourcing, peer review, process, process area, product, product component, quality, rating, reference, relevant stakeholder, representation, requirement, requirements management, service, service agreement, service system, service system component, service system consumable, specific goal, specific practice, stakeholder, standard, team, validation, verification, work plan, work product, )"> 
+<meta name="keywords" content="appropriate, architecture, as needed, cmm, cmmi, cmmi-dev, customer, dar, development, document, end user, formal evaluation process, goal, maturity level, operational concept, organization, outsourcing, peer review, process, process area, product, product component, quality, rating, reference, relevant stakeholder, representation, requirement, requirements management, service, service agreement, service system, service system component, service system consumable, specific goal, specific practice, stakeholder, standard, team, validation, verification, work plan, work product, "> 
+<title>Service System Development</title> 
+<link href="style.css" rel="stylesheet" type="text/css"> 
+<script type="text/javascript" language="JavaScript">
+var WIT_x = 0;
+var WIT_y = 0;
+var WIT_net = (navigator.appName.substring(0, 3) == "Net");
+
+if (document.getElementById)
+{
+	if (WIT_net)
+	{
+		document.captureEvents(Event.MOUSEMOVE);
+	}
+	document.onmousemove = WIT_Mouse;
+}
+
+function WIT_Mouse(e)
+{
+	WIT_x = (WIT_net) ? e.pageX : event.x + document.body.scrollLeft;
+	WIT_y = (WIT_net) ? e.pageY : event.y + document.body.scrollTop;
+}
+var WIT_detail = "";
+var WIT_descr = "";
+var WIT_descrShown = 0;
+
+function WIT_Show()
+{
+	if (document.getElementById && WIT_descrShown)
+	{
+		document.getElementById(WIT_detail).innerHTML = WIT_descr;
+		document.getElementById(WIT_detail).style.left = WIT_x;
+		document.getElementById(WIT_detail).style.top = WIT_y + 18;
+	}
+}
+
+function WIT_DeferShow(msg, detail)
+{
+	WIT_detail = detail;
+	WIT_descr = msg;
+	WIT_descrShown = 1;
+	setTimeout(WIT_Show, 500);
+}
+
+function WIT_Clear()
+{
+	WIT_descrShown = 0;
+	document.getElementById(WIT_detail).innerHTML = "";
+	document.getElementById(WIT_detail).style.left = -1000;
+	document.getElementById(WIT_detail).style.top = -1000;
+}
+</script>
+<div id="navnum1" style="border:1px solid black; padding: 1px; font-size: 8pt; z-index: 2; left:-1000px; top:-1000px; font-family:verdana; position: absolute; background-color: rgb(255,255,213); text-align: center; font-weight:100;"></div>
+</head> 
+
+<!-- @ appropriate @ architecture @ as needed @ cmm @ cmmi @ cmmi-dev @ customer @ dar @ development @ document @ end user @ formal evaluation process @ goal @ maturity level @ operational concept @ organization @ outsourcing @ peer review @ process @ process area @ product @ product component @ quality @ rating @ reference @ relevant stakeholder @ representation @ requirement @ requirements management @ service @ service agreement @ service system @ service system component @ service system consumable @ specific goal @ specific practice @ stakeholder @ standard @ team @ validation @ verification @ work plan @ work product @ -->
+<body class="Body" text="#000000" bgcolor="#ffffff"> 
+<div id="Container">
+<div class="PageHeader">
+    <script src="../extra/niftycube.js"
+         type="text/javascript">
+</script> <script type="text/javascript">
+//<![CDATA[
+    window.onload = function()
+    {
+    Nifty("div#container", "all big");
+    Nifty("div.HierarchyGroup", "all normal");
+    Nifty("div.KeywordsGroup", "all normal");
+    Nifty("div.H1", "all normal");
+    Nifty("div.TopHeader", "all big");
+    Nifty("div.Bottom", "bottom big");
+    Nifty("td.CustomField", "right small");
+    Nifty("td.CustomFieldName", "left small");
+    }
+    //]]>
+    </script>
+    <div class="NavRight"
+         align="right">
+        <span class="NavBarPages"> 
+<a HREF="ccb777e(cmmi_svc_1_3)-1021.php.htm"><img SRC="../wit-icons/triangle-blueleft.gif" alt="Previous page
+SP 3.3 Maintain the Service System" title="Previous page
+SP 3.3 Maintain the Service System" border="0"></a>&nbsp;</span> 
+ 306/686 - 15 sub articles <span class="NavBarPages"> 
+</span> 
+<span class="NavBarUp"> 
+<a HREF="ccb777e(cmmi_svc_1_3)-826.php.htm"><img SRC="../wit-icons/triangle-blueup.gif" alt="Return
+4.&nbsp;Process Areas" title="Return
+4.&nbsp;Process Areas" border="0"></a></span> 
+ <span class="NavBarPages"> 
+<a HREF="ccb777e(cmmi_svc_1_3)-1023.php.htm"><img SRC="../wit-icons/triangle-blueright.gif" alt="Next page
+SG 1 Develop and Analyze Stakeholder Requirements" title="Next page
+SG 1 Develop and Analyze Stakeholder Requirements" border="0"></a></span> 
+
+    </div>
+    <div class="topHeader">
+        <a HREF="../../../www.webideatree.com/"
+             target="_blank"><img alt="WebIdeaTree"
+             SRC="../extra/wit100x35.jpg"
+             border="0" /></a> <font face="Arial"
+             size="5">CMMI for Services 1.3</font>
+    </div><script type="text/javascript" src="../extra/chrome.js">
+/***********************************************
+ * Chrome CSS Drop Down Menu- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+ * This notice MUST stay intact for legal use
+ * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+ ***********************************************/
+</script>
+
+<div class="WITChromeMenu">
+<div class="chromestyle" id="chromemenu">
+<ul>
+<li><a HREF="index.php.htm">CMMI-SVC 1.3</a></li>
+<li><a HREF="ccb777e(cmmi_svc_1_3)-716.php.htm" rel="drop1">Preface</a></li>
+<li><a HREF="ccb777e(cmmi_svc_1_3)-726.php.htm" rel="drop2">About CMMI for Services</a></li>
+<li><a HREF="ccb777e(cmmi_svc_1_3)-800.php.htm" rel="drop3">Generic Goals and Generic Practices</a></li>
+<li><a HREF="ccb777e(cmmi_svc_1_3)-826.php.htm" rel="drop4">Process Areas</a></li>
+<li><a HREF="ccb777e(cmmi_1_3_for_development)-353.php.htm" rel="drop5">Appendices</a></li>
+</ul>
+</div>
+<div id="drop1" class="dropmenudiv">
+<a HREF="ccb777e(cmmi_svc_1_3)-717.php.htm">Purpose</a>
+<a HREF="ccb777e(cmmi_svc_1_3)-718.php.htm">Acknowledgments</a>
+<a HREF="ccb777e(cmmi_svc_1_3)-719.php.htm">Audience</a>
+<a HREF="ccb777e(cmmi_svc_1_3)-720.php.htm">Organization of this Document</a>
+<a HREF="ccb777e(cmmi_svc_1_3)-721.php.htm">How to Use this Document</a>
+<a HREF="ccb777e(cmmi_svc_1_3)-725.php.htm">Additional Information and Reader Feedback</a>
+</div>
+<div id="drop2" class="dropmenudiv">
+<a HREF="ccb777e(cmmi_svc_1_3)-727.php.htm">Introduction</a>
+<a HREF="ccb777e(cmmi_svc_1_3)-733.php.htm">Process Area Components</a>
+<a HREF="ccb777e(cmmi_svc_1_3)-759.php.htm">Tying It All Together</a>
+<a HREF="ccb777e(cmmi_svc_1_3)-785.php.htm">Relationships Among Process Areas</a>
+<a HREF="ccb777e(cmmi_svc_1_3)-788.php.htm">Using CMMI Models</a>
+<a HREF="ccb777e(cmmi_svc_1_3)-798.php.htm">CMMI Related Training</a>
+</div>
+<div id="drop3" class="dropmenudiv">
+<a HREF="ccb777e(cmmi_svc_1_3)-801.php.htm">Overview</a>
+<a HREF="ccb777e(cmmi_svc_1_3)-802.php.htm">Process Institutionalization</a>
+<a HREF="ccb777e(cmmi_svc_1_3)-807.php.htm">Generic Goals and Generic Practices</a>
+<a HREF="ccb777e(cmmi_svc_1_3)-824.php.htm">Applying Generic Practices</a>
+<a HREF="ccb777e(cmmi_svc_1_3)-825.php.htm">Process Areas that Support Generic Practices</a>
+</div>
+<div id="drop4" class="dropmenudiv">
+<a HREF="pa-cam.php.htm">Capacity and Availability Management</a>
+<a HREF="pa-car.php.htm">Causal Analysis and Resolution</a>
+<a HREF="pa-cm.php.htm">Configuration Management</a>
+<a HREF="pa-dar.php.htm">Decision Analysis and Resolution</a>
+<a HREF="pa-irp.php.htm">Incident Resolution and Prevention</a>
+<a HREF="pa-iwm.php.htm">Integrated Work Management</a>
+<a HREF="pa-ma.php.htm">Measurement and Analysis</a>
+<a HREF="pa-opd.php.htm">Organizational Process Definition</a>
+<a HREF="pa-opf.php.htm">Organizational Process Focus</a>
+<a HREF="pa-opm.php.htm">Organizational Performance Management</a>
+<a HREF="pa-opp.php.htm">Organizational Process Performance</a>
+<a HREF="pa-ot.php.htm">Organizational Training</a>
+<a HREF="pa-ppqa.php.htm">Process and Product Quality Assurance</a>
+<a HREF="pa-qwm.php.htm">Quantitative Work Management</a>
+<a HREF="pa-reqm.php.htm">Requirements Management</a>
+<a HREF="pa-rskm.php.htm">Risk Management</a>
+<a HREF="pa-sam.php.htm">Supplier Agreement Management</a>
+<a HREF="pa-scon.php.htm">Service Continuity</a>
+<a HREF="pa-sd.php.htm">Service Delivery</a>
+<a HREF="pa-ssd.php.htm">Service System Development</a>
+<a HREF="pa-sst.php.htm">Service System Transition</a>
+<a HREF="pa-stsm.php.htm">Strategic Service Management</a>
+<a HREF="pa-wmc.php.htm">Work Monitoring and Control</a>
+<a HREF="pa-wp.php.htm">Work Planning</a>
+</div>
+<div id="drop5" class="dropmenudiv">
+<a HREF="ccb777e(cmmi_1_3_for_development)-354.php.htm">Appendix A: References</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-356.php.htm">Appendix B: Acronyms</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-433.php.htm">Appendix C: CMMI Version 1.3 Project Participants</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-449.php.htm">Appendix D: Glossary</a>
+<a HREF="report-documentation-page.php.htm">Report Documentation Page</a>
+</div>
+<script type="text/javascript">
+cssdropdown.startchrome("chromemenu")
+</script>
+</div>
+
+</div>
+<table width="100%">
+    <tbody>
+        <tr>
+            <td valign="top"><!-- SiteSearch Google --></td>
+            <td valign="top"></div>
+<table class="TablePanes" cellspacing="0"><tr class="RowPanes">
+<td class="PageLeftPane">  
+
+    <div class="RightMenu">
+        <font size="1"><br />
+        Process
+        <br />
+        Areas
+        <br />
+        (staged)
+        <br />
+        <br /></font> <font size="1">Level&nbsp;2&nbsp;&nbsp;
+        <br />
+        &nbsp;<a title="Configuration Management"
+           HREF="pa-cm.php.htm">CM</a>&nbsp;
+        <br />
+        &nbsp;<a title="Measurement and Analysis"
+           HREF="pa-ma.php.htm">MA</a>&nbsp;
+        <br />
+        &nbsp;<a title="Process and Product Quality Assurance"
+           HREF="pa-ppqa.php.htm">PPQA</a>&nbsp;
+        <br />
+        &nbsp;<a title="Requirements Management"
+           HREF="pa-reqm.php.htm">REQM</a></font>&nbsp;
+        <br />
+        <font size="1">&nbsp;<a title="Supplier Agreement Management"
+           HREF="pa-sam.php.htm">SAM</a></font>&nbsp;&nbsp;
+        <br />
+        <font size="1">&nbsp;<a title="Service Delivery"
+           HREF="pa-sd.php.htm">SD</a></font>&nbsp;&nbsp;
+        <br />
+        <font size="1">&nbsp;<a title="Work Monitoring and Control"
+           HREF="pa-wmc.php.htm">WMC</a>&nbsp;
+        <br />
+        &nbsp;<a title="Work Planning"
+           HREF="pa-wp.php.htm">WP</a></font>
+    </div>
+    <div class="RightMenu">
+        <font size="1">Level&nbsp;3&nbsp;&nbsp;
+        <br />
+        &nbsp;</font><font size="1"><a title="Capacity and Availability Management"
+           HREF="pa-cam.php.htm"><font size="1">CAM</font></a>&nbsp;
+        <br />
+        &nbsp;<a title="Decision Analysis and Resolution"
+           HREF="pa-dar.php.htm">DAR</a>&nbsp;
+        <br />
+        &nbsp;<a title="Incident Resolution and Prevention"
+           HREF="pa-irp.php.htm">IRP</a>&nbsp;
+        <br />
+        &nbsp;<a title="Integrated Work Management"
+           HREF="pa-iwm.php.htm">IWM</a>&nbsp;
+        <br />
+        &nbsp;<a title="Organizational Process Definition"
+           HREF="pa-opd.php.htm">OPD</a>&nbsp;
+        <br />
+        &nbsp;<a title="Organizational Process Focus"
+           HREF="pa-opf.php.htm">OPF</a>&nbsp;
+        <br />
+        &nbsp;<a title="Organizational Training"
+           HREF="pa-ot.php.htm">OT</a>&nbsp;
+        <br />
+        &nbsp;<a title="Risk Management"
+           HREF="pa-rskm.php.htm">RSKM</a>&nbsp;
+        <br />
+        &nbsp;<a title="Service Continuity"
+           HREF="pa-scon.php.htm">SCON</a>&nbsp;
+        <br />
+        &nbsp;<a title="Service System Development"
+           HREF="pa-ssd.php.htm">SSD</a>&nbsp;
+        <br />
+        &nbsp;<a title="Service System Transition"
+           HREF="pa-sst.php.htm">SST</a>&nbsp;
+        <br />
+        &nbsp;<a title="Strategic Service Management"
+           HREF="pa-stsm.php.htm">STSM</a></font>
+    </div>
+    <div class="RightMenu">
+        <font size="1">Level 4
+        <br />
+        &nbsp;</font><a HREF="pa-opp.php.htm"><font size="1">OPP</font></a>&nbsp;
+        <br />
+        <font size="1">&nbsp;</font><a title="Quantitative Work Management"
+             HREF="pa-qwm.php.htm"><font size="1"><font size="1">QWM</font></font></a>
+    </div>
+    <div class="RightMenu">
+        <font size="1">Level 5&nbsp;&nbsp;
+        <br />
+        &nbsp;<a HREF="pa-car.php.htm"><font size="1">CAR</font></a>
+        <br /></font> &nbsp;<a title="Organizational Performance Management"
+             HREF="pa-opm.php.htm"><font size="1"><font size="1">OPM</font></font></a>&nbsp;
+        <br />
+    </div></td>  
+<td class="PageMiddlePane"> 
+<div class="Idea"> <a name="pa-ssd" id="pa-ssd"></a> 
+<div class="HierarchyGroup"> 
+<div class="HierarchyPos"> <a HREF="index.php.htm">CMMI-SVC 1.3</a></div> 
+<div class="HierarchyPos"> &nbsp;&nbsp;&nbsp;&nbsp;<img SRC="../wit-icons/55.png"> &nbsp;4.&nbsp;<a HREF="ccb777e(cmmi_svc_1_3)-826.php.htm">Process Areas</a></div> 
+</div> 
+<div class="H1"><span class="H2"><img SRC="../wit-icons/55.png"> &nbsp;4.20.&nbsp;Service System Development</span>&nbsp;</div>
+<div class="CustomFieldsGroup"><table><tr><td class="CustomFieldName">Process Area</td><td class="CustomField"><span class="CFs"><span class="CF1"><a HREF="wit-index-faceted.php.htm#Process20Area-SSD">SSD</a></span></span></td></tr> 
+<tr><td class="CustomFieldName">Level</td><td class="CustomField"><span class="CFs"><span class="CF2"><a HREF="wit-index-faceted.php.htm#Level-3">3</a></span></span></td></tr> 
+<tr><td class="CustomFieldName">Scope</td><td class="CustomField"><span class="CFs"><span class="CF3"><a HREF="wit-index-faceted.php.htm#Scope-A20Service20Establishment20and20Delivery20Process20Area20at20Maturity20Level203">A Service Establishment and Delivery Process Area at Maturity Level 3</a></span></span></td></tr> 
+<tr><td class="CustomFieldName">Addition</td><td class="CustomField"><span class="CFs"><span class="CF6"><a HREF="wit-index-faceted.php.htm#Addition-SSD">SSD</a></span></span></td></tr> 
+</table></div><div class="TextGroup"> 
+<p class="MsoNormal"><span lang="EN-US"
+      xml:lang="EN-US"><span lang="EN-US"
+      style="FONT-SIZE: 8pt; LINE-HEIGHT: 115%; mso-bidi-font-size: 11.0pt"
+      xml:lang="EN-US">A Service Establishment and Delivery Process Area at Maturity Level 3</span></span></p>
+<div style=
+"BORDER-RIGHT: medium none; PADDING-RIGHT: 0pt; BORDER-TOP: medium none; PADDING-LEFT: 0pt; PADDING-BOTTOM: 1pt; BORDER-LEFT: medium none; PADDING-TOP: 0pt; BORDER-BOTTOM: windowtext 1pt solid; mso-border-bottom-alt: solid windowtext .5pt; mso-element: para-border-div">
+<p class="H-purpose"><span lang="EN-US"
+          xml:lang="EN-US">Purpose</span></p>
+</div>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">The purpose of <a HREF="pa-ssd.php.htm">Service System Development</a> (SSD) is to analyze, design, develop, integrate, verify, and validate service systems, including service system components, to satisfy existing or anticipated
+      service agreements.</span></p>
+<div style=
+"BORDER-RIGHT: medium none; PADDING-RIGHT: 0pt; BORDER-TOP: medium none; PADDING-LEFT: 0pt; PADDING-BOTTOM: 1pt; BORDER-LEFT: medium none; PADDING-TOP: 0pt; BORDER-BOTTOM: windowtext 1pt solid; mso-border-bottom-alt: solid windowtext .5pt; mso-element: para-border-div">
+<p class="H-notes"><span lang="EN-US"
+          xml:lang="EN-US">Introductory Notes</span></p>
+</div>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">The <a HREF="pa-ssd.php.htm">Service System Development</a> process area is applicable to all aspects of a service system. It applies to new service systems as well as changes to existing service systems.</span></p>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">A “service system” is an integrated and interdependent combination of service system components that satisfies stakeholder requirements.</span></p>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">A “service system component” is a process, work product, person, consumable, or customer or other resource required for a service system to deliver value. Service system components can include components owned by the customer or a
+      third party.</span></p>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">A “service system consumable” is anything usable by the service provider that ceases to be available or becomes permanently changed by its use during the delivery of a service.</span></p>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">The people who are considered service system components are those who perform tasks as part of the service system, including provider staff and end users, to enable the system to operate and thereby deliver services. (See the
+      definitions of “service system,” “service system component,” “service system consumable,” and “work product” in the glossary.)</span></p>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">Organizations that wish to improve and appraise their product development processes should rely on the complete CMMI-DEV model, which specifically focuses on development as an area of interest.</span></p>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">Service provider organizations can also choose to use the CMMI-DEV model as the basis for improving and appraising their service system development processes. This use of the CMMI-DEV model is preferred for organizations that are
+      already experienced with CMMI-DEV and for organizations that develop large-scale, complex service systems.</span></p>
+<p class="body">&nbsp;</p>
+<p class="body">&nbsp;</p>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">However, the <a HREF="pa-ssd.php.htm">Service System Development</a> process area offers an alternative means of achieving somewhat similar ends by covering requirements development as well as service system development,
+<br />
+integration, verification, and validation in a single process area. Using SSD may be preferred by service provider organizations that are new to CMMI, especially those service providers that are developing simple services with relatively few components
+and interfaces. Even organizations that use the CMMI-DEV model for service system development may wish to refer to the <a HREF="pa-ssd.php.htm">Service System Development</a> process area for helpful guidance on applying development practices to service
+system components such as people, processes, and consumables.</span></p>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">It is especially important to remember that the components of some service systems can be limited to people and the processes they perform. In those contexts and similar ones in which service systems are fairly simple, exercise care
+      when interpreting the specific practices of this process area so that the implementations that result provide business value to the service provider organization.</span></p>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">The service system development process is driven by service and service system requirements that are collected from various sources such as service agreements and defects and problems identified during both service delivery and
+      incident resolution and prevention processes.</span></p>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">The <a HREF="pa-ssd.php.htm">Service System Development</a> process area focuses on the following activities:</span></p>
+<p class="list-bullet"><span lang="EN-US"
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"
+      xml:lang="EN-US"><span style="mso-list: Ignore">·<span style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span> <span lang="EN-US"
+      xml:lang="EN-US">Collecting, coordinating, analyzing, validating, and allocating stakeholder requirements for service systems</span></p>
+<p class="list-bullet"><span lang="EN-US"
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"
+      xml:lang="EN-US"><span style="mso-list: Ignore">·<span style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span> <span lang="EN-US"
+      xml:lang="EN-US">Evaluating and selecting from alternative service system solutions</span></p>
+<p class="list-bullet"><span lang="EN-US"
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"
+      xml:lang="EN-US"><span style="mso-list: Ignore">·<span style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span> <span lang="EN-US"
+      xml:lang="EN-US">Designing and building or composing (as needed), integrating, and documenting service systems that meet requirements</span></p>
+<p class="list-bullet"><span lang="EN-US"
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"
+      xml:lang="EN-US"><span style="mso-list: Ignore">·<span style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span> <span lang="EN-US"
+      xml:lang="EN-US">Verifying and validating service systems to confirm they satisfy their intended requirements and they will satisfy customer and end-user expectations during actual service delivery</span></p>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">CMMI does not endorse particular methods for service system development.</span> <span lang="EN-US"
+      style="mso-bidi-language: HE"
+      xml:lang="EN-US">How the service</span> <span lang="EN-US"
+      xml:lang="EN-US">organization</span> <span lang="EN-US"
+      style="mso-bidi-language: HE"
+      xml:lang="EN-US">chooses to develop the service system can range from internal development to outsourcing to commercial product integration. Most service organizations in their efforts to build their service system will engage</span> <span lang=
+      "EN-US"
+      xml:lang="EN-US">a development</span> <span lang="EN-US"
+      style="mso-bidi-language: HE"
+      xml:lang="EN-US">team and a particular</span> <span lang="EN-US"
+      xml:lang="EN-US">development approach</span><span lang="EN-US"
+      style="mso-bidi-language: HE"
+      xml:lang="EN-US">.</span> <span lang="EN-US"
+      xml:lang="EN-US">The choice of development method(s) depends on the requirements to be achieved and what service system components will need to be developed. Agile methods constitute one possible family of approaches, but may not be appropriate for
+      all (or any) components. (</span><span lang="EN-US"
+      style="mso-bidi-language: HE"
+      xml:lang="EN-US">The phrase “Agile method” is shorthand for any development or management method that adheres to the <em style="mso-bidi-font-style: normal">Manifesto for Agile Development</em> [Beck 2001] and that typically addresses software
+      development.)</span> <span lang="EN-US"
+      xml:lang="EN-US">For organizations that choose to use Agile, the following paragraphs can be helpful in implementing the practices of SSD.</span></p>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">In Agile environments, the requirements, design, development, and validation process is performed incrementally and through continuing engagement with relevant stakeholders, particularly customers and end users. Customer needs and
+      ideas are iteratively elicited, elaborated, analyzed, and validated. Requirements are documented in forms such as user stories, scenarios, use cases, product backlogs, and iteration results. These requirements are prioritized into cycles of
+      development from which design models, operational concepts, and diagrams are evolved to produce service system components. Agile methods give emphasis to a strong working relationship between the development staff, the service provision staff, and
+      the customer (or end user). This iterative and cooperative development approach is used to select and refine the service system solution to provide high degrees of quality and efficiency during service delivery.</span></p>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">Short daily meetings or communications are held to obtain near real-time validation of the technical selections and decisions. End of cycle reviews are also conducted to validate current development and review requirements
+      prioritization for the subsequent cycle of development. Due to the emphasis on early exploration and validation of needs and expectations, stakeholder commitment and availability is essential. Also, it is important that all parties understand their
+      role and are willing to share in addressing the risks that arise from such collaborative work.</span></p>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">Further, when deciding to use an Agile method, consider the implications for other process areas. In particular, the effects on service system transition and delivery may need to be understood upfront; and discussions held on how
+      best to mitigate any impacts.</span></p>
+<p class="body"><span lang="EN-US"
+      style="mso-bidi-language: HE"
+      xml:lang="EN-US">For more information on how to apply Agile methods, see CMMI-DEV Section 5.0 Interpreting CMMI When Using Agile Approaches.</span></p>
+<p class="body"><span lang="EN-US"
+      xml:lang="EN-US">For standard services, the development processes described in this process area can also be applied at the organizational level to identify, develop, and maintain core assets (e.g., components, tools, architectures, operating
+      procedures, service system representations, software) used in developing or customizing service systems for delivery of standard services (or tailored services).</span></p>
+<p class="reference"><span lang="EN-US"
+      xml:lang="EN-US">Refer to the <a HREF="pa-stsm.php.htm">Strategic Service Management</a> process area for more information about establishing strategic needs and plans for standard services.</span></p>
+<p class="reference">&nbsp;</p>
+<p class="reference">&nbsp;</p>
+<div style=
+"BORDER-RIGHT: medium none; PADDING-RIGHT: 0pt; BORDER-TOP: medium none; PADDING-LEFT: 0pt; PADDING-BOTTOM: 1pt; BORDER-LEFT: medium none; PADDING-TOP: 0pt; BORDER-BOTTOM: windowtext 1pt solid; mso-border-bottom-alt: solid windowtext .5pt; mso-element: para-border-div">
+<p class="H-related-process-areas"><span lang="EN-US"
+          xml:lang="EN-US">Related Process Areas</span></p>
+</div>
+<p class="reference"><span lang="EN-US"
+      xml:lang="EN-US">Refer to the <a HREF="pa-sd.php.htm">Service Delivery</a> process area for more information about maintaining the service system.</span></p>
+<p class="reference"><span lang="EN-US"
+      xml:lang="EN-US">Refer to the <a HREF="pa-sst.php.htm">Service System Transition</a> process area for more information about deploying the service system.</span></p>
+<p class="reference"><span lang="EN-US"
+      xml:lang="EN-US">Refer to the <a HREF="pa-stsm.php.htm">Strategic Service Management</a> process area for more information about establishing standard services.</span></p>
+<p class="reference"><span lang="EN-US"
+      xml:lang="EN-US">Refer to the <a HREF="pa-dar.php.htm">Decision Analysis and Resolution</a> process area for more information about analyzing possible decisions using a formal evaluation process that evaluates identified alternatives against established
+      criteria.</span></p>
+<p class="reference"><span lang="EN-US"
+      xml:lang="EN-US">Refer to the <a HREF="pa-opm.php.htm">Organizational Performance Management</a> process area for more information about selecting improvements and deploying improvements.</span></p>
+<p class="reference"><span lang="EN-US"
+      xml:lang="EN-US">Refer to the <a HREF="pa-reqm.php.htm">Requirements Management</a> process area for more information about managing requirements of products and product components and ensuring alignment between those requirements and the work plans and
+      work products.</span></p>
+<p class="H-goals-PtGtable"><span lang="EN-US"
+      xml:lang="EN-US">Specific Goal and Practice Summary</span></p>
+<p class="goal-name-2"><span lang="EN-US"
+      xml:lang="EN-US">SG 1 Develop and Analyze Stakeholder Requirements</span></p>
+<p class="H-sp-name-2"><span lang="EN-US"
+      xml:lang="EN-US">SP 1.1<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Develop Stakeholder Requirements</span></p>
+<p class="H-sp-name-2"><span lang="EN-US"
+      xml:lang="EN-US">SP 1.2<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Develop Service System Requirements</span></p>
+<p class="H-sp-name-2"><span lang="EN-US"
+      xml:lang="EN-US">SP 1.3<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Analyze and Validate Requirements</span></p>
+<p class="goal-name-2"><span lang="EN-US"
+      xml:lang="EN-US">SG 2 Develop Service Systems</span></p>
+<p class="H-sp-name-2"><span lang="EN-US"
+      xml:lang="EN-US">SP 2.1<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Select Service System Solutions</span></p>
+<p class="H-sp-name-2"><span lang="EN-US"
+      xml:lang="EN-US">SP 2.2<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Develop the Design</span></p>
+<p class="H-sp-name-2"><span lang="EN-US"
+      xml:lang="EN-US">SP 2.3<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Ensure Interface Compatibility</span></p>
+<p class="H-sp-name-2"><span lang="EN-US"
+      xml:lang="EN-US">SP 2.4<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Implement the Service System Design</span></p>
+<p class="H-sp-name-2"><span lang="EN-US"
+      xml:lang="EN-US">SP 2.5<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Integrate Service System Components</span></p>
+<p class="goal-name-2"><span lang="EN-US"
+      xml:lang="EN-US">SG 3 Verify and Validate Service Systems</span></p>
+<p class="H-sp-name-2"><span lang="EN-US"
+      xml:lang="EN-US">SP 3.1<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Prepare for Verification and Validation</span></p>
+<p class="H-sp-name-2"><span lang="EN-US"
+      xml:lang="EN-US">SP 3.2<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Perform Peer Reviews</span></p>
+<p class="H-sp-name-2"><span lang="EN-US"
+      xml:lang="EN-US">SP 3.3<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Verify Selected Service System Components</span></p>
+<p class="H-sp-name-2"><span lang="EN-US"
+      xml:lang="EN-US">SP 3.4<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Validate the Service System</span></p>
+</div> 
+<div class="ChildrenLinkGroup"> 
+<div class="ChildLink"><img SRC="../wit-icons/61.png"> &nbsp;<a HREF="ccb777e(cmmi_svc_1_3)-1023.php.htm">SG 1 Develop and Analyze Stakeholder Requirements</a></div> 
+<div class="ChildLink"><img SRC="../wit-icons/61.png"> &nbsp;<a HREF="ccb777e(cmmi_svc_1_3)-1027.php.htm">SG 2 Develop Service Systems</a></div> 
+<div class="ChildLink"><img SRC="../wit-icons/61.png"> &nbsp;<a HREF="ccb777e(cmmi_svc_1_3)-1033.php.htm">SG 3 Verify and Validate Service Systems</a></div> 
+</div> 
+<div class="KeywordsGroup"> 
+<span class="KeywordsSubtitle">Keywords</span>&nbsp;<span class="Keywords"><a HREF="wit-index-keywords.php.htm#appropriate">appropriate</a> ; <a HREF="wit-index-keywords.php.htm#architecture">architecture</a> ; <a HREF="wit-index-keywords.php.htm#as20needed">as needed</a> ; <a HREF="wit-index-keywords.php.htm#CMM">CMM</a> ; <a HREF="wit-index-keywords.php.htm#CMMI">CMMI</a> ; <a HREF="wit-index-keywords.php.htm#CMMI2dDEV">CMMI-DEV</a> ; <a HREF="wit-index-keywords.php.htm#customer">customer</a> ; <a HREF="wit-index-keywords.php.htm#DAR">DAR</a> ; <a HREF="wit-index-keywords.php.htm#development">development</a> ; <a HREF="wit-index-keywords.php.htm#document">document</a> ; <a HREF="wit-index-keywords.php.htm#end20user">end user</a> ; <a HREF="wit-index-keywords.php.htm#formal20evaluation20process">formal evaluation process</a> ; <a HREF="wit-index-keywords.php.htm#goal">goal</a> ; <a HREF="wit-index-keywords.php.htm#maturity20level">maturity level</a> ; <a HREF="wit-index-keywords.php.htm#operational20concept">operational concept</a> ; <a HREF="wit-index-keywords.php.htm#organization">organization</a> ; <a HREF="wit-index-keywords.php.htm#outsourcing">outsourcing</a> ; <a HREF="wit-index-keywords.php.htm#peer20review">peer review</a> ; <a HREF="wit-index-keywords.php.htm#process">process</a> ; <a HREF="wit-index-keywords.php.htm#process20area">process area</a> ; <a HREF="wit-index-keywords.php.htm#product">product</a> ; <a HREF="wit-index-keywords.php.htm#product20component">product component</a> ; <a HREF="wit-index-keywords.php.htm#quality">quality</a> ; <a HREF="wit-index-keywords.php.htm#rating">rating</a> ; <a HREF="wit-index-keywords.php.htm#reference">reference</a> ; <a HREF="wit-index-keywords.php.htm#relevant20stakeholder">relevant stakeholder</a> ; <a HREF="wit-index-keywords.php.htm#representation">representation</a> ; <a HREF="wit-index-keywords.php.htm#requirement">requirement</a> ; <a HREF="wit-index-keywords.php.htm#requirements20management">requirements management</a> ; <a HREF="wit-index-keywords.php.htm#service">service</a> ; <a HREF="wit-index-keywords.php.htm#service20agreement">service agreement</a> ; <a HREF="wit-index-keywords.php.htm#service20system">service system</a> ; <a HREF="wit-index-keywords.php.htm#service20system20component">service system component</a> ; <a HREF="wit-index-keywords.php.htm#service20system20consumable">service system consumable</a> ; <a HREF="wit-index-keywords.php.htm#specific20goal">specific goal</a> ; <a HREF="wit-index-keywords.php.htm#specific20practice">specific practice</a> ; <a HREF="wit-index-keywords.php.htm#stakeholder">stakeholder</a> ; <a HREF="wit-index-keywords.php.htm#standard">standard</a> ; <a HREF="wit-index-keywords.php.htm#team">team</a> ; <a HREF="wit-index-keywords.php.htm#validation">validation</a> ; <a HREF="wit-index-keywords.php.htm#verification">verification</a> ; <a HREF="wit-index-keywords.php.htm#work20plan">work plan</a> ; <a HREF="wit-index-keywords.php.htm#work20product">work product</a></span> 
+</div> 
+</div> 
+
+<div class="NavBarGroup"> 
+<span class="NavBarPages"> 
+<a HREF="ccb777e(cmmi_svc_1_3)-1021.php.htm"><img SRC="../wit-icons/triangle-blueleft.gif" alt="Previous page
+SP 3.3 Maintain the Service System" title="Previous page
+SP 3.3 Maintain the Service System" border="0"></a>&nbsp;<span class="NavBarNumbers"> 
+&nbsp;20&nbsp;/&nbsp;24&nbsp;</span> 
+<a HREF="ccb777e(cmmi_svc_1_3)-1023.php.htm"><img SRC="../wit-icons/triangle-blueright.gif" alt="Next page
+SG 1 Develop and Analyze Stakeholder Requirements" title="Next page
+SG 1 Develop and Analyze Stakeholder Requirements" border="0"></a></span> 
+<span class="NavBarUp"> 
+<a HREF="ccb777e(cmmi_svc_1_3)-826.php.htm"><img SRC="../wit-icons/triangle-blueup.gif" alt="Return
+4.&nbsp;Process Areas" title="Return
+4.&nbsp;Process Areas" border="0"></a></span> 
+</div> 
+<div class="IndexesGroup"> 
+<span class="IndexToc"><a HREF="wit-toc.php.htm">Table of contents</a>
+</span>
+&nbsp;|&nbsp;<span class="IndexToc"><a HREF="wit-toc-images.php.htm">Images</a>
+</span>
+&nbsp;|&nbsp;<span class="IndexGlossary"><a HREF="wit-glossary.php.htm">Glossary</a>
+</span>
+&nbsp;|&nbsp;<span class="IndexKeywords"><a HREF="wit-index-keywords.php.htm">Index</a>
+</span>
+&nbsp;|&nbsp;<span class="IndexKeywords"><a HREF="wit-index-faceted.php.htm">Faceted index</a>
+</span>
+</div> 
+<div class="Separator"><hr></div>
+</td> 
+<td class="PageRightPane"> 
+
+    <div class="RightMenu">
+        <font size="1"><font size="1"><br />
+        Process
+        <br />
+        Areas</font>(continuous)</font>
+        <br />
+        <br />
+        <font size="1">Process
+        <br />
+        management
+        <br />
+        &nbsp;<a HREF="pa-opd.php.htm"><font size="1">OPD</font></a>&nbsp;
+        <br />
+        &nbsp;</font><a HREF="pa-opf.php.htm"><font size="1">OPF</font></a>&nbsp;
+        <br />
+        <font size="1">&nbsp;<a title="Organizational Performance Management"
+           HREF="pa-opm.php.htm"><font size="1"><font size="1">OPM</font></font></a><font size="1"><br /></font>&nbsp;<a HREF="pa-opp.php.htm"><font size="1">OPP</font></a><font size="1">&nbsp;&nbsp;&nbsp;
+        <br /></font> &nbsp;</font><a HREF="pa-ot.php.htm"><font size="1">OT</font></a><font size="1">&nbsp;&nbsp;</font>
+    </div>
+    <div class="RightMenu">
+        <font size="1">Project and work &nbsp;
+        <br />
+        management&nbsp;
+        <br />
+        &nbsp;</font><font size="1"><a title="Capacity and Availability Management"
+           HREF="pa-cam.php.htm"><font size="1">CAM</font></a>&nbsp;
+        <br />
+        &nbsp;<a title="Integrated Work Management"
+           HREF="pa-iwm.php.htm">IWM</a>&nbsp;
+        <br />
+        &nbsp;<a title="Quantitative Work Management"
+           HREF="pa-qwm.php.htm">QWM</a>&nbsp;
+        <br />
+        &nbsp;<a title="Requirements Management"
+           HREF="pa-reqm.php.htm">REQM</a>&nbsp;
+        <br />
+        &nbsp;<a title="Risk Management"
+           HREF="pa-rskm.php.htm">RSKM</a>&nbsp;
+        <br />
+        &nbsp;<a title="Supplier Agreement Management"
+           HREF="pa-sam.php.htm">SAM</a>&nbsp;
+        <br />
+        &nbsp;<a title="Service Continuity"
+           HREF="pa-scon.php.htm">SCON</a>&nbsp;
+        <br />
+        &nbsp;<a title="Work Monitoring and Control"
+           HREF="pa-wmc.php.htm">WMC</a>&nbsp;
+        <br />
+        &nbsp;<a title="Work Planning"
+           HREF="pa-wp.php.htm">WP</a></font>
+    </div>
+    <div class="RightMenu">
+        <font size="1">Service establishment and delivery&nbsp;&nbsp;
+        <br />
+        &nbsp;<a title="Incident Resolution and Prevention"
+           HREF="pa-irp.php.htm">IRP</a>&nbsp;
+        <br />
+        &nbsp;<a title="Service Delivery"
+           HREF="pa-sd.php.htm">SD</a></font>&nbsp;&nbsp;
+        <br />
+        <font size="1">&nbsp;<a title="Service System Development"
+           HREF="pa-ssd.php.htm">SSD</a></font>&nbsp;&nbsp;
+        <br />
+        <font size="1">&nbsp;<a title="Service System Transition"
+           HREF="pa-sst.php.htm">SST</a></font>&nbsp;&nbsp;
+        <br />
+        <font size="1">&nbsp;<a title="Strategic Service Management"
+           HREF="pa-stsm.php.htm">STSM</a></font>&nbsp;
+    </div>
+    <div class="RightMenu">
+        <font size="1">Support&nbsp;
+        <br />
+        &nbsp;<a HREF="pa-car.php.htm"><font size="1">CAR</font></a>&nbsp;
+        <br />
+        &nbsp;</font><a HREF="pa-cm.php.htm"><font size="1">CM</font></a>&nbsp;
+        <br />
+        <font size="1">&nbsp;<a HREF="pa-dar.php.htm"><font size="1">DAR</font></a>&nbsp;
+        <br />
+        &nbsp;<a HREF="pa-ma.php.htm"><font size="1">MA</font></a><font size="1"><br /></font>&nbsp;</font><a HREF="pa-ppqa.php.htm"><font size="1">PPQA</font></a>
+        <br />
+    </div></td> 
+</tr></table> 
+<div class="PageFooter">
+    <div class="Bottom">
+        <form method="get"
+              action="http://www.google.com/custom"
+              target="_top">
+            &nbsp;&nbsp;<input name="domains"
+                  value="cmmis.free.fr/cmmi-svc"
+                  type="hidden" /> <input name="q"
+                  maxlength="255"
+                  size="31" /> <input name="sa"
+                  value="Search CMMI-SVC"
+                  type="submit" /> <input name="as_q"
+                  value="site:cmmis.free.fr/cmmi-svc"
+                  type="hidden" /> <input name="client"
+                  value="pub-9647251212076433"
+                  type="hidden" /> <input name="forid"
+                  value="0"
+                  type="hidden" /> <input name="ie"
+                  value="ISO-8859-1"
+                  type="hidden" /> <input name="oe"
+                  value="ISO-8859-1"
+                  type="hidden" /> <input name="cof"
+                  value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;"
+                  type="hidden" /> <input name="hl"
+                  value="fr"
+                  type="hidden" />
+        </form><font color="black"
+             size="0">Page 306 / 686
+        <br />
+        CMMI for Development 1.3 compiled by Christophe Guibert with <a class="UrlName"
+           HREF="../../../www.webideatree.com/"
+           target="_blank">WebIdeaTree 5</a>
+        <br />
+        Last revision on 2013-01-13</font>
+    </div><script type="text/javascript">
+//<![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2846813-3']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : '../../../www/') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    //]]>
+    </script> </div> 
+</div> 
+</body></html> 

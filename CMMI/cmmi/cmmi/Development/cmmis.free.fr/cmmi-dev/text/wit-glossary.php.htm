@@ -1,0 +1,1826 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="index, follow">
+<meta name="generator" content="WebIdeaTree">
+<meta name="author" content="Christophe Guibert">
+<meta name="copyright" content="Christophe Guibert, 2001">
+<meta name="description" content="CMMI DEV 1.3 (arc, capability maturity model, cmmi-dev, development, document, dod, finding, ideal, ndi, process, product, program, scampi, sei, service, software engineering, )"> 
+<meta name="keywords" content="arc, capability maturity model, cmmi-dev, development, document, dod, finding, ideal, ndi, process, product, program, scampi, sei, service, software engineering, "> 
+<title>CMMI DEV 1.3</title> 
+<link href="style.css" rel="stylesheet" type="text/css"> 
+<script type="text/javascript" language="JavaScript">
+var WIT_x = 0;
+var WIT_y = 0;
+var WIT_net = (navigator.appName.substring(0, 3) == "Net");
+
+if (document.getElementById)
+{
+	if (WIT_net)
+	{
+		document.captureEvents(Event.MOUSEMOVE);
+	}
+	document.onmousemove = WIT_Mouse;
+}
+
+function WIT_Mouse(e)
+{
+	WIT_x = (WIT_net) ? e.pageX : event.x + document.body.scrollLeft;
+	WIT_y = (WIT_net) ? e.pageY : event.y + document.body.scrollTop;
+}
+var WIT_detail = "";
+var WIT_descr = "";
+var WIT_descrShown = 0;
+
+function WIT_Show()
+{
+	if (document.getElementById && WIT_descrShown)
+	{
+		document.getElementById(WIT_detail).innerHTML = WIT_descr;
+		document.getElementById(WIT_detail).style.left = WIT_x;
+		document.getElementById(WIT_detail).style.top = WIT_y + 18;
+	}
+}
+
+function WIT_DeferShow(msg, detail)
+{
+	WIT_detail = detail;
+	WIT_descr = msg;
+	WIT_descrShown = 1;
+	setTimeout(WIT_Show, 500);
+}
+
+function WIT_Clear()
+{
+	WIT_descrShown = 0;
+	document.getElementById(WIT_detail).innerHTML = "";
+	document.getElementById(WIT_detail).style.left = -1000;
+	document.getElementById(WIT_detail).style.top = -1000;
+}
+</script>
+<div id="navnum1" style="border:1px solid black; padding: 1px; font-size: 8pt; z-index: 2; left:-1000px; top:-1000px; font-family:verdana; position: absolute; background-color: rgb(255,255,213); text-align: center; font-weight:100;"></div>
+</head> 
+
+<!-- @ arc @ capability maturity model @ cmmi-dev @ development @ document @ dod @ finding @ ideal @ ndi @ process @ product @ program @ scampi @ sei @ service @ software engineering @ -->
+<body class="Body" text="#000000" bgcolor="#ffffff"> 
+<div id="Container">
+<div class="PageHeader">
+    <script type="text/javascript"
+         src="../extra/niftycube.js">
+</script> <script type="text/javascript">
+//<![CDATA[
+    window.onload = function()
+    {
+    Nifty("div#container", "all big");
+    Nifty("div.HierarchyGroup", "all normal");
+    Nifty("div.KeywordsGroup", "all normal");
+    Nifty("div.H1", "all normal");
+    Nifty("div.TopHeader", "all big");
+    Nifty("div.Bottom", "bottom big");
+    Nifty("td.CustomField", "right small");
+    Nifty("td.CustomFieldName", "left small");
+    }
+    //]]>
+    </script>
+    <div class="NavRight"
+         align="right">
+        <span class="NavBarPages"> 
+</span> 
+ 1/670 - 669 sub articles <span class="NavBarPages"> 
+</span> 
+ <span class="NavBarPages"> 
+<a HREF="ccb777e(cmmi_1_3_for_development)-3.php.htm"><img SRC="../wit-icons/triangle-blueright.gif" alt="Next page
+1.&nbsp;Preface" title="Next page
+1.&nbsp;Preface" border="0"></a></span> 
+
+    </div>
+    <div class="topHeader">
+        <a HREF="../../../www.webideatree.com/"
+             target="_blank"><img border="0"
+             alt="WebIdeaTree"
+             SRC="../extra/wit100x35.jpg" /></a> <font size="5"
+             face="Arial">CMMI for Development 1.3</font>
+    </div><script type="text/javascript" src="../extra/chrome.js">
+/***********************************************
+ * Chrome CSS Drop Down Menu- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+ * This notice MUST stay intact for legal use
+ * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+ ***********************************************/
+</script>
+
+<div class="WITChromeMenu">
+<div class="chromestyle" id="chromemenu">
+<ul>
+<li><a HREF="index.php.htm">CMMI DEV 1.3</a></li>
+<li><a HREF="ccb777e(cmmi_1_3_for_development)-3.php.htm" rel="drop1">Preface</a></li>
+<li><a HREF="table-of-contents.php.htm" rel="drop2">Table of contents</a></li>
+<li><a HREF="ccb777e(cmmi_1_3_for_development)-13.php.htm" rel="drop3">About CMMI for Development</a></li>
+<li><a HREF="ccb777e(cmmi_1_3_for_development)-89.php.htm" rel="drop4">Generic Goals and Generic Practices</a></li>
+<li><a HREF="ccb777e(cmmi_1_3_for_development)-88.php.htm" rel="drop5">Process Areas</a></li>
+<li><a HREF="ccb777e(cmmi_1_3_for_development)-353.php.htm" rel="drop6">Appendices</a></li>
+</ul>
+</div>
+<div id="drop1" class="dropmenudiv">
+<a HREF="ccb777e(cmmi_1_3_for_development)-4.php.htm">Purpose</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-5.php.htm">Acknowledgments</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-6.php.htm">Audience</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-7.php.htm">Organization of this Document</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-8.php.htm">How to Use this Document</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-12.php.htm">Additional Information and Reader Feedback</a>
+</div>
+<div id="drop2" class="dropmenudiv">
+</div>
+<div id="drop3" class="dropmenudiv">
+<a HREF="ccb777e(cmmi_1_3_for_development)-14.php.htm">Introduction</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-2d20.php.htm">Process Area Components</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-46.php.htm">Tying It All Together</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-65.php.htm">Relationships Among Process Areas</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-77.php.htm">Using CMMI Models</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-87.php.htm">CMMI Related Training</a>
+</div>
+<div id="drop4" class="dropmenudiv">
+<a HREF="ccb777e(cmmi_1_3_for_development)-90.php.htm">Overview</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-91.php.htm">Process Institutionalization</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-96.php.htm">Generic Goals and Generic Practices</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-113.php.htm">Applying Generic Practices</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-114.php.htm">Process Areas that Support Generic Practices</a>
+</div>
+<div id="drop5" class="dropmenudiv">
+<a HREF="pa-car.php.htm">Causal Analysis and Resolution</a>
+<a HREF="pa-cm.php.htm">Configuration Management</a>
+<a HREF="pa-dar.php.htm">Decision Analysis and Resolution</a>
+<a HREF="pa-ipm.php.htm">Integrated Project Management</a>
+<a HREF="pa-ma.php.htm">Measurement and Analysis</a>
+<a HREF="pa-opd.php.htm">Organizational Process Definition</a>
+<a HREF="pa-opf.php.htm">Organizational Process Focus</a>
+<a HREF="pa-opm.php.htm">Organizational Performance Management</a>
+<a HREF="pa-opp.php.htm">Organizational Process Performance</a>
+<a HREF="pa-ot.php.htm">Organizational Training</a>
+<a HREF="pa-pi.php.htm">Product Integration</a>
+<a HREF="pa-pmc.php.htm">Project Monitoring and Control</a>
+<a HREF="pa-pp.php.htm">Project Planning</a>
+<a HREF="pa-ppqa.php.htm">Process and Product Quality Assurance</a>
+<a HREF="pa-qpm.php.htm">Quantitative Project Management</a>
+<a HREF="pa-rd.php.htm">Requirements Development</a>
+<a HREF="pa-rm.php.htm">Requirements Management</a>
+<a HREF="pa-rskm.php.htm">Risk Management</a>
+<a HREF="pa-sam.php.htm">Supplier Agreement Management</a>
+<a HREF="pa-ts.php.htm">Technical Solution</a>
+<a HREF="pa-va.php.htm">Validation</a>
+<a HREF="pa-ve.php.htm">Verification</a>
+</div>
+<div id="drop6" class="dropmenudiv">
+<a HREF="ccb777e(cmmi_1_3_for_development)-354.php.htm">Appendix A: References</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-356.php.htm">Appendix B: Acronyms</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-433.php.htm">Appendix C: CMMI Version 1.3 Project Participants</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-449.php.htm">Appendix D: Glossary</a>
+<a HREF="report-documentation-page.php.htm">Report Documentation Page</a>
+</div>
+<script type="text/javascript">
+cssdropdown.startchrome("chromemenu")
+</script>
+</div>
+
+</div>
+<table width="100%">
+    <tbody>
+        <tr>
+            <td valign="top"><!-- SiteSearch Google --></td>
+            <td valign="top"></div>
+<table class="TablePanes" cellspacing="0"><tr class="RowPanes">
+<td class="PageLeftPane">  
+
+    <div class="RightMenu">
+        <font size="1"><br />
+        Process
+        <br />
+        Areas
+        <br />
+        (staged)
+        <br />
+        <br /></font> <font size="1">Level&nbsp;2
+        <br />
+        &nbsp;</font><a HREF="pa-rm.php.htm"><font size="1">REQM</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-pp.php.htm"><font size="1">PP</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-pmc.php.htm"><font size="1">PMC</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-sam.php.htm"><font size="1">SAM</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-ma.php.htm"><font size="1">MA</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-ppqa.php.htm"><font size="1">PPQA</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-cm.php.htm"><font size="1">CM</font></a><font size="1"><br />
+        Level&nbsp;3
+        <br />
+        &nbsp;</font><a HREF="pa-rd.php.htm"><font size="1">RD</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-ts.php.htm"><font size="1">TS</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-pi.php.htm"><font size="1">PI</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-ve.php.htm"><font size="1">VER</font></a>&nbsp;
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-va.php.htm"><font size="1">VAL</font></a>&nbsp;
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-opf.php.htm"><font size="1">OPF</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-opd.php.htm"><font size="1">OPD</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-ot.php.htm"><font size="1">OT</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-ipm.php.htm"><font size="1">IPM</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-rskm.php.htm"><font size="1">RSKM</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-dar.php.htm"><font size="1">DAR</font></a><font size="1"><br />
+        Level 4
+        <br />
+        &nbsp;</font><a HREF="pa-opp.php.htm"><font size="1">OPP</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-qpm.php.htm"><font size="1">QPM</font></a><font size="1"><br />
+        Level 5&nbsp;
+        <br />
+        &nbsp;</font><a title="Organizational Performance Management"
+             HREF="pa-opm.php.htm"><font size="1"><font size="1">OPM</font></font></a>&nbsp;
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-car.php.htm"><font size="1">CAR</font></a>
+        <br />
+        <br />
+    </div></td>  
+<td class="PageMiddlePane"> 
+<div class="GlossaryGroup"> 
+<div class="GlossaryTitle"> 
+<a name="top">Glossary</a></div> 
+<div class="GlossaryAccessBar"> 
+<a href="#gA">A</a>&nbsp; 
+<a href="#gB">B</a>&nbsp; 
+<a href="#gC">C</a>&nbsp; 
+<a href="#gD">D</a>&nbsp; 
+<a href="#gE">E</a>&nbsp; 
+<a href="#gF">F</a>&nbsp; 
+<a href="#gG">G</a>&nbsp; 
+<a href="#gH">H</a>&nbsp; 
+<a href="#gI">I</a>&nbsp; 
+<a href="#gL">L</a>&nbsp; 
+<a href="#gM">M</a>&nbsp; 
+<a href="#gN">N</a>&nbsp; 
+<a href="#gO">O</a>&nbsp; 
+<a href="#gP">P</a>&nbsp; 
+<a href="#gQ">Q</a>&nbsp; 
+<a href="#gR">R</a>&nbsp; 
+<a href="#gS">S</a>&nbsp; 
+<a href="#gT">T</a>&nbsp; 
+<a href="#gU">U</a>&nbsp; 
+<a href="#gV">V</a>&nbsp; 
+<a href="#gW">W</a>&nbsp; 
+</div> 
+<div class="GlossaryBody"> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gA" id="gA">A</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-450.php.htm">acceptance criteria</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The criteria that a deliverable must satisfy to be accepted by a user, customer, or other authorized entity. (See also “deliverable.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-451.php.htm">acceptance testing</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Formal testing conducted to enable a user, customer, or other authorized entity to determine whether to accept a deliverable. (See also “unit testing.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-452.php.htm">achievement profile</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A list of process areas and their corresponding capability levels that represent the organization’s progress for each process area while advancing through the capability levels. (See also “capability level profile,” “target profile,” and “target
+staging.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-453.php.htm">acquirer</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The stakeholder that acquires or procures a product or service from a supplier. (See also “stakeholder.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-454.php.htm">acquisition</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The process of obtaining products or services through supplier agreements. (See also “supplier agreement.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-455.php.htm">acquisition strategy</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The specific approach to acquiring products and services that is based on considerations of supply sources, acquisition methods, requirements specification types, agreement types, and related acquisition risks.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-456.php.htm">addition</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A clearly marked model component that contains information of interest to particular users.
+<br />
+In a CMMI model, all additions bearing the same name can be optionally selected as a group for use. In CMMI for Services, the Service System Development (SSD) process area is an addition.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-457.php.htm">allocated requirement</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Requirement that results from levying all or part of a higher level requirement on a lower level architectural element or design component.
+<br />
+More generally, requirements can be allocated to other logical or physical components including people, consumables, delivery increments, or the architecture as a whole, depending on what best enables the product or service to achieve the requirements.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-357.php.htm">ANSI</a></div> 
+<div class="GlossaryDefinition"><p class="Text">American National Standards Institute</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-358.php.htm">API</a></div> 
+<div class="GlossaryDefinition"><p class="Text">application program interface</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-458.php.htm">appraisal</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An examination of one or more processes by a trained team of professionals using an appraisal reference model as the basis for determining, at a minimum, strengths and weaknesses.
+<br />
+This term has a special meaning in the CMMI Product Suite besides its common standard English meaning.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-459.php.htm">appraisal findings</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The results of an appraisal that identify the most important issues, problems, or opportunities for process improvement within the appraisal scope.
+<br />
+Appraisal findings are inferences drawn from corroborated objective evidence.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-460.php.htm">appraisal participants</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Members of the organizational unit who participate in providing information during an appraisal.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-461.php.htm">appraisal rating</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The value assigned by an appraisal team to (a) a CMMI goal or process area, (b) the capability level of a process area, or (c) the maturity level of an organizational unit.
+<br />
+This term is used in CMMI appraisal materials such as the SCAMPI MDD. A rating is determined by enacting the defined rating process for the appraisal method being employed.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-462.php.htm">appraisal reference model</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The CMMI model to which an appraisal team correlates implemented process activities.
+<br />
+This term is used in CMMI appraisal materials such as the SCAMPI MDD.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-463.php.htm">appraisal scope</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The definition of the boundaries of an appraisal encompassing the organizational limits and CMMI model limits within which the processes to be investigated operate.
+<br />
+This term is used in CMMI appraisal materials such as the SCAMPI MDD.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-359.php.htm">ARC</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Appraisal Requirements for CMMI</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-464.php.htm">architecture</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The set of structures needed to reason about a product. These structures are comprised of elements, relations among them, and properties of both.
+<br />
+In a service context, the architecture is often applied to the service system.
+<br />
+Note that functionality is only one aspect of the product. Quality attributes, such as responsiveness, reliability, and security, are also important to reason about. Structures provide the means for highlighting different portions of the architecture.
+(See also “functional architecture.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-465.php.htm">audit</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An objective examination of a work product or set of work products against specific criteria (e.g., requirements). (See also “objectively evaluate.”)
+<br />
+This is a term used in several ways in CMMI, including configuration audits and process compliance audits.</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gB" id="gB">B</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-467.php.htm">base measure</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Measure defined in terms of an attribute and the method for quantifying it. (See also “derived measure.”)
+<br />
+A base measure is functionally independent of other measures.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-466.php.htm">baseline</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A set of specifications or work products that has been formally reviewed and agreed on, which thereafter serves as the basis for further development, and which can be changed only through change control procedures. (See also “configuration baseline” and
+“product baseline.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-468.php.htm">bidirectional traceability</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An association among two or more logical entities that is discernable in either direction (i.e., to and from an entity). (See also “requirements traceability” and “traceability.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-469.php.htm">business objectives</a></div> 
+<div class="GlossaryDefinition"><p class="Text">(See “organization’s business objectives.”)</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gC" id="gC">C</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-360.php.htm">CAD</a></div> 
+<div class="GlossaryDefinition"><p class="Text">computer-aided design</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-470.php.htm">capability level</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Achievement of process improvement within an individual process area. (See also “generic goal,” “specific goal,” “maturity level,” and “process area.”)
+<br />
+A capability level is defined by appropriate specific and generic goals for a process area.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-471.php.htm">capability level profile</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A list of process areas and their corresponding capability levels. (See also “achievement profile,” “target profile,” and “target staging.”)
+<br />
+A capability level profile can be an “achievement profile” when it represents the organization’s progress for each process area while advancing through the capability levels. Or, it can be a “target profile” when it represents an objective for process
+improvement.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-472.php.htm">capability maturity model</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A model that contains the essential elements of effective processes for one or more areas of interest and describes an evolutionary improvement path from ad hoc, immature processes to disciplined, mature processes with improved quality and effectiveness.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-473.php.htm">capable process</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A process that can satisfy its specified product quality, service quality, and process performance objectives. (See also “stable process” and “standard process.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-361.php.htm">CAR</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-car.php.htm">Causal Analysis and Resolution</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-474.php.htm">causal analysis</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The analysis of outcomes to determine their causes.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-362.php.htm">CCB</a></div> 
+<div class="GlossaryDefinition"><p class="Text">configuration control board</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-475.php.htm">change management</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Judicious use of means to effect a change, or a proposed change, to a product or service. (See also “configuration management.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-363.php.htm">CL</a></div> 
+<div class="GlossaryDefinition"><p class="Text">capability level</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-364.php.htm">CM</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-cm.php.htm">Configuration Management</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-366.php.htm">CMF</a></div> 
+<div class="GlossaryDefinition"><p class="Text">CMMI Model Foundation</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-367.php.htm">CMM</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Capability Maturity Model</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-368.php.htm">CMMI</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Capability Maturity Model Integration</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-476.php.htm">CMMI Framework</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The basic structure that organizes CMMI components, including elements of current CMMI models as well as rules and methods for generating models, appraisal methods (including associated artifacts), and training materials. (See also “CMMI model” and “CMMI
+Product Suite.”)
+<br />
+The framework enables new areas of interest to be added to CMMI so that they will integrate with the existing ones.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-477.php.htm">CMMI model</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A model generated from the CMMI Framework. (See also “CMMI Framework” and “CMMI Product Suite.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-478.php.htm">CMMI model component</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Any of the main architectural elements that compose a CMMI model.
+<br />
+Some of the main elements of a CMMI model include specific practices, generic practices, specific goals, generic goals, process areas, capability levels, and maturity levels.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-479.php.htm">CMMI Product Suite</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The complete set of products developed around the CMMI concept. (See also “CMMI Framework” and “CMMI model.”)
+<br />
+These products include the framework itself, models, appraisal methods, appraisal materials, and training materials.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-369.php.htm">CMMI-ACQ</a></div> 
+<div class="GlossaryDefinition"><p class="Text">CMMI for Acquisition</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-370.php.htm">CMMI-DEV</a></div> 
+<div class="GlossaryDefinition"><p class="Text">CMMI for Development</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-371.php.htm">CMMI-SVC</a></div> 
+<div class="GlossaryDefinition"><p class="Text">CMMI for Services</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-365.php.htm">CMU</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Carnegie Mellon University</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-372.php.htm">CobiT</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Control Objectives for Information and related Technology</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-480.php.htm">commercial off-the-shelf</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Items that can be purchased from a commercial supplier.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-481.php.htm">common cause of variation</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The variation of a process that exists because of normal and expected interactions among components of a process. (See also “special cause of variation.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-482.php.htm">configuration audit</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An audit conducted to verify that a configuration item or a collection of configuration items that make up a baseline conforms to a specified standard or requirement. (See also “audit” and “configuration item.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-483.php.htm">configuration baseline</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The configuration information formally designated at a specific time during a product’s or product component’s life. (See also “product lifecycle.”)
+<br />
+Configuration baselines plus approved changes from those baselines constitute the current configuration information.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-484.php.htm">configuration control</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An element of configuration management consisting of the evaluation, coordination, approval or disapproval, and implementation of changes to configuration items after formal establishment of their configuration identification. (See also “configuration
+identification,” “configuration item,” and “configuration management.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-485.php.htm">configuration control board</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A group of people responsible for evaluating and approving or disapproving proposed changes to configuration items and for ensuring implementation of approved changes. (See also “configuration item.”)
+<br />
+Configuration control boards are also known as “change control boards.”</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-486.php.htm">configuration identification</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An element of configuration management consisting of selecting the configuration items for a product, assigning unique identifiers to them, and recording their functional and physical characteristics in technical documentation. (See also “configuration
+item,” “configuration management,” and “product.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-487.php.htm">configuration item</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An aggregation of work products that is designated for configuration management and treated as a single entity in the configuration management process. (See also “configuration management.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-488.php.htm">configuration management</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A discipline applying technical and administrative direction and surveillance to (1) identify and document the functional and physical characteristics of a configuration item, (2) control changes to those characteristics, (3) record and report change
+processing and implementation status, and (4) verify compliance with specified requirements. (See also “configuration audit,” “configuration control,” “configuration identification,” and “configuration status accounting.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-489.php.htm">configuration status accounting</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An element of configuration management consisting of the recording and reporting of information needed to manage a configuration effectively. (See also “configuration identification” and “configuration management.”)
+<br />
+This information includes a list of the approved configuration, the status of proposed changes to the configuration, and the implementation status of approved changes.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-490.php.htm">constellation</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A collection of CMMI components that are used to construct models, training materials, and appraisal related documents for an area of interest (e.g., acquisition, development, services).</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-491.php.htm">continuous representation</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A capability maturity model structure wherein capability levels provide a recommended order for approaching process improvement within each specified process area. (See also “capability level,” “process area,” and “staged representation.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-492.php.htm">contractor</a></div> 
+<div class="GlossaryDefinition"><p class="Text">(See “supplier.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-493.php.htm">contractual requirements</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The result of the analysis and refinement of customer requirements into a set of requirements suitable to be included in one or more solicitation packages, or supplier agreements. (See also “acquirer,” “customer requirement,” “supplier agreement,” and
+“solicitation package.”)
+<br />
+Contractual requirements include both technical and nontechnical requirements necessary for the acquisition of a product or service.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-494.php.htm">corrective action</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Acts or deeds used to remedy a situation or remove an error.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-373.php.htm">COTS</a></div> 
+<div class="GlossaryDefinition"><p class="Text">commercial off-the-shelf</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-374.php.htm">CPI</a></div> 
+<div class="GlossaryDefinition"><p class="Text">cost performance index</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-375.php.htm">CPM</a></div> 
+<div class="GlossaryDefinition"><p class="Text">critical path method</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-376.php.htm">CSCI</a></div> 
+<div class="GlossaryDefinition"><p class="Text">computer software configuration item</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-495.php.htm">customer</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The party responsible for accepting the product or for authorizing payment.
+<br />
+The customer is external to the project or work group (except possibly in certain project structures in which the customer effectively is on the project team or in the work group) but not necessarily external to the organization. The customer can be a
+higher level project or work group. Customers are a subset of stakeholders. (See also “stakeholder.”)
+<br />
+In most cases where this term is used, the preceding definition is intended; however, in some contexts, the term “customer” is intended to include other relevant stakeholders. (See also “customer requirement.”)
+<br />
+End users can be distinguished from customers if the parties that directly receive the value of products and services are not the same as the parties that arrange for, pay for, or negotiate agreements. In contexts where customers and end users are
+essentially the same parties, the term “customer” can encompass both types. (See also “end user.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-496.php.htm">customer requirement</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The result of eliciting, consolidating, and resolving conflicts among the needs, expectations, constraints, and interfaces of the product’s relevant stakeholders in a way that is acceptable to the customer. (See also “customer.”)</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gD" id="gD">D</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-377.php.htm">DAR</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-dar.php.htm">Decision Analysis and Resolution</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-497.php.htm">data</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Recorded information.
+<br />
+Recorded information can include technical data, computer software documents, financial information, management information, representation of facts, numbers, or datum of any nature that can be communicated, stored, and processed.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-498.php.htm">data management</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The disciplined processes and systems that plan for, acquire, and provide stewardship for business and technical data, consistent with data requirements, throughout the data lifecycle.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-499.php.htm">defect density</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Number of defects per unit of product size.
+<br />
+An example is the number of problem reports per thousand lines of code.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-500.php.htm">defined process</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A managed process that is tailored from the organization’s set of standard processes according to the organization’s tailoring guidelines; has a maintained process description; and contributes process related experiences to the organizational process
+assets. (See also “managed process.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-501.php.htm">definition of required functionality and quality attributes</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A characterization of required functionality and quality attributes obtained through “chunking,” organizing, annotating, structuring, or formalizing the requirements (functional and non-functional) to facilitate further refinement and reasoning about the
+requirements as well as (possibly, initial) solution exploration, definition, and evaluation. (See also “architecture,” “functional architecture,” and “quality attribute.”)
+<br />
+As technical solution processes progress, this characterization can be further evolved into a description of the architecture versus simply helping scope and guide its development, depending on the engineering processes used; requirements specification
+and architectural languages used; and the tools and the environment used for product or service system development.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-502.php.htm">deliverable</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An item to be provided to an acquirer or other designated recipient as specified in an agreement. (See also “acquirer.”)
+<br />
+This item can be a document, hardware item, software item, service, or any type of work product.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-503.php.htm">delivery environment</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The complete set of circumstances and conditions under which services are delivered in accordance with service agreements. (See also “service” and “service agreement.”)
+<br />
+The delivery environment encompasses everything that has or can have a significant effect on service delivery, including but not limited to service system operation, natural phenomena, and the behavior of all parties, whether or not they intend to have
+such an effect. For example, consider the effect of weather or traffic patterns on a transportation service. (See also “service system.”)
+<br />
+The delivery environment is uniquely distinguished from other environments (e.g., simulation environments, testing environments). The delivery environment is the one in which services are actually delivered and count as satisfying a service agreement.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-504.php.htm">derived measure</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Measure that is defined as a function of two or more values of base measures. (See also “base measure.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-505.php.htm">derived requirements</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Requirements that are not explicitly stated in customer requirements but are inferred (1) from contextual requirements (e.g., applicable standards, laws, policies, common practices, management decisions) or (2) from requirements needed to specify a
+product or service component.
+<br />
+Derived requirements can also arise during analysis and design of components of the product or service. (See also “product requirements.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-506.php.htm">design review</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A formal, documented, comprehensive, and systematic examination of a design to determine if the design meets the applicable requirements, to identify problems, and to propose solutions.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-507.php.htm">development</a></div> 
+<div class="GlossaryDefinition"><p class="Text">To create a product or service system by deliberate effort.
+<br />
+In some contexts, development can include the maintenance of the developed product.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-378.php.htm">DHS</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Department of Homeland Security</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-508.php.htm">document</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A collection of data, regardless of the medium on which it is recorded, that generally has permanence and can be read by humans or machines.
+<br />
+Documents include both paper and electronic documents.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-379.php.htm">DoD</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Department of Defense</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gE" id="gE">E</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-380.php.htm">EIA</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Electronic Industries Alliance</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-381.php.htm">EIA/IS</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Electronic Industries Alliance/Interim Standard</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-509.php.htm">end user</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A party that ultimately uses a delivered product or that receives the benefit of a delivered service. (See also “customer.”)
+<br />
+End users may or may not also be customers (who can establish and accept agreements or authorize payments).
+<br />
+In contexts where a single service agreement covers multiple service deliveries, any party that initiates a service request can be considered an end user. (See also “service agreement” and “service request.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-510.php.htm">enterprise</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The full composition of a company. (See also “organization.”)
+<br />
+A company can consist of many organizations in many locations with different customers.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-511.php.htm">entry criteria</a></div> 
+<div class="GlossaryDefinition"><p class="Text">States of being that must be present before an effort can begin successfully.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-512.php.htm">equivalent staging</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A target staging, created using the continuous representation that is defined so that the results of using the target staging can be compared to maturity levels of the staged representation. (See also “capability level profile,” “maturity level,” “target
+profile,” and “target staging.”)
+<br />
+Such staging permits benchmarking of progress among organizations, enterprises, projects, and work groups, regardless of the CMMI representation used. The organization can implement components of CMMI models beyond the ones reported as part of equivalent
+staging. Equivalent staging relates how the organization compares to other organizations in terms of maturity levels.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-513.php.htm">establish and maintain</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Create, document, use, and revise work products as necessary to ensure they remain useful.
+<br />
+The phrase “establish and maintain” plays a special role in communicating a deeper principle in CMMI: work products that have a central or key role in work group, project, and organizational performance should be given attention to ensure they are used
+and useful in that role.
+<br />
+This phrase has particular significance in CMMI because it often appears in goal and practice statements (though in the former as "established and maintained") and should be taken as shorthand for applying the principle to whatever work product is the
+object of the phrase.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-514.php.htm">example work product</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An informative model component that provides sample outputs from a specific practice.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-515.php.htm">executive</a></div> 
+<div class="GlossaryDefinition"><p class="Text">(See “senior manager.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-516.php.htm">exit criteria</a></div> 
+<div class="GlossaryDefinition"><p class="Text">States of being that must be present before an effort can end successfully.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-517.php.htm">expected CMMI components</a></div> 
+<div class="GlossaryDefinition"><p class="Text">CMMI components that describe the activities that are important in achieving a required CMMI component.
+<br />
+Model users can implement the expected components explicitly or implement equivalent practices to these components. Specific and generic practices are expected model components.</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gF" id="gF">F</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-382.php.htm">FCA</a></div> 
+<div class="GlossaryDefinition"><p class="Text">functional configuration audit</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-518.php.htm">findings</a></div> 
+<div class="GlossaryDefinition"><p class="Text">(See “appraisal findings.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-383.php.htm">FMEA</a></div> 
+<div class="GlossaryDefinition"><p class="Text">failure mode and effects analysis</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-519.php.htm">formal evaluation process</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A structured approach to evaluating alternative solutions against established criteria to determine a recommended solution to address an issue.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-520.php.htm">framework</a></div> 
+<div class="GlossaryDefinition"><p class="Text">(See “CMMI Framework.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-521.php.htm">functional analysis</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Examination of a defined function to identify all the subfunctions necessary to accomplish that function; identification of functional relationships and interfaces (internal and external) and capturing these relationships and interfaces in a functional
+architecture; and flow down of upper level requirements and assignment of these requirements to lower level subfunctions. (See also “functional architecture.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-522.php.htm">functional architecture</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The hierarchical arrangement of functions, their internal and external (external to the aggregation itself) functional interfaces and external physical interfaces, their respective requirements, and their design constraints. (See also “architecture,”
+“functional analysis,” and “definition of required functionality and quality attributes.”)</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gG" id="gG">G</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-523.php.htm">generic goal</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A required model component that describes characteristics that must be present to institutionalize processes that implement a process area. (See also “institutionalization.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-524.php.htm">generic practice</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An expected model component that is considered important in achieving the associated generic goal.
+<br />
+The generic practices associated with a generic goal describe the activities that are expected to result in achievement of the generic goal and contribute to the institutionalization of the processes associated with a process area.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-525.php.htm">generic practice elaboration</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An informative model component that appears after a generic practice to provide guidance on how the generic practice could be applied uniquely to a process area. (This model component is not present in all CMMI models.)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-384.php.htm">GG</a></div> 
+<div class="GlossaryDefinition"><p class="Text">generic goal</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-385.php.htm">GP</a></div> 
+<div class="GlossaryDefinition"><p class="Text">generic practice</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gH" id="gH">H</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-526.php.htm">hardware engineering</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The application of a systematic, disciplined, and quantifiable approach to transforming a set of requirements that represent the collection of stakeholder needs, expectations, and constraints, using documented techniques and technology to design,
+implement, and maintain a tangible product. (See also “software engineering” and “systems engineering.”)
+<br />
+In CMMI, hardware engineering represents all technical fields (e.g., electrical, mechanical) that transform requirements and ideas into tangible products.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-527.php.htm">higher level management</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The person or persons who provide the policy and overall guidance for the process but do not provide the direct day-to-day monitoring and controlling of the process. (See also “senior manager.”)
+<br />
+Such persons belong to a level of management in the organization above the immediate level responsible for the process and can be (but are not necessarily) senior managers.</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gI" id="gI">I</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-386.php.htm">IBM</a></div> 
+<div class="GlossaryDefinition"><p class="Text">International Business Machines</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-387.php.htm">IDEAL</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Initiating, Diagnosing, Establishing, Acting, Learning</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-388.php.htm">IEEE</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Institute of Electrical and Electronics Engineers</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-528.php.htm">incomplete process</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A process that is not performed or is performed only partially; one or more of the specific goals of the process area are not satisfied.
+<br />
+An incomplete process is also known as capability level 0.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-389.php.htm">INCOSE</a></div> 
+<div class="GlossaryDefinition"><p class="Text">International Council on Systems Engineering</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-529.php.htm">informative CMMI components</a></div> 
+<div class="GlossaryDefinition"><p class="Text">CMMI components that help model users understand the required and expected components of a model.
+<br />
+These components can be examples, detailed explanations, or other helpful information. Subpractices, notes, references, goal titles, practice titles, sources, example work products, and generic practice elaborations are informative model components.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-530.php.htm">institutionalization</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The ingrained way of doing business that an organization follows routinely as part of its corporate culture.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-531.php.htm">interface control</a></div> 
+<div class="GlossaryDefinition"><p class="Text">In configuration management, the process of (1) identifying all functional and physical characteristics relevant to the interfacing of two or more configuration items provided by one or more organizations and (2) ensuring that proposed changes to these
+characteristics are evaluated and approved prior to implementation. (See also “configuration item” and “configuration management.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-390.php.htm">IPD-CMM</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Integrated Product Development Capability Maturity Model</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-391.php.htm">IPM</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-ipm.php.htm">Integrated Project Management</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-392.php.htm">ISO</a></div> 
+<div class="GlossaryDefinition"><p class="Text">International Organization for Standardization</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-393.php.htm">ISO/IEC</a></div> 
+<div class="GlossaryDefinition"><p class="Text">International Organization for Standardization and International Electrotechnical Commission</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-394.php.htm">ITIL</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Information Technology Infrastructure Library</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gL" id="gL">L</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-532.php.htm">lifecycle model</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A partitioning of the life of a product, service, project, work group, or set of work activities into phases.</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gM" id="gM">M</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-395.php.htm">MA</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-ma.php.htm">Measurement and Analysis</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-533.php.htm">managed process</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A performed process that is planned and executed in accordance with policy; employs skilled people having adequate resources to produce controlled outputs; involves relevant stakeholders; is monitored, controlled, and reviewed; and is evaluated for
+adherence to its process description. (See also “performed process.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-534.php.htm">manager</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A person who provides technical and administrative direction and control to those who perform tasks or activities within the manager’s area of responsibility.
+<br />
+This term has a special meaning in the CMMI Product Suite besides its common standard English meaning. The traditional functions of a manager include planning, organizing, directing, and controlling work within an area of responsibility.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-535.php.htm">maturity level</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Degree of process improvement across a predefined set of process areas in which all goals in the set are attained. (See also “capability level” and “process area.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-396.php.htm">MDD</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Method Definition Document</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-536.php.htm">measure (noun)</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Variable to which a value is assigned as a result of measurement. (See also “base measure,” “derived measure,” and “measurement.”)
+<br />
+The definition of this term in CMMI is consistent with the definition of this term in ISO 15939.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-537.php.htm">measurement</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A set of operations to determine the value of a measure. (See also “measure.”)
+<br />
+The definition of this term in CMMI is consistent with the definition of this term in ISO 15939.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-538.php.htm">measurement result</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A value determined by performing a measurement. (See also “measurement.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-539.php.htm">memorandum of agreement</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Binding document of understanding or agreement between two or more parties.
+<br />
+A memorandum of agreement is also known as a “memorandum of understanding.”</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-397.php.htm">ML</a></div> 
+<div class="GlossaryDefinition"><p class="Text">maturity level</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gN" id="gN">N</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-540.php.htm">natural bounds</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The inherent range of variation in a process, as determined by process performance measures.
+<br />
+Natural bounds are sometimes referred to as “voice of the process.”
+<br />
+Techniques such as control charts, confidence intervals, and prediction intervals are used to determine whether the variation is due to common causes (i.e., the process is predictable or stable) or is due to some special cause that can and should be
+identified and removed. (See also “measure” and “process performance.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-398.php.htm">NDIA</a></div> 
+<div class="GlossaryDefinition"><p class="Text">National Defense Industrial Association</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-541.php.htm">nondevelopmental item</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An item that was developed prior to its current use in an acquisition or development process.
+<br />
+Such an item can require minor modifications to meet the requirements of its current intended use.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-542.php.htm">nontechnical requirements</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Requirements affecting product and service acquisition or development that are not properties of the product or service.
+<br />
+Examples include numbers of products or services to be delivered, data rights for delivered COTS and nondevelopmental items, delivery dates, and milestones with exit criteria. Other nontechnical requirements include work constraints associated with
+training, site provisions, and deployment schedules.</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gO" id="gO">O</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-543.php.htm">objectively evaluate</a></div> 
+<div class="GlossaryDefinition"><p class="Text">To review activities and work products against criteria that minimize subjectivity and bias by the reviewer. (See also “audit.”)
+<br />
+An example of an objective evaluation is an audit against requirements, standards, or procedures by an independent quality assurance function.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-399.php.htm">OID</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Organizational Innovation and Deployment (former process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-2d400.php.htm">OPD</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-opd.php.htm">Organizational Process Definition</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-544.php.htm">operational concept</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A general description of the way in which an entity is used or operates.
+<br />
+An operational concept is also known as “concept of operations.”</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-545.php.htm">operational scenario</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A description of an imagined sequence of events that includes the interaction of the product or service with its environment and users, as well as interaction among its product or service components.
+<br />
+Operational scenarios are used to evaluate the requirements and design of the system and to verify and validate the system.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-2d401.php.htm">OPF</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-opf.php.htm">Organizational Process Focus</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-2d402.php.htm">OPM</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-opm.php.htm">Organizational Performance Management</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-2d403.php.htm">OPP</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-opp.php.htm">Organizational Process Performance</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-546.php.htm">organization</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An administrative structure in which people collectively manage one or more projects or work groups as a whole, share a senior manager, and operate under the same policies.
+<br />
+However, the word “organization” as used throughout CMMI models can also apply to one person who performs a function in a small organization that might be performed by a group of people in a large organization. (See also “enterprise.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-547.php.htm">organizational maturity</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The extent to which an organization has explicitly and consistently deployed processes that are documented, managed, measured, controlled, and continually improved.
+<br />
+Organizational maturity can be measured via appraisals.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-548.php.htm">organizational policy</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A guiding principle typically established by senior management that is adopted by an organization to influence and determine decisions.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-549.php.htm">organizational process assets</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Artifacts that relate to describing, implementing, and improving processes.
+<br />
+Examples of these artifacts include policies, measurement descriptions, process descriptions, process implementation support tools.
+<br />
+The term “process assets” is used to indicate that these artifacts are developed or acquired to meet the business objectives of the organization and that they represent investments by the organization that are expected to provide current and future
+business value. (See also “process asset library.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-550.php.htm">organization’s business objectives</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Senior-management-developed objectives designed to ensure an organization’s continued existence and enhance its profitability, market share, and other factors influencing the organization’s success. (See also “quality and process performance objectives”
+and “quantitative objective.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-551.php.htm">organization’s measurement repository</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A repository used to collect and make measurement results available on processes and work products, particularly as they relate to the organization’s set of standard processes.
+<br />
+This repository contains or references actual measurement results and related information needed to understand and analyze measurement results.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-552.php.htm">organization’s process asset library</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A library of information used to store and make process assets available that are useful to those who are defining, implementing, and managing processes in the organization.
+<br />
+This library contains process assets that include process related documentation such as policies, defined processes, checklists, lessons learned documents, templates, standards, procedures, plans, and training materials.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-553.php.htm">organization’s set of standard processes</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A collection of definitions of the processes that guide activities in an organization.
+<br />
+These process descriptions cover the fundamental process elements (and their relationships to each other such as ordering and interfaces) that should be incorporated into the defined processes that are implemented in projects, work groups, and work across
+the organization. A standard process enables consistent development and maintenance activities across the organization and is essential for long-term stability and improvement. (See also “defined process” and “process element.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-2d404.php.htm">OT</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-ot.php.htm">Organizational Training</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-554.php.htm">outsourcing</a></div> 
+<div class="GlossaryDefinition"><p class="Text">(See “acquisition.”)</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gP" id="gP">P</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-2d405.php.htm">P-CMM</a></div> 
+<div class="GlossaryDefinition"><p class="Text">People Capability Maturity Model</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-2d406.php.htm">PCA</a></div> 
+<div class="GlossaryDefinition"><p class="Text">physical configuration audit</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-555.php.htm">peer review</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The review of work products performed by peers during the development of work products to identify defects for removal. (See also “work product.”)
+<br />
+The term “peer review” is used in the CMMI Product Suite instead of the term “work product inspection.”</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-556.php.htm">performance parameters</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The measures of effectiveness and other key measures used to guide and control progressive development.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-557.php.htm">performed process</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A process that accomplishes the needed work to produce work products; the specific goals of the process area are satisfied.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-2d407.php.htm">PERT</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Program Evaluation and Review Technique</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-2d408.php.htm">PI</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-pi.php.htm">Product Integration</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-558.php.htm">planned process</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A process that is documented by both a description and a plan.
+<br />
+The description and plan should be coordinated and the plan should include standards, requirements, objectives, resources, and assignments.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-2d409.php.htm">PMC</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-pmc.php.htm">Project Monitoring and Control</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-559.php.htm">policy</a></div> 
+<div class="GlossaryDefinition"><p class="Text">(See “organizational policy.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-410.php.htm">PP</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-pp.php.htm">Project Planning</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-411.php.htm">PPQA</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-ppqa.php.htm">Process and Product Quality Assurance</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-560.php.htm">process</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A set of interrelated activities, which transform inputs into outputs, to achieve a given purpose. (See also “process area,” “subprocess,” and “process element.”)
+<br />
+There is a special use of the phrase “the process” in the statements and descriptions of the generic goals and generic practices. “The process,” as used in Part Two, is the process or processes that implement the process area.
+<br />
+The terms “process,” “subprocess” and “process element” form a hierarchy with “process” as the highest, most general term, “subprocesses” below it, and “process element” as the most specific. A particular process can be called a subprocess if it is part
+of another larger process. It can also be called a process element if it is not decomposed into subprocesses.
+<br />
+This definition of process is consistent with the definition of process in ISO 9000, ISO 12207, ISO 15504, and EIA 731.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-561.php.htm">process action plan</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A plan, usually resulting from appraisals, that documents how specific improvements targeting the weaknesses uncovered by an appraisal will be implemented.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-562.php.htm">process action team</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A team that has the responsibility to develop and implement process improvement activities for an organization as documented in a process action plan.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-563.php.htm">process and technology improvements</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Incremental and innovative improvements to processes and to process, product, or service technologies.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-564.php.htm">process architecture</a></div> 
+<div class="GlossaryDefinition"><p class="Text">(1) The ordering, interfaces, interdependencies, and other relationships among the process elements in a standard process, or (2) the interfaces, interdependencies, and other relationships between process elements and external processes.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-565.php.htm">process area</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A cluster of related practices in an area that, when implemented collectively, satisfies a set of goals considered important for making improvement in that area.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-566.php.htm">process asset</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Anything the organization considers useful in attaining the goals of a process area. (See also “organizational process assets.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-567.php.htm">process asset library</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A collection of process asset holdings that can be used by an organization, project, or work group. (See also “organization’s process asset library.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-568.php.htm">process attribute</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A measurable characteristic of process capability applicable to any process.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-569.php.htm">process capability</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The range of expected results that can be achieved by following a process.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-570.php.htm">process definition</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The act of defining and describing a process.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-571.php.htm">process description</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A documented expression of a set of activities performed to achieve a given purpose.
+<br />
+A process description provides an operational definition of the major components of a process. The description specifies, in a complete, precise, and verifiable manner, the requirements, design, behavior, or other characteristics of a process. It also can
+include procedures for determining whether these provisions have been satisfied. Process descriptions can be found at the activity, project, work group, or organizational level.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-572.php.htm">process element</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The fundamental unit of a process.
+<br />
+A process can be defined in terms of subprocesses or process elements. A subprocess is a process element when it is not further decomposed into subprocesses or process elements. (See also “process” and “subprocess.”)
+<br />
+Each process element covers a closely related set of activities (e.g., estimating element, peer review element). Process elements can be portrayed using templates to be completed, abstractions to be refined, or descriptions to be modified or used. A
+process element can be an activity or task.
+<br />
+The terms “process,” “subprocess,” and “process element” form a hierarchy with “process” as the highest, most general term, “subprocesses” below it, and “process element” as the most specific.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-573.php.htm">process group</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A collection of specialists who facilitate the definition, maintenance, and improvement of processes used by the organization.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-574.php.htm">process improvement</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A program of activities designed to improve the process performance and maturity of the organization’s processes, and the results of such a program.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-575.php.htm">process improvement objectives</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A set of target characteristics established to guide the effort to improve an existing process in a specific, measurable way either in terms of resultant product or service characteristics (e.g., quality, product performance, conformance to standards) or
+in the way in which the process is executed (e.g., elimination of redundant process steps, combination of process steps, improvement of cycle time). (See also “organization’s business objectives” and “quantitative objective.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-576.php.htm">process improvement plan</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A plan for achieving organizational process improvement objectives based on a thorough understanding of current strengths and weaknesses of the organization’s processes and process assets.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-577.php.htm">process measurement</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A set of operations used to determine values of measures of a process and its resulting products or services for the purpose of characterizing and understanding the process. (See also “measurement.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-578.php.htm">process owner</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The person (or team) responsible for defining and maintaining a process.
+<br />
+At the organizational level, the process owner is the person (or team) responsible for the description of a standard process; at the project or work group level, the process owner is the person (or team) responsible for the description of the defined
+process. A process can therefore have multiple owners at different levels of responsibility. (See also “defined process” and “standard process.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-579.php.htm">process performance</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A measure of results achieved by following a process. (See also “measure.”)
+<br />
+Process performance is characterized by both process measures (e.g., effort, cycle time, defect removal efficiency) and product or service measures (e.g., reliability, defect density, response time).</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-580.php.htm">process performance baseline</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A documented characterization of process performance, which can include central tendency and variation. (See also “process performance.”)
+<br />
+A process performance baseline can be used as a benchmark for comparing actual process performance against expected process performance.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-581.php.htm">process performance model</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A description of relationships among the measurable attributes of one or more processes or work products that is developed from historical process performance data and is used to predict future performance. (See also “measure.”)
+<br />
+One or more of the measureable attributes represent controllable inputs tied to a subprocess to enable performance of “what-if” analyses for planning, dynamic re-planning, and problem resolution. Process performance models include statistical,
+probabilistic and simulation based models that predict interim or final results by connecting past performance with future outcomes. They model the variation of the factors, and provide insight into the expected range and variation of predicted results. A
+process performance model can be a collection of models that (when combined) meet the criteria of a process performance model.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-582.php.htm">process tailoring</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Making, altering, or adapting a process description for a particular end.
+<br />
+For example, a project or work group tailors its defined process from the organization’s set of standard processes to meet objectives, constraints, and the environment of the project or work group. (See also “defined process,” “organization’s set of
+standard processes,” and “process description.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-583.php.htm">product</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A work product that is intended for delivery to a customer or end user.
+<br />
+This term has a special meaning in the CMMI Product Suite besides its common standard English meaning. The form of a product can vary in different contexts. (See also “customer,” “product component,” “service,” and “work product.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-584.php.htm">product baseline</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The initial approved technical data package defining a configuration item during the production, operation, maintenance, and logistic support of its lifecycle. (See also “configuration item,” “configuration management,” and “technical data package.”)
+<br />
+This term is related to configuration management.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-585.php.htm">product component</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A work product that is a lower level component of the product. (See also “product” and “work product.”)
+<br />
+Product components are integrated to produce the product. There can be multiple levels of product components.
+<br />
+Throughout the process areas, where the terms “product” and “product component” are used, their intended meanings also encompass services, service systems, and their components.
+<br />
+This term has a special meaning in the CMMI Product Suite besides its common standard English meaning.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-586.php.htm">product component requirements</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A complete specification of a product or service component, including fit, form, function, performance, and any other requirement.
+<br />
+The period of time, consisting of phases, that begins when a product or service is conceived and ends when the product or service is no longer available for use.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-587.php.htm">product lifecycle</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The period of time, consisting of phases, that begins when a product or service is conceived and ends when the product or service is no longer available for use.
+<br />
+Since an organization can be producing multiple products or services for multiple customers, one description of a product lifecycle may not be adequate. Therefore, the organization can define a set of approved product lifecycle models. These models are
+typically found in published literature and are likely to be tailored for use in an organization.
+<br />
+A product lifecycle could consist of the following phases: (1) concept and vision, (2) feasibility, (3) design/development, (4) production, and (5) phase out.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-588.php.htm">product line</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A group of products sharing a common, managed set of features that satisfy specific needs of a selected market or mission and that are developed from a common set of core assets in a prescribed way. (See also “service line.”)
+<br />
+The development or acquisition of products for the product line is based on exploiting commonality and bounding variation (i.e., restricting unnecessary product variation) across the group of products. The managed set of core assets (e.g., requirements,
+architectures, components, tools, testing artifacts, operating procedures, software) includes prescriptive guidance for their use in product development. Product line operations involve interlocking execution of the broad activities of core asset
+development, product development, and management.
+<br />
+Many people use “product line” just to mean the set of products produced by a particular business unit, whether they are built with shared assets or not. We call that collection a "portfolio," and reserve "product line" to have the technical meaning given
+here.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-589.php.htm">product related lifecycle processes</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Processes associated with a product or service throughout one or more phases of its life (e.g., from conception through disposal), such as manufacturing and support processes.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-590.php.htm">product requirements</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A refinement of customer requirements into the developers’ language, making implicit requirements into explicit derived requirements. (See also “derived requirements” and “product component requirements.”)
+<br />
+The developer uses product requirements to guide the design and building of the product or service.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-591.php.htm">product suite</a></div> 
+<div class="GlossaryDefinition"><p class="Text">(See “CMMI Product Suite.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-592.php.htm">project</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A refinement of customer requirements into the developers’ language, making implicit requirements into explicit derived requirements. (See also “derived requirements” and “product component requirements.”)
+<br />
+The developer uses product requirements to guide the design and building of the product or service.
+<br />
+The developer uses product requirements to guide the design and building of the product or service.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-593.php.htm">project plan</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A plan that provides the basis for performing and controlling the project’s activities, which addresses the commitments to the project’s customer.
+<br />
+Project planning includes estimating the attributes of work products and tasks, determining the resources needed, negotiating commitments, producing a schedule, and identifying and analyzing project risks. Iterating through these activities may be
+necessary to establish the project plan.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-594.php.htm">project progress and performance</a></div> 
+<div class="GlossaryDefinition"><p class="Text">What a project achieves with respect to implementing project plans, including effort, cost, schedule, and technical performance. (See also “technical performance.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-595.php.htm">project startup</a></div> 
+<div class="GlossaryDefinition"><p class="Text">When a set of interrelated resources for a project are directed to develop or deliver one or more products or services for a customer or end user. (See also “project.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-596.php.htm">prototype</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A preliminary type, form, or instance of a product, service, product component, or service component that serves as a model for later stages or for the final, complete version of the product or service.
+<br />
+This model of the product or service (e.g., physical, electronic, digital, analytical) can be used for the following (and other) purposes:
+<br />
+• Assessing the feasibility of a new or unfamiliar technology
+<br />
+• Assessing or mitigating technical risk
+<br />
+• Validating requirements
+<br />
+• Demonstrating critical features
+<br />
+• Qualifying a product or service
+<br />
+• Qualifying a process
+<br />
+• Characterizing performance or features of the product or service
+<br />
+• Elucidating physical principles</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gQ" id="gQ">Q</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-412.php.htm">QFD</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Quality Function Deployment</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-413.php.htm">QPM</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-qpm.php.htm">Quantitative Project Management</a> (process area)</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gR" id="gR">R</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-414.php.htm">RD</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-rd.php.htm">Requirements Development</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-597.php.htm">relevant stakeholder</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A stakeholder that is identified for involvement in specified activities and is included in a plan. (See also “stakeholder.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-598.php.htm">representation</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The organization, use, and presentation of a CMM’s components.
+<br />
+Overall, two types of approaches to presenting best practices are evident: the staged representation and the continuous representation.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-415.php.htm">REQM</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-rm.php.htm">Requirements Management</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-599.php.htm">required CMMI components</a></div> 
+<div class="GlossaryDefinition"><p class="Text">CMMI components that are essential to achieving process improvement in a given process area.
+<br />
+Specific goals and generic goals are required model components. Goal satisfaction is used in appraisals as the basis for deciding whether a process area has been satisfied.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-600.php.htm">requirement</a></div> 
+<div class="GlossaryDefinition"><p class="Text">(1) A condition or capability needed by a user to solve a problem or achieve an objective. (2) A condition or capability that must be met or possessed by a product, service, product component, or service component to satisfy a supplier agreement,
+standard, specification, or other formally imposed documents. (3) A documented representation of a condition or capability as in (1) or (2). (See also “supplier agreement.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-601.php.htm">requirements analysis</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The determination of product or service specific functional and quality attribute characteristics based on analyses of customer needs, expectations, and constraints; operational concept; projected utilization environments for people, products, services,
+and processes; and measures of effectiveness. (See also “operational concept.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-602.php.htm">requirements elicitation</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Using systematic techniques such as prototypes and structured surveys to proactively identify and document customer and end-user needs.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-603.php.htm">requirements management</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The management of all requirements received by or generated by the project or work group, including both technical and nontechnical requirements as well as those requirements levied on the project or work group by the organization. (See also “nontechnical
+requirements.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-604.php.htm">requirements traceability</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A discernable association between requirements and related requirements, implementations, and verifications. (See also “bidirectional traceability” and “traceability.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-605.php.htm">return on investment</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The ratio of revenue from output (product or service) to production costs, which determines whether an organization benefits from performing an action to produce something.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-606.php.htm">risk analysis</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The evaluation, classification, and prioritization of risks.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-607.php.htm">risk identification</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An organized, thorough approach used to seek out probable or realistic risks in achieving objectives.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-608.php.htm">risk management</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An organized, analytic process used to identify what might cause harm or loss (identify risks); to assess and quantify the identified risks; and to develop and, if needed, implement an appropriate approach to prevent or handle causes of risk that could
+result in significant harm or loss.
+<br />
+Typically, risk management is performed for the activities of a project, a work group, an organization, or other organizational units that are developing or delivering products or services.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-416.php.htm">RSKM</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-rskm.php.htm">Risk Management</a> (process area)</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gS" id="gS">S</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-417.php.htm">SA-CMM</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Software Acquisition Capability Maturity Model</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-418.php.htm">SAM</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-sam.php.htm">Supplier Agreement Management</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-419.php.htm">SCAMPI</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Standard CMMI Appraisal Method for Process Improvement</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-420.php.htm">SECAM</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Systems Engineering Capability Assessment Model</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-421.php.htm">SECM</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Systems Engineering Capability Model</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-422.php.htm">SEI</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Software Engineering Institute</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-609.php.htm">senior manager</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A management role at a high enough level in an organization that the primary focus of the person filling the role is the long-term vitality of the organization rather than short-term concerns and pressures. (See also “higher level management.”)
+<br />
+A senior manager has authority to direct the allocation or reallocation of resources in support of organizational process improvement effectiveness.
+<br />
+A senior manager can be any manager who satisfies this description, including the head of the organization. Synonyms for senior manager include “executive” and “top-level manager.” However, to ensure consistency and usability, these synonyms are not used
+in CMMI models.
+<br />
+This term has a special meaning in the CMMI Product Suite besides its common standard English meaning.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-610.php.htm">service</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A product that is intangible and non-storable. (See also “product,” “customer,” and “work product.”)
+<br />
+Services are delivered through the use of service systems that have been designed to satisfy service requirements. (See also “service system.”)
+<br />
+Many service providers deliver combinations of services and goods. A single service system can deliver both types of products. For example, a training organization can deliver training materials along with its training services.
+<br />
+Services may be delivered through combinations of manual and automated processes.
+<br />
+This term has a special meaning in the CMMI Product Suite besides its common standard English meaning.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-611.php.htm">service agreement</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A binding, written record of a promised exchange of value between a service provider and a customer. (See also “customer.”)
+<br />
+Service agreements can be fully negotiable, partially negotiable, or non-negotiable, and they can be drafted either by the service provider, the customer, or both, depending on the situation.
+<br />
+A “promised exchange of value” means a joint recognition and acceptance of what each party will provide to the other to satisfy the agreement. Typically, the customer provides payment in return for delivered services, but other arrangements are possible.
+<br />
+A “written” record need not be contained in a single document or other artifact. Alternatively, it may be extremely brief for some types of services (e.g., a receipt that identifies a service, its price, its recipient).</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-612.php.htm">service catalog</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A list or repository of standardized service definitions.
+<br />
+Service catalogs can include varying degrees of detail about available service levels, quality, prices, negotiable/tailorable items, and terms and conditions.
+<br />
+A service catalog need not be contained in a single document or other artifact, and can be a combination of items that provide equivalent information (such as web pages linked to a database.) Alternatively, for some services an effective catalog can be a
+simple printed menu of available services and their prices.
+<br />
+Service catalog information can be partitioned into distinct subsets to support different types of stakeholders (e.g., customers, end users, provider staff, suppliers).</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-613.php.htm">service incident</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An indication of an actual or potential interference with a service.
+<br />
+Service incidents can occur in any service domain because customer and end-user complaints are types of incidents and even the simplest of services can generate complaints.
+<br />
+The word “incident” can be used in place of “service incident” for brevity when the context makes the meaning clear.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-614.php.htm">service level</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A defined magnitude, degree, or quality of service delivery performance. (See also “service” and “service level measure.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-615.php.htm">service level agreement</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A service agreement that specifies delivered services; service measures; levels of acceptable and unacceptable services; and expected responsibilities, liabilities, and actions of both the provider and customer in anticipated situations. (See also
+“measure,” service,” and “service agreement.”)
+<br />
+A service level agreement is a kind of service agreement that documents the details indicated in the definition.
+<br />
+The use of the term “service agreement” always includes “service level agreement” as a subcategory and the former may be used in place of the latter for brevity. However, “service level agreement” is the preferred term when it is desired to emphasize
+situations in which distinct levels of acceptable services exist, or other details of a service level agreement are likely to be important to the discussion.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-616.php.htm">service level measure</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A measure of service delivery performance associated with a service level. (See also “measure” and “service level.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-617.php.htm">service line</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A consolidated and standardized set of services and service levels that satisfy specific needs of a selected market or mission area. (See also “product line” and “service level.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-618.php.htm">service request</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A communication from a customer or end user that one or more specific instances of service delivery are desired. (See also “service agreement.”)
+<br />
+These requests are made within the context of a service agreement.
+<br />
+In cases where services are to be delivered continuously or periodically, some service requests may be explicitly identified in the service agreement itself.
+<br />
+In other cases, service requests that fall within the scope of a previously established service agreement are generated over time by customers or end users as their needs develop.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-619.php.htm">service requirements</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The complete set of requirements that affect service delivery and service system development. (See also “service system.”)
+<br />
+Service requirements include both technical and nontechnical requirements. Technical requirements are properties of the service to be delivered and the service system needed to enable delivery. Nontechnical requirements may include additional conditions,
+provisions, commitments, and terms identified by agreements, and regulations, as well as needed capabilities and conditions derived from business objectives.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-620.php.htm">service system</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An integrated and interdependent combination of component resources that satisfies service requirements. (See also “service system component” and “service requirements.”)
+<br />
+A service system encompasses everything required for service delivery, including work products, processes, facilities, tools, consumables, and human resources.
+<br />
+Note that a service system includes the people necessary to perform the service system’s processes. In contexts where end users perform some processes for service delivery to be accomplished, those end users are also part of the service system (at least
+for the duration of those interactions).
+<br />
+A complex service system may be divisible into multiple distinct delivery and support systems or subsystems. While these divisions and distinctions may be significant to the service provider organization, they may not be as meaningful to other
+stakeholders.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-621.php.htm">service system component</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A resource required for a service system to successfully deliver services.
+<br />
+Some components can remain owned by a customer, end user, or third party before service delivery begins and after service delivery ends. (See also “customer” and “end user.”)
+<br />
+Some components can be transient resources that are part of the service system for a limited time (e.g., items that are under repair in a maintenance shop).
+<br />
+Components can include processes and people.
+<br />
+The word “component” can be used in place of “service system component” for brevity when the context makes the meaning clear.
+<br />
+The word “infrastructure” can be used to refer collectively to service system components that are tangible and essentially permanent. Depending on the context and type of service, infrastructure can include human resources.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-622.php.htm">service system consumable</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A service system component that ceases to be available or becomes permanently changed by its use during the delivery of a service.
+<br />
+Fuel, office supplies, and disposable containers are examples of commonly used consumables. Particular types of services can have their own specialized consumables (e.g., a health care service may require medications or blood supplies).
+<br />
+People are not consumables, but their labor time is a consumable.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-423.php.htm">SG</a></div> 
+<div class="GlossaryDefinition"><p class="Text">specific goal</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-623.php.htm">shared vision</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A common understanding of guiding principles, including mission, objectives, expected behavior, values, and final outcomes, which are developed and used by a project or work group.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-624.php.htm">software engineering</a></div> 
+<div class="GlossaryDefinition"><p class="Text">(1) The application of a systematic, disciplined, quantifiable approach to the development, operation, and maintenance of software. (2) The study of approaches as in (1). (See also “hardware engineering,” and “systems engineering.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-625.php.htm">solicitation</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The process of preparing a package to be used in selecting a supplier. (See also “solicitation package.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-626.php.htm">solicitation package</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A collection of formal documents that includes a description of the desired form of response from a potential supplier, the relevant statement of work for the supplier, and required provisions in the supplier agreement.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-424.php.htm">SP</a></div> 
+<div class="GlossaryDefinition"><p class="Text">specific practice</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-627.php.htm">special cause of variation</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A cause of a defect that is specific to some transient circumstance and is not an inherent part of a process. (See also “common cause of variation.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-628.php.htm">specific goal</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A required model component that describes the unique characteristics that must be present to satisfy the process area. (See also “capability level,” “generic goal,” “organization’s business objectives,” and “process area.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-629.php.htm">specific practice</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An expected model component that is considered important in achieving the associated specific goal. (See also “process area” and “specific goal.”)
+<br />
+The specific practices describe the activities expected to result in achievement of the specific goals of a process area.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-425.php.htm">SPI</a></div> 
+<div class="GlossaryDefinition"><p class="Text">schedule performance index</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-426.php.htm">SSD</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Service System Development (process area in CMMI-SVC)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-427.php.htm">SSE-CMM</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Systems Security Engineering Capability Maturity Model</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-630.php.htm">stable process</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The state in which special causes of process variation have been removed and prevented from recurring so that only common causes of process variation of the process remain. (See also “capable process,” “common cause of variation,” “special cause of
+variation,” and “standard process.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-631.php.htm">staged representation</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A model structure wherein attaining the goals of a set of process areas establishes a maturity level; each level builds a foundation for subsequent levels. (See also “maturity level” and “process area.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-632.php.htm">stakeholder</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A group or individual that is affected by or is in some way accountable for the outcome of an undertaking. (See also “customer” and “relevant stakeholder.”)
+<br />
+Stakeholders may include project or work group members, suppliers, customers, end users, and others.
+<br />
+This term has a special meaning in the CMMI Product Suite besides its common standard English meaning.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-633.php.htm">standard (noun)</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Formal requirements developed and used to prescribe consistent approaches to acquisition, development, or service.
+<br />
+Examples of standards include ISO/IEC standards, IEEE standards, and organizational standards.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-634.php.htm">standard process</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An operational definition of the basic process that guides the establishment of a common process in an organization.
+<br />
+A standard process describes the fundamental process elements that are expected to be incorporated into any defined process. It also describes relationships (e.g., ordering, interfaces) among these process elements. (See also “defined process.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-635.php.htm">statement of work</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A description of work to be performed.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-636.php.htm">statistical and other quantitative techniques</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Analytic techniques that enable accomplishing an activity by quantifying parameters of the task (e.g., inputs, size, effort, and performance). (See also “statistical techniques” and “quantitative management.”)
+<br />
+This term is used in the high maturity process areas where the use of statistical and other quantitative techniques to improve understanding of project, work, and organizational processes is described.
+<br />
+Examples of non-statistical quantitative techniques include trend analysis, run charts, Pareto analysis, bar charts, radar charts, and data averaging.
+<br />
+The reason for using the compound term “statistical and other quantitative techniques” in CMMI is to acknowledge that while statistical techniques are expected, other quantitative techniques can also be used effectively.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-637.php.htm">statistical process control</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Statistically based analysis of a process and measures of process performance, which identify common and special causes of variation in process performance and maintain process performance within limits. (See also “common cause of variation,” “special
+cause of variation,” and “statistical techniques.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-638.php.htm">statistical techniques</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Techniques adapted from the field of mathematical statistics used for activities such as characterizing process performance, understanding process variation, and predicting outcomes.
+<br />
+Examples of statistical techniques include sampling techniques, analysis of variance, chi-squared tests, and process control charts.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-639.php.htm">subpractice</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An informative model component that provides guidance for interpreting and implementing specific or generic practices.
+<br />
+Subpractices may be worded as if prescriptive, but they are actually meant only to provide ideas that can be useful for process improvement.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-640.php.htm">subprocess</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A process that is part of a larger process. (See also “process,” “process description,” and “process element.”)
+<br />
+A subprocess may or may not be further decomposed into more granular subprocesses or process elements. The terms “process,” “subprocess,” and “process element” form a hierarchy with “process” as the highest, most general term, “subprocesses” below it, and
+“process element” as the most specific. A subprocess can also be called a process element if it is not decomposed into further subprocesses.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-641.php.htm">supplier</a></div> 
+<div class="GlossaryDefinition"><p class="Text">(1) An entity delivering products or performing services being acquired. (2) An individual, partnership, company, corporation, association, or other entity having an agreement with an acquirer for the design, development, manufacture, maintenance,
+modification, or supply of items under the terms of an agreement. (See also “acquirer.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-642.php.htm">supplier agreement</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A documented agreement between the acquirer and supplier. (See also “supplier.”)
+<br />
+Supplier agreements are also known as contracts, licenses, and memoranda of agreement.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-643.php.htm">sustainment</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The processes used to ensure that a product or service remains operational.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-428.php.htm">SW-CMM</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Capability Maturity Model for Software or Software Capability Maturity Model</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-644.php.htm">system of systems</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A set or arrangement of systems that results when independent and useful systems are integrated into a large system that delivers unique capabilities.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-645.php.htm">systems engineering</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The interdisciplinary approach governing the total technical and managerial effort required to transform a set of customer needs, expectations, and constraints into a solution and to support that solution throughout its life. (See also “hardware
+engineering” and “software engineering.”)
+<br />
+This approach includes the definition of technical performance measures, the integration of engineering specialties toward the establishment of an architecture, and the definition of supporting lifecycle processes that balance cost, schedule, and
+performance objectives.</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gT" id="gT">T</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-646.php.htm">tailoring</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The act of making, altering, or adapting something for a particular end.
+<br />
+For example, a project or work group establishes its defined process by tailoring from the organization’s set of standard processes to meet its objectives, constraints, and environment. Likewise, a service provider tailors standard services for a
+particular service agreement.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-647.php.htm">tailoring guidelines</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Organizational guidelines that enable projects, work groups, and organizational functions to appropriately adapt standard processes for their use.
+<br />
+The organization’s set of standard processes is described at a general level that may not be directly usable to perform a process.
+<br />
+Tailoring guidelines aid those who establish the defined processes for project or work groups. Tailoring guidelines cover (1) selecting a standard process, (2) selecting an approved lifecycle model, and (3) tailoring the selected standard process and
+lifecycle model to fit project or work group needs. Tailoring guidelines describe what can and cannot be modified and identify process components that are candidates for modification.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-648.php.htm">target profile</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A list of process areas and their corresponding capability levels that represent an objective for process improvement. (See also “achievement profile” and “capability level profile.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-649.php.htm">target staging</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A sequence of target profiles that describes the path of process improvement to be followed by the organization. (See also “achievement profile,” “capability level profile,” and “target profile.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-650.php.htm">team</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A group of people with complementary skills and expertise who work together to accomplish specified objectives.
+<br />
+A team establishes and maintains a process that identifies roles, responsibilities, and interfaces; is sufficiently precise to enable the team to measure, manage, and improve their work performance; and enables the team to make and defend their
+commitments.
+<br />
+Collectively, team members provide skills and advocacy appropriate to all aspects of their work (e.g., for the different phases of a work product’s life) and are responsible for accomplishing the specified objectives.
+<br />
+Not every project or work group member must belong to a team (e.g., a person staffed to accomplish a task that is largely self-contained). Thus, a large project or work group can consist of many teams as well as project staff not belonging to any team. A
+smaller project or work group can consist of only a single team (or a single individual).</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-651.php.htm">technical data package</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A collection of items that can include the following if such information is appropriate to the type of product and product component (e.g., material and manufacturing requirements may not be useful for product components associated with software services
+or processes):
+<br />
+• Product architecture description
+<br />
+• Allocated requirements
+<br />
+• Product component descriptions
+<br />
+• Product related lifecycle process descriptions if not described as separate product components
+<br />
+• Key product characteristics
+<br />
+• Required physical characteristics and constraints
+<br />
+• Interface requirements
+<br />
+• Materials requirements (bills of material and material characteristics)
+<br />
+• Fabrication and manufacturing requirements (for both the original equipment manufacturer and field support)
+<br />
+• <a HREF="pa-ve.php.htm">Verification</a> criteria used to ensure requirements have been achieved
+<br />
+• Conditions of use (environments) and operating/usage scenarios, modes and states for operations, support, training, manufacturing, disposal, and verifications throughout the life of the product
+<br />
+• Rationale for decisions and characteristics (e.g., requirements, requirement allocations, design choices)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-652.php.htm">technical performance</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Characteristic of a process, product, or service, generally defined by a functional or technical requirement.
+<br />
+Examples of technical performance types include estimating accuracy, end-user functions, security functions, response time, component accuracy, maximum weight, minimum throughput, allowable range.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-653.php.htm">technical performance measure</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Precisely defined technical measure of a requirement, capability, or some combination of requirements and capabilities. (See also “measure.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-654.php.htm">technical requirements</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Properties (i.e., attributes) of products or services to be acquired or developed.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-655.php.htm">traceability</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A discernable association among two or more logical entities such as requirements, system elements, verifications, or tasks. (See also “bidirectional traceability” and “requirements traceability.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-656.php.htm">trade study</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An evaluation of alternatives, based on criteria and systematic analysis, to select the best alternative for attaining determined objectives.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-657.php.htm">training</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Characteristic of a process, product, or service, generally defined by a functional or technical requirement.
+<br />
+Examples of technical performance types include estimating accuracy, end-user functions, security functions, response time, component accuracy, maximum weight, minimum throughput, allowable range.
+<br />
+Examples of technical performance types include estimating accuracy, end-user functions, security functions, response time, component accuracy, maximum weight, minimum throughput, allowable range.
+<br />
+The learning options selected for each situation are based on an assessment of the need for training and the performance gap to be addressed.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-429.php.htm">TS</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-ts.php.htm">Technical Solution</a> (process area)</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gU" id="gU">U</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-658.php.htm">unit testing</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Testing of individual hardware or software units or groups of related units. (See also “acceptance testing.”)</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gV" id="gV">V</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-430.php.htm">VAL</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-va.php.htm">Validation</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-659.php.htm">validation</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Confirmation that the product or service, as provided (or as it will be provided), will fulfill its intended use.
+<br />
+In other words, validation ensures that “you built the right thing.” (See also “verification.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-431.php.htm">VER</a></div> 
+<div class="GlossaryDefinition"><p class="Text"><a HREF="pa-ve.php.htm">Verification</a> (process area)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-660.php.htm">verification</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Confirmation that work products properly reflect the requirements specified for them.
+<br />
+In other words, verification ensures that “you built it right.” (See also “validation.”)</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-661.php.htm">version control</a></div> 
+<div class="GlossaryDefinition"><p class="Text">The establishment and maintenance of baselines and the identification of changes to baselines that make it possible to return to the previous baseline.
+<br />
+In some contexts, an individual work product may have its own baseline and a level of control less than formal configuration control may be sufficient.</p></div> 
+</div> 
+<div class="GlossaryLetter"> 
+<a name="gW" id="gW">W</a> 
+</div> 
+<div class="GlossaryLetterBody"> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-432.php.htm">WBS</a></div> 
+<div class="GlossaryDefinition"><p class="Text">work breakdown structure</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-662.php.htm">work breakdown structure (WBS)</a></div> 
+<div class="GlossaryDefinition"><p class="Text">An arrangement of work elements and their relationship to each other and to the end product or service.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-663.php.htm">work group</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A managed set of people and other assigned resources that delivers one or more products or services to a customer or end user. (See also “project.”)
+<br />
+A work group can be any organizational entity with a defined purpose, whether or not that entity appears on an organization chart. Work groups can appear at any level of an organization, can contain other work groups, and can span organizational
+boundaries.
+<br />
+A work group together with its work can be considered the same as a project if it has an intentionally limited lifetime.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-664.php.htm">work plan</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A plan of activities and related resource allocations for a work group.
+<br />
+Work planning includes estimating the attributes of work products and tasks, determining the resources needed, negotiating commitments, producing a schedule, and identifying and analyzing risks. Iterating through these activities can be necessary to
+establish the work plan.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-665.php.htm">work product</a></div> 
+<div class="GlossaryDefinition"><p class="Text">A useful result of a process.
+<br />
+This result can include files, documents, products, parts of a product, services, process descriptions, specifications, and invoices. A key distinction between a work product and a product component is that a work product is not necessarily part of the
+end product. (See also “product” and “product component.”)
+<br />
+In CMMI models, the definition of “work product” includes services, however, the phrase “work products and services” is sometimes used to emphasize the inclusion of services in the discussion.</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-666.php.htm">work product and task attributes</a></div> 
+<div class="GlossaryDefinition"><p class="Text">Characteristics of products, services, and tasks used to help in estimating work. These characteristics include items such as size, complexity, weight, form, fit, and function. They are typically used as one input to deriving other resource estimates
+(e.g., effort, cost, schedule).</p></div> 
+<div class="Top"><a href="#top"><img SRC="../wit-icons/triangle-blueup.gif" border="0"></a></div>
+<div class="GlossaryItem"><img SRC="../wit-icons/89.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-667.php.htm">work startup</a></div> 
+<div class="GlossaryDefinition"><p class="Text">When a set of interrelated resources for a work group is directed to develop or deliver one or more products or services for a customer or end user. (See also “work group.”)</p></div> 
+</div> 
+</div> 
+<div class="NavBarGroup"> 
+<span class="NavBarPages"> 
+<span class="NavBarNumbers"> 
+</span> 
+<a HREF="ccb777e(cmmi_1_3_for_development)-3.php.htm"><img SRC="../wit-icons/triangle-blueright.gif" alt="Next page
+1.&nbsp;Preface" title="Next page
+1.&nbsp;Preface" border="0"></a></span> 
+</div> 
+<div class="IndexesGroup"> 
+<span class="IndexToc"><a HREF="wit-toc.php.htm">Table of contents</a>
+</span>
+&nbsp;|&nbsp;<span class="IndexToc"><a HREF="wit-toc-images.php.htm">Images</a>
+</span>
+&nbsp;|&nbsp;<span class="IndexGlossary"><a HREF="wit-glossary.php.htm">Glossary</a>
+</span>
+&nbsp;|&nbsp;<span class="IndexKeywords"><a HREF="wit-index-keywords.php.htm">Index</a>
+</span>
+&nbsp;|&nbsp;<span class="IndexKeywords"><a HREF="wit-index-faceted.php.htm">Faceted index</a>
+</span>
+</div> 
+<div class="Separator"><hr></div>
+</td> 
+<td class="PageRightPane"> 
+
+    <div class="RightMenu">
+        <font size="1"><font size="1"><br />
+        Process
+        <br />
+        Areas</font>(continuous)</font>
+        <br />
+        <br />
+        <font size="1">Process
+        <br />
+        management&nbsp;&nbsp;
+        <br />
+        &nbsp;</font><a HREF="pa-opf.php.htm"><font size="1">OPF</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-opd.php.htm"><font size="1">OPD</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-ot.php.htm"><font size="1">OT</font></a><font size="1">&nbsp;&nbsp;
+        <br />
+        &nbsp;</font><a HREF="pa-opp.php.htm"><font size="1">OPP</font></a><font size="1">&nbsp;&nbsp;
+        <br />
+        &nbsp;<a title="Organizational Performance Management"
+           HREF="pa-opm.php.htm"><font size="1"><font size="1">OPM</font></font></a></font><font size="1"><br />
+        Project
+        <br />
+        management
+        <br />
+        &nbsp;</font><a HREF="pa-pp.php.htm"><font size="1">PP</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-pmc.php.htm"><font size="1">PMC</font></a>&nbsp;
+        <br />
+        <font size="1">&nbsp;<a HREF="pa-rm.php.htm"><font size="1">REQM</font></a>&nbsp;
+        <br />
+        &nbsp;</font><a HREF="pa-sam.php.htm"><font size="1">SAM</font></a><font size="1">&nbsp;&nbsp;
+        <br />
+        &nbsp;</font><a HREF="pa-ipm.php.htm"><font size="1">IPM</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-rskm.php.htm"><font size="1">RSKM</font></a><font size="1"><br />
+        &nbsp;</font><a HREF="pa-qpm.php.htm"><font size="1">QPM</font></a><font size="1"><br />
+        <br />
+        Engineering
+        <br />
+        &nbsp;</font><a HREF="pa-rd.php.htm"><font size="1">RD</font></a>&nbsp;
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-ts.php.htm"><font size="1">TS</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-pi.php.htm"><font size="1">PI</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-ve.php.htm"><font size="1">VER</font></a>&nbsp;
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-va.php.htm"><font size="1">VAL</font></a><font size="1"><br />
+        Support
+        <br />
+        &nbsp;</font><a HREF="pa-cm.php.htm"><font size="1">CM</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-ppqa.php.htm"><font size="1">PPQA</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-ma.php.htm"><font size="1">MA</font></a><font size="1"><br />
+        &nbsp;</font><a HREF="pa-dar.php.htm"><font size="1">DAR</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-car.php.htm"><font size="1">CAR</font></a>
+        <br />
+        <br />
+    </div></td> 
+</tr></table> 
+<div class="PageFooter">
+    <div class="Bottom">
+        <form method="get"
+              action="http://www.google.com/custom"
+              target="_top">
+            &nbsp;&nbsp;<input name="domains"
+                  value="cmmis.free.fr/cmmi-dev"
+                  type="hidden" /> <input name="q"
+                  maxlength="255"
+                  size="31" /> <input name="sa"
+                  value="Search CMMI-DEV"
+                  type="submit" /> <input name="as_q"
+                  value="site:cmmis.free.fr/cmmi-dev"
+                  type="hidden" /> <input name="client"
+                  value="pub-9647251212076433"
+                  type="hidden" /> <input name="forid"
+                  value="0"
+                  type="hidden" /> <input name="ie"
+                  value="ISO-8859-1"
+                  type="hidden" /> <input name="oe"
+                  value="ISO-8859-1"
+                  type="hidden" /> <input name="cof"
+                  value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;"
+                  type="hidden" /> <input name="hl"
+                  value="fr"
+                  type="hidden" />
+        </form><font color="black"
+             size="0">Page 1 / 670
+        <br />
+        CMMI for Development 1.3 compiled by Christophe Guibert with <a class="UrlName"
+           HREF="../../../www.webideatree.com/"
+           target="_blank">WebIdeaTree 5</a>
+        <br />
+        Last revision on 2013-01-13</font>
+    </div><script type="text/javascript">
+//<![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2846813-3']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : '../../../www/') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    //]]>
+    </script> </div> 
+</div> 
+</body></html> 

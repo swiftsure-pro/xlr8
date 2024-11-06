@@ -1,0 +1,2371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="index, follow">
+<meta name="generator" content="WebIdeaTree">
+<meta name="author" content="Christophe Guibert">
+<meta name="copyright" content="Christophe Guibert, 2001">
+<meta name="description" content="CMMI-ACQ 1.3 (acquisition, arc, capability maturity model, cmm, cmmi, cmmi-acq, cmmi-dev, development, document, dod, finding, findings, ideal, ndi, process, product, program, scampi, sei, service, software engineering, team, )"> 
+<meta name="keywords" content="acquisition, arc, capability maturity model, cmm, cmmi, cmmi-acq, cmmi-dev, development, document, dod, finding, findings, ideal, ndi, process, product, program, scampi, sei, service, software engineering, team, "> 
+<title>CMMI-ACQ 1.3</title> 
+<link href="style.css" rel="stylesheet" type="text/css"> 
+<script type="text/javascript" language="JavaScript">
+var WIT_x = 0;
+var WIT_y = 0;
+var WIT_net = (navigator.appName.substring(0, 3) == "Net");
+
+if (document.getElementById)
+{
+	if (WIT_net)
+	{
+		document.captureEvents(Event.MOUSEMOVE);
+	}
+	document.onmousemove = WIT_Mouse;
+}
+
+function WIT_Mouse(e)
+{
+	WIT_x = (WIT_net) ? e.pageX : event.x + document.body.scrollLeft;
+	WIT_y = (WIT_net) ? e.pageY : event.y + document.body.scrollTop;
+}
+var WIT_detail = "";
+var WIT_descr = "";
+var WIT_descrShown = 0;
+
+function WIT_Show()
+{
+	if (document.getElementById && WIT_descrShown)
+	{
+		document.getElementById(WIT_detail).innerHTML = WIT_descr;
+		document.getElementById(WIT_detail).style.left = WIT_x;
+		document.getElementById(WIT_detail).style.top = WIT_y + 18;
+	}
+}
+
+function WIT_DeferShow(msg, detail)
+{
+	WIT_detail = detail;
+	WIT_descr = msg;
+	WIT_descrShown = 1;
+	setTimeout(WIT_Show, 500);
+}
+
+function WIT_Clear()
+{
+	WIT_descrShown = 0;
+	document.getElementById(WIT_detail).innerHTML = "";
+	document.getElementById(WIT_detail).style.left = -1000;
+	document.getElementById(WIT_detail).style.top = -1000;
+}
+</script>
+<div id="navnum1" style="border:1px solid black; padding: 1px; font-size: 8pt; z-index: 2; left:-1000px; top:-1000px; font-family:verdana; position: absolute; background-color: rgb(255,255,213); text-align: center; font-weight:100;"></div>
+</head> 
+
+<!-- @ acquisition @ arc @ capability maturity model @ cmm @ cmmi @ cmmi-acq @ cmmi-dev @ development @ document @ dod @ finding @ findings @ ideal @ ndi @ process @ product @ program @ scampi @ sei @ service @ software engineering @ team @ -->
+<body class="Body" text="#000000" bgcolor="#ffffff"> 
+<div id="Container">
+<div class="PageHeader">
+    <script type="text/javascript"
+         src="../extra/niftycube.js">
+</script> <script type="text/javascript">
+//<![CDATA[
+    window.onload = function()
+    {
+    Nifty("div#container", "all big");
+    Nifty("div.HierarchyGroup", "all normal");
+    Nifty("div.KeywordsGroup", "all normal");
+    Nifty("div.H1", "all normal");
+    Nifty("div.TopHeader", "all big");
+    Nifty("div.Bottom", "bottom big");
+    Nifty("td.CustomField", "right small");
+    Nifty("td.CustomFieldName", "left small");
+    }
+    //]]>
+    </script>
+    <div class="NavRight"
+         align="right">
+        <span class="NavBarPages"> 
+</span> 
+ 1/656 - 655 sub articles <span class="NavBarPages"> 
+</span> 
+ <span class="NavBarPages"> 
+<a HREF="ccb777e(cmmi_acq_1_3)-716.php.htm"><img SRC="../wit-icons/triangle-blueright.gif" alt="Next page
+1.&nbsp;Preface" title="Next page
+1.&nbsp;Preface" border="0"></a></span> 
+
+    </div>
+    <div class="topHeader">
+        <a HREF="../../../www.webideatree.com/"
+             target="_blank"><img border="0"
+             alt="WebIdeaTree"
+             SRC="../extra/wit100x35.jpg" /></a> <font size="5"
+             face="Arial">CMMI for Acquisition 1.3</font>
+    </div><script type="text/javascript" src="../extra/chrome.js">
+/***********************************************
+ * Chrome CSS Drop Down Menu- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+ * This notice MUST stay intact for legal use
+ * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+ ***********************************************/
+</script>
+
+<div class="WITChromeMenu">
+<div class="chromestyle" id="chromemenu">
+<ul>
+<li><a HREF="index.php.htm">CMMI-ACQ 1.3</a></li>
+<li><a HREF="ccb777e(cmmi_acq_1_3)-716.php.htm" rel="drop1">Preface</a></li>
+<li><a HREF="ccb777e(cmmi_acq_1_3)-726.php.htm" rel="drop2">About CMMI for Acquisition</a></li>
+<li><a HREF="ccb777e(cmmi_acq_1_3)-801.php.htm" rel="drop3">Generic Goals and Generic Practices</a></li>
+<li><a HREF="ccb777e(cmmi_acq_1_3)-827.php.htm" rel="drop4">Process Areas</a></li>
+<li><a HREF="ccb777e(cmmi_1_3_for_development)-353.php.htm" rel="drop5">Appendices</a></li>
+</ul>
+</div>
+<div id="drop1" class="dropmenudiv">
+<a HREF="ccb777e(cmmi_acq_1_3)-717.php.htm">Purpose</a>
+<a HREF="ccb777e(cmmi_acq_1_3)-718.php.htm">Acknowledgments</a>
+<a HREF="ccb777e(cmmi_acq_1_3)-719.php.htm">Audience</a>
+<a HREF="ccb777e(cmmi_acq_1_3)-720.php.htm">Organization of this Document</a>
+<a HREF="ccb777e(cmmi_acq_1_3)-721.php.htm">How to Use this Document</a>
+<a HREF="ccb777e(cmmi_acq_1_3)-725.php.htm">Additional Information and Reader Feedback</a>
+</div>
+<div id="drop2" class="dropmenudiv">
+<a HREF="ccb777e(cmmi_acq_1_3)-727.php.htm">Introduction</a>
+<a HREF="ccb777e(cmmi_acq_1_3)-733.php.htm">Process Area Components</a>
+<a HREF="ccb777e(cmmi_acq_1_3)-759.php.htm">Tying It All Together</a>
+<a HREF="ccb777e(cmmi_acq_1_3)-785.php.htm">Relationships Among Process Areas</a>
+<a HREF="ccb777e(cmmi_acq_1_3)-790.php.htm">Using CMMI Models</a>
+<a HREF="ccb777e(cmmi_acq_1_3)-800.php.htm">CMMI Related Training</a>
+</div>
+<div id="drop3" class="dropmenudiv">
+<a HREF="ccb777e(cmmi_acq_1_3)-802.php.htm">Overview</a>
+<a HREF="ccb777e(cmmi_acq_1_3)-808.php.htm">Generic Goals and Generic Practices</a>
+<a HREF="ccb777e(cmmi_acq_1_3)-825.php.htm">Applying Generic Practices</a>
+<a HREF="ccb777e(cmmi_acq_1_3)-826.php.htm">Process Areas that Support Generic Practices</a>
+</div>
+<div id="drop4" class="dropmenudiv">
+<a HREF="pa-am.php.htm">Agreement Management</a>
+<a HREF="pa-ard.php.htm">Acquisition Requirements Development</a>
+<a HREF="pa-atm.php.htm">Acquisition Technical Management</a>
+<a HREF="pa-aval.php.htm">Acquisition Validation</a>
+<a HREF="pa-aver.php.htm">Acquisition Verification</a>
+<a HREF="pa-car.php.htm">Causal Analysis and Resolution</a>
+<a HREF="pa-cm.php.htm">Configuration Management</a>
+<a HREF="pa-dar.php.htm">Decision Analysis and Resolution</a>
+<a HREF="pa-ipm.php.htm">Integrated Project Management</a>
+<a HREF="pa-ma.php.htm">Measurement and Analysis</a>
+<a HREF="pa-opd.php.htm">Organizational Process Definition</a>
+<a HREF="pa-opf.php.htm">Organizational Process Focus</a>
+<a HREF="pa-opm.php.htm">Organizational Performance Management</a>
+<a HREF="pa-opp.php.htm">Organizational Process Performance</a>
+<a HREF="pa-ot.php.htm">Organizational Training</a>
+<a HREF="pa-pmc.php.htm">Project Monitoring and Control</a>
+<a HREF="pa-pp.php.htm">Project Planning</a>
+<a HREF="pa-ppqa.php.htm">Process and Product Quality Assurance</a>
+<a HREF="pa-qpm.php.htm">Quantitative Project Management</a>
+<a HREF="pa-rm.php.htm">Requirements Management</a>
+<a HREF="pa-rskm.php.htm">Risk Management</a>
+<a HREF="pa-ssad.php.htm">Solicitation and Supplier Agreement Development</a>
+</div>
+<div id="drop5" class="dropmenudiv">
+<a HREF="ccb777e(cmmi_1_3_for_development)-354.php.htm">Appendix A: References</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-356.php.htm">Appendix B: Acronyms</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-433.php.htm">Appendix C: CMMI Version 1.3 Project Participants</a>
+<a HREF="ccb777e(cmmi_1_3_for_development)-449.php.htm">Appendix D: Glossary</a>
+<a HREF="report-documentation-page.php.htm">Report Documentation Page</a>
+</div>
+<script type="text/javascript">
+cssdropdown.startchrome("chromemenu")
+</script>
+</div>
+
+</div>
+<table width="100%">
+    <tbody>
+        <tr>
+            <td valign="top"><!-- SiteSearch Google --></td>
+            <td valign="top"></div>
+<table class="TablePanes" cellspacing="0"><tr class="RowPanes">
+<td class="PageLeftPane">  
+
+    <div class="RightMenu">
+        <font size="1"><br />
+        Process
+        <br />
+        Areas
+        <br />
+        (staged)
+        <br />
+        <br /></font> <font size="1">Level&nbsp;2&nbsp;&nbsp;
+        <br />
+        &nbsp;<a title="Agreement Management"
+           HREF="pa-am.php.htm">AM&nbsp;
+        <br /></a>&nbsp;<a title="Acquisition Requirements Development"
+           HREF="pa-ard.php.htm">ARD</a>
+        <br />
+        &nbsp;<a HREF="pa-cm.php.htm"><font size="1">CM</font></a><font size="1"><br /></font>&nbsp;<a HREF="pa-ma.php.htm"><font size="1">MA</font></a>&nbsp;
+        <br /></font> <font size="1">&nbsp;</font><a HREF="pa-pp.php.htm"><font size="1">PP</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-pmc.php.htm"><font size="1">PMC</font></a>&nbsp;
+        <br />
+        <font size="1">&nbsp;<a HREF="pa-ppqa.php.htm"><font size="1">PPQA</font></a>&nbsp;
+        <br />
+        &nbsp;<a HREF="pa-rm.php.htm"><font size="1">REQM</font></a>&nbsp;
+        <br />
+        &nbsp;<a title="Solicitation and Supplier Agreement Development"
+           HREF="pa-ssad.php.htm">SSAD</a></font>
+    </div>
+    <div class="RightMenu">
+        <font size="1">Level&nbsp;3&nbsp;
+        <br />
+        &nbsp;<a title="Acquisition Technical Management"
+           HREF="pa-atm.php.htm">ATM
+        <br /></a> &nbsp;<a title="Acquisition Validation"
+           HREF="pa-aval.php.htm">AVAL
+        <br /></a> &nbsp;<a title="Acquisition Verification"
+           HREF="pa-aver.php.htm"><font size="1">AVER</font>
+        <br /></a></font> <font size="1">&nbsp;<a HREF="pa-dar.php.htm"><font size="1">DAR</font></a><font size="1"><br /></font>&nbsp;<a HREF="pa-ipm.php.htm"><font size="1">IPM</font></a>&nbsp;
+        <br />
+        &nbsp;<a HREF="pa-opd.php.htm"><font size="1">OPD</font></a>&nbsp;
+        <br />
+        &nbsp;</font><a HREF="pa-opf.php.htm"><font size="1">OPF</font></a>&nbsp;
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-ot.php.htm"><font size="1">OT</font></a>&nbsp;
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-rskm.php.htm"><font size="1">RSKM</font></a>
+    </div>
+    <div class="RightMenu">
+        <font size="1">Level 4
+        <br />
+        &nbsp;</font><a HREF="pa-opp.php.htm"><font size="1">OPP</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-qpm.php.htm"><font size="1">QPM</font></a>
+    </div>
+    <div class="RightMenu">
+        <font size="1">Level 5&nbsp;
+        <br />
+        &nbsp;</font><a title="Organizational Performance Management"
+             HREF="pa-opm.php.htm"><font size="1"><font size="1">OPM</font></font></a>&nbsp;
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-car.php.htm"><font size="1">CAR</font></a>
+        <br />
+        <br />
+    </div></td>  
+<td class="PageMiddlePane"> 
+<div class="TocGroup"> 
+<div class="TocTitle"> 
+Table of contents</div> 
+<div class="TocLevel1"> 
+<img SRC="../wit-icons/25.png"> <a HREF="index.php.htm">CMMI-ACQ 1.3</a>&nbsp; 
+<div class="TocLevel2"> 
+<img SRC="../wit-icons/58.png"> &nbsp;1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-716.php.htm">Preface</a>&nbsp; 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/58.png"> &nbsp;1.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-717.php.htm">Purpose</a>&nbsp; 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/58.png"> &nbsp;1.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-718.php.htm">Acknowledgments</a>&nbsp; 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/58.png"> &nbsp;1.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-719.php.htm">Audience</a>&nbsp; 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/58.png"> &nbsp;1.4.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-720.php.htm">Organization of this Document</a>&nbsp; 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/58.png"> &nbsp;1.5.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-721.php.htm">How to Use this Document</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/58.png"> &nbsp;1.5.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-722.php.htm">Readers New to Process Improvement</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/58.png"> &nbsp;1.5.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-723.php.htm">Readers Experienced with Process Improvement</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/58.png"> &nbsp;1.5.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-724.php.htm">Readers Familiar with CMMI</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/58.png"> &nbsp;1.6.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-725.php.htm">Additional Information and Reader Feedback</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel2"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-726.php.htm">About CMMI for Acquisition</a>&nbsp; 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-727.php.htm">Introduction</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.1.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-728.php.htm">About Process Improvement</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.1.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-729.php.htm">About Capability Maturity Models</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.1.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-730.php.htm">Evolution of CMMI</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.1.4.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-731.php.htm">CMMI Framework</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.1.5.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-732.php.htm">CMMI for Acquisition</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-733.php.htm">Process Area Components</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.2.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-734.php.htm">Core Process Areas and CMMI Models</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.2.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-735.php.htm">Required, Expected, and Informative Components</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-736.php.htm">Required Components</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-737.php.htm">Expected Components</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-738.php.htm">Informative Components</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.2.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-739.php.htm">Components Associated with Part Two</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-740.php.htm">Process Areas</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-741.php.htm">Purpose Statements</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-742.php.htm">Introductory Notes</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-743.php.htm">Related Process Areas</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-744.php.htm">Specific Goals</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-745.php.htm">Generic Goals</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-746.php.htm">Specific Goal and Practice Summaries</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-747.php.htm">Specific Practices</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-748.php.htm">Example Work Products</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="example-supplier-deliverables.php.htm">Example Supplier Deliverables</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-749.php.htm">Subpractices</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-750.php.htm">Generic Practices</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-751.php.htm">Generic Practice Elaborations</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-752.php.htm">Additions</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.2.4.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-753.php.htm">Supporting Informative Components</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-754.php.htm">Notes</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-755.php.htm">Examples</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-756.php.htm">References</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.2.5.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-757.php.htm">Numbering Scheme</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.2.6.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-758.php.htm">Typographical Conventions</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-759.php.htm">Tying It All Together</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.3.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-760.php.htm">Understanding Levels</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.3.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-761.php.htm">Structures of the Continuous and Staged Representations</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.3.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-762.php.htm">Understanding Capability Levels</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-763.php.htm">Capability Level 0: Incomplete</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-764.php.htm">Capability Level 1: Performed</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-765.php.htm">Capability Level 2: Managed</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-766.php.htm">Capability Level 3: Defined</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-767.php.htm">Advancing Through Capability Levels</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.3.4.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-768.php.htm">Understanding Maturity Levels</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-769.php.htm">Maturity Level 1: Initial</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-770.php.htm">Maturity Level 2: Managed</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-771.php.htm">Maturity Level 3: Defined</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-772.php.htm">Maturity Level 4: Quantitatively Managed</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-773.php.htm">Maturity Level 5: Optimizing</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/56.png"> <a HREF="ccb777e(cmmi_acq_1_3)-774.php.htm">Advancing Through Maturity Levels</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.3.5.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-775.php.htm">Process Areas</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.3.6.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-776.php.htm">Equivalent Staging</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.3.7.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-777.php.htm">Achieving High Maturity</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.4.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-785.php.htm">Relationships Among Process Areas</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.4.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-786.php.htm">Project Processes</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.4.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-787.php.htm">Organizational Processes</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.4.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-788.php.htm">Support Processes</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.4.4.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-789.php.htm">High Maturity Processes</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.5.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-790.php.htm">Using CMMI Models</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.5.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-791.php.htm">Adopting CMMI</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.5.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-792.php.htm">Your Process Improvement Program</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.5.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-793.php.htm">Selections that Influence Your Program</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.5.4.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-794.php.htm">CMMI Models</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.5.5.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-796.php.htm">Using CMMI Appraisals</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.5.6.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-797.php.htm">Appraisal Requirements for CMMI</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.5.7.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-798.php.htm">SCAMPI Appraisal Methods</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.5.8.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-799.php.htm">Appraisal Considerations</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/56.png"> &nbsp;2.6.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-800.php.htm">CMMI Related Training</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel2"> 
+<img SRC="../wit-icons/62.png"> &nbsp;3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-801.php.htm">Generic Goals and Generic Practices</a>&nbsp; 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/62.png"> &nbsp;3.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-802.php.htm">Overview</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/62.png"> &nbsp;3.1.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-803.php.htm">Process Institutionalization</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/62.png"> &nbsp;3.1.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-804.php.htm">Performed Process</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/62.png"> &nbsp;3.1.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-805.php.htm">Managed Process</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/62.png"> &nbsp;3.1.4.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-806.php.htm">Defined Process</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/62.png"> &nbsp;3.1.5.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-807.php.htm">Relationships Among Processes</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/62.png"> &nbsp;3.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-808.php.htm">Generic Goals and Generic Practices</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/62.png"> &nbsp;3.2.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-809.php.htm">GG 1 Achieve Specific Goals</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/62.png"> <a HREF="ccb777e(cmmi_acq_1_3)-810.php.htm">GP 1.1 Perform Specific Practices</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/62.png"> &nbsp;3.2.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-811.php.htm">GG 2 Institutionalize a Managed Process</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/62.png"> <a HREF="ccb777e(cmmi_acq_1_3)-812.php.htm">GP 2.1 Establish an Organizational Policy</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/62.png"> <a HREF="ccb777e(cmmi_acq_1_3)-813.php.htm">GP 2.2 Plan the Process</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/62.png"> <a HREF="ccb777e(cmmi_acq_1_3)-814.php.htm">GP 2.3 Provide Resources</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/62.png"> <a HREF="ccb777e(cmmi_acq_1_3)-815.php.htm">GP 2.4 Assign Responsibility</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/62.png"> <a HREF="ccb777e(cmmi_acq_1_3)-816.php.htm">GP 2.5 Train People</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/62.png"> <a HREF="ccb777e(cmmi_acq_1_3)-817.php.htm">GP 2.6 Control Work Products</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/62.png"> <a HREF="ccb777e(cmmi_acq_1_3)-818.php.htm">GP 2.7 Identify and Involve Relevant Stakeholders</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/62.png"> <a HREF="ccb777e(cmmi_acq_1_3)-819.php.htm">GP 2.8 Monitor and Control the Process</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/62.png"> <a HREF="ccb777e(cmmi_acq_1_3)-820.php.htm">GP 2.9 Objectively Evaluate Adherence</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/62.png"> <a HREF="ccb777e(cmmi_acq_1_3)-821.php.htm">GP 2.10 Review Status with Higher Level Management</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/62.png"> &nbsp;3.2.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-822.php.htm">GG 3 Institutionalize a Defined Process</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/62.png"> <a HREF="ccb777e(cmmi_acq_1_3)-823.php.htm">GG 3.1 Establish a Defined Process</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/62.png"> <a HREF="ccb777e(cmmi_acq_1_3)-824.php.htm">GG 3.2 Collect Process Related Experiences</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/62.png"> &nbsp;3.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-825.php.htm">Applying Generic Practices</a>&nbsp; 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/62.png"> &nbsp;3.4.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-826.php.htm">Process Areas that Support Generic Practices</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel2"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-827.php.htm">Process Areas</a>&nbsp; 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.1.&nbsp;<a HREF="pa-am.php.htm">Agreement Management</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.1.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-829.php.htm">SG 1 Satisfy Supplier Agreements</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-830.php.htm">SP 1.1 Execute the Supplier Agreement</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-831.php.htm">SP 1.2 Monitor Selected Supplier Processes</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-832.php.htm">SP 1.3 Accept the Acquired Product</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-833.php.htm">SP 1.4 Manage Supplier Invoices</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.2.&nbsp;<a HREF="pa-ard.php.htm">Acquisition Requirements Development</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.2.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-835.php.htm">SG 1 Develop Customer Requirements</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-836.php.htm">SP 1.1 Elicit Stakeholder Needs</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-837.php.htm">SP 1.2 Develop and Prioritize Customer Requirements</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.2.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-838.php.htm">SG 2 Develop Contractual Requirements</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-839.php.htm">SP 2.1 Establish Contractual Requirements</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-840.php.htm">SP 2.2 Allocate Contractual Requirements</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.2.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-841.php.htm">SG 3 Analyze and Validate Requirements</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-842.php.htm">SP 3.1 Establish Operational Concepts and Scenarios</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-843.php.htm">SP 3.2 Analyze Requirements</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-844.php.htm">SP 3.3 Analyze Requirements to Achieve Balance</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-845.php.htm">SP 3.4 Validate Requirements</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.3.&nbsp;<a HREF="pa-atm.php.htm">Acquisition Technical Management</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.3.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-847.php.htm">SG 1 Evaluate Technical Solutions</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-848.php.htm">SP 1.1 Select Technical Solutions for Analysis</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-849.php.htm">SP 1.2 Analyze Selected Technical Solutions</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-850.php.htm">SP 1.3 Conduct Technical Reviews</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.3.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-851.php.htm">SG 2 Perform Interface Management</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-852.php.htm">SP 2.1 Select Interfaces to Manage</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-853.php.htm">SP 2.2 Manage Selected Interfaces</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.4.&nbsp;<a HREF="pa-aval.php.htm">Acquisition Validation</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.4.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-855.php.htm">SG 1 Prepare for Validation</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-856.php.htm">SP 1.1 Select Products for Validation</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-857.php.htm">SP 1.2 Establish the Validation Environment</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-858.php.htm">SP 1.3 Establish Validation Procedures and Criteria</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.4.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-859.php.htm">SG 2 Validate Selected Products and Product Components</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-860.php.htm">SP 2.1 Perform Validation</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-861.php.htm">SP 2.2 Analyze Validation Results</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.5.&nbsp;<a HREF="pa-aver.php.htm">Acquisition Verification</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.5.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-863.php.htm">SG 1 Prepare for Verification</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-864.php.htm">SP 1.1 Select Work Products for Verification</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-865.php.htm">SP 1.2 Establish the Verification Environment</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-866.php.htm">SP 1.3 Establish Verification Procedures and Criteria</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.5.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-867.php.htm">SG 2 Perform Peer Reviews</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-868.php.htm">SP 2.1 Prepare for Peer Reviews</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-869.php.htm">SP 2.2 Conduct Peer Reviews</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-870.php.htm">SP 2.3 Analyze Peer Review Data</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.5.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-871.php.htm">SG 3 Verify Selected Work Products</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-872.php.htm">SP 3.1 Perform Verification</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-873.php.htm">SP 3.2 Analyze Verification Results</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.6.&nbsp;<a HREF="pa-car.php.htm">Causal Analysis and Resolution</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.6.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-875.php.htm">SG 1 Determine Causes of Selected Outcomes</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-876.php.htm">SP 1.1 Select Outcomes for Analysis</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-877.php.htm">SP 1.2 Analyze Causes</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.6.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-878.php.htm">SG 2 Address Causes of Selected Outcomes</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-879.php.htm">SP 2.1 Implement Action Proposals</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-880.php.htm">SP 2.2 Evaluate the Effect of Implemented Actions</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-881.php.htm">SP 2.3 Record Causal Analysis Data</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.7.&nbsp;<a HREF="pa-cm.php.htm">Configuration Management</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.7.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-883.php.htm">SG 1 Establish Baselines</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-884.php.htm">SP 1.1 Identify Configuration Items</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-885.php.htm">SP 1.2 Establish a Configuration Management System</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-886.php.htm">SP 1.3 Create or Release Baselines</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.7.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-887.php.htm">SG 2 Track and Control Changes</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-888.php.htm">SP 2.1 Track Change Requests</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-889.php.htm">SP 2.2 Control Configuration Items</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.7.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-890.php.htm">SG 3 Establish Integrity</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-891.php.htm">SP 3.1 Establish Configuration Management Records</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-892.php.htm">SP 3.2 Perform Configuration Audits</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.8.&nbsp;<a HREF="pa-dar.php.htm">Decision Analysis and Resolution</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.8.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-894.php.htm">SG 1 Evaluate Alternatives</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-895.php.htm">SP 1.1 Establish Guidelines for Decision Analysis</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-896.php.htm">SP 1.2 Establish Evaluation Criteria</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-897.php.htm">SP 1.3 Identify Alternative Solutions</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-898.php.htm">SP 1.4 Select Evaluation Methods</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-899.php.htm">SP 1.5 Evaluate Alternative Solutions</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-900.php.htm">SP 1.6 Select Solutions</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.9.&nbsp;<a HREF="pa-ipm.php.htm">Integrated Project Management</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.9.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-902.php.htm">SG 1 Use the Project’s Defined Process</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-903.php.htm">SP 1.1 Establish the Project’s Defined Process</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-904.php.htm">SP 1.2 Use Organizational Process Assets for Planning Project Activities</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-905.php.htm">SP 1.3 Establish the Project’s Work Environment</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-906.php.htm">SP 1.4 Integrate Plans</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-907.php.htm">SP 1.5 Manage the Project Using Integrated Plans</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-908.php.htm">SP 1.6 Establish Teams</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-909.php.htm">SP 1.7 Contribute to Organizational Process Assets</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.9.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-910.php.htm">SG 2 Coordinate and Collaborate with Relevant Stakeholders</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-911.php.htm">SP 2.1 Manage Stakeholder Involvement</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-912.php.htm">SP 2.2 Manage Dependencies</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-913.php.htm">SP 2.3 Resolve Coordination Issues</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.10.&nbsp;<a HREF="pa-ma.php.htm">Measurement and Analysis</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.10.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-915.php.htm">SG 1 Align Measurement and Analysis Activities</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-916.php.htm">SP 1.1 Establish Measurement Objectives</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-917.php.htm">SP 1.2 Specify Measures</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-918.php.htm">SP 1.3 Specify Data Collection and Storage Procedures</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-919.php.htm">SP 1.4 Specify Analysis Procedures</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.10.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-920.php.htm">SG 2 Provide Measurement Results</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-921.php.htm">SP 2.1 Obtain Measurement Data</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-922.php.htm">SP 2.2 Analyze Measurement Data</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-923.php.htm">SP 2.3 Store Data and Results</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-924.php.htm">SP 2.4 Communicate Results</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.11.&nbsp;<a HREF="pa-opd.php.htm">Organizational Process Definition</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.11.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-926.php.htm">SG 1 Establish Organizational Process Assets</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-927.php.htm">SP 1.1 Establish Standard Processes</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-928.php.htm">SP 1.2 Establish Lifecycle Model Descriptions</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-929.php.htm">SP 1.3 Establish Tailoring Criteria and Guidelines</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-930.php.htm">SP 1.4 Establish the Organization’s Measurement Repository</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-931.php.htm">SP 1.5 Establish the Organization’s Process Asset Library</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-932.php.htm">SP 1.6 Establish Work Environment Standards</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-933.php.htm">SP 1.7 Establish Rules and Guidelines for Teams</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.12.&nbsp;<a HREF="pa-opf.php.htm">Organizational Process Focus</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.12.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-935.php.htm">SG 1 Determine Process Improvement Opportunities</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-936.php.htm">SP 1.1 Establish Organizational Process Needs</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-937.php.htm">SP 1.2 Appraise the Organization’s Processes</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-938.php.htm">SP 1.3 Identify the Organization’s Process Improvements</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.12.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-939.php.htm">SG 2 Plan and Implement Process Actions</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-940.php.htm">SP 2.1 Establish Process Action Plans</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-941.php.htm">SP 2.2 Implement Process Action Plans</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.12.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-942.php.htm">SG 3 Deploy Organizational Process Assets and Incorporate Experiences</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-943.php.htm">SP 3.1 Deploy Organizational Process Assets</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-944.php.htm">SP 3.2 Deploy Standard Processes</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-945.php.htm">SP 3.3 Monitor the Implementation</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-946.php.htm">SP 3.4 Incorporate Experiences into Organizational Process Assets</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.13.&nbsp;<a HREF="pa-opm.php.htm">Organizational Performance Management</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.13.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-948.php.htm">SG 1 Manage Business Performance</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-949.php.htm">SP 1.1 Maintain Business Objectives</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-950.php.htm">SP 1.2 Analyze Process Performance Data</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-951.php.htm">SP 1.3 Identify Potential Areas for Improvement</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.13.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-952.php.htm">SG 2 Select Improvements</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-953.php.htm">SP 2.1 Elicit Suggested Improvements</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-954.php.htm">SP 2.2 Analyze Suggested Improvements</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-955.php.htm">SP 2.3 Validate Improvements</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-956.php.htm">SP 2.4 Select and Implement Improvements for Deployment</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.13.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-957.php.htm">SG 3 Deploy Improvements</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-958.php.htm">SP 3.1 Plan the Deployment</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-959.php.htm">SP 3.2 Manage the Deployment</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-960.php.htm">SP 3.3 Evaluate Improvement Effects</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.14.&nbsp;<a HREF="pa-opp.php.htm">Organizational Process Performance</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.14.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-962.php.htm">SG 1 Establish Performance Baselines and Models</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-963.php.htm">SP 1.1 Establish Quality and Process Performance Objectives</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-964.php.htm">SP 1.2 Select Processes</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-965.php.htm">SP 1.3 Establish Process Performance Measures</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-966.php.htm">SP 1.4 Analyze Process Performance and Establish Process Performance Baselines</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-967.php.htm">SP 1.5 Establish Process Performance Models</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.15.&nbsp;<a HREF="pa-ot.php.htm">Organizational Training</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.15.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-969.php.htm">SG 1 Establish an Organizational Training Capability</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-970.php.htm">SP 1.1 Establish Strategic Training Needs</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-971.php.htm">SP 1.2 Determine Which Training Needs Are the Responsibility of the Organization</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-972.php.htm">SP 1.3 Establish an Organizational Training Tactical Plan</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-973.php.htm">SP 1.4 Establish a Training Capability</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.15.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-974.php.htm">SG 2 Provide Training</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-975.php.htm">SP 2.1 Deliver Training</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-976.php.htm">SP 2.2 Establish Training Records</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-977.php.htm">SP 2.3 Assess Training Effectiveness</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.16.&nbsp;<a HREF="pa-pmc.php.htm">Project Monitoring and Control</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.16.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-979.php.htm">SG 1 Monitor the Project Against the Plan</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-980.php.htm">SP 1.1 Monitor Project Planning Parameters</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-981.php.htm">SP 1.2 Monitor Commitments</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-982.php.htm">SP 1.3 Monitor Project Risks</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-983.php.htm">SP 1.4 Monitor Data Management</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-984.php.htm">SP 1.5 Monitor Stakeholder Involvement</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-985.php.htm">SP 1.6 Conduct Progress Reviews</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-986.php.htm">SP 1.7 Conduct Milestone Reviews</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="sp-1-8-monitor-transition-to-operations-and-suppor$1.htm">SP 1.8 Monitor Transition to Operations and Support</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.16.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-987.php.htm">SG 2 Manage Corrective Action to Closure</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-988.php.htm">SP 2.1 Analyze Issues</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-989.php.htm">SP 2.2 Take Corrective Action</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-990.php.htm">SP 2.3 Manage Corrective Actions</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.17.&nbsp;<a HREF="pa-pp.php.htm">Project Planning</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.17.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-992.php.htm">SG 1 Establish Estimates</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="sp-1-1-establish-the-acquisition-strategy.php.htm">SP 1.1 Establish the Acquisition Strategy</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-993.php.htm">SP 1.2 Estimate the Scope of the Project</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-994.php.htm">SP 1.3 Establish Estimates of Work Product and Task Attributes</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-995.php.htm">SP 1.4 Define Project Lifecycle Phases</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-996.php.htm">SP 1.5 Estimate Effort and Cost</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.17.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-997.php.htm">SG 2 Develop a Project Plan</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-998.php.htm">SP 2.1 Establish the Budget and Schedule</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-999.php.htm">SP 2.2 Identify Project Risks</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1000.php.htm">SP 2.3 Plan Data Management</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1001.php.htm">SP 2.4 Plan the Project’s Resources</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1002.php.htm">SP 2.5 Plan Needed Knowledge and Skills</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1003.php.htm">SP 2.6 Plan Stakeholder Involvement</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1004.php.htm">SP 2.7 Plan Transition to Operations and Support</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1005.php.htm">SP 2.8 Establish the Project Plan</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.17.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-1006.php.htm">SG 3 Obtain Commitment to the Plan</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1007.php.htm">SP 3.1 Review Plans That Affect the Project</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1008.php.htm">SP 3.2 Reconcile Work and Resource Levels</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1009.php.htm">SP 3.3 Obtain Plan Commitment</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.18.&nbsp;<a HREF="pa-ppqa.php.htm">Process and Product Quality Assurance</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.18.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-1011.php.htm">SG 1 Objectively Evaluate Processes and Work Products</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1012.php.htm">SP 1.1 Objectively Evaluate Processes</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1013.php.htm">SP 1.2 Objectively Evaluate Work Products</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.18.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-1014.php.htm">SG 2 Provide Objective Insight</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1015.php.htm">SP 2.1 Communicate and Resolve Noncompliance Issues</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1016.php.htm">SP 2.2 Establish Records</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.19.&nbsp;<a HREF="pa-qpm.php.htm">Quantitative Project Management</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.19.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-1018.php.htm">SG 1 Prepare for Quantitative Management</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1019.php.htm">SP 1.1 Establish the Project’s Objectives</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1020.php.htm">SP 1.2 Compose the Defined Process</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1021.php.htm">SP 1.3 Select Subprocesses and Attributes</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1022.php.htm">SP 1.4 Select Measures and Analytic Techniques</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.19.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-1023.php.htm">SG 2 Quantitatively Manage the Project</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1024.php.htm">SP 2.1 Monitor the Performance of Selected Subprocesses</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1025.php.htm">SP 2.2 Manage Project Performance</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1026.php.htm">SP 2.3 Perform Root Cause Analysis</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.20.&nbsp;<a HREF="pa-rm.php.htm">Requirements Management</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.20.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-1028.php.htm">SG 1 Manage Requirements</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1029.php.htm">SP 1.1 Understand Requirements</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1030.php.htm">SP 1.2 Obtain Commitment to Requirements</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1031.php.htm">SP 1.3 Manage Requirements Changes</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1032.php.htm">SP 1.4 Maintain Bidirectional Traceability of Requirements</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1033.php.htm">SP 1.5 Ensure Alignment Between Project Work and Requirements</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.21.&nbsp;<a HREF="pa-rskm.php.htm">Risk Management</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.21.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-1035.php.htm">SG 1 Prepare for Risk Management</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1036.php.htm">SP 1.1 Determine Risk Sources and Categories</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1037.php.htm">SP 1.2 Define Risk Parameters</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1038.php.htm">SP 1.3 Establish a Risk Management Strategy</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.21.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-1039.php.htm">SG 2 Identify and Analyze Risks</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1040.php.htm">SP 2.1 Identify Risks</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1041.php.htm">SP 2.2 Evaluate, Categorize, and Prioritize Risks</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.21.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-1042.php.htm">SG 3 Mitigate Risks</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1043.php.htm">SP 3.1 Develop Risk Mitigation Plans</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1044.php.htm">SP 3.2 Implement Risk Mitigation Plans</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/55.png"> &nbsp;4.22.&nbsp;<a HREF="pa-ssad.php.htm">Solicitation and Supplier Agreement Development</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.22.1.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-1046.php.htm">SG 1 Prepare for Solicitation and Supplier Agreement Development</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1047.php.htm">SP 1.1 Identify Potential Suppliers</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1048.php.htm">SP 1.2 Establish a Solicitation Package</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1049.php.htm">SP 1.3 Review the Solicitation Package</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1050.php.htm">SP 1.4 Distribute and Maintain the Solicitation Package</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.22.2.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-1051.php.htm">SG 2 Select Suppliers</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1052.php.htm">SP 2.1 Evaluate Proposed Solutions</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1053.php.htm">SP 2.2 Establish Negotiation Plans</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1054.php.htm">SP 2.3 Select Suppliers</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/60.png"> &nbsp;4.22.3.&nbsp;<a HREF="ccb777e(cmmi_acq_1_3)-1055.php.htm">SG 3 Establish Supplier Agreements</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1056.php.htm">SP 3.1 Establish an Understanding of the Agreement</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/60.png"> <a HREF="ccb777e(cmmi_acq_1_3)-1057.php.htm">SP 3.2 Establish the Supplier Agreement</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+</div> 
+<div class="TocLevel2"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-353.php.htm">Appendices</a>&nbsp; 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.1.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-354.php.htm">Appendix A: References</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.1.1.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-355.php.htm">Information Assurance/Information Security Related Sources</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-356.php.htm">Appendix B: Acronyms</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.1.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-357.php.htm">ANSI</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.2.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-358.php.htm">API</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.3.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-359.php.htm">ARC</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.4.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-360.php.htm">CAD</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.5.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-361.php.htm">CAR</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.6.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-362.php.htm">CCB</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.7.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-363.php.htm">CL</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.8.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-364.php.htm">CM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.9.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-365.php.htm">CMU</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.10.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-366.php.htm">CMF</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.11.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-367.php.htm">CMM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.12.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-368.php.htm">CMMI</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.13.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-369.php.htm">CMMI-ACQ</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.14.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-370.php.htm">CMMI-DEV</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.15.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-371.php.htm">CMMI-SVC</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.16.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-372.php.htm">CobiT</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.17.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-373.php.htm">COTS</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.18.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-374.php.htm">CPI</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.19.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-375.php.htm">CPM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.20.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-376.php.htm">CSCI</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.21.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-377.php.htm">DAR</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.22.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-378.php.htm">DHS</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.23.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-379.php.htm">DoD</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.24.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-380.php.htm">EIA</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.25.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-381.php.htm">EIA/IS</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.26.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-382.php.htm">FCA</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.27.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-383.php.htm">FMEA</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.28.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-384.php.htm">GG</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.29.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-385.php.htm">GP</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.30.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-386.php.htm">IBM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.31.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-387.php.htm">IDEAL</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.32.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-388.php.htm">IEEE</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.33.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-389.php.htm">INCOSE</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.34.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-390.php.htm">IPD-CMM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.35.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-391.php.htm">IPM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.36.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-392.php.htm">ISO</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.37.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-393.php.htm">ISO/IEC</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.38.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-394.php.htm">ITIL</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.39.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-395.php.htm">MA</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.40.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-396.php.htm">MDD</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.41.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-397.php.htm">ML</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.42.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-398.php.htm">NDIA</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.43.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-399.php.htm">OID</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.44.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-2d400.php.htm">OPD</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.45.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-2d401.php.htm">OPF</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.46.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-2d402.php.htm">OPM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.47.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-2d403.php.htm">OPP</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.48.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-2d404.php.htm">OT</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.49.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-2d405.php.htm">P-CMM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.50.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-2d406.php.htm">PCA</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.51.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-2d407.php.htm">PERT</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.52.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-2d408.php.htm">PI</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.53.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-2d409.php.htm">PMC</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.54.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-410.php.htm">PP</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.55.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-411.php.htm">PPQA</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.56.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-412.php.htm">QFD</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.57.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-413.php.htm">QPM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.58.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-414.php.htm">RD</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.59.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-415.php.htm">REQM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.60.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-416.php.htm">RSKM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.61.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-417.php.htm">SA-CMM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.62.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-418.php.htm">SAM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.63.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-419.php.htm">SCAMPI</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.64.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-420.php.htm">SECAM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.65.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-421.php.htm">SECM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.66.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-422.php.htm">SEI</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.67.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-423.php.htm">SG</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.68.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-424.php.htm">SP</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.69.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-425.php.htm">SPI</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.70.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-426.php.htm">SSD</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.71.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-427.php.htm">SSE-CMM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.72.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-428.php.htm">SW-CMM</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.73.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-429.php.htm">TS</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.74.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-430.php.htm">VAL</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.75.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-431.php.htm">VER</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.2.76.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-432.php.htm">WBS</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.3.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-433.php.htm">Appendix C: CMMI Version 1.3 Project Participants</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.3.1.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-434.php.htm">CMMI Steering Group</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/61.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-435.php.htm">Steering Group Members</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/61.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-436.php.htm">Ex-Officio Steering Group Members</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/61.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-437.php.htm">Steering Group Support</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.3.2.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-438.php.htm">CMMI for Services Advisory Group</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.3.3.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-439.php.htm">CMMI V1.3 Coordination Team</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.3.4.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-440.php.htm">CMMI V1.3 Configuration Control Board</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.3.5.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-441.php.htm">CMMI V1.3 Core Model Team</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.3.6.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-442.php.htm">CMMI V1.3 Translation Team</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.3.7.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-443.php.htm">CMMI V1.3 High Maturity Team</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.3.8.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-444.php.htm">CMMI V1.3 Acquisition Mini Team</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.3.9.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-445.php.htm">CMMI V1.3 Services Mini Team</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.3.10.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-446.php.htm">CMMI V1.3 SCAMPI Upgrade Team</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.3.11.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-447.php.htm">CMMI V1.3 Training Teams</a>&nbsp; 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/61.png"> <a HREF="ccb777e(cmmi_1_3_for_development)-448.php.htm">ACQ and DEV Training Team</a>&nbsp; 
+</div> 
+<div class="TocLevel5"> 
+<img SRC="../wit-icons/61.png"> <a HREF="svc-training-team.php.htm">SVC Training Team</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.3.12.&nbsp;<a HREF="cmmi-v1-3-quality-team.php.htm">CMMI V1.3 Quality Team</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-449.php.htm">Appendix D: Glossary</a>&nbsp; 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.1.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-450.php.htm">acceptance criteria</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.2.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-451.php.htm">acceptance testing</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.3.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-452.php.htm">achievement profile</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.4.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-453.php.htm">acquirer</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.5.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-454.php.htm">acquisition</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.6.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-455.php.htm">acquisition strategy</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.7.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-456.php.htm">addition</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.8.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-457.php.htm">allocated requirement</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.9.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-458.php.htm">appraisal</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.10.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-459.php.htm">appraisal findings</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.11.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-460.php.htm">appraisal participants</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.12.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-461.php.htm">appraisal rating</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.13.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-462.php.htm">appraisal reference model</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.14.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-463.php.htm">appraisal scope</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.15.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-464.php.htm">architecture</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.16.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-465.php.htm">audit</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.17.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-466.php.htm">baseline</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.18.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-467.php.htm">base measure</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.19.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-468.php.htm">bidirectional traceability</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.20.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-469.php.htm">business objectives</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.21.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-470.php.htm">capability level</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.22.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-471.php.htm">capability level profile</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.23.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-472.php.htm">capability maturity model</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.24.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-473.php.htm">capable process</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.25.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-474.php.htm">causal analysis</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.26.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-475.php.htm">change management</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.27.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-476.php.htm">CMMI Framework</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.28.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-477.php.htm">CMMI model</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.29.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-478.php.htm">CMMI model component</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.30.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-479.php.htm">CMMI Product Suite</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.31.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-480.php.htm">commercial off-the-shelf</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.32.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-481.php.htm">common cause of variation</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.33.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-482.php.htm">configuration audit</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.34.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-483.php.htm">configuration baseline</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.35.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-484.php.htm">configuration control</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.36.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-485.php.htm">configuration control board</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.37.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-486.php.htm">configuration identification</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.38.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-487.php.htm">configuration item</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.39.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-488.php.htm">configuration management</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.40.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-489.php.htm">configuration status accounting</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.41.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-490.php.htm">constellation</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.42.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-491.php.htm">continuous representation</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.43.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-492.php.htm">contractor</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.44.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-493.php.htm">contractual requirements</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.45.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-494.php.htm">corrective action</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.46.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-495.php.htm">customer</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.47.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-496.php.htm">customer requirement</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.48.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-497.php.htm">data</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.49.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-498.php.htm">data management</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.50.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-499.php.htm">defect density</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.51.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-500.php.htm">defined process</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.52.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-501.php.htm">definition of required functionality and quality attributes</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.53.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-502.php.htm">deliverable</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.54.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-503.php.htm">delivery environment</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.55.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-504.php.htm">derived measure</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.56.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-505.php.htm">derived requirements</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.57.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-506.php.htm">design review</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.58.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-507.php.htm">development</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.59.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-508.php.htm">document</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.60.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-509.php.htm">end user</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.61.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-510.php.htm">enterprise</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.62.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-511.php.htm">entry criteria</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.63.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-512.php.htm">equivalent staging</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.64.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-513.php.htm">establish and maintain</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.65.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-514.php.htm">example work product</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.66.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-515.php.htm">executive</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.67.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-516.php.htm">exit criteria</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.68.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-517.php.htm">expected CMMI components</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.69.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-518.php.htm">findings</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.70.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-519.php.htm">formal evaluation process</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.71.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-520.php.htm">framework</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.72.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-521.php.htm">functional analysis</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.73.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-522.php.htm">functional architecture</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.74.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-523.php.htm">generic goal</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.75.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-524.php.htm">generic practice</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.76.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-525.php.htm">generic practice elaboration</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.77.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-526.php.htm">hardware engineering</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.78.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-527.php.htm">higher level management</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.79.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-528.php.htm">incomplete process</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.80.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-529.php.htm">informative CMMI components</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.81.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-530.php.htm">institutionalization</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.82.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-531.php.htm">interface control</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.83.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-532.php.htm">lifecycle model</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.84.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-533.php.htm">managed process</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.85.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-534.php.htm">manager</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.86.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-535.php.htm">maturity level</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.87.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-536.php.htm">measure (noun)</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.88.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-537.php.htm">measurement</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.89.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-538.php.htm">measurement result</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.90.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-539.php.htm">memorandum of agreement</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.91.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-540.php.htm">natural bounds</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.92.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-541.php.htm">nondevelopmental item</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.93.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-542.php.htm">nontechnical requirements</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.94.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-543.php.htm">objectively evaluate</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.95.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-544.php.htm">operational concept</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.96.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-545.php.htm">operational scenario</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.97.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-546.php.htm">organization</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.98.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-547.php.htm">organizational maturity</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.99.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-548.php.htm">organizational policy</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.100.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-549.php.htm">organizational process assets</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.101.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-550.php.htm">organization’s business objectives</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.102.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-551.php.htm">organization’s measurement repository</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.103.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-552.php.htm">organization’s process asset library</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.104.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-553.php.htm">organization’s set of standard processes</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.105.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-554.php.htm">outsourcing</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.106.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-555.php.htm">peer review</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.107.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-556.php.htm">performance parameters</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.108.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-557.php.htm">performed process</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.109.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-558.php.htm">planned process</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.110.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-559.php.htm">policy</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.111.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-560.php.htm">process</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.112.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-561.php.htm">process action plan</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.113.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-562.php.htm">process action team</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.114.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-563.php.htm">process and technology improvements</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.115.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-564.php.htm">process architecture</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.116.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-565.php.htm">process area</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.117.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-566.php.htm">process asset</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.118.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-567.php.htm">process asset library</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.119.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-568.php.htm">process attribute</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.120.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-569.php.htm">process capability</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.121.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-570.php.htm">process definition</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.122.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-571.php.htm">process description</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.123.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-572.php.htm">process element</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.124.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-573.php.htm">process group</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.125.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-574.php.htm">process improvement</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.126.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-575.php.htm">process improvement objectives</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.127.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-576.php.htm">process improvement plan</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.128.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-577.php.htm">process measurement</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.129.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-578.php.htm">process owner</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.130.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-579.php.htm">process performance</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.131.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-580.php.htm">process performance baseline</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.132.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-581.php.htm">process performance model</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.133.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-582.php.htm">process tailoring</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.134.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-583.php.htm">product</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.135.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-584.php.htm">product baseline</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.136.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-585.php.htm">product component</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.137.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-586.php.htm">product component requirements</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.138.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-587.php.htm">product lifecycle</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.139.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-588.php.htm">product line</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.140.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-589.php.htm">product related lifecycle processes</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.141.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-590.php.htm">product requirements</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.142.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-591.php.htm">product suite</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.143.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-592.php.htm">project</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.144.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-593.php.htm">project plan</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.145.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-594.php.htm">project progress and performance</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.146.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-595.php.htm">project startup</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.147.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-596.php.htm">prototype</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.148.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-597.php.htm">relevant stakeholder</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.149.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-598.php.htm">representation</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.150.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-599.php.htm">required CMMI components</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.151.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-600.php.htm">requirement</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.152.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-601.php.htm">requirements analysis</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.153.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-602.php.htm">requirements elicitation</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.154.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-603.php.htm">requirements management</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.155.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-604.php.htm">requirements traceability</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.156.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-605.php.htm">return on investment</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.157.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-606.php.htm">risk analysis</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.158.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-607.php.htm">risk identification</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.159.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-608.php.htm">risk management</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.160.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-609.php.htm">senior manager</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.161.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-610.php.htm">service</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.162.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-611.php.htm">service agreement</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.163.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-612.php.htm">service catalog</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.164.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-613.php.htm">service incident</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.165.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-614.php.htm">service level</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.166.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-615.php.htm">service level agreement</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.167.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-616.php.htm">service level measure</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.168.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-617.php.htm">service line</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.169.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-618.php.htm">service request</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.170.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-619.php.htm">service requirements</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.171.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-620.php.htm">service system</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.172.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-621.php.htm">service system component</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.173.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-622.php.htm">service system consumable</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.174.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-623.php.htm">shared vision</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.175.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-624.php.htm">software engineering</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.176.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-625.php.htm">solicitation</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.177.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-626.php.htm">solicitation package</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.178.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-627.php.htm">special cause of variation</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.179.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-628.php.htm">specific goal</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.180.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-629.php.htm">specific practice</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.181.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-630.php.htm">stable process</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.182.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-631.php.htm">staged representation</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.183.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-632.php.htm">stakeholder</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.184.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-633.php.htm">standard (noun)</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.185.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-634.php.htm">standard process</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.186.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-635.php.htm">statement of work</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.187.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-636.php.htm">statistical and other quantitative techniques</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.188.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-637.php.htm">statistical process control</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.189.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-638.php.htm">statistical techniques</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.190.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-639.php.htm">subpractice</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.191.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-640.php.htm">subprocess</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.192.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-641.php.htm">supplier</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.193.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-642.php.htm">supplier agreement</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.194.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-643.php.htm">sustainment</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.195.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-644.php.htm">system of systems</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.196.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-645.php.htm">systems engineering</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.197.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-646.php.htm">tailoring</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.198.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-647.php.htm">tailoring guidelines</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.199.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-648.php.htm">target profile</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.200.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-649.php.htm">target staging</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.201.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-650.php.htm">team</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.202.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-651.php.htm">technical data package</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.203.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-652.php.htm">technical performance</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.204.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-653.php.htm">technical performance measure</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.205.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-654.php.htm">technical requirements</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.206.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-655.php.htm">traceability</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.207.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-656.php.htm">trade study</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.208.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-657.php.htm">training</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.209.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-658.php.htm">unit testing</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.210.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-659.php.htm">validation</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.211.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-660.php.htm">verification</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.212.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-661.php.htm">version control</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.213.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-662.php.htm">work breakdown structure (WBS)</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.214.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-663.php.htm">work group</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.215.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-664.php.htm">work plan</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.216.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-665.php.htm">work product</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.217.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-666.php.htm">work product and task attributes</a>&nbsp; 
+</div> 
+<div class="TocLevel4"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.4.218.&nbsp;<a HREF="ccb777e(cmmi_1_3_for_development)-667.php.htm">work startup</a>&nbsp; 
+</div> 
+</div> 
+<div class="TocLevel3"> 
+<img SRC="../wit-icons/61.png"> &nbsp;5.5.&nbsp;<a HREF="report-documentation-page.php.htm">Report Documentation Page</a>&nbsp; 
+</div> 
+</div> 
+</div> 
+</div> 
+<div class="NavBarGroup"> 
+<span class="NavBarPages"> 
+<span class="NavBarNumbers"> 
+</span> 
+<a HREF="ccb777e(cmmi_acq_1_3)-716.php.htm"><img SRC="../wit-icons/triangle-blueright.gif" alt="Next page
+1.&nbsp;Preface" title="Next page
+1.&nbsp;Preface" border="0"></a></span> 
+</div> 
+<div class="IndexesGroup"> 
+<span class="IndexToc"><a HREF="wit-toc.php.htm">Table of contents</a>
+</span>
+&nbsp;|&nbsp;<span class="IndexToc"><a HREF="wit-toc-images.php.htm">Images</a>
+</span>
+&nbsp;|&nbsp;<span class="IndexGlossary"><a HREF="wit-glossary.php.htm">Glossary</a>
+</span>
+&nbsp;|&nbsp;<span class="IndexKeywords"><a HREF="wit-index-keywords.php.htm">Index</a>
+</span>
+&nbsp;|&nbsp;<span class="IndexKeywords"><a HREF="wit-index-faceted.php.htm">Faceted index</a>
+</span>
+</div> 
+<div class="Separator"><hr></div>
+</td> 
+<td class="PageRightPane"> 
+
+    <div class="RightMenu">
+        <font size="1"><font size="1"><br />
+        Process
+        <br />
+        Areas</font>(continuous)</font>
+        <br />
+        <br />
+        <font size="1">Process
+        <br />
+        management&nbsp;&nbsp;&nbsp;
+        <br />
+        &nbsp;<a HREF="pa-opd.php.htm"><font size="1">OPD</font></a>
+        <br /></font> &nbsp;<a HREF="pa-opf.php.htm"><font size="1">OPF</font></a>&nbsp;
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-ot.php.htm"><font size="1">OT</font></a><font size="1">&nbsp;&nbsp;
+        <br />
+        &nbsp;</font><a HREF="pa-opp.php.htm"><font size="1">OPP</font></a><font size="1">&nbsp;&nbsp;
+        <br />
+        &nbsp;<a title="Organizational Performance Management"
+           HREF="pa-opm.php.htm"><font size="1"><font size="1">OPM</font></font></a></font>
+    </div>
+    <div class="RightMenu">
+        <font size="1">Project
+        <br />
+        management&nbsp;&nbsp;
+        <br />
+        &nbsp;<a title="Agreement Management"
+           HREF="pa-am.php.htm">AM</a>
+        <br />
+        &nbsp;<a HREF="pa-ipm.php.htm"><font size="1">IPM</font></a>
+        <br />
+        &nbsp;</font><a HREF="pa-pp.php.htm"><font size="1">PP</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-pmc.php.htm"><font size="1">PMC</font></a>&nbsp;
+        <br />
+        <font size="1">&nbsp;<a HREF="pa-rm.php.htm"><font size="1">REQM</font></a>
+        <br />
+        &nbsp;</font><a HREF="pa-rskm.php.htm"><font size="1">RSKM</font></a>
+        <br />
+        <font size="1">&nbsp;</font><a HREF="pa-qpm.php.htm"><font size="1">QPM</font></a>
+        <br />
+        &nbsp;<a title="Solicitation and Supplier Agreement Development"
+             HREF="pa-ssad.php.htm"><font size="1"><font size="1">SSAD</font></font></a>
+    </div>
+    <div class="RightMenu">
+        <font size="1">Acquisition Engineering&nbsp;
+        <br />
+        &nbsp;<a title="Acquisition Requirements Development"
+           HREF="pa-ard.php.htm"><font size="1">A</font><font size="1">RD</font></a></font><font size="1"><br />
+        &nbsp;<a title="Acquisition Technical Management"
+           HREF="pa-atm.php.htm">ATM</a></font>&nbsp;
+        <br />
+        &nbsp;<font size="1"><a title="Acquisition Validation"
+           HREF="pa-aval.php.htm"><font size="1">AVAL
+        <br /></font></a> &nbsp;<a title="Acquisition Verification"
+           HREF="pa-aver.php.htm">AVER</a></font>
+        <br />
+        &nbsp;&nbsp;<font size="1"><br />
+        Support&nbsp;
+        <br />
+        &nbsp;<a HREF="pa-car.php.htm"><font size="1">CAR</font></a>&nbsp;
+        <br />
+        &nbsp;</font><a HREF="pa-cm.php.htm"><font size="1">CM</font></a>&nbsp;
+        <br />
+        <font size="1">&nbsp;<a HREF="pa-dar.php.htm"><font size="1">DAR</font></a>&nbsp;
+        <br />
+        &nbsp;<a HREF="pa-ma.php.htm"><font size="1">MA</font></a><font size="1"><br /></font>&nbsp;</font><a HREF="pa-ppqa.php.htm"><font size="1">PPQA</font></a>&nbsp;
+        <br />
+        &nbsp;
+        <br />
+        <br />
+        <br />
+    </div></td> 
+</tr></table> 
+<div class="PageFooter">
+    <div class="Bottom">
+        <form method="get"
+              action="http://www.google.com/custom"
+              target="_top">
+            &nbsp;&nbsp;<input name="domains"
+                  value="cmmis.free.fr/cmmi-acq"
+                  type="hidden" /> <input name="q"
+                  maxlength="255"
+                  size="31" /> <input name="sa"
+                  value="Search CMMI-ACQ"
+                  type="submit" /> <input name="as_q"
+                  value="site:cmmis.free.fr/cmmi-acq"
+                  type="hidden" /> <input name="client"
+                  value="pub-9647251212076433"
+                  type="hidden" /> <input name="forid"
+                  value="0"
+                  type="hidden" /> <input name="ie"
+                  value="ISO-8859-1"
+                  type="hidden" /> <input name="oe"
+                  value="ISO-8859-1"
+                  type="hidden" /> <input name="cof"
+                  value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;"
+                  type="hidden" /> <input name="hl"
+                  value="fr"
+                  type="hidden" />
+        </form><font color="black"
+             size="0">Page 1 / 656
+        <br />
+        CMMI for Development 1.3 compiled by Christophe Guibert with <a class="UrlName"
+           HREF="../../../www.webideatree.com/"
+           target="_blank">WebIdeaTree 5</a>
+        <br />
+        Last revision on 2013-01-13</font>
+    </div><script type="text/javascript">
+//<![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2846813-3']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : '../../../www/') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    //]]>
+    </script> </div> 
+</div> 
+</body></html> 
