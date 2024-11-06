@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Deploying Software and Systems</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="deploying_software_and_systems">
+<meta name="uma.presentationName" content="Deploying Software and Systems">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_ZWmNQPQyEdudQe-1Qp3wUw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Deploying Software and Systems</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/supportingmaterial.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This page presents at a high-level the commonality, variability, and mapping between RUP and ITUP.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Both RUP and ITUP have a well-defined approach to deploying a software application or system.&nbsp; This includes
+    everything from roll-out and installation to training end users.&nbsp;
+</p>
+<ul>
+    <li>
+        RUP describes not only the development project, but also what is involved in deploying developed software.&nbsp;
+        This involves the RUP Deployment Discipline.&nbsp;
+    </li>
+    <li>
+        ITUP describes how a developed solution is installed and rolled out into the infrastructure as a “release”.&nbsp;
+        This is performed by the Release Management Process, which is essentially the ITIL Release Management
+        Process.&nbsp;
+    </li>
+</ul>
+<h3>
+    Commonality
+</h3>
+<p>
+    Deployment in RUP and ITUP are similar at the highest level of abstraction.&nbsp; It involves the following
+    aspects:&nbsp;
+</p>
+<ul>
+    <li>
+        Planning deployment
+    </li>
+    <li>
+        Creating deployment communications, training, and other related materials
+    </li>
+    <li>
+        Creating the deployment scripts and mechanisms
+    </li>
+    <li>
+        Deployment
+    </li>
+</ul>
+<p>
+    However, the primary difference is the target of deployment.&nbsp; In RUP, the target of deployment is to get the
+    developed software or system into the customer's hands, whereas in ITUP, the target of deployment is to roll out
+    software or systems across all required platforms within the IT infrastructure.&nbsp;
+</p>
+<h3>
+    Variability
+</h3>
+<p>
+    The primary difference between the RUP Deployment discipline and the ITUP Release Management process is the context in
+    which they both work.&nbsp; To explain the contextual differences, it is important to understand two different
+    perspectives on development and deployment.&nbsp;
+</p>
+<ul>
+    <li>
+        <em>Software Vendor Perspective</em> – In this perspective, the software vendor develops custom or shrinkwrapped
+        software and provides that software either directly to a customer or via third-party channels.&nbsp; Once that
+        software is acquired by the customer, it is typically deployed internally by the customer’s IT organization.&nbsp;
+        To the software vendor, development means development of the software developed by the vendor, and deployment means
+        deploying the software to the market or to a specific customer’s IT organization.&nbsp;
+    </li>
+    <li>
+        <em>IT Organization Perspective</em> – In this perspective, the IT organization either develops its own software or
+        acquires software from a vendor.&nbsp; Once that software is deemed acceptable for internal deployment, the IT
+        organization must develop installation and deployment mechanisms and procedures.&nbsp; The software is then
+        deployed within the organization.&nbsp; To the IT organization, development typically means either 3rd-party
+        development or internal development, and may also mean development of deployment mechanisms.&nbsp; Deployment means
+        rolling out the software to the entire company.&nbsp;
+    </li>
+</ul>
+<p>
+    The following figure&nbsp;depicts these two perspectives.&nbsp;
+</p>
+<p align="center">
+    <img height="318" alt="Two Perspectives on Deployment" src="./../../../itsm.rup_itup_map/guidances/supportingmaterials/./resources/two_perspectives.gif" width="597" />
+</p>
+<p>
+    RUP primarily describes deployment from the vendor perspective, whereas ITUP primarily describes deployment from the IT
+    organization perspective.&nbsp; This explains a number of other differences found between RUP and ITUP, including the
+    following:
+</p>
+<ul>
+    <li>
+        ITUP strictly adheres to ITIL concepts such as changes and releases, whereas RUP uses terminology and activities
+        that are not specifically related to ITIL.&nbsp; For instance, the term “release” is used differently between ITUP
+        and RUP.&nbsp;
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                RUP defines release as: <em>A subset of the end-product that is the object of evaluation at a major
+                milestone. A release is a stable, executable version of product, together with any artifacts necessary to
+                use this release, such as release notes or installation instructions. A release can be internal or
+                external. An internal release is used only by the development organization, as part of a milestone, or for
+                a demonstration to users or customers. An external release (or delivery) is delivered to users. A release
+                is not necessarily a complete product, but can just be one step along the way, with its usefulness measured
+                only from an engineering perspective. Releases act as a forcing function that drives the development team
+                to get closure at regular intervals, avoiding the "90% done, 90% remaining" syndrome.</em>
+            </li>
+            <li>
+                ITUP defines release as: <em>A release is a collection of one or more approved changes that are deployed
+                into the infrastructure together.</em>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    In addition, the activities performed by ITUP and RUP are somewhat different.&nbsp; ITUP has greater focus on the
+    development of the deployment mechanism.&nbsp; Here is how RUP and ITUP approach the deployment aspects mentioned in
+    the previous section:<br />
+</p><br />
+<table cellspacing="2" cellpadding="2" width="540" border="1">
+    <tbody>
+        <tr>
+            <th valign="top" scope="col" bgcolor="#CEFFFF">
+                <div align="center">
+                    Deployment Aspect
+                </div>
+            </th>
+            <th valign="top" scope="col" bgcolor="#CEFFFF">
+                <div align="center">
+                    RUP Activity
+                </div>
+            </th>
+            <th valign="top" scope="col" bgcolor="#CEFFFF">
+                <div align="center">
+                    ITUP Activity
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <td valign="top">
+                Planning
+            </td>
+            <td valign="top">
+                <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLink" href="./../../../pages_not_installed/pages_not_installed.html" guid="{9B5E6B08-625F-40DF-AA4E-0BD056C0553A}">Plan Deployment</a>
+            </td>
+            <td valign="top">
+                <p>
+                    Plan Release
+                </p>
+                <p>
+                    Plan Release Roll-out
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                Creating related material
+            </td>
+            <td valign="top">
+                <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLink" href="./../../../pages_not_installed/pages_not_installed.html" guid="{3124AE63-F6A4-48E9-A517-E484845B9F09}">Develop Support Material</a>
+            </td>
+            <td valign="top">
+                Communicate, Prepare, and Train for Release
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                Creating deployment scripts and mechanisms
+            </td>
+            <td valign="top">
+                <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLink" href="./../../../pages_not_installed/pages_not_installed.html" guid="{8D0B4C74-F70A-4BDC-B3C9-CA0FD95922B6}">Produce Deployment Unit</a>
+            </td>
+            <td valign="top">
+                Design and Build Release
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                Deployment
+            </td>
+            <td valign="top">
+                <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLink" href="./../../../pages_not_installed/pages_not_installed.html" guid="{8D0B4C74-F70A-4BDC-B3C9-CA0FD95922B6}">Produce Deployment Unit</a>
+            </td>
+            <td valign="top">
+                <p>
+                    Distribute and Install Release
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                Other
+            </td>
+            <td valign="top">
+                <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLink" href="./../../../pages_not_installed/pages_not_installed.html" guid="_tASIQDK7EdqseP6pgOfC6g">Manage Acceptance Test</a>
+            </td>
+            <td valign="top">
+                Perform Solution Acceptance Review (Solution Acceptance process)
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+            </td>
+            <td valign="top">
+                <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLink" href="./../../../pages_not_installed/pages_not_installed.html" guid="{293A215D-E3D2-47D9-9A2E-89431862EFDA}">Beta Test Product</a>
+            </td>
+            <td valign="top">
+                IT organizations view beta products as just another type of deployment, although to a smaller number of
+                users.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+            </td>
+            <td valign="top">
+                <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLink" href="./../../../pages_not_installed/pages_not_installed.html" guid="_64Ee0DK4EdqHc6VRvq68Uw">Manage Acceptance Test for Custom Install</a>
+            </td>
+            <td valign="top">
+                Does not apply.&nbsp; This applies to a software provider's perspective.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+            </td>
+            <td valign="top">
+                <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLink" href="./../../../pages_not_installed/pages_not_installed.html" guid="{B089A6F0-53E7-4A54-9E5F-8BCCCE46E862}">Package Product</a> <a class="elementLink" href="./../../../itsm.rup_itup_map/guidances/supportingmaterials/release_management_process_overview_97C58082.html" guid="_IY28ANiiEdurhpzzNRNA2w">ITUP Release Management Process Overview</a>
+            </td>
+            <td valign="top">
+                Does not apply.&nbsp; This comes from a software provider's perspective.&nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<h3>
+    Mapping Between RUP and ITUP<br />
+    <br />
+</h3>
+<table cellspacing="2" cellpadding="2" width="400" border="1">
+    <tbody>
+        <tr>
+            <td bgcolor="#CEFFFF">
+                <div align="center">
+                    <strong>RUP Discipline</strong>
+                </div>
+            </td>
+            <td bgcolor="#CEFFFF">
+                <div align="center">
+                    <strong>ITUP Process</strong>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLink" href="./../../../pages_not_installed/pages_not_installed.html" guid="_yd3E1NnmEdmO6L4XMImrsA">Deployment</a>
+            </td>
+            <td>
+                <a class="elementLinkWithUserText" href="./../../../itsm.rup_itup_map/guidances/supportingmaterials/release_management_process_overview_97C58082.html" guid="_IY28ANiiEdurhpzzNRNA2w">Release Management</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h3>
+    Summary
+</h3>
+<p>
+    Thus, the RUP <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLink" href="./../../../pages_not_installed/pages_not_installed.html" guid="_yd3E1NnmEdmO6L4XMImrsA">Deployment</a> Discipline and the ITUP <a class="elementLinkWithUserText" href="./../../../itsm.rup_itup_map/guidances/supportingmaterials/release_management_process_overview_97C58082.html" guid="_IY28ANiiEdurhpzzNRNA2w">Release Management</a> Process are somewhat similar at the highest level of
+    abstraction, but they view deployment from two different perspectives.&nbsp;&nbsp;The target of RUP Deployment is to
+    get completed software or systems into a customer's possession, whereas the target of ITUP Release Management is to
+    roll out&nbsp;that completed software or system within the IT infrastructure.&nbsp; Because of this, RUP and ITUP
+    overlap to a small degree in the area of deploying software and systems.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../itsm.rup_itup_map/guidances/supportingmaterials/relationship_between_rup_and_itup_overview_8835A198.html" guid="_Q4ejANf6EduetddtQ3D3sg">Overview of the Relationship Between RUP and ITUP</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2007. &nbsp;All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

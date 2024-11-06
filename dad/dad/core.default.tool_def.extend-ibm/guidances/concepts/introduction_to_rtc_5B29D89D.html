@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Introduction to Rational Team Concert</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="introduction_to_rtc">
+<meta name="uma.presentationName" content="Introduction to Rational Team Concert">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_-SxxEITWEd2AfZddKTmDRA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Introduction to Rational Team Concert</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This page provides some background concepts for Rational Team Concert.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.mgmt.iterative_dev.extend-ibm/guidances/toolmentors/assessing_iteration_results_with_rtc_91FA7054.html" guid="_50jrcON4Ed63qO5OeWLXIw">Assessing Iteration Results with IBM Rational Team Concert</a>
+</li>
+<li>
+<a href="./../../../practice.mgmt.iterative_dev.extend-ibm/guidances/toolmentors/managing_iterations_with_rtc_100F090B.html" guid="_qcTRUOQjEd6nKK97K4z1MA">Managing Iterations with IBM Rational Team Concert</a>
+</li>
+<li>
+<a href="./../../../practice.mgmt.iterative_dev.extend-ibm/guidances/toolmentors/planning_iteration_with_rtc_BBA649F8.html" guid="_iLGfQNUPEdyajsUEn5Aomw">Planning an Iteration with Rational Team Concert</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><br />
+<br />
+<table width="95%" summary="layout table" border="1">
+    <tbody>
+        <tr>
+            <td>
+                <strong><a id="IterativePlan" name="IterativePlan">Iteration Plan Editor</a></strong>
+            </td>
+            <td>
+                The Iteration Plan Editor lets you to create or modify an iteration plan. Work items that are targeted for
+                the same iteration are automatically added to the plan.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a id="IterationType" name="IterationType">Iteration Type</a></strong>
+            </td>
+            <td>
+                <p>
+                    Teams can define iteration types. Each iteration can be assigned an iteration type. Teams can configure
+                    behavior for all iterations of a given type. This allows for more succinct process specifications.
+                </p>
+                <p>
+                    For example, if a team divides each milestone into a development phase and a stabilization phase, they
+                    can create an iteration type named "Milestone Stabilization Phase" and apply it to the appropriate
+                    iterations. The permissions/behavior for all of these iterations can then be configured at once by
+                    configuring the iteration type.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a id="OperationPreCondition" name="OperationPreCondition">Operation Precondition</a></strong>
+            </td>
+            <td>
+                <p>
+                    RTC&nbsp;users&nbsp;can enforce the desired behavior of their teams' process by configuring
+                    preconditions and followup actions. Preconditions are checked before an operation is run (such as
+                    before delivering code) and may prevent the operation from executing if its condition is not met.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a id="TeamProcessComponent" name="TeamProcessComponent">Team Process Component</a></strong>
+            </td>
+            <td>
+                <p>
+                    The Team Process Component provides RTC's process support foundations. In the RTC context, process
+                    refers to the collection of practices, rules, guidelines, and conventions used to organize a project's
+                    work. A team's process is the sum total of the ways the team has decided (or evolved) to do things.
+                </p>
+                <p>
+                    For a very small team, the process is usually informal and undocumented. As a team grows, parts of the
+                    process may get documented on the team's project home page so that new team members can absorb them
+                    quickly. A large organization may have written descriptions of the general practices and procedures
+                    their project teams are expected to adhere to; a project team is expected to start with standard
+                    process templates and customize them to suit the project and team. Some organizations and teams go one
+                    step further, and create formal models covering significant portions of their processes.
+                </p>
+                <p>
+                    RTC&nbsp;is designed to allow comprehensive support across the entire software development lifecycle.
+                    One thread that runs throughout all phases of a project is the process that the team members have
+                    agreed to follow.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a id="ProcessIterations" name="ProcessIterations">Process Iterations</a></strong>
+            </td>
+            <td>
+                The <strong>Process&nbsp;Iteration</strong> page of the <strong>Process Template
+                Editor</strong>&nbsp;specifies the current iteration for the project. This process state is described using
+                XML. The Outline view provides a structured view of its contents. Iteration start and end dates can be
+                specified here also.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a id="ProcessSpecification" name="ProcessSpecification">Process Specification</a></strong>
+            </td>
+            <td>
+                <p>
+                    Just as a computer program is a static description of how things are supposed to unfold dynamically at
+                    runtime, a process specification is a static description of how things are supposed to unfold during
+                    the software development process. In the case of the latter, what unfolds dynamically is the work that
+                    the team members perform; the project area is the runtime context; the project artifacts are the
+                    runtime objects.
+                </p>
+                <p>
+                    Process specifications are expressed in a declarative form, while primitive actions are expressed as
+                    Java code. Process specifications are kept in a compiled form that can be executed efficiently.
+                    Executing the process specification in a particular situation means determining and executing the
+                    process rules that apply. Process specifications stored in project areas are instantiated from process
+                    templates.&nbsp;RTC provides means to author process templates, to edit process specifications and
+                    process states of project areas, and to edit process customizations of team areas. Process descriptions
+                    authored with tools like provided by the Eclipse Process Framework can be deployed to a&nbsp;RTC
+                    repository and be associated with existing process templates. They can then be viewed in the context of
+                    project areas whose process specifications have been derived from these process templates.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a id="ProcessTemplate" name="ProcessTemplate">Process Template Editor</a></strong>
+            </td>
+            <td>
+                The Process Template Editor allows you to author <strong>Process Specifications</strong> that can be reused
+                for more than one project. It allows you to create a process description, process specification, process
+                state, and process content URL.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a id="ProcessTemplateExplorer" name="ProcessTemplateExplorer">Process Template
+                Explorer</a></strong>
+            </td>
+            <td>
+                This view is used to create or modify process templates.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a id="ProjectArea" name="ProjectArea">Project Area Editor</a></strong>
+            </td>
+            <td>
+                The Project Area editor is a multi-page tabbed editor used to modify a project area after it has been
+                created<font color="#0000ff">.</font> It gives you access to the project area's process specification,
+                development lines, and categories.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a id="RTCWorkItem" name="RTCWorkItem">RTC Work Item</a></strong>
+            </td>
+            <td>
+                The Work Item is a central team artifact in a&nbsp;RTC development process.&nbsp; A Work Item is a
+                generalized notion of a development task. Typical work item types are defects, enhancements and tasks. Jazz
+                allows to add new work item types or extend existing types via the <strong>Process Specification</strong>.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a id="TeamArea" name="TeamArea">Team Area Editor</a></strong>
+            </td>
+            <td>
+                The Team Area editor is&nbsp;visually similar to the project area editor, this editor is used to define
+                team members, choose the development line, and optionally, customize the team's process.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a id="TeamArtifactsView" name="TeamArtifactsView">Team Artifacts View</a></strong>
+            </td>
+            <td>
+                The Team Artifacts view manages your connections to a repository and a project area. Once you are connected
+                to a project area you can access its artifacts. The artifacts are grouped into different nodes as shown
+                below.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a id="WorkItemCategories" name="WorkItemCategories">Work Item Categories</a></strong>
+            </td>
+            <td>
+                The Work Item Categories page is used to add and remove work item categories and to associate them with
+                specific team areas. The team area with which the work item category is associated will determine the
+                process which governs work items created with the category. For example, the team areas process
+                configuration may specify required work item properties).
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a id="WorkItem" name="WorkItem">Work Item Editor</a></strong>
+            </td>
+            <td>
+                The Work Item Editor lets you create or modify a work item, change its state, add comments, attachments,
+                and links to other artifacts. When you save the editor, the updated work item will be transmitted to the
+                repository.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a id="WorkItemView" name="WorkItemView">Work Items View</a></strong>
+            </td>
+            <td>
+                The Work Items View shows you the work items returned when running a work item query.
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tool Mentors</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.mgmt.iterative_dev.extend-ibm/guidances/toolmentors/assessing_iteration_results_with_rtc_91FA7054.html" guid="_50jrcON4Ed63qO5OeWLXIw">Assessing Iteration Results with IBM Rational Team Concert</a>
+</li>
+<li>
+<a href="./../../../practice.mgmt.iterative_dev.extend-ibm/guidances/toolmentors/managing_iterations_with_rtc_100F090B.html" guid="_qcTRUOQjEd6nKK97K4z1MA">Managing Iterations with IBM Rational Team Concert</a>
+</li>
+<li>
+<a href="./../../../practice.mgmt.iterative_dev.extend-ibm/guidances/toolmentors/planning_iteration_with_rtc_BBA649F8.html" guid="_iLGfQNUPEdyajsUEn5Aomw">Planning an Iteration with Rational Team Concert</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

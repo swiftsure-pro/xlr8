@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Run Test Scripts Using IBM Rational Manual Tester</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="run_man_test_script">
+<meta name="uma.presentationName" content="Run Test Scripts Using IBM Rational Manual Tester">
+<meta name="uma.category" content="Tool:rup_test_manual_tester:IBM Rational Manual Tester">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="IBM Rational Manual Tester">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_PP4CwHj2EdyhRNciHt44hg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Run Test Scripts Using IBM Rational Manual Tester</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor describes how to use IBM Rational Manual Tester to run test scripts.</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.tech.common.extend_rmt-ibm/tools/rup_test_manual_tester_D352FA34.html" guid="_7fE8wLWFEdyTM_aghv_1tQ">IBM Rational Manual Tester</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.independent_testing.base-ibm/tasks/analyze_test_failure_EBF42AED.html" guid="_k98CYHE6Edy8Ac588DXPCQ">Analyze Test Failure</a>
+</li>
+<li>
+<a href="./../../../practice.tech.independent_testing.base-ibm/tasks/determine test_results_9A69FA0F.html" guid="_PyxXEHE4Edy8Ac588DXPCQ">Determine Test Results</a>
+</li>
+<li>
+<a href="./../../../practice.tech.independent_testing.base-ibm/tasks/implement_test_4938541C.html" guid="_fajSUHE6Edy8Ac588DXPCQ">Develop Test</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Overview
+</h3>
+<p>
+    When you run a manual test script, you use the IBM&reg; Rational&reg; Manual Tester Execution viewer to go through the
+    statements one at a time. In this way, you are able to check off steps as you complete them, and validate verification
+    points and reporting points. (On the difference between verification points and reporting points, see <a class="elementLinkWithType" href="./../../../core.tech.common.extend_rmt-ibm/guidances/toolmentors/vp_report_points_man_test_8027D8E8.html" guid="_ZkS44Hj2EdyhRNciHt44hg">Tool Mentor: When to Use Verification Points versus Reporting Points</a>). This tool
+    mentor describes how to prepare and run test scripts in Manual Tester.)
+</p>
+<h3>
+    Tool Steps
+</h3>
+<p>
+    To run a script using Rational Manual Tester, perform the following steps:
+</p>
+<ol>
+    <li>
+        Prepare the Test Environment
+    </li>
+    <li>
+        Run the Script
+    </li>
+</ol>
+<h4>
+    1. Prepare the Environment
+</h4>
+<ol>
+    <li>
+        To prepare for running a test script, open the application under test.
+    </li>
+    <li>
+        Run Rational Manual Tester.
+    </li>
+    <li>
+        Open the test script you want to run.
+    </li>
+</ol>
+<p>
+    Remember to pay close attention to places in your test script that involve text insertion or that involve image files.
+    ( <img height="16" alt="" src="./../../../core.tech.common.extend_rmt-ibm/guidances/toolmentors/./resources/helpbook.gif" width="16" />&nbsp;For more information on entering text or
+    using image files in your script, see the topics <em>About Entering and Verifying Text in an Application</em> and
+    <em>Inserting an Image File</em> in the Rational Manual Tester online Help.) You may wish to focus on these areas in
+    your script when you are running the script from the Execution viewer.
+</p>
+<h4>
+    2. Run the Script
+</h4>
+<ol>
+    <li>
+        With the test script open, select <strong>Run &gt; Run Script</strong>.
+    </li>
+    <li>
+        Rational Manual Tester displays the Execution viewer with the first statement of the script highlighted. You can
+        move the Execution viewer over the application under test. Since the Execution viewer is transparent, both the
+        script you are running and the application under test are visible.
+    </li>
+    <li>
+        In the Execution viewer, review each step as you progress through the script. As you progress through the script,
+        Manual Tester places a small check mark to the left of the first step and highlights the second statement.
+    </li>
+</ol>
+<p>
+    <img height="16" alt="" src="./../../../core.tech.common.extend_rmt-ibm/guidances/toolmentors/./resources/helpbook.gif" width="16" />&nbsp;For more information on running a test
+    script, see the following topics in the Rational Manual Tester online Help:
+</p>
+<ul>
+    <li>
+        <em>Running a Manual Test Script</em>
+    </li>
+    <li>
+        <em>Execution Viewer</em>
+    </li>
+    <li>
+        <em>Execution Log</em>
+    </li>
+    <li>
+        <em>Text Editor</em><br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

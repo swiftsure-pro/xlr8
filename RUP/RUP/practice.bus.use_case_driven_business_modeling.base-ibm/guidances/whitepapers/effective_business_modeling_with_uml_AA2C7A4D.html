@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Whitepaper: Effective Business Modeling with UML: Describing Business Use Cases and Realizations</title>
+<meta name="uma.type" content="Whitepaper">
+<meta name="uma.name" content="effective_business_modeling_with_uml">
+<meta name="uma.presentationName" content="Effective Business Modeling with UML: Describing Business Use Cases and Realizations">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_qfXDIFn8Ed6Gvq_dRUXeQw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Whitepaper: Effective Business Modeling with UML: Describing Business Use Cases and Realizations</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/whitepaper.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Using UML and use cases to model business. A RationalEdge article by Pan-Wei Ng.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/workproducts/business_analysis_model_F3C7F7B3.html" guid="_qfJmgFqmEd6cz7WWjCrtdA">Business Analysis Model</a>
+</li>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/workproducts/business_design_model_FEA991D8.html" guid="_tOPC8FqmEd6cz7WWjCrtdA">Business Design Model</a>
+</li>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/workproducts/business_model_FA12B77C.html" guid="_vZ1FIFUyEd6lItlEOevULA">Business Model</a>
+</li>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/tasks/define_the_business_D659A7FF.html" guid="_sfkLcDNcEd6_nLybut0Zyw">Define the Business</a>
+</li>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/guidances/roadmaps/how_to_adopt_3425CC7D.html" guid="_wXcq4DN7Ed6_nLybut0Zyw">How to Adopt the Use Case Driven Business Modeling Practice</a>
+</li>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/tasks/model_a_scenario_F20206D0.html" guid="_CWz54FnQEd6TDdjsK-pYkg">Model a Scenario</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This whitepaper provides in-depth instructions about defining business use-case realizations and business use-case
+    models. It closely follows the tasks and guidelines outlined in this practice.
+</p>
+<p>
+    <strong>Whitepaper Abstract</strong>
+</p>
+<p>
+    <em>As most software development practitioners know, the Unified Modeling Language (UML) excels at representing "real
+    world" phenomena. This capability led to development of the UML Business Modeling Profile, which provides extensions
+    and stereotypes to facilitate communication between users and analysts.</em>
+</p>
+<p>
+    <em>Organizations that are thinking about applying the UML Business Modeling Profile often have practical questions,
+    such as:</em>
+</p>
+<ul>
+    <li>
+        <em>When do I really need a business model? When are use-case models alone sufficient?</em>
+    </li>
+    <li>
+        <em>Which UML diagrams are used for particular business modeling situations? How do I know whether to use a
+        sequence diagram or a collaboration diagram, for example?</em>
+    </li>
+    <li>
+        <em>How does the UML business model relate to other UML models (domain model, use-case model, etc.)? How are these
+        models organized?</em>
+    </li>
+</ul>
+<p>
+    <em>Unfortunately, the literature that addresses these questions, as well as best practices for applying the UML
+    Business Modeling Profile, is relatively sparse compared to that for system modeling. This frustrates users and
+    analysts who recognize the benefits of using the UML for business modeling but are forced to struggle with the
+    notation.</em>
+</p>
+<p>
+    <em>This article addresses their concerns by walking through an example case that models the acquisition process within
+    an IT department responsible for managing outsourced development. Comprised of legal advisors, enterprise architects,
+    and project managers, the department is responsible for contractual, system architecture, and project management
+    issues. Its mission is to free end-user departments from IT-related issues so they can concentrate on business
+    operations. When these departments need to acquire new systems or enhance existing ones, they get the IT department to
+    prepare tender specifications, and IT then selects suitable vendors to deliver the required system.</em>
+</p>
+<p>
+    View the entire whitepaper <a href="http://140.134.26.25/~cyt/cyt/data/related/Effective_Business_Modeling_with_UML_Describing_Business_Use_Cases_and_Realizations_2005_05_10.pdf" target="_blank">on the RationalEdge site</a>.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

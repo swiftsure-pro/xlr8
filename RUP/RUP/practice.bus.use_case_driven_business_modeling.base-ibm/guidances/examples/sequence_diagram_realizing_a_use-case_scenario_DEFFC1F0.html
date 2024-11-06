@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Sequence Diagram Realizing a Use-Case Scenario</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="sequence_diagram_realizing_a_use-case_scenario">
+<meta name="uma.presentationName" content="Sequence Diagram Realizing a Use-Case Scenario">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_yyzpkFoIEd6Gvq_dRUXeQw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Sequence Diagram Realizing a Use-Case Scenario</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">A sequence diagram that describes how business entities and business workers interact in order to realize a use-case scenario.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/workproducts/business_analysis_model_F3C7F7B3.html" guid="_qfJmgFqmEd6cz7WWjCrtdA">Business Analysis Model</a>
+</li>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/workproducts/business_design_model_FEA991D8.html" guid="_tOPC8FqmEd6cz7WWjCrtdA">Business Design Model</a>
+</li>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/workproducts/business_model_FA12B77C.html" guid="_vZ1FIFUyEd6lItlEOevULA">Business Model</a>
+</li>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/guidances/examples/class_diagram_realizing_a_use_case_48EA3ECF.html" guid="_VBKSYHL5Ed6bjOEjgEchEQ">Class Diagram realizing a Business Use Case</a>
+</li>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/guidances/guidelines/describe_uc_scenario_in_a_realization_E0BD9691.html" guid="_6-fXgHL0Ed6bjOEjgEchEQ">Describe a Business Use-Case Scenario in a Business Use-Case Realization</a>
+</li>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/guidances/guidelines/finding_business_workers_and_entities_80EAAEED.html" guid="_BKEDAFoJEd6Gvq_dRUXeQw">Finding Business Workers and Entities</a>
+</li>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/tasks/model_a_scenario_F20206D0.html" guid="_CWz54FnQEd6TDdjsK-pYkg">Model a Scenario</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This sequence diagram describes how a single&nbsp;business use case&nbsp;scenario is realized. It&nbsp;lives in a <a class="elementLink" href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/guidances/concepts/business_uc_realization_B9B77CA3.html" guid="_NFkXsGDYEd6EnMwJEA4c6A">Business Use-Case Realization</a>&nbsp;and shows how a purchase specification is
+    created in an organization.
+</p>
+<p>
+    The End User Manager actor starts the flow by having the Systems Specifications entity prepare the specification. This
+    indicates that there's a document or database that supports the operation <em>Prepare system specification</em>,
+    probably by allowing the document to be created. The End User Manager then uses the <em>Update specification</em>
+    operation to add information to the spec.
+</p>
+<p>
+    The sequence diagram also shows hierarchical operations. The IT Project Manager at one point requests that the Legal
+    Officer perform <em>Supplement tender with legal terms</em>. In order to fulfill that operation the Legal Officer must
+    do a contract search, make sure the legal language is valid, and supplement the specification with legalese.
+</p>
+<p>
+    <img alt="file:///C:/Documents%20and%20Settings/Administrator/Desktop/workers_and_entities_interacting.jpg"     src="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/guidances/examples/./resources/workers_and_entities_interacting.jpg" />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/guidances/examples/class_diagram_realizing_a_use_case_48EA3ECF.html" guid="_VBKSYHL5Ed6bjOEjgEchEQ">Class Diagram realizing a Business Use Case</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

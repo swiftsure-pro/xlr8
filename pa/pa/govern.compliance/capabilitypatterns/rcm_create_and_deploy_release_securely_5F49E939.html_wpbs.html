@@ -1,0 +1,657 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Capability Pattern: Create and Deploy the Release Securely</title>
+<meta name="uma.type" content="CapabilityPattern">
+<meta name="uma.name" content="rcm_create_and_deploy_release_securely">
+<meta name="uma.presentationName" content="Create and Deploy the Release Securely">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=__43k0dDdEdqLW8MRTbXhVQ&path=__43k0dDdEdqLW8MRTbXhVQ';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="__43k0dDdEdqLW8MRTbXhVQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Capability Pattern: Create and Deploy the Release Securely</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/capabilitypattern.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This capability pattern covers the activities that will securely produce a software  release. It illustrates the &quot;Three Points of Control&quot; strategy in the  context of RUP.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="10" class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../govern.compliance/capabilitypatterns/rcm_create_and_deploy_release_securely_5F49E939.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WBS" href="./../../govern.compliance/capabilitypatterns/rcm_create_and_deploy_release_securely_5F49E939.html_wbs.html"><span style="white-space:nowrap;">Work Breakdown Structure</span></a></td><td width="1"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_TBS" href="./../../govern.compliance/capabilitypatterns/rcm_create_and_deploy_release_securely_5F49E939.html_tbs.html"><span style="white-space:nowrap;">Team Allocation</span></a></td><td width="21"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Work Product Usage</span></td><td width="21"><img src="./../../images/tab_end-a.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="6"><img src="./../../images/shim.gif" height="2" alt="" title=""></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="1"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Work Product Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Work Product Breakdown", summary: "Work Product Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["model_info", "Model Info"],
+["entry_state", "Entry State"],
+["exit_state", "Exit State"],
+["deliverable", "Deliverable"],
+["type", "Type"],
+["is_planned", "Planned"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_optional", "Optional"]],
+rows: [
+			
+{id: "c7106bb4", parentId: "", relPath: ",_Ot-vVJx7EduMOPYypke8PA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rcm_baseline", title: "Baseline", url: "./../../govern.compliance/capabilitypatterns/rcm_baseline_9DE03677.html", 
+	predecessors: "", info: "Optional Input, Output, Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "7480602a", parentId: "", relPath: ",_z5WVo6zVEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rcm_baseline_control_point", title: "Baseline Control Point", url: "./../../govern.compliance/capabilitypatterns/rcm_baseline_control_point_61C2DA08.html", 
+	predecessors: "", info: "Output", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "74630118", parentId: "", relPath: ",_y6A6AtDjEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_bill_of_materials", title: "Bill of Materials", url: "./../../govern.compliance/capabilitypatterns/rup_bill_of_materials_6C16A643.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "1931d207", parentId: "", relPath: ",_ShQW8dAHEdqSo_AqzYf-hg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_build", title: "Build", url: "./../../govern.compliance/capabilitypatterns/rup_build_B8DAAC13.html", 
+	predecessors: "", info: "", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "ca9facfc", parentId: "", relPath: ",_y6A6ANDjEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_build", title: "Build", url: "./../../govern.compliance/capabilitypatterns/rup_build_72DFB21D.html", 
+	predecessors: "", info: "Mandatory Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "cf1a9c62", parentId: "", relPath: ",_TFFHBqzYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_business_case", title: "Business Case", url: "./../../govern.compliance/capabilitypatterns/rup_business_case_B61488AD.html", 
+	predecessors: "", info: "", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "c9cd041b", parentId: "", relPath: ",_Ot-vVZx7EduMOPYypke8PA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rcm_change_control_point", title: "Change Control Point", url: "./../../govern.compliance/capabilitypatterns/rcm_change_control_point_A87E1687.html", 
+	predecessors: "", info: "Output", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "275cbd96", parentId: "", relPath: ",_TFFG-6zYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_change_request", title: "Change Request", url: "./../../govern.compliance/capabilitypatterns/rup_change_request_314C7026.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "73df6b9f", parentId: "", relPath: ",_yxVSzKzXEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_change_request", title: "Change Request", url: "./../../govern.compliance/capabilitypatterns/rup_change_request_9A8F2676.html", 
+	predecessors: "", info: "", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "c59c6991", parentId: "", relPath: ",_UQ248fbwEdyQp6WMO1mYBA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rcm_change_workflow_specification", title: "Change Workflow Specification", url: "./../../govern.compliance/capabilitypatterns/rcm_change_workflow_specification_282E4D20.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "18ea19af", parentId: "", relPath: ",_UcL_MPbwEdyQp6WMO1mYBA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_configuration_audit_findings", title: "Configuration Audit Findings", url: "./../../govern.compliance/capabilitypatterns/rup_configuration_audit_findings_4E5C39B8.html", 
+	predecessors: "", info: "Mandatory Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "2501490d", parentId: "", relPath: ",_yxVSzazXEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_configuration_audit_findings", title: "Configuration Audit Findings", url: "./../../govern.compliance/capabilitypatterns/rup_configuration_audit_findings_89283A8C.html", 
+	predecessors: "", info: "", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "71b3146b", parentId: "", relPath: ",_TFFG_6zYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_cm_plan", title: "Configuration Management Plan", url: "./../../govern.compliance/capabilitypatterns/rup_cm_plan_95CA9A34.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "20117715", parentId: "", relPath: ",_yxVSw6zXEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_cm_plan", title: "Configuration Management Plan", url: "./../../govern.compliance/capabilitypatterns/rup_cm_plan_AEEA4A04.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "6cd460c5", parentId: "", relPath: ",_UQ248PbwEdyQp6WMO1mYBA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rcm_control_point_specification", title: "Control Point Specification", url: "./../../govern.compliance/capabilitypatterns/rcm_control_point_specification_3995390A.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "1b78d054", parentId: "", relPath: ",_y6A6B9DjEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_deployment_model", title: "Deployment Model", url: "./../../govern.compliance/capabilitypatterns/rup_deployment_model_99825E27.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "759a7262", parentId: "", relPath: ",_y6A6AdDjEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_deployment_plan", title: "Deployment Plan", url: "./../../govern.compliance/capabilitypatterns/rup_deployment_plan_6178C633.html", 
+	predecessors: "", info: "Mandatory Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "1a7988f1", parentId: "", relPath: ",_8pCXsqzXEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_deployment_plan", title: "Deployment Plan", url: "./../../govern.compliance/capabilitypatterns/rup_deployment_plan_7A5DDD14.html", 
+	predecessors: "", info: "Mandatory Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "73edfea8", parentId: "", relPath: ",_y6A6CdDjEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_deployment_unit", title: "Deployment Unit", url: "./../../govern.compliance/capabilitypatterns/rup_deployment_unit_EA9C8A71.html", 
+	predecessors: "", info: "Mandatory Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "745f6177", parentId: "", relPath: ",_yxVSyqzXEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_development_infrastructure", title: "Development Infrastructure", url: "./../../govern.compliance/capabilitypatterns/rup_development_infrastructure_CF34387D.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "171152fd", parentId: "", relPath: ",_ZY1faPbwEdyQp6WMO1mYBA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_development_process", title: "Development Process", url: "./../../govern.compliance/capabilitypatterns/rup_development_process_FDFC0277.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "cc4d8e93", parentId: "", relPath: ",_yxVSxqzXEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_development_process", title: "Development Process", url: "./../../govern.compliance/capabilitypatterns/rup_development_process_AA2565E.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "c54e7176", parentId: "", relPath: ",_TFFG-azYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_development_process", title: "Development Process", url: "./../../govern.compliance/capabilitypatterns/rup_development_process_BDD4BA51.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "cc30c98e", parentId: "", relPath: ",_1nGcY5x4EduMOPYypke8PA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_development_process", title: "Development Process", url: "./../../govern.compliance/capabilitypatterns/rup_development_process_739D4CA7.html", 
+	predecessors: "", info: "", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "6e1ac06a", parentId: "", relPath: ",_8pCXtKzXEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rcm_distribution_policy", title: "Distribution Policy", url: "./../../govern.compliance/capabilitypatterns/rcm_distribution_policy_45B8CB0D.html", 
+	predecessors: "", info: "Output, Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "296d34c5", parentId: "", relPath: ",_y6A6A9DjEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_installation_artifacts", title: "Installation Artifacts", url: "./../../govern.compliance/capabilitypatterns/rup_installation_artifacts_D4F07C08.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "18ce3f3a", parentId: "", relPath: ",_ShQW99AHEdqSo_AqzYf-hg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_integration_build_plan", title: "Integration Build Plan", url: "./../../govern.compliance/capabilitypatterns/rup_integration_build_plan_F0E44407.html", 
+	predecessors: "", info: "", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "7fe2a1c3", parentId: "", relPath: ",_TFFG8KzYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_issues_list", title: "Issues List", url: "./../../govern.compliance/capabilitypatterns/rup_issues_list_41805D90.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "8086edc2", parentId: "", relPath: ",_TFFHB6zYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_iteration_assessment", title: "Iteration Assessment", url: "./../../govern.compliance/capabilitypatterns/rup_iteration_assessment_1EEE5E72.html", 
+	predecessors: "", info: "", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "7d23a8d0", parentId: "", relPath: ",_ZY1fZPbwEdyQp6WMO1mYBA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_iteration_plan", title: "Iteration Plan", url: "./../../govern.compliance/capabilitypatterns/rup_iteration_plan_9DFED39E.html", 
+	predecessors: "", info: "Mandatory Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "78fdf505", parentId: "", relPath: ",_1nGcYZx4EduMOPYypke8PA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_iteration_plan", title: "Iteration Plan", url: "./../../govern.compliance/capabilitypatterns/rup_iteration_plan_1C2A62CC.html", 
+	predecessors: "", info: "", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "761bf588", parentId: "", relPath: ",_TFFG9qzYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_iteration_plan", title: "Iteration Plan", url: "./../../govern.compliance/capabilitypatterns/rup_iteration_plan_FF4933D5.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "294c25c1", parentId: "", relPath: ",_TFFG-KzYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_measurement_plan", title: "Measurement Plan", url: "./../../govern.compliance/capabilitypatterns/rup_measurement_plan_CF3BA63B.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "c9ef5609", parentId: "", relPath: ",_TFFG8azYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_problem_resolution_plan", title: "Problem Resolution Plan", url: "./../../govern.compliance/capabilitypatterns/rup_problem_resolution_plan_301971A6.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "73771cbb", parentId: "", relPath: ",_CjNwsJx9EduMOPYypke8PA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_product", title: "Product", url: "./../../govern.compliance/capabilitypatterns/rup_product_736655FE.html", 
+	predecessors: "", info: "Mandatory Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "172e5e3a", parentId: "", relPath: ",_TFFG86zYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_measurements", title: "Project Measurements", url: "./../../govern.compliance/capabilitypatterns/rup_project_measurements_A391277B.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "7b4c6dca", parentId: "", relPath: ",_ZY1fafbwEdyQp6WMO1mYBA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_repository", title: "Project Repository", url: "./../../govern.compliance/capabilitypatterns/rup_project_repository_EC95168D.html", 
+	predecessors: "", info: "Mandatory Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "7c288049", parentId: "", relPath: ",_yxVSy6zXEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_repository", title: "Project Repository", url: "./../../govern.compliance/capabilitypatterns/rup_project_repository_380E0E42.html", 
+	predecessors: "", info: "", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "26d0d95b", parentId: "", relPath: ",_y6A6BtDjEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_repository", title: "Project Repository", url: "./../../govern.compliance/capabilitypatterns/rup_project_repository_30A88862.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "6fd62433", parentId: "", relPath: ",_yIFzYqzVEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_repository", title: "Project Repository", url: "./../../govern.compliance/capabilitypatterns/rup_project_repository_14038BE3.html", 
+	predecessors: "", info: "Mandatory Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "7641bddf", parentId: "", relPath: ",_ShHNAtAHEdqSo_AqzYf-hg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_repository", title: "Project Repository", url: "./../../govern.compliance/capabilitypatterns/rup_project_repository_4CEB861A.html", 
+	predecessors: "", info: "Optional Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "7e136f62", parentId: "", relPath: ",_UlbawPbwEdyQp6WMO1mYBA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_specific_guidelines", title: "Project-Specific Guidelines", url: "./../../govern.compliance/capabilitypatterns/rup_project_specific_guidelines_82E92403.html", 
+	predecessors: "", info: "", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "cf301a38", parentId: "", relPath: ",_ShQW9dAHEdqSo_AqzYf-hg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_specific_guidelines", title: "Project-Specific Guidelines", url: "./../../govern.compliance/capabilitypatterns/rup_project_specific_guidelines_7D6C8E32.html", 
+	predecessors: "", info: "", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "8057b36c", parentId: "", relPath: ",_ZY1fZvbwEdyQp6WMO1mYBA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_specific_guidelines", title: "Project-Specific Guidelines", url: "./../../govern.compliance/capabilitypatterns/rup_project_specific_guidelines_9735C7C4.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "74904348", parentId: "", relPath: ",_Ug9KcPbwEdyQp6WMO1mYBA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_specific_guidelines", title: "Project-Specific Guidelines", url: "./../../govern.compliance/capabilitypatterns/rup_project_specific_guidelines_22F6F245.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "cd6d315e", parentId: "", relPath: ",_yIFzZqzVEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_specific_guidelines", title: "Project-Specific Guidelines", url: "./../../govern.compliance/capabilitypatterns/rup_project_specific_guidelines_D8956E02.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "77ec0c81", parentId: "", relPath: ",_7bZsQtDjEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rcm_release_control_point", title: "Release Control Point", url: "./../../govern.compliance/capabilitypatterns/rcm_release_control_point_D16C17A5.html", 
+	predecessors: "", info: "Output", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "296efbf7", parentId: "", relPath: ",_y6A6BNDjEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_release_notes", title: "Release Notes", url: "./../../govern.compliance/capabilitypatterns/rup_release_notes_3771943C.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "253ecdea", parentId: "", relPath: ",_ZY1fZfbwEdyQp6WMO1mYBA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_review_record", title: "Review Record", url: "./../../govern.compliance/capabilitypatterns/rup_review_record_8C97E7B4.html", 
+	predecessors: "", info: "Optional Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "7fa1a287", parentId: "", relPath: ",_TE_AU6zYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_review_record", title: "Review Record", url: "./../../govern.compliance/capabilitypatterns/rup_review_record_A84E743E.html", 
+	predecessors: "", info: "Optional Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "71e62c8e", parentId: "", relPath: ",_1nGcYpx4EduMOPYypke8PA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_review_record", title: "Review Record", url: "./../../govern.compliance/capabilitypatterns/rup_review_record_AC376E2.html", 
+	predecessors: "", info: "", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "22550dfb", parentId: "", relPath: ",_TFFG9KzYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_risk_list", title: "Risk List", url: "./../../govern.compliance/capabilitypatterns/rup_risk_list_6123FAF.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "7fa0b9f5", parentId: "", relPath: ",_TFFG96zYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_risk_management_plan", title: "Risk Management Plan", url: "./../../govern.compliance/capabilitypatterns/rup_risk_management_plan_6823099A.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "7433ec0d", parentId: "", relPath: ",_yIFzZazVEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_plan", title: "Software Development Plan", url: "./../../govern.compliance/capabilitypatterns/rup_project_plan_CDF78DF2.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "cd2f29ea", parentId: "", relPath: ",_TFFG9azYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_plan", title: "Software Development Plan", url: "./../../govern.compliance/capabilitypatterns/rup_project_plan_F4AB53C5.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "18f1bb7c", parentId: "", relPath: ",_ShQW9tAHEdqSo_AqzYf-hg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_plan", title: "Software Development Plan", url: "./../../govern.compliance/capabilitypatterns/rup_project_plan_880A6E42.html", 
+	predecessors: "", info: "", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "1938a50b", parentId: "", relPath: ",_ZY1fZ_bwEdyQp6WMO1mYBA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_plan", title: "Software Development Plan", url: "./../../govern.compliance/capabilitypatterns/rup_project_plan_57F2D5AD.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "1b8651e4", parentId: "", relPath: ",_yxVSwqzXEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_plan", title: "Software Development Plan", url: "./../../govern.compliance/capabilitypatterns/rup_project_plan_4610743F.html", 
+	predecessors: "", info: "Mandatory Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "1d1ef926", parentId: "", relPath: ",_TE_AUqzYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_status_assessment", title: "Status Assessment", url: "./../../govern.compliance/capabilitypatterns/rup_status_assessment_3F749E79.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "70bf23dd", parentId: "", relPath: ",_8pCXs6zXEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_supplementary_specification", title: "Supplementary Specifications", url: "./../../govern.compliance/capabilitypatterns/rup_supplementary_specification_E337B2D9.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "6b140912", parentId: "", relPath: ",_5KZ6ANDjEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_supplementary_specification", title: "Supplementary Specifications", url: "./../../govern.compliance/capabilitypatterns/rup_supplementary_specification_5EB432BD.html", 
+	predecessors: "", info: "", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "6ad87cd0", parentId: "", relPath: ",_7bZsQNDjEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rcm_test_results_approval", title: "Test Results Approval", url: "./../../govern.compliance/capabilitypatterns/rcm_test_results_approval_D835237F.html", 
+	predecessors: "", info: "Mandatory Input", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "1de64a67", parentId: "", relPath: ",_y6A6BdDjEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_training_materials", title: "Training Materials", url: "./../../govern.compliance/capabilitypatterns/rup_training_materials_260AA852.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "233689b5", parentId: "", relPath: ",_y6A6CNDjEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_support_material", title: "User Support Material", url: "./../../govern.compliance/capabilitypatterns/rup_support_material_FC03765B.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "1b8815c3", parentId: "", relPath: ",_yIFzZKzVEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_work_order", title: "Work Order", url: "./../../govern.compliance/capabilitypatterns/rup_work_order_DF5E79DC.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "c9249519", parentId: "", relPath: ",_TFFG8qzYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_work_order", title: "Work Order", url: "./../../govern.compliance/capabilitypatterns/rup_work_order_3AB751B6.html", 
+	predecessors: "", info: "Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "71ccfba9", parentId: "", relPath: ",_ShHNAdAHEdqSo_AqzYf-hg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_work_order", title: "Work Order", url: "./../../govern.compliance/capabilitypatterns/rup_work_order_424DA60A.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "c55e5cb2", parentId: "", relPath: ",_ShQW_NAHEdqSo_AqzYf-hg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_workspace", title: "Workspace", url: "./../../govern.compliance/capabilitypatterns/rup_workspace_BC7B0AB6.html", 
+	predecessors: "", info: "Optional Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "c6707dda", parentId: "", relPath: ",_yIFzY6zVEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_workspace", title: "Workspace", url: "./../../govern.compliance/capabilitypatterns/rup_workspace_7CDD61A8.html", 
+	predecessors: "", info: "Optional Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "71c886db", parentId: "", relPath: ",_ZY1fbPbwEdyQp6WMO1mYBA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "rup_workspace", title: "Workspace", url: "./../../govern.compliance/capabilitypatterns/rup_workspace_C28DE496.html", 
+	predecessors: "", info: "Optional Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

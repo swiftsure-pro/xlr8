@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Defect Removal Efficiency</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="defect_removal_efficiency">
+<meta name="uma.presentationName" content="Defect Removal Efficiency">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_BYrPQNxJEd6gZeszDx04Hw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Defect Removal Efficiency</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks the ratio of defects discovered during development to total defects (which includes those defects found post-ship).</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p>
+    Defect Removal Efficiency is a key indicator of process effectiveness as well as quality. It is a measure of the
+    percentage of defects eliminated in various phases and activities of the lifecycle during development and after the
+    software is released. An effective defect removal process will limit the number of latent defects, and increase
+    customer satisfaction.
+</p>
+<h3>
+    Definition
+</h3>
+<p>
+    Count:
+</p>
+<ul>
+    <li>
+        the number of defects found, by severity, in each test cycle (unit testing, system testing, etc) or phase
+    </li>
+    <li>
+        the number of defects removed, by severity, in each test cycle or phase
+    </li>
+</ul>
+<p>
+    Calculate the Defect Removal Efficiency for each severity in each test cycle as follows:
+</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+    <p>
+        Defect Removal Efficiency = (Total Defects Removed / Total Defects Found) * 100
+    </p>
+</blockquote>
+<p dir="ltr">
+    Defect Removal Efficiency scope can be expanded to include defects found in formal design and code reviews, and other
+    project activities.
+</p>
+<h3>
+    Analysis
+</h3>
+<p>
+    Use a set of trend lines to monitor Defect Removal Efficiency (one for each test cycle, activity, or phase measured).
+    Plot Defect Removal Efficiency percentage on the Y axis and test cycles/ phase/ activity on the X axis.
+</p>
+<p>
+    <strong>Expected trend</strong> - The percentage of defects found and removed in development compared to after the
+    product ships is very high. Most teams set a target of 85-95%. Monitor the effectiveness for each activity/ phase to
+    determine where the team is most and least effective in finding and removing defects.
+</p>
+<p>
+    For Agile and/ or iterative development approaches, testing begins early in the development lifecycle.
+</p>
+<ul>
+    <li>
+        An upward trend of defects&nbsp;found (cumulative) from the beginning of the lifecycle is expected
+    </li>
+    <li>
+        The number of defects found (in each iteration) should be consistent across the lifecycle. Expect&nbsp;a reduction
+        in defects found at the end of lifecycle (if testing has been performed&nbsp;properly)
+    </li>
+    <li>
+        The number of closed defects should be&nbsp;equal or very close&nbsp;to the number of defects found in that
+        iteration (i.e.&nbsp;the opened defects should&nbsp;burn down to&nbsp;zero)<br />
+    </li>
+</ul>
+<p>
+    For waterfall or non-iterative development projects, the test cycle usually begins late in the development lifecycle.
+</p>
+<ul>
+    <li>
+        The number of defects found&nbsp;trends upward&nbsp;toward the middle to the end of the development lifecycle. The
+        defect discovery rate slows down at the end of development.&nbsp;Expect a&nbsp;bell curve for defect arrival.
+    </li>
+    <li>
+        The number of opened defects&nbsp;trends downward to zero when development is coming to an end.<br />
+    </li>
+</ul>
+<p>
+    <strong>Low Defect Removal Efficiency</strong> - When the Defect Removal Efficiency percentage is low, it is an
+    indication of poor processes. Confirm that the team has implemented effective practices and tools to identify defects
+    in each phase of development&nbsp;(and throughout when following an iterative approach).&nbsp;For example, if the
+    percentage of defect removal is low during testing activities, the team may need to improve the quality of their test
+    cases or their test coverage of requirements. If reviews aren't effective in the defect removal process, examine your
+    review processes to see why defects are missed.
+</p>
+<p>
+    The potential for increasing the percentage increases dramatically when a combination of unit and system testing, code
+    and design reviews are implemented. The team should balance the benefit of implementing these practices with the
+    overhead based on the complexity and scale of the project.
+</p>
+<p>
+    For and Agile Agile developmentdevelopment approach, the majority of defects are expected to be removed by developer
+    test and integration test (regression test/ build test). Performing functional test or system test should yield a low
+    number of defects.<br />
+</p>
+<h3>
+    Frequency and reporting
+</h3>
+<p>
+    Data is collected and reported at the end of each test cycle and phase. Defect Removal Efficiency targets are set by
+    the team.<br />
+</p>
+<h3>
+    Collection and reporting tools
+</h3>
+<p>
+    IBM&reg; Rational&reg; Quality Manager&reg; collects Defect Removal Efficiency Data.
+</p>
+<h3>
+    Assumptions and prerequisites
+</h3>
+<ul>
+    <li>
+        Each identified defect is counted in the test cycle/ phase/ activity in which it was found
+    </li>
+    <li>
+        Each removed defect is counted in the test cycle/ phase/ activity in which it was removed
+    </li>
+</ul>
+<h3>
+    Pitfalls, advice, and countermeasures
+</h3>
+<ul>
+    <li>
+        High Defect Removal Efficiency is an indicator of customer satisfaction. Fewer defects post-ship typically
+        correlates to high customer satisfaction levels.
+    </li>
+    <li>
+        While defect discovery and removal is important, defect prevention is much more efficient and effective in reducing
+        defects.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

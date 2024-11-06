@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Defect Aging</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="defect_aging">
+<meta name="uma.presentationName" content="Defect Aging">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_7X8_wNxEEd6gZeszDx04Hw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Defect Aging</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks the length of time a defect spends in each state.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p>
+    Defect Aging is a measurement of team capacity, process efficiency, and defect complexity. Teams monitor Defect Aging
+    trends in order to:
+</p>
+<ul>
+    <li>
+        determine whether defects are being addressed in a timely manner
+    </li>
+    <li>
+        understand the capacity of the team to resolve past defects to help with future planning
+    </li>
+    <li>
+        determine if there is a problem with high severity, critical defects taking too long to fix
+    </li>
+</ul>
+<h3>
+    Definition
+</h3>
+<p>
+    Count the number of days each defect spends in each state (e.g. submitted, assigned, resolved).
+</p>
+<p>
+    Calculate the following:
+</p>
+<ul>
+    <li>
+        Average number of days defects spend in each state.
+    </li>
+    <li>
+        Maximum number of days defects spend in each state.
+    </li>
+    <li>
+        Minimum number of days defects spend in each state.
+    </li>
+</ul>
+<h3>
+    Analysis
+</h3>
+<p>
+    Use a bar chart to monitor Defect Aging trends. Plot the number of days on the Y axis, and the states on the X axis.
+    Plot a vertical bar for the average, maximum, and minimum days for each state. Use stacked bars to group by severity.
+    Another useful way to monitor defect aging is to monitor how many defects have remained in specific date ranges by
+    severity. Typically teams track under 3 days, 3-5 days, and over 5 days.
+</p>
+<p>
+    <strong>Expected trend -</strong> The average time in each state is acceptable (meeting the team's established target)
+    and there are no excessive maximum times. The average should not necessarily be the same for all states. For example, a
+    defect should move quickly from Submitted to Assigned if the team's process is working efficiently.
+</p>
+<p>
+    <strong>High average in assigned state -</strong> This trend occurs when defects spend a long time in the submitted
+    state prior to resolution. This can occur when low priority is placed by the developers on debugging and fixing. Or,
+    when defects are identified late in the process. The older a defect is, the more difficult it may be to correct, since
+    additional code may be created based upon it, and correcting the defect may have larger impact throughout the system.
+    When developers don't fix defects quickly, testers may run into a related defect in another area, creating a duplicate
+    report. Confirm that the team is working to address defects by priority in each iteration.
+</p>
+<p>
+    <strong>High average time in submitted state</strong> - Defects that are not promptly assigned (according to their
+    priority) indicate a problem with the team's process. Either analysis is taking too long, or the team is not placing
+    high enough priority on reviewing submitted defects. Confirm there is sufficient, consistent process and tooling in
+    place that will alert the team to newly submitted defects and that necessary information is captured with each report
+    for efficient analysis. Confirm the team works to move submissions through the process as quickly as possible.
+</p>
+<p>
+    Confirm that average Defect Aging is acceptable in all states to avoid the risk of impacting the project schedule. This
+    metric can be used to monitor adoption of Iterative Development.
+</p>
+<p>
+    The following figure is an example of a Defect Aging report, which shows days spent in each state.
+</p>
+<p>
+    <img alt="Defect Aging Report" src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/./resources/defect_aging.gif" width="600" height="280" />
+</p>
+<h3>
+    <br />
+    Frequency and reporting
+</h3>
+<p>
+    Data should be harvested for reporting purposes before the end of each iteration. The team should review any defect
+    aging issues during their iteration assessment meetings.
+</p>
+<h3>
+    <br />
+    Collection and reporting tools
+</h3>
+<p>
+    &nbsp;&nbsp;IBM&reg; Rational&reg; Quality Manager&reg;,&nbsp;&nbsp;&nbsp;IBM&reg; Rational&reg; ClearQuest
+    Enterprise&reg;&nbsp;&nbsp;and&nbsp;IBM&reg; Rational&reg; Team Concert&reg; collect Defect Aging Data. IBM&reg; Rational&reg; Insight&reg; reports
+    on this metric.
+</p>
+<h3>
+    <br />
+    Assumptions and prerequisites
+</h3>
+<ul>
+    <li>
+        The team has a tool in place to collect defect data, and has identified states for measurement
+    </li>
+    <li>
+        Defect status updates are collected with date stamps
+    </li>
+</ul>
+<h3>
+    <br />
+    Pitfalls, advice, and countermeasures
+</h3>
+<ul>
+    <li>
+        Defects may be in some states more than once. Confirm the tool used accounts for this.
+    </li>
+    <li>
+        Priority of defects should be considered when setting target average Defect Aging for each state.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

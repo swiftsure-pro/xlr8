@@ -1,0 +1,845 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Capability Pattern: Deployment</title>
+<meta name="uma.type" content="CapabilityPattern">
+<meta name="uma.name" content="deployment">
+<meta name="uma.presentationName" content="Deployment">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_KjZaECZIEd-Hb5ChSoDHIA&path=_KjZaECZIEd-Hb5ChSoDHIA';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_KjZaECZIEd-Hb5ChSoDHIA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Capability Pattern: Deployment</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/capabilitypattern.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This capability pattern covers the activities and workflow for the Deployment discipline.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../process.standard_rup.base-ibm/capabilitypatterns/deployment_481FB55C.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WBS" href="./../../process.standard_rup.base-ibm/capabilitypatterns/deployment_481FB55C.html_wbs.html"><span style="white-space:nowrap;">Work Breakdown Structure</span></a></td><td width="1"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Team Allocation</span></td><td width="21"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../process.standard_rup.base-ibm/capabilitypatterns/deployment_481FB55C.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="4"><img src="./../../images/shim.gif" alt="" title="" height="2"></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="3"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Team Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Team Breakdown", summary: "Team Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["model_info", "Model Info"],
+["teams", "Team"],
+["type", "Type"],
+["is_planned", "Planned"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_optional", "Optional"]],
+rows: [
+
+{id: "67541a5b", parentId: "", relPath: ",_ZcR_oCvREd-omvc-6km5sw_0VxJsMlgEdmt3adZL5Dmdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Analyst", title: "Analyst", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/analyst_1947F5E1.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1cf854a2", parentId: "67541a5b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "actor", title: "Actor", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/actor_7811E919.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "bfcf9104", parentId: "67541a5b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "glossary", title: "Glossary", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/glossary_BF230477.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "64a37eb0", parentId: "67541a5b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "requirements_attributes", title: "Requirements Attributes", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/requirements_attributes_A533F482.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "73bf0b6e", parentId: "67541a5b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "requirements_management_process_description", title: "Requirements Management Process Description", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/requirements_management_process_description_10EA3155.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "72b3f572", parentId: "67541a5b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "requirements_traceability", title: "Requirements Traceability", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/requirements_traceability_B9814CFE.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "68c91e5c", parentId: "67541a5b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "storyboard", title: "Storyboard", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/storyboard_7C85B2B6.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1758551b", parentId: "67541a5b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "system_wide_requirements", title: "System-Wide Requirements", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/system_wide_requirements_DF90D17B.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "618e5363", parentId: "67541a5b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "use_case", title: "Use Case", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/use_case_84B163E1.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "66a683c6", parentId: "67541a5b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "use_case_model", title: "Use-Case Model", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/use_case_model_E7895A1A.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1fd4700f", parentId: "67541a5b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "user_support_specs", title: "User Support Specifications", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/user_support_specs_37987BEE.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "72a2737b", parentId: "67541a5b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "vision", title: "Vision", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/vision_9064AD3B.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "17f41e75", parentId: "67541a5b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "user_support_specs", title: "User Support Specifications", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/user_support_specs_37987BEE.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "69dbdd0a", parentId: "67541a5b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_user_support_rqmts", title: "Specify User Support Requirements", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/specify_user_support_rqmts_7AD0457A.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1b967ca1", parentId: "", relPath: ",_jdb-qCyZEd-rIPCOaPACIg_0X9iEMlgEdmt3adZL5Dmdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Architect", title: "Architect", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/architect_37376BAC.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1c88f967", parentId: "1b967ca1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/architectural_decisions_E625A989.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "beaf36c4", parentId: "1b967ca1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architecture_overview", title: "Architecture Overview", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/architecture_overview_3696EF55.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "19ea12c1", parentId: "1b967ca1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "component_model", title: "Component Model", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/component_model_7157E389.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "64321283", parentId: "1b967ca1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "component_specification", title: "Component Specification", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/component_specification_9CD81CA6.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7662c76f", parentId: "1b967ca1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "it_services_strategy", title: "IT Services Strategy", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/it_services_strategy_19AFF189.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "640afaea", parentId: "1b967ca1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/operational_model_FF6F3D3F.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6cf0d260", parentId: "1b967ca1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "software_dist_plan", title: "Software Distribution Plan", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/software_dist_plan_1FEAF919.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "68a573e8", parentId: "1b967ca1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "it_services_strategy", title: "IT Services Strategy", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/it_services_strategy_19AFF189.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1a005863", parentId: "1b967ca1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "software_dist_plan", title: "Software Distribution Plan", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/software_dist_plan_1FEAF919.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "73ca51e7", parentId: "1b967ca1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "detail_system_management_plan", title: "Detail System Management Plan", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/detail_system_management_plan_EFBFF2BD.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1d0e6dc3", parentId: "1b967ca1", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "outline_system_management_plan", title: "Outline System Management Plan", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/outline_system_management_plan_689A27CF.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1df474fe", parentId: "", relPath: ",_SKwdQCyWEd-rIPCOaPACIg_noy4AFI5Ed-gBcXwne8JxA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Configuration Manager", title: "Configuration Manager", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/configuration_manager_AF60C35D.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "f52eee5", parentId: "1df474fe", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "deployment_packaging", title: "Deployment Packaging", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/deployment_packaging_E40770F8.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1c572f55", parentId: "1df474fe", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "deployment_packaging", title: "Deployment Packaging", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/deployment_packaging_E40770F8.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1131e4ce", parentId: "1df474fe", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assemble_deployment_packages", title: "Assemble Deployment Packages", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/assemble_deployment_packages_2EDF487A.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "756c1637", parentId: "", relPath: ",_4v8sUCvQEd-omvc-6km5sw_MQHXAFI2Ed-gBcXwne8JxA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Course Developer", title: "Course Developer", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/course_developer_5C3DA9F2.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "10a9c672", parentId: "756c1637", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "education_training_plan", title: "Education and Training Plan", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/education_training_plan_84145BD9.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "69662fcc", parentId: "756c1637", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "education_training_strategy", title: "Education and Training Strategy", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/education_training_strategy_AF05391.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ba865469", parentId: "756c1637", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "learning_solution_design", title: "Learning Solution Design", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/learning_solution_design_9C9A919.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "11313ac0", parentId: "756c1637", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "learning_solution_materials", title: "Learning Solution Materials", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/learning_solution_materials_709955CE.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "17d7cfc3", parentId: "756c1637", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "education_training_eval", title: "Education and Training Evaluation", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/education_training_eval_E713D1F1.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6cbfc89c", parentId: "756c1637", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "education_training_plan", title: "Education and Training Plan", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/education_training_plan_84145BD9.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dcd65cc", parentId: "756c1637", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "education_training_strategy", title: "Education and Training Strategy", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/education_training_strategy_AF05391.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1ff2bd15", parentId: "756c1637", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "learning_solution_design", title: "Learning Solution Design", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/learning_solution_design_9C9A919.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "72f1f84d", parentId: "756c1637", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "learning_solution_materials", title: "Learning Solution Materials", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/learning_solution_materials_D46B3521.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6a86a6d4", parentId: "756c1637", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_education_training_plan", title: "Define Education and Training Plan", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/define_education_training_plan_AC84467A.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1688cc67", parentId: "756c1637", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_training_user_support_approach", title: "Define Training and User Support Approach", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/define_training_user_support_approach_B75F62B7.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "bc0b6a76", parentId: "756c1637", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "develop_user_training", title: "Develop User Training", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/develop_user_training_FCD690F.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "12f3e04f", parentId: "756c1637", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_training_rqmts", title: "Specify Training Requirements", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/specify_training_rqmts_ADFEC482.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "711f9004", parentId: "", relPath: ",_buDhsI-tEd-CJf5elV4f8Q_Bc0MgFI2Ed-gBcXwne8JxA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Deployment Manager", title: "Deployment Manager", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/deployment_manager_E6723067.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1b886d2e", parentId: "711f9004", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "deployment_plan", title: "Deployment Plan", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/deployment_plan_E3036B49.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "67b11b95", parentId: "711f9004", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "deployment_procedures", title: "Deployment Procedures", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/deployment_procedures_85F22FD4.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1167f4f9", parentId: "711f9004", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "management_approval_cutover", title: "Management Approval for Cutover", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/management_approval_cutover_4CA9B0F6.html", 
+	predecessors: "", info: "Responsible For", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1ba83b17", parentId: "711f9004", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "software_dist_plan", title: "Software Distribution Plan", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/software_dist_plan_1FEAF919.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "72b17b20", parentId: "711f9004", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "bill_of_materials", title: "Bill of Materials", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/bill_of_materials_E33554AA.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "bd25ff6a", parentId: "711f9004", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "deployment_packaging", title: "Deployment Packaging", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/deployment_packaging_CB0F05F7.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "68a624c9", parentId: "711f9004", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "deployment_plan", title: "Deployment Plan", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/deployment_plan_E3036B49.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "61961df4", parentId: "711f9004", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "deployment_procedures", title: "Deployment Procedures", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/deployment_procedures_85F22FD4.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1b75208f", parentId: "711f9004", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "management_approval_cutover", title: "Management Approval for Cutover", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/management_approval_cutover_E5FD32B8.html", 
+	predecessors: "", info: "Modifies", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6cbff69c", parentId: "711f9004", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_log", title: "Test Log", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/test_log_1B1FC97D.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "73c7aa6b", parentId: "711f9004", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_deployment_procedures", title: "Define Deployment Procedures", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/define_deployment_procedures_2F97B238.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c2c97c73", parentId: "711f9004", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "detail_deployment_plan", title: "Detail Deployment Plan", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/detail_deployment_plan_8B77D5D1.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c2e70662", parentId: "711f9004", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "obtain_management_approval_for_cutover", title: "Obtain Management Approval for Cutover", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/obtain_management_approval_for_cutover_4CB609A6.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "14017b86", parentId: "711f9004", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "outline_deployment_plan", title: "Outline Deployment Plan", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/outline_deployment_plan_EA546C44.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6f62a19d", parentId: "711f9004", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_deployment_packaging", title: "Specify Deployment Packaging", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/specify_deployment_packaging_B5DCF9C9.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "64fec353", parentId: "711f9004", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_prod_cutover_plan", title: "Test the Production Cutover Plan", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/test_prod_cutover_plan_5753E9B6.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "13013f9e", parentId: "", relPath: ",_r5QUYCyZEd-rIPCOaPACIg_eP2JUFOyEd-PWq0t-S53GA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "System Administrator", title: "System Administrator", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/system_administrator_E6E9D704.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7537e8a4", parentId: "13013f9e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "data_migrated", title: "Data Migrated", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/data_migrated_ABA46824.html", 
+	predecessors: "", info: "Responsible For", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6a3b9bf1", parentId: "13013f9e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "prod_environment_established", title: "Production Environment Established", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/prod_environment_established_1AB0284.html", 
+	predecessors: "", info: "Responsible For", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1b7d6fcc", parentId: "13013f9e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "system_mgmt_env_est", title: "System Management Environment Established", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/system_mgmt_env_est_B24F196A.html", 
+	predecessors: "", info: "Responsible For", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "694eff9d", parentId: "13013f9e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "data_migrated", title: "Data Migrated", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/data_migrated_ABA46824.html", 
+	predecessors: "", info: "Modifies", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1ad92aab", parentId: "13013f9e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "prod_environment_established", title: "Production Environment Established", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/prod_environment_established_1AB0284.html", 
+	predecessors: "", info: "Modifies", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1c714c0b", parentId: "13013f9e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "system_mgmt_env_est", title: "System Management Environment Established", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/system_mgmt_env_est_B24F196A.html", 
+	predecessors: "", info: "Modifies", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7640d42f", parentId: "13013f9e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "implement_system_management_procedures", title: "Implement System Management Procedures", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/implement_system_management_procedures_270B8BF7.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1d4bd247", parentId: "13013f9e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "initialize_system_data_sources", title: "Initialize System Data Sources", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/initialize_system_data_sources_72C4CC7C.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6d7e48bc", parentId: "13013f9e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "install_system_components", title: "Install System Components", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/install_system_components_1EAD314F.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ba4fc6e8", parentId: "", relPath: ",_UMN0MCvREd-omvc-6km5sw_bbHFEFI3Ed-gBcXwne8JxA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Technical Writer", title: "Technical Writer", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/technical_writer_A8D66E33.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "63fa568b", parentId: "ba4fc6e8", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "user_support_materials", title: "User Support Materials", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/user_support_materials_A8965C0C.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6b0c8291", parentId: "ba4fc6e8", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "user_support_materials", title: "User Support Materials", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/user_support_materials_A8965C0C.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6b11beda", parentId: "ba4fc6e8", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "develop_user_support_materials", title: "Develop User Support Materials", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/develop_user_support_materials_48DF3340.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "14eca814", parentId: "", relPath: ",_yaipcCvQEd-omvc-6km5sw_abH0YFMLEd-b9rMLu3PL1w", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Trainer", title: "Trainer", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/trainer_B358D542.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "186d25e5", parentId: "14eca814", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "education_training_eval", title: "Education and Training Evaluation", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/education_training_eval_CB44C16D.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "180510ec", parentId: "14eca814", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "instructors_trained", title: "Instructors Trained", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/instructors_trained_E5CE9432.html", 
+	predecessors: "", info: "Responsible For", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "13081b4d", parentId: "14eca814", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "education_training_eval", title: "Education and Training Evaluation", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/education_training_eval_CB44C16D.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c13fcffe", parentId: "14eca814", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "instructors_trained", title: "Instructors Trained", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/instructors_trained_B2ABD633.html", 
+	predecessors: "", info: "Modifies", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6416bdd0", parentId: "14eca814", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "conduct_pilot_training", title: "Conduct Pilot Training", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/conduct_pilot_training_92F8B05E.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "71111988", parentId: "14eca814", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "conduct_user_training", title: "Conduct User Training", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/conduct_user_training_B4A71429.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1e431f51", parentId: "14eca814", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "train_the_trainers", title: "Train the Trainers", url: "./../../process.standard_rup.base-ibm/capabilitypatterns/train_the_trainers_42F25C1F.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

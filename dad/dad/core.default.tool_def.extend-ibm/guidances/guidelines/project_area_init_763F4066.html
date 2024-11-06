@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Project Area Initialization</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="project_area_init">
+<meta name="uma.presentationName" content="Project Area Initialization">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_4IiGONTyEdy1Dvz54vCgqw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Project Area Initialization</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This page documents a generic process template's project area initialization. You can use this as a starting point for documenting your own template.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.default.tool_def.extend-ibm/guidances/toolmentors/create_process_template_13BE2832.html" guid="_4IiGN9TyEdy1Dvz54vCgqw">Create a new Process Template</a>
+</li>
+<li>
+<a href="./../../../core.default.tool_def.extend-ibm/tools/rtc_407F3232.html" guid="_58RjIMYhEdyXeo04os5BOw">IBM Rational Team Concert</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This guideline documents how the&nbsp;process template specifies the initialization of a new project. The project
+    initialization activities are the following:
+</p>
+<ul>
+    <li>
+        Client project area initialization
+    </li>
+    <li>
+        Server project area initialization
+    </li>
+</ul>
+<h3>
+    Client Project Area Initialization
+</h3>
+<p>
+    The process template performs the following operations and participants when initializing a project area:
+</p>
+<ul>
+    <li>
+        Run Assigned Work Items Query: As the initialization of the server project area creates work items for the team,
+        the client runs a query which displays any assigned work items for the current team member.
+    </li>
+</ul>
+<h3>
+    Server Project Area Initialization
+</h3>
+<ul>
+    <li>
+        <strong><u>Set Up Project:</u></strong> This participant performs the actual project area initialization on the
+        server. It creates one new team area for the project area as well as one new stream. It then creates work items
+        like these 
+        <ul>
+            <li>
+                Define a new build
+            </li>
+            <li>
+                Share code with Jazz Source Control
+            </li>
+            <li>
+                Define iterations
+            </li>
+            <li>
+                Define categories for work items
+            </li>
+            <li>
+                Define team members
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    The initial work items are defined and can be modified in process specification. A work item specification is composed
+    of the following fields.
+</p>
+<ol>
+    <li>
+        <strong>summary:</strong> name of the work item
+    </li>
+    <li>
+        <strong>description:</strong> the brief description of the work item<br />
+    </li>
+</ol>
+<ul>
+    <li>
+        <strong><u>Set up Project for Reports:</u></strong> When the server initializes the project area for EclipseWay
+        process template, it deploys pre-defined reports to the project area.&nbsp;
+    </li>
+</ul>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    A report initialization is defined in the following way
+</p>
+<ol dir="ltr">
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            <strong>name:</strong> name of the report
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            <strong>description:</strong> the brief description of the report
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            <strong>file:</strong> the file name of the report definition&nbsp;&nbsp;
+        </div>
+    </li>
+</ol>
+<p>
+    <br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tool Mentors</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.default.tool_def.extend-ibm/guidances/toolmentors/create_process_template_13BE2832.html" guid="_4IiGN9TyEdy1Dvz54vCgqw">Create a new Process Template</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

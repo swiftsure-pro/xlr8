@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Ratio of Test Code to System Code</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="ratio_test_code_to_sys_code">
+<meta name="uma.presentationName" content="Ratio of Test Code to System Code">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_974QwNNdEdyK3eAUnxZQQg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Ratio of Test Code to System Code</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks the ratio of developer test code to system code.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p>
+    Teams monitor this metric throughout the lifecycle in order to understand their level of developer testing. Defects
+    caught during the development cycle are less costly to fix than those identified later.
+</p>
+<p>
+    The Ratio of Test Code to System Code metric measures the amount of test code relative to system code in terms of the
+    number of methods. Constant developer testing should result in at least one test case for each method, and almost
+    always more than one. As a result, this metric should yield a high value (always more than one, or &gt;1), even in the
+    early stages of the development lifecycle.
+</p>
+<h3>
+    Definition
+</h3>
+<p>
+    Ratio of Test Code to System Code = Total Number of Test Methods / Total Number of System Methods<br />
+</p>
+<h3>
+    Analysis
+</h3>
+<p>
+    The number of test methods always continues to grow if developer testing is performed while code is written (rather
+    than waiting to test during integration). The number of test methods should be at least two times the number of system
+    methods, because for each system method developed, there should be at least a positive test case and a negative test
+    case. A higher number for this metric indicates a higher level of developer testing.<br />
+    <br />
+    The following are example scenarios that you can observe using this metric.<br />
+    <br />
+    <strong>Expected trend</strong> - The ratio of test cases to methods should be more than one(1), and should increase
+    over time. In the early stages of development, developers start writing a test case, write code for the particular test
+    case, run the test, find errors, and fix the code. At this time, you should expect the number of test methods to be
+    about the same as the number of system methods. The number of system methods should not be greater than the number of
+    tests (which means that the result of this metric is always greater than one, or &gt;1).<br />
+    <br />
+    Later in the development lifecycle, the test methods and system methods continue to grow. There are more test cases
+    written for each system method. At this stage, you would presume that the number of test methods is at least two to
+    three times larger than the number of system methods.<br />
+    <br />
+    <strong>Coding without writing a test</strong> - At any point during the development lifecycle, if the ratio of test
+    code to system code is less than one (&lt;1), this is a strong indicator that the code has been written without writing
+    the test cases.<br />
+    <br />
+    At any point during the development lifecycle, if the ratio of test code to system code drops dramatically from the
+    last assessment (for example, from five times to two times), it is a sign that source code has been added without new
+    test cases. The team should investigate ways to improve the ratio of tests to methods for the next assessment.<br />
+</p>
+<h3>
+    Frequency and reporting
+</h3>
+<p>
+    Teams should review their ratio of test code to system code at the end of every iteration to help identify trends.
+</p>
+<h3>
+    <br />
+    Collection and reporting tools
+</h3>
+<p>
+    In order to collect the required data, the team must implement an annotation or packaging system to identify code as
+    either "test" or "system" code.
+</p>
+<h3>
+    Pitfalls, advice, and countermeasures
+</h3>
+<ul>
+    <li>
+        If the source code is not growing as fast as test code, it may be due to refactoring. New and changed code can then
+        help you determine whether the team is testing continuously. If the new and changed code remains relatively
+        constant, the team is probably refactoring the code.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

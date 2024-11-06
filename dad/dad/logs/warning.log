@@ -1,0 +1,29 @@
+Warning: CustomCategory:enterprise_practice_list: Empty content category element not published.
+Warning: CustomCategory:systems_engineering_practice_list: Empty content category element not published.
+Warning: CustomCategory:architecture_practice_list: Empty content category element not published.
+Warning: CustomCategory:ccm_practice_list: Empty content category element not published.
+Warning: CustomCategory:deployment_practice_list: Empty content category element not published.
+Warning: CustomCategory:development_practice_list: Empty content category element not published.
+Warning: CustomCategory:environment_practice_list: Empty content category element not published.
+Warning: CustomCategory:project_management_practice_list: Empty content category element not published.
+Warning: CustomCategory:requirements_practice_list: Empty content category element not published.
+Warning: CustomCategory:testing_practice_list: Empty content category element not published.
+Warning: CustomCategory:brd_practice_list: Empty content category element not published.
+Warning: CustomCategory:software_development_practice_list: Empty content category element not published.
+Warning: CustomCategory:structured_practice_list: Empty content category element not published.
+Warning: CustomCategory:structured_role_sets_list: Empty content category element not published.
+Warning: CustomCategory:structured_tasks_list: Empty content category element not published.
+Warning: CustomCategory:structured_work_products_list: Empty content category element not published.
+Warning: CustomCategory:reusable_asset_list: Empty content category element not published.
+Warning: Tool:cvs_tool: Empty content category element not published.
+Warning: Tool:rational_asset_analyzer: Empty content category element not published.
+Warning: Tool:rational_focal_point: Empty content category element not published.
+Warning: Tool:insight: Empty content category element not published.
+Warning: Tool:lpa: Empty content category element not published.
+Warning: Tool:rad: Empty content category element not published.
+Warning: Tool:clearquest: Empty content category element not published.
+Warning: Tool:rational_requisite_pro: Empty content category element not published.
+Warning: Tool:rational_software_architect: Empty content category element not published.
+Warning: CustomCategory:release_info: Empty content category element not published.
+Warning: SupportingMaterial:rqmt_status_trend: Missing referenced element SupportingMaterial:prct_of_tested_to_impl_rqmts
+Warning: SupportingMaterial:prct_of_tested_to_impl_rqmts: IUPP0003W: Element was not published because it is not a valid element in the configuration.

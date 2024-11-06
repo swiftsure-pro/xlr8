@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Capability Pattern: Create and Deploy the Release Securely</title>
+<meta name="uma.type" content="CapabilityPattern">
+<meta name="uma.name" content="rcm_create_and_deploy_release_securely">
+<meta name="uma.presentationName" content="Create and Deploy the Release Securely">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=__43k0dDdEdqLW8MRTbXhVQ&path=__43k0dDdEdqLW8MRTbXhVQ';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="__43k0dDdEdqLW8MRTbXhVQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Capability Pattern: Create and Deploy the Release Securely</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/capabilitypattern.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This capability pattern covers the activities that will securely produce a software  release. It illustrates the &quot;Three Points of Control&quot; strategy in the  context of RUP.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="10" class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../govern.compliance/capabilitypatterns/rcm_create_and_deploy_release_securely_5F49E939.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Work Breakdown Structure</span></td><td width="1"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_TBS" href="./../../govern.compliance/capabilitypatterns/rcm_create_and_deploy_release_securely_5F49E939.html_tbs.html"><span style="white-space:nowrap;">Team Allocation</span></a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../govern.compliance/capabilitypatterns/rcm_create_and_deploy_release_securely_5F49E939.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="2"><img src="./../../images/shim.gif" height="2" alt="" title=""></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="5"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Workflow</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="sectionTableSingleCell" colspan="2" align="left">
+<p></p>
+<img border="0" diagramType="Activity" id="diagram_Activity" src="./../../govern.compliance/capabilitypatterns/resources/rcm_create_and_deploy_release_securely_5F49E939_Activity.jpeg" alt="Activity diagram: Create and Deploy the Release Securely" title="Activity diagram: Create and Deploy the Release Securely" usemap="#Activity_rcm_create_and_deploy_release_securely"><map name="Activity_rcm_create_and_deploy_release_securely">
+<area href="./../../govern.compliance/capabilitypatterns/plan_project_configuration_change_control_3B72942F.html" relpath=",_yxVSwazXEdupW5-1VA4drg" alt="Plan the Project Configuration and Change Control" title="Plan the Project Configuration and Change Control" coords="24, 80, 245, 187" shape="rect" guid="_yxVSwazXEdupW5-1VA4drg"></area>
+<area href="./../../govern.compliance/capabilitypatterns/Create Software Release_9BCF2354.html" relpath=",_laFPsazVEdupW5-1VA4drg" alt="Create the software release" title="Create the software release" coords="114, 202, 237, 309" shape="rect" guid="_laFPsazVEdupW5-1VA4drg"></area>
+<area href="./../../govern.compliance/capabilitypatterns/Securely Deploy Release_3F0FD7F0.html" relpath=",_bsya4NDiEdqLW8MRTbXhVQ" alt="Securely Deploy the Release" title="Securely Deploy the Release" coords="115, 303, 236, 410" shape="rect" guid="_bsya4NDiEdqLW8MRTbXhVQ"></area>
+<area href="./../../govern.compliance/capabilitypatterns/monitor_control_project_34D6BE69.html" relpath=",_TE_AUazYEdupW5-1VA4drg" alt="Monitor and Control the Project" title="Monitor and Control the Project" coords="33, 242, 162, 349" shape="rect" guid="_TE_AUazYEdupW5-1VA4drg"></area>
+</map>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Work Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Work Breakdown", summary: "Work Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["steps", "Steps"],
+["id", "Index"],
+["predecessors", "Predecessors"],
+["model_info", "Model Info"],
+["type", "Type"],
+["is_planned", "Planned"],
+["is_repeatable", "Repeatable"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_ongoing", "Ongoing"],
+["is_event_driven", "Event Driven"],
+["is_optional", "Optional"],
+["teams", "Team"]],
+rows: [
+		
+{id: "7016af96", parentId: "", relPath: ",_yxVSwazXEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "1", prefix: "", name: "plan_project_configuration_change_control", title: "Plan the Project Configuration and Change Control", url: "./../../govern.compliance/capabilitypatterns/plan_project_configuration_change_control_3B72942F.html", 
+	predecessors: "", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "na",
+	steps: []},
+	
+		
+		
+{id: "718438b4", parentId: "7016af96", relPath: ",_yxVSwazXEdupW5-1VA4drg,_yxVSxazXEdupW5-1VA4drg", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "2", prefix: "", name: "establish_project_cm_policies", title: "Establish Configuration Management (CM) Policies", url: "./../../govern.compliance/capabilitypatterns/establish_project_cm_policies_4764E.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "821adb14", parentId: "7016af96", relPath: ",_yxVSwazXEdupW5-1VA4drg,_yxVSx6zXEdupW5-1VA4drg", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "3", prefix: "", name: "write_cm_plan", title: "Write Configuration Management (CM) Plan", url: "./../../govern.compliance/capabilitypatterns/write_cm_plan_737C2C23.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1d6e0a4a", parentId: "7016af96", relPath: ",_yxVSwazXEdupW5-1VA4drg,_yxVSyKzXEdupW5-1VA4drg", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "4", prefix: "", name: "establish_project_change_control_process", title: "Establish Change Control Process", url: "./../../govern.compliance/capabilitypatterns/establish_project_change_control_process_D5FD4457.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7a50a537", parentId: "7016af96", relPath: ",_yxVSwazXEdupW5-1VA4drg,_8pCXsKzXEdupW5-1VA4drg", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "5", prefix: "", name: "rcm_define_distribution_policy", title: "Define Distribution Policy", url: "./../../govern.compliance/capabilitypatterns/rcm_define_distribution_policy_8126E8EE.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7c5ed2ec", parentId: "", relPath: ",_laFPsazVEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "6", prefix: "", name: "Create Software Release", title: "Create the software release", url: "./../../govern.compliance/capabilitypatterns/Create Software Release_9BCF2354.html", 
+	predecessors: "1", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "na",
+	steps: []},
+	
+		
+		
+{id: "26a7231f", parentId: "7c5ed2ec", relPath: ",_laFPsazVEdupW5-1VA4drg,_lwOiAKzZEdupW5-1VA4drg", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "7", prefix: "", name: "rcm_deliver_auditable_change", title: "Deliver Auditable Change", url: "./../../govern.compliance/capabilitypatterns/rcm_deliver_auditable_change_FF9EBC7A.html", 
+	predecessors: "", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "extends",
+	steps: []},
+	
+		
+		
+{id: "7c5873a9", parentId: "26a7231f", relPath: ",_laFPsazVEdupW5-1VA4drg,_lwOiAKzZEdupW5-1VA4drg,_ShQW9NAHEdqSo_AqzYf-hg", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "8", prefix: "", name: "change_and_deliver_configuration_items", title: "Change and Deliver Configuration Items", url: "./../../govern.compliance/capabilitypatterns/change_and_deliver_configuration_items_8ED37A1C.html", 
+	predecessors: "", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "true", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "na",
+	steps: []},
+	
+		
+		
+{id: "cef969c2", parentId: "7c5873a9", relPath: ",_laFPsazVEdupW5-1VA4drg,_lwOiAKzZEdupW5-1VA4drg,_ShQW9NAHEdqSo_AqzYf-hg,_ShQW-9AHEdqSo_AqzYf-hg", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "9", prefix: "", name: "create_development_workspace", title: "Create Development Workspace", url: "./../../govern.compliance/capabilitypatterns/create_development_workspace_BA0DAA93.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "71eda56e", parentId: "7c5873a9", relPath: ",_laFPsazVEdupW5-1VA4drg,_lwOiAKzZEdupW5-1VA4drg,_ShQW9NAHEdqSo_AqzYf-hg,_ShQW8tAHEdqSo_AqzYf-hg", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "10", prefix: "", name: "make_changes_to_configuration_items", title: "Make Changes", url: "./../../govern.compliance/capabilitypatterns/make_changes_to_configuration_items_C3788C23.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6f19859f", parentId: "7c5873a9", relPath: ",_laFPsazVEdupW5-1VA4drg,_lwOiAKzZEdupW5-1VA4drg,_ShQW9NAHEdqSo_AqzYf-hg,_ShQW_dAHEdqSo_AqzYf-hg", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "11", prefix: "", name: "deliver_changes", title: "Deliver Changes", url: "./../../govern.compliance/capabilitypatterns/deliver_changes_AB141ECC.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1c2439a7", parentId: "7c5873a9", relPath: ",_laFPsazVEdupW5-1VA4drg,_lwOiAKzZEdupW5-1VA4drg,_ShQW9NAHEdqSo_AqzYf-hg,_ShHNA9AHEdqSo_AqzYf-hg", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "12", prefix: "", name: "update_workspace", title: "Update Workspace", url: "./../../govern.compliance/capabilitypatterns/update_workspace_B5C55BDF.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "caecf219", parentId: "26a7231f", relPath: ",_laFPsazVEdupW5-1VA4drg,_lwOiAKzZEdupW5-1VA4drg,_mf7I8aUrEduzFIHfR8n_8Q", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "13", prefix: "", name: "Assess changes", title: "Apply Control", url: "./../../govern.compliance/capabilitypatterns/Assess changes_2A121085.html", 
+	predecessors: "8", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "na",
+	steps: []},
+	
+		
+		
+{id: "7f86ff2a", parentId: "caecf219", relPath: ",_laFPsazVEdupW5-1VA4drg,_lwOiAKzZEdupW5-1VA4drg,_mf7I8aUrEduzFIHfR8n_8Q,_3SLlMKUrEduzFIHfR8n_8Q", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "14", prefix: "", name: "organize_review", title: "Organize Review", url: "./../../govern.compliance/capabilitypatterns/organize_review_105BFB8F.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "17748e88", parentId: "caecf219", relPath: ",_laFPsazVEdupW5-1VA4drg,_lwOiAKzZEdupW5-1VA4drg,_mf7I8aUrEduzFIHfR8n_8Q,_9FxUcKUrEduzFIHfR8n_8Q", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "15", prefix: "", name: "conduct_review", title: "Conduct Review", url: "./../../govern.compliance/capabilitypatterns/conduct_review_CDC56263.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "214f86eb", parentId: "caecf219", relPath: ",_laFPsazVEdupW5-1VA4drg,_lwOiAKzZEdupW5-1VA4drg,_mf7I8aUrEduzFIHfR8n_8Q,_A9lTgKUsEduzFIHfR8n_8Q", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "16", prefix: "", name: "rcm_approve_delivered_changes", title: "Approve Delivered Changes", url: "./../../govern.compliance/capabilitypatterns/rcm_approve_delivered_changes_21114456.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true]},
+	
+		
+		
+{id: "233c3b14", parentId: "caecf219", relPath: ",_laFPsazVEdupW5-1VA4drg,_lwOiAKzZEdupW5-1VA4drg,_mf7I8aUrEduzFIHfR8n_8Q,_xVDfcKUrEduzFIHfR8n_8Q", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "17", prefix: "", name: "promote_baseline", title: "Promote Baselines", url: "./../../govern.compliance/capabilitypatterns/promote_baseline_4DAE9A19.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7e23d2be", parentId: "7c5ed2ec", relPath: ",_laFPsazVEdupW5-1VA4drg,_yIFzYKzVEdupW5-1VA4drg", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "18", prefix: "", name: "create_baseline", title: "Create Baselines", url: "./../../govern.compliance/capabilitypatterns/create_baseline_1ACC97BD.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c784520a", parentId: "7c5ed2ec", relPath: ",_laFPsazVEdupW5-1VA4drg,_z5WVoKzVEdupW5-1VA4drg", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "19", prefix: "", name: "rcm_approve_baseline", title: "Approve Baseline", url: "./../../govern.compliance/capabilitypatterns/rcm_approve_baseline_FFB2101D.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true]},
+	
+		
+		
+{id: "6cb829c7", parentId: "7c5ed2ec", relPath: ",_laFPsazVEdupW5-1VA4drg,_0v7YUKzVEdupW5-1VA4drg", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "20", prefix: "", name: "promote_baseline", title: "Promote Baselines", url: "./../../govern.compliance/capabilitypatterns/promote_baseline_CDD3D625.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "71817970", parentId: "", relPath: ",_bsya4NDiEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "21", prefix: "", name: "Securely Deploy Release", title: "Securely Deploy the Release", url: "./../../govern.compliance/capabilitypatterns/Securely Deploy Release_3F0FD7F0.html", 
+	predecessors: "6", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "na",
+	steps: []},
+	
+		
+		
+{id: "237d028b", parentId: "71817970", relPath: ",_bsya4NDiEdqLW8MRTbXhVQ,_y53JANDjEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "22", prefix: "", name: "create_deployment_unit", title: "Create Deployment Unit", url: "./../../govern.compliance/capabilitypatterns/create_deployment_unit_CCBCA67E.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c55de57e", parentId: "71817970", relPath: ",_bsya4NDiEdqLW8MRTbXhVQ,_7bGKQNDjEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "23", prefix: "", name: "rcm_approve_product_distribution", title: "Approve Product Distribution", url: "./../../govern.compliance/capabilitypatterns/rcm_approve_product_distribution_8492F44A.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true]},
+	
+		
+		
+{id: "70e176f8", parentId: "71817970", relPath: ",_bsya4NDiEdqLW8MRTbXhVQ,_89AB4NDjEdqLW8MRTbXhVQ", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "24", prefix: "", name: "rcm_distribute_software_release", title: "Distribute Software Release", url: "./../../govern.compliance/capabilitypatterns/rcm_distribute_software_release_194A49BA.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "17811b22", parentId: "", relPath: ",_TE_AUazYEdupW5-1VA4drg", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "25", prefix: "", name: "monitor_control_project", title: "Monitor and Control the Project", url: "./../../govern.compliance/capabilitypatterns/monitor_control_project_34D6BE69.html", 
+	predecessors: "1", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "true", planned: "false",  ongoing: "true", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "na",
+	steps: []},
+	
+		
+		
+{id: "1ef02f12", parentId: "17811b22", relPath: ",_TE_AUazYEdupW5-1VA4drg,_TFFG-qzYEdupW5-1VA4drg", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "26", prefix: "", name: "schedule_and_assign_work", title: "Schedule and Assign Work", url: "./../../govern.compliance/capabilitypatterns/schedule_and_assign_work_C8729A61.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "19d92679", parentId: "17811b22", relPath: ",_TE_AUazYEdupW5-1VA4drg,_TFFG_KzYEdupW5-1VA4drg", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "27", prefix: "", name: "monitor_project_status", title: "Monitor Project Status", url: "./../../govern.compliance/capabilitypatterns/monitor_project_status_33B9D049.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7b762263", parentId: "17811b22", relPath: ",_TE_AUazYEdupW5-1VA4drg,_TFFG_azYEdupW5-1VA4drg", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "28", prefix: "", name: "report_status", title: "Report Status", url: "./../../govern.compliance/capabilitypatterns/report_status_2252E45F.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7b363e75", parentId: "17811b22", relPath: ",_TE_AUazYEdupW5-1VA4drg,_TFFG_qzYEdupW5-1VA4drg", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "29", prefix: "", name: "handle_exceptions_and_problems", title: "Handle Exceptions and Problems", url: "./../../govern.compliance/capabilitypatterns/handle_exceptions_and_problems_2CF0C46F.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "cc4728ba", parentId: "17811b22", relPath: ",_TE_AUazYEdupW5-1VA4drg,_TFFHAKzYEdupW5-1VA4drg", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "30", prefix: "", name: "pra_project_review", title: "Project Review Authority (PRA) Project Review", url: "./../../govern.compliance/capabilitypatterns/pra_project_review_F84BB268.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6c9bfcab", parentId: "17811b22", relPath: ",_TE_AUazYEdupW5-1VA4drg,_TFFHAqzYEdupW5-1VA4drg", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "31", prefix: "", name: "organize_review", title: "Organize Review", url: "./../../govern.compliance/capabilitypatterns/organize_review_F182A68E.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "70cc3f2b", parentId: "17811b22", relPath: ",_TE_AUazYEdupW5-1VA4drg,_TFFHBKzYEdupW5-1VA4drg", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "32", prefix: "", name: "conduct_review", title: "Conduct Review", url: "./../../govern.compliance/capabilitypatterns/conduct_review_BCDD9487.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

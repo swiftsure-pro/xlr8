@@ -1,0 +1,737 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Task Descriptor: System Operation Design</title>
+<meta name="uma.type" content="TaskDescriptor">
+<meta name="uma.name" content="se_operation_design">
+<meta name="uma.presentationName" content="System Operation Design">
+<meta name="uma.guid" content="_5htYqxVJEdyUirRG6XhwWA">
+<meta name="element_type" content="TaskDescriptor">
+<meta name="filetype" content="description">
+<meta name="role" content="">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_DSEK0QVkEdytJMAUH7mm9w&path=_DSEK0QVkEdytJMAUH7mm9w,_5hnSARVJEdyUirRG6XhwWA,_5htYqxVJEdyUirRG6XhwWA';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, defaultQueryStr, true, true, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_5htYqxVJEdyUirRG6XhwWA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Task Descriptor: System Operation Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/taskdes_lg_dgm32.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This task refines the results of System Operation Analysis into detailed Sub(system) Operation Realizations. </td>
+</tr>
+<tr>
+<td>Based on Method Task: <a href="./../../systems.mdsd/tasks/se_operation_design_FE6558AC.html" guid="_Gb4P8OQ7Edm1mN374l9mbg">System Operation Design</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="30%"><span class="sectionTableCellHeading">Primary:
+								</span>
+<ul>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/rup_system_designer_B59A6A2F.html" guid="_5htYrBVJEdyUirRG6XhwWA">System Designer</a>
+</li>
+</ul>
+</td><td class="sectionTableCell" width="30%"><span class="sectionTableCellHeading">Additional:
+								</span>
+<ul>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/rup_system_architect_7282A3E2.html" guid="_5htYoRVJEdyUirRG6XhwWA">System Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Assisting:
+								</span></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell" width="30%"><span class="sectionTableCellHeading">Mandatory:
+								</span>
+<ul>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/rup_system_operation_C0384A3F.html" guid="_5htYrRVJEdyUirRG6XhwWA">Subsystem Operation</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/rup_system_operation_realization_AED15E55.html" guid="_5htYrhVJEdyUirRG6XhwWA">Subsystem Operation Realization</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/rup_system_analysis_model_25AD9A17.html" guid="_5htYphVJEdyUirRG6XhwWA">System Analysis Model</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/rup_usecase_model_B96F3E65.html" guid="_5htYrxVJEdyUirRG6XhwWA">Use-Case Model</a>
+</li>
+</ul>
+</td><td class="sectionTableCell" width="30%"><span class="sectionTableCellHeading">Optional:
+								</span>
+<ul>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/rup_subsystem_supplementary_specification_304B7A27.html" guid="_5htYpxVJEdyUirRG6XhwWA">Subsystem Supplementary Requirements</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/rup_subsystem_usecase_model_EA3F7C36.html" guid="_5htYqhVJEdyUirRG6XhwWA">Subsystem Use-Case Model</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/rup_sytem_use_case_realization_7A2C4C4E.html" guid="_5htYsBVJEdyUirRG6XhwWA">System Use-Case Realization</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">External:
+								</span>
+<ul>
+<li>None</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Outputs</th><td class="sectionTableCell" colspan="3">
+<ul>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/rup_system_operation_C0384A3F.html" guid="_5htYrRVJEdyUirRG6XhwWA">Subsystem Operation</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/rup_system_operation_realization_AED15E55.html" guid="_5htYrhVJEdyUirRG6XhwWA">Subsystem Operation Realization</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/rup_subsystem_supplementary_specification_304B7A27.html" guid="_5htYpxVJEdyUirRG6XhwWA">Subsystem Supplementary Requirements</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/rup_subsystem_usecase_model_EA3F7C36.html" guid="_5htYqhVJEdyUirRG6XhwWA">Subsystem Use-Case Model</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/rup_system_deployment_model_6BB99808.html" guid="_5htYoxVJEdyUirRG6XhwWA">System Deployment Model</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/rup_system_design_model_2C76A5F1.html" guid="_5htYpBVJEdyUirRG6XhwWA">System Design Model</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/rup_sytem_use_case_realization_7A2C4C4E.html" guid="_5htYsBVJEdyUirRG6XhwWA">System Use-Case Realization</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Steps</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="sectionTableCell">
+<div class="stepHeading">Create Operation Realizations</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    In <a class="elementLinkWithType" href="./../../systems.mdsd/tasks/se_operation_analysis_6C6BED14.html" guid="_GMjFYOQ5Edm1mN374l9mbg">Task: System Operation Analysis</a>, the System Designer created subsystem interactions
+    (without much detail) in the System Analysis Model. <b>Recall that you had organized the granularity of these
+    interactions so that they were grouped by System Operation, that is, you captured the interactions that realize each
+    System Operation</b>. Now, working with the expanded (white-box) system use-case descriptions, the detail of messages,
+    entities exchanged, sequencing, control flow, and associated data is added and the resulting Operation Realizations are
+    captured in the System Design Model, again organized by System Operation. As this detail is added, the
+    System&nbsp;Designer evaluates the quality of the emergent collaborations, looking for opportunities to refactor the
+    design. Annotate the Operation Realizations with descriptions of what the subsystem does when processing a message
+    (drawn from the white-box step description and refined if necessary). These descriptions help with the next step, to
+    develop specifications for each <i>Sub</i>system Operation.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Aggregate similar subsystem white-box steps and specify Subsystem Operations</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    The System Designer produced the initial Subsystem Operation Survey placeholder during the <a class="elementLinkWithType" href="./../../systems.mdsd/tasks/se_operation_analysis_6C6BED14.html" guid="_GMjFYOQ5Edm1mN374l9mbg">Task: System Operation Analysis</a>. The survey table also shows (with a gray
+    background) the traceability back to the system use case black-box steps, indicating (in the table) that system use
+    case black-box steps &lt;id 1&gt; and &lt;id 2&gt; are both performed by invocations of &lt;system operation name
+    1&gt;.
+</p>
+<div align="center">
+    <center>
+        ? 
+        <table width="96%" border="1">
+            <tbody>
+                <tr>
+                    <td align="middle" colspan="9">
+                        <font face="Arial" size="3"><b><i>Subsystem &lt;name&gt;</i></b></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="middle" width="15%">
+                        <font face="Arial" size="2"><b>System Operation</b></font>
+                    </td>
+                    <td align="middle" width="17%" bgcolor="#c0c0c0">
+                        <font face="Arial" size="2"><b>System Use Case Black-Box Step Identifier</b></font>
+                    </td>
+                    <td align="middle" width="16%">
+                        <font face="Arial" size="2"><b>Locality</b></font>
+                    </td>
+                    <td align="middle" width="17%">
+                        <font face="Arial" size="2"><b>Process</b></font>
+                    </td>
+                    <td align="middle" width="17%">
+                        <font face="Arial" size="2"><b>Worker</b></font>
+                    </td>
+                    <td align="middle" width="35%">
+                        <font face="Arial" size="2"><b>Subsystem White-Box Step Description</b></font>
+                    </td>
+                    <td align="middle" width="35%">
+                        <font face="Arial" size="2"><b>Subsystem Operation</b></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="middle" width="15%" rowspan="4">
+                        <p align="center">
+                            <font face="Arial" size="2">&lt;system operation</font> <font face="Arial"                             size="2">name1&gt;</font>
+                        </p>
+                    </td>
+                    <td align="middle" width="17%" bgcolor="#c0c0c0" rowspan="3">
+                        <font face="Arial" size="2">&lt;id 1&gt;</font>
+                    </td>
+                    <td align="middle" width="16%">
+                        <font face="Arial" size="2">Locality identifier</font>
+                    </td>
+                    <td align="middle" width="17%">
+                        <font face="Arial" size="2">Process identifier</font>
+                    </td>
+                    <td align="middle" width="17%">
+                        <font face="Arial" size="2">Organization or System Worker identifier</font>
+                    </td>
+                    <td width="35%">
+                        <font face="Arial" size="2">(white-box step identifier): description of an action performed by a
+                        <b>subsystem</b> (performing part of the black-box step) in the form of input, processing,
+                        output</font>
+                    </td>
+                    <td width="35%">
+                        <font face="Arial" size="2"><span                         style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">(subsystem
+                        operation identifier): name of the subsystem operation which is invoked for this step, for example,
+                        "&lt;&lt;subsystem operation&gt;&gt; Start a Sales List" (for subsystem <b>Order
+                        Processing</b>)</span></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="middle" width="16%">
+                        <font face="Arial" size="2">...</font>
+                    </td>
+                    <td align="middle" width="17%">
+                        ...
+                    </td>
+                    <td align="middle" width="17%">
+                        &nbsp;
+                    </td>
+                    <td width="35%">
+                        <font face="Arial" size="2">(white-box step identifier):...</font>
+                    </td>
+                    <td width="35%">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td align="middle" width="16%">
+                        <font face="Arial" size="2">...</font>
+                    </td>
+                    <td align="middle" width="17%">
+                        ...
+                    </td>
+                    <td align="middle" width="17%">
+                        &nbsp;
+                    </td>
+                    <td align="middle" width="35%">
+                        ...
+                    </td>
+                    <td align="middle" width="35%">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td align="middle" width="17%" bgcolor="#c0c0c0">
+                        <font face="Arial" size="2">&lt;id 2&gt;</font>
+                    </td>
+                    <td align="middle" width="16%">
+                        <font face="Arial" size="2">...</font>
+                    </td>
+                    <td align="middle" width="17%">
+                        ...
+                    </td>
+                    <td align="middle" width="17%">
+                        &nbsp;
+                    </td>
+                    <td align="middle" width="35%">
+                        ...
+                    </td>
+                    <td align="middle" width="35%">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td align="middle" width="15%" rowspan="2">
+                        <font face="Arial" size="2">&lt;system operation name2&gt;</font>
+                    </td>
+                    <td align="middle" width="17%" bgcolor="#c0c0c0">
+                        <font face="Arial" size="2">&lt;id 3&gt;</font>
+                    </td>
+                    <td align="middle" width="16%">
+                        <font face="Arial" size="2">...</font>
+                    </td>
+                    <td align="middle" width="17%">
+                        ...
+                    </td>
+                    <td align="middle" width="17%">
+                        &nbsp;
+                    </td>
+                    <td align="middle" width="35%">
+                        ...
+                    </td>
+                    <td align="middle" width="35%">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td align="middle" width="17%" bgcolor="#c0c0c0">
+                        <font face="Arial" size="2">&lt;id 4&gt;</font>
+                    </td>
+                    <td align="middle" width="16%">
+                        <font face="Arial" size="2">...</font>
+                    </td>
+                    <td align="middle" width="17%">
+                        ...
+                    </td>
+                    <td align="middle" width="17%">
+                        &nbsp;
+                    </td>
+                    <td align="middle" width="35%">
+                        ...
+                    </td>
+                    <td align="middle" width="35%">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td align="middle" width="15%">
+                        <font face="Arial" size="2">...</font>
+                    </td>
+                    <td align="middle" width="17%" bgcolor="#c0c0c0">
+                        <font face="Arial" size="2">...</font>
+                    </td>
+                    <td align="middle" width="16%">
+                        <font face="Arial" size="2">...</font>
+                    </td>
+                    <td align="middle" width="17%">
+                        ...
+                    </td>
+                    <td align="middle" width="17%">
+                        &nbsp;
+                    </td>
+                    <td align="middle" width="35%">
+                        ...
+                    </td>
+                    <td align="middle" width="35%">
+                        &nbsp;
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</div>
+<p class="tableheading" align="center">
+    Example Subsystem Operation Survey.
+</p>
+<p>
+    Next, working from the white-box steps and the Operation Realizations, the Subsystem Operations are identified and
+    their behavior specified. As with the identification of system operations, there <i>might not</i> be a unique subsystem
+    operation for each white-box step; that is, as you examine the set of white-box steps and their associated exchange of
+    messages, input-output entities, and so forth., you might find that it is possible to define a smaller set of Subsystem
+    Operations to fulfill their needs.
+</p>
+<p>
+    Note that the survey table can also be resorted by locality or by process, thus showing the association of a set of
+    Subsystem Operations with each locality or with each process. The locality sort gives an indication of the computing
+    load at a locality (and so is useful for reasoning about the capacity of the physical components that support the
+    locality). In this form, the survey sorted by locality becomes a property of the Deployment Model.
+</p>
+<p>
+    When a Subsystem Operation is hosted at multiple localities, this indicates that at least part of the subsystem is
+    replicated. There is no implication that these replicated portions <i>necessarily</i> share data or are kept in
+    synchronization. These are design choices which depend on the application and reason for replication; for example, the
+    processing required might be identical, but occur for a different business segment. In the extreme, all of a
+    subsystem's operations can be hosted at multiple localities, meaning that, effectively, the subsystem itself is
+    replicated. The need to identify replicated instances uniquely also depends on the reasons for replication.
+</p>
+<p>
+    The process sort allows the System Designer to reason about concurrency issues: if you were to view a Subsystem
+    Operation as a discrete piece of functionality available to actors, then, as a?first approximation, operations
+    associated with the same process cannot be performed in parallel. This might lead the System Designer to reconsider the
+    process allocation, or consider process replication, or to examine the perceived latency problem at a lower level of
+    detail, for example, through examination of time-slicing options, and process sharing when an operation blocks (to do
+    input-output, for example). These techniques can give acceptable responsiveness, whereas a delaying of the start of an
+    operation (strictly serializing operations) might be intolerable. In this form, the survey sorted by process becomes a
+    property of the System Design Model.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Refine the Subsystem Use-Case Model</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    The System&nbsp;Designer produced the initial Subsystem Use-Case Survey placeholder during the <a class="elementLinkWithType" href="./../../systems.mdsd/tasks/se_operation_analysis_6C6BED14.html" guid="_GMjFYOQ5Edm1mN374l9mbg">Task: System Operation Analysis</a>. The survey is a property of the Subsystem Use-Case
+    Model.
+</p>
+<p>
+    Recall that in <a class="elementLinkWithType" href="./../../systems.mdsd/tasks/se_operation_analysis_6C6BED14.html" guid="_GMjFYOQ5Edm1mN374l9mbg">Task: System Operation Analysis</a>, you grouped the white-box steps by System
+    Operation. The observation was made that this grouping is a strong guide to the identification of subsystem use cases -
+    initially, you identify a subsystem use case for each system operation in which the subsystem participates. Then,
+    noting that the sequences of white-box steps are the same for some of these use cases, they (the use cases) can be
+    aggregated, and thus a single subsystem use case can be made to fulfill the needs of several system operations. This is
+    done for economy of descriptive effort.
+</p>
+<p>
+    The survey table also shows (with a gray background) the traceability back to the system use case black-box steps,
+    indicating (in the table) that system use case black-box steps (ID 1)and (ID 2)are both performed by invocations of
+    (SYSTEM 1 operation name).
+</p>
+<div align="center">
+    <table width="96%" border="1">
+        <tbody>
+            <tr>
+                <td align="middle" colspan="9">
+                    <b><i>Subsystem (NAME)</i></b>
+                </td>
+            </tr>
+            <tr>
+                <td align="middle" width="14%">
+                    <b>Subsystem Use-Case Name</b>
+                </td>
+                <td align="middle" width="16%">
+                    <b>Description</b>
+                </td>
+                <td align="middle" width="15%">
+                    <b>System Operation</b>
+                </td>
+                <td align="middle" width="17%" bgcolor="#c0c0c0">
+                    <b>System Use Case Black-Box Step Identifier</b>
+                </td>
+                <td align="middle" width="16%">
+                    <b>Locality</b>
+                </td>
+                <td align="middle" width="17%">
+                    <b>Process</b>
+                </td>
+                <td align="middle" width="17%">
+                    <b>Worker</b>
+                </td>
+                <td align="middle" width="35%">
+                    <b>Subsystem White-Box Step?Description</b>
+                </td>
+                <td align="middle" width="35%">
+                    <b>Subsystem Operation</b>
+                </td>
+            </tr>
+            <tr>
+                <td width="14%" rowspan="6">
+                    (SUBSYSTEM 1 name use-case)
+                </td>
+                <td width="16%" rowspan="6">
+                    Description of subsystem use case, how it is initiated, consequent iterations, and its results
+                </td>
+                <td align="middle" width="15%" rowspan="4">
+                    (SYSTEM operation name1)
+                </td>
+                <td align="middle" width="17%" bgcolor="#c0c0c0" rowspan="3">
+                    (ID 1)
+                </td>
+                <td align="middle" width="16%">
+                    Locality identifier
+                </td>
+                <td align="middle" width="17%">
+                    Process identifier
+                </td>
+                <td align="middle" width="17%">
+                    Organization or System Worker identifier
+                </td>
+                <td width="35%">
+                    (white-box step identifier): description of an action performed by a <b>subsystem</b> (performing part
+                    of the black-box step) in the form of input, processing, output
+                </td>
+                <td width="35%">
+                    (subsystem operation identifier): name of the subsystem operation which is invoked for this step, for
+                    example, "[subsystem operation] Start a Sales List" (for subsystem Order Processing)
+                </td>
+            </tr>
+            <tr>
+                <td align="middle" width="16%">
+                    ...
+                </td>
+                <td align="middle" width="17%">
+                    ...
+                </td>
+                <td align="middle" width="17%">
+                    &nbsp;
+                </td>
+                <td width="35%">
+                    (white-box step identifier):...
+                </td>
+                <td width="35%">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td align="middle" width="16%">
+                    ...
+                </td>
+                <td align="middle" width="17%">
+                    ...
+                </td>
+                <td align="middle" width="17%">
+                    &nbsp;
+                </td>
+                <td align="middle" width="35%">
+                    ...
+                </td>
+                <td align="middle" width="35%">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td align="middle" width="17%" bgcolor="#c0c0c0">
+                    (ID 2)
+                </td>
+                <td align="middle" width="16%">
+                    ...
+                </td>
+                <td align="middle" width="17%">
+                    ...
+                </td>
+                <td align="middle" width="17%">
+                    &nbsp;
+                </td>
+                <td align="?iddle" width="35%">
+                    ...
+                </td>
+                <td align="middle" width="35%">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td align="middle" width="15%" rowspan="2">
+                    (SYSTEM operation name2)
+                </td>
+                <td align="middle" width="17%" bgcolor="#c0c0c0">
+                    (ID 3)
+                </td>
+                <td align="middle" width="16%">
+                    ...
+                </td>
+                <td align="middle" width="17%">
+                    ...
+                </td>
+                <td align="middle" width="17%">
+                    &nbsp;
+                </td>
+                <td align="middle" width="35%">
+                    ...
+                </td>
+                <td align="middle" width="35%">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td align="middle" width="17%" bgcolor="#c0c0c0">
+                    (ID 4)
+                </td>
+                <td align="middle" width="16%">
+                    ...
+                </td>
+                <td align="middle" width="17%">
+                    ...
+                </td>
+                <td align="middle" width="17%">
+                    &nbsp;
+                </td>
+                <td align="middle" width="35%">
+                    ...
+                </td>
+                <td align="middle" width="35%">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td align="middle" width="14%">
+                    (SUBSYSTEM 2 name use-case)
+                </td>
+                <td align="middle" width="16%">
+                    ...
+                </td>
+                <td align="middle" width="15%">
+                    ...
+                </td>
+                <td align="middle" width="17%" bgcolor="#c0c0c0">
+                    ...
+                </td>
+                <td align="middle" width="16%">
+                    ...
+                </td>
+                <td align="middle" width="17%">
+                    ...
+                </td>
+                <td align="middle" width="17%">
+                    &nbsp;
+                </td>
+                <td align="middle" width="35%">
+                    ...
+                </td>
+                <td align="middle" width="35%">
+                    &nbsp;
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p class="tableheading" align="center">
+    Example Subsystem Use Case Survey.
+</p>
+<p>
+    Thus the <i>subsystem</i> use cases can be inferred and added to the Survey Description. In this way, the System
+    Designer has formed, at least partially, the <i>context</i> for the subsystem (analogously to the context elaborated by
+    the System Analyst for the entire system).
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Create remainder of Subsystem Use-Case Model</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    The System Designer can now create or refine the Subsystem Use-Case Model, identifying and describing the use cases,
+    identifying actors and their associations to the use cases, and characterizing these associations. Diagrams can also be
+    created.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Update Subsystem Supplementary Requirements</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    As a result of refactoring the locality and the process performance considerations, the non-functional requirements
+    (including interface requirements) imposed on the subsystems might change, requiring changes to the Subsystem
+    Supplementary Requirements.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Footnote What have you achieved</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    For each subsystem, you have:
+</p>
+<ul>
+    <li>
+        defined its operations
+    </li>
+    <li>
+        defined the interfaces you expect the subsystem to support
+    </li>
+    <li>
+        described how the subsystem collaborates with other subsystems to realize the <i>system</i> use cases
+    </li>
+    <li>
+        defined the subsystem's context: its actors, interfaces and I/O entities
+    </li>
+</ul>
+<p>
+    You are thus well positioned to be able to hand-off this set of work products for independent development, if you so
+    choose, or to perform further decomposition in a recursive fashion.
+</p></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Properties</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Predecessor</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/refine_system_deployment_model_67E4C3D2.html" guid="_5htYoBVJEdyUirRG6XhwWA">Refine System Deployment Model</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/refine_system_processes_F1088810.html" guid="_5htYqBVJEdyUirRG6XhwWA">Refine System Processes</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/capabilitypatterns/refine_system_structure_FBA66820.html" guid="_5htYqRVJEdyUirRG6XhwWA">Refine System Structure</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Multiple Occurrences" abbr="Multiple Occurrences">Multiple Occurrences</th><td class="sectionTableCell" align="left" headers="property_Multiple Occurrences"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Event Driven" abbr="Event Driven">Event Driven</th><td class="sectionTableCell" align="left" headers="property_Event Driven"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Ongoing" abbr="Ongoing">Ongoing</th><td class="sectionTableCell" align="left" headers="property_Ongoing"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Optional" abbr="Optional">Optional</th><td class="sectionTableCell" align="left" headers="property_Optional"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Planned" abbr="Planned">Planned</th><td class="sectionTableCell" align="left" headers="property_Planned"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Repeatable" abbr="Repeatable">Repeatable</th><td class="sectionTableCell" align="left" headers="property_Repeatable"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+					contentPage.onload();
+					contentPage.processPage.fixDescriptorLinks();
+				</script>
+</html>

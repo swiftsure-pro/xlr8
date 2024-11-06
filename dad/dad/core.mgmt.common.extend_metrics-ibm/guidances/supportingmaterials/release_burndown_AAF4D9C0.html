@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Release Burndown</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="release_burndown">
+<meta name="uma.presentationName" content="Release Burndown">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_V9_yAHrkEd6bdI3iWuE3ew"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Release Burndown</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.mgmt.common.extend_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks the estimated functionality yet to be implemented for the current release.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p>
+    Release burndown shows the estimated functionality remaining to complete the current release. It provides answers to
+    the following questions:
+</p>
+<ul>
+    <li>
+        When can a release be completed based on the team's previous progress?
+    </li>
+    <li>
+        What progress was made in previous iterations?
+    </li>
+    <li>
+        Is the team's velocity sufficient to complete the release on time?
+    </li>
+</ul>
+<p>
+    The Release Burndown chart provides a broad view of a release's progress. It is updated once each iteration, and
+    indicates if the team is creating functionality at a reasonable pace. It can also expose projects whose scope is out of
+    control, negatively impacting burndown. Based on the trend view they see in this chart, the team can take action to
+    better control scope, or can adjust resources, budget, timelines, quality levels or commitments.
+</p>
+<p>
+    Unlike <a class="elementLink" href="./../../../core.mgmt.common.extend_metrics-ibm/guidances/supportingmaterials/iteration_burndown_A8E6E503.html" guid="_wEVzIHrAEd6bdI3iWuE3ew">Iteration Burndown</a>, which tracks remaining effort hours, Release Burndown tracks
+    functionality in order to determine whether the team is delivering working software in each iteration. The resulting
+    Release Burndown chart helps determine how much functionality the team is creating compared to how much they promised
+    to create.
+</p>
+<p>
+    By tracking this metric, the team can also prove they are adopting iterative development best practices.
+</p>
+<h3>
+    Definition
+</h3>
+<p>
+    Remaining functionality is calculated by:
+</p>
+<ol>
+    <li>
+        Identifying a work item type as representing top-level functionality
+    </li>
+    <li>
+        Creating a complexity estimate for each top-level functionality work item
+    </li>
+    <li>
+        Totaling the remaining complexity for work items that are still open
+    </li>
+</ol>
+<p>
+    <br />
+    Top level work items are work items that represent significant units of scope. The most typical top level work items
+    are use cases, features, user stories, stakeholder requests or defects. They have a complexity attribute, but not an
+    effort hours estimate. Thus, these top level work items represent functionality.<br />
+    <br />
+    Complexity is an attribute of each functionality work item and is described in terms such as use case points, feature
+    points, user story points, stakeholder request points, or High-Med-Low complexity. The higher the "points" the more
+    functionality each work item is worth.
+</p>
+<p>
+    In a release burndown chart, the Y axis shows the remaining functionality for the release, and the X axis shows all the
+    iterations planned for the project.
+</p>
+<h3>
+    Analysis
+</h3>
+<h4>
+    Using Release Burndown to monitor project execution
+</h4>
+<p>
+    Release Burndown is used as a project execution metric to help a team monitor and steer their project performance. It
+    is an indicator of overall progress to middle management (project manager and product owner) and development executive
+    audiences. Middle management can use this metric to monitor how the project is progressing against plan, and predict
+    whether the team will meet release commitments. Release Burndown can be used to re-plan the release when the project is
+    behind schedule, or to help plan resources needed for the release.
+</p>
+<p>
+    <strong>Expected trend</strong> - The trend line should slope downward as iterations are completed indicating that
+    remaining functionality is decreasing. However, the following patterns might occur:
+</p>
+<p>
+    <strong>Rising slope -</strong> This trend can indicate that the project is out of control, with poor product
+    management. If a team sees an ongoing rising slope, then they need to focus on the best practices of Inception and
+    Elaboration in order to regain control. Consensus may not have been reached regarding the objectives for the project,
+    and requirements may not have been sufficiently detailed to understand architectural risk or to properly plan.
+</p>
+<p>
+    <strong>Flat line -</strong> This trend could indicate that the team has not embraced iterative development best
+    practices. It could be that the team is not delivering working software. Or, the team is delivering working software
+    but new functionality is added to the release equal to the rate that work is completed. In some cases, the team has to
+    focus too much of their time on defects. Measures should be taken to increase quality when this occurs.
+</p>
+<p>
+    <strong>Perfect downward slope -</strong> Unlike a perfect slope in Iteration Burndown, which could indicate a team
+    that is inaccurately charting their results, a perfect downward slope in Release Burndown is likely to be accurate.
+    Validate that Customer Satisfaction and Quality levels are high, and that Change Request Aging is low to confirm the
+    trend.
+</p>
+<p>
+    <strong>Fast <em>decline</em> at the end of the release -</strong> This is a pattern that should be monitored closely.
+    When the trend line is clearly not heading to zero for the release, but the slope quickly drops to zero at the very
+    end, a number of factors could be involved. Perhaps through heroic efforts the team increased their productivity to
+    meet their commitments. But, it could be the case that important features were left out of the release, or requirements
+    for shipment changed. This is acceptable when stakeholders decide that scope is less important than the timeline.
+</p>
+<p>
+    <strong>Fast <em>incline</em> at the end of the release -</strong> This trend is unlikely to occur unless (either
+    intentionally or by accident) the metric was not tracked correctly in each iteration. Or, it could be that product
+    management is out of control, and last minute requirements were added to the release. If this is the case, ask the
+    customer if scope or timeline is the priority for the release.
+</p>
+<p>
+    The release burndown chart that follows is a simple example of tracking the release burndown rate. Based on the trend
+    indicated in this chart, the project looks like it will finish before I8. Assuming that I8 is the last iteration for
+    this release, the project is well positioned to meet its release commitments.
+</p>
+<p>
+    Notice that this graph shows "instantaneous velocity," the velocity just by looking at the last two iterations. Also of
+    value is "average velocity" which would be the average velocity considering all past iterations.
+</p>
+<p>
+    <img alt="Release Burndown" src="./../../../core.mgmt.common.extend_metrics-ibm/guidances/supportingmaterials/./resources/release_burndown.gif" width="510" height="338" />
+</p>
+<p>
+    In the following release burndown example, scope changes are plotted as well as burndown. Note that the blue line
+    represents remaining work whereas the gray line represents planned work.
+</p>
+<p>
+    <img alt="Release Burndown With Scope" src="./../../../core.mgmt.common.extend_metrics-ibm/guidances/supportingmaterials/./resources/rel_burndown_with_scope.gif" width="571" height="330" />
+</p>
+<p>
+    The gray line indicates that this team did not estimate the complexity of all of their top-level items up front; or,
+    they allocated more and more to the release as time went on. Their scope has increased from about 4 units to nearly 80,
+    or 2000%. The gray line shows that now their scope is stabilizing. The blue burndown line shows that real burndown is
+    starting to occur.
+</p>
+<h4>
+    Using Release Burndown to monitor capability improvement
+</h4>
+<p>
+    Release Burndown is also used as a capability improvement metric. It helps a team and middle management (project
+    manager, product owner) monitor improvements made during the project lifecycle in adopting the Release Planning
+    practice. If teams are adopting these practices by performing two-level project planning and updating plans to reflect
+    changing business priorities and needs it will be reflected in their Release Burndown trends. Operational Executives
+    can also use this metric to monitor systematic improvement in reducing time to value across the organization by
+    adopting Release Planning.
+</p>
+<p>
+    <strong>Expected trend -</strong> If teams are successfully adopting Release Planning, Release Burndown trends will
+    show that functionality slopes downward as iterations are completed in a steady decline to zero at the end of the
+    release.
+</p>
+<p>
+    <strong>Rising slope</strong> - When teams routinely display a trend line with a rising slope, it indicates that there
+    is a problem with Release Planning adoption. Teams may not be collaborating effectively with stakeholders to update
+    plans based on actual progress in each iteration. Or the team and stakeholders may not share a common understanding of
+    project objectives.
+</p>
+<h3>
+    Frequency and reporting
+</h3>
+<p>
+    Data is collected at the end of each iteration. The resulting Release Burndown chart is shown by a team lead or project
+    manager for review by the team and stakeholders at the end of each iteration to help identify trends. Release Burndown
+    for multiple projects can be rolled up in order to monitor improvement across the organization.<br />
+</p>
+<h3>
+    Collection and reporting tools
+</h3>
+<p>
+    Release Burndown is captured in IBM&reg; Rational&reg; Team Concert&reg;. IBM&reg; Rational&reg; Insight&reg; reports on this metric.
+</p>
+<h3>
+    Assumptions and prerequisites
+</h3>
+<ul>
+    <li>
+        The product owner sorts the product backlog into priority order and shuffles the product backlog items as
+        priorities change from iteration to iteration.
+    </li>
+    <li>
+        Release planning is performed and the release has been defined.
+    </li>
+    <li>
+        Iterations have been scheduled and features to deliver during each iteration have been documented as work items.
+    </li>
+    <li>
+        User stories or use cases have been elaborated with relative points assigned to each
+    </li>
+    <li>
+        The team is delivering working software in each iteration.<br />
+    </li>
+</ul>
+<h3>
+    Pitfalls, advice, and countermeasures
+</h3>
+<ul>
+    <li>
+        Although planning and executing at the iteration level is very important, teams should not lose track of where they
+        are in context of the overall release plan. In their desire to make sure iterations are successfully delivered,
+        some teams may lose sight of their progress against the release goals. Additional scope may continue to creep into
+        the plans as the team progresses forward. As a result, each individual iteration appears relatively successful to
+        the team, but the higher level goal of delivering the overall release is sometimes forgotten and changes in the
+        release plan are not communicated to the organization.
+    </li>
+    <li>
+        In some cases, a team might get very good at capturing and reporting burndown accurately, but may not know how to
+        take action to improve based on what they see in their trend line. When this happens, deeper analysis is needed to
+        find the underlying cause of the trend, so that corrective actions can be taken. It might be necessary to abandon
+        the metric if the team is unable to use the measurements to incrementally improve.
+    </li>
+    <li>
+        If the team discovers a trend of addressing low risk items first, leaving higher risk items to the end, a Backlog
+        Complexity metric could be tracked as a countermeasure. Backlog Complexity should be dropping, but will remain high
+        if the team has a habit of addressing high risk items late in each release.
+    </li>
+    <li>
+        For additional analysis, combine Release Burndown with Iteration Velocity in order to estimate potential finished
+        date.
+    </li>
+</ul>
+<p>
+    <br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.mgmt.common.extend_metrics-ibm/guidances/concepts/burndown_chart_6F86536A.html" guid="_wr5J8IEkEd629os7NUh3Zw">Burndown Chart</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

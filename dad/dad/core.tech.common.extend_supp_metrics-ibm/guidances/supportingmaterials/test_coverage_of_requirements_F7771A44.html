@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Test Coverage of Requirements</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="test_coverage_of_requirements">
+<meta name="uma.presentationName" content="Test Coverage of Requirements">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_IJVvoCthEd6wLLxMlDYvug"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Test Coverage of Requirements</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks the percentage of requirements that are covered by tests, and the percentage that have no associated tests.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p>
+    This metric exposes requirements that do not have test cases. The ultimate goal of this metric is to ensure that all
+    requirements can be validated and that they work as intended.
+</p>
+<h3>
+    Definition
+</h3>
+<ul>
+    <li>
+        Number of test cases per requirement
+    </li>
+    <li>
+        Number of requirements with no associated test cases
+    </li>
+</ul>
+<h3>
+    Analysis
+</h3>
+<p style="MARGIN: 0in 0in 0pt" class="MsoNormal">
+    Software that implements requirements with inadequate test coverage may not work as intended or may have defects. The
+    team should expect 100% coverage of requirements. Verification of coverage requires traceability between requirements
+    and test artifacts.
+</p><br />
+<p style="MARGIN: 0in 0in 0pt" class="MsoNormal">
+    With some exceptional cases, such as a requirement that can be satisfied by demonstration, a requirement might not need
+    a corresponding test case, but could be verified by other verification method. In this case, the team should make sure
+    that all requirements are verified by checking at the Verification matrix report.<br />
+    <br />
+    Tracing requirements to test cases can yield a 10% to 30% defect reduction over several years. Not all requirements
+    will have the same number of test cases or amount of test effort applied.<br />
+    <br />
+    This pie chart shows the percentage of requirements that have and do not have associated test cases.<br />
+</p>
+<p>
+    <img alt="Test Coverage of Requirements" src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/./resources/test_coverage_of_req.gif" width="287" height="233" />
+</p>
+<h3>
+    Frequency and reporting
+</h3>
+<p>
+    Monitor Test Coverage of Requirements each iteration. For iterative development, Test Coverage of Requirements should
+    be close to 100% for requirements planned for&nbsp;that iteration.
+</p>
+<h3>
+    Collection and reporting tools
+</h3>
+<p>
+    Test to Requirements traceability information can be obtained from&nbsp;a Requirements Traceability Matrix. Tools like
+    IBM&reg; Rational&reg; DOORS&reg;, IBM&reg; Rational&reg; Requirements Composer&reg;, IBM&reg; Rational&reg; Requisite Pro&reg;, and&nbsp;IBM&reg; Rational&reg;
+    Team Concert&reg; can be used to collect the data.&nbsp;IBM&reg; Rational&reg; Quality Manager&reg; provides a Requirements Not Covered
+    by Test report.
+</p>
+<p>
+    IBM&reg; Rational&reg; Insight&reg; provides full support&nbsp;for reporting the data.<br />
+</p>
+<h3>
+    Pitfalls, advice, and countermeasures
+</h3>
+<ul>
+    <li>
+        When the metric shows 100%&nbsp; coverage and the team believes that test coverage is good, watch out for the
+        following circumstances:&nbsp; 
+        <ul>
+            <li>
+                The quality of the tests themselves may be bad.
+            </li>
+            <li>
+                Most requirements need more than one test case.
+            </li>
+            <li>
+                The requirements may be wrong or misunderstood by the test case developer, so 100% coverage of them is a
+                waste of time.
+            </li>
+            <li>
+                100% test coverage is the minimum set of tests or only covers incidental cases
+            </li>
+            <li>
+                The team is trying to get 100% coverage, despite knowing they have bad requirements.
+            </li>
+        </ul>
+    </li>
+    <li>
+        A 100% test to requirements coverage does not always mean that the requirements are thoroughly tested; the
+        following items are indicators of measurement pitfalls and should be used to corroborate this metric: 
+        <ul>
+            <li>
+                Defects rejected by the development team with a resolution of “works as intended”, which could imply that
+                development team and the verification team have different understanding on the requirements.
+            </li>
+            <li>
+                Defects found after the iteration in which the requirement was tested, the possible reasons are listed in
+                the pitfalls section
+            </li>
+            <li>
+                Change requests vs. requirements
+            </li>
+            <li>
+                Acceptance test failure rate<br />
+            </li>
+        </ul>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

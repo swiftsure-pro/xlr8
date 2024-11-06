@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: ServiceChannel (SoaML)</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="service_channel_soaml">
+<meta name="uma.presentationName" content="ServiceChannel (SoaML)">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_pOTTMGaaEd65K8S2sWS35w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: ServiceChannel (SoaML)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">A communication path between ServicePoints and RequestPoints within an architecture.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/participant_soaml_DAFEB6B7.html" guid="_uO9JIFbBEd6MCpkuB85p5g">Participant (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/participant_soaml_1A392457.html" guid="_zL3kgFbAEd6MCpkuB85p5g">Participant (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_point_soaml_E250D92A.html" guid="_9jRdMFbAEd6MCpkuB85p5g">ServicePoint (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Usage:&nbsp; "ServiceChannel" stereotypes UML Connector
+</p>
+<p>
+    <font size="2">A ServiceChannel provides a communication path between consumer Requests and provider Services.</font>
+</p>
+<p>
+    <font size="3"><strong>Semantics</strong></font>
+</p>
+<p>
+    <font size="2"><font size="2">A ServiceChannel is used to connect Requests of consumer <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/participant_soaml_1A392457.html" guid="_zL3kgFbAEd6MCpkuB85p5g">Participants</a> to Services of provider Participants at the ServiceChannel ends. A
+    ServiceChannel enables communication between the Request and Service.</font></font>
+</p>
+<p>
+    <font size="2">A <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/request_point_soaml_DD83CF2.html" guid="_5DYKcFbAEd6MCpkuB85p5g">RequestPoint</a> specifies a Participant's needs. A <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_point_soaml_E250D92A.html" guid="_9jRdMFbAEd6MCpkuB85p5g">ServicePoint</a> specifies a Participant's offered services. <font size="2">A
+    RequestPoint is compatible with, and&nbsp;can be connected to, a ServicePoint through a ServiceChannel,
+    if:</font></font>
+</p>
+<ol>
+    <li>
+        <font size="2"><font size="2">The Request and Service have the same type, either an Interface or
+        ServiceInterface.</font></font>
+    </li>
+    <li>
+        <font size="2"><font size="2">The type of the Service is a specialization or realization of the type of the
+        Request.</font></font>
+    </li>
+    <li>
+        <font size="2"><font size="2">The Request and Service have compatible needs and capabilities, respectively. This
+        means the Service must provide an Operation for every Operation used through the Request, the Request must provide
+        an Operation for every Operation used through the Service, and the protocols for how the capabilities are
+        used&nbsp;are compatible between the Request and Service.</font></font>
+    </li>
+    <li>
+        <font size="2"><font size="2">Any of the above are true for a subset of a ServiceInterface as defined by a port on
+        that service interface.</font></font>
+    </li>
+</ol></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/participant_soaml_1A392457.html" guid="_zL3kgFbAEd6MCpkuB85p5g">Participant (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/request_point_soaml_DD83CF2.html" guid="_5DYKcFbAEd6MCpkuB85p5g">RequestPoint (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_interface_soaml_CA95983A.html" guid="_N5e2oFbBEd6MCpkuB85p5g">ServiceInterface (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_point_soaml_E250D92A.html" guid="_9jRdMFbAEd6MCpkuB85p5g">ServicePoint (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/service_channel_soaml_EEB9A783.html" guid="_lcSTUGcMEd65K8S2sWS35w">ServiceChannel (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    The above definitions were copied from the <a href="http://www.omg.org/spec/SoaML/Current" target="_blank">Service
+    oriented architecture Modeling Language (SoaML) Specification</a> for the UML Profile and Metamodel Services. <a class="elementLinkWithUserText" href="./../../../core.default.release_copyright.extend-ibm/guidances/supportingmaterials/full_soaml_copyright_3B2FB4F3.html" guid="_GHI_gLgYEd6EUtitpj4XQA">View the full copyright notice</a>.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

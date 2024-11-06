@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Creating and Maintaining Change Requests</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="cr_maint_crs">
+<meta name="uma.presentationName" content="Creating and Maintaining Change Requests">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_FgdI4LJWEdyHw6xErAkVmw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Creating and Maintaining Change Requests</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline provides more details on how to create and maintain the change requests related to the test findings.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h4>
+    <a id="VerifyIncidentFacts" name="VerifyIncidentFacts">Verify incident facts</a>
+</h4>
+<p>
+    Verify that there is accurate, supporting data available. Collate the data for attachment directly to the Change
+    Request, or reference where the data can be obtained separately.
+</p>
+<p>
+    Whenever possible, verify that the problem is reproducible. Reproducible problems have much more likelihood of
+    receiving developer attention and being subsequently fixed; a problem that cannot be reproduced both frustrates
+    development staff and will waste valuable programming resources in fruitless research. You should probably still log
+    all of these incidents, but consider identifying unreproduceable incidents separately from the reproducible ones.
+</p>
+<h4>
+    <a id="ClarifyCRDetail" name="ClarifyCRDetail">Clarify Change Request details</a>
+</h4>
+<p>
+    It is important for Change Requests to be understandable, especially the headline. Make sure that the headline is crisp
+    and concise, articulating clearly the specific issue. A brief headline is useful for summary defect listings and
+    discussion in the Change-Control Board status meetings.
+</p>
+<p>
+    It is also important that the detailed description of the Change Request is unambiguous and can be easily interpreted.
+    It is a good idea to log your Change Requests as soon as possible, but take time to go back and improve and expand on
+    your descriptions before they are viewed by development staff.
+</p>
+<p>
+    Provide candidate solutions, as many as practical. This helps to reduce any remaining ambiguity in the description,
+    often helping to clarify. It also increases the likelihood that the solution will be close to your expectations.
+    Furthermore, it shows that the test team is not only prepared to find the problems, but also to help identify
+    appropriate solutions.
+</p>
+<p>
+    Other details to include are screen image captures, Test Data files, automated Test Scripts, output from diagnostic
+    utilities, and any other information that would be useful to the developers in isolating and correcting the underlying
+    fault.
+</p>
+<h4>
+    <a id="CRSeverityPriority" name="CRSeverityPriority">Indicate the relative impact severity and resolution priority</a>
+</h4>
+<p>
+    Provide an indication to the management and development staff of the severity of the problem. In larger teams, the
+    actual resolution priority is normally left for the management team to determine; however, you might allow individuals
+    to indicate their preferred resolution priority and subsequently adjust it as necessary. As a general rule, assign
+    Change Requests an average resolution priority by default, and raise or lower that priority on a case-by-case basis as
+    necessary.
+</p>
+<p>
+    You may need to differentiate between the impact the Change Request will have on the production environment if it is
+    not addressed, and the impact the Change Request will have on the test effort if it is not addressed. It is just as
+    important for the management team to know when a defect is impacting the testing effort as it is to be aware of the
+    severity of the impact on users.
+</p>
+<p>
+    Sometimes it is difficult to see in advance why you need both attributes. It is possible that an incident may be really
+    severe, such as a system crash, but the actions required to reproduce it very unlikely to occur. In this case, the team
+    may indicate its severity as high, but indicate a very low resolution priority.
+</p>
+<h4>
+    <a id="LogAnotherCR" name="LogAnotherCR">Log additional Change Requests separately</a>
+</h4>
+<p>
+    Incidents often bear out the old adage, "Where there's smoke, there's fire"; as you identify and log one Change
+    Request, you quite often identify other issues that need to be addressed. Avoid the temptation to simply add these
+    additional findings to the existing Change Request: if the information is directly related and helps to solve the
+    existing issue better, then that's OK. If the other issues are different, identifying them against an existing CR may
+    result in those issues not being actioned, not getting appropriate priority in their own right, or impacting the speed
+    at which other issues are addressed.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

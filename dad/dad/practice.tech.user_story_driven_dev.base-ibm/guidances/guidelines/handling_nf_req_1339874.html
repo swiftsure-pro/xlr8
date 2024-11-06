@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Handling Nonfunctional Requirements</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="handling_nf_req">
+<meta name="uma.presentationName" content="Handling Nonfunctional Requirements">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_3uuq0D9KEd6kc5DY7OkMEA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Handling Nonfunctional Requirements</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline explains ways to capture and treat nonfunctional requirements for user story-driven development.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.user_story_driven_dev.base-ibm/tasks/capture_confirmations_BC43F73B.html" guid="_tmYOsDpQEd6RO7HGPRI5lw">Capture Confirmations</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Certain requirements for the system under construction are not about a specific functionality that can be assigned to a
+    team member and implemented in one time box. These requirements typically impose constraints on the system in terms of,
+    for example,&nbsp;how fast, reliable, scalable, useful, portable, or easy to maintain a system should be. Such
+    requirements generally span across multiple user stories of the system and are&nbsp;referred to
+    as&nbsp;<em>nonfunctional</em> requirements, <em>system-wide</em> requirements, <em>technical</em> requirements, or
+    <em>constraints</em>. See <a class="elementLink" href="./../../../core.tech.common.extend_supp/guidances/concepts/system_wide_requirements_B2C4D610.html" guid="_VXZ5wO0IEdqHTdbLTmC5IQ">System-Wide Requirements</a> for more information.
+</p>
+<h3>
+    Approaches to capturing nonfunctional requirements
+</h3>
+<p>
+    There are&nbsp;different approaches&nbsp;to capturing nonfunctional requirements as part of&nbsp;user story-driven
+    development, as described in the three sections that follow.
+</p>
+<h4>
+    Approach 1. Write individual stories
+</h4>
+<p>
+    One way&nbsp;to capture nonfunctional requirements or constraints on the system is to write them as
+    individual&nbsp;stories, which are often referred to as <em>technical stories</em> <a class="elementLinkwithUsertext" href="./../../../core.default.nav_view.base/guidances/supportingmaterials/references_C6FF2A8D.html#COH08" guid="__nHToFndEd2EdJKkAyeBng">[COH08]</a>.
+</p>
+<p>
+    For example, consider this&nbsp;technical story:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p class="quote">
+        As the bank CTO, I want the ATM system to&nbsp;respond to user operations in&nbsp;no more than 2 seconds,&nbsp;so
+        we can adhere to XPTO Standard for banking systems.
+    </p>
+</blockquote>
+<p>
+    This&nbsp;technical story captures what&nbsp;a legitimate&nbsp;user role wants from the system: the bank CTO wants the
+    system to comply&nbsp;with a banking standard&nbsp;related to&nbsp;system performance. Even though it is
+    legitimate,&nbsp;this&nbsp;technical story&nbsp;arguably violates the goal of stories being valuable and, at the same
+    time, sized to be finished in one iteration. This&nbsp;technical story affects or constrains&nbsp;many user stories in
+    the system.&nbsp;Considering that many iterations will pass until all user stories are developed, it is clear that
+    this&nbsp;technical story can't be assigned to one team member and finished in one iteration if it is to&nbsp;show
+    value to all stakeholders — not only to the bank CTO, but also ATM users.
+</p>
+<h4>
+    Approach 2. Include the details in each user story
+</h4>
+<p>
+    Another approach&nbsp;is to capture nonfunctional requirements as part of the details of each user story. This way,
+    each user story clearly contains the acceptance criteria that defines the level of completeness.
+</p>
+<p>
+    Let's take the following user story as an example:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p class="quote">
+        As an ATM user, I want to use an ATM to withdraw cash.
+    </p>
+</blockquote>
+<p>
+    In the details part of that user story, you could capture the nonfunctional requirement this way:
+</p>
+<blockquote>
+    <p>
+        After the user selects and confirms the amount to be withdrawn, the system should complete the operation in no more
+        than 2 seconds.
+    </p>
+</blockquote>
+<p>
+    In this version, when the user story is implemented, tests need to be created. This includes having the appropriate
+    test environment to simulate the operational environment so&nbsp;that both the&nbsp;functionality (the ability to
+    withdraw cash from a bank account)&nbsp;and the performance (how fast the back end operations run) can be tested.
+</p>
+<h4>
+    Approach 3. Combine both methods
+</h4>
+<p>
+    While conversing with stakeholders to flesh out the details of a user story or prioritizing the user stories and
+    developing them, the team might inadvertently miss that a given user story, for example, is constrained by the
+    adherence to XPTO Standard.
+</p>
+<p>
+    A combined approach to capturing the nonfunctional requirements seems the best option: capture the nonfunctional
+    requirements as&nbsp;technical stories (or another notation&nbsp;or free-format text, if that makes sense), and make
+    that list of&nbsp;technical stories&nbsp;visible to the team and stakeholders at all times when prioritization and
+    detailing of user stories is happening. In this way, the team and stakeholders make sure to capture the nonfunctional
+    requirement as an acceptance criterion within the details of each and every user story where that constraint applies.
+</p>
+<p>
+    Another advantage of keeping&nbsp;all of the technical stories&nbsp;on a consolidated list is that if there is a
+    requirement change or a new requirement is added, it becomes visible to the stakeholders and team right away. For
+    example, you might get this change to the performance requirement:&nbsp;
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        As the bank CTO, I want the ATM system to&nbsp;respond to user operations in&nbsp;no more than&nbsp;1
+        second,&nbsp;so we can adhere to XPTOplus Standard for banking systems.
+    </p>
+</blockquote>
+<p dir="ltr">
+    That one-second change and the stricter standard should alert the team to revisit all affected user stories.
+</p>
+<h3>
+    Scheduling nonfunctional requirements
+</h3>
+<p>
+    Based on the previous discussion, a nonfunctional requirement that is captured as an individual technical
+    story&nbsp;may be&nbsp;hard to treat (prioritize, assign to&nbsp;a team member,&nbsp;and implement in one iteration).
+    These technical stories&nbsp;are not&nbsp;prioritized with the user stories, but they typically serve as a reminder
+    that, for example,&nbsp;the system is constrained or needs to adhere to some standard.
+</p>
+<p>
+    On the other hand, stakeholders will most likely prefer to give high priority to user stories that have high business
+    value, which is&nbsp;acceptable&nbsp;from the stakeholders' perspective. However, the team needs to make sure that the
+    user stories that are affected by constraints take precedence over other non-constrained user stories. The team and
+    stakeholders need to find this balance when prioritizing user stories. This is the same as thinking&nbsp;which user
+    stories impact the architecture of the system being developed. Those user stories should be scheduled to be implemented
+    early in the project to&nbsp;help the team build and validate the&nbsp;system architecture&nbsp;early,&nbsp;which
+    helps&nbsp;minimize project risks early.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/system_wide_requirements_B2C4D610.html" guid="_VXZ5wO0IEdqHTdbLTmC5IQ">System-Wide Requirements</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

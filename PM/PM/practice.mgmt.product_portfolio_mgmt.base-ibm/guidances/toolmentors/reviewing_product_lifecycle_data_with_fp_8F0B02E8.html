@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Reviewing Product Lifecycle Data with IBM Rational Focal Point</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="reviewing_product_lifecycle_data_with_fp">
+<meta name="uma.presentationName" content="Reviewing Product Lifecycle Data with IBM Rational Focal Point">
+<meta name="uma.category" content="Tool:rational_focal_point:IBM Rational Focal Point">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="IBM Rational Focal Point">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_P3amIP7hEd2pf77DabzLMA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Reviewing Product Lifecycle Data with IBM Rational Focal Point</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor explains how to review product lifecycle data when using IBM® Rational® Focal Point™.</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.default.tool_def.extend-ibm/tools/rational_focal_point_22FB1AEE.html" guid="_YbyTYBS4Ed6MhpP9jJa1Mw">IBM Rational Focal Point</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.mgmt.product_portfolio_mgmt.base-ibm/tasks/monitor_portfolio_and_conduct_reviews.prod_portf_mgmt_FDE0F659.html" guid="_kcb18BsHEd6iF4LVaEfgRw">Monitor the Portfolio and Conduct Reviews</a>
+</li>
+<li>
+<a href="./../../../practice.mgmt.product_portfolio_mgmt.base-ibm/tasks/optimize_portfolio.prod_portf_mgmt_E6276631.html" guid="_CuhUYBsIEd6iF4LVaEfgRw">Optimize Portfolio</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The examples in this tool mentor are based on the Product Portfolio Management, Version 1.0, add-on and IBM&reg; Rational&reg;
+    Focal Point&trade;, Version 6.4. If you use the add-on, most of the necessary modules and views have already been configured
+    for you. If you are not using the add-on, your workspace will require some configuration to support the features
+    described in this tool mentor.
+</p>
+<h3>
+    Configuration
+</h3>
+<p>
+    First, configure Rational Focal Point with the attributes needed for the product's lifecycle review by following these
+    steps:
+</p>
+<ol>
+    <li>
+        Create a module to store your product data and name it, for example, "Products."
+    </li>
+    <li>
+        Create the necessary attributes:<br />
+        <br />
+        <table title="" border="1" cellspacing="0" cellpadding="2" width="78%">
+            <tbody>
+                <tr>
+                    <th abbr="" width="21%" scope="col">
+                        Attribute Name
+                    </th>
+                    <th abbr="" width="20%" scope="col">
+                        Attribute Type
+                    </th>
+                    <th abbr="" width="59%" scope="col">
+                        Description
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        Product Name
+                    </td>
+                    <td>
+                        Text
+                    </td>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Lifecycle Phase
+                    </td>
+                    <td>
+                        Choice
+                    </td>
+                    <td>
+                        For example: Introduced, Growth, Maturity, Decline
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Actual Revenue
+                    </td>
+                    <td>
+                        Matrix
+                    </td>
+                    <td>
+                        Use a matrix attribute to capture financial data by product, such as revenue or cost
+                    </td>
+                </tr>
+            </tbody>
+        </table><br />
+    </li>
+    <li>
+        Create a display to make the data accessible to your users.
+    </li>
+</ol>
+<p>
+    See the "Configure" section in Focal Point Help for further details on how to create workspaces, modules, attributes,
+    and views.
+</p>
+<h3>
+    Review products by lifecycle phase
+</h3>
+<p>
+    Portfolio managers&nbsp;are interested in following up on how the products in the portfolio distribute over the
+    lifecycle phases. To do this, follow these steps:
+</p>
+<ol>
+    <li>
+        Log in to Rational Focal Point, if you are not already logged in.
+    </li>
+    <li>
+        Open the <strong>Workspace</strong>.
+    </li>
+    <li>
+        Select <strong>Display &gt; Our Product Portfolio (r/w).</strong>
+    </li>
+    <li>
+        Select the <strong>Statistical display</strong>&nbsp;<img alt="" src="./../../../practice.mgmt.product_portfolio_mgmt.base-ibm/guidances/toolmentors/./resources/stat_display.jpg" width="20"         height="20" /> button in the toolbar.
+    </li>
+    <li>
+        Finally, select which attributes to display at the bottom of the page.&nbsp;In this case, select "Lifecycle Phase"
+        in <strong>Row</strong>, "None" in <strong>Column</strong>, and "Number of Elements" in <strong>Cell</strong>.
+    </li>
+    <li>
+        In the result window, you will see how the products distribute over the different lifecycle phases presented in
+        percentage and in absolute value.
+    </li>
+</ol>
+<h3>
+    Review revenue by lifecycle phase and products
+</h3>
+<p>
+    Using the same <strong>Statistical display</strong> as in the previous example, you can view different types of
+    financial information (as long as the types are included in the view definition). For example, if you want to review
+    the actual revenue for all products, in <strong>Cell</strong>, select "Sum: Actual Revenue," instead. The data in the
+    cells is then summarized from all products for that lifecycle phase.
+</p>
+<p>
+    <img alt="Product lifecycle data selections" src="./../../../practice.mgmt.product_portfolio_mgmt.base-ibm/guidances/toolmentors/./resources/prod_lc_data.jpg" />
+</p>
+<p>
+    If you want to view the actual revenue data for a particular product, click the product link in the result view.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

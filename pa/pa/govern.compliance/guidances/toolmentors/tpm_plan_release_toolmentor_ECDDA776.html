@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: How to Use Tivoli Provisioning Manager to Plan a Release Rollout</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="tpm_plan_release_toolmentor">
+<meta name="uma.presentationName" content="How to Use Tivoli Provisioning Manager to Plan a Release Rollout">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_U5Y3cNDBEdqVJPubumbdTw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: How to Use Tivoli Provisioning Manager to Plan a Release Rollout</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor explains how Tivoli Provisioning Manager can help automate the rollout of a release.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../govern.compliance/tasks/rcm_distribute_software_release_D8B38723.html" guid="_kXfnYLrMEdq_f-xxmjgMWA">Distribute Software Release</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This tool mentor is derived from the IBM Tivoli Unified Process (reference TM070).
+</p>
+<h5>
+    Context
+</h5>
+<p class="text-pagetitle">
+    One activity in Release Management is <i>Plan a Release Rollout</i>. In this activity, the details -- concerning
+    specifically what will be done during rollout -- are generated.
+</p>
+<p class="text-normal">
+    This information includes:
+</p>
+<ul>
+    <li class="text-normal">
+        Detailed sequence of events
+    </li>
+    <li class="text-normal">
+        Identification of the Change Items installed, changed, and removed (including multi-site plans)
+    </li>
+    <li class="text-normal">
+        Plans for communicating the release to stakeholders
+    </li>
+    <li class="text-normal">
+        Release notes generated for users
+    </li>
+</ul>
+<h4>
+    Details
+</h4>
+<p class="text-normal">
+    The IBM Tivoli Provisioning Manager product is a resource management solution for both corporate and Internet data
+    centers that provide automated provisioning capability. The product coordinates data center assets to provision based
+    on predefined business processes.
+</p>
+<p class="text-normal">
+    Prior to planning a release rollout, Tivoli Provisioning Manager must be populated with information that describes the
+    environment that is being managed. To achieve this, Tivoli Provisioning Manager gives data center administrators the
+    ability to model their data center infrastructure environments. Included within this model are both <em>physical</em>
+    assets (for example servers, routers, switches, and load balancers), as well as <em>logical</em> assets (software, IP
+    subnets, and VLANS). After population of this information is complete, it is possible to execute a variety of
+    <em>automations</em> against this dataset that impact change on that particular device.
+</p>
+<p class="text-normal">
+    Changes can range in scope anywhere from a configuration change to a hardware element change within a server, to the
+    installation of software on a particular endpoint. Regardless of the type of change, the method by which these changes
+    are enacted (that is, the <em>recipe</em> for these changes) is encapsulated within a concept called
+    <em>workflows</em>.
+</p>
+<p class="text-normal">
+    A workflow is a simple program -- with a number of constructs -- that is used to manage a data center. It can be
+    comprised of a number of base steps that are intended to carry out a specific task, or it can include a large number of
+    steps that include other workflows, Tivoli Provisioning Manager data center model queries, Sun&trade; Java&trade; plug-ins, and
+    scripts that are run on target machines. For example, modification to data center infrastructure (route changes, VLAN
+    assignments), configuration and allocation of servers (software installation and configuration), and specific command
+    actions (reboot server, power off device, install image) can all be accomplished using workflows. In this way,
+    workflows make it possible to build a powerful library of reusable processes that can be assembled to meet any data
+    center process requirement.
+</p>
+<p class="text-normal">
+    Tivoli Provisioning Manager workflows allow data center administrators and operators to plan a release rollout
+    automation (or action) against a specific device successfully. These actions can be executed in response to a specific
+    condition occurring in real-time, based on a schedule or, finally, executed at run-time through manual administrator
+    intervention.
+</p>
+<p class="text-normal" align="center">
+    <img height="600" alt="An example of a Tivoli Provisioning Manager workflow"     src="./../../../govern.compliance/guidances/resources/toolmentor_tpm_planrel.png" width="600" />
+</p>
+<div align="left">
+    <p class="text-normal" align="center">
+        Figure 1 : An example of a Tivoli Provisioning Manager workflow
+    </p>
+    <p class="text-normal">
+        By referencing information that is stored within the <em>data center model</em> (DCM) -- which is the database that
+        contains the modeled infrastructure component information that represents the data center assets -- workflows
+        provide an intuitive and simple way to carry out administrative tasks.
+    </p>
+    <p class="text-normal">
+        Workflows allow administrators to encapsulate future actions to be carried out across the infrastructure into a
+        <em>recipe</em> format using data gleaned from the data center model. Rollback scripts, precautions, and validity
+        checking are a few of the capabilities that are offered within workflows to provide successful data and asset
+        protection should a problem occur. By carefully building safe release rollout plans, safeguards are put in place to
+        gracefully handle any errors that might result should an error occur during execution of the automation.
+    </p>
+    <p class="text-normal">
+        Following a successfully completed workflow procedure, the DCM is updated to reflect the change against the
+        infrastructure. Operators and administrators can view the changes using the Web management console interface.
+        Execution results are stored within event logs, providing a historical audit trail of previous workflow
+        executions.<br />
+    </p>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <br />
+                    <br />
+                     
+                    <h5 class="text-normal" align="left">
+                        More Information
+                    </h5>
+                    <p class="text-normal" align="left">
+                        To get more information, speak to a representative, or purchase IBM Tivoli IT Service Management
+                        tools, visit the IBM Tivoli IT Service Management home page at <a href="http://www.ibm.com/software/tivoli/itservices" target="_parent">http://www.ibm.com/software/tivoli/itservices</a>.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="text-copyright" align="left">
+                        &copy; Copyright IBM Corporation 2005, 2007. All Rights Reserved
+                    </div><br class="text-normal" />
+                    <br />
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+    <br />
+    <br />
+    <br />
+</div><br class="text-normal" />
+<br />
+<br class="text-normal" />
+<br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

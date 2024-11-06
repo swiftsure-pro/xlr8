@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Concurrency</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="concurrency">
+<meta name="uma.presentationName" content="Concurrency">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_O4WLoH3FEd2eJPu0NyCdUg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Concurrency</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Concurrency is the tendency for things to happen at the same time in a system.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.evolutionary_arch.base/tasks/envision_the_arch_FF123A81.html" guid="_0f-1oMlgEdmt3adZL5Dmdw">Envision the Architecture</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Concurrency is the tendency for things to happen at the same time in a system. Concurrency is a natural phenomenon, of
+    course. In the real world, at any given time, many things are happening simultaneously. When we design software to
+    monitor and control real-world systems, we must deal with this natural concurrency.
+</p>
+<p>
+    When dealing with concurrency issues in software systems, there are generally two aspects that are important: being
+    able to detect and respond to external events occurring in a random order, and ensuring that these events are responded
+    to in some minimum required interval.
+</p>
+<p>
+    If each concurrent activity evolved independently, in a truly parallel fashion, this would be relatively simple: we
+    could simply create separate programs to deal with each activity. The challenges of designing concurrent systems arise
+    mostly because of the interactions which happen between concurrent activities. When concurrent activities interact,
+    some sort of coordination is required.
+</p>
+<p align="center">
+    <img height="357" alt="Diagram is detailed in the content." src="./../../../practice.tech.evolutionary_arch.extend-ibm/guidances/concepts/./resources/co_cncr1.gif" width="297" />
+</p>
+<p class="picturetext" align="center">
+    Figure 1:&nbsp; Example of concurrency at work: parallel activities that do not interact have simple concurrency
+    issues. It is when parallel activities interact or share the same resources that concurrency issues become important.
+</p>
+<p>
+    Vehicular traffic provides a useful analogy. Parallel traffic streams on different roadways having little interaction
+    cause few problems. Parallel streams in adjacent lanes require some coordination for safe interaction, but a much more
+    severe type of interaction occurs at an intersection, where careful coordination is required.
+</p>
+<h3>
+    <a id="Why are we interested?" name="Why are we interested?">Why are we interested in Concurrency?</a>
+</h3>
+<p>
+    Some of the driving forces for concurrency are external. That is, they are imposed by the demands of the environment.
+    In real-world systems many things are happening simultaneously and must be addressed "in real-time" by software. To do
+    so, many real-time software systems must be "reactive." They must respond to externally generated events which may
+    occur at somewhat random times, in some-what random order, or both.
+</p>
+<p>
+    Designing a conventional procedural program to deal with these situations is extremely complex. It can be much simpler
+    to partition the system into concurrent software elements to deal with each of these events. The key phrase here is
+    "can be", since complexity is also affected by the degree of interaction between the events.
+</p>
+<p>
+    There can also be internally inspired reasons for concurrency [<a class="elementLinkWithUserText" href="./../../../core.default.nav_view.base/guidances/supportingmaterials/references_C6FF2A8D.html#LEA97" guid="__nHToFndEd2EdJKkAyeBng">LEA97</a>]. Performing tasks in parallel can substantially speed up the computational
+    work of a system if multiple CPUs are available. Even within a single processor, multitasking can dramatically speed
+    things up by preventing one activity from blocking another while waiting for I/O, for example. A common situation where
+    this occurs is during the startup of a system. There are often many components, each of which requires time to be made
+    ready for operation. Performing these operations sequentially can be painfully slow.
+</p>
+<p>
+    Controllability of the system can also be enhanced by concurrency. For example, one function can be started, stopped,
+    or otherwise influenced in mid-stream by other concurrent functions-something extremely difficult to accomplish without
+    concurrent components.
+</p>
+<h3>
+    <a id="Why is it hard?" name="Why is it hard?">What makes Concurrent Software Difficult?</a>
+</h3>
+<p>
+    With all these benefits, why don't we use concurrent programming everywhere?
+</p>
+<p>
+    Most computers and programming languages are inherently sequential. A procedure or processor executes one instruction
+    at a time. Within a single sequential processor, the illusion of concurrency must be created by interleaving the
+    execution of different tasks. The difficulties lie not so much in the mechanics of doing so, but in the determination
+    of just when and how to interleave program segments which may interact with each other.
+</p>
+<p>
+    Although achieving concurrency is easy with multiple processors, the interactions become more complex. First there is
+    the question of communication between tasks running on different processors. Usually there are several layers of
+    software involved, which increase complexity and add timing overhead. Determinism is reduced in multi-CPU systems,
+    since clocks and timing may differ, and components may fail independently.
+</p>
+<p>
+    Finally, concurrent systems can be more difficult to understand because they lack an explicit global system state. The
+    state of a concurrent system is the aggregate of the states of its components.
+</p>
+<h3>
+    <a id="Elevator example" name="Elevator example">Example of a Concurrent, Real-time System: An Elevator System</a>
+</h3>
+<p align="left">
+    As an example to illustrate the concepts to be discussed, we will use an elevator system. More precisely, we mean a
+    computer system designed to control a group of elevators at one location in a building. Obviously there may be many
+    things going on concurrently within a group of elevators-or nothing at all! At any point in time someone on any floor
+    may request an elevator, and other requests may be pending. Some of the elevators may be idle, while others are either
+    carrying passengers, or going to answer a call, or both. Doors must open and close at appropriate times. Passengers may
+    be obstructing the doors, or pressing door open or close buttons, or selecting floors-then changing their minds.
+    Displays need to be updated, motors need to be controlled, and so on, all under the supervision of the elevator control
+    system. Overall, it's a good model for exploring concurrency concepts, and one for which we share a reasonably common
+    degree of understanding and a working vocabulary.
+</p>
+<p class="picturetext" align="center">
+    <br />
+    <img height="242" alt="Diagram is detailed in the content." src="./../../../practice.tech.evolutionary_arch.extend-ibm/guidances/concepts/./resources/co_cncr2.gif" width="399" /><br />
+    Figure 2:&nbsp;&nbsp; A scenario involving two elevators and five potential passengers distributed over 11 floors.
+</p>
+<p>
+    As potential passengers place demands upon the system at different times, the system attempts to provide the best
+    overall service by selecting elevators to answer calls based upon their current states and projected response times.
+    For example, when the first potential passenger, Andy, calls for an elevator to go down, both are idle, so the closest
+    one, Elevator 2, responds, although it must first travel upward to get to Andy. On the other hand, a few moments later
+    when the second potential passenger, Bob, requests an elevator to go up, the more distant Elevator 1 responds, since it
+    is known that Elevator 2 must travel downward to an as-yet-unknown destination before it can answer an up call from
+    below.
+</p>
+<h3>
+    <a id="Concurrency as a simplifying strategy" name="Concurrency as a simplifying strategy">Concurrency as a Simplifying
+    Strategy</a>
+</h3>
+<p>
+    If the elevator system only had one elevator and that elevator had only to serve one passenger at a time, we might be
+    tempted to think we could handle it with an ordinary sequential program. Even for this "simple" case, the program would
+    require many branches to accommodate different conditions. For example, if the passenger never boarded and selected a
+    floor, we would want to reset the elevator to allow it to respond to another call.
+</p>
+<p>
+    The normal requirement to handle calls from multiple potential passengers and requests from multiple passengers
+    exemplifies the external driving forces for concurrency we discussed earlier. Because the potential passengers lead
+    their own concurrent lives, they place demands on the elevator at seemingly random times, no matter what the state of
+    the elevator. It is extremely difficult to design a sequential program that can respond to any of these external events
+    at any time while continuing to guide the elevator according to past decisions.
+</p>
+<h3>
+    <a id="Abstracting Concurrency" name="Abstracting Concurrency">Abstracting Concurrency</a>
+</h3>
+<p>
+    In order to design concurrent systems effectively, we must be able to reason about the role of concurrency in the
+    system, and in order to do this we need abstractions of concurrency itself.
+</p>
+<p>
+    The fundamental building blocks of concurrent systems are "activities" which proceed more or less independently of each
+    other. A useful graphical abstraction for thinking about such activities is Buhr's "timethreads." [<a class="elementLinkWithUserText" href="./../../../core.default.nav_view.base/guidances/supportingmaterials/references_C6FF2A8D.html#BUH96" guid="__nHToFndEd2EdJKkAyeBng">BUH96</a>] Our elevator scenario in Figure 3 actually used a form of them. Each activity
+    is represented as a line along which the activity travels. The large dots represent places where an activity starts or
+    waits for an event to occur before proceeding. One activity can trigger another to continue, which is represented in
+    the timethread notation by touching the waiting place on the other timethread.
+</p>
+<p align="center">
+    <img height="190" alt="Diagram is detailed in the content." src="./../../../practice.tech.evolutionary_arch.extend-ibm/guidances/concepts/./resources/co_cncr3.gif" width="273" />
+</p>
+<p class="picturetext" align="center">
+    Figure 3:&nbsp;&nbsp; A visualization of threads of execution
+</p>
+<p>
+    The basic building blocks of software are procedures and data structures, but these alone are inadequate for reasoning
+    about concurrency. As processor executes a procedure it follows a particular path depending upon current conditions.
+    This path may be called the "thread of execution" or "thread of control." This thread of control may take different
+    branches or loops depending upon the conditions which exist at the time, and in real-time systems may pause for a
+    specified period or wait for a scheduled time to resume.
+</p>
+<p>
+    From the point of view of the program designer, the thread of execution is controlled by the logic in the program and
+    scheduled by the operating system. When the software designer chooses to have one procedure invoke others, the thread
+    of execution jumps from one procedure to another, then jumping back to continue where it left off when a return
+    statement is encountered.
+</p>
+<p>
+    From the point of view of the CPU, there is only one main thread of execution that weaves through the software,
+    supplemented by short separate threads which are executed in response to hardware interrupts. Since everything else
+    builds on this model, it is important for designers to know about it. Designers of real-time systems, to a greater
+    degree than designers of other types of software, must understand how a system works at a very detailed level. This
+    model, however, is at such a low level of abstraction that it can only represent concurrency very coarse
+    granularity-that of the CPU. To design complex systems, it is useful to be able to work at various levels of
+    abstraction. Abstraction, of course, is the creation of a view or model that suppresses unnecessary details so that we
+    may focus on what is important to the problem at hand.
+</p>
+<p>
+    To move up one level, we commonly think of software in terms of layers. At the most fundamental level, the Operating
+    System (OS) is layered between the hard-ware and the application software. It provides the application with
+    hardware-based services, such as memory, timing, and I/O, but it abstracts the CPU to create a virtual machine that is
+    independent of the actual hardware configuration.
+</p><br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

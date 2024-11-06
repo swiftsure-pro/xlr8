@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Practice: User Story-Driven Development</title>
+<meta name="uma.type" content="Practice">
+<meta name="uma.name" content="user_story_driven_dev_practice">
+<meta name="uma.presentationName" content="User Story-Driven Development">
+<meta name="element_type" content="Practice">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_47rvtDpPEd6RO7HGPRI5lw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Practice: User Story-Driven Development</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/practice.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This practice describes how to capture requirements as user stories, which are then used to guide planning, development, and testing.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content References</th><td class="sectionTableCell">
+<ul>
+<li>
+<img src="./../../../images/roadmap.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.base-ibm/guidances/roadmaps/how_to_adopt_DBA8B1E1.html" guid="_47rvtTpPEd6RO7HGPRI5lw">How to Adopt the User Story-Driven Development Practice</a>
+</li>
+</ul>
+<ul>
+<li>Key Concepts</li>
+<ul>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.base-ibm/guidances/concepts/epics_and_themes_F9086951.html" guid="_QtScMD5xEd6FxpOwnkUDmw">Epics and Themes</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.base-ibm/guidances/concepts/invest_model_2D82989.html" guid="_K8khID55Ed6FxpOwnkUDmw">INVEST Model</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp/guidances/concepts/requirements_8006414F.html" guid="_0Wh-sMlgEdmt3adZL5Dmdw">Requirements</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.base-ibm/guidances/concepts/user_stories_concepts_overview_CF0C4BB6.html" guid="_HRXuwD9KEd6kc5DY7OkMEA">User Story Concepts Overview</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.base-ibm/workproducts/user_role_8702F7D0.html" guid="_JzzJ4DpVEd6RO7HGPRI5lw">User Role</a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.base-ibm/workproducts/user_story_411E01B9.html" guid="_47rvrjpPEd6RO7HGPRI5lw">User Story</a>
+</li>
+</ul>
+<ul>
+<li>Tasks</li>
+<ul>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.base-ibm/tasks/capture_confirmations_BC43F73B.html" guid="_tmYOsDpQEd6RO7HGPRI5lw">Capture Confirmations</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.base-ibm/tasks/identify_user_roles_and_user_stories_EDF03A5D.html" guid="_47rvxTpPEd6RO7HGPRI5lw">Identify User Roles and User Stories</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.base-ibm/tasks/refine_user_roles_and_stories_4BBBE1C9.html" guid="_47rvrzpPEd6RO7HGPRI5lw">Refine User Roles and User Stories</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Guidance</li>
+<ul>
+<li>
+<img src="./../../../images/template.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.base-ibm/guidances/templates/user_story_card_BB209AE6.html" guid="_OxmPIEr0Ed6fy8R0gfv61g">User Story Card</a>
+</li>
+<li>Tool Mentors</li>
+<ul>
+<li>
+<img src="./../../../images/toolmentor.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.extend-ibm/guidances/toolmentors/capturing_confirmations_DCC75453.html" guid="_Q2rdYNX-Ed6NXbVE_51_NQ">Capturing Confirmations in IBM Rational Team Concert</a>
+</li>
+<li>
+<img src="./../../../images/toolmentor.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.extend-ibm/guidances/toolmentors/identifying_user_stories_5F08DB88.html" guid="_02o9QNYBEd6NXbVE_51_NQ">Identifying User Stories in IBM Rational Team Concert</a>
+</li>
+<li>
+<img src="./../../../images/toolmentor.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.extend-ibm/guidances/toolmentors/refining_user_stories_DDE12B7D.html" guid="_yaLh4NYBEd6NXbVE_51_NQ">Refining User Stories in Rational Team Concert</a>
+</li>
+</ul>
+<li>Guidelines</li>
+<ul>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.base-ibm/guidances/guidelines/breaking_down_stories_6B574135.html" guid="_vQWOcDpWEd6RO7HGPRI5lw">Breaking Down User Stories</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.base-ibm/guidances/guidelines/handling_nf_req_1339874.html" guid="_3uuq0D9KEd6kc5DY7OkMEA">Handling Nonfunctional Requirements</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.base-ibm/guidances/guidelines/prioritizing_user_stories_87ECBBF8.html" guid="_r_W-0DpWEd6RO7HGPRI5lw">Prioritizing User Stories</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.user_story_driven_dev.base-ibm/guidances/guidelines/user_roles_modeling_DF5DD91E.html" guid="_zfqx4E7LEd6jv7uk8SIgdg">User-Roles Modeling</a>
+</li>
+</ul>
+</ul>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.mgmt.slot.base/workproducts/project_work_slot_F12BAC46.html" guid="_1QZI8EfUEdyiPI8btkmvmw">[Project Work]</a>
+</li>
+<li>
+<a href="./../../../core.tech.slot.base/workproducts/technical_specification_slot_2812F7EF.html" guid="_i3vkoLS-EduDY8LNbMCDBA">[Technical Specification]</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    Consider adopting this practice if you are looking for a requirements approach that has the following characteristics:
+</p>
+<ul>
+    <li>
+        Requirements captured from the users' perspective
+    </li>
+    <li>
+        Requirements defined in terms of incremental capabilities that can be developed and delivered
+    </li>
+    <li>
+        Simple and straightforward technique requiring minimal training
+    </li>
+    <li>
+        Requirements kept brief, with details intentionally deferred to implementation, to minimize overhead of changing
+        requirements
+    </li>
+    <li>
+        Informal requirements specification
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Background</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p> A user story captures the intended functionality of the system under development, 
+  from the User role's perspective. It is a simple, clear, brief description in 
+  business language, expressed within the context&nbsp;of the need or how the 
+  capability will be used in the system. Here are a few examples: </p>
+<ul>
+    
+  <li> As an ATM user, I want to use my debit card to pay my electricity bill. 
+  </li>
+    
+  <li> As a branch manager, I want to track transactions at my branch so that 
+    I can identify customers to upsell.</li>
+    
+  <li> As a student, I want to enroll in a course so that I can complete my degree.</li>
+    
+  <li> As an online customer, I want to search for items so that I can add them 
+    to my order.</li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    The User Story-Driven Development practice describes how to capture requirements with user stories and how the user
+    stories&nbsp;influence or guide later decisions in the development lifecycle. User stories are an important input to
+    other practices.
+</p>
+<p>
+    User stories are prioritized, estimated, decomposed into tasks, and scheduled&nbsp;as part of project management
+    practices.&nbsp; User story details guide the design, implementation, and testing&nbsp;of the story.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">How to read this practice</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p> The best way to review a practice is to familiarize yourself with the enablement 
+  materials and then review key concepts, work products, tasks, and the more detailed 
+  guidance. You can do this either by reviewing the guidance category directly 
+  or by navigating from tasks and work products to their related guidance. </p>
+<p> You might first want to become familiar with general requirements concepts: 
+  <a class="elementLink" href="./../../../core.tech.common.extend_supp/guidances/concepts/requirements_8006414F.html" guid="_0Wh-sMlgEdmt3adZL5Dmdw">Requirements</a>. 
+</p>
+<p> Then become familiar with concepts related to user stories: </p>
+<ul>
+    <li>
+        <a class="elementLink" href="./../../../practice.tech.user_story_driven_dev.base-ibm/guidances/concepts/user_stories_concepts_overview_CF0C4BB6.html" guid="_HRXuwD9KEd6kc5DY7OkMEA">User Story Concepts Overview</a>
+    </li>
+    <li>
+        <a class="elementLink" href="./../../../practice.tech.user_story_driven_dev.base-ibm/guidances/concepts/epics_and_themes_F9086951.html" guid="_QtScMD5xEd6FxpOwnkUDmw">Epics and Themes</a>
+    </li>
+    <li>
+        <a class="elementLink" href="./../../../practice.tech.user_story_driven_dev.base-ibm/guidances/concepts/invest_model_2D82989.html" guid="_K8khID55Ed6FxpOwnkUDmw">INVEST Model</a>
+    </li>
+</ul>
+<p> This practice focuses on two work products: </p>
+<ul>
+    <li>
+        <a class="elementLink" href="./../../../practice.tech.user_story_driven_dev.base-ibm/workproducts/user_story_411E01B9.html" guid="_47rvrjpPEd6RO7HGPRI5lw">User Story</a>
+    </li>
+    <li>
+        <a class="elementLink" href="./../../../practice.tech.user_story_driven_dev.base-ibm/workproducts/user_role_8702F7D0.html" guid="_JzzJ4DpVEd6RO7HGPRI5lw">User Role</a>
+    </li>
+</ul>
+<p> User stories&nbsp;go through similar states: they are identified and outlined 
+  so that they can be prioritized, and then details are added.&nbsp;<a class="elementLink" href="./../../../practice.tech.user_story_driven_dev.base-ibm/customcategories/usdd_tasks_20A16B25.html" guid="_JSnOwDpdEd6RO7HGPRI5lw">Tasks</a> 
+  lists the relevant activities. </p>
+<p> In addition, guidelines and tool mentors associated with each task provide 
+  details about how to perform the task.&nbsp;Templates associated with the work 
+  products guide you in their completion and evaluation. </p>
+<p>
+    Measurements can guide you on assessing how well you are following this practice.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Levels of Adoption</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p> If you need a detailed requirements specification, or if there is a large 
+  number of requirements or complex dependencies between requirements, it might 
+  be better to use alternative techniques, such as structured use cases.&nbsp;For 
+  more on how to adopt this practice, see the <a class="elementLink" href="./../../../practice.tech.user_story_driven_dev.base-ibm/guidances/roadmaps/how_to_adopt_DBA8B1E1.html" guid="_47rvtTpPEd6RO7HGPRI5lw">How to Adopt the User Story-Driven Development Practice</a> roadmap.</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Additional Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><h3>
+    Books and Articles<br />
+    <br />
+</h3>
+<table width="100%" summary="layout table" border="0">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                Mike Cohn 2004. <em>User Stories Applied: For Agile Software Development.</em> Adisson-Wesley Signature
+                Series.
+            </td>
+        </tr>
+        <tr>
+            <td width="10%">
+            </td>
+            <td style="PADDING-BOTTOM: 10px" width="78%">
+                This book presents the concept and technique of user stories as a way to gather customer requirements.
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table width="100%" summary="layout table" border="0">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                Scott Ambler&nbsp;2004. <em>The Object Primer</em> <em>Third Edition: Agile Model Driven Development with
+                UML 2</em>. Cambridge University Press.
+            </td>
+        </tr>
+        <tr>
+            <td width="10%">
+            </td>
+            <td style="PADDING-BOTTOM: 10px" width="78%">
+                This book covers the basic fundamentals of object-oriented software engineering and modeling techniques.
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    For more information on this practice, see the <a href="http://www.ibm.com/developerworks/rational/practices/" target="_blank">practice resource page IBM&reg; DeveloperWorks&reg;</a>.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

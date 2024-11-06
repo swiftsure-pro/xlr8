@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Software Architecture</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="software_architecture.cbswa">
+<meta name="uma.presentationName" content="Software Architecture">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_VlZYEDjdEd2pP6CZ5iojHg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Software Architecture</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Architecture is the fundamental organization of a system embodied in its components, their relationships to each other and to the environment, and the principles guiding its design and evolution.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/architectural_pattern_7308BF1.html" guid="_rmX1gIBmEd2z9IawWqZSFw">Architectural Pattern</a>
+</li>
+<li>
+<a href="./../../../practice.tech.evolutionary_arch.base/workproducts/architecture_notebook_9BB92433.html" guid="_0XAf0MlgEdmt3adZL5Dmdw">Architecture Notebook</a>
+</li>
+<li>
+<a href="./../../../practice.tech.evolutionary_design.base/guidances/concepts/design_E36137FA.html" guid="_bFjlAPTYEduDKIuqTXQ8SA">Design</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/executable_arch_D4E68CBD.html" guid="_O1kAANvfEduv2KOT-Teh6w">Executable Architecture</a>
+</li>
+<li>
+<a href="./../../../practice.tech.evolutionary_arch.base/guidances/roadmaps/how_to_adopt_evolutionary_arch_practice_FEFA2CCF.html" guid="_Odpz8NciEdy1nJEYZGzN4A">How to adopt the Evolutionary Architecture practice</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/reference_architecture_4159505E.html" guid="_CriTYESUEd2eKeXZgLpnkQ">Reference Architecture</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3 style="MARGIN: auto 0in">
+    Purpose
+</h3>
+<p>
+    The purpose of architecture is to:
+</p>
+<ul>
+    <li>
+        <strong>Describe the structure.</strong> It describes the essential structure of the system.
+    </li>
+    <li>
+        <strong>Capture decisions.</strong> It captures the decisions guiding the structure of the system to ensure its
+        integrity and understandability. Team members who were not involved in architectural decisions need to understand
+        the reasoning behind the architecture so that they can best address the needs of the system.
+    </li>
+    <li>
+        <strong>Identify risks.</strong> It identifies and attacks risks to the system. As the project progresses,
+        developers can more rapidly reduce the variance in their estimates on what they can deliver and when.
+    </li>
+    <li>
+        <strong>Provide guidance.</strong> It provides context and guidance for developers to construct the system. It
+        describes the motivations behind the architectural decisions so that developers can robustly implement those
+        decisions.
+    </li>
+    <li>
+        <strong>Overview the system.</strong> It provides an overview of the system to whomever must maintain it.
+    </li>
+    <li>
+        <strong>Organize the project and team.</strong> It defines the project structure and team organization.
+        Architectural elements make excellent units of implementation, unit testing, integration, configuration management,
+        and documentation.
+    </li>
+</ul>
+<h3 style="MARGIN: auto 0in">
+    Description
+</h3>
+<p>
+    <span lang="EN-GB" style="mso-ansi-language: EN-GB">Architecture is the fundamental organization of a <span     style="mso-bidi-font-style: italic">system</span> embodied in its <span     style="mso-bidi-font-style: italic">components</span>, their relationships to each other and to the environment, and
+    the principles guiding its design and evolution.</span>
+</p>
+<p>
+    Architecture is one aspect of design that concentrates on some specific features. It specifies a system's overall
+    system structure, gross organization, protocols for communication, synchronization, data access, assignment of
+    functionality among elements, physical distribution, composition of elements, scaling and performance, and selection
+    among design alternatives. <a href="./../../../core.default.nav_view.base/guidances/supportingmaterials/references_C6FF2A8D.html" guid="__nHToFndEd2EdJKkAyeBng">[GAR93]</a>
+    Beyond structure, it addresses system integrity, economic constraints, aesthetic concerns, and style. It takes into
+    consideration the system as a whole, in its user environment and its development environment. <a href="./../../../core.default.nav_view.base/guidances/supportingmaterials/references_C6FF2A8D.html" guid="__nHToFndEd2EdJKkAyeBng">[IEP1471]</a>.
+</p>
+<p>
+    The architecture focuses on specific aspects of the overall system design, concentrating on structure, essential
+    elements, key scenarios, and those aspects that have a lasting impact on system qualities such as performance,
+    reliability, adaptability, and cost. It also defines the set of architectural mechanisms, patterns, and styles that
+    will guide the rest of the design, ensuring its integrity.
+</p>
+<p>
+    The architecture can contain any information and references that are appropriate in communicating how developers should
+    build the system. Some information worth capturing as part of the software architecture includes:
+</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 22.5pt; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2">
+    <span style="FONT-SIZE: 10pt; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Architectural goals</span>
+</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 22.5pt; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2">
+    <span style="FONT-SIZE: 10pt; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Architecturally significant
+    requirements</span>
+</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 22.5pt; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2">
+    <span style="FONT-SIZE: 10pt; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Constraints on the
+    architecture</span>
+</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 22.5pt; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2">
+    <span style="FONT-SIZE: 10pt; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Key abstractions</span>
+</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 22.5pt; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2">
+    <span style="FONT-SIZE: 10pt; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Architectural
+    Mechanisms</span>
+</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 22.5pt; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2">
+    <span style="FONT-SIZE: 10pt; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Architectural
+    patterns</span>
+</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 22.5pt; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2">
+    <span style="FONT-SIZE: 10pt; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Deployment approach</span>
+</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 22.5pt; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2">
+    <span style="FONT-SIZE: 10pt; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Architecturally significant
+    design elements</span>
+</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 22.5pt; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2">
+    <span style="FONT-SIZE: 10pt; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Critical system
+    interfaces</span>
+</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 22.5pt; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2">
+    <span style="FONT-SIZE: 10pt; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Assets to be reused</span>
+</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 22.5pt; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2">
+    <span style="FONT-SIZE: 10pt; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Architectural
+    decisions</span>
+</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 22.5pt; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2">
+    <span style="FONT-SIZE: 10pt; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Guidance for
+    developers</span>
+</p>
+<p>
+    A software architecture may have an <b>architectural style</b>. The style reduces the set of possible forms from which
+    to choose, and imposes a certain degree of uniformity to the architecture. The style may be defined by a set of
+    patterns, or by the choice of specific components or connectors as the basic building blocks.
+</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt">
+    <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">The best way to validate the architecture is to actually implement
+    it. See <a class="elementLinkWithType" href="./../../../core.tech.common.extend_supp/guidances/concepts/executable_arch_D4E68CBD.html" guid="_O1kAANvfEduv2KOT-Teh6w">Concept: Executable Architecture</a>.</span>
+</p>
+<h4 style="MARGIN: auto 0in">
+    <span style="FONT-SIZE: 13.5pt">Representation</span>
+</h4>
+<p>
+    You can represent the architecture in many forms and from many viewpoints, depending on the project's needs and the
+    project team's preferences. It need not be a formal document. You can often communicate the essence of the architecture
+    through a series of simple diagrams on a whiteboard, or as a list of decisions. The illustration just needs to show the
+    nature of the proposed solution, convey the governing ideas, and represent the major building blocks.
+</p>
+<p>
+    You can use a precise set of models or documents that describe the various aspects of the system's key elements.
+    Expressing it as a skeletal implementation is another option, although this may need to be preserved to ensure that the
+    essence of the system can be understood as the system grows.
+</p>
+<p style="MARGIN-TOP: 0in">
+    For more complex systems, you can represent the architecture as a more comprehensive set of views that describe the
+    architecture from a number of viewpoints. See <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp/guidances/concepts/arch_views_viewpoints_7A6CD31.html" guid="_kgtcoNc8Edyd7OybSySFxg">Concept: Architectural Views and Viewpoints</a>.
+</p><br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/arch_constraints_AE56B662.html" guid="_jdKSsNpiEdyP58ppo1Ieaw">Architectural Constraints</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/arch_goals_CB41D8AE.html" guid="_HlRqANpbEdyP58ppo1Ieaw">Architectural Goals</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/arch_significant_requirements_1EE5D757.html" guid="_HrZGIA4MEduibvKwrGxWxA">Architecturally Significant Requirements</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/arch_mechanism_2932DFB6.html" guid="_mzxI0A4LEduibvKwrGxWxA">Architectural Mechanism</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/arch_views_viewpoints_7A6CD31.html" guid="_kgtcoNc8Edyd7OybSySFxg">Architectural Views and Viewpoints</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/component_CB167D48.html" guid="_0YP18MlgEdmt3adZL5Dmdw">Component</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/executable_arch_D4E68CBD.html" guid="_O1kAANvfEduv2KOT-Teh6w">Executable Architecture</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/key_abstractions_1474DBF2.html" guid="_pLEGUNqGEdy88NBoQgfGyg">Key Abstractions</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/pattern_10BE6D96.html" guid="_0YJvUMlgEdmt3adZL5Dmdw">Pattern</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/reference_architecture_4159505E.html" guid="_CriTYESUEd2eKeXZgLpnkQ">Reference Architecture</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Report: Interface Requirements Specification</title>
+<meta name="uma.type" content="Report">
+<meta name="uma.name" content="interface_requirements_specification">
+<meta name="uma.presentationName" content="Interface Requirements Specification">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="4.361923447823255E-305"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Report: Interface Requirements Specification</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/report.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"> This report describes the requirements imposed on the system to support particular interconnections external to the system. Acceptance of the system by the customer is conditional on support for interfaces and connections as specified here. The title of this report, and its companion the Interface Design Specification , is chosen to make it familiar to those used to working with the Interface Requirements Specification (IRS) and Interface Design Description (IDD) that were required by software development standards such as Mil-Std-498. Its use here is extended beyond software interconnections to include, for example, mechanical, electrical, thermal, and human interconnections. Thus, a collection of these reports could cover the needs of the Interface Control Document (ICD), a well-known artifact to those in the systems engineering domain. Note that the usage of the term &quot;interface&quot; here is not strictly in accordance with UML. Described in these reports are interconnects , which have at least two interfaces, one to the system and one to the actor, and some type of connection between the two. From the perspective of the system, it offers, provides , or supports an interface (realizes it in UML terminology) and requires an interface to be realized by the actor (at the other end of the connection). In this way, the interconnect forms a contract between system and actor. This report is concerned with what is required, and so identifies actors, the entities that flow between the actors and the system (and any constraining protocols), and any requirements or constraints on the connection. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../systems.mdsd/workproducts/rup_analysis_model_9DF7420F.html" guid="_9c3twN0MEdmhp5PapAYf4w">rup_analysis_model</a>
+</li>
+<li>
+<a href="./../../../systems.mdsd/workproducts/rup_system_analysis_model_D73BECB2.html" guid="{CB35D940-20DA-446A-B262-C614C7753D12}">System Analysis Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Purpose" name="Purpose"></a><a id="Brief Outline" name="Brief Outline"></a> 
+<p>
+    <b>Identification and overview</b>
+</p>
+<p>
+    Briefly identify the system and the interfacing entities which this report describes.
+</p>
+<p>
+    <b>Interface requirements</b>
+</p>
+<blockquote>
+    <p>
+        <b>Diagram</b>
+    </p>
+    <p>
+        Include the initial Context Diagram (show only what is <i>required -</i>for example, UML interfaces usually come
+        later, as part of design). Label each interconnect (usually one for each actor-system pair).
+    </p>
+    <p>
+        <b>Interconnects</b>
+    </p>
+    <p>
+        For each labeled interconnect, include a paragraph which briefly describes (as appropriate):
+    </p>
+    <ul>
+        <li>
+            The interfacing entities (usually only the actor, because the other end is the system in each case).
+        </li>
+        <li>
+            The type of the interconnect (for example, data transfer, mechanical linkage, mass or energy transfer).
+        </li>
+        <li>
+            Logical and physical constraints on the connection, for example the medium, bandwidth, reliability, latency,
+            attenuation, security or privacy considerations (such as encryption), dimensions, loads, tolerances, voltages,
+            and so on. Do not specify these as requirements if the specification of logical and physical characteristics
+            can be deferred until design or implementation.
+        </li>
+        <li>
+            <i>Required</i> protocols for actor-system exchange or communication to occur reliably, for example, signal
+            timing, data packetizing, synchronization, startup, shutdown, error handing and recovery, and so on.
+        </li>
+        <li>
+            The items that flow between the actor and the system, describing, for example: 
+            <ul>
+                <li>
+                    Item name (or identifier) and description (and whether the item is input to the system, output from the
+                    system, or both)
+                </li>
+                <li>
+                    Nature of item and its characteristics - for example, if data, then include the data type; units of
+                    measurement; range of values; accuracy; precision; item size; item transfer rate; latency. Also,
+                    describe any composite items (arrays, records, files) unless this is implicit in the type.
+                </li>
+            </ul>
+        </li>
+    </ul>
+</blockquote><br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

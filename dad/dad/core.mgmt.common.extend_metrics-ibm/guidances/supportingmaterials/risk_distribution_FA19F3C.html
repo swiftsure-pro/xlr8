@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Risk Distribution</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="risk_distribution">
+<meta name="uma.presentationName" content="Risk Distribution">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_mVazEMyLEd6AlLazTePGRg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Risk Distribution</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.mgmt.common.extend_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks the risk exposure for a project distributed across project elements such as use cases or components.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p style="MARGIN-RIGHT: 0px" dir="ltr">
+    Risk is a concern that has some probability of negatively impacting release commitments (such as schedule and cost) or
+    the quality of the solution. Addressing risks associated with project elements such as use cases or components
+    according to their likelihood of occurrence and potential impact is essential for project health.
+</p>
+<p style="MARGIN-RIGHT: 0px" dir="ltr">
+    Monitoring risk distribution provides several benefits:
+</p>
+<ul>
+    <li>
+        Drives iteration plans. Use Cases and components that have associated risk with the highest probability of
+        occurring and highest potential impact should be implemented first.
+    </li>
+    <li>
+        Provides an easily understood summary of risk exposure for each element that could impact project success. New and
+        escalating risks are visible.
+    </li>
+    <li>
+        Reduces the likelihood of focusing on the wrong issues early in the lifecycle that can result in large surprises at
+        the end of the project. Encourages ongoing and active mitigation efforts and increased communication.
+    </li>
+    <li>
+        Useful for explaining the team's confidence in their estimates based on remaining uncertainty. Helps describe the
+        predictability of the project based on remaining risk.
+    </li>
+    <li>
+        <p>
+            Helps the team understand the effectiveness of their risk mitigation activities
+        </p>
+    </li>
+</ul>
+<h3>
+    Definition
+</h3>
+<p>
+    To calculate Risk Distribution:
+</p>
+<ol>
+    <li>
+        Analyze risk and assign the following values to each project element (e.g. use case, component)
+    </li>
+</ol>
+<ul>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            Likelihood of occurrence - defined as a percentage. Use a standard scale such as 20% (low likelihood of
+            occurrence), 40%, 60%, 80% (high likelihood of occurrence)
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            Estimated Cost of Impact - defined in hours or days
+        </div>
+    </li>
+</ul>
+<p>
+    2. Calculate a risk exposure score for each project element
+</p>
+<p>
+    Risk Score = Likelihood of occurrence * Estimated Cost of Impact
+</p>
+<h3>
+    Analysis
+</h3>
+<p>
+    Generate a Risk Distribution report prior to iteration planning. Identify&nbsp;project elements&nbsp;with the highest
+    risk scores and determine what activities are required (for example:&nbsp;get clarification from stakeholders in order
+    to detail those use cases and address any uncertainties). If Risk Distribution is based on components, identify those
+    with the highest risk scores in order to prioritize architectural analysis efforts to make sure those solution
+    components can work as needed to meet stakeholders needs.
+</p>
+<h3>
+    Frequency and reporting
+</h3>
+<p>
+    The Risk Distribution report is reviewed in each iteration planning session. The team should adjust risk levels at the
+    end of each iteration during a retrospective meeting. Risk Scores are adjusted as needed, and risks that have been
+    addressed are closed so that the team can update the Risk Distribution chart. Stakeholders are routinely apprised of
+    current risks and collaborate with the team for impact assessment and mitigation.<br />
+</p>
+<h3>
+    Collection and reporting tools
+</h3>
+<p>
+    Risks can be captured in IBM&reg; Rational&reg; Team Concert&reg;,&nbsp;IBM&reg; Rational&reg; Project Conductor&reg;,&nbsp;or in a simple
+    spreadsheet. Generate the Risk Distribution chart using custom reporting capabilities of Rational tools or&nbsp;using
+    charting capabilities in a basic spreadsheet tool.
+</p>
+<h3>
+    Assumptions and prerequisites
+</h3>
+<ul>
+    <li>
+        Risks are captured, and the team collaborates with stakeholders to determine likelihood and impact.
+    </li>
+</ul><br />
+<h3>
+    Pitfalls, advice, and countermeasures
+</h3>
+<ul>
+    <li>
+        If risk is not managed consistently throughout the lifecycle, the team will likely begin to act in a reactive,
+        crisis mode as risks emerge. A consistent, repeatable risk mitigation process enables better project predictability
+        and higher levels of trust by project stakeholders.
+    </li>
+    <li>
+        The need to identify and monitor risk increases with the complexity of the system.
+    </li>
+    <li>
+        The effort to reduce uncertainty has an associated cost. The team must balance the cost of this effort against the
+        potential impact of not addressing the risk. Not all candidate risks are actively managed. Mitigation effort and
+        degree of monitoring depend on the likelihood of impact and the risk tolerance for the project.
+    </li>
+    <li>
+        The <a class="elementLink" href="./../../../core.mgmt.common.extend_metrics-ibm/guidances/supportingmaterials/reduct_risk_est_variance_BB6D6664.html" guid="_qxjBcOEWEd6AqdnazgLzJg">Reduction of Risk Estimation Variance</a> metric can be used with Risk Distribution
+        to monitor trends in reducing risk throughout the lifecycle.<br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.mgmt.common.extend_metrics-ibm/guidances/supportingmaterials/reduct_risk_est_variance_BB6D6664.html" guid="_qxjBcOEWEd6AqdnazgLzJg">Reduction of Risk Estimation Variance</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

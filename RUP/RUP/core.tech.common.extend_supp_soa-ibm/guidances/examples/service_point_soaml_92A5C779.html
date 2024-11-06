@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: ServicePoint (SoaML)</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="service_point_soaml">
+<meta name="uma.presentationName" content="ServicePoint (SoaML)">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_4rbIAFbBEd6MCpkuB85p5g"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: ServicePoint (SoaML)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">ServicePoints can be typed either by a simple UML Interface or by a ServiceInterface.  An instance of each situation is shown here.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_point_soaml_E250D92A.html" guid="_9jRdMFbAEd6MCpkuB85p5g">ServicePoint (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The following two examples show (1) a model of a Participant that has a ServicePoint typed by a ServiceInterface, and
+    (2) a Participant with a ServicePoint that is typed by a simple UML Interface.
+</p>
+<p>
+    <font size="2">In Figure 1,&nbsp;an invoicing service is provided by an Invoicer Participant.&nbsp;The Invoicer
+    Participant is seen to realize the Invoicing UseCase that describes the high-level requirements for the service
+    provider and its services. The invoicing ServicePoint is typed by the InvoicingService ServiceInterface that defines
+    the interface to the service.&nbsp; A ServiceInterface, rather than a UML Interface, was used here because use of the
+    Service&nbsp;requires a protocol&nbsp;that describes the choreography between the service provider and the service
+    consumer.&nbsp; This&nbsp;follows from the&nbsp;ServiceInterface having both a provided interface and a required
+    interface.&nbsp; The protocol definition is not part of this example.</font>
+</p>
+<p>
+    <font size="2">The Invoicer Participant has two ownedBehaviors, one an Activity and the other an OpaqueBehavior that
+    are the methods for the Operations provided through the invoicing service and model the implementation of those
+    capabilities - no stereotypes are provided as these are standard UML constructs.</font>
+</p>
+<p>
+    <strong>Figure 1.&nbsp; ServicePoint typed with a ServiceInterface</strong>
+</p>
+<p>
+    &nbsp;&nbsp;<img height="479" alt="" src="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/./resources/servicepoint_example_1.jpg" width="573" />
+</p>
+<p>
+    <font size="2">Figure 2&nbsp;shows an example of a scheduling Service provided by a Scheduling Participant. In this
+    case, the type of the Service is a simple Interface indicating what capabilities are provided through the Service, and
+    that consumers are not required to provide any capabilities and there is no protocol for using the service
+    capabilities. SoaML allows Services type typed by a simple interface in order to support this common case.</font>
+</p>
+<p>
+    <strong>Figure 2.&nbsp; ServicePoint typed with a simple UML Interface</strong>
+</p>
+<p>
+    &nbsp; <img height="354" alt="" src="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/./resources/servicepoint_example_2.jpg" width="561" />&nbsp;
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/participant_soaml_1A392457.html" guid="_zL3kgFbAEd6MCpkuB85p5g">Participant (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_interface_soaml_CA95983A.html" guid="_N5e2oFbBEd6MCpkuB85p5g">ServiceInterface (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_point_soaml_E250D92A.html" guid="_9jRdMFbAEd6MCpkuB85p5g">ServicePoint (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Several of the above definitions were copied from the <a href="http://www.omg.org/spec/SoaML/Current" target="_blank">Service oriented architecture Modeling Language (SoaML) Specification</a> for the UML Profile and
+    Metamodel Services. <a class="elementLinkWithUserText" href="./../../../core.default.release_copyright.extend-ibm/guidances/supportingmaterials/full_soaml_copyright_3B2FB4F3.html" guid="_GHI_gLgYEd6EUtitpj4XQA">View the full copyright notice</a>.
+</p>
+<p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

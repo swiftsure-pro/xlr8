@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Capability Pattern: Test Iteration [Management]</title>
+<meta name="uma.type" content="CapabilityPattern">
+<meta name="uma.name" content="test_mgmt_iteration">
+<meta name="uma.presentationName" content="Test Iteration [Management]">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_KDvIkb8UEdyfOezAyKOVXQ&path=_KDvIkb8UEdyfOezAyKOVXQ';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_KDvIkb8UEdyfOezAyKOVXQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Capability Pattern: Test Iteration [Management]</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/capabilitypattern.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Define the test scope and objectives, plan the test effort, and monitor the test progress within an iteration.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="10" class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_mgmt_iteration_9263A55A.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WBS" href="./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_mgmt_iteration_9263A55A.html_wbs.html"><span style="white-space:nowrap;">Work Breakdown Structure</span></a></td><td width="1"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_TBS" href="./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_mgmt_iteration_9263A55A.html_tbs.html"><span style="white-space:nowrap;">Team Allocation</span></a></td><td width="21"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Work Product Usage</span></td><td width="21"><img src="./../../images/tab_end-a.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="6"><img src="./../../images/shim.gif" height="2" alt="" title=""></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="1"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Work Product Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Work Product Breakdown", summary: "Work Product Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["model_info", "Model Info"],
+["entry_state", "Entry State"],
+["exit_state", "Exit State"],
+["deliverable", "Deliverable"],
+["type", "Type"],
+["is_planned", "Planned"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_optional", "Optional"]],
+rows: [
+			
+{id: "123ab00c", parentId: "", relPath: ",_McKmsH9-Ed27jvxgc9zKew", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "[Project Definition and Scope]", title: "[Project Definition and Scope]", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/project_definition_and_scope_slot_FC518B18.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "17582927", parentId: "", relPath: ",_McUXsH9-Ed27jvxgc9zKew", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "[Project Risk]", title: "[Project Risk]", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/project_risk_slot_29A9E5F9.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "66a32365", parentId: "", relPath: ",_8P2CkYD9Ed2t7K9nV0TJ8w", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "[Project Status]", title: "[Project Status]", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/project_status_slot_790415E4.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "1d2c38fc", parentId: "", relPath: ",_8P2CkID9Ed2t7K9nV0TJ8w", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "[Project Work]", title: "[Project Work]", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/project_work_slot_6E6635D4.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "691ef304", parentId: "", relPath: ",_McUXsX9-Ed27jvxgc9zKew", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "[Technical Architecture]", title: "[Technical Architecture]", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/technical_architecture_slot_3447C609.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "6a90af93", parentId: "", relPath: ",_McUXsn9-Ed27jvxgc9zKew", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Test Architecture", title: "Test Architecture", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_architecture_22E0DA1F.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "bbf2cef2", parentId: "6a90af93", relPath: ",_McUXsn9-Ed27jvxgc9zKew,_ieX0oJozEeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Test Automation Architecture", title: "Test Automation Architecture", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_automation_arch_553D94BE.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "c094983f", parentId: "6a90af93", relPath: ",_McUXsn9-Ed27jvxgc9zKew,_ieLAUZozEeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Test Environment Configuration", title: "Test Environment Configuration", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_env_configuration_35C4EF05.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "6ddd95f9", parentId: "", relPath: ",_ieLAUZozEeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Test Environment Configuration", title: "Test Environment Configuration", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_env_configuration_35C4EF05.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "db55884", parentId: "", relPath: ",_e7cMsL8TEdyfOezAyKOVXQ_0E16ACFYEd2Tx_sxlQMK3Q_iD7vkHFfEdy8Ac588DXPCQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Test Evaluation Summary", title: "Test Evaluation Summary", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_evaluation_summary_F05EC1DA.html", 
+	predecessors: "", info: "Optional Input, Mandatory Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "19b5e1bc", parentId: "", relPath: ",_GV-fUByIEd25IrCLT8F6ZA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Test Findings", title: "Test Findings", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_findings_90364E93.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "12ce6707", parentId: "", relPath: ",_e7cMsL8TEdyfOezAyKOVXQ_0E16ACFYEd2Tx_sxlQMK3Q_ueUMoHFfEdy8Ac588DXPCQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Test Motivator", title: "Test Motivator", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_motivator_255026A4.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "e0c0216", parentId: "", relPath: ",_e7cMsL8TEdyfOezAyKOVXQ_0E16ACFYEd2Tx_sxlQMK3Q_yiMRwHFfEdy8Ac588DXPCQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Test Plan", title: "Test Plan", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_plan_5D9F2DE9.html", 
+	predecessors: "", info: "Optional Input, Output, Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "7702107b", parentId: "", relPath: ",_IpMfIByIEd25IrCLT8F6ZA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Test Strategy", title: "Test Strategy", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_strategy_A22EE557.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

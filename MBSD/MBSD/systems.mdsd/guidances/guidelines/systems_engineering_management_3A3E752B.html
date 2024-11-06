@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Systems Engineering Management</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="systems_engineering_management">
+<meta name="uma.presentationName" content="Systems Engineering Management">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="4.558632733591871E-305"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Systems Engineering Management</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    <a id="Introduction" name="Introduction">Introduction</a>
+</h3>
+<p>
+    RUP systems engineering projects are managed in a similar way to RUP software development projects, sharing many of the
+    project management activities. There are, however, additional roles and activities in RUP systems engineering, and the
+    size and nature of the projects (there might be significant hardware subsystems, for example) means there are other
+    differences in management approach (discussed in the following sections).
+</p>
+<p>
+    The <a class="elementLink" href="./../../../systems.mdsd/deliveryprocesses/mdsd_dp_BCE136E3.html" guid="_iwnH4Q7REdygjsWLoA98yA">Systems Engineering Delivery Process</a>&nbsp;section introduces the Model Driven
+    Systems Development (MDSD) Lifecycle. This presents, in an abstract way, how the system lifecycle is related to
+    subordinate subsystem development lifecycles. To some extent, this is a descriptive convenience: while it is certainly
+    possible to realize the organization for a project in this way (and, in the case where the development of a subsystem
+    is formally contracted out to a separate organization, it would be realized this way), it is possible to integrate the
+    development work much more closely. In this case, a single physical team (as shown below) addresses the development,
+    with some resources operating in both system architecture and subsystem development teams, changing RUP roles as they
+    do so.
+</p>
+<h3>
+    <a id="Project Organization" name="Project Organization">Project organization</a>
+</h3>
+<p>
+    The movement from a serialized to an iterative process has profound implications in how a project must be organized. In
+    a serialized process, staff are often assigned to a project until their artifacts are complete. For example, the
+    engineering staff might complete the specifications, hand them off to the development staff, and move on to the next
+    project. In any RUP-based project, no such handoff occurs. Rather, the artifacts evolve throughout the development. It
+    follows that the staff responsible for project artifacts, such as the requirements database and UML architecture, must
+    be assigned to the development project throughout its duration, although the level of effort varies across the project
+    lifecycle.
+</p>
+<p>
+    The figure shows the organization for a typical RUP systems engineering project. The organization is collection of
+    development teams, each with a project manager and a technical lead. There are also teams that deal with overall system
+    architecture and project management.
+</p>
+<p align="center">
+    <img height="287" alt="A RUP Systems Engineering Organization Chart" src="./../../../systems.mdsd/guidances/guidelines/resources/seorganization.gif" width="473"     border="0" />
+</p>
+<p class="picturetext" align="center">
+    A RUP Systems Engineering Organization Chart.
+</p>
+<p>
+    In this team structure:
+</p>
+<ul>
+    <li>
+        The <b>Enterprise Modeling</b> team analyzes the business need and generates business models and/or related
+        artifacts such as the system-level Vision document (equivalent to the Operational Concept Document). This team
+        therefore plays some elements of the RUP System Analyst role at this level (as well as other RUP business modeling
+        roles).
+    </li>
+    <li>
+        The <b>System Architecture Team</b> works with the Enterprise Modeling Team to create the system context and derive
+        system requirements. The team develops the Subsystem and Locality views as well as their derived requirements.
+        Throughout the development, this team serves as a technical escalation point, resolving architectural and
+        engineering issues. The System Architecture Team also works with the development teams to specify the software
+        component architecture. Team members include the technical leads of the development teams. This team plays the RUP
+        System Analyst, Requirements Specifier, System Architect and System Designer roles (sharing this last role with the
+        software and hardware subsystem development teams).
+    </li>
+    <li>
+        The <b>Project Management Team</b> looks after the standard project issues such as project reviews, resource
+        planning, budget tracking, earned value and variances, and coordinated iteration planning. This team plays the RUP
+        Project Manager role.
+    </li>
+    <li>
+        For each iteration, the <b>Integration and Test Team</b> receives the code and hardware components from the
+        development teams, builds the software components, and installs the hardware and software components in a
+        laboratory setting. The team also plans, executes, and reports on the system tests for each iteration.
+    </li>
+    <li>
+        The <b>Subsystem Development Teams</b> are responsible for the design and implementation of the software
+        realization of one or more subsystems. The teams base their work on the derived use cases discovered during the
+        flowdown activity. Depending on the size and complexity of the system, the subsystem use cases might be realized as
+        class design and associated code modules or the subsystems might be further decomposed into subsystems. In the
+        latter case, a subsystem team might be further decomposed into sub-subsystem teams and a subsystem architecture
+        team might be created. This process enables scalability of the RUP systems engineering approach.
+    </li>
+    <li>
+        The <b>Hardware Development and Acquisition Teams</b> are responsible for the design, specification, and delivery
+        of the hardware components; this team might install and maintain the system in the field. In other cases, this team
+        might handle user defect reporting and provide patches to the field.
+    </li>
+    <li>
+        The <b>Deployment, Operations, and Maintenance Team</b> handles operational issues and serves as a liaison with the
+        users.
+    </li>
+</ul>
+<h3>
+    <a id="Concurrent Design and Implementation" name="Concurrent Design and Implementation">Concurrent design and
+    implementation</a>
+</h3>
+<p>
+    One feature of the RUP systems engineering organization approach is that it scales to very large programs. This is
+    accomplished by taking advantage of the decomposition of the system into subsystems and localities with their derived
+    requirements. Each of these Analysis Model elements is suitable for concurrent design and development. As described in
+    the previous section, UML subsystems can be assigned to separate develop teams, localities to hardware development or
+    acquisition teams. Each team works from its derived sets of services to develop their portion of the Design Model and
+    Implementation Model. This way the design and implementation of the design elements can proceed in parallel.
+</p>
+<p>
+    For very large systems, a systems-of-systems approach can be adopted. In this case, each UML subsystem has its own
+    Locality Model. This assignment permits the application of the above organization structure at the subsystem level,
+    providing even more scalability.
+</p>
+<h3>
+    <a id="Iterative Development, Integration and Test" name="Iterative Development, Integration and Test">Iterative
+    development, integration, and test</a>
+</h3>
+<p>
+    One central feature of the RUP is that the system is developed in a series of iterations, each of which adds
+    functionality. The system is integrated and tested at each iteration. The iteration testing is a subset of the system
+    tests. Consequently, the final iteration results in a fully tested system ready for transition to the operational
+    setting.&nbsp;
+</p>
+<p>
+    The timing and content of iterations are captured in the system development plan early in the project. However, like
+    any RUP artifact, the system development plan is updated continually to reflect the emerging understanding of the
+    system as it comes together.&nbsp;In particular, the further away an iteration is in time, the less detailed (and less
+    reliable) is the planning for it.
+</p>
+<p>
+    As an iteration approaches, its content is captured in a finer-grained system iteration plan, specified by the use
+    cases and supplementary requirements to be realized by the components developed in the iteration. Each iteration is
+    tested by the subset of applicable system test cases.&nbsp;
+</p>
+<p>
+    Recall that subsystems and localities have derived services that trace from system use cases. This tracing provides a
+    basis for derived iteration plans for the subsystems and localities. That is, the content of each system iteration
+    determines by traceability the functionality that needs to be provided by the subsystems and localities to support the
+    iteration. In practice, the development teams negotiate the iteration content to reflect their development
+    practicalities. For example, an early system iteration cannot require full functionality of a subsystem. Compromises
+    must be made.&nbsp;
+</p>
+<p>
+    A good system development plan provides the opportunity to identify and resolve system technical risks early, before
+    the typical panic of the waterfall-based integration and testing phase. The technical risks can involve both functional
+    and nonfunctional requirements. For example, an early integration can shake out system start-up and fail-over issues
+    that cannot be fully understood with detailed design and interface specifications. In practice, the early iterations
+    must validate that the architecture is sufficient to meet the non-functional requirements.&nbsp;
+</p>
+<p>
+    Iterative system development might seem more expensive because it requires more testing, as well as a scaffold or a
+    simulated hardware environment to support the early iterations. Coordination of the iteration content across
+    development teams also takes more project management effort. However, these apparent costs are offset by the savings in
+    early identification and mitigation of risks associated with the system architecture. It is a standard engineering
+    principle that removing architectural defects late in a project is much more expensive than removing them early.
+    Removing defects late also adds uncertainty and schedule risk late in a project.&nbsp;
+</p>
+<p>
+    The role of the testing organization is different than it is in an organization that adopts a serialized, waterfall
+    approach. Rather than spending more of the development planning for an overall system integration at the end of the
+    development, the organization spends its time integrating, testing, and reporting defects.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

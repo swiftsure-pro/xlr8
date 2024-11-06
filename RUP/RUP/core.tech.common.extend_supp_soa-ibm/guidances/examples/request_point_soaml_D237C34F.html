@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: RequestPoint (SoaML)</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="request_point_soaml">
+<meta name="uma.presentationName" content="RequestPoint (SoaML)">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_0u19sFbBEd6MCpkuB85p5g"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: RequestPoint (SoaML)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/request_point_soaml_DD83CF2.html" guid="_5DYKcFbAEd6MCpkuB85p5g">RequestPoint (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <font size="2">Figure 1 illustrates an example of an OrderProcessor <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/participant_soaml_1A392457.html" guid="_zL3kgFbAEd6MCpkuB85p5g">Participant</a> that has a purchasing Service and three Requests -- invoicing,
+    scheduling, and shipping --&nbsp;that are required to implement this service. The implementation of the purchasing
+    Service uses the capabilities provided through Services that will be connected to these Requests.</font>
+</p>
+<p>
+    <strong>Figure 1.&nbsp; A Participant with multiple RequestPoints</strong>
+</p>
+<p>
+    &nbsp;<img height="364" alt="" src="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/./resources/participant_ex_1a.jpg" width="599" />&nbsp;
+</p>
+<p>
+    <font size="2"><font size="2">The invoicing Request is typed by the InvoicingService <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_interface_soaml_CA95983A.html" guid="_N5e2oFbBEd6MCpkuB85p5g">ServiceInterface</a>. The scheduling Request is typed by the Scheduling Interface. This
+    is an example of a simple Request that specifies simply a list of needs.</font></font>
+</p>
+<p>
+    <font size="2"><strong>It is very important to note</strong> that&nbsp;each RequestPoint is typed with exactly the same
+    type that was applied to the <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_point_soaml_E250D92A.html" guid="_9jRdMFbAEd6MCpkuB85p5g">ServicePoint</a> to which the RequestPoint is being connected.&nbsp; This is because the
+    RequestPoint represents the usage of its type, so what is shown as a provided interface on the RequestPoint actually is
+    an interface that is being requested, and what is shown as a required interface on the RequestPoint actually is an
+    interface that the RequestPoint is providing.&nbsp; See <a class="elementLink" href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/request_point_soaml_DD83CF2.html" guid="_5DYKcFbAEd6MCpkuB85p5g">RequestPoint (SoaML)</a>&nbsp;for further discussion.&nbsp; The implication is that
+    <strong>the past request point typing practice in UML-based service modeling is obsolete with SoaML</strong>.&nbsp;
+    With pure UML, request ports were typed such that their provided and required interfaces explicitly were the inverse
+    (the conjugate) of the interfaces on the service port to which a connection was being made.&nbsp; In SoaML-based
+    modeling, the connecting RequestPoints and ServicePoints are typed with the same ServiceInterface or simple UML
+    Interface.</font>&nbsp; This is illustrated in Figure 2, where it is seen that types on each of the matched
+    RequestPoints/ServicePoints are the same -- conjugates are not used here.&nbsp;&nbsp;
+</p>
+<p>
+    <strong>Figure 2.&nbsp; ServicePoints and RequestPoints are typed using the same ServiceInterfaces</strong>
+</p>
+<p>
+    <img height="323" alt="" src="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/./resources/participant_ex_4.jpg" width="598" />&nbsp;
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/participant_soaml_1A392457.html" guid="_zL3kgFbAEd6MCpkuB85p5g">Participant (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/request_point_soaml_DD83CF2.html" guid="_5DYKcFbAEd6MCpkuB85p5g">RequestPoint (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_point_soaml_E250D92A.html" guid="_9jRdMFbAEd6MCpkuB85p5g">ServicePoint (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

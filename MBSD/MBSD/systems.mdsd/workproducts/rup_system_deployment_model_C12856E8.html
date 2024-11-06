@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: System Deployment Model</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="rup_system_deployment_model">
+<meta name="uma.presentationName" content="System Deployment Model">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="uma.category" content="WorkProductType:model:model">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{F3EF5651-065C-478F-81CC-D55D90FF0CBC}"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: System Deployment Model</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../systems.mdsd/workproducts/resources/dplmod.jpg" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This is the Deployment Model at the system level. It has three levels of refinement: Locality, Descriptor, Implementation. When the SE activities are invoked, it substitutes for the Deployment Model because implementation technologies are chosen in its evolution, making conceptual modeling, and so forth, of the Deployment Model unnecessary.</td>
+</tr>
+<tr>
+<td>Domains: <a href="./../../systems.mdsd/domains/se_domain_2C0B7BF2.html" guid="_lsjkIFJFEdq7lcIJkU0htg">Systems Engineering Work Products</a>
+<br>Work Product Kinds: <a href="./../../systems.mdsd/workproducttypes/model_D17FB9A2.html" guid="_CB5zYFLmEdq0F6_cvM5BLg">model</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="Purpose" name="Purpose"></a> 
+<p>
+    The purpose of the <i>System Deployment Model</i> is to capture the decomposition of the system into elements which
+    host the processing. This is done at several levels of abstraction, namely Locality (the most abstract), Descriptor,
+    and Implementation (the least abstract) - these levels are more or less equivalent to the Conceptual, Specification and
+    Physical levels described for the <img alt="" src="./../../images/no_rup.gif">&#160;<a class="elementLinkWithType" href="./../../pages_not_installed/pages_not_installed.html" guid="{5981B6BE-2FD1-4984-AA94-2F7428439BA6}">Artifact: Deployment Model</a> (which is used when the application of the
+    RUP is limited to software development).&nbsp;
+</p>
+<p>
+    The <b>Locality</b> Model represents the initial, abstract, <i><b>physical</b></i> partitioning and distribution of the
+    system, and is concerned with the physical resources of the system (nodes, devices, sensors and their physical
+    connections and interfaces, and the physical characteristics of these, for example weight, heat generation, power
+    consumption, vibration, and so on). A locality expresses notionally where processing occurs (the semantics of locality
+    implies a tighter grouping of resources) without defining exact geographic location or how the processing capability is
+    to be realized.&nbsp;It is conceivable for very complex, very large systems, that the initial Locality Model might have
+    localities that decompose to finer-grained localities (just as a subsystem can contain subsystems). At the
+    <b>Descriptor</b> level, the <i>types</i> of processing resources at a locality are specified - these are <i>nodes</i>,
+    which might include computing devices (servers, workstations, and so on), people, or other electro-mechanical devices.
+    Finally, at the <b>Implementation</b> level, the actual hardware selection is made, numbers of role instances (in the
+    case of human resources) determined, with a defined set of configurations, capacity, power and other environmental
+    requirements, cost, and performance.
+</p>
+<p>
+    The System Deployment Model is also used to record the subsystem operations that are hosted at each locality - this
+    determines the computing requirements to be supported at the locality. Based on the behavior to be supported at the
+    localities, collaborations of localities can be constructed (and represented in interaction diagrams). These help
+    characterize the connections between the localities.
+</p>
+<p>
+    Each locality in the System Deployment Model has an attached description of derived supplementary requirements (derived
+    from system supplementary specifications) which specify quality (reliability, maintainability, safety, and so forth),
+    physical and environmental requirements, and development constraints (cost, technical risk, and so forth). From these
+    requirements, the actual characteristics (of each locality) are determined; obviously, these are chosen to meet the
+    explicit requirements at least, but can exceed the requirements if sound engineering practice dictates this - for
+    example, to cope with unexpected capacity demands.
+</p>
+<p>
+    Localities are characterized with:&nbsp;
+</p>
+<ul>
+    <li>
+        Quality tags, such as reliability, availability, performance, capacity, and so on
+    </li>
+    <li>
+        Management tags, such as cost and technical risk
+    </li>
+</ul>
+<p>
+    Connections are characterized with:
+</p>
+<ul>
+    <li>
+        Link parameters, such as data rate, supported protocols, physical flow rate
+    </li>
+    <li>
+        Management tags, such as cost and technical risk
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Responsible:
+								</span>
+<ul>
+<li>
+<a href="./../../systems.mdsd/roles/rup_system_architect_89FA9EF1.html" guid="{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}">System Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Modified By:
+								</span>
+<ul>
+<li>
+<a href="./../../systems.mdsd/roles/rup_system_architect_89FA9EF1.html" guid="{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}">System Architect</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/roles/rup_system_designer_D432B871.html" guid="{17D1CF2F-DA3E-4EC0-AB76-C8B47343183B}">System Designer</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tasks</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Input To:
+								</span>
+<ul>
+<li>
+<a href="./../../systems.mdsd/tasks/construct_arch_proof_2E37327D.html" guid="{0ADC1D2E-584C-4FB2-9DF7-0E6E086286C8}">Construct System Architecture Proof-of-Concept</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/tasks/refine_system_deployment_model_AAD44C73.html" guid="{B8F36D9E-D010-4D38-8E2F-57B28CC16D1A}">Refine System Deployment Model</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/tasks/refine_system_processes_3AFDF977.html" guid="{6A132C87-C82B-422D-BD56-B42E7E20131D}">Refine System Processes</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Output From:
+								</span>
+<ul>
+<li>
+<a href="./../../systems.mdsd/tasks/refine_system_deployment_model_AAD44C73.html" guid="{B8F36D9E-D010-4D38-8E2F-57B28CC16D1A}">Refine System Deployment Model</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/tasks/architectural_analysis_30D2538.html" guid="{B7FABC7A-42FA-4DC7-A1F4-C4F5DB6F673F}">System Architectural Analysis</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/tasks/se_operation_design_FE6558AC.html" guid="_Gb4P8OQ7Edm1mN374l9mbg">System Operation Design</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reports</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../systems.mdsd/guidances/reports/locality_subsystem_services_and_supplementary_requirements_504619E1.html" guid="1.090132159974941E-305">Locality Subsystem Operations and Supplementary Requirements</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Representation Options</th><td class="sectionTableCell">UML Representation: <br />
+<br />
+Model, stereotyped as "system deployment model." <br />
+<br />
+<a id="Tailoring" name="Tailoring"></a> 
+<p>
+    The System Deployment Model is mandatory in the systems engineering context. If the system is not complex (in its
+    distribution) or the system architect is constrained to use existing physical infrastructure, for example, the creation
+    of multiple levels of abstraction in the model might not be warranted.<br />
+    <br />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

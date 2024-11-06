@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: ServiceInterface (SoaML)</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="service_interface_soaml">
+<meta name="uma.presentationName" content="ServiceInterface (SoaML)">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_dmG_MFbPEd6MCpkuB85p5g"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: ServiceInterface (SoaML)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_interface_soaml_CA95983A.html" guid="_N5e2oFbBEd6MCpkuB85p5g">ServiceInterface (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <font size="2">Figure 1 presents an example of a simple Interface that can be used to type a Service or Request. This
+    is a common case where there is no required interface and no protocol. Using an Interface as type for a Service point
+    or Request point is similar to using a WSDL PortType or Java interface as the type of an SCA component's service or
+    reference.</font>
+</p>
+<p>
+    <strong>Figure 1.&nbsp; A simple UML Interface</strong>
+</p>
+<p>
+    &nbsp;<img height="77" alt="" src="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/./resources/service_interface_example_1.gif" width="237" />
+</p>
+<p>
+    <font size="2"><font size="2">Figure 2 shows&nbsp;a more complex ServiceInterface that does involve bi-directional
+    interactions between the parties modeled as provided and required interfaces and a protocol for using the service
+    capabilities. As specified by UML2, Invoicing is the provided interface as derived from the interface realization.
+    InvoiceProcessing is the required interface as derived from the usage dependency.</font></font>
+</p>
+<p>
+    <font size="2"><font size="2">The invoicing and orderer parts of the ServiceInterface represent the consumer and
+    provider of the service. That is, they represent the Service and Request ports at the endpoints of a ServiceChannel
+    when the service provider is connected to a consumer. These parts are used in the protocol to capture the expected
+    interchange between the consumer and provider.</font></font>
+</p>
+<p>
+    <font size="2"><font size="2">The protocol for using the capabilities of a service, and for responding to its needs is
+    captured in an ownedBehavior of the ServiceInterface. The invoicingService Activity models the protocol for the
+    InvoicingService. From the protocol we can see that initiatePriceCalculation must be invoked on the invoicing part
+    followed by completePriceCalculation. Once the price calculation has been completed, the consumer must be prepared to
+    respond to processInvoice. It is clear which part represents the consumer and provider by their types. The providing
+    part is typed by the provided interface while the consuming part is typed by the required interface.</font></font>
+</p>
+<p>
+    <strong>Figure 2.&nbsp; A complex ServiceInterface, involving collaboration between provider and consumer</strong>
+</p>
+<p>
+    &nbsp; <img height="420" alt="" src="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/./resources/service_interface_example_2.jpg" width="591" />&nbsp;<font     size="2">&nbsp;</font>
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/request_point_soaml_DD83CF2.html" guid="_5DYKcFbAEd6MCpkuB85p5g">RequestPoint (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_point_soaml_E250D92A.html" guid="_9jRdMFbAEd6MCpkuB85p5g">ServicePoint (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Several of the above definitions were copied from the <a href="http://www.omg.org/spec/SoaML/Current" target="_blank">Service oriented architecture Modeling Language (SoaML) Specification</a> for the UML Profile and
+    Metamodel Services. <a class="elementLinkWithUserText" href="./../../../core.default.release_copyright.extend-ibm/guidances/supportingmaterials/full_soaml_copyright_3B2FB4F3.html" guid="_GHI_gLgYEd6EUtitpj4XQA">View the full copyright notice</a>.
+</p>
+<p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

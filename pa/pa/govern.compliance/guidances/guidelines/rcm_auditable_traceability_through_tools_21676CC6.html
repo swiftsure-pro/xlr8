@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Implementing Auditable traceability with Tools</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="rcm_auditable_traceability_through_tools">
+<meta name="uma.presentationName" content="Implementing Auditable traceability with Tools">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_XnuPQKhEEduvgNw8YDVZiQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Implementing Auditable traceability with Tools</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline explains how to implement effective traceability for compliance management in IBM® Rational® RequisitePro and IBM® Rational® ClearQuest® Test Manager. It discusses traceability features in RequisitePro, as well as the integration between RequisitePro and ClearQuest Test Manager. It focuses on a critical element of a complete compliance management solution: your software and software development assets.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../govern.compliance/tasks/define_assessment_and_traceability_needs_rcm_BCBDB47F.html" guid="_xJFz0LeyEduf16X8crnsvw">define_assessment_and_traceability_needs_rcm</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    There are many motivations for traceability. The one we focus on here is the chain of work products that connects
+    requirements to tests, and demonstrates their satisfaction in the product.
+</p>
+<h3>
+    <strong>Why Traceability?</strong>
+</h3>
+<p>
+    Organizations live in a complex environment. Changes in legislation and policy affect how an organization must operate.
+    Organizations must be able to respond to changes in the environment or risk failure. To pass compliance audits, they
+    must be able to provide evidence -- in the form of audit trails -- demonstrating that action was actually taken
+    according to process. This enables an organization to show how it has responded to a change in the environment.
+</p>
+<p align="center">
+    <img height="346" src="./../../../govern.compliance/guidances/guidelines/resources/traceabilityPicture.gif" width="668" />
+</p>
+<p>
+    <strong>Process automation</strong>
+</p>
+<p>
+    Handling traceability manually is possible, but it usually equates to a cumbersome, expensive process that negatively
+    impacts the ability of an organization to respond to change. Healthy organizations respond rapidly and effectively;
+    they adapt well to changes in the environment. Unhealthy organizations respond poorly to change; they are slow to
+    adapt, and adaptation is a difficult process.
+</p>
+<p>
+    If response to change is mostly manual, response will be slow and difficult. If response to change is automated, the
+    organization will have the ability to respond to change more rapidly and effectively.
+</p>
+<p align="center">
+    <img height="197" src="./../../../govern.compliance/guidances/guidelines/resources/processAutomation.gif" width="372" />
+</p>
+<p>
+    Automating change presents an opportunity to transform your business into an adaptive business.
+</p>
+<ul>
+    <li>
+        Automate the generation of audit documentation
+    </li>
+    <li>
+        Ensure that audit reports and audit trails are in place for the software development organization
+    </li>
+    <li>
+        Automate enforcement of your compliant process
+    </li>
+    <li>
+        Provide process guidance, automated workflows, and tool-directed behavior
+    </li>
+</ul>
+<p>
+    Compliance management implies audits, audits imply traceability, and traceability can be a tremendous headache. IBM
+    Rational brand tools help facilitate compliance management by automating processes and providing traceability.
+</p>
+<p align="center">
+    <strong><img height="421" src="./../../../govern.compliance/guidances/guidelines/resources/overalltraceability .gif" width="766" /></strong>
+</p><br />
+<br />
+<p>
+    <font color="#0000ff"><strong><font color="#000000">A change in policy or legislation</font></strong> <font     color="#000000">requires a response from the organization, which often translates to changes in:</font></font>
+</p>
+<ul>
+    <li>
+        <font color="#000000">Its IT systems</font>
+    </li>
+    <li>
+        <font color="#000000">Its processes</font>
+    </li>
+</ul>
+<p>
+    <font color="#000000"><strong>Process enhancement:</strong></font>
+</p>
+<blockquote>
+    <p>
+        <font color="#000000">Organizational process needs to change to reflect changes in policy. Can you trace from the
+        policy changes to your changes in process?</font>
+    </p>
+</blockquote>
+<p>
+    <font color="#000000"><strong>System Deployment:</strong></font>
+</p>
+<blockquote>
+    <p>
+        <font color="#000000">Changes to systems, or new systems development, may also be required. Can you trace from the
+        policy to new system features, and then from those features to how they are implemented?</font>
+    </p>
+</blockquote>
+<p>
+    <font color="#000000"><strong>Implementation:</strong></font>
+</p>
+<blockquote>
+    <p>
+        <font color="#000000">Can you prove that the system you deployed is the one you built? Can you trace the builds
+        back to the requirements?</font>
+    </p>
+</blockquote>
+<h3>
+    <strong>Traceability with IBM tools</strong>
+</h3>
+<p>
+    IBM Rational tools provide traceability through the whole compliance management lifecycle. You can document
+    <em><strong>corporate compliance policies</strong></em> in RequisitePro, and show how policies are traced to
+    initiatives that allow you to comply with those policies.
+</p>
+<p>
+    You can model the systems as they currently exist, and as they are going to be built, with IBM&reg; Rational&reg; Software
+    Architect. You can trace from requirements in RequisitePro to designs in Rational Software Architect. You can control
+    your development processes in ClearQuest, and establish traceability requests for system changes to the implementation
+    and testing of changes, again in ClearQuest. You can document changes as you build the system with IBM&reg; Rational&reg; Build
+    Forge&trade;, and control changes to the pieces of the system through ClearCase. This page concentrates on the following:
+</p>
+<ul>
+    <li>
+        <strong>RequisitePro</strong> to document traceability from requirements and design to implementation
+    </li>
+    <li>
+        <strong>ClearQuest and ClearQuest test management</strong> to provide traceability between requirements, test
+        artifacts, test reports, and defects<br />
+    </li>
+</ul>
+<h3>
+    RequisitePro Traceability
+</h3>
+<p>
+    The ability to keep track of relationships between requirements is an important aspect of any mature development
+    organization. Not only is traceability a sign of maturity, it is usually a requirement for compliance management. It is
+    required in many real-time safety critical systems (for example, medical systems, air traffic control systems, and
+    others). RequisitePro enables requirements traceability through an easy-to-use interface. In RequisitePro, you can
+    specify the requirements of a system, and show how those requirements are fulfilled through its traceability features.
+</p>
+<p>
+    A typical grouping scenario is to group business requirements and Corporate Policies into a requirement type,
+    high-level Compliance Requirements into another, and more detailed application or process requirements (such as
+    software specs) into yet another type. Here is how it is done in Requisite Pro:
+</p>
+<ul>
+    <li>
+        Use the <strong>Requirement Types</strong> tab in the Project Properties dialog box to define the properties of the
+        requirement type.
+    </li>
+    <li>
+        To access the <strong>Requirement Types</strong> tab, right-click the project icon in the RequisitePro Explorer and
+        choose <strong>Properties</strong>. (If security is enabled, you must have project structure permission to create a
+        requirement type.)
+    </li>
+    <li>
+        To add a Requirement Type to RequisitePro, access the Project Properties dialog box by clicking <strong>File &gt;
+        Project Administration &gt; Properties &gt; Requirement Types &gt; Add</strong>
+    </li>
+</ul>
+<p>
+    Once you enter a variety of requirements of different types into RequisitePro, you can trace between them. Traceability
+    is a bi-directional dependency relationship (a link) between two related requirement types. When you create
+    traceability relationships, RequisitePro visually indicates a dependency between the two requirements. With this
+    information, you can perform real-time impact analysis as requirements change. This knowledge helps you to manage
+    project scope and resource allocation. Specifically, traceability helps to:
+</p>
+<ul>
+    <li>
+        Ensure that all high-level stakeholder needs and features are addressed by analyzing requirements coverage
+    </li>
+    <li>
+        Eliminate unnecessary detail-level requirements
+    </li>
+    <li>
+        Explain the impact of changes. When you make changes to one requirement, you can visually identify the potential
+        impact to linked requirements.<br />
+         To use traceability effectively, document a traceability model in the Requirements Management Plan. When you
+        define a traceability model, you should always define the traceability relationship in one direction.
+    </li>
+</ul>
+<p>
+    <strong>Note:</strong> Do not confuse traceability relationships (between requirement types) with hierarchical
+    (parent/child) relationships. Hierarchical relationships detail requirements. Traceability relationships show how
+    requirements are related to each other.
+</p>
+<p>
+    In RequisitePro, you can view traceability information in the View workplace through an Attribute Matrix, Traceability
+    Matrix, or Traceability Tree. The visual representation of traceability links is visible only in the Traceability
+    Matrix or Traceability Tree. An Attribute Matrix view can show this information textually in the "Traced-to" and
+    "Traced-from" attributes.
+</p>
+<h3>
+    <strong>The ClearQuest-RequisitePro Integration</strong>
+</h3>
+<p>
+    RequisitePro and ClearQuest work together to provide full lifecycle traceability between requirements for a system and
+    its testing. You do this by linking Requirements in RequisitePro to test artifacts in ClearQuest. Likewise, you can
+    plan, develop, and then execute tests using ClearQuest test management. If a test fails, enter a defect against the
+    requirement from ClearQuest test management. A defect containing a reference to the requirement being tested will be
+    created. Finally, you can produce an audit report that includes the requirement, the test result, and the defect
+    produced.
+</p>
+<p align="center">
+    <img height="350" src="./../../../govern.compliance/guidances/guidelines/resources/reqProCqInteg.gif" width="538" />
+</p>
+<p>
+    ClearQuest links to RequisitePro, IBM Rational Manual Tester, IBM Rational Functional Tester, and IBM Rational
+    Performance Tester. ClearQuest also integrates with IBM Rational Software Architect and IBM Rational Software
+    Modeler.<br />
+     It is a single product for lifecycle traceability and provides links between the following:
+</p>
+<ul>
+    <li>
+        Requirement &gt; Test Case
+    </li>
+    <li>
+        Defect &gt; Test Case
+    </li>
+    <li>
+        Test Case &gt; Test Script/Source<br />
+    </li>
+</ul>
+<p>
+    In ClearQuest, the Test Manager view presents test assets in a hierarchy. It includes a <strong>Planning</strong> and
+    <strong>Execution</strong> tab. Each has a specific role:
+</p>
+<ul>
+    <li>
+        The <strong>Planning</strong> tab creates and maintains the hierarchy for ClearQuest test management records.
+    </li>
+    <li>
+        The <strong>Execution</strong> tab executes configured test cases and test suites, and reviews test results
+    </li>
+</ul>
+<p>
+    ClearQuest test management organizes your Test Plans, Test Cases, and Configured Test Cases hierarchically as shown
+    below:
+</p>
+<ul>
+    <li>
+        Test Plans
+    </li>
+    <li>
+        Test Cases
+    </li>
+    <li>
+        Configured Test Cases
+    </li>
+</ul>
+<p align="center">
+    <img height="283" src="./../../../govern.compliance/guidances/guidelines/resources/CqtmModel.gif" width="657" />
+</p>
+<p>
+    <em>Use the Requirements tab to define test inputs (ClearQuest requirements) for specific Test Cases. This step is the
+    most important step for compliance management, because it establishes the link between the requirement and the test
+    case (see below for more details)</em>.<br />
+</p>
+<h3>
+    <strong>Rational Administrator</strong>
+</h3>
+<p>
+    The Rational Administrator feature integrates ClearQuest and RequisitePro. You can create a RequisitePro project and a
+    ClearQuest database, and link them together with the RequisitePro and ClearQuest Integration wizard. This integration
+    allows you to link requirements to test artifacts, and to provide traceability between them.
+</p>
+<p align="center">
+    <img height="310" src="./../../../govern.compliance/guidances/guidelines/resources/RatAdminCqReqproInteg.gif" width="572" />
+</p>
+<p>
+    The relationship between ClearQuest test management and RequisitePro is established by associating a requirement to a
+    test case. This step is critical for demonstrating traceability from requirements to their tests.
+</p>
+<ul>
+    <li>
+        Lifecycle requirements traceability is the key to documenting compliance implementation
+    </li>
+    <li>
+        Are all the compliance requirements accurately captured and implemented in key applications?
+    </li>
+</ul>
+<p>
+    To associate a requirement to a test case, click the <strong>Requirements</strong> tab in the test case editor. Select
+    the RequisitePro project for this system. Log in to RequisitePro and pick a requirement to associate to the test case.
+</p>
+<p align="center">
+    <img height="409" src="./../../../govern.compliance/guidances/guidelines/resources/traceTestCase2Req.gif" width="516" />
+</p>
+<h3>
+    <strong>Defects</strong>
+</h3>
+<p>
+    After a configured test case record is executed and the test results are committed using a ClearQuest Client, you can
+    use any ClearQuest client to associate a defect record with the Test Log record. To create defects in ClearQuest:
+</p>
+<ul>
+    <li>
+        From the Test Log associated with the executed configured test case, click the <strong>Generated Defects</strong>
+        tab
+    </li>
+    <li>
+        Click <strong>Add</strong> to add a reference to an existing defect<br />
+         You can also click <strong>New</strong> to create a defect that will be associated with the Test Log
+    </li>
+    <li>
+        &gt;Use the Browse Record Type window to locate the defect that you want to associate with the test execution, and
+        then click <strong>OK</strong>
+    </li>
+    <li>
+        <em>Save your changes for the Test Log<br />
+         The <strong>Test Log</strong> tab of the associated defect is updated to display the associated Test Log</em>
+    </li>
+</ul>
+<h3>
+    <em>Audit Reporting</em>
+</h3>
+<p>
+    <em>The final step in creating an auditable traceability from requirements through the testing of those requirements is
+    to create an audit report. This can be done using Rational SoDA. A sample audit report appears below. It shows
+    requirements, change requests, and defects associated with the requirements.</em>
+</p>
+<p align="center">
+    <em><img height="488" src="./../../../govern.compliance/guidances/guidelines/resources/testAuditReport.gif" width="531" /></em>
+</p>
+<p>
+    <em><strong>Resources</strong><br />
+     IBM developerWorks Resources for Compliance:<br />
+     <a href="http://www.ibm.com/developerworks/rational/library/compliance.html">http://www.ibm.com/developerworks/rational/library/compliance.html</a><br />
+     Regulatory Compliance Standards and Frameworks:<br />
+     <a href="http://www.ibm.com/software/info/developer/solutions/compliance/frameworks.jsp">http://www.ibm.com/software/info/developer/solutions/compliance/frameworks.jsp</a><br />
+    </em>
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

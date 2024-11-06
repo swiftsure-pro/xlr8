@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Requirements Status Trend</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="rqmt_status_trend">
+<meta name="uma.presentationName" content="Requirements Status Trend">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_xFRK4NkWEd66qZ_Nk08bBg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Requirements Status Trend</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks the number of requirements by status.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p>
+    Teams monitor this metric to understand the status of all identified requirements. Some requirements are approved and
+    will be incorporated into the release. Others have been proposed by stakeholders, but not yet approved. Requirements
+    move between various other states as they are are being worked on, validated, and tested. The team needs to know the
+    state of each requirement and have visibility into requirements status trends across the lifecycle in order:
+</p>
+<ul>
+    <li>
+        to effectively plan and manage the project
+    </li>
+    <li>
+        monitor scope creep
+    </li>
+    <li>
+        identify when corrective actions are necessary to meet release commitments
+    </li>
+    <li>
+        help assess process improvements related to requirements management practices and tools
+    </li>
+</ul>
+<h3>
+    Definition
+</h3>
+<p>
+    Count: Total number of requirements in each status (approved, incorporated, proposed, validated)
+</p>
+<p>
+    It may be useful to group by requirement type, such as feature, supplementary, or use case.
+</p>
+<h3>
+    Analysis
+</h3>
+<p>
+    A good way to monitor Requirements Status Trend over time is with a stacked bar chart, plotting the number of
+    requirements for each status on the Y axis. A line chart is also useful for monitoring trends over time.
+</p>
+<p>
+    <strong>Expected trend</strong> - As the project progresses, the number of requirements in the initial statuses such as
+    "Proposed" should decrease and the number in later statuses such as "Incorporated" should increase.
+</p>
+<p>
+    A high number of Proposed and Approved requirements remaining later in the lifecycle can indicate a problem. Some
+    requirements are likely to not be satisfied. Confirm that there is not a large number of high priority requirements
+    that are still in a proposed or approved state. When high priority requirements are not addressed, customer
+    satisfaction is likely to be very low and the project schedule is at risk. Confirm that timely reviews of proposed
+    requirements are taking place so that stakeholders are aware of the status of their requests (if they will be
+    implemented or not). In general, the team should review their current requirements management process to determine if
+    process improvements are necessary.
+</p>
+<p>
+    A low number of validated requirements indicates that the team has not performed enough testing&nbsp;on the system.
+    Focus on increasing&nbsp;testing efforts. Review <a class="elementLink" href="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/test_coverage_of_requirements_F7771A44.html" guid="_IJVvoCthEd6wLLxMlDYvug">Test Coverage of Requirements</a> or <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="_d0AhINt9Ed604v6K1J0s_w">Percentage of Tested to Implemented Requirements</a> to ensure that all implemented
+    requirements have been tested.
+</p>
+<p>
+    The following figure is an example of a Requirements Status Trend chart, where the vertical axis represents the number
+    of requirements by status.
+</p>
+<p>
+    <img alt="Requirements Status Trend" src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/resources/rqmt_status_trend.gif" width="600" height="305" /><br />
+</p>
+<h3>
+    Frequency and reporting
+</h3>
+<p>
+    Trends should be monitored at the end of each iteration, and discussed with the team when problems are identified.
+</p>
+<h3>
+    Collection and reporting tools
+</h3>
+<p>
+    Data can be collected with IBM&reg; Rational&reg; ReqPro&reg; and IBM&reg; Rational&reg; DOORS&reg;.
+</p>
+<h3>
+    Assumptions and prerequisites
+</h3>
+<ul>
+    <li>
+        Team members are consistently updating requirements information in a requirements management tool
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

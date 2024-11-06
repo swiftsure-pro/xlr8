@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Recovering from Halting Tests</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="recover_halt_tests">
+<meta name="uma.presentationName" content="Recovering from Halting Tests">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_v9LekLJeEdyHw6xErAkVmw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Recovering from Halting Tests</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline provides more details on how to recover from halted tests.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h4>
+    <a id="VerifyTestLogs2" name="VerifyTestLogs2">Inspect the Test Logs and other output</a> <a href="./../../../practice.tech.independent_testing.base-ibm/guidances/guidelines/./resources/#RecoverHaltedTests"></a>
+</h4>
+<p>
+    Inspect the Test Logs and other output for completeness and accuracy. Identify where errors have occurred, and inspect
+    them.
+</p>
+<p>
+    When test automation is being employed, there are two categories of halted tests of which it is important to be aware:
+</p>
+<ul>
+    <li>
+        <b>Fatal errors:</b> The system fails (network failures, hardware crashes, and so on)
+    </li>
+    <li>
+        <b>Test failures:</b> This is when some part of a Test within a Test Suite cannot be executed as intended
+    </li>
+</ul>
+<p>
+    When either category of abnormal behavior occurs during test execution, tests may exhibit the following symptoms:
+</p>
+<ul>
+    <li>
+        A large number of (ongoing occurrence) unexpected actions or unexpected windows occur while the Test Suite is
+        executing
+    </li>
+    <li>
+        The test environment appears unresponsive, is slow, or is in an undesirable state (such as hung or crashed)
+    </li>
+</ul>
+<p>
+    Work through the symptoms until you can determine the root cause of the problem.
+</p>
+<h4>
+    <a id="CorrectErrors" name="CorrectErrors">Correct errors</a> <a href="./../../../practice.tech.independent_testing.base-ibm/guidances/guidelines/./resources/#RecoverHaltedTests"></a>
+</h4>
+<p>
+    Errors may be found in the input data consumed by the test, the test itself, or other aspects of the test (such as the
+    test environment or runtime tool settings). It is common for a fix to an error in one aspect of the test to require the
+    correct state to be present in all often aspects of the test.
+</p>
+<p>
+    Once you have finished investigating problems, you may have discovered one or more faults that need correction. To make
+    permanent corrections to the environment, test data, or the test itself, it is a good practice to restore each aspect
+    of the test again to a known state before applying any permanent corrections. This ensures that no additional unwanted
+    or invalid changes find their way into the known-state environment.
+</p>
+<p>
+    After making the necessary changes, save the Test, and then backup or save the accompanying input data and test
+    environment as required.
+</p>
+<h4>
+    <a id="ExecuteTestSuite2" name="ExecuteTestSuite2">Schedule and execute the Test Suite again</a> <a href="./../../../practice.tech.independent_testing.base-ibm/guidances/guidelines/./resources/#RecoverHaltedTests"></a>
+</h4>
+<p>
+    Reschedule and re-execute the Test Suite. Depending on what recovery process is available (if any), you may be able to
+    restart the test suite from an interim point, rather than starting from the beginning. The ability to enable recovery
+    of test execution from a point part-way through the test run typically necessitates the implementation and ongoing
+    maintenance of some form of partial recovery procedure.
+</p>
+<h4>
+    <a id="EvaluateExecution2" name="EvaluateExecution2">Reevaluate execution of Test Suite</a> <a href="./../../../practice.tech.independent_testing.base-ibm/guidances/guidelines/./resources/#RecoverHaltedTests"></a>
+</h4>
+<p>
+    Confirm that the Test Suite now runs to completion. If there are still problems, work through these subsections that
+    make up <i>Recover from halted tests</i> again until all of the problems are resolved.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

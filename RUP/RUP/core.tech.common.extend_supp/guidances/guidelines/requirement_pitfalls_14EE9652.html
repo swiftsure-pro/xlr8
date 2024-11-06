@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Requirement Pitfalls</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="requirement_pitfalls">
+<meta name="uma.presentationName" content="Requirement Pitfalls">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_1AOsMO0JEdqHTdbLTmC5IQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Requirement Pitfalls</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes common pitfalls to avoid in defining and writing requirements. In some cases these are the inverse of the guidelines for writing good requirements, however, by showing examples of what NOT to do makes the explanation of what TO DO clearer.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.use_case_driven_dev.base/tasks/detail_use_case_scenarios_3DBC6A10.html" guid="_SL7N0LPdEduocbW-TPTq7A">Detail Use-Case Scenarios</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Explanations and examples follow for each of the following common pitfalls to avoid in defining and writing
+    requirements (for more information, see <a href="./../../../core.default.nav_view.base/guidances/supportingmaterials/references_C6FF2A8D.html" guid="__nHToFndEd2EdJKkAyeBng">[TEL06]</a>):
+</p>
+<ul>
+    <li>
+        Avoid ambiguity.
+    </li>
+    <li>
+        Don't make multiple requirements.
+    </li>
+    <li>
+        Never use let-out or escape words.
+    </li>
+    <li>
+        Don't ramble.
+    </li>
+    <li>
+        Resist designing the system.
+    </li>
+    <li>
+        Avoid mixing different kinds of requirements.
+    </li>
+    <li>
+        Do not speculate.
+    </li>
+    <li>
+        Do not use vague, undefined terms.
+    </li>
+    <li>
+        Do not express possibilities.
+    </li>
+    <li>
+        Avoid wishful thinking.
+    </li>
+</ul>
+<h4>
+    Avoid ambiguity.
+</h4>
+<p>
+    Avoidance of ambiguity is one of the subtlest and most difficult issues in writing requirements. Try to write as
+    clearly and explicitly as possible. Be specific. Remember, though, that if you carry this too far, the text becomes
+    dull and unreadable, which makes it difficult for other people to review. Although this guideline emphasizes
+    structured, written expression of requirements, informal text, diagrams, conversations, and phone calls are excellent
+    ways of removing ambiguity.
+</p>
+<p>
+    Some constructions (such as the use of or and unless in requirements) allow different groups of readers to understand
+    different things from the same wording. Developers could use this technique deliberately, so as to postpone, until too
+    late, any possibility of the customer's asking for what was truly wanted. This is dangerous and could easily backfire.
+</p>
+<p>
+    The only approach that works is for developers to make requirements as clear as possible, and for all stakeholders to
+    co-operate. In the long run, project success is in everybody's interest.
+</p>
+<p>
+    Dangerous ambiguities can be caused by the word <strong>or</strong> and also by many more-subtle errors.
+</p>
+<h5>
+    Example
+</h5>
+<p>
+    <em>The same subsystem shall also be able to generate a visible or audible caution/warning signal for the attention of
+    the co-pilot or navigator.</em>
+</p>
+<p>
+    Which subsystem? Is the signal to be visible, audible, or both? Is it both caution and warning, just caution, or just
+    warning? Is it for both the co-pilot and the navigator, or just one of them? If just one of them, which one and under
+    what conditions?
+</p>
+<h4>
+    Don't make multiple requirements.
+</h4>
+<p>
+    Requirements which contain conjunctions (words that join independent clauses together) are dangerous. Problems arise
+    when readers try to figure out which part applies, especially if the different clauses seem to conflict, or if the
+    individual parts apply separately. Multiple requirements also make verification more complex.
+</p>
+<p>
+    Dangerous conjunctions include: and, or, but.
+</p>
+<h5>
+    Example
+</h5>
+<p>
+    <em>The battery low warning lamp shall light up when the voltage drops below 3.6 Volts, and the current workspace or
+    input data shall be saved.</em>
+</p>
+<p>
+    Should the battery low warning lamp light up when the voltage drops and the workspace is saved? Should the battery low
+    warning lamp light up and the workspace be saved when the voltage drops?
+</p>
+<h4>
+    Never use let-out or escape words
+</h4>
+<p>
+    Requirements that include options or exceptions are dangerous. They seem to ask for something definite, but at the last
+    moment they back down and allow for other options. Problems arise when the requirements are to be tested, and someone
+    has to decide what (if anything) could prove the requirement was met.
+</p>
+<p>
+    Dangerous words that imply exceptions include: if, when, but, except, unless, although.
+</p>
+<h5>
+    Examples
+</h5>
+<p>
+    <em>The forward passenger doors shall open automatically when the aircraft has halted, except when the rear ramp is
+    deployed.</em>
+</p>
+<p>
+    <em>The fire alarm shall always be sounded when smoke is detected, unless the alarm is being tested or the engineer has
+    suppressed the alarm.</em>
+</p>
+<p>
+    The latter sentence is a truly dangerous requirement!
+</p>
+<h4>
+    Don't ramble.
+</h4>
+<p>
+    Long rambling sentences, especially when combined with arcane language, references to unreachable documents, and other
+    defects of writing, quickly lead to confusion and error.
+</p>
+<h5>
+    Example
+</h5>
+<p>
+    <em>Provided that the designated input signals from the specified devices are received in the correct order where the
+    system is able to differentiate the designators, the output signal shall comply with the required framework of section
+    3.1.5 to indicate the desired input state.</em>
+</p>
+<h4>
+    Resist designing the system
+</h4>
+<p>
+    Requirements should specify the design envelope without unnecessary constraints on a specific design. If we supply too
+    much detail we start to design the system. Going too far is tempting for designers, especially when they come to their
+    favorite bits.
+</p>
+<p>
+    Danger signs include names of components, materials, software objects/procedures, and database fields.
+</p>
+<h5>
+    Example
+</h5>
+<p>
+    <em>The antenna shall be capable of receiving FM signals, using a copper core with nylon covering and a waterproof
+    hardened rubber shield.</em>
+</p>
+<p>
+    Specifying design rather than actual need increases the cost of systems by placing needless constraints on development
+    and manufacture. Often knowing why is much better than knowing what.
+</p>
+<h4>
+    Avoid mixing different kinds of requirements
+</h4>
+<p>
+    The user requirements form a complete model of what users want. They need to be organized coherently to show gaps and
+    overlaps. The same applies to system requirements, which form a complete functional model of the proposed system. A
+    quick road to confusion is to mix up requirements for users, systems, and how the system should be designed, tested, or
+    installed.
+</p>
+<p>
+    Danger signs are any references to system, design, testing, or installation.
+</p>
+<h5>
+    Example
+</h5>
+<p>
+    <em>The user shall be able to view the currently selected channel number which shall be displayed in 14pt Swiss type on
+    an LCD panel tested to Federal Regulation Standard 567-89 and mounted with shockproof rubber washers.</em>
+</p>
+<h4>
+    Do not speculate.
+</h4>
+<p>
+    Requirements are part of a contract between customer and developer. There is no room for wish lists, meaning general
+    terms about things that somebody probably wants.
+</p>
+<p>
+    Danger signs include vagueness about which type of user is speaking, and generalization such as: usually, generally,
+    often, normally, typically.
+</p>
+<h5>
+    Example
+</h5>
+<p>
+    <em>Users normally require early indication of intrusion into the system.</em>
+</p>
+<h4>
+    Do not use vague, undefined terms
+</h4>
+<p>
+    Many words used informally to indicate system quality are too vague for use in requirements. Vague terms include, among
+    others: user-friendly, versatile, flexible, approximately, as possible.
+</p>
+<p>
+    Requirements using these terms are unverifiable because there is no definite test to show whether the system has the
+    indicated property.
+</p>
+<h5>
+    Examples
+</h5>
+<p>
+    <em>The print dialog shall be versatile and user-friendly.</em>
+</p>
+<p>
+    <em>The OK status indicator lamp shall be illuminated as soon as possible after the system self-check is
+    completed.</em>
+</p>
+<h4>
+    Do not express possibilities.
+</h4>
+<p>
+    Suggestions that are not explicitly stated as requirements are invariably ignored by developers.
+</p>
+<p>
+    "Possible options" are indicated with terms such as: may, might, should, ought, could, perhaps, probably
+</p>
+<h5>
+    Example
+</h5>
+<p>
+    <em>The reception subsystem probably ought to be powerful enough to receive a signal inside a steel-framed
+    building.</em>
+</p>
+<h4>
+    Avoid wishful thinking.
+</h4>
+<p>
+    Engineering is a real-world activity. No system or component is perfect. Wishful thinking means asking for the
+    impossible.
+</p>
+<p>
+    Wishful-thinking terms include: reliable, safe, handle all unexpected failures, please all users, run on all platforms,
+    never fail, upgradeable to all future situations.
+</p>
+<h5>
+    Examples
+</h5>
+<p>
+    <em>The gearbox shall be 100% safe in normal operation.</em>
+</p>
+<p>
+    <em>The network shall handle all unexpected errors without crashing.</em>
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    This program and the accompanying materials are made available under the<br />
+    <a href="http://www.eclipse.org/org/documents/epl-v10.php" target="_blank">Eclipse Public License V1.0</a>, which
+    accompanies this distribution.
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.base/guidances/supportingmaterials/epf_copyright_C3031062.html" guid="_UaGfECcTEduSX6N2jUafGA">EPF Copyright</a>.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

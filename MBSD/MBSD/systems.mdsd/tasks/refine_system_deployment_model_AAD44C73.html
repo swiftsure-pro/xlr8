@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Task: Refine System Deployment Model</title>
+<meta name="uma.type" content="Task">
+<meta name="uma.name" content="refine_system_deployment_model">
+<meta name="uma.presentationName" content="Refine System Deployment Model">
+<meta name="uma.category" content="Discipline:se_analysis_design_discipline:Analysis &amp; Design - Systems Engineering">
+<meta name="element_type" content="activity">
+<meta name="filetype" content="description">
+<meta name="role" content="System Architect">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, '', true, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div id="page-guid" value="{B8F36D9E-D010-4D38-8E2F-57B28CC16D1A}"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Task: Refine System Deployment Model</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/task.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This task refines the deployment architecture for a distributed system starting with the Locality Model.</td>
+</tr>
+<tr>
+<td>Disciplines: <a href="./../../systems.mdsd/disciplines/se_analysis_design_discipline_43DBEDF0.html" guid="_iJeTIFVfEdq5crFwWOWfgQ">Analysis & Design - Systems Engineering</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<ul>
+    <li>
+        To refine the Locality Model into a Descriptor-Level Model and then to an Implementation level, through analysis of
+        the localities, their characteristics, and hosted subsystem operations<b>. <i>Note:</i></b> <i>There is a possible
+        interface here to genuine hardware component work (that is, beyond computing platforms).</i>
+    </li>
+    <li>
+        To support supplementary requirements at the Descriptor Level, inheriting the locality requirements through
+        allocation/budgeting.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Primary Performer:
+								</span>
+<ul>
+<li>
+<a href="./../../systems.mdsd/roles/rup_system_architect_89FA9EF1.html" guid="{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}">System Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Additional Performers:
+								</span></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Mandatory:
+								</span>
+<ul>
+<li>
+<a href="./../../systems.mdsd/workproducts/rup_system_architecture_document_C5DEEFE5.html" guid="{F411BB0B-C101-4D78-96B9-10749A72EAD8}">System Architecture Document</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/workproducts/rup_system_deployment_model_C12856E8.html" guid="{F3EF5651-065C-478F-81CC-D55D90FF0CBC}">System Deployment Model</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/workproducts/rup_system_design_model_FF4023F1.html" guid="{96746B25-06FC-4780-847E-B538C06162DB}">System Design Model</a>
+</li>
+</ul>
+<ul></ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Optional:
+								</span>
+<ul>
+<li>
+<a href="./../../systems.mdsd/workproducts/rup_subsystem_supplementary_specification_911D5D8E.html" guid="{C9B8F699-A008-4A3E-8B4D-CE829D595E5D}">Subsystem Supplementary Requirements</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/workproducts/rup_subsystem_vision_AE7C87FE.html" guid="{892CEA8C-66C5-468C-8188-F739B3954B90}">Subsystem Vision</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/workproducts/rup_system_analysis_model_D73BECB2.html" guid="{CB35D940-20DA-446A-B262-C614C7753D12}">System Analysis Model</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Outputs</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../systems.mdsd/workproducts/rup_system_architecture_document_C5DEEFE5.html" guid="{F411BB0B-C101-4D78-96B9-10749A72EAD8}">System Architecture Document</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/workproducts/rup_system_deployment_model_C12856E8.html" guid="{F3EF5651-065C-478F-81CC-D55D90FF0CBC}">System Deployment Model</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Steps</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="sectionTableSingleCell">
+<div class="stepHeading"> Update locality supplementary requirements </div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><a id="Update Locality Supplementary Requirements" name="Update Locality Supplementary Requirements"></a> 
+<p>
+    The System Designer makes decisions about the determination and allocation of behavior in <a class="elementLinkWithType" href="./../../systems.mdsd/tasks/se_operation_analysis_6C6BED14.html" guid="_GMjFYOQ5Edm1mN374l9mbg">Task: System Operation Analysis</a> and <a class="elementLinkWithType" href="./../../systems.mdsd/tasks/se_operation_design_FE6558AC.html" guid="_Gb4P8OQ7Edm1mN374l9mbg">Task: System Operation Design</a> and summarizes these decisions in the survey of subsystem operations hosted at a locality, which is made a
+    property of the <a class="elementLinkWithType" href="./../../systems.mdsd/workproducts/rup_system_deployment_model_C12856E8.html" guid="{F3EF5651-065C-478F-81CC-D55D90FF0CBC}">Artifact: System Deployment Model</a>. The sort of subsystem operations
+    by locality gives the System Architect an indication of the computing load at a locality (and so is useful for
+    reasoning about the capacity of the physical components that support the locality). The System Architect updates the
+    locality supplementary requirements based on this input.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Create/update locality interactions </div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><a id="Create/Update Locality Interactions" name="Create/Update Locality Interactions"></a> 
+<p>
+    In this step, the System Architect creates collaborations of localities and illustrates these with interaction diagrams
+    which show the data exchanged and the sequencing of exchanges between localities. This permits the System Architect to
+    reason about the coupling and cohesion of localities, and the required links (and their bandwidth) between localities.
+    The diagram shows the localities as stereotyped nodes.
+</p>
+<p align="center">
+    <img height="566" alt="diagram showing localities as stereotyped nodes" src="./../../systems.mdsd/tasks/resources/localityinter.gif" width="515"     border="0" />
+</p>
+<p class="picturetext" align="center">
+    Example Locality Interaction Diagram.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Refine Locality Model based on interactions </div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><a id="Refine Locality Model Based on Interactions" name="Refine Locality Model Based on Interactions"></a> 
+<p>
+    Based on discoveries made in the examination of locality interactions, the localities themselves can be refactored
+    (repartitioned), additional localities included, and so on. The locality supplementary requirements might be
+    consequently affected. The connections can also be specified with more certainty in this step.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Update locality subsystem survey </div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><a id="Update Locality Subsystem Survey" name="Update Locality Subsystem Survey"></a> 
+<p>
+    Any repartitioning of localities also has an effect on the subsystem&nbsp;operation survey, which is updated in the
+    System Deployment Model.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Develop/refine locality characteristics and derive locality element requirements </div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><a id="Develop/refine Locality Characteristics and Derive Locality Element Requirements" name="Develop/refine Locality Characteristics and Derive Locality Element Requirements"></a> 
+<p>
+    As the Locality Model stabilizes, the realization of locality supplementary requirements as locality characteristics
+    can progress, and the System Architect can begin to construct the Descriptor Level of the System Deployment Model to
+    support these characteristics (which become a statement of requirements for elements at the Descriptor Level).
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Develop/refine Descriptor-Level Model </div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><a id="Develop/refine Descriptor Level Model" name="Develop/refine Descriptor Level Model"></a> 
+<p>
+    At this point, the System Architect starts to commit to hardware, software, and human elements to realize the
+    localities (and their hosted subsystem operations). The realization of a locality can be in terms of:
+</p>
+<ul>
+    <li>
+        manual processing
+    </li>
+    <li>
+        general computational platforms and associated software, in which the computational platform is a delivery vehicle
+        for the capabilities of the software
+    </li>
+    <li>
+        other hardware elements 
+        <ul>
+            <li>
+                mechanical
+            </li>
+            <li>
+                hydraulic
+            </li>
+            <li>
+                electrical
+            </li>
+            <li>
+                electromechanical
+            </li>
+            <li>
+                ...
+            </li>
+        </ul>which might contain no software, or in which software is <i>embedded</i> (and is therefore specialized in
+        support of the hardware function).
+    </li>
+</ul>
+<p>
+    At the Descriptor Level, the System Architect specifies the types of elements, without making specific choices of
+    equipment (by manufacturer, model number, and so on). An allocation or budgeting process is used to define the
+    characteristics of the descriptor nodes.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Develop/refine Implementation-Level Model </div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><a id="Develop/refine Implementation Level Model" name="Develop/refine Implementation Level Model"></a> 
+<p>
+    At this, the physical level of realization of the System Deployment Model, the actual hardware selections are made and
+    the numbers and skills of staff needed are specified. Trade studies can be conducted to select a cost-effective (set
+    of) configurations which meet or exceed the specified characteristics.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Evaluate the results </div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><a id="Evaluate the Results" name="Evaluate the Results"></a> 
+<p>
+    Decisions made in this&nbsp;task are captured in the System Deployment Model; those aspects which the System Architect
+    considers to be significant are also recorded in the <a class="elementLinkWithType" href="./../../systems.mdsd/workproducts/rup_system_architecture_document_C5DEEFE5.html" guid="{F411BB0B-C101-4D78-96B9-10749A72EAD8}">Artifact: System Architecture Document</a> (in this case, as part of the
+    <i>Physical</i> viewpoint). The effectiveness of proposed solutions at all levels needs to be reviewed with the
+    stakeholders and the development team to ensure that all requirements (cost, capability, constraints) are satisfied.
+    Techniques such as simulation and prototyping can be used to provide more objective demonstrations of the adequacy of
+    the design(s).
+</p>
+<p>
+    <br />
+</p></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

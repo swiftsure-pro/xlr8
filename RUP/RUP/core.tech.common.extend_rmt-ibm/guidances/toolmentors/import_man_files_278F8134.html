@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Import Test Documents Using IBM Rational Manual Tester</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="import_man_files">
+<meta name="uma.presentationName" content="Import Test Documents Using IBM Rational Manual Tester">
+<meta name="uma.category" content="Tool:rup_test_manual_tester:IBM Rational Manual Tester">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="IBM Rational Manual Tester">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_tsLCkHj1EdyhRNciHt44hg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Import Test Documents Using IBM Rational Manual Tester</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor describes how to use IBM Rational Manual Tester to import test documents.</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.tech.common.extend_rmt-ibm/tools/rup_test_manual_tester_D352FA34.html" guid="_7fE8wLWFEdyTM_aghv_1tQ">IBM Rational Manual Tester</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.independent_testing.base-ibm/tasks/implement_test_4938541C.html" guid="_fajSUHE6Edy8Ac588DXPCQ">Develop Test</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Overview
+</h3>
+<p>
+    In the process of implementing tests, you will most likely develop test scripts from within IBM&reg; Rational&reg; Manual
+    Tester's script editor. You may also reuse parts of scripts from the Reuse view (see the&nbsp;<a class="elementLinkWithType" href="./../../../core.tech.common.extend_rmt-ibm/guidances/toolmentors/reuse_man_test_script_49C2CA.html" guid="_4VACcHj1EdyhRNciHt44hg">Tool Mentor: Reuse Content from a Test Script Using IBM Rational Manual Tester</a>).
+    Another convenient way to create scripts is to import test documents directly into Rational Manual Tester, and then
+    having Rational Manual Tester create a test script out of the imported document. In this way, you can avoid having to
+    recreate tests written in Microsoft&reg; Word or Excel.
+</p>
+<h3>
+    Tool Steps
+</h3>
+<p>
+    To import a test document using Rational Manual Tester, perform the following steps:
+</p>
+<ol>
+    <li>
+        Select <strong>File &gt; Import</strong>
+    </li>
+    <li>
+        In the Rational Manual Tester Import wizard, select the file type you want to import
+    </li>
+    <li>
+        Select the path where you want the processed file to be output
+    </li>
+    <li>
+        Add the file you want to import and click <strong>Finish</strong>
+    </li>
+</ol>
+<p>
+    Rational Manual Tester handles the elements of test documents differently, depending on which type of document format
+    you are importing.
+</p>
+<p>
+    For the name of the manual test script created out of this import process, Rational Manual Tester uses the filename of
+    the document you import and appends a .rmt extension. For example, if you import an Excel worksheet named
+    TestingLoginApp.xls, Manual Tester names the manual test script TestingLoginApp.rmt.
+</p>
+<p>
+    <img height="16" alt="" src="./../../../core.tech.common.extend_rmt-ibm/guidances/toolmentors/./resources/helpbook.gif" width="16" /> For more information on how to work with file
+    importing, see the topic <em>Importing Test Documents</em> in the Rational Manual Tester online Help.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

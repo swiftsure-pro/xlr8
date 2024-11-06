@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Iteration Burndown</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="iteration_burndown">
+<meta name="uma.presentationName" content="Iteration Burndown">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_wEVzIHrAEd6bdI3iWuE3ew"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Iteration Burndown</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.mgmt.common.extend_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks remaining estimated effort hours in an iteration. It is calculated and graphed daily in an Iteration Burndown chart to help a team monitor their progress for a given iteration.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p>
+    Iteration Burndown helps&nbsp;a team understand the status of an iteration by showing how much work is left to
+    do.&nbsp;It&nbsp;enables the team to adjust scope or resources to finish the iteration successfully.
+</p>
+<p>
+    An Iteration Burndown chart is updated each day with the estimated work remaining in the current iteration. Ideally,
+    the amount of remaining work decreases as development progresses until it reaches zero at the end of the iteration.
+</p>
+<p>
+    Unlike release burndown and product burndown which both track functionality, iteration burndown tracks remaining effort
+    hours in order to maximize the productivity of the team and predictability of how much work they can perform.
+</p>
+<h3>
+    Definition
+</h3>
+<p>
+    Remaining Estimated Effort Hours is calculated by the following:
+</p>
+<ul>
+    <li>
+        Allocating work items in the work items list to the current iteration
+    </li>
+    <li>
+        Creating an effort hours estimate for each allocated work item
+    </li>
+    <li>
+        Totaling the remaining effort hours estimated for work items that are still open
+    </li>
+</ul>
+<p>
+    Note that you may be working with a product backlog of functional requirements, work items of both functionality and
+    project tasks, or even with multiple work item lists, each&nbsp;dealing with different complexity factors (such as
+    distributed development or compliance issues).&nbsp;&nbsp;Regardless of the types of work items in the backlog, the
+    recommendation is to graph effort hours remaining over time.
+</p>
+<p>
+    Iteration Burndown is captured in IBM&reg; Rational&reg; Team Concert&reg; and IBM&reg; Rational&reg; Insight&reg;.
+</p>
+<h3>
+    Analysis
+</h3>
+<p>
+    Use a line chart to represent the Iteration Burndown.&nbsp; The Y axis shows the remaining estimated effort hours for
+    the iteration. The X axis shows all of the days&nbsp;(past and future) in the iteration. The trend line should slope
+    downward as time progresses. However, the following patterns might occur:
+</p>
+<ul>
+    <li>
+        <strong>Rising Slope:</strong> This pattern happens when there&nbsp;are additional work items&nbsp;(such as tasks
+        and&nbsp;defects) identified&nbsp;after iteration planning.&nbsp;&nbsp;This is not always a bad thing. It is the
+        nature of software development;&nbsp;but,&nbsp;it is important&nbsp;to only consider adding&nbsp;work
+        items&nbsp;that&nbsp;are related to the&nbsp;iteration goals. The team also&nbsp;needs to focus on prioritizing
+        the&nbsp;work items&nbsp;and making sure that&nbsp;higher priority&nbsp;work items are completed&nbsp;first. Teams
+        might also see a rising slope when their estimates increase as the iteration progresses.&nbsp;&nbsp;This is another
+        common pattern in software development, as teams are rarely perfect in their estimating.&nbsp;&nbsp;However,
+        this&nbsp;pattern should generally be avoided,&nbsp;especially at the end of iteration. The team may need to
+        perform some re-scoping to get back on track if their Iteration Burndown chart displays a rising trend line.
+    </li>
+    <li>
+        <strong>Flat-line:</strong> This pattern&nbsp;can&nbsp;occur when&nbsp;there are defects or rework&nbsp;work
+        items&nbsp;that prevent the team&nbsp;from moving forward. This could indicate the team needs to place more focus
+        on quality.&nbsp; This pattern is also seen when the rate that the team completed work items is equal to the rate
+        that &nbsp;new work items were added to the work items list.&nbsp;&nbsp;If this trend continues, the team will not
+        reach its iteration commitments without rescoping.&nbsp;&nbsp;In extreme cases, the team might not be performing
+        any work at all, resulting in a flat trend line. Immediate action must be taken to determine the reason that
+        productivity has stalled.&nbsp; Another cause of a flat trend line is a reduction in resources&nbsp;or team
+        members.&nbsp; This scenario&nbsp;requires&nbsp;rescoping or backfilling the missing resources. Yet another cause
+        of this trend line is work items that&nbsp;are too large in scope. The team may need to create smaller work items
+        so that the burndown chart reflects that work is being completed.&nbsp;&nbsp;
+    </li>
+    <li>
+        <strong>Perfect&nbsp;Downward Slope:</strong> This trend represents the perfect project with a trend line sloping
+        in an even descent toward completion. Most projects experience some changes in their rate of progress along the way
+        due to normally occurring factors. A perfect trend could indicate that the team is working in a very controlled,
+        non-trusting environment where they feel uncomfortable communicating their true status.
+    </li>
+    <li>
+        <strong>Dramatic Upward Slope at the End of the Iteration (Hockey Stick):</strong> This trend typically indicates a
+        surprise at the end of the iteration.&nbsp; The team might have pushed high risk items to the end of the iteration,
+        waiting too long to seek clarification.&nbsp;Or, the scope of the iteration changed late in the iteration. A sudden
+        increase in the amount of outstanding work very late will make it difficult for the team to meet its commitments
+        for the iteration.&nbsp; This trend should be raised and resolved as part of the retrospective.
+    </li>
+</ul>
+<p>
+    The&nbsp;following&nbsp;Iteration Burndown chart example displays scope changes and burndown. The graph plots two lines
+    in this example of an in- progress&nbsp;iteration.
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img alt="Iteration Burndown With Scope" src="./../../../core.mgmt.common.extend_metrics-ibm/guidances/supportingmaterials/./resources/iteration_burndown_with_scope.gif" width="560"     height="327" />
+</p>
+<p>
+    The bold blue line shows the amount of work left by plotting remaining estimated effort hours from open work items
+    only.&nbsp; Notice that this line can go up as more work items are created for the current iteration or if estimates
+    are increased.&nbsp; When this line drops it can be either because work items were closed or removed from the
+    iteration.
+</p>
+<p>
+    The gray line shows the total work for the iteration by plotting effort for open plus closed work items.&nbsp; This
+    line does not slope downward as work is completed unless the remaining Estimated Effort Hours goes down.&nbsp; This
+    happens&nbsp;only if estimates are reduced or work items are removed from scope.&nbsp; In a perfect plan, the gray line
+    would be perfectly horizontal , but that is extremely rare, especially in early iterations. Notice that this happens
+    near the end of the graph.
+</p>
+<p>
+    The variance in the plan can be also measured&nbsp;in this graph. According to the gray line, this team originally
+    planned for roughly 2000 hours of work, but are currently planning for about 3200 hours, or 60% more than originally
+    planned at this point in the iteration. If this were the end of the iteration, the team would actually have completed
+    2400 hours of work (3200 gray line minus 800 dark blue line = 2400 hours closed) That would be 20% more than they had
+    originally planned.
+</p>
+<h3>
+    Frequency and reporting
+</h3>
+<p>
+    The team monitors this metric daily to understand how much more work is left to complete in the iteration.&nbsp; At the
+    end of the iteration, this report is used to identify trends.
+</p>
+<h3>
+    Collection and reporting tools
+</h3>
+<p>
+    IBM&reg; Rational&reg; Team Concert&reg; collects data for this metric.<br />
+</p>
+<h3>
+    Measurement Pitfalls
+</h3>
+<p>
+    Following are some things to look out for when tracking&nbsp;Iteration Burndown:
+</p>
+<ul>
+    <li>
+        In non-trusting, highly controlled environments, teams might fear they will be judged and punished for&nbsp;less
+        that stellar results. This can lead to inaccurate burndown tracking to avoid negative repercussions.
+    </li>
+    <li>
+        In theory, a team could&nbsp;simply adjust the end date of the iteration if their burndown trend indicates they
+        will not meet their iteration commitments.&nbsp; Instead, scope should be allocated to subsequent iterations, and
+        the overall project plan adjusted for scope, resources, end date, or quality based on those reallocations.
+    </li>
+    <li>
+        In some cases, a team might get very good at capturing and reporting burndown accurately, but may not know how to
+        take action to improve based on what they see in their trend line. When this happens, deeper analysis is needed to
+        find the underlying cause of the trend, so that corrective actions can be taken.&nbsp; It might be necessary to
+        abandon the metric if the team is unable to use the measurements to incrementally improve their productivity.
+    </li>
+</ul><br />
+<h3>
+    Countermeasures For This Metric
+</h3>
+<ul>
+    <li>
+        When a team has a perfect or near perfect downward sloping trend line,&nbsp;they may have refused&nbsp;to add any
+        new requirements to an iteration in order to preserve their&nbsp;positive burndown results.&nbsp; If this is
+        happening, a subjective measurement for Customer Satisfaction can be added to the iteration.&nbsp; When
+        stakeholders do not see their requests addressed, their satisfaction with what was delivered for the iteration will
+        be low. A Change Request Aging metric can also be used in these situations. This metric will be higher if teams are
+        routinely refusing to add any new requirements&nbsp;to the iteration.
+    </li>
+    <li>
+        If the team discovers a trend of addressing low risk items first, leaving higher risk items to the end of the
+        iteration, a Backlog Complexity metric could be tracked as a countermeasure.&nbsp; Backlog Complexity should be
+        dropping in each iteration, but will remain high if the team has a habit of addressing high risk items late in each
+        iteration.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.mgmt.common.extend_metrics-ibm/guidances/concepts/burndown_chart_6F86536A.html" guid="_wr5J8IEkEd629os7NUh3Zw">Burndown Chart</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

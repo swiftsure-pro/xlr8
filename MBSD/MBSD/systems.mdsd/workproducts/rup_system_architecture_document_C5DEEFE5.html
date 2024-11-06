@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: System Architecture Document</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="rup_system_architecture_document">
+<meta name="uma.presentationName" content="System Architecture Document">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="uma.category" content="WorkProductType:specification:specification">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{F411BB0B-C101-4D78-96B9-10749A72EAD8}"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: System Architecture Document</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../systems.mdsd/workproducts/resources/doc_artf.jpg" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The System Architecture Document provides a comprehensive architectural overview at the system level, using a number of different architectural views to depict different aspects of the system.</td>
+</tr>
+<tr>
+<td>Domains: <a href="./../../systems.mdsd/domains/se_domain_2C0B7BF2.html" guid="_lsjkIFJFEdq7lcIJkU0htg">Systems Engineering Work Products</a>
+<br>Work Product Kinds: <a href="./../../systems.mdsd/workproducttypes/specification_3C6D9283.html" guid="__QQyMFLlEdq0F6_cvM5BLg">specification</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_System_Architecture_Document__purpose_of" name="XE_System_Architecture_Document__purpose_of"></a><a id="Purpose" name="Purpose"></a> 
+<p>
+    The <i>System Architecture Document</i> provides a comprehensive overview of the architecture at the system level. It
+    serves as a communication medium between the <i>System Architect</i>, the project, and subprojects regarding
+    architecturally significant decisions. The System Architecture Document describes the system's:
+</p>
+<ul>
+    <li>
+        architectural principles and guidelines
+    </li>
+    <li>
+        behavior (as visible externally and as realized internally)
+    </li>
+    <li>
+        structure (in component terms)
+    </li>
+    <li>
+        interface design
+    </li>
+    <li>
+        physical layout
+    </li>
+    <li>
+        architectural rationale and support for non-functional requirements
+    </li>
+    <li>
+        other resources
+    </li>
+</ul>
+<p>
+    Snapshots from the Use-Case Model, System Analysis Model, System Design Model, and System Deployment Model are provided
+    in the System Architecture Document to illustrate these system facets from several <i>viewpoints</i>:
+</p>
+<ul>
+    <li>
+        Worker - concerned with the roles and responsibilities of the organization and system workers (and policies
+        affecting these)
+    </li>
+    <li>
+        Logical - focuses on the decomposition of the system into subsystems which interact through interfaces
+    </li>
+    <li>
+        Information - concerned with the persistent information stored within the system
+    </li>
+    <li>
+        Physical - focuses on the physical partitioning and how distributed interaction between subsystems is supported
+    </li>
+    <li>
+        Process - dealing with the system's ability to: 
+        <ul>
+            <li>
+                Accept and process multiple external stimuli concurrently.
+            </li>
+            <li>
+                Meet performance and resource constraints through concurrent processing, and the internal mechanisms for
+                concurrency, communication and synchronization which support this. 
+                <!--Does this line go with the Process bullet point from above, or with the sub-bullet immediately above the line? The word "this" at the end of the line is a vague pronoun. To what does the pronoun  refer? I recommend replacing the pronoun with the actual noun. -->
+            </li>
+        </ul>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Responsible:
+								</span>
+<ul>
+<li>
+<a href="./../../systems.mdsd/roles/rup_system_architect_89FA9EF1.html" guid="{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}">System Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Modified By:
+								</span>
+<ul>
+<li>
+<a href="./../../systems.mdsd/roles/rup_system_architect_89FA9EF1.html" guid="{A83E9C0E-3BBD-4D5A-902F-3B82F21975E3}">System Architect</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tasks</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Input To:
+								</span>
+<ul>
+<li>
+<a href="./../../systems.mdsd/tasks/construct_arch_proof_2E37327D.html" guid="{0ADC1D2E-584C-4FB2-9DF7-0E6E086286C8}">Construct System Architecture Proof-of-Concept</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/tasks/prioritize_system_use_cases_F44F2481.html" guid="{91F959E0-63F6-4FB0-9255-3634E92E7537}">Prioritize System Use Cases</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/tasks/refine_system_deployment_model_AAD44C73.html" guid="{B8F36D9E-D010-4D38-8E2F-57B28CC16D1A}">Refine System Deployment Model</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/tasks/refine_system_structure_1B8985E.html" guid="{43DD441B-6B4C-4998-B5D9-2A15894C5D56}">Refine System Structure</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/tasks/architectural_analysis_30D2538.html" guid="{B7FABC7A-42FA-4DC7-A1F4-C4F5DB6F673F}">System Architectural Analysis</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Output From:
+								</span>
+<ul>
+<li>
+<a href="./../../systems.mdsd/tasks/prioritize_system_use_cases_F44F2481.html" guid="{91F959E0-63F6-4FB0-9255-3634E92E7537}">Prioritize System Use Cases</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/tasks/refine_system_deployment_model_AAD44C73.html" guid="{B8F36D9E-D010-4D38-8E2F-57B28CC16D1A}">Refine System Deployment Model</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/tasks/refine_system_processes_3AFDF977.html" guid="{6A132C87-C82B-422D-BD56-B42E7E20131D}">Refine System Processes</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/tasks/refine_system_structure_1B8985E.html" guid="{43DD441B-6B4C-4998-B5D9-2A15894C5D56}">Refine System Structure</a>
+</li>
+<li>
+<a href="./../../systems.mdsd/tasks/architectural_analysis_30D2538.html" guid="{B7FABC7A-42FA-4DC7-A1F4-C4F5DB6F673F}">System Architectural Analysis</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Templates</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../systems.mdsd/guidances/templates/system_architecture_document_5B807A1F.html" guid="1.3184560012908812E-305">System Architecture Document</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Representation Options</th><td class="sectionTableCell">UML Representation: <br />
+<br />
+<br />
+<br />
+<a id="Tailoring" name="Tailoring"></a> 
+<p>
+    You need to adjust the outline of the System Architecture Document to suit the nature of the system being developed,
+    for example:
+</p>
+<ul>
+    <li>
+        Some classes of system might not need the section on <i>System Layout</i>, which has mainly to do with the physical
+        placement and assembly of (non-software) components.
+    </li>
+    <li>
+        You might need additional appendices to explain certain aspects, such as the rationale of certain critical choices
+        together with the solutions that have been eliminated, or to define acronyms or abbreviations, or present general
+        design principles.
+    </li>
+    <li>
+        The order of the various sections can vary, depending on the system's stakeholders and their focus or interest.
+    </li>
+</ul>
+<p>
+    All of the system architecture viewpoints probably need to be explored, although an individual viewpoint does not
+    always have the same importance, across different types of system.<br />
+    <br />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

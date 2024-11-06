@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Blocking Work Items</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="blocking_work_items">
+<meta name="uma.presentationName" content="Blocking Work Items">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_LKn8wCxwEd27ZriaQAQC4w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Blocking Work Items</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.mgmt.common.extend_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks the number of work items that are currently blocked.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p>
+    This metric is used to identify the trend of work items that are blocking&nbsp;the team&nbsp;from making progress. It
+    can help you to identify&nbsp;road blocks&nbsp;and&nbsp;focus on removing them so that&nbsp;the team can move forward.
+</p>
+<p>
+    This metric is useful when there are multiple teams working together. A high level of collaboration is needed due
+    to&nbsp;interdependencies among the various tasks that teams are working on.
+</p>
+<h3>
+    Definition
+</h3>
+<p>
+    Count: the total number of&nbsp;open work items with a status of blocked in&nbsp;the iteration.&nbsp;
+</p>
+<h3>
+    Analysis
+</h3>
+<p>
+    A good way to monitor Blocking Work Items is to use a line chart. Observe the growth of blocking work items over time.
+</p>
+<ul>
+    <li>
+        <strong>Expected trend</strong> - The number of blocking work items should approach zero as the iteration nears its
+        end. This indicates the team is making progress and is positioned well to successfully complete the iteration.
+    </li>
+    <li>
+        <strong>Upward slope</strong> - When the number of blocking work items remains high, velocity is reduced and
+        can&nbsp;impact the project schedule. This trend indicates that the team may not be working to identify potential
+        project risks. They may also be doing a poor job of managing issues to closure.&nbsp;Watch for a &nbsp;high or
+        increasing number of blocking work items close to the end of an iteration. This may indicate that the iteration end
+        date is in danger. The team should review each blocking work item on the report&nbsp;to determine what is causing
+        the blockage. It is also important to&nbsp;understand how long&nbsp;each has been blocked. This information can
+        help you plan needed corrective action. When there are multiple teams working together collaboratively or on
+        high-dependency tasks, it is a good idea to create a dependency diagram to try to avoid the road blocking in the
+        critical path, or try to remove the blocking as soon as possible.
+    </li>
+</ul>
+<p>
+    In the&nbsp;following example, which shows open blocking work items,&nbsp;the team reached a peak of 5 blocking work
+    items in the iteration. The number gets smaller as the iteration nears its end, but there are still 3 remaining open
+    work items that are blocked.
+</p><img alt="Blocking Work Items Report" src="./../../../core.mgmt.common.extend_metrics-ibm/guidances/supportingmaterials/resources/blocking_work_items.gif" width="591" height="419" /><br />
+<h3>
+    Frequency and reporting
+</h3>
+<p>
+    The team reviews Blocking&nbsp;Work Items throughout the iteration to understand their progress at removing road
+    blocks. This metric is also reviewed at the end of each iteration to help identify trends throughout the release.
+</p>
+<h3>
+    Collection and reporting tools&nbsp;
+</h3>
+<p>
+    Use IBM&reg; Rational&reg; Team Concert&reg; to track Blocking Work Items. An out of the box&nbsp;report plots all open work items
+    with&nbsp;a severity of &nbsp;"Blocker" over time.
+</p><br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: How to Use Tivoli Provisioning Manager to Deploy a Release</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="tpm_deploy_release_toolmentor">
+<meta name="uma.presentationName" content="How to Use Tivoli Provisioning Manager to Deploy a Release">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_7wNMgNDAEdqVJPubumbdTw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: How to Use Tivoli Provisioning Manager to Deploy a Release</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../govern.compliance/guidances/toolmentors/resources/toolment_lg_dgm32.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../govern.compliance/tasks/rcm_distribute_software_release_D8B38723.html" guid="_kXfnYLrMEdq_f-xxmjgMWA">Distribute Software Release</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This tool mentor is derived from the IBM Tivoli Unified Process (reference TM071)
+</p>
+<h5>
+    Context
+</h5>
+<p class="text-normal">
+    One activity in <a class="elementLinkWithUserText" href="./../../../govern.compliance/guidances/guidelines/rcm_release_management_workflow_D4EEB0BC.html" guid="_xk71QMw0EdqV26RhCpjg4g">Tivoli Release Management</a> is <i>Deploy a Release</i>. The rollout of a Release
+    Package is performed in this activity. The Release Package is deployed to all Change Items (CI) that are identified in
+    the Rollout Plan. The Release Package is deployed as provided, without any modifications. After distribution,
+    installation, and configuration, the changes are checked to ensure the functional integrity of the changes. This
+    activity might involve automated checks, user surveys, or other approaches.<br />
+    <br />
+     The change management database is updated to reflect the fact that specific requests for change (RFC) have been
+    deployed. A subsequent review of the related RFCs is performed by the Change Management process.
+</p>
+<h5>
+    Details
+</h5>
+<p class="text-normal">
+    The Tivoli Provisioning Manager contains a component called the deployment engine, which is ultimately responsible for
+    workflow executions that have a direct impact towards change within an infrastructure.
+</p>
+<p class="text-normal">
+    Release Packages are deployed using the workflow functionality within Tivoli Provisioning Manager. Release Packages
+    (usually in the form of software products) can have a wide variety of configuration parameters, which are configured at
+    workflow runtime. The parameters are harvested at runtime from multiple possible sources, including workflow parameters
+    that are passed at runtime, or parameters that are encapsulated within the data center model (DCM) information that
+    describes the datacenter environment.
+</p>
+<p align="center">
+    <img height="264" alt="Provides a screen shot of the execution logs in TPM"     src="./../../../govern.compliance/guidances/resources/toolmentor_tpm_deployrel.jpg" width="485" />
+</p>
+<div align="left">
+    <p class="text-normal" align="center">
+        Figure 1 : An example of a workflow following successful execution
+    </p>
+    <p class="text-normal">
+        Following successful execution of workflows, the DCM is updated to reflect any changes to infrastructure items,
+        which can include inventory lists against a specific server instance. For example, a workflow might deploy an
+        instance of a software package against a server within the datacenter. Following the successful execution of the
+        <em>Software.Install</em> workflow against this device, the inventory of the server would receive an update to
+        reflect the additional software that is now located on that resource.
+    </p>
+    <p class="text-normal">
+        With advanced features such as conditionals, looping, and branching, workflows have a very powerful capability to
+        provision software elements, configuration parameters, or reconfigure items within the datacenter.
+    </p>
+    <p class="text-normal">
+        In addition to executing a workflow manually to deploy a release, workflows might be executed
+        <em>automatically</em> based on an existing condition, or as part of a larger overall workflow process routine
+        (such as the addition of a server into a cluster, for example). Workflows provide administrators with the
+        flexibility to customize their deployment operations in a wide variety of implementations.
+    </p>
+    <p class="text-normal">
+        Examples of the real value that workflows provide -- along with samples of various software product standards that
+        are supported -- can be located on the IBM IT Service Management workflows Web page located at <a href="http://www.ibm.com/software/tivoli/features/opal/">http://www.ibm.com/software/tivoli/features/opal/</a>. It
+        provides access to information such as:
+    </p>
+    <ul>
+        <li>
+            <span class="text-normal">How can workflows help reduce costs within my environment?</span>
+        </li>
+        <li class="text-normal">
+            What are some examples of workflows (included within the default installation of Tivoli Provisioning Manager)
+            that will allow me to deploy existing releases with minimal effort?
+        </li>
+        <li class="text-normal">
+            How can I develop <em>automation plans</em> to ease the administrative issues within my environment?
+        </li>
+        <li class="text-normal">
+            What tools and strategies are available to improve our workflow development process?
+        </li>
+    </ul>
+    <p class="text-normal">
+        The open nature of workflows -- by their design -- allows for very simple integration into a wide variety of
+        third-party solutions (including products from companies other than IBM). Should an organization include products
+        to carry out specific aspects of release rollout, Tivoli Provisioning Manager workflows can easily integrate and
+        utilize a wide variety of toolsets. By integrating these tools into the release deployment process, IT
+        organizations will be able to significantly reduce costs they might otherwise spend on additional tools and
+        training.
+    </p>
+    <p class="text-normal">
+        An online catalog of release deployment workflows, which provide functionality into a wide variety of
+        industry-standard products, is available through the IBM Open Process Automation Library. This library is
+        accessible online at <a href="http://www.developer.ibm.com/tivoli/workflow.html" target="_parent">http://www.developer.ibm.com/tivoli/workflow.html</a> .<br />
+    </p>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <br />
+                     
+                    <h4 class="text-normal" align="left">
+                        More Information
+                    </h4>
+                    <p class="text-normal" align="left">
+                        To get more information, speak to a representative, or purchase IBM Tivoli IT Service Management
+                        tools, visit the IBM Tivoli IT Service Management home page at <a href="http://www.ibm.com/software/tivoli/itservices" target="_parent">http://www.ibm.com/software/tivoli/itservices</a>.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br />
+                    <br />
+                     
+                    <div class="text-copyright" align="left">
+                        &copy; Copyright IBM Corporation 2005, 2007. All Rights Reserved
+                    </div><br />
+                    <br />
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+    <br />
+    <br />
+    <br />
+</div></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

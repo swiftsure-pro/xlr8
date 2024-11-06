@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Architectural Risk Burndown</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="architectural_risk_burndown">
+<meta name="uma.presentationName" content="Architectural Risk Burndown">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_snPBUMyJEd6AlLazTePGRg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Architectural Risk Burndown</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks the remaining level of architectural risk for a project across iterations.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p style="MARGIN-RIGHT: 0px" dir="ltr">
+    Risk is a key driver of architecture and design activities. In order to deliver a feasible architecture, the team must
+    identify, analyze, communicate, and mitigate risk throughout the project lifecycle. Monitoring the progress of risk
+    reduction in a burndown chart provides several benefits:
+</p>
+<ul>
+    <li>
+        Drives iteration plans and design activities
+    </li>
+    <li>
+        Illustrates progress made in early iterations at addressing architectural issues (when velocity may be low from not
+        delivering more functionality)
+    </li>
+    <li>
+        Provides an easily understood summary of architectural risk that could impact project success. New and escalating
+        risks are visible.
+    </li>
+    <li>
+        Reduces the likelihood of focusing on the wrong issues early in the lifecycle that can result in large surprises at
+        the end of the project. Encourages ongoing and active mitigation efforts and increased communication.
+    </li>
+    <li>
+        Useful for explaining the team's confidence in their estimates based on remaining uncertainty. Helps describe the
+        predictability of the project based on remaining risk.
+    </li>
+    <li>
+        <p>
+            Helps the team understand the effectiveness of their architectural risk mitigation activities
+        </p>
+    </li>
+</ul>
+<h3>
+    Definition
+</h3>
+<p>
+    To calculate remaining risk:
+</p>
+<ol>
+    <li>
+        Assign the following values to each identified architectural risk (still outstanding):
+    </li>
+</ol>
+<div style="MARGIN-LEFT: 2em">
+    <ul>
+        <li>
+            Likelihood of occurrence - defined as a percentage (using a standard scale such as 20%, 40%, 60%, 80%)
+        </li>
+        <li>
+            Estimated Cost of Impact - defined in hours or days
+        </li>
+    </ul>
+</div>
+<p>
+    2. Calculate a score for each risk:
+</p>
+<div style="MARGIN-LEFT: 2em">
+    <ul>
+        <li>
+            Risk Score = Likelihood of occurrence * Estimated Cost of Impact
+        </li>
+    </ul>
+</div>
+<p>
+    3. Determine Overall Architectural Risk
+</p>
+<div style="MARGIN-LEFT: 2em">
+    <ul>
+        <li>
+            Total Risk Score = the sum of all individual Risk Score values
+        </li>
+    </ul>
+</div>
+<p>
+    A good way to monitor Architectural Risk over time is to use a trend line in a burndown chart. The Total Risk Score is
+    plotted on the Y axis, and the iterations are on the X axis.
+</p><br />
+<h3>
+    Analysis
+</h3>
+<p>
+    As outstanding risks are tracked, trends are identified to help the team understand the predictability of their project
+    and overall risk status in terms of the architecture. If sufficient burndown of risk isn't occurring the team can take
+    appropriate corrective action.
+</p>
+<p>
+    Architectural Risk Burndown is used as a capability improvement metric. It helps a team and middle management (project
+    manager, product owner) monitor improvements made during the project lifecycle in adopting the Evolutionary
+    Architecture and Iterative Development practices.<br />
+    <br />
+    Operational Executives can also use this metric to monitor systemic improvement in reducing time to delivery, improving
+    predictability, increasing value, and improving quality across the organization by adopting Evolutionary Architecture
+    and Iterative Development.<br />
+</p>
+<p>
+    <strong>Expected trend</strong> - Ideally, risk is decreasing over time through active efforts to drive open risks to
+    closure as the team learns more about the problem domain and the architecture. The team is reducing uncertainty in each
+    iteration, focusing first on risks with the highest likelihood of impact and cost, and is providing better estimates,
+    resulting in a more predictable project. Architectural risks are discovered during the elaboration phase and reduced by
+    80% before moving into the construction phase.
+</p>
+<p>
+    <strong>Flat or rising near the middle of lifecycle</strong> - This trend indicates that the team isn't actively
+    working to address risk and there is too much uncertainty in the project. The team should base their iteration planning
+    around the architecturally significant and high risk use cases and non-functional requirements to drive down the
+    outstanding risk. Ensure that test coverage of these requirements is sufficient. Reassess architectural risk during
+    each iteration retrospective and as needed during daily meetings to ensure that high risk items are communicated.
+    Confirm that the architecture is sufficiently captured and communicated so that the team can continue to evolve and
+    deliver it. Provide coaching in architectural risk mitigation techniques. Use the remaining risk level to determine the
+    level of uncertainty in project estimates. If the number of architectural risks remains high through the planned end of
+    elaboration, the team should consider extending the elaboration phase to address those risks.
+</p>
+<p>
+    <strong>Fast incline near the end of the lifecycle</strong> - This trend can occur when the team did not actively work
+    to identify risks from the earliest iterations (when the impacts of change are least costly) and is presented with
+    surprises at the end of the lifecycle. This can result from waiting too long to deliver working software that proves
+    the architecture. The team should prioritize work items in early iterations that represent architecturally significant
+    use cases, and continue to focus on work items based on coverage and criticality. It can also occur when there has been
+    insufficient test coverage to confirm that the architecture addresses the major aspects of the system, even when there
+    is no expected risk for particular areas. If the team determines that the schedule and cost will be impacted as a
+    result of required work to mitigate late-breaking, newly identified risks, they should collaborate with stakeholders to
+    determine if scope should be cut or the release date adjusted. Determine if it is possible to negotiate impacted
+    architecturally significant requirements in order to reduce high impact risk.
+</p><br />
+<h3>
+    Frequency and reporting
+</h3>
+<p>
+    The team should evaluate architectural risk at the end of each iteration during a retrospective meeting. Risk Scores
+    are adjusted as needed, and risks that have been addressed are closed so that the team can update the burndown chart.
+    Trends are monitored and analyzed to help prioritize activities in the next iteration planning session. Stakeholders
+    are routinely apprised of current risks and collaborate with the team for impact assessment and mitigation.<br />
+</p>
+<h3>
+    Collection and reporting tools
+</h3>
+<p>
+    Risks can be captured in&nbsp;&nbsp;IBM&reg; Rational&reg; Team Concert&reg;, IBM&reg; Rational&reg; Project Conductor&reg;, IBM&reg; Rational&reg;
+    ReqPro&reg; using custom attributes, or in a simple spreadsheet. Generate the burndown report by using charting
+    capabilities in a basic spreadsheet tool.
+</p>
+<h3>
+    Assumptions and prerequisites
+</h3>
+<ul>
+    <li>
+        Time-boxed iterations are scheduled, and iteration length is consistent
+    </li>
+    <li>
+        Risks are captured, and the team collaborates with stakeholders to determine likelihood and impact.
+    </li>
+</ul><br />
+<h3>
+    Pitfalls, advice, and countermeasures
+</h3>
+<ul>
+    <li>
+        If risk is not managed consistently throughout the lifecycle, the team will likely begin to act in a reactive,
+        crisis mode as risks emerge. A consistent, repeatable risk mitigation process enables better project predictability
+        and higher levels of trust by project stakeholders.
+    </li>
+    <li>
+        The need to identify and monitor risk increases with the complexity of the system.
+    </li>
+    <li>
+        The effort to reduce uncertainty has an associated cost. The team must balance the cost of this effort against the
+        potential impact of not addressing the risk. Not all candidate risks are actively managed. Mitigation effort and
+        degree of monitoring depend on the likelihood of impact and the risk tolerance for the project.
+    </li>
+    <li>
+        Use the Test Coverage of Requirements metric as a countermeasure for this metric. The team may report low
+        architectural risk, but the system may not have been tested sufficiently to prove the architecture.<br />
+        <br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

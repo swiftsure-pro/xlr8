@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Roadmap: Application Controls Development</title>
+<meta name="uma.type" content="Roadmap">
+<meta name="uma.name" content="rcm_application_control_development">
+<meta name="uma.presentationName" content="Application Controls Development">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_wdqFcJfaEdu6LZdnjUXiFA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Roadmap: Application Controls Development</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/roadmap.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This roadmap supplements the Process Control enhanced RUP methodology in situations where a release includes Application Controls to address compliance management-specific requirements.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    <strong>Table of Contents</strong>
+</h3>
+<ul>
+    <li>
+        <a href="#intro">Introduction</a>
+    </li>
+    <li>
+        <a href="#proc">Process enhancements</a> 
+        <ul>
+            <li>
+                <a href="#wp">Compliance Management work products</a>
+            </li>
+            <li>
+                <a href="#roles">Key roles</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#dp">Software Development process</a> 
+        <ul>
+            <li>
+                <a href="#inception">Inception Phase tasks</a>
+            </li>
+            <li>
+                <a href="#elaboration">Elaboration Phase tasks</a>
+            </li>
+            <li>
+                <a href="#construction">Construction Phase tasks</a>
+            </li>
+            <li>
+                <a href="#transition">Transition Phase tasks</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<h2 id="intro">
+    Introduction
+</h2>
+<p>
+    <strong>This roadmap supplements the main software delivery roadmap</strong> in situations where a release includes
+    Application Controls (requirements specific to compliance management). The additional activities involve creating the
+    compliance-related work products, and subsequently verifying that the compliance requirements were met in a controlled
+    fashion. To get the most out of this roadmap, it is strongly recommended as a pre-requisite that you read and
+    understand the main software delivery roadmap.
+</p>
+<h2 id="proc">
+    Process enhancements
+</h2>
+<h3 id="wp">
+    Compliance Management work products
+</h3>
+<p>
+    The major addition covered by this roadmap results from the addition of a new controlled work product called <a class="elementLink" href="./../../../govern.compliance/workproducts/rcm_compliance_requirements_AE5D086D.html" guid="_CbpqIJfdEdu6LZdnjUXiFA">Compliance Requirements</a>. These are Application Controls whose purpose is to enhance
+    The ability of IT organizations to achieve compliance. Compliance Requirements constitute a subset of all project
+    artifacts, and it is added to the responsibilities of the requirements specifier. This artifact creates the need to
+    introduce the following additional work products:
+</p>
+<p>
+    <a href="./../../../govern.compliance/workproducts/rcm_corporate_compliance_policy_97E9C45A.html" guid="_KJGdkLosEdqks_xlfprPXQ">Corporate Compliance Policy</a> -- This work product provides the organization's
+    interpretation of the standards and regulations to which the organization is subject. It is necessary because
+    regulations are often non-directive: While they tell you <strong>what</strong> you need to achieve, they don't tell you
+    <strong>how</strong> to do it. It is developed by the Policy Analyst. Developing this artifact, however, is outside the
+    scope of this plug-in. It is only used here as an input.
+</p>
+<p>
+    <a href="./../../../govern.compliance/workproducts/rcm_compliance_vision_addendum_BAC7DF51.html" guid="_G0mxcMwIEdqWwYk_OOw-vg">Compliance Enhancement Vision Addendum</a> is a sub-artifact of the vision document that
+    focuses on the aspects of the project intended to improve the control and auditability of the software development
+    process. This artifact is a high-level outline of the compliance requirements, techniques, metrics (and so on) that are
+    considered in the project, and it summarizes the approach for validating that the process meets these control
+    objectives.
+</p>
+<p>
+    <a href="./../../../govern.compliance/workproducts/rcm_compliance_vision_addendum_BAC7DF51.html" guid="_G0mxcMwIEdqWwYk_OOw-vg">Compliance Test Plan</a> is a sub-artifact of the Test Plan that focuses on verifying
+    that compliance requirements have been met.
+</p>
+<h4>
+    Work product control
+</h4>
+<p>
+    The following additional approvals are now required, thereby making the associated artifacts controlled work products.
+</p>
+<ul>
+    <li>
+        <a class="elementLink" href="./../../../govern.compliance/workproducts/rcm_compliance_vision_addendum_approval_2D1E810B.html" guid="_Znx-AMkSEdq9CtL8HKjkzA">Compliance Vision Addendum Approval</a> formalizes the validity of the approach
+        being taken to manage compliance for the application or software product under development. It is the
+        responsibility of the Compliance Analyst.
+    </li>
+    <li>
+        <a class="elementLink" href="./../../../govern.compliance/workproducts/rcm_compliance_requirements_approval_E5736688.html" guid="_YuD70LosEdqks_xlfprPXQ">Compliance Requirements Approval</a> formalizes agreement regarding the compliance
+        requirements that will be incorporated into the application or software product. It is the responsibility of the
+        Policy Analyst.
+    </li>
+    <li>
+        <a class="elementLink" href="./../../../govern.compliance/workproducts/rcm_test_plan_approval_7F360C73.html" guid="_yz6-ILnvEdqLnMDVAL9PSw">Test Plan Approval for Compliance</a> formalizes that the project has appropriate
+        test plans in place to verify the compliance requirements.
+    </li>
+</ul>
+<h3 id="roles">
+    Key roles
+</h3>
+<p>
+    Compliance Management introduces new roles, in part because of the new work products introduced, but also to address
+    the separation of duties.
+</p>
+<h4>
+    Compliance Management roles
+</h4>
+<p>
+    <a class="elementLinkWithType" href="./../../../govern.compliance/roles/rcm_compliance_analyst_7F19B87B.html" guid="_DrOjUJGVEdu6LZdnjUXiFA">Role: Compliance Analyst</a> — Defines corporate Compliance Policy and captures
+    compliance requirements (after cataloging and interpreting regulations, standards, and policies to identify internal
+    policies that allow the business to be compliant). Creates traceability between the compliance requirements, the
+    internal policies, and the appropriate regulations, standards, and policies.
+</p>
+<h4>
+    Compliance related Roles
+</h4>
+<p>
+    <b>Requirements Specifier</b> — existing RUP role who details the compliance requirements, establishes priorities, and
+    defines workflow around the "in scope" requirements.
+</p>
+<h2 id="dp">
+    Software Development process
+</h2>
+<p>
+    This process is an extension of the base process wherein additional activities take place to address the development of
+    compliance software requirements (a.k.a. <a class="elementLinkWithType" href="./../../../govern.compliance/guidances/termdefinitions/application_controls_CE95A4E.html" guid="_qSypoCcTEduzgcDanUOYTw">Term Definition: Application Control</a>)
+</p>
+<h3 id="inception">
+    Inception Phase tasks
+</h3>
+<p>
+    The two new tasks in the Inception Phase are those needed to develop compliance requirements:
+</p>
+<ul>
+    <li>
+        <a class="elementLink" href="./../../../govern.compliance/tasks/rcm_formulate_compliance_vision_A472EA5B.html" guid="_LAabIKtSEduodbWm-CGeMQ">Formulate Compliance Vision</a><br />
+         <font color="#000000">The Compliance Analyst</font> produces a detailed outline of the compliance management
+        requirements that will be incorporated during the project, and highlights the compliance-related goals within the
+        project.
+    </li>
+    <li>
+        <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithType" href="./../../../pages_not_installed/pages_not_installed.html" guid="{A1FA1E95-8028-42EB-9B92-0DA77380F3E1}">Task: Detail the Software Requirements</a> -- This task is a
+        contribution to the RUP detail requirements task, with a focus on defining compliance requirements with the
+        participation of the Compliance Analyst
+    </li>
+</ul>
+<p>
+    There are a number of approvals introduced in the Inception Phase designed to ensure that the compliance requirements
+    will be met. These include:
+</p>
+<ul>
+    <li>
+        <a class="elementLink" href="./../../../govern.compliance/tasks/rcm_approve_compliance_approach_6DAFD0E0.html" guid="_pPnD8MkREdq9CtL8HKjkzA">Approve Compliance Approach</a><br />
+         This task is closely coupled with the <a class="elementLink" href="./../../../govern.compliance/tasks/rcm_formulate_compliance_vision_A472EA5B.html" guid="_LAabIKtSEduodbWm-CGeMQ">Formulate Compliance Vision</a>. The purpose of this approval is to verify that the
+        core compliance stakeholders accept the approach being used to incorporate compliance enhancements into the
+        application. This will include acceptance of the compliance requirements in scope for the project, and their time
+        line for delivery. The Compliance Analyst has authority for this approval.
+    </li>
+    <li>
+        <a class="elementLink" href="./../../../govern.compliance/tasks/rcm_approve_test_approach_C114ACF2.html" guid="_F3oekLq_Edq_f-xxmjgMWA">Approve Test Approach</a><br />
+         This task is closely coupled with <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLink" href="./../../../pages_not_installed/pages_not_installed.html" guid="{023FEC1B-5AA4-462B-A2FE-B92827E00BAB}">Agree on the Mission</a>. It provides a formal approval of the test
+        plan designed to validate that the compliance management requirements have been included and satisfied. This
+        approval is less formal, and is often approved internally to the team by the Test Manager.
+    </li>
+</ul>
+<h3 id="elaboration">
+    Elaboration Phase Tasks
+</h3>
+<p>
+    During the Elaboration Phase, the Architect begins to work on the critical scenarios that will have an impact on the
+    architecture. The Implementer translates the design specification into the software product or application to automate
+    <a class="elementLink" href="./../../../govern.compliance/guidances/termdefinitions/it_process_controls_E11DAB89.html" guid="_lgZt4Bt8Eduf9ZX4AMC3mg">IT Process Controls</a> required for compliance. The Tester will define tests to
+    validate that the <a class="elementLink" href="./../../../govern.compliance/guidances/termdefinitions/it_process_controls_E11DAB89.html" guid="_lgZt4Bt8Eduf9ZX4AMC3mg">IT Process Controls</a> introduced in this phase are working successfully.
+</p>
+<p>
+    This phase is virtually identical to that of the main roadmap except that the compliance requirements will potentially
+    be revised and hence re-approved in each iteration.
+</p>
+<p>
+    At the end of this phase, the compliance requirements should be stable, any architectural concerns should be resolved,
+    and the chosen approach to introducing <a class="elementLink" href="./../../../govern.compliance/guidances/termdefinitions/it_process_controls_E11DAB89.html" guid="_lgZt4Bt8Eduf9ZX4AMC3mg">IT Process Controls</a> should be proven in both the application and within the process.
+</p>
+<h3 id="construction">
+    Construction Phase Tasks
+</h3>
+<p>
+    This phase is conducted according to the main software delivery roadmap without changes.
+</p>
+<h3 id="transition">
+    Transition Phase Tasks
+</h3>
+<p>
+    This phase is conducted according to the main software delivery roadmap with added focus on final testing and
+    deployment of the <a class="elementLink" href="./../../../govern.compliance/guidances/termdefinitions/application_controls_CE95A4E.html" guid="_qSypoCcTEduzgcDanUOYTw">Application Control</a> into the production environment.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

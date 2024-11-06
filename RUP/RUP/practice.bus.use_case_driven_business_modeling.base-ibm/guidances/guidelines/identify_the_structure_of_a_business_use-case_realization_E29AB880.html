@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Identify the Structure of a Business Use-Case Realization</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="identify_the_structure_of_a_business_use-case_realization">
+<meta name="uma.presentationName" content="Identify the Structure of a Business Use-Case Realization">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_W9dxkHL6Ed6bjOEjgEchEQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Identify the Structure of a Business Use-Case Realization</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Use the sequence diagrams in a business use-case realization to define the structure of elements participating in that realization.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/tasks/model_a_scenario_F20206D0.html" guid="_CWz54FnQEd6TDdjsK-pYkg">Model a Scenario</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Each message between business elements on a sequence diagram must be supported by a structural relationship.&nbsp;For
+    instance, a&nbsp;business worker can't request that a business entity perform an operation without having some way to
+    inform the entity of the request. The nature of the relationship depends on what the element is, so the relationship
+    could represent a network connection, an interpersonal relationship, a business contract, etc.
+</p>
+<p>
+    See <a class="elementLinkWithType" href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/guidances/examples/class_diagram_realizing_a_use_case_48EA3ECF.html" guid="_VBKSYHL5Ed6bjOEjgEchEQ">Example: Class Diagram realizing a Business Use Case</a> for an example of a business
+    use-case realization structure.
+</p>
+<p>
+    <strong>Identify the Relationships in a Sequence Diagram</strong>
+</p>
+<p>
+    Create one UML class diagram for your business use-case realization. This diagram illustrates the structure required to
+    support all relationships needed to realize the scenarios in the business use-case realization. Add all the business
+    elements from all the sequence diagrams into the class diagram. There will likely be many business elements that appear
+    in multiple sequence diagrams. These only need to be added to the class diagram once.
+</p>
+<p>
+    For each message or request that's made from one business element to another, add a one-way&nbsp;association in the
+    class diagram from the requesting element to the element that performs the requested operation. If you find two
+    elements that make requests of each other, use a single bi-directional association. If a relationship from one entity
+    to another already exists, leave it alone (any number of operations can be requested using a single relationship)
+</p>
+<p>
+    <strong>Add Multiplicity and Roles</strong>
+</p>
+<p>
+    Examine the relationships and determine their multiplicity. Start with 1-to-1 relationships and ask if one element
+    needs to access more than one instance of another element. For example, sequence diagrams can show that a service
+    supports requests from various business elements of the same type. If it can handle those requests in parallel, there
+    will be a many-to-one relationship between the elements.
+</p>
+<p>
+    <strong>Check Diagram for Readability and Consistency</strong>
+</p>
+<p>
+    Review the diagram to assure it's readable and properly describes the relationships between business elements. Make any
+    changes necessary&nbsp;that will improve the accuracy and usability of the information.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/guidances/examples/class_diagram_realizing_a_use_case_48EA3ECF.html" guid="_VBKSYHL5Ed6bjOEjgEchEQ">Class Diagram realizing a Business Use Case</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

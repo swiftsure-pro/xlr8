@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Functional Decomposition</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="functional_decomposition">
+<meta name="uma.presentationName" content="Functional Decomposition">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_ituu8H33Ed2eJPu0NyCdUg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Functional Decomposition</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">A common use case anti-pattern is to decompose use cases into functional chunks rather than flows that describe the value of using the system in a particular way.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.use_case_driven_dev.base/tasks/detail_use_case_scenarios_3DBC6A10.html" guid="_SL7N0LPdEduocbW-TPTq7A">Detail Use-Case Scenarios</a>
+</li>
+<li>
+<a href="./../../../practice.tech.use_case_driven_dev.extend-ibm/guidances/concepts/essential_use_cases_2FEF7AF9.html" guid="_LTkYsIWZEd2VjsFXvLgOXg">Essential Use Cases</a>
+</li>
+<li>
+<a href="./../../../practice.tech.use_case_driven_dev.extend-ibm/guidances/guidelines/strategies_to_avoid_functional_decomposition_411314E7.html" guid="_F5RdwIWaEd2VjsFXvLgOXg">Strategies to Avoid Functional Decomposition</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Functionally decomposed use cases are the result of breaking up user tasks within the system into smaller steps,
+    operations or functions, and then documenting each as a separate use case.&nbsp;These use cases end up being
+    <u>function</u> focused, not <u>user driven</u>.&nbsp;&nbsp;It is also common for decomposed use cases to include
+    system-specific data and user interface design (clicks, buttons, menus etc.). This places artificial constraints on the
+    designers and developers of the system and makes use cases brittle. Changes to specific data or UI designs that are
+    included in the use case often require a re-write.
+</p>
+<p>
+    Functionally decomposed use cases can make communication between stakeholders and developers more difficult because
+    each use case only describes part of a process or business scenario. It doesn't deliver any value on its own in terms
+    of the results users expect from the system.
+</p>
+<p>
+    A&nbsp;developer looking at a decomposed use case is seeing only part of the business process picture and doesn't have
+    the complete context for the functionality they are building. The piece-part nature of decomposed use cases can also
+    hinder iteration planning by making it difficult to determine which combination of use cases covers the highest
+    priority functionality.
+</p>
+<p>
+    Test cases for unit testing can be easily derived from functionally decomposed use cases, however, functional
+    decomposition makes it harder to derive higher level test cases (system/integration or user acceptance test cases).
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.use_case_driven_dev.extend-ibm/guidances/concepts/essential_use_cases_2FEF7AF9.html" guid="_LTkYsIWZEd2VjsFXvLgOXg">Essential Use Cases</a>
+</li>
+<li>
+<a href="./../../../practice.tech.use_case_driven_dev.extend-ibm/guidances/concepts/use_case_granularity_E374ADFF.html" guid="_gbZpYH-LEd2zS8U3DVRSmQ">Use Case Granularity</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.use_case_driven_dev.extend-ibm/guidances/guidelines/strategies_to_avoid_functional_decomposition_411314E7.html" guid="_F5RdwIWaEd2VjsFXvLgOXg">Strategies to Avoid Functional Decomposition</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

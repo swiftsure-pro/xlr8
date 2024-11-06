@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Create a Performance Test Using IBM Rational Performance Tester</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="create_perf_test">
+<meta name="uma.presentationName" content="Create a Performance Test Using IBM Rational Performance Tester">
+<meta name="uma.category" content="Tool:rup_test_performance_tester:IBM Rational Performance Tester">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="IBM Rational Performance Tester">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_OL_R8Hj4EdyhRNciHt44hg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Create a Performance Test Using IBM Rational Performance Tester</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor describes how to use IBM Rational Performance Tester to create a performance test.</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.tech.common.extend_rpt-ibm/tools/rup_test_performance_tester_463C43C6.html" guid="_JFTh4LWGEdyTM_aghv_1tQ">IBM Rational Performance Tester</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.independent_testing.base-ibm/tasks/implement_test_4938541C.html" guid="_fajSUHE6Edy8Ac588DXPCQ">Develop Test</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Overview
+</h3>
+<p>
+    A performance test allows you to record sessions with an HTTP application, and generates tests from the recording.
+    Creating a Performance test involves three steps (starting a recording, starting an application, and starting a test
+    generator). IBM&reg; Rational&reg; Performance Tester automates these steps for you.
+</p>
+<h3>
+    Tool Steps
+</h3>
+<p>
+    To create a performance test, perform the following steps:
+</p>
+<ol>
+    <li>
+        Create a Performance Test
+    </li>
+    <li>
+        Creating Tests with the Create Test Wizard
+    </li>
+    <li>
+        Creating Tests with the Test Editor
+    </li>
+</ol>
+<h4>
+    1. Create a Performance Test
+</h4>
+<p>
+    There are several ways you can create a performance test.
+</p>
+<ol>
+    <li>
+        When you create a project (see the&nbsp;<a class="elementLinkWithType" href="./../../../core.tech.common.extend_rpt-ibm/guidances/toolmentors/create_perf_test_project_A1DFF18A.html" guid="_YFlNQHj4EdyhRNciHt44hg">Tool Mentor: Create a Test Project Using IBM Rational Performance Tester</a>), you
+        are asked whether you want to record a performance test at this point.
+    </li>
+    <li>
+        Another way to create a performance test is by highlighting a performance test project -- or a folder in a
+        performance test project -- in the Test Navigator view.
+    </li>
+</ol>
+<h4>
+    2. Creating Tests with the Test Creation Wizard
+</h4>
+<p>
+    Once you start the recorder, a test creation wizard starts. The Create Test Wizard combines into one flow recording a
+    session with a Web application, generating a test from the recording, and opening the test in the test editor. You can
+    record tests from Microsoft&reg; Internet Explorer, Mozilla, Netscape, or another browser.
+</p>
+<ol>
+    <li>
+        If you create a project and are prompted to create a test, click <strong>Yes</strong>.
+    </li>
+    <li>
+        If you have already created your project, right-click on the project (or on a folder in the project), select
+        <strong>New</strong> and then select <strong>Record Performance Test</strong>. This starts the Create Test Wizard.
+    </li>
+    <li>
+        In the HTTP Proxy Recorder window, enter a name for the test and click <strong>Finish</strong>. This starts the
+        Recorder.
+    </li>
+    <li>
+        After the Recorder is started, either a ReadMe page or an about:blank page is opened. This is where you will begin
+        your test.
+    </li>
+    <li>
+        Enter the URL in the address bar and start recording tests.
+    </li>
+    <li>
+        Once you are finished with your test, close the browser. This will stop the Rational Performance Tester recording
+        session.
+    </li>
+    <li>
+        Rational Performance Tester then generates your test and opens it in the Test editor.
+    </li>
+</ol>
+<h4>
+    3. Creating Tests with the Test Editor
+</h4>
+<p>
+    After you close the browser from a performance test session, Rational Performance Tester generates the script and opens
+    it in the Test editor. The Test editor lists by title a test's HTTP pages that, when expanded, show the request and
+    response data in each page. You can use the editor to inspect or customize a test that was automatically generated from
+    a recorded session, or you can code a test.
+</p>
+<p>
+    There are two main areas in the Test editor, the Test Contents and the Test Elements Details. The Test Contents area
+    displays the test's HTTP page hierarchy. The Test Elements Details area contains details on the currently selected item
+    in the test hierarchy. From the Test editor, you can expand a test page and see a list of the requests of a page
+    organized into separate folders. Each folder contains response and connection data.
+</p>
+<p>
+    For more information on the Test editor, see the <a class="elementLinkWithType" href="./../../../core.tech.common.extend_rpt-ibm/guidances/toolmentors/edit_perf_test_DCDB7AA2.html" guid="_qT5X0Hj4EdyhRNciHt44hg">Tool Mentor: Edit Tests with IBM Rational Performance Tester</a>.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

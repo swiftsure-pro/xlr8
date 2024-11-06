@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Levels of Test</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="levels_of_test">
+<meta name="uma.presentationName" content="Levels of Test">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_Z0flMHg_EdyONKO6Ef77qQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Levels of Test</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline categorizes testing activities into Developer, Independent, Unit, Integration, System, and Acceptance Testing.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Testing is applied to different types of targets, in different stages or levels of work effort. These levels are
+    distinguished typically by those roles that are best skilled to design and conduct the tests, and where techniques are
+    most appropriate for testing at each level. It's important to ensure a balance of focus is retained across these
+    different work efforts.
+</p>
+<h3>
+    Developer Testing
+</h3>
+<p>
+    Developer testing denotes the aspects of test design and implementation most appropriate for the team of developers to
+    undertake; this is in contrast to independent testing.
+</p>
+<p>
+    Traditionally, developer testing has been considered mainly with respect to unit testing. While some developers also
+    perform varying levels integration testing, this is largely dependent on culture and other context issues.
+</p>
+<h3>
+    Independent Testing
+</h3>
+<p>
+    Independent testing denotes the test design and implementation most appropriately performed by someone who is
+    independent from the team of developers. You can consider this distinction a superset, which includes Independent
+    Verification & Validation. In most cases, test execution initially occurs with the independent testing group that
+    designed and implemented the test, but the independent testers should create their tests to make them available to the
+    developer testing groups for execution. Boris Beizer gives the following explanation of the different objective that
+    independent testing has over developer testing:
+</p>
+<blockquote>
+    <p>
+        "The purpose of independent testing is to provide a different perspective and, therefore, different tests;
+        furthermore to conduct those tests in a richer [...] environment than is possible for the developer." [Boris Beizer
+        1995. <i>Black Box Testing.</i> New York, NY: John Wiley & Sons, Inc]
+    </p>
+</blockquote>
+<h4>
+    Independent Stakeholder Testing
+</h4>
+<p>
+    An alternate view of independent testing is that it represents testing that is based on the needs and concerns of
+    various stakeholders. Therefore it's referred to as Stakeholder Testing. This is an important distinction-it helps to
+    include a broader set of stakeholder concerns than might traditionally be considered, extending the somewhat generic
+    "customer" with stakeholders such as technical support staff, technical trainers, sales staff in additional to
+    customers, and users.
+</p>
+<p>
+    As a final comment, <em>Extreme Programming</em>'s notion of <i>customer tests</i> relates to this categorization of
+    independent testing.
+</p>
+<h3>
+    Unit Testing
+</h3>
+<p>
+    Unit testing focuses on verifying the smallest testable elements of the software. Typically unit testing is applied to
+    components represented in the implementation model to verify that control flows and data flows are covered, and that
+    they function as expected. The&nbsp;developers perform unit testing as the unit is developed.
+</p>
+<!-- <p>These expectations are based on how the component participates in executing    a use case, which you find in sequence diagrams for that use case.</p> -->
+<h3>
+    Integration Testing
+</h3>
+<p>
+    Integration testing is performed to ensure that the components in the implementation model operate properly when
+    combined. The target-of-test is a package or a set of packages in the implementation model. Often the packages being
+    combined come from different development organizations. Integration testing exposes incompleteness or mistakes in the
+    package's interface specifications.
+</p>
+<p>
+    In some cases, the assumption by developers is that other groups such as independent testers will perform integration
+    tests. This situation presents risks to the software project and ultimately the software quality because:
+</p>
+<ul>
+    <li>
+        integration areas are a common point of software failure.
+    </li>
+    <li>
+        integration tests performed by independent testers typically use black-box techniques and are typically dealing
+        with larger software components.
+    </li>
+</ul>
+<p>
+    A better approach is to consider integration testing the responsibility of both developer and independent testers, but
+    make sure that the strategies of each team testing efforts do not overlap significantly. The exact nature of that
+    overlap is based on the needs of the individual project. We recommend you foster an environment where developers and
+    independent system testers share a single vision of quality. See&nbsp;<a class="elementLink" href="./../../../core.tech.common.extend_supp/guidances/concepts/developer_testing_FEBDAED6.html" guid="_ADwlAJRtEdyrdaw_xGakyw">Developer Testing</a>&nbsp;for additional information.
+</p>
+<h3>
+    System Testing
+</h3>
+<p>
+    Traditionally system testing is done when the software is functioning as a whole. An iterative lifecycle allows system
+    testing to occur much earlier-as soon as well-formed subsets of the use-case behavior are implemented. Usually the
+    target is the system's end-to-end functioning elements.
+</p>
+<h3>
+    Acceptance Testing
+</h3>
+<p>
+    <i>User</i> acceptance testing is the final test action taken before deploying the software. The goal of acceptance
+    testing is to verify that the software is ready, and that it can be used by users to perform those functions and tasks
+    for which the software was built. See&nbsp;<a class="elementLink" href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/acceptance_testing_EA8FA3B0.html" guid="_vYGlsHhBEdyONKO6Ef77qQ">Acceptance Testing</a> for additional information.
+</p>
+<p>
+    There are other notions of acceptance testing, which are generally characterized by a hand-off from one group or one
+    team to another. For example, a <i>build acceptance test</i> is the testing done to accept the hand-over of a new
+    software build from development into independent testing.
+</p>
+<h3>
+    A comment about sequence and timing of test levels
+</h3>
+<p>
+    Traditionally, unit testing is thought of as being implemented early, as the first stage of testing: all units required
+    to be passed before subsequent stages are conducted. However, in an iterative development process, this approach is as
+    a general rule, inappropriate. A better approach is to identify the unit, integration and system tests that offer most
+    potential for finding errors, then implement and execute them based on a combination of greatest risk and supporting
+    environment.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/acceptance_testing_EA8FA3B0.html" guid="_vYGlsHhBEdyONKO6Ef77qQ">Acceptance Testing</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/developer_testing_FEBDAED6.html" guid="_ADwlAJRtEdyrdaw_xGakyw">Developer Testing</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

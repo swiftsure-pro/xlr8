@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Specifying Components</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="specifying_components">
+<meta name="uma.presentationName" content="Specifying Components">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_-k2PcIEbEd2z9IawWqZSFw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Specifying Components</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline explains how to define component interfaces, specify operations and signatures, and <br/>&#xD;&#xA;specify pre- and post-conditions.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.component_sw_arch.base-ibm/tasks/detail_component_model_5E34A5FD.html" guid="_1P8IEAruEdy5ib8CxgclIA">Detail Component Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p class="MsoNormal" style="MARGIN: 6pt 0in">
+    This guideline explains how to specify components following these steps:
+</p>
+<ol>
+    <li>
+        <div class="BulletsL1" style="MARGIN: 3pt 0in 3pt 0.25in; TEXT-INDENT: -0.25in">
+            Define component interfaces
+        </div>
+    </li>
+    <li>
+        <div class="BulletsL1" style="MARGIN: 3pt 0in 3pt 0.25in; TEXT-INDENT: -0.25in">
+            For each interface, specify operations and signatures
+        </div>
+    </li>
+    <li>
+        <div class="BulletsL1" style="MARGIN: 3pt 0in 3pt 0.25in; TEXT-INDENT: -0.25in">
+            For each operation, specify pre- and post-conditions
+        </div>
+    </li>
+</ol>
+<h2 style="MARGIN: 12pt 0in 6pt">
+    <b><span style="FONT-SIZE: 12pt">1. Specify</span></b> <b style="mso-bidi-font-weight: normal"><span     style="FONT-SIZE: 12pt">Component Interfaces</span></b>
+</h2>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp/guidances/concepts/component_CB167D48.html" guid="_0YP18MlgEdmt3adZL5Dmdw">Components</a> exchange data or use the services of other components through <i     style="mso-bidi-font-style: normal"><a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/interface_46AFCEE5.html" guid="_aHFYoDfWEdyIwaPzqVg2tg">interfaces</a></i>. Components <i style="mso-bidi-font-style: normal">offer</i>
+    interfaces other components can use, and <i style="mso-bidi-font-style: normal">use</i> the services of other
+    components through the interfaces those components offer. A component can offer one or more interfaces, and one or more
+    components can offer the same interface.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    The set of all operation signatures that make up an interface, and all interfaces the component offers, characterizes
+    the complete set of requests that a component can fulfill. Show a component's offered and used interfaces
+    diagrammatically using a UML Component Specification Diagram, as shown in Figure 1. This diagram shows a single
+    component with the interfaces it uses, as well as the ones it offers. Initially, you may just name the interfaces, but
+    ultimately these interfaces will include all operations and their signatures.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    <img height="320" alt="" src="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/./resources/component_specification_diagram.jpg" width="576" />
+</p>
+<p class="MsoCaption" style="MARGIN: 6pt 0in; TEXT-ALIGN: center" align="center">
+    <a id="_Ref169748547" name="_Ref169748547"><strong>Figure</strong></a> <strong><span     style="mso-bookmark: _Ref169748547"><span style="mso-no-proof: yes">1</span></span>. Component Specification
+    Diagram</strong>
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Elaborate interfaces in stages. Initially, only describe them in terms of the responsibilities that they have. Later,
+    refine them to reflect their full signature, using formal notation such as UML, Interface Definition Language (IDL), or
+    a programming language like Java&trade;.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    The specification of an interface, including its operation signatures, is a key step in fully specifying a component
+    model. Often, interfaces are not defined to this level of detail. This makes it difficult, if not impossible, to create
+    components that independent teams can work on. The additional time it takes to fully specify an interface is typically
+    outweighed by the time saved avoiding rework due to poorly defined components.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Why separate out interfaces from the components themselves?
+</p>
+<ul>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            Interfaces enforce the concept of encapsulation, or information hiding, because all access to the component's
+            information and behavior is through the published interface. An interface is the external view of a component
+            that emphasizes its abstraction, while hiding its structure and the secrets of its behavior. [BOOCH91].
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            Factoring out interfaces allows more than one component to offer that interface, even though you only define
+            the interface once. You can subsequently implement the interface in different ways.
+        </div>
+    </li>
+</ul>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Group operations that belong together in order to form a well-designed interface. If a client uses one operation of an
+    interface, it should use some (or even most) of the other operations, too. Sets of such operations naturally belong
+    together, and have related effects on the state of the component instance.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    The number of interfaces and operations assigned to interfaces can vary greatly. It may be appropriate to have a single
+    interface with several operations or multiple interfaces, each with only a single operation. However, avoid interfaces
+    with too many operations (more than 12 for example), because this may indicate that the component has poor cohesion.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    The notion of a component <i style="mso-bidi-font-style: normal">offering</i> an interface is subtly different from
+    that of a component <i style="mso-bidi-font-style: normal">implementing</i> an interface. An offered interface is a
+    logical-level concept that allows for interfaces to have both operations and associations (with data types). An
+    implemented interface is a physical-level concept that you handle in a later stage of development. Interface
+    implementation is something that a programming language may or may not support. Java, for example, supports interface
+    implementation, but interfaces are only allowed to have operations (and constants).
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Given a set of well-structured components and their responsibilities, make these responsibilities available to other
+    components by defining interfaces. The approach to use depends on the nature of the component, and the layer of the
+    architecture in which the component resides.
+</p>
+<ul>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            For components in the 'Business Processing' layer, select interfaces based on the responsibilities assigned
+            when analyzing functional requirements (see below).
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <a id="_Ref169759600" name="_Ref169759600">For components in the 'Business Service' layer, identify interfaces
+            from the entities that component instances need to manage.</a> See <a class="elementLinkWithType" href="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/managing_data_with_components_D0B70DAF.html" guid="_IFoswDfTEdy5uPLchEwddA">Guideline: Managing Data With Components</a>.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            For components in the 'Middleware' and 'System Software' layers, allocate interfaces based on the type of
+            functionality. Components in these layers typically access data and business rules, or perform communication
+            functions (such as placing messages on queues). Such interfaces are generally well understood, so derive them
+            by examining vendor product descriptions.
+        </div>
+    </li>
+</ul>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    When you identified components, you most likely identified <i style="mso-bidi-font-style: normal">controller</i>
+    components with responsibilities based on the step-by-step flow of functional requirements. Factor out and group these
+    responsibilities as interfaces by doing the following for each component:
+</p>
+<p class="NumberList" style="MARGIN: 3pt 0in 3pt 0.25in; mso-list: l2 level1 lfo2">
+    <span style="mso-fareast-font-family: Arial; mso-bidi-font-family: Arial"><span     style="mso-list: Ignore">1.</span></span> <b style="mso-bidi-font-weight: normal">Identify external
+    responsibilities.</b> Do this by analyzing the dependencies between components. Where one component depends on another
+    to get information or perform processing, it needs to call or send a message to that component.
+</p>
+<p class="NumberList" style="MARGIN: 3pt 0in 3pt 0.25in; mso-list: l2 level1 lfo2">
+    <span style="mso-fareast-font-family: Arial; mso-bidi-font-family: Arial"><span     style="mso-list: Ignore">2.</span></span> <b style="mso-bidi-font-weight: normal">Group like responsibilities
+    together.</b> For example, group all responsibilities for getting or updating data. Group responsibilities for
+    performing some processing function or executing business rules separately.
+</p>
+<p class="NumberList" style="MARGIN: 3pt 0in 3pt 0.25in; mso-list: l2 level1 lfo2">
+    <span style="mso-fareast-font-family: Arial; mso-bidi-font-family: Arial"><span     style="mso-list: Ignore">3.</span></span> <b style="mso-bidi-font-weight: normal">Name an interface.</b> The name
+    should reflect the function of it responsibilities.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Having grouped responsibilities, the next step is to identify the actual callable element that executes the function
+    implied by the responsibility. This step will also identify the data that needs to flow when the call is made.
+</p>
+<h2 style="MARGIN: 12pt 0in 6pt">
+    <b style="mso-bidi-font-weight: normal"><span style="FONT-SIZE: 12pt">2. Specify Operations and Signatures</span></b>
+</h2>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    For each interface, specify the operations and their signatures (that is, parameters passed and return values).
+</p>
+<p class="NumberList" style="MARGIN: 3pt 0in 3pt 0.25in; mso-list: l2 level1 lfo3">
+    <span style="mso-fareast-font-family: Arial; mso-bidi-font-family: Arial"><span     style="mso-list: Ignore">1.</span></span> Look at the collaborations between components in Component Interaction
+    Diagrams.
+</p>
+<p class="NumberList" style="MARGIN: 3pt 0in 3pt 0.25in; mso-list: l2 level1 lfo3">
+    <span style="mso-fareast-font-family: Arial; mso-bidi-font-family: Arial"><span     style="mso-list: Ignore">2.</span></span> Make decisions identifying the data needed to provide the required
+    functionality.
+</p>
+<p class="NumberList" style="MARGIN: 3pt 0in 3pt 0.25in; mso-list: l2 level1 lfo3">
+    <span style="mso-fareast-font-family: Arial; mso-bidi-font-family: Arial"><span     style="mso-list: Ignore">3.</span></span> Create structured data types as appropriate.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    <span lang="EN-GB" style="mso-ansi-language: EN-GB">Figure <span style="mso-no-proof: yes">2</span></span> shows a
+    partial Component Interaction Diagram to illustrate these steps.
+</p>
+<p>
+    <img height="277" alt="" src="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/./resources/partial_component_interaction_diagram.jpg" width="600" />
+</p>
+<p>
+    <strong>Figure 2. Partial Component Interaction Diagram</strong>
+</p>
+<p>
+    Consider the operation 'listProducts' in the preceding diagram:
+</p>
+<ul>
+    <li>
+        'InventoryProcessSystem' manages multiple categories of products. It needs to be passed a category number so that
+        it can identify the correct category.
+    </li>
+    <li>
+        Category numbers can be numbers or letters, and need to be a 'String' type.
+    </li>
+    <li>
+        A collection of 'Products' needs to be returned, so allocate it to multiple Products type.
+    </li>
+</ul>
+<p>
+    The following signature results:<br />
+    <span     style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><strong>listProducts
+    ( [in] category : ProductCategory ) : Product [*]</strong></span>
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Repeat this process for each external operation defined for each interface.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Architects often question whether they should specify operations to this level of detail, or let the component designer
+    specify operation signatures. The risk of leaving the detail to component designers is that they may make decisions
+    that invalidate the major architectural decisions.
+</p><br />
+<h2 style="MARGIN: 12pt 0in 6pt">
+    <b style="mso-bidi-font-weight: normal"><span style="FONT-SIZE: 12pt">3. Specify Pre- and Post-Conditions</span></b>
+</h2>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Pre- and post-conditions specify the effect of an operation without prescribing an algorithm or implementation.
+</p>
+<ul>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            The post-condition specifies the effect of the operation on the component's data or state, provided that the
+            pre-condition is true.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            The pre-condition is the condition under which the operation guarantees that the post-condition is true.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            If the pre-condition is false when the operation is invoked, the result is unspecified and dealt with by some
+            form of exception handling.
+        </div>
+    </li>
+</ul>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Pre- and post-conditions are kinds of <i style="mso-bidi-font-style: normal">assertions</i>. An assertion is a Boolean
+    statement that should never be false, and therefore, will be false only if an error has occurred. Assertions are
+    usually only checked during build, either automatically during compilation or manually during test. They are not
+    typically checked during runtime execution. In fact, a program should not assume that an assertion has been checked.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Having a pre-condition makes it explicit what the caller is responsible for checking. Without this explicit statement
+    of responsibility, there could be too little or too much checking. Too much checking is as bad as too little because it
+    leads to "program bloat" and makes programs overly complex and difficult to maintain.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    A pre-condition does not stop the operation from executing. This is the meaning of "Design by Contract" [MEYER97]. Some
+    people use the term pre-condition to describe a situation that needs to be true in order for an operation or process to
+    be executed. This is better termed a guard condition or the triggering event for execution [DODD05].
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Pre- and post-conditions essentially form a contract between a client and a supplier. As with any good contract, it
+    entails obligations, as well as benefits, for both parties: with an obligation for one usually turning into a benefit
+    for the other.
+</p>
+<ul>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            The pre-condition binds the client: it defines the conditions under which a call to the supplier is legitimate.
+            It is an obligation for the client and a benefit for the supplier.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            The post-condition binds the supplier: it defines the conditions that must be ensured by the operation on
+            return. It is a benefit for the client and an obligation for the supplier.
+        </div>
+    </li>
+</ul>
+<p>
+    <span     style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">The
+    benefits are, for the client, the guarantee that certain properties will hold after the call. For the supplier, the
+    guarantee is that certain assumptions will be satisfied whenever the operation is called. The obligations are, for the
+    client, to satisfy the requirements as stated by the pre-condition, and for the supplier, to do the job as stated by
+    the post-condition</span> (see Figure 3).
+</p>
+<p>
+    <img height="287" alt="" src="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/./resources/pre-_and_post-conditions.jpg" width="540" />
+</p>
+<p class="MsoCaption" style="MARGIN: 6pt 0in; TEXT-ALIGN: center" align="center">
+    <a id="_Ref170100135" name="_Ref170100135"><strong>Figure</strong></a> <strong><span     style="mso-bookmark: _Ref170100135"><span style="mso-no-proof: yes">3</span></span>. Client and supplier obligations
+    and benefits of pre- and post-conditions</strong>
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    A pre-condition violation means that the operation caller, although obligated by the contract to satisfy a certain
+    requirement, did not. This is a bug in the client itself: the operation is not involved. An outside observer might
+    criticize the contract as too demanding, but it is too late to argue over the contract. The client did not observe its
+    part of the deal. If there is a mechanism for monitoring assertions during execution, and it detects such a
+    pre-condition violation, the operation should not be executed at all. It has stated the conditions under which it can
+    operate, and these conditions do not hold. Trying to execute it would make no sense.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    A post-condition violation means that the routine, presumably called under correct conditions, was not able to fulfill
+    its contract. In this case, the bug is in the routine: the caller is innocent.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Assertions such as pre- and post-conditions may or may not affect the run-time system. You can treat them as written
+    specifications for how the system should behave. You can test them during the various phases of testing. However, you
+    can also check assertions at runtime, in which case you use some form of exception handling to deal with them.
+    Assertion checking has an impact on performance.
+</p>
+<p>
+    <span     style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">Pre-
+    and post-conditions may be expressed either using the formal Object Constraint Language (OCL) [WARMER99], or using
+    natural language.</span> Figure 4 shows an example of a pre- and post-condition using natural language.
+</p>
+<p>
+    <img height="331" alt="" src="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/resources/example_of_pre-_and_post-conditions.jpg" width="600" /><br />
+</p>
+<p class="MsoCaption" style="MARGIN: 6pt 0in; TEXT-ALIGN: center" align="center">
+    <a id="_Ref170100389" name="_Ref170100389"></a><a id="_Ref170100347" name="_Ref170100347"><span     style="mso-bookmark: _Ref170100389"><strong>Figure</strong></span></a> <strong><span     style="mso-bookmark: _Ref170100347"><span style="mso-bookmark: _Ref170100389"><span     style="mso-no-proof: yes">4</span></span></span><span style="mso-bookmark: _Ref170100389">. Example of pre- and
+    post-conditions</span></strong>
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    In the example above, the operation 'cancelOrder' only guarantees to complete successfully if it receives an existing
+    order number and the order is active. If these two conditions are true, then 'cancelOrder' will guarantee to cancel the
+    order.
+</p><br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/component_CB167D48.html" guid="_0YP18MlgEdmt3adZL5Dmdw">Component</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/interface_46AFCEE5.html" guid="_aHFYoDfWEdyIwaPzqVg2tg">Interface</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

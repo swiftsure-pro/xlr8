@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Code Health</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="code_health">
+<meta name="uma.presentationName" content="Code Health">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_vhaIkCxwEd27ZriaQAQC4w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Code Health</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks the health of a codebase, as represented by the builds.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p>
+    Code Health calculates the number of unit test and compilation failures over time to help the team understand its
+    confidence level in the stability of their code.
+</p>
+<h3>
+    Definition
+</h3>
+<p>
+    <code>Number of test failures = total number of tests performed on the codebase that failed</code>
+</p>
+<p>
+    <font face="Courier New">Number of compilation failures = total number of compilations of the codebase that
+    failed.</font><br />
+</p><br />
+<h3>
+    Analysis
+</h3>
+<p>
+    Plotting the two&nbsp;measurements shows important aspects of the health of a codebase, as represented by the
+    builds.&nbsp; In a healthy codebase, these numbers should be at or near zero most of the time.
+</p>
+<p>
+    The following chart plots the number of unit test failures over time. Watch out for test failures.&nbsp;They indicate
+    that the team is not properly testing code prior to delivering it.
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img alt="Code Health - Test Failures" src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/./resources/code_health_test_failures.gif" width="560" height="223" />
+</p>
+<p>
+    In the following&nbsp;chart, the number of compilation warnings/failures is plotted over time.
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img alt="Code Health - Compile Failures" src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/./resources/code_health_failures.gif" width="565" height="254" />
+</p>
+<h3>
+    Frequency and reporting
+</h3>
+<p>
+    The team monitors&nbsp;this metric&nbsp;throughout the iteration&nbsp;to understand the stability of their code, and
+    reviews Code Health&nbsp;trends at the end of each iteration.<br />
+</p>
+<h3>
+    Collection and reporting tools
+</h3>
+<p>
+    Code Health data&nbsp;is collected in IBM&reg; Rational&reg; Team Concert&reg;.
+</p><br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

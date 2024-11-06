@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Mapping rules between Rational Method Composer delivery process and Rational Team Concert process template</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="mapping_rmc_rtc">
+<meta name="uma.presentationName" content="Mapping rules between Rational Method Composer delivery process and Rational Team Concert process template">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_jvv1kceQEeCj4YFQMZZ6Pg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Mapping rules between Rational Method Composer delivery process and Rational Team Concert process template</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline explains how to create an IBM Rational Team Concert process template that matches and leverages your process. This guideline is based on the assumption that your process has been documented by using IBM Rational Method Composer.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../publish.tech.practices_for_agile_delivery.extend_dad-ibm/guidances/whitepapers/rtc_rmc_scenario_7B0C2D31.html" guid="_jvv1kseQEeCj4YFQMZZ6Pg">Agile Delivery with Rational Team Concert and Rational Method Composer</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    This guideline describes how to take a delivery process from IBM&reg; Rational&reg; Method Composer and create a matching IBM&reg;
+    Rational Team Concert&trade; process template.
+</p>
+<p>
+    Among the benefits of this mapping is that the breakdown structure (tasks and activities) documented in the process are
+    mirrored as work items in a matching Rational Team Concert process template. This saves time creating work items,
+    ensures consistency with the process, and helps team members find the guidance that they need to do their work.
+</p>
+<p>
+    This guideline is based on work creating a process template that matches the IBM Practices for Agile Delivery process.
+    This paper proposes general rules that can be applied to any delivery process.<br />
+</p>
+<h3>
+    Work Breakdown Structure - Mapping Rules
+</h3>
+<p>
+    A typical work breakdown structure (WBS) can include lifecycle phases such Inception, Elaboration, Construction, and
+    Transition. Each phase can contain one or more iterations (also called time-boxes) where increments of work are
+    created. Each iteration can be made of sub-phases (in the example in Figure 1, the sub-phases are Plan, Execute, and
+    Stabilize), and each sub-phase can contain activities, sub-activities, and tasks.
+</p>
+<p>
+    Sub-phases are an optional level of organization in the iteration WBS. Alternatively, the activities and tasks can be
+    added directly under the iteration element without the use of sub-phases.
+</p>
+<p>
+    The following are generic mapping rules that describe how typical elements in a WBS map to elements in Rational Team
+    Concert process template.
+</p>
+<p>
+    <strong>Rule 1</strong>: WBS phases and iterations should map to the timeline that is automatically populated as part
+    of creating a new project in Rational Team Concert. Make sure that the process template contains the phases and
+    iterations in the timeline by editing the process template description.
+</p>
+<p>
+    <strong>Rule 2</strong>: Sub-phases are an optional level of organization that can be added to the WBS. Sub-phases
+    should be represented in Rational Team Concert in one of two ways:
+</p>
+<ul>
+    <li>
+        As folders
+    </li>
+    <li>
+        As tasks in the iteration plan.
+    </li>
+</ul>
+<p>
+    Either way, the planned tasks are nested under the sub-phases in the iteration plan.
+</p>
+<p>
+    <strong>Rule 3</strong>: Planned activities and tasks should map to tasks in Rational Team Concert, observing the
+    hierarchy (nesting) found in the WBS
+</p>
+<p>
+    <strong>Rule 4</strong>: Multiple occurrences of the Develop User Story activity&nbsp;should be represented in one of
+    two ways:&nbsp;
+</p>
+<ul>
+    <li>
+        As a flat list of many work items of the&nbsp;Story type per iteration, where the story name follows this
+        convention: <em>Develop User Story: &lt;story name&gt;</em>.&nbsp;
+    </li>
+    <li>
+        One occurrence of the Develop User Story task&nbsp;per iteration, with many work items of the&nbsp;Story type added
+        as child items&nbsp;of this task.
+    </li>
+</ul>
+<p>
+    <strong>Rule 5</strong>: Multiple occurrences&nbsp;of the Fix Defect activity&nbsp;should be represented in one of two
+    ways:
+</p>
+<ul>
+    <li>
+        As a flat list of many work items of&nbsp;the Defect type per iteration, where the defect name follows this
+        convention: <em>Fix Defect: &lt;defect short description&gt;</em>
+    </li>
+    <li>
+        One occurrence of the Fix Defect task&nbsp;per iteration, with many work items of&nbsp;Defect type added as child
+        items&nbsp;of this task.<br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

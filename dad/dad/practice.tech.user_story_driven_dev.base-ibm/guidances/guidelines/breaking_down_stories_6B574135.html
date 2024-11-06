@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Breaking Down User Stories</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="breaking_down_stories">
+<meta name="uma.presentationName" content="Breaking Down User Stories">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_vQWOcDpWEd6RO7HGPRI5lw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Breaking Down User Stories</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline explains how to split user stories for the purposes of prioritization and development.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.user_story_driven_dev.base-ibm/tasks/refine_user_roles_and_stories_4BBBE1C9.html" guid="_47rvrzpPEd6RO7HGPRI5lw">Refine User Roles and User Stories</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    User stories&nbsp;may be of different sizes during a project lifecycle, including&nbsp;very large ones that are often
+    called <em>epics</em>. When a user story is close to being implemented, it needs to be right-sized to facilitate being
+    prioritized, estimated, and developed&nbsp;within a reasonable time frame (typically within a time box, such as an
+    iteration). Even if a user story fits within the defined time box, it might still need to be split because it does not
+    fit within the available time&nbsp;to&nbsp;finish.
+</p>
+<p>
+    The sections that follow introduce approaches to breaking down stories for planning, estimating, and development
+    purposes. For details, see <a class="elementLinkwithUsertext" href="./../../../core.default.nav_view.base/guidances/supportingmaterials/references_C6FF2A8D.html#COH06" guid="__nHToFndEd2EdJKkAyeBng">[COH06]</a>.
+</p>
+<h3>
+    Breaking down user stories across data boundaries
+</h3>
+<p>
+    One approach is to break down user stories across data boundaries. Look for the data that needs to be supported by the
+    user story. If the data is complex or a large set of inputs will be required from the user or to presented to the user
+    as output, split the stories according to subsets of that data. If there are different types of values, for example
+    default values as opposed to values that can be defined by a user during the operation, then split stories according to
+    those value types.
+</p>
+<p>
+    For example, in the ATM system, an ATM user should be able to make payments for predefined&nbsp;payees that have
+    business relationships with&nbsp;the user's bank.&nbsp;ATM users should also be able to make payments to&nbsp;payees
+    that they add when they authorize payments. In this example, the user story that starts:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p class="quote">
+        As an ATM&nbsp;user, I want to pay a bill....
+    </p>
+</blockquote>
+<p>
+    This use story can be broken down into two smaller user stories, such as:
+</p>
+<blockquote class="quote" dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        As an ATM user, I want to make a&nbsp;payment a predefined&nbsp;payee.
+    </p>
+    <p>
+        As an ATM user, I want to make a&nbsp;payment to a&nbsp;new payee.
+    </p>
+</blockquote>
+<h3>
+    Breaking down user stories on operational boundaries
+</h3>
+<p>
+    Look for different operations in a user story as a way to&nbsp;split it.&nbsp;From the example on the previous section,
+    adding a new payee and actually making the payment are two separate user stories. This is a possible way to&nbsp;split
+    this user story:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p class="quote">
+        As an ATM user, I want to&nbsp;define a new payee.
+    </p>
+    <p class="quote">
+        As an ATM user, I want to make a payment&nbsp;to&nbsp;the payee that I defined.
+    </p>
+</blockquote>
+<p>
+    Another common way&nbsp;to partition user stories along operational boundaries is to look for the typical operations of
+    creating, reading, updating, and deleting data (CRUD).
+</p>
+<h3>
+    Breaking down user stories on system-wide or nonfunctional concerns
+</h3>
+<p>
+    There are some requirements to an application that can be considered system-wide requirements, meaning that they apply
+    to many user stories. Examples are security, language support, and logging. There are also nonfunctional requirements
+    that apply to one or more user stories, such as performance or availability.
+</p>
+<p>
+    If a user story is too big to fit into an iteration,&nbsp;split the story into two stories: one that does not include
+    the&nbsp;nonfunctional&nbsp;concern&nbsp;and the other that does. This helps you implement the story in its simplest
+    case (even though you might not want to release the user story without elements of security or performance until they
+    are implemented on a second round).
+</p>
+<h3>
+    Breaking down user stories of mixed priority
+</h3>
+<p>
+    Some user stories can be broken down based on priority, according to when the parts need to be implemented. In this
+    way, you can start implementing the most important parts first, then add the lower-priority functionality later.
+</p>
+<p>
+    In the ATM example where an ATM user wants to withdraw cash from her bank account, the team might decide to break this
+    story down and&nbsp;develop the common path first, which is to have the ATM dispense $20 bills (U.S. currency example).
+    Another story to be developed later might be to provide the option for users to select cash in $5, $10, or $20 bills.
+</p>
+<h3>
+    What is not a recommended breakdown
+</h3>
+<p>
+    It is not uncommon that a large user story is difficult to split, even after&nbsp;considering those approaches.
+    However, one thing to avoid is breaking down a user story based on horizontal slices&nbsp;of the&nbsp;system layers. A
+    user story, as small as it could be, still needs to be of value to a user role. Therefore, avoid developing a story
+    that has only user interface elements and no logic or data access. Also, avoid fully implementing the data access
+    without having user interface elements and logic to access that data.
+</p>
+<p>
+    When developing a user story, make sure that you are&nbsp;slicing the various layers&nbsp;of the system vertically,
+    which means that you develop a little bit of&nbsp;each layer to support that user story (for example, user interface,
+    business logic, and data access).
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

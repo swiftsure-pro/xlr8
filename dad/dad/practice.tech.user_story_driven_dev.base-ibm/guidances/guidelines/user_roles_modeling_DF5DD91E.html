@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: User-Roles Modeling</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="user_roles_modeling">
+<meta name="uma.presentationName" content="User-Roles Modeling">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_zfqx4E7LEd6jv7uk8SIgdg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: User-Roles Modeling</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes the technique of user roles modeling, including identifying and refining user roles and personas.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.user_story_driven_dev.base-ibm/tasks/identify_user_roles_and_user_stories_EDF03A5D.html" guid="_47rvxTpPEd6RO7HGPRI5lw">Identify User Roles and User Stories</a>
+</li>
+<li>
+<a href="./../../../practice.tech.user_story_driven_dev.base-ibm/tasks/refine_user_roles_and_stories_4BBBE1C9.html" guid="_47rvrzpPEd6RO7HGPRI5lw">Refine User Roles and User Stories</a>
+</li>
+<li>
+<a href="./../../../practice.tech.user_story_driven_dev.base-ibm/workproducts/user_role_8702F7D0.html" guid="_JzzJ4DpVEd6RO7HGPRI5lw">User Role</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p> When developing a new system, it is important to understand who the system 
+  is being built for. If we know who the key stakeholders and sponsors are,we 
+  understand their objectives for bringing the system to life. </p>
+<p> But more importantly,we need to identify those who will use the system. Invariably, 
+  the system under development will be used by more than one user, and users probably 
+  have different reasons for using the system. We need to identify who the various 
+  users are so that you can identify stories that are relevant to those users. 
+  This process increases the likelihood of making the system more tangible to 
+  users, because you start thinking about how to solve the needs of real people. 
+</p>
+<p> The next sections describe common steps performed in sessions to model user 
+  roles. These sessions should be conducted with stakeholders as needed to help 
+  the team and stakeholders identify, group, refine, and capture user roles and 
+  personas. </p>
+<h3> Identifying user roles </h3>
+<p> A user role represents a <em>population of users</em> that share similar attributes 
+  and interaction with the system.Each user role has different characteristics 
+  or attributes that help identify different ways that each interacts with system. 
+</p>
+<p> Brainstorm with stakeholders and identify the different user roles for the 
+  system. Try to identify as many as possible, based on user role characteristics, 
+  such as their backgrounds, their objectives for using the system, their levels 
+  of experience with using software in general or using similar systems, and so 
+  on. Don't criticize suggestions nor be concerned about consolidating user roles 
+  at this stage. </p>
+<p> For an ATM system, the following are examples of user roles: </p>
+<ul>
+    
+  <li> ATM User withdraws the full balance of his bank account in cash once a 
+    month </li>
+    
+  <li> ATM User withdraws cash every week and pays or schedules payment of bills 
+    through the ATM system </li>
+    
+  <li> ATM operator runs operational reports and maintains the ATM functions </li>
+</ul>
+<h3> Grouping user roles </h3>
+<p> Look at common attributes of user roles so that you can group those who have 
+  similar characteristics. Typical attributes to look for when grouping user roles 
+  are how frequently they will use the system, how proficient they are with computers 
+  and software in general, how much they know about the business domain, and so 
+  on. </p>
+<p> The previous list of user roles might indicate there are two types of user 
+  roles: ATM Users and ATM operators. A careful look at the ATM Users, though, 
+  indicates that some use the ATM system for one common operation only (withdrawing 
+  cash) and only once in a while; whereas, other users use more of the ATM functions 
+  more often. This results in at least three possible user roles: </p>
+<ul>
+    
+  <li> Infrequent ATM User </li>
+    
+  <li> Advanced ATM User </li>
+    
+  <li> ATM operator </li>
+</ul>
+<h3> Capturing user roles </h3>
+<p> As part of the identification and grouping of user roles, use an interactive 
+  and practical way to capture a list of roles that can be easily changed to accommodate 
+  the grouping. This can be done in any electronic format, such as word processor, 
+  spreadsheet, or any collaboration tool, as well as in simple ways, such as using 
+  index cards that can be tossed around and grouped. </p>
+<p> After grouping user roles by type, write a short description for each user 
+  role,perhaps on an index card, such as this example:</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    
+  <p class="quote"> User role: Advanced ATM User  </p>
+    
+  <p class="quote"> Likes to pay bills before due date to avoid fees and penalties. 
+    Pays or schedules bills to be paid electronically. Withdraws cash once or 
+    twice a week to pay daily expenses. Values the availability of ATM systems 
+    near work and home more than richness of user interface or speed of transactions. 
+  </p>
+</blockquote>
+<h3> Capturing personas </h3>
+<p> A <em>persona</em>, as the term implies, is a personification or imaginary 
+  representation of a user role.As you go through the identification and grouping 
+  of user roles with stakeholders, it can be helpful to identify and capture one 
+  or two personas per user role, because this helps to identify which goals typical 
+  users have for using the system and how they will interact with the system. 
+</p>
+<p> This is an example of persona for the Advanced ATM User role: </p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    
+  <p class="quote"> Jill is an independent HR professional who is currently providing 
+    services for the XYZ company. As part of her job, she usually spends three 
+    to five days week visiting different offices across the state. Because she 
+    is out of town most of the time, Jill likes to pay her utility bills in advance 
+    so that she will avoid late-payment fees, interest, and penalties. She does 
+    not use credit cards, because she is trying to pay off her debts. Jill does 
+    not have a computer or easy access to Internet banking services currently, 
+    so she cannot schedule payments or pay her utility bills online. She prefers 
+    to do handle her bill payments by using ATM systems, instead. Jill does not 
+    like to drive in the cities where the offices are located, so she usually 
+    catches a train or cab and pays in cash. She also prefers to pay other daily 
+    expenses in cash, such as coffee and dinner, which are not included in her 
+    <em>per diem </em>expenses rate. For Jill, it is essential to have ATMs conveniently 
+    located to pay bills and withdraw cash regularly. </p>
+</blockquote></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

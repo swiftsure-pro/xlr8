@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: ServicesArchitecture (SoaML)</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="services_architecture_soaml">
+<meta name="uma.presentationName" content="ServicesArchitecture (SoaML)">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_mOf5sFbBEd6MCpkuB85p5g"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: ServicesArchitecture (SoaML)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">We illustrate the general structure of a ServicesArchitecture, and also illustrate how ServicesArchitectures, ServiceContracts, Participants, and ServiceInterfaces relate to each other.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm/guidances/termdefinitions/service_oriented_solution_7F01DBE6.html" guid="_w4jVULYUEd-OhPSIhcG3bg">Service Oriented Solution (SO Solution)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_architecture_soaml_22F25B9A.html" guid="_wYQYkEo3Ed6D_7XK49c0nw">ServicesArchitecture (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <font size="2">Figure 1&nbsp;illustrates a services architecture involving three participants (dealer, mfg, and
+    shipper) and three services (Purchasing Service, Ship Status, and Ship).&nbsp;Each service is modeled using a
+    CollaborationUse that is typed as the ServiceContract which is associated with the service.&nbsp;</font>
+</p>
+<p>
+    <font size="2"><strong>Figure 1.&nbsp; A ServicesArchitecture involving three participants and three services.</strong>
+    Note: the purpose of the dealer network architecture is to establish the financially related services between dealers
+    and manufacturers such that any dealer can do business with any manufacturer.</font>
+</p>
+<p>
+    &nbsp; <img alt="" src="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/./resources/services_architecture_example_1.jpg" width="599" height="299" />
+</p>
+<p>
+    <font size="2">This services architecture shows how a community of dealers, manufacturers, and shippers can work
+    together. Each party must provide and use the services specified in the architecture. If they do, they will then be
+    able to participate in this community. This "B2B" SOA specifies the roles of the parties and the services they provide
+    and use without specifying anything about who they are, their organizational structure, or internal processes. No
+    "controller" or "mediator" is required as long as each agrees to the service contracts.</font>
+</p>
+<p>
+    <font size="2">By specifying a ServicesArchitecture, we can understand the services in our enterprise and communities
+    in context and recognize the real (business) dependencies that exist between the participants. The purpose of the
+    services architecture might also be specified as a comment. Each participant in a ServicesArchitecture must have a port
+    that is compatible with the roles played in each ServiceContract role it is bound to.</font>
+</p>
+<p>
+    Figure 2&nbsp;serves to illustrate how the different elements in a ServicesArchitecture are related (the red&nbsp;lines
+    are illustrative only and have no UML meaning).
+</p>
+<p>
+    <strong>Figure 2.&nbsp; Relations between the elements that compose a ServicesArchitecture</strong>
+</p>
+<p>
+    &nbsp;&nbsp;<img alt="" src="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/./resources/services_architecture_example_2.jpg" width="596" height="566" />
+</p>
+<p>
+    <font size="2">The diagram shows the "trace" between a service architecture through the participants and their service
+    points to the service contract that defines the service interfaces for each of the service points. What the above shows
+    is that the Dealer&nbsp;and Manufacturer are participants in a "Dealer Network Architecture" in which the dealer plays
+    the role of the "buyer" in the "Purchasing Service" and the "Manufacturer" plays the role of the seller in the same
+    service. Participating in these services requires that they have service ports defined on the participant type - these
+    are the ports on "Dealer" and "Manufacturer" types. These ports have a ServiceInterface type defined in the "Purchasing
+    Service" contract. These service interfaces each have two ports because Purchasing Service is a compound service
+    contract - the service interfaces have a port for each nested service: Ordering Service & Invoicing Service,
+    respectively.</font>
+</p>
+<p>
+    <font size="2">Refer to the <a class="elementLink" href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/service_contract_soaml_A448B6E2.html" guid="_RucNoFbPEd6MCpkuB85p5g">ServiceContract (SoaML)</a> example for further discussion of the Ordering Service
+    service contract and compound service contracts.</font>
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Several of the above definitions were copied from the <a href="http://www.omg.org/spec/SoaML/Current" target="_blank">Service oriented architecture Modeling Language (SoaML) Specification</a> for the UML Profile and
+    Metamodel Services. <a class="elementLinkWithUserText" href="./../../../core.default.release_copyright.extend-ibm/guidances/supportingmaterials/full_soaml_copyright_3B2FB4F3.html" guid="_GHI_gLgYEd6EUtitpj4XQA">View the full copyright notice</a>.
+</p>
+<p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,536 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Activity: Integrate and Validate Build</title>
+<meta name="uma.type" content="Activity">
+<meta name="uma.name" content="Integrate and Validate Build">
+<meta name="uma.presentationName" content="Integrate and Validate Build">
+<meta name="element_type" content="workflow_detail">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_iwnH4Q7REdygjsWLoA98yA&path=_iwnH4Q7REdygjsWLoA98yA,_MZ2r0Q7SEdygjsWLoA98yA,_ZYFc0Q7SEdygjsWLoA98yA,_OWJIkQ-yEdyDaaYz2iI1gA,_XiXAgQ-yEdyDaaYz2iI1gA';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_XiXAgQ-yEdyDaaYz2iI1gA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Activity: Integrate and Validate Build</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/activity.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../systems.mdsd/deliveryprocesses/Integrate and Validate Build_2C76DCD3.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WBS" href="./../../systems.mdsd/deliveryprocesses/Integrate and Validate Build_2C76DCD3.html_wbs.html"><span style="white-space:nowrap;">Work Breakdown Structure</span></a></td><td width="1"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Team Allocation</span></td><td width="21"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../systems.mdsd/deliveryprocesses/Integrate and Validate Build_2C76DCD3.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="4"><img src="./../../images/shim.gif" alt="" title="" height="2"></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="3"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Team Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Team Breakdown", summary: "Team Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["model_info", "Model Info"],
+["teams", "Team"],
+["type", "Type"],
+["is_planned", "Planned"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_optional", "Optional"]],
+rows: [
+
+{id: "72c59f8b", parentId: "", relPath: ",_HWCtdA-zEdyDaaYz2iI1gA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Implementer", title: "Implementer", url: "./../../systems.mdsd/deliveryprocesses/rup_implementer_DB8CB74D.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "159e7cb6", parentId: "72c59f8b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_developer_test", title: "Developer Test", url: "./../../systems.mdsd/deliveryprocesses/rup_developer_test_DF618B83.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6b319559", parentId: "72c59f8b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_implementation_element", title: "Implementation Element", url: "./../../systems.mdsd/deliveryprocesses/rup_implementation_element_1031C954.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c5ac46c4", parentId: "72c59f8b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_implementation_subsystem", title: "Implementation Subsystem", url: "./../../systems.mdsd/deliveryprocesses/rup_implementation_subsystem_1ACFA964.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7b8a6c1d", parentId: "72c59f8b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_stub", title: "Test Stub", url: "./../../systems.mdsd/deliveryprocesses/rup_stub_D4C3AB73.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1af56c32", parentId: "72c59f8b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_component", title: "Testability Element", url: "./../../systems.mdsd/deliveryprocesses/rup_test_component_E62A975D.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7b79e4ba", parentId: "72c59f8b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_developer_test", title: "Developer Test", url: "./../../systems.mdsd/deliveryprocesses/rup_developer_test_DF618B83.html", 
+	predecessors: "", info: "Modifies", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1e4aef2c", parentId: "72c59f8b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_log", title: "Test Log", url: "./../../systems.mdsd/deliveryprocesses/rup_test_log_64B07B8B.html", 
+	predecessors: "", info: "Modifies", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6e9addec", parentId: "72c59f8b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "perform_developer_test", title: "Execute Developer Tests", url: "./../../systems.mdsd/deliveryprocesses/perform_developer_test_A3F36DA2.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6fcba4a6", parentId: "72c59f8b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "implement_developer_test", title: "Implement Developer Test", url: "./../../systems.mdsd/deliveryprocesses/implement_developer_test_AABC797C.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7025abfb", parentId: "", relPath: ",_HWCtfg-zEdyDaaYz2iI1gA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Integrator", title: "Integrator", url: "./../../systems.mdsd/deliveryprocesses/rup_integrator_5DE76FB1.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c1447ac3", parentId: "7025abfb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_build", title: "Build", url: "./../../systems.mdsd/deliveryprocesses/rup_build_29425DAA.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c36defb2", parentId: "7025abfb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_integration_build_plan", title: "Integration Build Plan", url: "./../../systems.mdsd/deliveryprocesses/rup_integration_build_plan_68854FC1.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "78d50e26", parentId: "7025abfb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_build", title: "Build", url: "./../../systems.mdsd/deliveryprocesses/rup_build_29425DAA.html", 
+	predecessors: "", info: "Modifies", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7b9063cf", parentId: "7025abfb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_implementation_subsystem", title: "Implementation Subsystem", url: "./../../systems.mdsd/deliveryprocesses/rup_implementation_subsystem_1ACFA964.html", 
+	predecessors: "", info: "Modifies", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1d868916", parentId: "7025abfb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "integrate_subsystem", title: "Integrate Subsystem", url: "./../../systems.mdsd/deliveryprocesses/integrate_subsystem_6F4E5B9B.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "186dec66", parentId: "", relPath: ",_IOxsRg-zEdyDaaYz2iI1gA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Integrator", title: "Integrator", url: "./../../systems.mdsd/deliveryprocesses/rup_integrator_4B16D3C6.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1bb49b42", parentId: "186dec66", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_build", title: "Build", url: "./../../systems.mdsd/deliveryprocesses/rup_build_1671C1BF.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7917bf1f", parentId: "186dec66", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_integration_build_plan", title: "Integration Build Plan", url: "./../../systems.mdsd/deliveryprocesses/rup_integration_build_plan_55B4B3D6.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "17614138", parentId: "186dec66", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_build", title: "Build", url: "./../../systems.mdsd/deliveryprocesses/rup_build_1671C1BF.html", 
+	predecessors: "", info: "Modifies", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c355e200", parentId: "186dec66", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "integrate_system", title: "Integrate System", url: "./../../systems.mdsd/deliveryprocesses/integrate_system_5C7DBFB0.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "16b2ecc7", parentId: "", relPath: ",_KXiIjA-zEdyDaaYz2iI1gA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Test Analyst", title: "Test Analyst", url: "./../../systems.mdsd/deliveryprocesses/rup_test_analyst_ED899014.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6be1812e", parentId: "16b2ecc7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_case", title: "Test Case", url: "./../../systems.mdsd/deliveryprocesses/rup_test_case_2CCC822B.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6cf35990", parentId: "16b2ecc7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_data", title: "Test Data", url: "./../../systems.mdsd/deliveryprocesses/rup_test_data_A3A8BDED.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "15d17342", parentId: "16b2ecc7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_results", title: "Test Results", url: "./../../systems.mdsd/deliveryprocesses/rup_test_results_9392BCDE.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "16a8818c", parentId: "16b2ecc7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_ideas_list", title: "Test-Ideas List", url: "./../../systems.mdsd/deliveryprocesses/rup_test_ideas_list_6465CBD6.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7e2a966d", parentId: "16b2ecc7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_workload_analysis_model", title: "Workload Analysis Model", url: "./../../systems.mdsd/deliveryprocesses/rup_workload_analysis_model_683AA00C.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "686a6ea2", parentId: "16b2ecc7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_case", title: "Test Case", url: "./../../systems.mdsd/deliveryprocesses/rup_test_case_2CCC822B.html", 
+	predecessors: "", info: "Modifies", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "219d36d9", parentId: "16b2ecc7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_data", title: "Test Data", url: "./../../systems.mdsd/deliveryprocesses/rup_test_data_A3A8BDED.html", 
+	predecessors: "", info: "Modifies", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c6dbde67", parentId: "16b2ecc7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_evaluation_summary", title: "Test Evaluation Summary", url: "./../../systems.mdsd/deliveryprocesses/rup_test_evaluation_summary_88F4DCCE.html", 
+	predecessors: "", info: "Modifies", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6a655350", parentId: "16b2ecc7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_results", title: "Test Results", url: "./../../systems.mdsd/deliveryprocesses/rup_test_results_9392BCDE.html", 
+	predecessors: "", info: "Modifies", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7488eca9", parentId: "16b2ecc7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_script", title: "Test Script", url: "./../../systems.mdsd/deliveryprocesses/rup_test_script_5D9CBFFC.html", 
+	predecessors: "", info: "Modifies", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6bc26565", parentId: "16b2ecc7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_workload_analysis_model", title: "Workload Analysis Model", url: "./../../systems.mdsd/deliveryprocesses/rup_workload_analysis_model_683AA00C.html", 
+	predecessors: "", info: "Modifies", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1ff6e548", parentId: "16b2ecc7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_test_details", title: "Define Test Details", url: "./../../systems.mdsd/deliveryprocesses/define_test_details_F9080CB6.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6cce2d10", parentId: "16b2ecc7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "determine_test_results", title: "Determine Test Results", url: "./../../systems.mdsd/deliveryprocesses/determine_test_results_C837CEE5.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "713c4825", parentId: "", relPath: ",_KXiIkA-zEdyDaaYz2iI1gA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Test Manager", title: "Test Manager", url: "./../../systems.mdsd/deliveryprocesses/rup_test_manager_B21B7233.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7203a5eb", parentId: "713c4825", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_evaluation_summary", title: "Test Evaluation Summary", url: "./../../systems.mdsd/deliveryprocesses/rup_test_evaluation_summary_88F4DCCE.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1933ddba", parentId: "713c4825", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_plan", title: "Test Plan", url: "./../../systems.mdsd/deliveryprocesses/rup_test_plan_3B3F3671.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7070f3c7", parentId: "713c4825", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_evaluation_summary", title: "Test Evaluation Summary", url: "./../../systems.mdsd/deliveryprocesses/rup_test_evaluation_summary_88F4DCCE.html", 
+	predecessors: "", info: "Modifies", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1ae83e7f", parentId: "713c4825", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assess_advocate_quality", title: "Assess and Advocate Quality", url: "./../../systems.mdsd/deliveryprocesses/assess_advocate_quality_7C77B9E1.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1e66cfeb", parentId: "", relPath: ",_KXiIgg-zEdyDaaYz2iI1gA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Tester", title: "Tester", url: "./../../systems.mdsd/deliveryprocesses/rup_tester_990ADDDD.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c4cd87a7", parentId: "1e66cfeb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_log", title: "Test Log", url: "./../../systems.mdsd/deliveryprocesses/rup_test_log_3F140AA7.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c24c5f2e", parentId: "1e66cfeb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_script", title: "Test Script", url: "./../../systems.mdsd/deliveryprocesses/rup_test_script_5D9CBFFC.html", 
+	predecessors: "", info: "Responsible For", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6d5df7ef", parentId: "1e66cfeb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_change_request", title: "Change Request", url: "./../../systems.mdsd/deliveryprocesses/rup_change_request_A6EF8A0.html", 
+	predecessors: "", info: "Modifies", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6f7c1dab", parentId: "1e66cfeb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_log", title: "Test Log", url: "./../../systems.mdsd/deliveryprocesses/rup_test_log_3F140AA7.html", 
+	predecessors: "", info: "Modifies", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "14ad8b65", parentId: "1e66cfeb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_script", title: "Test Script", url: "./../../systems.mdsd/deliveryprocesses/rup_test_script_5D9CBFFC.html", 
+	predecessors: "", info: "Modifies", type: "", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c2ecfff6", parentId: "1e66cfeb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "analyze_test_failure", title: "Analyze Test Failure", url: "./../../systems.mdsd/deliveryprocesses/analyze_test_failure_FFD11890.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "22c6b838", parentId: "1e66cfeb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "execute_test_suite", title: "Execute Test Suite", url: "./../../systems.mdsd/deliveryprocesses/execute_test_suite_6FE44878.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7c774a34", parentId: "1e66cfeb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "implement_test", title: "Implement Test", url: "./../../systems.mdsd/deliveryprocesses/implement_test_BCB95243.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,1160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Capability Pattern: Transition Iteration [1..n]</title>
+<meta name="uma.type" content="CapabilityPattern">
+<meta name="uma.name" content="dad_transition_iteration">
+<meta name="uma.presentationName" content="Transition Iteration [1..n]">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_pDYGEWnnEd-4LqPkL9-h8Q&path=_pDYGEWnnEd-4LqPkL9-h8Q';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_pDYGEWnnEd-4LqPkL9-h8Q"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Capability Pattern: Transition Iteration [1..n]</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/capabilitypattern.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/dad_transition_iteration_EF39EFBA.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WBS" href="./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/dad_transition_iteration_EF39EFBA.html_wbs.html"><span style="white-space:nowrap;">Work Breakdown Structure</span></a></td><td width="1"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Team Allocation</span></td><td width="21"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/dad_transition_iteration_EF39EFBA.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="4"><img src="./../../images/shim.gif" alt="" title="" height="2"></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="3"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Team Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Team Breakdown", summary: "Team Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["model_info", "Model Info"],
+["teams", "Team"],
+["type", "Type"],
+["is_planned", "Planned"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_optional", "Optional"]],
+rows: [
+
+{id: "74cb5d53", parentId: "", relPath: ",_edLNQ_D7Ed-Ut4CgUrXXXA_0VxJsMlgEdmt3adZL5Dmdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "analyst", title: "Analyst", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/analyst_DDBF4FC9.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7bf6f996", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "glossary", title: "Glossary", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/glossary_79CDA356.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7dc5d8d2", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "storyboard", title: "Storyboard", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/storyboard_37305195.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "24057650", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "user_role", title: "User Role", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/user_role_A3A093AE.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ca5d5b27", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "user_story", title: "User Story", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/user_story_5DBB9D97.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7ccb6ea7", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "vision", title: "Vision", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/vision_4B0F4C1A.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2419ec36", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "glossary", title: "Glossary", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/glossary_79CDA356.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6d637f9b", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "user_role", title: "User Role", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/user_role_A3A093AE.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1ede791f", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "user_story", title: "User Story", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/user_story_5DBB9D97.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "19f0d713", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "work_items_list", title: "Work Items List", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/work_items_list_3F895E0F.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "28115467", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "capture_confirmations", title: "Capture Confirmations", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/capture_confirmations_F0547F2E.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "742bca63", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "identify_user_roles_and_user_stories", title: "Identify User Roles and User Stories", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/identify_user_roles_and_user_stories_38F30299.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "206f339d", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "refine_user_roles_and_stories", title: "Refine User Roles and User Stories", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/refine_user_roles_and_stories_44DF092.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1ebb7580", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assess_results", title: "Assess Results", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/assess_results_1DF7760F.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7a6ca3da", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "create_test_cases", title: "Create Test Cases", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/create_test_cases_32426BDB.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cd07eccf", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "design_solution", title: "Design the Solution", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/design_solution_66D816D.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8047429b", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "implement_tests", title: "Implement Tests", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/implement_tests_6312A9AC.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7cd82c9c", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "manage_iteration", title: "Manage Iteration", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/manage_iteration_6E700AB2.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1d362c62", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "plan_iteration", title: "Plan Iteration", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/plan_iteration_8A35D1C1.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7f784aac", parentId: "74cb5d53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "plan_the_project", title: "Refine Project Plan", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/plan_the_project_8B0D822D.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7d92cc4f", parentId: "", relPath: ",_xIvrG2nnEd-4LqPkL9-h8Q_0dsWoMlgEdmt3adZL5Dmdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "any_role", title: "Any Role", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/any_role_AD908FE1.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "76003dea", parentId: "7d92cc4f", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "task_wi", title: "Task", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/task_wi_8C6C8747.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7e4a0147", parentId: "7d92cc4f", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "work_items_list", title: "Work Items List", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/work_items_list_C4192A8F.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7d904c15", parentId: "7d92cc4f", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "request_change", title: "Request Change", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/request_change_BEEF27E.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1cfeef74", parentId: "", relPath: ",_edLNQ_D7Ed-Ut4CgUrXXXA_0X9iEMlgEdmt3adZL5Dmdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "architect", title: "Architect", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/architect_8B88AE37.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c9ddc4fe", parentId: "1cfeef74", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architecture_notebook", title: "Architecture Notebook", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/architecture_notebook_738F05E3.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "810b0606", parentId: "1cfeef74", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assess_results", title: "Assess Results", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/assess_results_1DF7760F.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2a11a8dd", parentId: "1cfeef74", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "capture_confirmations", title: "Capture Confirmations", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/capture_confirmations_F0547F2E.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "70916811", parentId: "1cfeef74", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "design_solution", title: "Design the Solution", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/design_solution_66D816D.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1ec8ef7b", parentId: "1cfeef74", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "identify_user_roles_and_user_stories", title: "Identify User Roles and User Stories", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/identify_user_roles_and_user_stories_38F30299.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1c4f23c1", parentId: "1cfeef74", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "manage_iteration", title: "Manage Iteration", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/manage_iteration_6E700AB2.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "23e93cba", parentId: "1cfeef74", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "plan_iteration", title: "Plan Iteration", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/plan_iteration_8A35D1C1.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7b65bb78", parentId: "1cfeef74", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "plan_the_project", title: "Refine Project Plan", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/plan_the_project_8B0D822D.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "75079b56", parentId: "1cfeef74", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "refine_user_roles_and_stories", title: "Refine User Roles and User Stories", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/refine_user_roles_and_stories_44DF092.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "280f562b", parentId: "", relPath: ",_edLNQ_D7Ed-Ut4CgUrXXXA_0YDosMlgEdmt3adZL5Dmdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "developer", title: "Developer", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/developer_B04AC5E5.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6b94451a", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "build", title: "Build", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/build_7B90DF3F.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "76c6735d", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "design", title: "Design", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/design_BC30D7C4.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7cf3f236", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "developer_test", title: "Developer Test", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/developer_test_504AD447.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "76cb3aef", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "implementation", title: "Implementation", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/implementation_95B80288.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "743351bf", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "build", title: "Build", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/build_FBD19F14.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7775ab06", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "design", title: "Design", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/design_3C719799.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c70d12a7", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "developer_test", title: "Developer Test", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/developer_test_D08B941C.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1e8acd0e", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "implementation", title: "Implementation", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/implementation_15F8C25D.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1c1bd436", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_log", title: "Test Log", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/test_log_EC4F2512.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "275f6e01", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "design_solution", title: "Design the Solution", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/design_solution_66D816D.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c66685e3", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "detail_the_design", title: "Detail the Design", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/detail_the_design_8EE0023F.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1ce2bc4e", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "implement_developer_tests", title: "Implement Developer Tests", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/implement_developer_tests_7D791655.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "802ed52c", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "implement_solution", title: "Implement Solution", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/implement_solution_8816F665.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "82f05e13", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "integrate_and_create_build", title: "Integrate and Create Build", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/integrate_and_create_build_6D739D39.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cc47de19", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "run_developer_tests", title: "Run Developer Tests", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/run_developer_tests_48D4044E.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7eb913c2", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assess_results", title: "Assess Results", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/assess_results_1DF7760F.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "77da2ccc", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "capture_confirmations", title: "Capture Confirmations", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/capture_confirmations_F0547F2E.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "17c5fc70", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "create_test_cases", title: "Create Test Cases", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/create_test_cases_32426BDB.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cb586e9e", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "identify_user_roles_and_user_stories", title: "Identify User Roles and User Stories", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/identify_user_roles_and_user_stories_38F30299.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "72a4dc2a", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "implement_tests", title: "Implement Tests", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/implement_tests_6312A9AC.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c6873ec0", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "manage_iteration", title: "Manage Iteration", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/manage_iteration_6E700AB2.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c7cc3145", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "plan_iteration", title: "Plan Iteration", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/plan_iteration_8A35D1C1.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7dd15694", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "plan_the_project", title: "Refine Project Plan", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/plan_the_project_8B0D822D.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7ec8fde0", parentId: "280f562b", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "refine_user_roles_and_stories", title: "Refine User Roles and User Stories", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/refine_user_roles_and_stories_44DF092.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7073b6d4", parentId: "", relPath: ",_edLNQ_D7Ed-Ut4CgUrXXXA_dTa6gMAYEdqX-s4mWhkyqQ", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "stakeholder", title: "Stakeholder", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/stakeholder_43E4CC34.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6ffbe330", parentId: "7073b6d4", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assess_results", title: "Assess Results", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/assess_results_1DF7760F.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1faa5f1d", parentId: "7073b6d4", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "capture_confirmations", title: "Capture Confirmations", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/capture_confirmations_F0547F2E.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7980e42c", parentId: "7073b6d4", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "create_test_cases", title: "Create Test Cases", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/create_test_cases_32426BDB.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cb44db2a", parentId: "7073b6d4", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "design_solution", title: "Design the Solution", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/design_solution_66D816D.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "257a2304", parentId: "7073b6d4", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "identify_user_roles_and_user_stories", title: "Identify User Roles and User Stories", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/identify_user_roles_and_user_stories_38F30299.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6bc525c1", parentId: "7073b6d4", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "implement_solution", title: "Implement Solution", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/implement_solution_8816F665.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1d05eff2", parentId: "7073b6d4", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "implement_tests", title: "Implement Tests", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/implement_tests_6312A9AC.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7e8ecf1c", parentId: "7073b6d4", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "manage_iteration", title: "Manage Iteration", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/manage_iteration_6E700AB2.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c7fd8cbb", parentId: "7073b6d4", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "plan_iteration", title: "Plan Iteration", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/plan_iteration_8A35D1C1.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1c2bf575", parentId: "7073b6d4", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "plan_the_project", title: "Refine Project Plan", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/plan_the_project_8B0D822D.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "22624c61", parentId: "7073b6d4", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "refine_user_roles_and_stories", title: "Refine User Roles and User Stories", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/refine_user_roles_and_stories_44DF092.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "73ea098a", parentId: "", relPath: ",_xIvrHGnnEd-4LqPkL9-h8Q_jvv1kMeQEeCj4YFQMZZ6Pg", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "project_mgr.rename", title: "Team Lead", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/project_mgr.rename_1E0F4619.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "25cec619", parentId: "73ea098a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "iteration_plan", title: "Iteration Plan", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/iteration_plan_3EB8DB00.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "266390ad", parentId: "73ea098a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "project_plan", title: "Project Plan", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/project_plan_A724A5AB.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "82d8a4b6", parentId: "73ea098a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "risk_list", title: "Risk List", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/risk_list_4EFFE057.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "22487150", parentId: "73ea098a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "work_items_list", title: "Work Items List", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/work_items_list_C4192A8F.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6ba0a1a9", parentId: "73ea098a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "iteration_plan", title: "Iteration Plan", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/iteration_plan_3EB8DB00.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "70c156c9", parentId: "73ea098a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "project_plan", title: "Project Plan", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/project_plan_C80E6A7A.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7ecd897c", parentId: "73ea098a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "risk_list", title: "Risk List", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/risk_list_4EFFE057.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1c387a06", parentId: "73ea098a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "work_items_list", title: "Work Items List", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/work_items_list_C4192A8F.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "70ce63f6", parentId: "73ea098a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assess_results", title: "Assess Results", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/assess_results_1DF7760F.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "23df46bc", parentId: "73ea098a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "manage_iteration", title: "Manage Iteration", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/manage_iteration_6E700AB2.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c4a895a9", parentId: "73ea098a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "plan_iteration", title: "Plan Iteration", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/plan_iteration_8A35D1C1.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1e87e3e6", parentId: "73ea098a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "plan_the_project", title: "Refine Project Plan", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/plan_the_project_8B0D822D.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1ea026d9", parentId: "", relPath: ",_pKDVwL8TEdyfOezAyKOVXQ_0E16ACFYEd2Tx_sxlQMK3Q", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "test_manager", title: "Test Manager", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_manager_FA517844.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6fcbae24", parentId: "1ea026d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_evaluation_summary", title: "Test Evaluation Summary", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_evaluation_summary_F05EC1DA.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1ece48a9", parentId: "1ea026d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_motivator", title: "Test Motivator", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_motivator_255026A4.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "718df0fa", parentId: "1ea026d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_plan", title: "Test Plan", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_plan_5D9F2DE9.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6ef806b7", parentId: "1ea026d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_evaluation_summary", title: "Test Evaluation Summary", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/test_evaluation_summary_BC510ED1.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7f44aa49", parentId: "1ea026d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_motivator", title: "Test Motivator", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_motivator_255026A4.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "716457da", parentId: "1ea026d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_plan", title: "Test Plan", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/test_plan_5D9F2DE9.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7f7849d7", parentId: "1ea026d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "agree_on_mission", title: "Agree on the Mission", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/agree_on_mission_A1C0A966.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "29d45ea4", parentId: "1ea026d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "comunicate_test_project_status", title: "Communicate Test Project Status", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/comunicate_test_project_status_85FC51FD.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c7c5e333", parentId: "1ea026d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "identify_test_motivators", title: "Identify Test Motivators", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/identify_test_motivators_79F5528B.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1d000cb2", parentId: "1ea026d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "monitor_test_effort", title: "Monitor Test Effort", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/monitor_test_effort_EED627C2.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1b3bbf29", parentId: "1ea026d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "plan_team_preparation", title: "Plan Team Preparation", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/plan_team_preparation_7EA01E86.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c987e84d", parentId: "1ea026d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "plan_test_effort", title: "Plan Test Effort", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/plan_test_effort_D4B83FCB.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "264e799f", parentId: "1ea026d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "refine_test_process", title: "Refine Test Process", url: "./../../practice.tech.test_mgmt.base-ibm/capabilitypatterns/refine_test_process_7E538838.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2263b7e2", parentId: "", relPath: ",_edLNQ_D7Ed-Ut4CgUrXXXA_0ZM4MclgEdmt3adZL5Dmdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "tester", title: "Tester", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/tester_3C4140BE.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7fff1dde", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_case", title: "Test Case", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/test_case_D3C7C533.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "225029e8", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_log", title: "Test Log", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/test_log_6C0E653D.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1ceb1d76", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_script", title: "Test Script", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/test_script_DA0E72EB.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1eb5bc84", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_case", title: "Test Case", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/test_case_97B7BBB3.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "74ccdd17", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_log", title: "Test Log", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/test_log_66E77DE2.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6ff46898", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_script", title: "Test Script", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/test_script_5C499DD2.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6e0df270", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "create_test_cases", title: "Create Test Cases", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/create_test_cases_32426BDB.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7703d592", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "implement_tests", title: "Implement Tests", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/implement_tests_6312A9AC.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7565edff", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "run_tests", title: "Run Tests", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/run_tests_6DB089BC.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7f80480a", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assess_results", title: "Assess Results", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/assess_results_1DF7760F.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "19a4d9bb", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "capture_confirmations", title: "Capture Confirmations", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/capture_confirmations_F0547F2E.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6ba1f9ac", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "design_solution", title: "Design the Solution", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/design_solution_66D816D.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "82b19b84", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "identify_user_roles_and_user_stories", title: "Identify User Roles and User Stories", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/identify_user_roles_and_user_stories_38F30299.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cc48bce1", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "implement_developer_tests", title: "Implement Developer Tests", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/implement_developer_tests_7D791655.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c9f15e75", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "implement_solution", title: "Implement Solution", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/implement_solution_8816F665.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "23b73616", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "manage_iteration", title: "Manage Iteration", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/manage_iteration_6E700AB2.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "23c67634", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "plan_iteration", title: "Plan Iteration", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/plan_iteration_8A35D1C1.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "22e11819", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "plan_the_project", title: "Refine Project Plan", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/plan_the_project_8B0D822D.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2759148f", parentId: "2263b7e2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "refine_user_roles_and_stories", title: "Refine User Roles and User Stories", url: "./../../process.practices_for_agile_delivery.base-ibm/capabilitypatterns/refine_user_roles_and_stories_44DF092.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: Physical Database Design</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="physical_database_design">
+<meta name="uma.presentationName" content="Physical Database Design">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_w_WnsDDBEdyz_pzDMsV8FQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: Physical Database Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This artifact describes the physical structure of persistent data managed by the system as well as supporting physical constructs as required by the environment.</td>
+</tr>
+<tr>
+<td>Domains: <a href="./../../core.default.cat_def.base/domains/development_domain_F86779DE.html" guid="_5JQLoK80Edy9cPK11VzBuQ">Development</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Its purpose is to show how each data element will be codified and stored in a specific database management product.
+</p>
+<p>
+    It ensures that every database transaction meets or exceeds its performance requirements while implementing the
+    idealized design of the database.&nbsp; The physical design reflects the trade-offs between the canonical schema
+    reflected in the logical design and the need to meet specific performance objectives within a potentially constrained
+    environment.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Fulfilled Slots</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.slot.base/workproducts/technical_design_slot_84295A08.html" guid="_IcQOUEqdEdyi3_jfs__bIQ">[Technical Design]</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Responsible:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.extend-ibm/roles/database_specialist_CF4D8984.html" guid="_RpJ6EMYgEdyXeo04os5BOw">Database Specialist</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Modified By:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.extend-ibm/roles/database_specialist_CF4D8984.html" guid="_RpJ6EMYgEdyXeo04os5BOw">Database Specialist</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tasks</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Input To:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.independent_testing.base-ibm/tasks/define_testability_elements_ED2AC642.html" guid="_4REVYHE5Edy8Ac588DXPCQ">Define Testability Elements</a>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/assemble_deployment_packages_AC572130.html" guid="_jwd2OCilEd-pq9tGZ00Zeg">Assemble Deployment Packages</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sw_arch.base-ibm/tasks/detail_component_model_5E34A5FD.html" guid="_1P8IEAruEdy5ib8CxgclIA">Detail Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design.base-ibm/tasks/develop_data_migration_specs_665DA8D2.html" guid="_2XUcMAoEEdylK4Y6kXK2hQ">Develop Data Migration Specifications</a>
+</li>
+<li>
+<a href="./../../practice.tech.independent_testing.base-ibm/tasks/create_test_cases_765DDFED.html" guid="_ywvLQHE3Edy8Ac588DXPCQ">Develop Test Cases</a>
+</li>
+<li>
+<a href="./../../practice.gen.support_training.base-ibm/tasks/develop_user_support_materials_2FC7CAA4.html" guid="_H5d-o0RAEdy0e9h1zdJ_TA">Develop User Support Materials</a>
+</li>
+<li>
+<a href="./../../practice.tech.independent_testing.base-ibm/tasks/identify_targets_test_4C52E66F.html" guid="_XL4SoHE4Edy8Ac588DXPCQ">Identify Targets of Test</a>
+</li>
+<li>
+<a href="./../../practice.tech.independent_testing.base-ibm/tasks/identify_test_ideas_D97DA26C.html" guid="_eS9qEHE4Edy8Ac588DXPCQ">Identify Test Ideas</a>
+</li>
+<li>
+<a href="./../../practice.tech.design_driven_implementation.base-ibm/tasks/implement_unit_tests_FB13DC48.html" guid="_BpwvEAqFEd281qfHUnTumw">Implement Unit Tests</a>
+</li>
+<li>
+<a href="./../../practice.tech.staged_integration.base-ibm/tasks/plan_system_integration_2B706402.html" guid="{11538D9A-7439-4FDD-8333-9E2E47E5E173}">Plan System Integration</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Output From:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.data_design.base-ibm/tasks/develop_physical_database_design_3AB5F1C6.html" guid="_7CyLUAo8Edygr55FhBZqVw">Develop Physical Database Design</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell">This artifact describes the implementation of data in a physical database. It specifies implementation details such as
+referential integrity, indexes, constraints, views, and physical storage constructs.</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Brief Outline</th><td class="sectionTableCell"><p>
+    This artifact typically contains:
+</p>
+<ul>
+    <li>
+        Physical data model
+    </li>
+    <li>
+        Data dictionary entries documenting elements of the data model
+    </li>
+    <li>
+        Data definition language (DDL) that implements the database
+    </li>
+    <li>
+        Any environmental definitions that may be required, such as configuration files or access method definitions
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Notation</th><td class="sectionTableCell"><p>
+    There are three commonly used notations for physical data modeling. While they all reflect common data modeling
+    concepts, each has its own graphical syntax briefly described below. For a more detailed description of these
+    notations, see the references.
+</p>
+<h4>
+    Information Engineering
+</h4>
+<ul>
+    <li>
+        Tables are represented by a box with the table name inside. Compartments are added for primary keys and attributes.
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                        <p>
+                            <img height="93" alt="IE Table" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/ie_table.gif" width="101" />
+                        </p>
+                    </blockquote>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<ul>
+    <li dir="ltr">
+        Relationships between tables are described by a line. Solid lines indicate an identifying relationship, while
+        dashed lines indicate a non-identifying relationship. Terminating symbols on each end describe optionality and
+        cardinality rules.<br />
+        <table bordercolor="#ffffff" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+            <tbody>
+                <tr>
+                    <td width="319">
+                        <p align="center">
+                            <img height="151" alt="IE Relationships" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/ie_pdd_relationships.gif"                             width="234" />&nbsp;
+                        </p>
+                    </td>
+                    <td width="319">
+                        <p align="center">
+                            <img height="92" alt="IE Multiplicity" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/ie_pdd_multiplicity.gif"                             width="162" />&nbsp;
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </li>
+</ul>
+<h4>
+    Integration Definition for Information Modeling (IDEF1X)
+</h4>
+<ul>
+    <li>
+        Entities are represented with square or round-cornered boxes. Rounded corners indicate dependencies for
+        identification on another entity. Each entity is assigned a label which is placed above the box.
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                    <p>
+                        <img height="127" alt="IDEF1X Table" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/idef1x_pdd_table.gif" width="252" />
+                    </p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<ul>
+    <li dir="ltr">
+        Attributes are represented in compartments inside the box. Key attributes are located in the first compartment.
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img height="150"                         alt="IDEF1X Attributes" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/idef1x_pdd_attributes.gif" width="150" />
+                    </p>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<ul>
+    <li dir="ltr">
+        Relationships between entities (connection relationships) are described with lines and terminating symbols. A solid
+        line indicates an identifying foreign key. Dashed lines indicate that it is non-identifying. There are a number of
+        terminating symbols that are combined to describe optionality and cardinality. These symbols cannot be interpreted
+        independently of each other. It is the combination that describes the rules.
+    </li>
+</ul>
+<p>
+    <br />
+    <br />
+</p>
+<table bordercolor="#ffffff" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+    <tbody>
+        <tr>
+            <td width="319">
+                <p align="center">
+                    &nbsp;<img height="151" alt="IDEF1X Relationships" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/idef1x_pdd_relationships.gif"                     width="234" />
+                </p>
+            </td>
+            <td width="319">
+                <p align="center">
+                    <img height="151" alt="IDEF1X Multiplicity" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/idef1x_pdd_multiplicity.gif"                     width="162" />&nbsp;
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<h4>
+    The Unified Modeling Language (UML)
+</h4>
+<ul>
+    <li>
+        Tables are represented as stereotyped classes. The top compartment of the class box contains the name of the class
+        (table), and the next compartment contains its attributes (columns). Key columns are tagged with either a Primary
+        Key (&lt;&lt;PK&gt;&gt;) or Foreign Key (&lt;&lt;FK&gt;&gt;) stereotype. In case a foreign key is used as a primary
+        key, the combined key is marked with the (&lt;&lt;PFK&gt;&gt;) stereotype.
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                        <p>
+                            <img height="105" alt="UML Table" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/uml_pdd_table.gif" width="156" />
+                        </p>
+                    </blockquote>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<ul>
+    <li dir="ltr">
+        Relationships between tables are described with UML associations.
+    </li>
+</ul>
+<p>
+    <br />
+</p>
+<table bordercolor="#ffffff" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+    <tbody>
+        <tr>
+            <td width="319">
+                <p align="center">
+                    <img height="92" alt="UMl Relationships" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/uml_pdd_relationships.gif" width="252" />&nbsp;
+                </p>
+            </td>
+            <td width="319">
+                <p align="center">
+                    &nbsp;<img height="108" alt="UML Multiplicity" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/uml_pdd_multiplicity.gif" width="229" />
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br /></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Selected Representation</th><td class="sectionTableCell"><p>
+    Rational Data Architect is used for developing the physical data model. Information Engineering (IE)&nbsp;and the
+    Unified Modeling Language (UML) are its supported notations.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/examples/physical_database_design_14A59C09.html" guid="_9BvGsPn_EdyweOgcDsH_HA">Physical Database Design</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell">Without this artifact, the data definition language is produced directly from the idealized design of the database, which
+could result in a database that does not meet its performance requirements.</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell"><p>
+    Some reasons for not needing this artifact:
+</p>
+<ul>
+    <li>
+        The solution does not require a database.
+    </li>
+    <li>
+        The system stores small amounts of data with low access volumes
+    </li>
+    <li>
+        The system uses an object-oriented database manager (ODBMS) which stores the object model directly, without changes
+        to the schema. However, a database tuning activity could still be appropriate.
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Representation Options</th><td class="sectionTableCell"><p>
+    Informal data models can be created using whiteboards or drawing tools. However, if the model needs to be maintained, a
+    data modeling tool is advised.
+</p>
+<p>
+    When selecting which data modeling notation should be used, consider the following pros and cons:
+</p>
+<ul>
+    <li>
+        Information Engineering (IE) notation is a widely accepted standard for data models. Simple and concise, it is very
+        readable even by non-technical stakeholders
+    </li>
+    <li>
+        Integrated Definition for Information Modeling (IDEF1X) is a federal standard notation originally developed for
+        physical data modeling. It is very complex and can result in models that are difficult to review with stakeholders.
+    </li>
+    <li>
+        The Unified Modeling Language (UML) does not have explicit data modeling constructs as part of its notation, but
+        IBM Rational has developed a UML profile for this purpose.
+    </li>
+</ul><br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Checklists</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/checklists/physical_database_design_F966EA41.html" guid="_QRLbsAo9Edygr55FhBZqVw">Physical Database Design</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/guidelines/physical_database_design_16CB502F.html" guid="_DNOdMAo9Edygr55FhBZqVw">Physical Database Design</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/supportingmaterials/data_modeling_ref_BF035330.html" guid="_MyncAPa_EdyXq55fyVQnqg">References: Data Modeling</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/estimationconsiderations/physical_database_design_transaction_system_901F02D6.html" guid="_UeJLYAo9Edygr55FhBZqVw">Physical Database Design for a transaction based system</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

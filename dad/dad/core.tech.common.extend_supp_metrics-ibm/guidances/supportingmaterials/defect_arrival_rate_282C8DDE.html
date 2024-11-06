@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Defect Arrival Rate</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="defect_arrival_rate">
+<meta name="uma.presentationName" content="Defect Arrival Rate">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_XkY_kNbPEd6JeoTJ0wTEGQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Defect Arrival Rate</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks the frequency of new defect submissions over time, broken down by severity.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p>
+    A project's pattern of defect arrival helps the team understand their likelihood of achieving their release
+    commitments. It indicates how much more testing is needed before the system can be released, because a high defect
+    arrival rate typically indicates unstable code. The team can also use this metric to forecast the number of customer
+    reported problems post-ship.
+</p>
+<p>
+    This metric is also used to to determine the completeness of the testing process, the ability of the team to find
+    defects (the rate of defect discovery)&nbsp;and to monitor process improvements.
+</p>
+<h3>
+    Definition
+</h3>
+<ul>
+    <li>
+        <span         style="FONT-FAMILY: Verdana; COLOR: black; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH"><font          face="Arial">Count the number of defects found in each unit of time (usually week, but could be day or month,
+        depending on iteration length).</font></span>
+    </li>
+    <li>
+        <span         style="FONT-FAMILY: Verdana; COLOR: black; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH"><font          face="Arial">Count total cumulative defects found</font></span>
+    </li>
+</ul>
+<p>
+    Defect arrival data can be grouped&nbsp;by activity (i.e. the activity performed which discovered the defect).<br />
+</p>
+<h3>
+    Analysis
+</h3>
+<p>
+    Monitor defect arrivals using a trend line for each severity. Plot the number of defects on the Y axis and iterations
+    on the X axis.
+</p>
+<p>
+    <strong>Expected trend</strong> - Ideally, the defect arrival rate will slow down over time for each severity type. As
+    defect arrivals diminish, confidence in meeting release goals increases.
+</p>
+<p>
+    <strong>Increasing defect arrivals</strong> - When defect arrivals are not tapering down (especially in the last half
+    of the lifecycle), it suggests the team may continue to find defects at a rate that impacts the release date. It can
+    also forecast more defects found after the software ships. This trend can occur as a result of increased testing
+    efforts, the injection of more code defects, or increased code development activity (the more code is created, the more
+    defects are likely to be introduced). Perform analysis to determine the cause of the increasing defect arrival rate in
+    order to take the appropriate corrective action. The team may not be successfully adopting best practices of Test
+    Management.
+</p>
+<p>
+    Below is an example of a Defect Arrival Rate report, which shows the number of defects across the development
+    lifecycle. The high severity lines trending upward&nbsp;in this example indicate the project is not stabilizing.
+</p>
+<p>
+    <img alt="Defect Arrival Rate chart" src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/resources/defect_arrival_rate.gif" width="600" height="385" />
+</p>
+<p>
+    For Agile and/ or iterative development approaches, testing starts early in the development lifecycle.
+</p>
+<ul>
+    <li>
+        An upward trend of defects found (cumulative) from the beginning of the lifecycle is expected
+    </li>
+    <li>
+        The number of defects found (in each iteration) should be consistent across the lifecycle. Expect a reduction in
+        defects found at the end of lifecycle (if testing has been performed properly)
+    </li>
+    <li>
+        The number of closed defects should be equal or very close to the number of defects found in that iteration (i.e.
+        the opened defects should burn down to zero)
+    </li>
+</ul>
+<p>
+    For waterfall or non-iterative development projects, the test cycle usually begins late in the development lifecycle.
+</p>
+<ul>
+    <li>
+        The number of defects found trends upward toward the middle to the end of the development lifecycle. The defect
+        discovery rate slows down at the end of development. Expect a bell curve for defect arrival.
+    </li>
+    <li>
+        The number of opened defects trends downward to zero when development is coming to an end.
+    </li>
+</ul>
+<h3>
+    <br />
+    Frequency and reporting
+</h3>
+<p>
+    Data is typically reported weekly, or at a minimum at the end of every iteration. Defect Arrival are discussed as part
+    of the readiness-to-ship review meeting.
+</p>
+<h3>
+    Collection and reporting tools
+</h3>
+<p>
+    IBM&reg; Rational&reg; ClearQuest&reg; and IBM&reg; Rational&reg; Team Concert&reg; collect defect arrival data. IBM&reg; Rational&reg; Insight&reg;
+    reports on this metric.
+</p>
+<h3>
+    Assumptions and prerequisites
+</h3>
+<ul>
+    <li>
+        Defects are captured in a tool and categorized by their severity and the activity performed to discover them.
+    </li>
+</ul><br />
+<h3>
+    Pitfalls, advice, and countermeasures
+</h3>
+<ul>
+    <li>
+        When the defect arrival rate falls, confirm that testing efforts have not reduced and that test coverage is high.
+    </li>
+    <li>
+        When defect arrivals decrease at a specific point in the lifecycle, it could be that testing has slowed due to
+        reduced testing staff availability, or because the development team is focused on release preparation and has asked
+        that testing efforts slow down.
+    </li>
+    <li>
+        In some cases, feature requests are mistakenly classified as defects. This can affect the defect arrival rate.
+    </li>
+    <li>
+        Be aware of the potential for conflict between developers and testers when this metric is tracked. Developers are
+        incented to keep the defect arrival rate low so that the system can be released. Testers, however, are often
+        incented based on the number of defects they identify. Confirm that data is reported accurately with no bias based
+        on this conflict of interest.
+    </li>
+    <li>
+        Confirm that defects are not being masked or downgraded in severity as the release date nears
+    </li>
+    <li>
+        This metric should be used as an indicator of team performance rather than individual performance (e.g. testers not
+        finding enough defects, or developers introducing too many defects)
+    </li>
+    <li>
+        Ensure that the organization emphasizes defect identification as a positive driver in achieving customer
+        satisfaction
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

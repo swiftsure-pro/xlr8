@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Reverse-engineering Relational Databases</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="rev_eng_relational_db">
+<meta name="uma.presentationName" content="Reverse-engineering Relational Databases">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_iqQPUAo-Edygr55FhBZqVw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Reverse-engineering Relational Databases</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes the steps involved in reverse engineering a database and mapping the resulting Data Model tables to classes in the design.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.data_design.base-ibm/tasks/detail_logical_data_model_2C3DDB31.html" guid="_FDafkAo5Edygr55FhBZqVw">Detail Logical Data Model</a>
+</li>
+<li>
+<a href="./../../../practice.tech.data_design.base-ibm/tasks/outline_logical_data_model_AD31F6F5.html" guid="_8eAI8Ao4Edygr55FhBZqVw">Outline Logical Data Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    <a id="Introduction" name="Introduction"></a>Introduction
+</h3>
+<p>
+    This guideline describes methods for mapping persistent classes in the design into tables in the data model.
+</p>
+<h3>
+    <a id="Transform Design Model Elements to Data Model Elements" name="Transform Design Model Elements to Data Model Elements"></a>Transforming Design Elements to Data Model Elements
+</h3>
+<p>
+    Persistent classes from the design can be transformed to tables in the&nbsp;data model.&nbsp;The table below shows a
+    summary of the mapping between design elements and data model elements.
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" width="50%">
+                    <p class="Text">
+                        <b>Design Element</b>
+                    </p>
+                </th>
+                <th scope="col" width="50%">
+                    <p class="Text">
+                        <b>Corresponding Data Model Element</b>
+                    </p>
+                </th>
+            </tr>
+            <tr>
+                <td width="50%">
+                    Class
+                </td>
+                <td width="50%">
+                    Table
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    Attribute
+                </td>
+                <td width="50%">
+                    Column
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <p class="Text">
+                        Association
+                    </p>
+                </td>
+                <td width="50%">
+                    <p class="Text">
+                        Non-Identifying Relationship
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <p class="Text">
+                        Association Class
+                    </p>
+                </td>
+                <td width="50%">
+                    <p class="Text">
+                        Intersection Table
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <p class="Text">
+                        Composite Aggregation
+                    </p>
+                </td>
+                <td width="50%">
+                    <p class="Text">
+                        Identifying Relationship
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <p class="Text">
+                        Many-to-Many Association
+                    </p>
+                </td>
+                <td width="50%">
+                    <p class="Text">
+                        Intersection Table
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <p class="Text">
+                        Multiplicity
+                    </p>
+                </td>
+                <td width="50%">
+                    <p class="Text">
+                        Cardinality
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <p class="Text">
+                        Qualified Association
+                    </p>
+                </td>
+                <td width="50%">
+                    <p class="Text">
+                        Intersection Table
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    Generalization (Inheritance)
+                </td>
+                <td width="50%">
+                    Separate Table
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<h4>
+    <a id="Mapping Persistent Classes to Tables" name="Mapping Persistent Classes to Tables"></a>Mapping Persistent Classes
+    to Tables
+</h4>
+<p>
+    The persistent classes in the design represent the information that the system must store. Conceptually, these classes
+    might resemble a relational design. (For example, the classes in the design might be reflected in some fashion as
+    entities in the relational schema.) As a project moves from elaboration into construction, however, the goals of the
+    design and the Relational Data Model diverge. This divergence is caused because the objective of relational database
+    development is to normalize data, whereas the goal of the design is to encapsulate increasingly complex behavior. The
+    divergence of these two perspectives-data and behavior-leads to the need for mapping between related elements in the
+    two models.
+</p>
+<p>
+    In a relational database written in third normal form, every row in the tables-every "tuple"-is regarded as an object.
+    A column in a table is equivalent to a persistent attribute of a class. (Keep in mind that a persistent class might
+    have transient attributes.) Therefore, in the simple case in which there are no associations to other classes, the
+    mapping between the two worlds is simple. The datatype of the attribute corresponds to one of the allowable datatypes
+    for columns.
+</p>
+<p class="exampleheading">
+    Example
+</p>
+<p class="example">
+    The following class Customer:
+</p>
+<p align="center">
+    <img height="154" alt="Customer Class"  src="./../../../practice.tech.data_design.base-ibm/guidances/guidelines/resources/customer_class_figure.gif" width="147" />
+</p>
+<p class="example">
+    when modeled in the RDBMS would translate to a table called Customer, with the columns Customer_ID, Name, and Address.
+</p>
+<p>
+    An instance of this table can be visualized as:
+</p>
+<p align="center">
+    <img height="118" alt="Customer Table"  src="./../../../practice.tech.data_design.base-ibm/guidances/guidelines/resources/customer_table.gif" width="428" />
+</p>
+<h4>
+    <a id="Persistent Attributes and Keys" name="Persistent Attributes and Keys">Persistent Attributes and Keys</a>
+</h4>
+<p>
+    For each persistent attribute, questions must be asked to elicit additional information that will be used to
+    appropriately model the persistent object in a relational&nbsp;data model. &nbsp;For example:
+</p>
+<ul>
+    <li>
+        Can this persistent attribute serve as a key or part of a key? Example: "Attribute X, together with attribute Z,
+        uniquely identifies the object." In the Customer table, the Customer_ID represents a primary key.
+    </li>
+    <li>
+        What are the minimum and maximum values for the attribute?
+    </li>
+    <li>
+        Will it be possible to search using this attribute as a key? It might, for instance, be part of a filter in a
+        Select statement such as "It is common to search for all instances where Y &gt; 1000."
+    </li>
+    <li>
+        Does the attribute have a description such as "attribute X is the number of retransmissions per 100 000 transmitted
+        characters"?
+    </li>
+    <li>
+        Does the attribute have possible numerical values and desired conversions between different numerical values?
+    </li>
+    <li>
+        Who is allowed to update the attribute? Example: "T may only be changed by people in authority class nn."
+    </li>
+    <li>
+        Who is allowed to read the attribute? Examples: "P may be read by people in authority classes yy and zz" or ""P is
+        included in views Vi and Vj."
+    </li>
+    <li>
+        Is there adequate information about volumes and frequencies? Examples: "There are up to 50 000 occurrences of A" or
+        "On average 2000 As are changed per day."
+    </li>
+    <li>
+        Is the attribute unique? Example: Only one person can have the same driver's license number.
+    </li>
+</ul>
+<h4>
+    <a id="Mapping Associations between Persistent Objects to the Data Model" name="Mapping Associations between Persistent Objects to the Data Model">Mapping Associations Between Persistent
+    Objects to the Data Model</a>
+</h4>
+<p>
+    Associations between two persistent objects are realized as foreign keys to the associated objects. A foreign key is a
+    column in one table that contains the primary key value of the associated object.
+</p>
+<p class="exampleheading">
+    Example:
+</p>
+<p class="example">
+    Assume there is the following association between Order and Customer:
+</p>
+<p align="center">
+    <img height="211" alt="Customer Order Association"  src="./../../../practice.tech.data_design.base-ibm/guidances/guidelines/resources/customer_order_association.gif" width="135" />
+</p>
+<p class="example">
+    When this is mapped into relational tables, the result is an Order table and a Customer table. The Order table has
+    columns for attributes listed, plus an additional column named Customer_ID that contains foreign-key references to the
+    primary key of the associated row in the Customer table. For a given Order, the Customer_ID column contains the
+    identifier of the Customer to whom the Order is associated. Foreign keys allow the RDBMS to join related information
+    together.
+</p>
+<h4>
+    <a id="Mapping Aggregation Associations to the Data Model" name="Mapping Aggregation Associations to the Data Model">Mapping Aggregation Associations to the Data Model</a>
+</h4>
+<p>
+    Aggregation is also modeled using foreign key relationships.
+</p>
+<p class="exampleheading">
+    Example:
+</p>
+<p class="example">
+    Assume that there is the following association between Order and Line Item:
+</p>
+<p align="center">
+    <img height="74" alt="Order - Line Item"  src="./../../../practice.tech.data_design.base-ibm/guidances/guidelines/resources/order_line_item_association.gif" width="343" />
+</p>
+<p class="example">
+    When this is mapped into relational tables, the result is an Order table and a Line_Item table. The Line_Item table has
+    columns for attributes listed, plus an additional column called Order_ID that contains a foreign-key reference to the
+    associated row in the Order table. For a given Line Item, the Order_ID column contains the Order_ID of the Order with
+    which the Line Item is associated. Foreign keys allow the RDBMS to optimize join operations.
+</p>
+<p>
+    In addition, it is important to implement a cascading delete constraint that provides referential integrity in
+    the&nbsp;data model.&nbsp;Once this is accomplished, whenever the Order is deleted, all of their Line Items are deleted
+    as well.
+</p>
+<h4>
+    <a id="Modeling Inheritance" name="Modeling Inheritance">Modeling Generalization Relationships</a> in the Data Model
+</h4>
+<p>
+    The standard relational&nbsp;data model&nbsp;does not support modeling inheritance in a direct way. A number of
+    strategies can be used to model inheritance. These can be summarized as follows:
+</p>
+<ul>
+    <li>
+        Use separate tables to represent the super-class and sub-class. The sub-class table must include a foreign key
+        reference to the super-class table. In order to instantiate a sub-class object, the two tables must be joined
+        together. This approach is conceptually easy and facilitates changes to the model, but it often performs poorly due
+        to the extra work.
+    </li>
+    <li>
+        Duplicate all inherited attributes and associations as separate columns in the sub-class table. This is similar to
+        de-normalization in the standard relational data model.
+    </li>
+</ul>
+<h4>
+    <a id="Modeling Many-to-Many Associations" name="Modeling Many-to-Many Associations">Modeling Many-to-Many
+    Associations</a> in the Data Model
+</h4>
+<p>
+    A standard technique in relational modeling is to use an intersection entity to represent many-to-many associations.
+    The same approach can be applied here: An intersection table is used to represent the association.
+</p>
+<p class="exampleheading">
+    Example:
+</p>
+<p class="example">
+    If Suppliers can supply many Products, and a Product can be supplied by many Suppliers, the solution is to create a
+    Supplier/Product table. This table would contain only the primary keys of the Supplier and Product tables, and serve to
+    link the Suppliers and their related Products. The Object Model has no analog for this table; it is strictly used to
+    represent the associations in the relational Data Model.
+</p>
+<h3>
+    <a id="Refine the Data Model" name="Refine the Data Model"></a>Refining the Data Model
+</h3>
+<p>
+    Once the design classes have been transformed into tables and the appropriate relationships in the data model, the
+    model is refined as needed to implement referential integrity and optimize data access through views and stored
+    procedures. For more information, see&nbsp; Guideline:&nbsp;<a class="elementLink" href="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/physical_database_design_16CB502F.html" guid="_DNOdMAo9Edygr55FhBZqVw">Physical Database Design</a>
+</p>
+<h3>
+    <b><a id="Forward-Engineering the Data Model" name="Forward-Engineering the Data Model">Forward-Engineering the Data
+    Model</a></b>
+</h3>
+<p>
+    Most application design tools support the generation of Data Definition Language (DDL) scripts from&nbsp;data
+    models&nbsp;and/or the generation of the database from the&nbsp;data model. &nbsp;Forward-engineering of the database
+    needs to be planned as part of the overall application development and integration tasks.&nbsp;The timing and frequency
+    for forward-engineering the database from the data model depends on the specific project situation.&nbsp;For new
+    application development projects that are creating a new database, the initial forward-engineering might need to be
+    done as part of the work to implement a stable architectural version of the application by the end of the elaboration
+    phase.&nbsp;In other cases, the initial forward-engineering might be done in early iterations of the construction
+    phase.&nbsp;
+</p>
+<p>
+    The types of model elements in the&nbsp;data model&nbsp;that can be forward-engineered vary, depending on the specific
+    design tools and RDBMS used on the project.&nbsp; In general, the major structural elements of the data model,
+    including tables, views, stored procedures, triggers, and indexes can be forward-engineered into the database.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

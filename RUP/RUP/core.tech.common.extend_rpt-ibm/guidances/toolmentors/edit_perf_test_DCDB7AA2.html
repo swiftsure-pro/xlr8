@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Edit Tests with IBM Rational Performance Tester</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="edit_perf_test">
+<meta name="uma.presentationName" content="Edit Tests with IBM Rational Performance Tester">
+<meta name="uma.category" content="Tool:rup_test_performance_tester:IBM Rational Performance Tester">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="IBM Rational Performance Tester">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_qT5X0Hj4EdyhRNciHt44hg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Edit Tests with IBM Rational Performance Tester</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor describes how to use IBM Rational Performance Tester to edit a performance test.</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.tech.common.extend_rpt-ibm/tools/rup_test_performance_tester_463C43C6.html" guid="_JFTh4LWGEdyTM_aghv_1tQ">IBM Rational Performance Tester</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.independent_testing.base-ibm/tasks/implement_test_4938541C.html" guid="_fajSUHE6Edy8Ac588DXPCQ">Develop Test</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Overview
+</h3>
+<p>
+    With the test editor, you can manually write a test for a Web application. But more typically, you use the editor to
+    inspect or customize a test that was automatically generated from a recorded session with an application that you
+    started from your browser.
+</p>
+<p>
+    You can edit tests in a number of ways by, for example, providing tests with variable data, correlating response and
+    request data in a test, adding verification points to a test, adding elements to a test, and extending tests with
+    custom code. In this tool mentor, the focus will be on one of the more frequently encountered types of editing, namely
+    <i>adding a verification point</i> (VP) to a test.
+</p>
+<p>
+    <img height="16" alt="" src="./../../../core.tech.common.extend_rpt-ibm/guidances/toolmentors/./resources/helpbook.gif" width="16" /> For more information on editing a test in IBM&reg;
+    Rational&reg; Performance Tester, see the topic <em>Editing Tests</em> in the online Help.
+</p>
+<p>
+    A verification point is used to determine whether or not expected behavior occurred. In cases where the expected
+    behavior does not occur at a verification point, an error is reported. In Rational Performance Tester, three types of
+    verification points are supported:
+</p>
+<ul>
+    <li>
+        <strong>Page Title VPs</strong>: reports an error if no page title, or a title different from what you expected,
+        was returned
+    </li>
+    <li>
+        <strong>Response Code VPs</strong>: reports an error if a response code different from what you expected was
+        returned
+    </li>
+    <li>
+        <strong>Response Size VPs</strong>: reports an error if the size of a response is different from what you expected
+    </li>
+</ul>
+<h3>
+    Tool Steps
+</h3>
+<p>
+    To edit a test by adding a verification point, perform the following steps:
+</p>
+<ol>
+    <li>
+        Open the test.
+    </li>
+    <li>
+        In the Test Editor, set the scope of the verification point by clicking either the test name, a test page, or a
+        page request. Depending on which item you choose, the verification point you select is added to all test pages, to
+        a particular page in the test, or to a particular request in a page.
+    </li>
+    <li>
+        Right-click and select one of the following:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Enable Page Title VPs
+            </li>
+            <li>
+                Enable Response Code VPs
+            </li>
+            <li>
+                Enable Response Size VPs
+            </li>
+        </ul>
+    </li>
+</ol>
+<p>
+    <img height="16" alt="" src="./../../../core.tech.common.extend_rpt-ibm/guidances/toolmentors/./resources/helpbook.gif" width="16" /> For more information on verification points and
+    editing performance tests in general, see the following topics in the Rational Performance Tester online Help:
+</p>
+<ul>
+    <li>
+        <em>Specifying the Expected Content</em>
+    </li>
+    <li>
+        <em>Specifying the Expected Page Title</em>
+    </li>
+    <li>
+        <em>Specifying the Expected Response Code</em>
+    </li>
+    <li>
+        <em>Specifying the Expected Response Size</em>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

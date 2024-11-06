@@ -1,0 +1,23 @@
+= <Project Name> - Project Plan
+
+==1. Introduction
+
+==2. Project organization 
+
+// [Information such as team members and the roles they play during the project are captured in the Team Area. Use this section to capture other information that is not already in the Team Area. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.]
+
+==3. Project practices and measurements 
+
+//[Use this section to summarize and reference the published Web site containing the selected practices for your project, or attach a screen shot of the selected practices.]
+
+==4. Project milestones and objectives
+
+=====   Iteration 1	
+*    Primary objectives (risks and use case scenarios)	
+*    Scheduled start or milestone	
+*    Target velocity
+
+
+==5. Deployment
+
+==6. Lessons learned

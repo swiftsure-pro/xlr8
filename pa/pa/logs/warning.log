@@ -1,0 +1,54 @@
+Warning: CustomCategory:rcm_background: Empty content category element not published.
+Warning: CustomCategory:g_white_papers_compliance: Empty content category element not published.
+Warning: CustomCategory:g_reports_compliance: Empty content category element not published.
+Warning: CustomCategory:g_reusable_assets_compliance: Empty content category element not published.
+Warning: Roadmap:rcm_process_controls_applied_to_rup: Unable to find element for guid {87374880-B351-4822-8C1E-819ECA9F51D4}
+Warning: Roadmap:rcm_process_controls_applied_to_rup: Unable to find element for guid {F071C3D3-7054-457F-8A81-EFA6678CCDE1}
+Warning: Roadmap:rcm_process_controls_applied_to_rup: Unable to find element for guid {71138CAE-59CA-41DE-8DD1-BE11799566FD}
+Warning: Roadmap:rcm_process_controls_applied_to_rup: Unable to find element for guid {B95CA9FA-A00E-4C6C-AA16-133297812CC0}
+Warning: Roadmap:rcm_process_controls_applied_to_rup: Unable to find element for guid {9659DFD7-2A22-45D4-B2CE-EF99788E9497}
+Warning: Roadmap:rcm_process_controls_applied_to_rup: Unable to find element for guid _cj6jkB_PEdq6CKKKq4D7YA
+Warning: Roadmap:rcm_process_controls_applied_to_rup: Unable to find element for guid {1CD358DF-3FFC-4281-B3EF-8E3CD76C5900}
+Warning: Roadmap:rcm_process_controls_applied_to_rup: Unable to find element for guid {9139A97B-D458-490D-A9D5-CDBB86968475}
+Warning: Roadmap:rcm_process_controls_applied_to_rup: Unable to find element for guid {1CD358DF-3FFC-4281-B3EF-8E3CD76C5900}
+Warning: Roadmap:rcm_process_controls_applied_to_rup: Unable to find element for guid {1CD358DF-3FFC-4281-B3EF-8E3CD76C5900}
+Warning: Roadmap:rcm_application_control_development: Unable to find element for guid {A1FA1E95-8028-42EB-9B92-0DA77380F3E1}
+Warning: Roadmap:rcm_application_control_development: Unable to find element for guid {023FEC1B-5AA4-462B-A2FE-B92827E00BAB}
+Warning: Artifact:rcm_change_workflow_specification: Unable to find element for guid {71138CAE-59CA-41DE-8DD1-BE11799566FD}
+Warning: Artifact:rcm_change_workflow_specification: Unable to find element for guid {71138CAE-59CA-41DE-8DD1-BE11799566FD}
+Warning: Outcome:rcm_change_request_approval: Unable to find element for guid {694A7BC8-3D20-4172-BC56-6C7BD4590BA5}
+Warning: Artifact:rcm_control_point_specification: Unable to find element for guid {345D1811-317B-47EC-AC9D-10E1072A7D68}
+Warning: Activity:monitor_control_project: Unable to find element for guid {C1D3C2C0-15A0-49AD-9788-8C163E53CB96}
+Warning: Activity:monitor_control_project: Unable to find element for guid {F6D674A6-D71A-4D36-A195-4C888C1D0E70}
+Warning: Activity:monitor_control_project: Unable to find element for guid {A7E3EAB8-8E5A-408C-B1EF-3CD3D3B0DEDD}
+Warning: Activity:monitor_control_project: Unable to find element for guid {5F77F969-3117-4924-AE01-E82CB60287D4}
+Warning: Guideline:rcm_three_points_of_control: Unable to find element for guid {18DB40A1-6272-467A-AC68-B2C4BE1DCD6C}
+Warning: Guideline:rcm_three_points_of_control: Unable to find element for guid {75501BAA-0CCE-4852-A7B2-B10CA71C002A}
+Warning: Guideline:rcm_three_points_of_control: Unable to find element for guid {502B4138-0772-4A4E-A183-C647497AFCB8}
+Warning: Task:rcm_formulate_compliance_vision: Unable to find element for guid 1.2379282201043798E-305
+Warning: Task:rcm_formulate_compliance_vision: Unable to find element for guid 1.0533204494757043E-304
+Warning: Task:rcm_formulate_compliance_vision: Unable to find element for guid 3.7162984695584875E-306
+Warning: Task:rcm_approve_test_approach: Unable to find element for guid {023FEC1B-5AA4-462B-A2FE-B92827E00BAB}
+Warning: Task:rcm_sign_off_successful_tests: Unable to find element for guid {87374880-B351-4822-8C1E-819ECA9F51D4}
+Warning: Task:rcm_sign_off_successful_tests: Unable to find element for guid {C6AAA2A6-C5AD-42DA-BCBC-9B1349D7B6CF}
+Warning: Checklist:rcm_baseline_control_point: Unable to find element for guid {D77D6716-B167-4643-A4B6-6F76C7769A80}
+Warning: Checklist:rcm_baseline_control_point: Unable to find element for guid {694A7BC8-3D20-4172-BC56-6C7BD4590BA5}
+Warning: Checklist:rcm_baseline_control_point: Unable to find element for guid {78157368-E2D1-457E-84AF-D8D2C1C20B97}
+Warning: Checklist:rcm_baseline_control_point: Unable to find element for guid {528F34BA-0118-40F3-8D29-DE60EF4183A6}
+Warning: Checklist:rcm_baseline_control_point: Unable to find element for guid {87374880-B351-4822-8C1E-819ECA9F51D4}
+Warning: Checklist:rcm_change_control_point: Unable to find element for guid {97269E0F-CDF3-448D-A732-DF39D099BDDD}
+Warning: Checklist:rcm_change_control_point: Unable to find element for guid {694A7BC8-3D20-4172-BC56-6C7BD4590BA5}
+Warning: Checklist:rcm_change_control_point: Unable to find element for guid {18DB40A1-6272-467A-AC68-B2C4BE1DCD6C}
+Warning: Checklist:rcm_change_control_point: Unable to find element for guid {8CDAEAD4-5E84-4F50-87FD-3240ED047DE7}
+Warning: Checklist:rcm_change_control_point: Unable to find element for guid {4047B5B0-5FB7-4960-8A7E-451719D85DFF}
+Warning: Checklist:rcm_change_control_point: Unable to find element for guid {74C60DFE-7221-45F1-BB8B-922A81C5AA98}
+Warning: Checklist:rcm_change_control_point: Unable to find element for guid {227398F1-D995-4527-8C4F-292024EFDD96}
+Warning: Checklist:rcm_change_control_point: Unable to find element for guid {4047B5B0-5FB7-4960-8A7E-451719D85DFF}
+Warning: Checklist:rcm_release_control_point: Unable to find element for guid {D77D6716-B167-4643-A4B6-6F76C7769A80}
+Warning: Checklist:rcm_release_control_point: Unable to find element for guid {D0E2E7A1-4179-470E-AA18-419D5FEA275D}
+Warning: Checklist:rcm_release_control_point: Unable to find element for guid {CAF83AE4-61E6-4129-84A9-58E2E10AD7A7}
+Warning: Checklist:rcm_release_control_point: Unable to find element for guid {78157368-E2D1-457E-84AF-D8D2C1C20B97}
+Warning: Checklist:rcm_release_control_point: Unable to find element for guid {528F34BA-0118-40F3-8D29-DE60EF4183A6}
+Warning: Checklist:rcm_release_control_point: Unable to find element for guid {87374880-B351-4822-8C1E-819ECA9F51D4}
+Warning: Role:rup_change_manager_rcm: Unable to find element for guid {71138CAE-59CA-41DE-8DD1-BE11799566FD}
+Warning: Task:develop_development_case: Unable to find element for guid {ADDC62A7-8E36-4DCE-9E5C-211B0950EBB5}

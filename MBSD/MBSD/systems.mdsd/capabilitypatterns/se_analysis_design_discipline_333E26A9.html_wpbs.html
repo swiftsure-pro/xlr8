@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Capability Pattern: Analysis &amp; Design - Systems Engineering</title>
+<meta name="uma.type" content="CapabilityPattern">
+<meta name="uma.name" content="se_analysis_design_discipline">
+<meta name="uma.presentationName" content="Analysis &amp; Design - Systems Engineering">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_9MQf0VVmEdq-S-2DETo4XA&path=_9MQf0VVmEdq-S-2DETo4XA';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_9MQf0VVmEdq-S-2DETo4XA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Capability Pattern: Analysis &amp; Design - Systems Engineering</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/capabilitypattern.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This capability pattern covers the activities and workflow for the Analysis and Design discipline within a Systems Engineering context.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="10" class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../systems.mdsd/capabilitypatterns/se_analysis_design_discipline_333E26A9.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WBS" href="./../../systems.mdsd/capabilitypatterns/se_analysis_design_discipline_333E26A9.html_wbs.html"><span style="white-space:nowrap;">Work Breakdown Structure</span></a></td><td width="1"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_TBS" href="./../../systems.mdsd/capabilitypatterns/se_analysis_design_discipline_333E26A9.html_tbs.html"><span style="white-space:nowrap;">Team Allocation</span></a></td><td width="21"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Work Product Usage</span></td><td width="21"><img src="./../../images/tab_end-a.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="6"><img src="./../../images/shim.gif" height="2" alt="" title=""></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="1"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Work Product Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Work Product Breakdown", summary: "Work Product Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["model_info", "Model Info"],
+["entry_state", "Entry State"],
+["exit_state", "Exit State"],
+["deliverable", "Deliverable"],
+["type", "Type"],
+["is_planned", "Planned"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_optional", "Optional"]],
+rows: [
+			
+{id: "1d996e46", parentId: "", relPath: ",_F62cEVVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Business Case", title: "Business Case", url: "./../../systems.mdsd/capabilitypatterns/rup_business_case_8F7A4644.html", 
+	predecessors: "", info: "Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "77f04c46", parentId: "", relPath: ",_F62cElVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Risk List", title: "Risk List", url: "./../../systems.mdsd/capabilitypatterns/rup_risk_list_7E135A5A.html", 
+	predecessors: "", info: "Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "6696abf3", parentId: "", relPath: ",_LXvikFVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Subsystem Operation", title: "Subsystem Operation", url: "./../../systems.mdsd/capabilitypatterns/rup_system_operation_DEF22D6C.html", 
+	predecessors: "", info: "Mandatory Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "1cb6ba59", parentId: "", relPath: ",_LXvikVVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Subsystem Operation Realization", title: "Subsystem Operation Realization", url: "./../../systems.mdsd/capabilitypatterns/rup_system_operation_realization_E9900D7C.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "c3141b1d", parentId: "", relPath: ",_LXvik1VxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Subsystem Supplementary Requirements", title: "Subsystem Supplementary Requirements", url: "./../../systems.mdsd/capabilitypatterns/rup_subsystem_supplementary_specification_4102F757.html", 
+	predecessors: "", info: "Optional Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "73d18a48", parentId: "", relPath: ",_LXviklVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Subsystem Use-Case Model", title: "Subsystem Use-Case Model", url: "./../../systems.mdsd/capabilitypatterns/rup_subsystem_usecase_model_D8292192.html", 
+	predecessors: "", info: "Optional Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "c83a62cd", parentId: "", relPath: ",_DPtEdVVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Subsystem Vision", title: "Subsystem Vision", url: "./../../systems.mdsd/capabilitypatterns/rup_subsystem_vision_3563F1C1.html", 
+	predecessors: "", info: "Output, Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "21c9a3aa", parentId: "", relPath: ",_KTFnolVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Supplementary Specifications", title: "Supplementary Specifications", url: "./../../systems.mdsd/capabilitypatterns/rup_supplementary_specification_C782D060.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "185e02fc", parentId: "", relPath: ",_DPtEc1VxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Supplementary Specifications", title: "Supplementary Specifications", url: "./../../systems.mdsd/capabilitypatterns/rup_supplementary_specification_C844F97D.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "7ac74682", parentId: "", relPath: ",_PrZJEVVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Supplementary Specifications", title: "Supplementary Specifications", url: "./../../systems.mdsd/capabilitypatterns/rup_supplementary_specification_E0330DB5.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "c242f3a6", parentId: "", relPath: ",_DPtEdlVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "System Analysis Model", title: "System Analysis Model", url: "./../../systems.mdsd/capabilitypatterns/rup_system_analysis_model_23FD05D7.html", 
+	predecessors: "", info: "Mandatory Input, Output, Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "1e752d7f", parentId: "", relPath: ",_DPtEclVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "System Architecture Document", title: "System Architecture Document", url: "./../../systems.mdsd/capabilitypatterns/rup_system_architecture_document_5F6B23B8.html", 
+	predecessors: "", info: "Mandatory Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "76614312", parentId: "", relPath: ",_F62cEFVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "System Architecture Proof-of-Concept", title: "System Architecture Proof-of-Concept", url: "./../../systems.mdsd/capabilitypatterns/rup_system_arch_proof_of_concept_84DC6634.html", 
+	predecessors: "", info: "Mandatory Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "66f3a3bc", parentId: "", relPath: ",_DPtEd1VxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "System Deployment Model", title: "System Deployment Model", url: "./../../systems.mdsd/capabilitypatterns/rup_system_deployment_model_8CD6DB9C.html", 
+	predecessors: "", info: "Mandatory Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "78ee8059", parentId: "", relPath: ",_MsERMFVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "System Design Model", title: "System Design Model", url: "./../../systems.mdsd/capabilitypatterns/rup_system_design_model_E0387C7E.html", 
+	predecessors: "", info: "Output, Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "71fa8d2e", parentId: "78ee8059", relPath: ",_MsERMFVxEdqgIdhbAiG50A,_LXvilFVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "System Use-Case Realization", title: "System Use-Case Realization", url: "./../../systems.mdsd/capabilitypatterns/rup_sytem_use_case_realization_A3840F8B.html", 
+	predecessors: "", info: "Optional Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "66dda1d1", parentId: "78ee8059", relPath: ",_MsERMFVxEdqgIdhbAiG50A,_LXvikVVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Subsystem Operation Realization", title: "Subsystem Operation Realization", url: "./../../systems.mdsd/capabilitypatterns/rup_system_operation_realization_E9900D7C.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "15aa8cb5", parentId: "78ee8059", relPath: ",_MsERMFVxEdqgIdhbAiG50A,_LXvikFVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Subsystem Operation", title: "Subsystem Operation", url: "./../../systems.mdsd/capabilitypatterns/rup_system_operation_DEF22D6C.html", 
+	predecessors: "", info: "Mandatory Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "6a0232bb", parentId: "", relPath: ",_DPtEdFVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Use-Case Model", title: "Use-Case Model", url: "./../../systems.mdsd/capabilitypatterns/rup_usecase_model_2AC611B1.html", 
+	predecessors: "", info: "Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "c8905a96", parentId: "", relPath: ",_PrZJElVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Use-Case Model", title: "Use-Case Model", url: "./../../systems.mdsd/capabilitypatterns/rup_usecase_model_CECC21CB.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "6f5bcf55", parentId: "", relPath: ",_YTEJglVxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Use-Case Model", title: "Use-Case Model", url: "./../../systems.mdsd/capabilitypatterns/rup_usecase_model_2AAC5E97.html", 
+	predecessors: "", info: "Mandatory Input", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "6e9fe4cb", parentId: "", relPath: ",_KTFno1VxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Use-Case Model", title: "Use-Case Model", url: "./../../systems.mdsd/capabilitypatterns/rup_usecase_model_305CA625.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input, Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "16c46778", parentId: "", relPath: ",_F62cE1VxEdqgIdhbAiG50A", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Vision", title: "Vision", url: "./../../systems.mdsd/capabilitypatterns/rup_vision_E6ED301F.html", 
+	predecessors: "", info: "Output", type: "", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

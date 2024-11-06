@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Analyzing Test Failures using IBM Rational Quality Manager</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="analyze_test_failures_rqm">
+<meta name="uma.presentationName" content="Analyzing Test Failures using IBM Rational Quality Manager">
+<meta name="uma.category" content="Tool:rational_quality_manager:IBM Rational Quality Manager">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="IBM Rational Quality Manager">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_0esbAEbUEd2H4axSXHkZBg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Analyzing Test Failures using IBM Rational Quality Manager</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor describes how to analyze the test results using RQM.</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.tech.common.extend_rqm-ibm/tools/rational_quality_manager_E68E90BA.html" guid="_kMhY4IThEd21av5gPvJ7ZA">IBM Rational Quality Manager</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.concurrent_testing.base/tasks/run_tests_49698054.html" guid="_0jVEkMlgEdmt3adZL5Dmdw">Run Tests</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    After running a test, all the test failures need to be located, isolated and diagnosed. RQM proposes multiple ways of
+    conducting this analysis. Once understood, those test failures need to be appropriately documented and communicated to
+    the development team.
+</p>
+<h3>
+    Tool Steps
+</h3>
+<h4>
+    1. Open the Log files
+</h4>
+<p>
+    In order to analyze any test failure using RQM, the first step that you must perform is to open a test log attached to
+    a specific&nbsp;test execution record. Rational Quality Manager offers multiple possible paths to open a test log for
+    a&nbsp;test execution record.
+</p>
+<p>
+    From the <strong>Planning</strong> section:
+</p>
+<ol>
+    <li>
+        Start by opening the test plan containing the test execution record&nbsp;that you want to open the log for: point
+        to the <strong>Planning</strong> icon and click <strong>All Test Plans</strong> (or <strong>My Test
+        Plans</strong>). A list of test plan(s) is then displayed on the screen.
+    </li>
+    <li>
+        Click on the test plan's name containing the targeted failed test case(s). At this point, you can see the test plan
+        displayed on the screen.
+    </li>
+    <li>
+        In the <strong>Table of Contents</strong> section, click on <strong>Test Cases</strong>. It will bring you to the
+        list of test cases associated with that test plan.
+    </li>
+    <li>
+        Click on the test case for which you want to investigate the failure for. At this point, the test case is displayed
+        on the screen.
+    </li>
+    <li>
+        In the <strong>Table of Contents</strong> section, click <strong>Test Execution Records</strong>. This action will
+        bring you to the list of executions for that item.
+    </li>
+    <li>
+        In the <strong>Test Execution Records</strong> section, click the <strong>Status</strong> link attached to one of
+        the executions. By clicking on that link, you will be directed to the result history for that specific item. The
+        status that is displayed in that column is related to the last test run. Thus, you may have to click on a status
+        link different than <strong>Failed</strong> to access the result history for that specific item.
+    </li>
+    <li>
+        You can now click <strong>log</strong> icon of the targeted failed execution.
+    </li>
+</ol>
+<p>
+    The second way of accessing a test log is after a&nbsp;test execution, as&nbsp;RQM brings you by default to the log
+    result of that run.
+</p>
+<p>
+    From the <strong>Execution</strong> section:
+</p>
+<ol>
+    <li>
+        Start by opening the <strong>Test Execution&nbsp;Records</strong> list: point to the <strong>Execution</strong>
+        icon and then click <strong>All Test Execution Records</strong> (or <strong>My Test Execution Records</strong>).
+    </li>
+    <li>
+        Please refer to steps 6 and 7 of the following above section.
+    </li>
+</ol>
+<p>
+    After following one of those two paths, you will now have a displayed test log containing specific information, such as
+    the test verdict, test environment and test result details.
+</p>
+<h4>
+    2. Investigate each Failure
+</h4>
+<p>
+    You now need to investigate each failure. It is important to look for similarities in the failures (Did they happened
+    under the same test configuration? Did they have similar symptoms? Etc ...). It's important to understand that a single
+    failure may have cause several subsequent failures (maybe all of the subsequent failures!). Make sure to investigate
+    the failure(s) in a sequential order: from the beginning to the end of the execution.
+</p>
+<p>
+    Depending on which type of test script is attached to the&nbsp;test (except for manual script type), you will have to
+    open the external tool log file by clicking on the log file link in the <strong>Result Details</strong> section.
+</p>
+<p>
+    For more information about how to interpret the different external log types, please refer to the online help for their
+    respective product.
+</p>
+<p>
+    <strong>Example of investigating a test failure coming from a manual test script</strong>
+</p>
+<p>
+    For a&nbsp;test implemented with a manual script, you can start&nbsp;the investigation by looking at the <strong>Result
+    Details</strong> section at the bottom of the test log:
+</p>
+<ol>
+    <li>
+        Look for <strong>Failed</strong> status in the steps and verification points listing section.
+    </li>
+    <li>
+        For each of those <strong>Failed</strong> verification point(s), in the <strong>Result Details</strong> section,
+        look for the <strong>comment</strong> icon and the <strong>attachment</strong> icon. Those icons will be your main
+        source of information to investigate the failure. If you point on those icons, any comment or file attachment that
+        was created during the execution for a specific step will be displayed. Those comment(s) and attachment(s) may
+        contain a description of the failure with possible screenshots of the problem. Use this information to diagnose the
+        problem.
+    </li>
+    <li>
+        For any of the found failure(s), you may enter a defect, from RQM, in a supported defect tracking tool.
+    </li>
+</ol></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Finding Business Workers and Entities</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="finding_business_workers_and_entities">
+<meta name="uma.presentationName" content="Finding Business Workers and Entities">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_BKEDAFoJEd6Gvq_dRUXeQw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Finding Business Workers and Entities</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Tips for locating business workers and business entities.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/tasks/model_a_scenario_F20206D0.html" guid="_CWz54FnQEd6TDdjsK-pYkg">Model a Scenario</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    To find business workers, ask the following questions and record the insights and answers:
+</p>
+<ul>
+    <li>
+        Who interfaces directly with actors?
+    </li>
+    <li>
+        Who controls the flow of the process?
+    </li>
+</ul>
+<p>
+    To find business entities, as the following questions and record the insights and answers:
+</p>
+<ul>
+    <li>
+        Who's the first worker we need some responsibility from?
+    </li>
+    <li>
+        Who's the next worker we need responsibility from?
+    </li>
+    <li>
+        What information do we need to give/get to business entities?
+    </li>
+    <li>
+        What information in the organization needs to be created, updated, deleted, or transformed?
+    </li>
+</ul>
+<p>
+    Business entities can also be found by identifying the key abstractions of the business. These are the obvious "things"
+    or elements the business uses, produces, or manipulates.
+</p>
+<p>
+    Use Noun Filtering with the business use cases or business requirements. Identify the nouns in a scenario or
+    requirement, remove redundant or trivial nouns, and consider if the remaining nouns are elements that the business
+    needs.
+</p>
+<p>
+    Attributes&nbsp;can be inappropriately identified as an entity. An attribute is a characteristic of an entity rather
+    than something that stands alone by itself. An entity called Audit Report&nbsp;might have an attribute called Title,
+    but it would not be appropriate to consider the title as a separately controlled entity. On the other hand, an Audit
+    Report&nbsp;might be associated with an Auditor and an Audit Log, but these are a business worker and a separately
+    created and controlled entity respectively, not attributes contained within the Audit Report.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/guidances/examples/business_workers_and_entities_541E260E.html" guid="_vjFlQFoIEd6Gvq_dRUXeQw">Business Workers and Entities</a>
+</li>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/guidances/examples/sequence_diagram_realizing_a_use-case_scenario_DEFFC1F0.html" guid="_yyzpkFoIEd6Gvq_dRUXeQw">Sequence Diagram Realizing a Use-Case Scenario</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Structuring Components</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="structuring_components">
+<meta name="uma.presentationName" content="Structuring Components">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_HI8-gIEcEd2z9IawWqZSFw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Structuring Components</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline explains how to structure your component model so that you can make changes to individual components without impacting the rest of the system.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.component_sw_arch.base-ibm/tasks/detail_component_model_5E34A5FD.html" guid="_1P8IEAruEdy5ib8CxgclIA">Detail Component Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p class="MsoNormal" style="MARGIN: 6pt 0in">
+    This guideline explains how to structure your component model to ensure that the components are:
+</p>
+<p class="BulletsL2" style="MARGIN: 0in 0in 0pt 0.25in; mso-list: l0 level1 lfo3">
+    <span style="FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> Highly cohesive
+</p>
+<p class="BulletsL2" style="MARGIN: 0in 0in 0pt 0.25in; mso-list: l0 level1 lfo3">
+    <span style="FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> Loosely coupled
+</p>
+<p class="BulletsL2" style="MARGIN: 0in 0in 0pt 0.25in; mso-list: l0 level1 lfo3">
+    <span style="FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> Well isolated
+</p>
+<p class="BulletsL2" style="MARGIN: 0in 0in 0pt 0.25in; mso-list: l0 level1 lfo3">
+    <span style="FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> Of the right granularity
+</p>
+<p class="BulletsL2" style="MARGIN: 0in 0in 0pt 0.25in; mso-list: l0 level1 lfo3">
+    <span style="FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> Layered according to their generality
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Your selection of an <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/architectural_pattern_7308BF1.html" guid="_rmX1gIBmEd2z9IawWqZSFw">architectural pattern</a> to follow has a strong influence on how you structure your
+    component model. While this guideline covers how to structure components using the layering technique, layering is only
+    one of many possible architectural patterns upon which to base your structuring activities.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    By following this guideline, you define a number of well structured, <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/logical_and_physical_components_93EAAF0D.html" guid="_3mMfQIDvEd2z9IawWqZSFw">logical components</a> and their responsibilities.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    The concept of assigning responsibilities to components was made popular through the CRC
+    (Classes-Responsibilities-Collaborations) technique [WIRFS-BROCK90]. Responsibilities are defined as:
+</p>
+<p class="BulletsL1" style="MARGIN: 3pt 0in 3pt 0.25in; mso-list: l2 level1 lfo4">
+    <span style="FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> The knowledge a component maintains
+</p>
+<p class="BulletsL1" style="MARGIN: 3pt 0in 3pt 0.25in; mso-list: l2 level1 lfo4">
+    <span style="FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><span     style="mso-list: Ignore">·</span></span> The actions a component performs
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    You may define the components using a modeling tool, or drawings in a word processing document. Figure 1 depicts an
+    example of a UML Component Relationship Diagram created using this technique. <img height="399" alt=""     src="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/./resources/structuring_-_component_relationship_diagram.jpg" width="600" />
+</p>
+<p class="MsoCaption" style="MARGIN: 6pt 0in; TEXT-ALIGN: center" align="center">
+    <a id="_Ref169751974" name="_Ref169751974"><strong>Figure</strong></a><strong>1. Component Relationship
+    Diagram</strong>
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    To structure your component model, assess the components according to a number of attributes. These attributes help you
+    asses the overall quality of a component.
+</p>
+<h3 style="MARGIN: 6pt 0in 0pt">
+    <font size="5">Cohesion</font>
+</h3>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Cohesion is a measure of how well a component's responsibilities are related to each other. High cohesion (components
+    with closely related responsibilities) is good, while low cohesion is bad.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    An example of a highly cohesive component might be a 'Dictionary' component that has the responsibilities of checking
+    spelling and performing a thesaurus function to find alternatives for words. If the 'Dictionary' component also has the
+    responsibility for performing numeric arithmetic, then it exhibits low cohesion. It would be better for that
+    responsibility to be dealt with by a different component. The following are seven degrees of cohesion, listed from
+    highest to lowest:
+</p>
+<ol>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Functional</strong>: Operations all contribute to the execution of one and only one problem related
+            task.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Sequential</strong>: Operations are involved in activities such that output data from one activity
+            serves as input data to the next.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Communicational</strong>: Operations contribute to activities that use the same input, or output data.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Procedural</strong>: Operations are involved in different, and possibly unrelated activities, which
+            flows from one activity to the next.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Temporal</strong>: Operations are involved in activities that are related in time.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Logical</strong>: Operations contribute to activities of the same general category; the activities to
+            be executed are selected externally.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Coincidental</strong>: Operations have no meaningful relationship to each other.
+        </div>
+    </li>
+</ol>
+<h3 style="MARGIN: 6pt 0in 0pt">
+    <font size="5">Coupling</font>
+</h3>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Coupling is an indication of the strength of the associations between components. Strongly coupled components have
+    tightly bound associations, and the components are highly dependent on each other. Weakly coupled components have very
+    loose (or even non-existent) associations with each other.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Weakly coupled components are better than tightly coupled ones, because it is easier to switch one component for
+    another, or update a component without affecting others. There are six degrees of coupling, <a id="OLE_LINK1" name="OLE_LINK1">listed following from best to worst</a>:
+</p>
+<ol>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Data coupling</strong>: Communication is via parameters, where each parameter is an elementary piece of
+            data.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Stamp coupling</strong>: Communication is via composite data, or data with meaningful internal
+            structure.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Control coupling</strong>: Data passed is intended to control the internal logic of the component.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Common coupling</strong>: Components both refer to the same global data area.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Content coupling</strong>: One component refers to the inside of another in some way; one component
+            changes the data inside another.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Hybrid coupling</strong>: Different meanings are assigned to different parts of a range of data. For
+            example, a flag is both a data flag and a control flag simultaneously.
+        </div>
+    </li>
+</ol>
+<h3 style="MARGIN: 6pt 0in 0pt">
+    <font size="5">Isolation</font>
+</h3>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Isolation is a measure of the degree to which product or technology dependencies are isolated from each other. There
+    are two extremes of isolation:
+</p>
+<ul>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Bad isolation</strong>: Every component has a dependency on the product or technology of other
+            components. There is little to no use of patterns that encourage isolation techniques.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Good isolation</strong>: Product and technology dependencies are fully decoupled. There is good use of
+            patterns that encourage isolation techniques. Examples of such patterns include the Gang of Four "Proxy",
+            "Bridge", and "Mediator" patterns and the GRASP "Indirection" pattern.
+        </div>
+    </li>
+</ul>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Isolation and coupling are closely related. Isolation of products and technologies ensures loose coupling. Layering is
+    another approach to ensuring good isolation.
+</p>
+<h3 style="MARGIN: 6pt 0in 0pt">
+    <font size="5">Granularity</font>
+</h3>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Granularity is a measure of the size, or amount of functionality, assigned to a component. There are five levels of
+    granularity:
+</p>
+<ol>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Very fine grained</strong>: For example, an object-oriented language class useful for assembling
+            distributed components, but not considered a component in its own right.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Fine grained</strong>: A software element that can be called at runtime, with a clear interface and a
+            separation between interface and implementation. Also known as a <i             style="mso-bidi-font-style: normal">distributed component</i>.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Medium grained</strong>: An autonomous business concept, or business process. Also known as a <i             style="mso-bidi-font-style: normal">business component</i>.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Coarse grained</strong>: A set of cooperating business components assembled to deliver a solution to a
+            business problem. Also known as a <i style="mso-bidi-font-style: normal">system-level component</i>.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <strong>Very course grained</strong>: For example, a federation of system-level components working together to
+            provide some business value. It helps heterogeneous information systems interoperate.
+        </div>
+    </li>
+</ol>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    You can think of a system-level component as the same as an application. However, one major difference is that a
+    component-based system is made up of components visible at runtime. The implementation of a component can be changed
+    without having to change the rest of the system. Making such changes is more difficult with large, monolithic
+    applications. Different component-based systems (applications) can be assembled without necessarily having to redesign
+    at the detail level, break code apart, recompile, or re-link the system.
+</p>
+<h3 style="MARGIN: 6pt 0in 0pt">
+    <font size="5">Layering</font>
+</h3>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Layering involves:
+</p>
+<ul>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            Identifying suitable architectural layers within which components can be placed.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            Placing components (and subsystems) into these layers according to their generality and functionality.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            Defining rules for how the layers can interact with each other.
+        </div>
+    </li>
+</ul>
+<p class="BulletsL1" style="MARGIN: 3pt 0in; TEXT-INDENT: 0in; mso-list: none; tab-stops: .5in">
+    Bachmann et al [BACHMANN00] offer the following definition of layering. "<i     style="mso-bidi-font-style: normal">Layering, like all architectural structures, reflects a division of the software
+    into units. In this case, the units are layers; each layer represents a virtual machine. A virtual machine is a
+    collection of software that together provides a cohesive set of services that other software can utilize without
+    knowing how those services are implemented.</i> <i style="mso-bidi-font-style: normal">...The goal of layering is to
+    define virtual machines that are small enough to be well understood, but comprehensive enough so that likely changes
+    will affect only a single layer".</i>
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Layering is a mechanism for grouping a set of components according to their generality. For example, a system might
+    have the following layers:
+</p>
+<ul>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            All components that provide <b style="mso-bidi-font-weight: normal">application-independent</b> business
+            function. Application-independent business functions are things like customer management and product
+            management, which apply to many applications.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            All components that provide <b style="mso-bidi-font-weight: normal">service functions</b>, such as error
+            handling and audit. These components are both business- and application-independent.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            <b style="mso-bidi-font-weight: normal">Middleware</b> components, such as message queuing and relational DBMS
+            software.
+        </div>
+    </li>
+</ul>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Layering offers the following benefits [BACHMANN00]:
+</p>
+<ul>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            Layers help to bring quality attributes of modifiability and portability to a system. A change to a lower layer
+            that does not affect its interface will not require a change to a higher layer. For example, any J2EE compliant
+            application server that conforms to the J2EE standard may be freely substituted without change to
+            application-level software. A change to a higher layer that does not affect what it requires from lower layers
+            will not affect a lower layer. In general, changes to a layered software system that do not affect an interface
+            are confined to a single layer. Thus, layers define units of reuse and portability.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            Layers are part of the blueprint role that architecture plays for constructing the system. By knowing which
+            layers contains their software, developers know what services they can rely on in the coding environment.
+            Layers may define work assignments for development teams.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            Layers are part of the communication role played by architecture. In a large system, the number of dependencies
+            among modules expands rapidly. Organizing the software into layers with interfaces is an important tool to help
+            you manage complexity and communicate the structure to developers.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            Layers help with the analysis role played by architecture. They can be used for analyzing the impact of changes
+            to the design.
+        </div>
+    </li>
+</ul>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Layering can be strict or non-strict. A strict layering scheme means that components can only use components in the
+    same layer, or layers, immediately below them. A non-strict layering scheme means components can use components in the
+    same, or any lower layer. As a general rule, components should not use components in upper layers. If components have
+    dependencies on components in higher layers, then it is difficult to replace the upper layer components without
+    changing the lower layer components.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    There are many ways of layering software; Figure 2 shows one possible set of layers. You may need fewer or more layers,
+    depending on the size and complexity of your system. However, avoid schemes with ten or more layers, as they may be
+    overly complex.
+</p>
+<p>
+    <br class="MsoNormal" style="MARGIN: 6pt 0in" />
+    <img height="424" alt="" src="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/./resources/structuring_-_layers.jpg" width="184" />
+</p>
+<p class="MsoCaption" style="MARGIN: 6pt 0in; TEXT-ALIGN: center" align="center">
+    <a id="_Ref169752662" name="_Ref169752662"><strong>Figure</strong></a> <strong>2. Software layers</strong>
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    When defining layers, describe the responsibilities of each layer.  For example, in Figure 2:
+</p>
+<ul>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            The <strong>DialogueControl</strong> layer handles user-system interactions and logic.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            The <strong>BusinessProcessing</strong> layer contains application-specific services that handle functional
+            requirements logic and choreography.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            The <strong>BusinessServices</strong> layer contains more general business components that may be used in
+            several applications.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            The <strong>Middleware</strong> layer contains components such as interfaces to databases and
+            platform-independent operating system services.
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 6pt 0in">
+            The <strong>SystemSoftware</strong> layer contains components such as operating systems and databases.
+        </div>
+    </li>
+</ul>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Layers are <i style="mso-bidi-font-style: normal">not</i> the same as tiers.  Tier pictures express allocation to
+    machines in a distributed environment, data flow among elements, and the presence and utilization of communication
+    channels.  These diagrams are similar to layer diagrams, but tier diagrams tend to show two-way arrows indicating
+    bi-directional communication.  Bi-directional communication is discouraged in a layer diagram.
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Furthermore, assignment of a component to a tier is defined by the required service level characteristics of the
+    system.  The main difference between layer diagrams and tier diagrams is that the former has no notion of placement,
+    while the latter does.  Figure 3 illustrates the differences between layers and tiers.
+</p>
+<p>
+    <br />
+    <img height="390" alt="" src="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/./resources/structuring_-_layers_and_tiers.jpg" width="577" />
+</p>
+<p class="MsoCaption" style="MARGIN: 6pt 0in; TEXT-ALIGN: center" align="center">
+    <a id="_Ref169618302" name="_Ref169618302"><strong>Figure</strong></a> <strong>3. Layers and tiers</strong>
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/architectural_pattern_7308BF1.html" guid="_rmX1gIBmEd2z9IawWqZSFw">Architectural Pattern</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/component_CB167D48.html" guid="_0YP18MlgEdmt3adZL5Dmdw">Component</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/layering_60B66437.html" guid="_V2vkwEeZEd2fPvaEVG7O3Q">Layering</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/logical_and_physical_components_93EAAF0D.html" guid="_3mMfQIDvEd2z9IawWqZSFw">Logical and Physical Components</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/guidelines/layering_F169CF07.html" guid="_0gpkAMlgEdmt3adZL5Dmdw">Layering</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>
