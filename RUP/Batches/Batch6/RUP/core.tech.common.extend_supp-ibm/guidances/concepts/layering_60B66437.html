@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Layering</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="layering">
+<meta name="uma.presentationName" content="Layering">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_V2vkwEeZEd2fPvaEVG7O3Q"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Layering</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Layering represents an ordered grouping of functionality, with the application-specific functionality located in the upper layers, functionality that spans application domains in the middle layers, and functionality specific to the deployment environment at the lower layers.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.component_sw_arch.base-ibm/tasks/outline_component_model_AF2CF5E4.html" guid="_xuokgAruEdy5ib8CxgclIA">Outline Component Model</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/structuring_components_26FC87E6.html" guid="_HI8-gIEcEd2z9IawWqZSFw">Structuring Components</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<p>
+    Layering represents an ordered grouping of functionality, with the application-specific functionality located in the
+    upper layers, functionality that spans application domains in the middle layers, and functionality specific to the
+    deployment environment at the lower layers.
+</p>
+<p>
+    The number and composition of layers is dependent upon the complexity of both the problem domain and the solution
+    space:
+</p>
+<ul>
+    <li>
+        There is generally only a single application-specific layer.
+    </li>
+    <li>
+        Domains in which previous systems have been built, or in which large systems are composed in turn of
+        inter-operating smaller systems, have a strong need to share information between design teams. As a result, the
+        business-specific layer is likely to partially exist, and may be structured into several layers for clarity.
+    </li>
+    <li>
+        Solution spaces that are well-supported by middleware products, and in which complex system software plays a
+        greater part, have well-developed lower layers, with perhaps several layers of middleware and system software.
+    </li>
+</ul>
+<p>
+    Subsystems should be organized into layers:
+</p>
+<ul>
+    <li>
+        Application-specific subsystems are located in the upper layers of the architecture
+    </li>
+    <li>
+        Hardware and operating-specific subsystems are located in the lower layers of the architecture
+    </li>
+    <li>
+        General-purpose services occupy the middleware layers
+    </li>
+</ul>
+<p>
+    The following is a sample architecture with four layers:
+</p>
+<ul>
+    <li>
+        The top layer, the <b>application layer</b>, contains the application-specific services.
+    </li>
+    <li>
+        The next layer, the <b>business-specific layer</b>, contains business-specific components, used in several
+        applications.
+    </li>
+    <li>
+        The <b>middleware layer</b> contains components such as GUI-builders, interfaces to database management systems,
+        platform-independent operating system services, and OLE-components (such as spreadsheets and diagram editors).
+    </li>
+    <li>
+        The bottom layer, the <b>system software layer</b>, contains components such as operating systems, databases,
+        interfaces to specific hardware, and so on.
+    </li>
+</ul>
+<p align="center">
+    <img src="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/resources/md_dsub.gif" alt="Diagram described in accompanying content." width="547" height="283" />
+</p>
+<p class="picturetext">
+    A layered structure starting at the most general level of functionality and growing towards more specific levels of
+    functionality.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

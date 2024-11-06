@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Requirements Churn</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="requirements_churn">
+<meta name="uma.presentationName" content="Requirements Churn">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_BbzkgJW4Ed6KwMyxAyJvoA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Requirements Churn</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks the number of changes to system requirements.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p>
+    Requirements churn refers to changes to the requirements after they have been implemented (especially those that have
+    significant impact on architectural decisions), indicating their stability. Some changes are inevitable as the team's
+    understanding of the problem domain is refined, or due to changes in the environment. However, poorly defined
+    requirements are another cause of churn, and they can seriously impact the project schedule. Excessive changes to the
+    requirements, especially late in the lifecycle, can lead to failed or canceled projects. Less extreme cases can result
+    in schedule slippage, reduced scope, increased cost, or low customer satisfaction.&nbsp;&nbsp;<br />
+</p>
+<h3>
+    Definition
+</h3>
+<p>
+    Count: Total number of changes to requirements in a given period. Group by type (e.g. Feature, Supplementary, Use Case)
+</p>
+<p>
+    Considering measuring percentage of changes as well to gain a better understanding of the size of changes compared to
+    the total number of changes.
+</p>
+<p>
+    To monitor the amount of churn in each component, group requirements changes by component.<br />
+</p>
+<h3>
+    Analysis
+</h3>
+<p>
+    A good way to monitor requirements churn is to use a trend line. Plot the number of changes on the Y axis, and the
+    iterations on the X axis.<br />
+    <br />
+    <strong>Expected trend</strong> – Generally, changes are easier to deal with early in the project, so the ideal trend
+    line would decrease over time. This indicates that the team is working to clarify requirements in each iteration and
+    has a good understanding of the problem domain.Changes are expected in beginning of lifecycle while system is evolving.
+    Change should be stabilized and start to decrease during the construction phase.<br />
+    <br />
+    <strong>Upward slope</strong> - The upward slope signifies increasing requirements volatility. The team should analyze
+    the source and rationale of each change. Primary causes of requirements change and possible solutions are:
+</p>
+<ul>
+    <li>
+        Changes in project knowledge – revisit the requirement and related items and update based on the new knowledge
+    </li>
+    <li>
+        Conflicts between needs, goals, and requirements – brainstorm and prioritize the requirements in order to correct
+        and compromise the discrepancy.
+    </li>
+    <li>
+        Changes in the organizational level –&nbsp;developing iteratively&nbsp;will help the team manage&nbsp;volatility
+        and achieve concurrence on the requirements
+    </li>
+    <li>
+        Unclear or too specific requirements – Requirements should be clarified and solidified but flexible enough to
+        accommodate the architectural design. Techniques like defining common terminologies, User Story or Storyboard and
+        Effective Requirement Reviews should be used.
+    </li>
+    <li>
+        IUnrealistic requirements – develop a product representation such as a prototype or simulation to
+        detect&nbsp;unrealistic requirements as early as possible
+    </li>
+    <li>
+        Inappropriate set of stakeholders – learn more on techniques in Identify Stakeholders
+    </li>
+</ul>
+<p>
+    <strong>Dramatic upward slope at the end of the lifecycle</strong> - Any increase in the instability of requirements in
+    the latter half of the lifecycle is a warning that there is a poor understanding of business needs or software
+    requirements. This may impact the team's ability to deliver the needed capabilities with quality and predictability. It
+    can also introduce serious problems for maintainability. Confirm that a requirements management process is in place
+    that is well understood by the team and stakeholders.<br />
+    <br />
+    If impact is dramatic, the release date or scope may need adjustment. Excessive requirements churn requires corrective
+    action and often indicates a broken requirements management process.<br />
+    <br />
+    For teams adopting Iterative Development, requirements churn is expected in the early to middle phases of the
+    lifecycle. This demonstrates that the team is getting feedback from their stakeholders. However, churn that remains
+    high throughout the remainder of the lifecycle is an indication that there is a lack of agreement on the system
+    requirements. However, requirement churn that is caused by foreseeing the future system too far ahead or in&nbsp;too
+    much&nbsp;detail could create unnecessary requirement churn. Mitigate this by not planning too far ahead or having
+    short release cycles.
+</p>
+<p>
+    <img alt="Requirements Churn" src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/./resources/requirements_churn.gif" width="440" height="269" />
+</p>
+<p>
+    <em>Requirements Churn Chart, where the vertical axis represents the total number of changes</em>
+</p>
+<h3>
+    Frequency and reporting
+</h3>
+<p>
+    Requirements churn should be monitored in each iteration to help identify trends. When results indicate a problem, the
+    team should report results to stakeholders in order to take any necessary corrective actions.
+</p>
+<h3>
+    Collection and reporting tools
+</h3>
+<p>
+    Data can be collected from various tools such as IBM&reg; Rational&reg; ReqPro&reg;, IBM&reg; Rational&reg; Team Concert&reg;, IBM&reg; Rational&reg;
+    DOORS&reg;, and IBM&reg; Rational&reg; Requirements Composer&reg;. IBM&reg; Rational&reg; Insight&reg; reports this metric.
+</p>
+<h3>
+    Assumptions and prerequisites
+</h3>
+<ul>
+    <li>
+        The team must determine what constitutes a change. This can be a subtle difference, in that some changes are simply
+        clarification or further elaboration.
+    </li>
+    <li>
+        All changes are documented, and the date of change noted<br />
+    </li>
+</ul>
+<h3>
+    Pitfalls, advice, and countermeasures
+</h3>
+<ul>
+    <li>
+        A requirement is considered "implemented" as soon as it is tested and delivered for integration
+    </li>
+    <li>
+        When release cycles are shortened (reducing the scope of each release) their is less risk of requirements churn.
+    </li>
+</ul><br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: ServiceContract (SoaML)</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="service_contract_soaml">
+<meta name="uma.presentationName" content="ServiceContract (SoaML)">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_RucNoFbPEd6MCpkuB85p5g"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: ServiceContract (SoaML)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">ServiceContracts describe the rules that providers and consumers must adhere to during the use of a service.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_contract_soaml_E57B30D4.html" guid="_IhtgsFbBEd6MCpkuB85p5g">ServiceContract (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <font size="2">In the context of services modeling, ServiceContracts&nbsp;can be used to model the specification for a
+    specific service. A ServicesArchitecture&nbsp;then can be used to model the requirements for a collection of
+    participants that provide and consume services defined with service contracts.</font>
+</p>
+<p>
+    <font size="2"><font size="2">When modeling the requirements for a particular service, a ServiceContract captures an
+    agreement between the roles played by consumers and providers of the service, their capabilities and needs, and the
+    rules for how the consumers and providers must interact. The roles in a ServiceContract are typed by Interfaces that
+    specify Operations and events that comprise the choreographed interactions of the services. A ServiceInterface may
+    fulfill zero or more ServiceContracts to indicate the requirements it fulfills but they are usually
+    one-one.</font></font>
+</p>
+<p>
+    <font size="2"><font size="2">Figure 1 presents an example of a ServiceContract. The orderer and order processor
+    participate in the contract.</font></font>
+</p>
+<p>
+    <strong>Figure 1.&nbsp; An OrderingService ServiceContract</strong>
+</p>
+<p>
+    &nbsp;<img height="153" alt="" src="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/./resources/servicecontract_example_1.gif" width="538" />
+</p>
+<p>
+    <font size="2"><font size="2">The service contract diagram shows a high level "business view" of services but includes
+    ServiceInterfaces as the types of the roles to ground the business view in the required details. While two roles are
+    shown in the example, a ServiceContract&nbsp;can have any number of roles. Identification of the roles can be augmented
+    with a behavior, such as the one shown in Figure 2. Real-world services&nbsp;typically are long-running,
+    bi-directional, and asynchronous. This real-world behavior shows the information and resources that are transferred
+    between the service provider and consumer.</font></font>
+</p>
+<p>
+    <strong>Figure 2.&nbsp; Behavior diagram documenting a ServiceContract protocol</strong>
+</p>
+<p>
+    &nbsp; <img height="299" alt="" src="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/./resources/servicecontract_example_2.jpg" width="476" />
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2">The above behavior (a UML interaction diagram) shows when and what
+    information is transferred between the parties in the service. In this case a fulfillPurchaseOrder message is sent from
+    the orderer to the order processor, and the order processor eventually responds with either a shipment schedule or an
+    order-rejected response. The service interfaces that correspond to the above types are shown in Figure
+    3.</font></font></font>
+</p>
+<p>
+    <strong>Figure 3.&nbsp; ServiceInterfaces involved in the behavior</strong>
+</p>
+<p>
+    &nbsp;<img height="195" alt="" src="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/./resources/servicecontract_example_3.jpg" width="528" />&nbsp;
+</p>
+<p>
+    <font size="2"><font size="2">Figure 4 illustrates the concept of&nbsp;compound services.</font></font>
+</p>
+<p>
+    <strong>Figure 4.&nbsp; A ServiceContract for a compound service</strong>
+</p>
+<p>
+    &nbsp;<img height="244" alt="" src="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/./resources/servicecontract_example_4.gif" width="594" />
+</p>
+<p>
+    <font size="2"><font size="2">Real-world services&nbsp;often are complex and are made up of simpler services as
+    "building blocks." Using services as building blocks is a good design pattern, because it can decouple finer grain
+    services and make them reusable across a number of service contracts. Finer grain services&nbsp;can then be delegated
+    to internal actors or components for implementation. Above is an example of a compound ServiceContract composed of
+    other, nested, ServiceContracts. This pattern is common when defining enterprise level ServicesArchitectures, which
+    tend to be more complex and span an extended process lifecycle. The purchasing ServiceContract is composed of 2 more
+    granular ServiceContracts: the "Ordering Service" and the "Invoicing Service." The buyer is the "orderer" of the
+    ordering service and the "invoice receiver" of the invoicing service. The "Seller" is the "Order processor" of the
+    ordering service and the "invoicer" of the invoicing service. ServiceContracts&nbsp;can be nested to any level using
+    this pattern. The purchasing service defines a new ServiceContract by piecing together these other two
+    services.&nbsp;It is common in a compound service for one role to initiate a sub-service but then to be the client of
+    the next.&nbsp; There is no expectation that all the services must go the same direction. This allows for long-lived,
+    rich, and asynchronous interactions between participants in a service.</font></font>
+</p>
+<p>
+    <font size="2"><font size="2">Do not confuse a compound ServiceContract&nbsp;with a service that is implemented by
+    calling other services, such as might be specified with a Participant ServicesArchitecture and/or implemented with
+    BPEL. A compound ServiceContract defines a more granular ServiceContract based on other ServiceContracts.</font></font>
+    This is shown in Figure 5.
+</p>
+<p>
+    <strong>Figure 5.&nbsp; A compound service, realized using&nbsp;subsidiary ServiceContracts and ServiceInterfaces with
+    ports</strong>
+</p>
+<p>
+    &nbsp;&nbsp;<img height="349" alt="" src="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/./resources/servicecontract_example_5.jpg" width="594" />
+</p>
+<p>
+    <font size="2"><font size="2">A compound service has service interfaces with ports, each port representing its role in
+    the larger service contract.&nbsp;Figure 5&nbsp;shows the Service Interfaces corresponding to the buyer and seller in
+    the purchasing service, a compound service.&nbsp;The seller has two ports, each corresponding to the roles played in
+    the ordering service and invoicing service. Likewise, the buyer has two ports, each corresponding to the roles it plays
+    in the same services. These ports are typed by the ServiceInterfaces of the corresponding nested services. The
+    purchasing service specifies how these classes work together and defines the behavioral specification required for
+    each.</font></font>
+</p>
+<p>
+    <font size="2"><font size="2">When a compound service is used, it looks no different than any other service in a
+    services architecture.&nbsp; This hides the detail of the more granular service in the high-level architecture, but it
+    still provides traceability through all levels.</font></font>&nbsp;
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_interface_soaml_CA95983A.html" guid="_N5e2oFbBEd6MCpkuB85p5g">ServiceInterface (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_architecture_soaml_22F25B9A.html" guid="_wYQYkEo3Ed6D_7XK49c0nw">ServicesArchitecture (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Several of the above definitions were copied from the <a href="http://www.omg.org/spec/SoaML/Current" target="_blank">Service oriented architecture Modeling Language (SoaML) Specification</a> for the UML Profile and
+    Metamodel Services. <a class="elementLinkWithUserText" href="./../../../core.default.release_copyright.extend-ibm/guidances/supportingmaterials/full_soaml_copyright_3B2FB4F3.html" guid="_GHI_gLgYEd6EUtitpj4XQA">View the full copyright notice</a>.
+</p>
+<p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

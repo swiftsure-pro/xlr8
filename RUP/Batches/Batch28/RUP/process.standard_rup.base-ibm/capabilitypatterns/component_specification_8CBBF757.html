@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Work Product Descriptor (Artifact): Component Specification</title>
+<meta name="uma.type" content="WorkProductDescriptor">
+<meta name="uma.name" content="component_specification">
+<meta name="uma.presentationName" content="Component Specification">
+<meta name="element_type" content="WorkProductDescriptor">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_Kj2FsCZIEd-Hb5ChSoDHIA&path=_Kj2FsCZIEd-Hb5ChSoDHIA,_Kj2FvyZIEd-Hb5ChSoDHIA,_KYSjICxtEd-rIPCOaPACIg_0X9iEMlgEdmt3adZL5Dmdw_ObP9oDDFEdyz_pzDMsV8FQ';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, defaultQueryStr, false, true, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_KYSjICxtEd-rIPCOaPACIg_0X9iEMlgEdmt3adZL5Dmdw_ObP9oDDFEdyz_pzDMsV8FQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Work Product Descriptor (Artifact): Component Specification</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/workdes_lg_dgm32.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Specifies the details for individual components identified in the Component Model.</td>
+</tr>
+<tr>
+<td>Based on Method Work Product: <a href="./../../core.tech.common.extend_supp-ibm/workproducts/component_specification_724FC440.html" guid="_ObP9oDDFEdyz_pzDMsV8FQ">Component Specification</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="30%"><span class="sectionTableCellHeading">Responsible:
+								</span>
+<ul>
+<li>
+<a href="./../../process.standard_rup.base-ibm/capabilitypatterns/architect_7F947A0F.html" guid="_M9kjUCxtEd-rIPCOaPACIg_0X9iEMlgEdmt3adZL5Dmdw">Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell" colspan="2"><span class="sectionTableCellHeading">Modified By:
+								</span></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This artifact specifies the details of a component identified in the Component Model. The specification shows the
+    interfaces offered and used by the component, identifies where business rules are placed, and details the operations
+    and their signatures for each interface.
+</p>
+<p>
+    <strong>Component Interfaces</strong> – An interface specifies one or more operation signatures and is both offered and
+    used by a component. Offering an interface means the component makes the interface available for other components to
+    use.&nbsp;&nbsp;Each interface provides a unique and well-defined set of operations. Hiding the structure of a
+    component and its data behind an interface allows that data to be changed without affecting how the interface is
+    used.&nbsp; The actual composition of that data may change, but the interface that provides access to that data is
+    fixed. Interfaces also describe the state of a component.
+</p>
+<p>
+    <strong>Business Rules</strong> – Business Rules dictate the behavior of a system, and the component specification
+    defines how the system implements the business rules.&nbsp; For example, a business rule may state that Internet
+    transactions for an on-line order can not exceed $1000 for a given account. A component that manages account
+    transactions may define an on-line transactions interface that implements this business rule.
+</p>
+<p>
+    <strong>Operations</strong> – Fully specified Component Specifications assign operations and operation signatures to
+    the interfaces and may define pre- and post-conditions on the operations.&nbsp; Pre- and post-conditions specify the
+    effect of an operation without prescribing an algorithm or implementation.&nbsp;A post-condition specifies the effect
+    of the operation on the components data or state.&nbsp;A pre-condition is the condition under which the operation
+    guarantees that the post-condition is true.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Properties</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Optional" abbr="Optional">Optional</th><td class="sectionTableCell" align="left" headers="property_Optional"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Planned" abbr="Planned">Planned</th><td class="sectionTableCell" align="left" headers="property_Planned"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/examples/component_specification_61FFE0B2.html" guid="_rM0xkDfWEdyIwaPzqVg2tg">Component Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Points to consider when deciding whether to use a Component Specification:<br />
+</p>
+<ul>
+    <li>
+        The Component Specification provides value when the architecture is complex, such that new team members need a
+        simplified, abstracted model to understand it.
+    </li>
+    <li>
+        The extra work required to ensure that the Component Specification and Executable Architecture remain consistent
+        must be balanced against the benefit of having a view of the system that represents only the most important details
+        of how the system works. It can be very costly to maintain a high degree of fidelity between the Component
+        Specification and Executable Architecture. As the complexity of the Component Specification increases, so does the
+        cost to maintain it.
+    </li>
+    <li>
+        Once you no longer maintain the Component Specification, its value decays rapidly. At some point, it will no longer
+        accurately reflect the Executable Architecture. Deciding to no longer maintain the Component Specification may be
+        appropriate (it may have served its purpose), but the decision should be a conscious one.
+    </li>
+</ul>
+<p>
+    Component Specifications tend to be useful in companies where systems live for decades, or where there are many
+    variants of the system.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Checklists</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/checklists/component_specification_430EC355.html" guid="_ivUZwDfWEdyIwaPzqVg2tg">Component Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+					contentPage.onload();
+					contentPage.processPage.fixDescriptorLinks();
+				</script>
+</html>

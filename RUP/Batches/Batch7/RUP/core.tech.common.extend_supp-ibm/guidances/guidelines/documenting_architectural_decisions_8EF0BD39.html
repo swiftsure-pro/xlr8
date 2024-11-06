@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Documenting Architectural Decisions</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="documenting_architectural_decisions">
+<meta name="uma.presentationName" content="Documenting Architectural Decisions">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_RtLzgIByEd2z9IawWqZSFw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Documenting Architectural Decisions</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes the importance of documenting key architectural decisions, and factors to consider when doing so.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.component_sw_arch.base-ibm/tasks/document_architectural_decisions_7F497455.html" guid="_CX_ZsELlEdybnqCALzDDDA">Document Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Before making any important decisions about the architecture, make sure that the process for making decisions has the
+    right level of sponsorship necessary to enforce those decisions. Get agreement from affected parties on the decision
+    making process.
+</p>
+<p>
+    When documenting an architectural decision, be sure to capture the issue addressed, and the actual decision made to
+    resolve the issue. Include some discussion about the rationale behind the decision, the options considered, and the
+    justification for choosing one option over another.
+</p>
+<p>
+    Review or consider one or more of the following when drawing up a list of alternatives:<br />
+</p>
+<ul>
+    <li>
+        Project objectives, goals, critical success factors, business drivers, and so on, that may have been provided by
+        the stakeholders
+    </li>
+    <li>
+        The system requirements (business processes, use cases, qualities, constraints, and change cases)
+    </li>
+    <li>
+        Architectural principles, policies, and guidelines drawn up by the stakeholder
+    </li>
+    <li>
+        Relevant reference architectures, architectural patterns, or assets
+    </li>
+    <li>
+        Product literature available from vendors or their Web sites
+    </li>
+    <li>
+        Technical information published in books, journals, Web sites, and so on
+    </li>
+    <li>
+        Project documentation such as plans, key milestones and dates, and so on
+    </li>
+</ul>
+<p>
+    Consider the following questions as part of the decision making process:
+</p>
+<ul>
+    <li>
+        Does the solution need to comply with a reference architecture or architectural pattern?
+    </li>
+    <li>
+        Does the architecture need to comply with any overarching principles, policies, guidelines, or standards?
+    </li>
+    <li>
+        What are the systems management and support implications of the decision?
+    </li>
+    <li>
+        What are the security and privacy implications of the decision?
+    </li>
+    <li>
+        How does the decision affect the total cost of ownership?
+    </li>
+    <li>
+        If the decision requires the use of vendor products, packages, consulting, or support, what are its implications?
+        For example, what is the experience of the vendor? Are there suitable service level agreements in place? Are there
+        any liability or legal issues to address?
+    </li>
+    <li>
+        If the decision requires the use of a product or package, what is the lead time on procuring these? Is the time
+        consistent with project timelines?
+    </li>
+    <li>
+        Are there any changes you need to take into account?
+    </li>
+</ul>
+<p>
+    At a minimum, document decisions that affect the overall structure of the system, the partitioning and distribution of
+    functionality, or the selection of a particular product, package, or asset. You should still document additional
+    architectural decisions, but do so less formally (either as part of the overall architectural model, or by using only a
+    subset of the information outlined here).<br />
+</p>
+<p>
+    Ensure that the overall set of architectural decisions covers the full scope of the project. Decisions that focus on
+    only a few areas may mean that insufficient architectural influence is exerted. The full set of decisions includes
+    those items that require global coordination across the program. They should address the classic trade-off questions,
+    such as those relating to performance, flexibility, extensibility, availability, and reliability.<br />
+</p>
+<p>
+    Make architecturally significant decisions early; this is the key to a good architecture in that it sets the foundation
+    on which the rest of the architecture is based. Test or prototype architectural decisions early. If necessary,
+    reconsider them based on information gathered from these activities. You do not need to make all decisions at once: you
+    can spread them out as the system evolves. For example, you might ignore the details of persistence early in the
+    project provided that you have identified a component or mechanism that deals with persistence. Address high-risk
+    architectural decisions first. High-risk areas are those for which there is little knowledge available, or that may
+    involve untried technology.
+</p>
+<p>
+    Inform all affected parties about the decisions. Carry through and actually implement decisions, and track them to show
+    evidence the decisions are enforced.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

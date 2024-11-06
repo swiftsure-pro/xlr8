@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: CollaborationUse (SoaML)</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="collaboration_use_soaml">
+<meta name="uma.presentationName" content="CollaborationUse (SoaML)">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_iLYT8GajEd65K8S2sWS35w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: CollaborationUse (SoaML)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Extends UML2.x CollaborationUse to indicate whether the role-to-part bindings are strictly or loosely enforced.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/participant_soaml_1A392457.html" guid="_zL3kgFbAEd6MCpkuB85p5g">Participant (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_contract_soaml_E57B30D4.html" guid="_IhtgsFbBEd6MCpkuB85p5g">ServiceContract (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Usage:&nbsp; "CollaborationUse" stereotypes UML CollaborationUse (adds an additional attribute to UML meta-element)
+</p>
+<p>
+    <font size="2">A CollaborationUse explicitly indicates the ability of an owning Classifier to fulfill a <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_contract_soaml_E57B30D4.html" guid="_IhtgsFbBEd6MCpkuB85p5g">ServiceContract</a> or adhere to a <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_architecture_soaml_22F25B9A.html" guid="_wYQYkEo3Ed6D_7XK49c0nw">ServicesArchitecture</a>. A Classifier&nbsp;can contain any number of CollaborationUses
+    that indicate what it fulfills. The CollaborationUse has roleBindings that indicate what role each part in the owning
+    Classifier plays. If the CollaborationUse is strict, then the parts must be compatible with the roles they are bound
+    to, and the owning Classifier must have behaviors that are behaviorally compatible with the ownedBehavior of the
+    CollaborationUse's Collaboration type.</font>
+</p>
+<p>
+    <font size="2">As a ServiceContract is binding on the ServiceInterfaces named in that contract, a CollaborationUse is
+    not required if the types are compatible.</font>
+</p>
+<p>
+    <font size="3"><strong>Attribute</strong></font>
+</p>
+<ul>
+    <li>
+        <font size="2"><font size="2">isStrict: Boolean</font></font>
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        <font size="2"><font size="2">Indicates whether this particular fulfillment is intended to be strict. A value of
+        true indicates the roleBindings in the Fulfillment must be to compatible parts. A value of false indicates the
+        modeler warrants the part is capable of playing the role even through the type might not be
+        compatible.</font></font>
+    </p>
+</blockquote>
+<p>
+    <font size="2"><font size="3"><strong>Semantics</strong></font></font>
+</p>
+<p>
+    <font size="2"><font size="2">A CollaborationUse is a statement about the ability of a containing Classifier to provide
+    or use capabilities, have structure, or behave in a manner consistent with that expressed in its Collaboration type. It
+    is an assertion about the structure and behavior of the containing classifier and the suitability of its parts to play
+    roles for a specific purpose.</font></font>
+</p>
+<p>
+    <font size="2"><font size="2">A CollaborationUse contains roleBindings that binds each of the roles of its
+    Collaboration to a part of the containing Classifier. If the CollaborationUse has isStrict=true, then the parts must be
+    compatible with the roles they are bound to. For parts to be compatible with a role, one of the following must be
+    true:</font></font>
+</p>
+<ol>
+    <li>
+        <font size="2"><font size="2">The role and part have the same type.</font></font>
+    </li>
+    <li>
+        <font size="2"><font size="2">The part has a type that specializes the type of the role.</font></font>
+    </li>
+    <li>
+        <font size="2"><font size="2">The part has a type that realizes the type of the role.</font></font>
+    </li>
+    <li>
+        <font size="2"><font size="2">The part has a type that contains at least the ownedAttributes and ownedOperations of
+        the role. In general this is a special case of item 3 where the part has an Interface type that realizes another
+        Interface.</font></font>
+    </li>
+</ol>
+<p>
+    <font size="2"><br />
+    </font>
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_contract_soaml_E57B30D4.html" guid="_IhtgsFbBEd6MCpkuB85p5g">ServiceContract (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_architecture_soaml_22F25B9A.html" guid="_wYQYkEo3Ed6D_7XK49c0nw">ServicesArchitecture (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/collaboration_use_soaml_ED2F35C.html" guid="_CBQgYGakEd65K8S2sWS35w">CollaborationUse (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    The above definitions were copied from the <a href="http://www.omg.org/spec/SoaML/Current" target="_blank">Service
+    oriented architecture Modeling Language (SoaML) Specification</a> for the UML Profile and Metamodel Services. <a class="elementLinkWithUserText" href="./../../../core.default.release_copyright.extend-ibm/guidances/supportingmaterials/full_soaml_copyright_3B2FB4F3.html" guid="_GHI_gLgYEd6EUtitpj4XQA">View the full copyright notice</a>.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

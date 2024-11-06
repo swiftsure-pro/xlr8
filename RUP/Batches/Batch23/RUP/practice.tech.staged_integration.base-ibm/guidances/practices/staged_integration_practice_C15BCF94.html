@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Practice: Staged Integration</title>
+<meta name="uma.type" content="Practice">
+<meta name="uma.name" content="staged_integration_practice">
+<meta name="uma.presentationName" content="Staged Integration">
+<meta name="element_type" content="Practice">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_eDBkDDK5Ed-ewYo16rC9Qg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Practice: Staged Integration</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/practice.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This practice covers the integration of small subsystems into progressively larger ones until the whole system is integrated.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content References</th><td class="sectionTableCell">
+<ul>
+<li>
+<img src="./../../../images/roadmap.gif" height="16" width="16"><a href="./../../../practice.tech.staged_integration.base-ibm/guidances/roadmaps/how_to_adopt_staged_integration_BA92C3BA.html" guid="_eDBkDjK5Ed-ewYo16rC9Qg">How To Adopt This Practice</a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../practice.tech.staged_integration.base-ibm/guidances/concepts/development_and_integration_workspaces_1A6184A5.html" guid="1.2252946942508563E-305">Development and Integration Workspaces</a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../practice.tech.staged_integration.base-ibm/guidances/concepts/software_integration_2F85C9B0.html" guid="4.2039054537812067E-305">Software Integration</a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/workproducts/build_procedures_F7BCB948.html" guid="mweb5B766B6F521FF03C852568820059E222">Build Procedures</a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.staged_integration.base-ibm/tasks/integrate_system_9AFF7BFD.html" guid="{3233A207-6271-4492-A8BF-64E1D89D6C5E}">Integrate System</a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.staged_integration.base-ibm/tasks/plan_system_integration_2B706402.html" guid="{11538D9A-7439-4FDD-8333-9E2E47E5E173}">Plan System Integration</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.mgmt.slot.base/workproducts/project_work_slot_F12BAC46.html" guid="_1QZI8EfUEdyiPI8btkmvmw">[Project Work]</a>
+</li>
+<li>
+<a href="./../../../core.tech.slot.base/workproducts/technical_design_slot_84295A08.html" guid="_IcQOUEqdEdyi3_jfs__bIQ">[Technical Design]</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell">The purpose of this practice is to guide the team in scaling up the system integration strategy. The team creates build
+procedures that define how the integration of the various subsystems (also referred to as components) will be
+conducted&nbsp;to achieve&nbsp;progressively larger subsystems, which&nbsp;culminates into the final,&nbsp;integrated
+system.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">How to read this practice</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    The best way to read this practice is to first familiarize yourself with its overall structure: what it is in it and
+    how it is organized.
+</p>
+<p>
+    The best place to start is with the <strong>Key Concepts</strong> for the practice: those concepts that are critical to
+    understand in order to adopt the practice. Once you understand the key concepts, you can turn your attention to the
+    <strong>Work Products</strong> produced by the practice. Then you can review the practices <strong>Tasks</strong>. From
+    the work products and the tasks, you can access applicable guidance: guidelines and tool mentors associated with each
+    task provide details about how to perform the task. Templates and checklists associated with the work products guide
+    you in their completion and evaluation. You can also access the guidance provided by the practice directly, via the
+    <strong>Guidance</strong> folder.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Additional Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    For more information on practices,&nbsp;see the <a href="http://www.ibm.com/developerworks/rational/practices/" target="_blank">practices resource page&nbsp;on IBM&reg; DeveloperWorks&reg;</a>.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

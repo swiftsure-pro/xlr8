@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Using Actor Generalization</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="using_actor_generalization">
+<meta name="uma.presentationName" content="Using Actor Generalization">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_VG4VkFnvEd6TDdjsK-pYkg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Using Actor Generalization</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Generalize actors when several of them can play the same role in a particular use case.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/tasks/define_the_business_D659A7FF.html" guid="_sfkLcDNcEd6_nLybut0Zyw">Define the Business</a>
+</li>
+<li>
+<a href="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/tasks/structure_the_business_uc_model_91994C4.html" guid="_1_pyEEcaEd6GBq2DuQ5crg">Structure the Business Use-Case Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    <a>Explanation</a>
+</h3>
+<p>
+    Several actors can play the same role in a particular use case. Thus, a Teller and an Accountant, both of whom check
+    the balance of an account, are seen as the same external entity by the use case that does the checking. The shared role
+    is modeled as an actor, Balance Supervisor, inherited by the two original actors. This relationship is shown with
+    actor-generalizations.
+</p>
+<p class="picturecenter" align="center">
+    <img alt="Diagram described in accompanying text." src="./../../../practice.bus.use_case_driven_business_modeling.base-ibm/guidances/guidelines/./resources/md_actg2.gif" width="274" height="236" />
+</p>
+<p class="picturetext">
+    The actors Teller and Accountant inherit all the properties of a Balance Supervisor. Thus, both these actors can act as
+    Balance Supervisors.
+</p>
+<p class="picturetext">
+    A user or external system can play several roles in relation to the system under development. This&nbsp;means that the
+    user or external system&nbsp;might correspond to several actors. To make the model clearer, you can represent the user
+    or external system&nbsp;by one actor with child actors who share all the attributes of the parent. In this case the new
+    generalized role is now associated with a use case instead of all the specialized actors. This increases the
+    readability of the use case diagram and decreases the risk of "Actor Spaghetti" where too many communication lines make
+    the overall diagram hard to grasp.
+</p>
+<p>
+    <strong>Pitfalls</strong>
+</p>
+<p>
+    Use actor generalization correctly by assuring that child actors have an "is-a" relationship to the parent. Just
+    because two different actors can initiate the same use case doesn't mean that they're both the same type of actor. A
+    common mistake is to generalize interactions that different actors have into a parent actor. Use actor generalization
+    to represent essential qualities of the child actors, not groups of interactions.
+</p>
+<p>
+    For instance, a Bank Customer actor and a Maintenance Tech actor can both initiate the Balance Inquiry use case. So
+    it&nbsp;can be tempting to generalize these two roles and create a parent actor that initiates the use case. However,
+    these two actors have different goals and relationships with the system. A Maintenance Tech is only doing a balance
+    inquiry as a means of testing the system. Representing them as having some identical essential qualities would be
+    misleading.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

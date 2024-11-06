@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Defect Density by Origin</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="defect_density_by_origin">
+<meta name="uma.presentationName" content="Defect Density by Origin">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_tyWv8NdmEd60WbHkY9gMng"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Defect Density by Origin</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks the number of defects associated with activities of the different stages of development.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p>
+    Using this metric, a team can establish links between defects and specific process activities and their outputs (e.g.
+    architecture, requirements, design, code, test). When the source of the defect is known, a fix can be implemented that
+    has the potential to prevent future defects associated with that source. Capturing defects early in the lifecycle is a
+    means of defect prevention for later phases of the lifecycle when correction is more expensive.
+</p>
+<p>
+    Analyzing Defect Density by Origin trends helps a team identify process improvements for each activity that can prevent
+    the injection of similar defects in the future. This can help teams and organizations improve in areas such as cost,
+    quality, and time to value.<br />
+</p>
+<h3>
+    Definition
+</h3>
+<p>
+    In order to associate defects with their source of origin it is necessary to implement a classification system. <a href="http://www.research.ibm.com/softeng/ODC/DETODC.HTM#impinstall" target="_blank">IBM's Orthogonal Defect
+    Classification</a> is a framework for categorizing each defect by mutually exclusive attributes. These attributes are
+    used to establish patterns helpful for root cause analysis. The Target attribute represents the high level identity of
+    the entity that was fixed. This is considered to be the source of the defect (e.g. architecture, design, code,
+    requirement)
+</p>
+<p>
+    Count: Number of identified defects, grouped by source
+</p>
+<h3>
+    Analysis
+</h3>
+<p>
+    Use a bar chart or grouped bar chart to show the number of defects associated with each source. A stacked bar chart can
+    be used to additionally monitor by status. To show trends over time, use a series of bars, or a line chart. Plot by
+    iteration or by phase.
+</p>
+<p>
+    Defect source distribution varies over time, and provides an indication of where development stands in the lifecycle.
+</p>
+<p>
+    <strong>Expected trend</strong> - Ideally, most architecture defects are identified in very early iterations, tapering
+    off to very few in the last half of the lifecycle with none identified at the end. Requirements defects also peak early
+    in the lifecycle tapering off with a few peaks and valleys to the end. Design defects peak a bit later than
+    architecture but taper off at a slower rate through the second half of the lifecycle. Code and test defects peak later
+    in the process.
+</p>
+<p>
+    Monitor changes in the distribution of defects throughout the lifecycle. Set targets based on development approach and
+    the level of uncertainty in the project. Monitor unexpected peaks to identify issues with specific artifacts or
+    activities, and analyze for potential process improvements.
+</p>
+<p>
+    For example:
+</p>
+<ul>
+    <li>
+        If a high number of requirements-based defects are found late in the lifecycle, the team should assess their
+        requirements elicitation and traceability processes and tools. If a high number of defects are traced to a specific
+        requirement, there are likely quality issues with that requirement that need to be addressed.
+    </li>
+    <li>
+        When a high number of architecture defects are identified, the team should perform sufficient analysis to prevent
+        costlier defects associated with the architecture from arising late in the lifecycle.
+    </li>
+</ul>
+<h3>
+    Frequency and reporting
+</h3>
+<p>
+    Defect classification should begin in the first iteration, and results reviewed by the team in each iteration
+    assessment. Stakeholders should review the data as each phase milestone is reached. The data is also reviewed at the
+    end of each release as an input to planning for the next release.
+</p>
+<p>
+    Trend reports from projects across the organization can be rolled up to the organization level and tracked over time as
+    process improvements are introduced.
+</p>
+<h3>
+    Collection and reporting tools
+</h3>
+<p>
+    IBM&reg; Rational&reg; ClearQuest&reg; collects Defect Density by Origin data. It is necessary to implement custom attributes to
+    support the Orthogonal Defect Classification framework. IBM&reg; Rational&reg; Quality Manager&reg; is also used to collect data
+    for this metric.
+</p>
+<h3>
+    Assumptions and prerequisites
+</h3>
+<ul>
+    <li>
+        A semantic classification of defects is established and well understood by the team.
+    </li>
+    <li>
+        Upon closure, each defect is assigned a Target value to associate it with its source
+    </li>
+    <li>
+        The team has implemented effective test processes with sufficient coverage to identify defects associated with all
+        sources
+    </li>
+</ul>
+<h3>
+    Pitfalls, advice, and countermeasures
+</h3>
+<ul>
+    <li>
+        Team members must agree on the source of each defect. As each defect is classified, there must be a clear
+        indication of something missing or incorrect in a specific artifact/ source.
+    </li>
+    <li>
+        Defect classification provides fast feedback to the team, allowing them to address quality issues with very
+        specific artifacts and activities early in the process.
+    </li>
+    <li>
+        It is essential for results to feed back into the process in order to drive improvement. Without this key step,
+        other projects in the organization cannot learn from previous defect patterns and take action to prevent the same
+        mistakes happening in the future. Use the metric to monitor process improvements as they are introduced.
+    </li>
+    <li>
+        A lack of consistency and discipline in classifying defects can lead to skewed results, making trend analysis
+        useless.<br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

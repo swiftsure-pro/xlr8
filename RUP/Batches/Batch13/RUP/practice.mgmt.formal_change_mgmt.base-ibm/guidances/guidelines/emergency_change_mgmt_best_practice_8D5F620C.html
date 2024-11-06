@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Emergency Change Management Best Practice</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="emergency_change_mgmt_best_practice">
+<meta name="uma.presentationName" content="Emergency Change Management Best Practice">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_FUPRoGlMEd2b-p2CJEmo4w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Emergency Change Management Best Practice</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This best practice describes how to handle emergency changes.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.mgmt.formal_change_mgmt.base-ibm/guidances/roadmaps/adopt_formal_change_mgmt_practice_583B4A80.html" guid="_kHilsA1VEd2_YZgLr0B-dw">How to Adopt the Formal Change Management Practice</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Emergency Change Management
+</h3>
+<p>
+    The procedures you put in place to handle emergency changes should be flexible enough to facilitate rapid resolution of
+    the problem, including documentation of who is authorized to make emergency changes to the application, and how to get
+    in touch with these individuals. You should have either a sufficient number of people who can resolve emergencies, or
+    those people should be easily accessible at all times to prevent a roadblock in the problem resolution process.
+</p>
+<p>
+    It is very important to maintain both communication and the integrity of documentation through an emergency change.
+    Documenting the steps taken to resolve the problem is of paramount importance.
+</p>
+<p>
+    You should take into consideration whether the change will resolve the existing problem, as well as whether the change
+    will cause other problems. For an emergency change process, the steps you need to consider are described following.
+</p>
+<h4>
+    Issue determination
+</h4>
+<p>
+    It is usually obvious when an emergency change is required in a production environment. However, exactly what change is
+    required may not be immediately clear. When taking corrective action, it is imperative that you implement only one change at a
+    time. Otherwise, if the problem is resolved by multiple changes, it is impossible to pinpoint which change actually
+    fixed the problem. Worse, if other problems are introduced, it is impossible to determine which change was the cause
+    of the new fault. Each change should go through the full process outlined previously before you begin on the next change. If
+    a change is shown to have no effect, you should back out of it before beginning the next change (the single exception
+    being when the initial change is a prerequisite to the next change under consideration).
+</p>
+<h4>
+    Limited risk assessment
+</h4>
+<p>
+    In most cases, the amount of risk assessment done in an emergency situation is directly proportional to the scope of
+    the change, and inversely proportional to the effect of the outage. Ultimately, risk assessment is the responsibility
+    of the support person implementing the change. For this, he or she should rely on their own personal experience, as
+    well as that of associated support personnel. Many of the ideas given in the previous section about change management best
+    practices can be adapted to the emergency change environment, but on a more limited scale. Finally, as part of the
+    limited risk assessment, you should determine which users may be affected by the change.
+</p>
+<h4>
+    Communication
+</h4>
+<p>
+    Although it is not always possible to notify all users of all changes (especially in emergency situations), the user
+    community will certainly appreciate any warning you can provide. You should also communicate the details of any
+    emergency changes to the change manager, allowing him to maintain metrics on emergency changes and root causes. The
+    information may also affect the scheduling or rollout of future changes.
+</p>
+<h4>
+    Documentation
+</h4>
+<p>
+    Updating documentation is critical to ensure valid, up-to-date information. During unplanned changes, it is easy to
+    forget to make updates because of the frantic nature of emergencies. However, undocumented change solutions often
+    result in increased downtime if the solution is unsuccessful.<br />
+    It helps to document changes before they are made in emergency situations from a central location, perhaps at the
+    change manager level. If a central support organization does not exist to document changes before they occur, different
+    individuals may make changes at the same time, not knowing about each other's activities.
+</p>
+<h4>
+    Implementation
+</h4>
+<p>
+    If the process of assigning risk and documentation occurs prior to the implementation, the actual implementation should
+    be straightforward. Beware of the potential for change coming from multiple support personnel without their knowing
+    about each other's changes. This scenario can lead to increased potential downtime and misinterpretation of the
+    problem.
+</p>
+<h4>
+    Test and evaluation
+</h4>
+<p>
+    In this phase, the person who initiated the change is responsible for ensuring that the emergency change had the
+    desired effect and if not, restarting the emergency change process. Steps to take in the investigation of the change
+    include:
+</p>
+<div style="MARGIN-LEFT: 2em">
+    <ol>
+        <li>
+            Observe and document the impact of the change on the problem.
+        </li>
+        <li>
+            Observe and document any side effects of the change. 
+        </li>
+        <li>
+            Determine whether the problem has been resolved, and if so, make sure that all of the necessary documentation occurs to
+            properly reflect the change. 
+        </li>
+        <li>
+            If the change is unsuccessful, back out, and continue the emergency change process until the problem is
+            resolved or a work-around is in place.
+        </li>
+    </ol>
+</div>
+<p>
+    Once the change has been deemed successful, send all emergency change documentation to the change request manager for
+    review and documentation by the change control team. The change request manager should coordinate a post-mortem
+    evaluation of the problem to determine potential improvements to prevent future emergency changes of this type. The
+    change request manager should also bring the change request to engineering or architecture experts for review, and
+    allow them the opportunity to change solution templates, standard software versions, or designs to better meet the
+    goals or requirements of your organization.
+</p>
+<h3>
+    Performance indicators for Change Management
+</h3>
+<p>
+    It is important for you to be able to measure the success of your change management process. The best mechanism is
+    establishing some performance indicators. These indicators should be reviewed regularly to ensure that change planning
+    and change management are working well.
+</p>
+<h4>
+    Change Management metrics by functional group
+</h4>
+<p>
+    Include the percentage and quantity of change success by functional group and risk level in your change management
+    metrics. Emergency changes should be identified separately in the metrics by functional group, including the success
+    rate for attempted fixes. You should contact the user identified on the change request form following the change to get
+    an understanding of change success.
+</p>
+<h4>
+    Change history archive
+</h4>
+<p>
+    The change coordinator is also responsible for archiving the change history. For archival purposes, creating a spreadsheet with columns for
+    functional group success and failure, and rows for the months, is sufficient. Change history archives can
+    help identify current issues based on past change rates and available resources. The information can also be used to
+    investigate change rates in general for overall planning purposes.
+</p>
+<h4>
+    Targeting change success
+</h4>
+<p>
+    To target change success, you should start with a baseline of change management metrics. The change coordinator can then
+    identify potential issues and set overall goals.
+</p>
+<h4>
+    Periodic Change Management performance meeting
+</h4>
+<p>
+    It is important to review the metrics you collect monthly, including the following metrics: 
+	<ul>
+	<li>Change quantity and risk level</li>
+    <li>Change failure quantity and post mortem evaluations</li>
+	<li>Emergency changes and post mortem evaluations</li>
+	<li>Change management goals</li>
+	<li>Undocumented changes</li>. <br />
+	The change request manager should review the metrics and report to the
+    appropriate teams for improvement.<br />
+    <br />
+	</ul>
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

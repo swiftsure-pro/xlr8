@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Test Execution Status</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="test_execution_status">
+<meta name="uma.presentationName" content="Test Execution Status">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_d4L8wCrUEd6FjITr_tW4FQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Test Execution Status</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks the number of  tests planned, implemented, attempted, passed, failed, and blocked.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p>
+    This metric helps a team understand overall solution quality by studying two factors: test completeness and test
+    success. The test completion rate enables the team to manage what part of the test effort remains, including the risk
+    associated with potentially undiscovered quality issues. The test success rate helps the team to decide whether the
+    software or system is working correctly. This metric should be used in conjunction with the Defect Trends metric to
+    determine release readiness of the solution.<br />
+    <br />
+    When the term "test" is used in this metric, it refers to the executable tests that contain the steps needed to run
+    against the actual solution under development. These tests can be manual or automated. The Rational Unified Process
+    refers to these tests as "test scripts", but in some test methodologies and test tools, these are referred to as test
+    cases. To avoid confusion, this metric uses the term "test."<br />
+    <br />
+</p>
+<h3>
+    Definition
+</h3>
+<p>
+    Test Execution Status is measured by reporting the following items once per iteration and trending throughout the
+    release cycle:
+</p>
+<ul>
+    <li>
+        Tests planned.
+    </li>
+    <li>
+        Tests implemented.
+    </li>
+    <li>
+        Tests attempted.
+    </li>
+    <li>
+        Passed tests.
+    </li>
+    <li>
+        Failed tests.
+    </li>
+    <li>
+        Blocked tests.
+    </li>
+</ul>
+<p>
+    <br />
+    The term iteration is sometimes called "test cycle," but these are not synonymous. A single iteration may have multiple
+    test cycles, based on the build cycle. The recommendation is to capture this metric once per iteration, regardless of
+    the number of test cycles.
+</p>
+<p>
+    <strong>Terms</strong>
+</p>
+<p>
+    Tests planned = The number of tests scheduled to be executed in the iteration.
+</p>
+<p>
+    Tests implemented = The number of tests built and ready to be executed - both manually and automatically - in the
+    iteration.
+</p>
+<p>
+    Tests attempted = The number of tests that have been executed, and is the sum of the passed, failed and blocked tests.
+</p>
+<p>
+    Passed tests = The number of tests that have a most recent result of pass.
+</p>
+<p>
+    Failed tests = The number of tests that have a most recent result of failed.
+</p>
+<p>
+    Blocked tests = The number of tests that cannot be executed completely to the last step of the test. For manual tests,
+    this means the tester could not execute all the steps of the test. For automated tests, the automated testing tool
+    reports a passing result, but the human test analyst determines that the test was invalid using information outside the
+    scope of what the automated testing tool can report.
+</p>
+<p>
+    Build Health is captured in IBM&reg; Rational&reg; Team Concert&reg; and BM&reg; Rational&reg; Insight&reg;.<br />
+</p>
+<h3>
+    Analysis
+</h3>
+<p>
+    Use either a line or bar graph that shows number of tests on the y-axis and the iterations along the x-axis. Categorize
+    the tests as indicated above. Ideally, show the results against a planned schedule for implementation and successful
+    execution. The following patterns might occur:
+</p>
+<p>
+    <strong>Rising slope</strong>
+</p>
+<ul>
+    <li>
+        <strong>Tests planned, tests implemented, tests attempted, and passed tests:</strong> This is the desired trend.
+    </li>
+    <li>
+        <strong>Failed tests:</strong> Indicates decreasing solution quality and/or decreasing requirement quality.
+    </li>
+    <li>
+        <strong>Blocked tests:</strong> Indicates the test effort may be falling behind schedule and the quality of the
+        solution is more unknown. Also, may be an indicator of technical problems or test data problems in the test
+        environment.
+    </li>
+</ul>
+<p>
+    <br />
+    <strong>Falling slope</strong>
+</p>
+<ul>
+    <li>
+        <strong>Tests planned:</strong> Indicates tests are being removed from the scope of the test effort, possibly
+        indicating a decrease in overall scope for the release.
+    </li>
+    <li>
+        <strong>Tests implemented:</strong> Indicates there are not enough test resources to write the planned tests.
+    </li>
+    <li>
+        <strong>Tests attempted:</strong> Indicates there are not enough test resources to execute the planned and
+        implemented tests.
+    </li>
+    <li>
+        <strong>Passed tests:</strong> Depending on the trends of planned, implemented and attempted tests, this pattern
+        usually indicates decreasing solution quality, and/or previously passing tests are now failing.
+    </li>
+    <li>
+        <strong>Failed tests and blocked tests:</strong> This is the desired trend.
+    </li>
+</ul>
+<p>
+    <br />
+    <strong>Flat line</strong>
+</p>
+<ul>
+    <li>
+        <strong>Tests planned, tests implemented, and tests attempted:</strong> Indicates new tests are not being added to
+        the overall test effort for the release. Some root causes are: lack of test resources to implement and/or execute
+        tests, lack of clear requirements, no new requirements being delivered to test.
+    </li>
+    <li>
+        <strong>Passed tests:</strong> Indicates defects are not being corrected. Could also indicate a coincidental net
+        zero difference in the number of passing tests.
+    </li>
+    <li>
+        <strong>Failed tests and blocked tests:</strong> Indicates there is a lack of test resources to execute previously
+        failed or blocked tests, or defects are not being corrected, or a coincidental net zero difference in the number of
+        failing or blocked tests, or some combination of these issues. The test schedule may be in jeopardy in this
+        scenario.
+    </li>
+</ul>
+<p>
+    <strong>Hockey stick<br />
+    </strong><br />
+    A hockey stick trend gradually increases or decreases, then takes a sharp turn in the upward direction, typically late
+    in the release cycle. This means the project is experiencing surprises at a time when things should be routine.
+</p>
+<ul>
+    <li>
+        <strong>Tests planned, tests implemented, tests attempted:</strong> Indicates many new tests are being added to the
+        test effort, possibly due to: new requirements added to the scope of the project, previously ambiguous requirements
+        have been clarified, additional test resources added.
+    </li>
+    <li>
+        <strong>Passed tests:</strong> Indicates the following possible scenarios: defects are being corrected and verified
+        more quickly, requirements are more clear, additional test resources have been added, or some combination of these
+        items.
+    </li>
+    <li>
+        <strong>Failed tests and blocked tests:</strong> Indicates the following possible issues: new tests are failing or
+        blocked, previously passing tests are now failing or blocked, requirements are not clear, previously corrected
+        defects are recurring, new defects are being discovered.<br />
+    </li>
+</ul>
+<p>
+    <strong>Reverse hockey stick</strong><br />
+    <br />
+    A reverse hockey stick trend gradually increases or decreases, then takes a sharp turn in the downward direction,
+    typically late in the release cycle. This means the project is experiencing surprises at a time when things should be
+    routine.<br />
+</p>
+<ul>
+    <li>
+        <strong>Tests planned, tests implemented, tests attempted:</strong> Indicates tests have been removed from the
+        scope of the project - perhaps due to removal of requirements.
+    </li>
+    <li>
+        <strong>Passed tests:</strong> Indicates that a large number of tests that were previously passing are suddenly no
+        longer passing. Possible sources for this issue are: previously passing tests are now failing and/or newly
+        delivered solution quality is decreasing.
+    </li>
+    <li>
+        <strong>Failed tests and blocked tests:</strong> Indicates the following possible scenarios: defects are being
+        corrected and verified more quickly, requirements are more clear, additional test resources have been added, or
+        some combination of these items.
+    </li>
+</ul>
+<p>
+    <br />
+    <strong>Perfect slope</strong>
+</p>
+<p>
+    Perfect slope describes a trend where the actual data exactly matches the expected behavior for a metric. Sometimes
+    there are patterns in perfect slope situations that allow us to give specific advice on corrective action. For this
+    metric, other than investigating potential bad data, there is no specific advice.<br />
+    <br />
+    <br />
+    The following graph shows an example of two of the test execution status report trends - passed tests and failed
+    tests.<br />
+</p>
+<p>
+    <img alt="Test Execution Status" src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/./resources/test_execution_status.gif" />
+</p>
+<h3>
+    Frequency and reporting
+</h3>
+<p>
+    Data is captured each day and monitored at the end of each iteration to help identify trends.
+</p>
+<h3>
+    Collection and reporting tools
+</h3>
+<p>
+    Test execution data is captured in IBM&reg; Rational&reg; Quality Manager&reg;. IBM&reg; Rational&reg; Insight&reg; provides an out of the box
+    report focused on implemented tests and their status.
+</p>
+<h3>
+    Assumptions and prerequisites
+</h3>
+<ul>
+    <li>
+        Test plans are updated as part of iteration planning and compared to actuals at the end of each iteration.
+    </li>
+    <li>
+        Test execution data is captured in a tool, tracking the status of each attempted test.
+    </li>
+</ul>
+<h3>
+    Pitfalls, advice, and countermeasures for this metric
+</h3>
+<p>
+    The following items are indicators of measurement pitfalls and should be used to corroborate this metric:
+</p>
+<ul>
+    <li>
+        Release size
+    </li>
+    <li>
+        Requirement quality
+    </li>
+    <li>
+        Test capacity
+    </li>
+    <li>
+        Defect aging
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

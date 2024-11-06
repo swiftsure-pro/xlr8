@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untraced Requirements</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="untraced_requirements">
+<meta name="uma.presentationName" content="Untraced Requirements">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_8tvSsI3mEd2xw7y9LRwo-A"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Untraced Requirements</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes how to measure and use the Untraced Requirements metric.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose&nbsp;
+</h3>
+<p>
+    This metric&nbsp;shows the degree of consistency and alignment of the requirement set. It measures the number of
+    low-level requirements that are not substantiated by the presence of approved high-level requirements (as defined in
+    the Requirement Management Plan).
+</p>
+<p>
+    The Untraced Requirements metric assumes that two or more levels of requirements are used. For instance, there are
+    features at one level that have traceability with use cases at a lower level. If use cases are present that do not have
+    traceability to features, then the use case may not be substantiated and within scope. If there are many levels of
+    requirements, then there may be multiple levels of traceability among the requirements. The measure of untraced
+    requirements among the levels could be assessed separately, in order to reflect consistency and alignment for different
+    purposes.
+</p>
+<p>
+    Untraced requirements generally provide insight into the alignment of development efforts with business objectives.
+    This metric can be used to determine if your team&nbsp;is putting effort towards requirements that do not have
+    higher-level justification.
+</p>
+<h3>
+    Definition
+</h3>
+<p>
+    The percent of lower-level requirements (as defined in the RMP) not traced to higher-level requirements. This measure
+    applies separately (or combined) for each pair of requirement levels that have traceability among them.
+</p>
+<h3>
+    Analysis
+</h3>
+<p>
+    A good way to monitor untraced requirements is a line chart that shows the change in percent of low-level requirements
+    that are not traced to high-level requirements.
+</p>
+<p>
+    Ideally, a non-zero measure reflects proper alignment and consistency. Typically, an increasing level of untraced
+    requirements indicates a challenge with keeping analysis efforts focused on those requirements that align with higher
+    business objectives. Additionally, a high percentage of untraced requirements reflects difficulty in managing scope
+    creep through the lifecycle. Lower-level requirements may not be traced initially early in the lifecycle, when
+    requirements are elicited, defined, and refined.
+</p>
+<p>
+    It is useful to create a drill through report to show the list of requirements that cannot trace to high level
+    requirements. Confirm with stakeholders that they need the functionality described in these requirements. Update high
+    level requirements to capture these requirements as needed.
+</p>
+<h3>
+    Frequency and reporting
+</h3>
+<p>
+    Monitor Untraced Requirements each iteration during iteration planning to confirm that all low-level requirements the
+    team plans to implement in that iteration can be traced to high-level requirements.
+</p>
+<h3>
+    Collection and reporting tools
+</h3>
+<p>
+    &nbsp;The number of untraced requirements can be obtained from the Requirements Traceability Matrix. Various tools,
+    such IBM&reg; Rational&reg; Team Concert&reg;, IBM&reg; Rational&reg; DOORS&reg;, IBM&reg; Rational&reg; Requirements Composer&reg;, and IBM&reg; Rational&reg;
+    RequisitePro&reg;, provide full support for&nbsp;data collection and reporting of this metric.
+</p>
+<h3>
+    Pitfalls, advice, and countermeasures
+</h3>
+<ul>
+    <li>
+        <p>
+            When refining high-level requirements to lower-level requirements, it is possible that you will derive new
+            requirements. The derived requirements should be added and documented in the requirement repository.
+        </p>
+    </li>
+    <li>
+        <p>
+            90% of untraced requirements are product and product-component requirements, which are introduced with the
+            design solution [1]. So, it is important to pay more attention to the derived product and product-component
+            requirements that can be left untraced.<br />
+            <br />
+        </p>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

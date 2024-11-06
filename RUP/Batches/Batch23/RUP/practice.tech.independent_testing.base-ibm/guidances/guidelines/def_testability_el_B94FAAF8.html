@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Defining Testability Elements</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="def_testability_el">
+<meta name="uma.presentationName" content="Defining Testability Elements">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_ODuDELJZEdyHw6xErAkVmw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Defining Testability Elements</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline provides more details on some aspects of defining the testability elements.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Identify Test Infrastructure Elements
+</h3>
+<p>
+    <strong>Facilitate common test scenarios</strong>
+</p>
+<p>
+    Some tests have a common structure to the scenario or procedure followed when they are executed, but the same procedure
+    needs to be conducted many times against different test target items. In the case of test automation, it can be useful
+    to create common test scripts or utility functions that can be reused in many different contexts, in order to undertake
+    these common test scenarios in an efficient way. This provides a central point of modification if the test scenario
+    needs to be altered. Examples include conducting standard boundary tests on appropriate classes of interface elements,
+    and validating UI elements for adherence to UI design standards.
+</p>
+<p>
+    <strong>Facilitate test data dependencies</strong>
+</p>
+<p>
+    When tests are to be conducted in a given test environment configuration, there is the potential for conflicts in the
+    test data values that are used. This problem is compounded when the environment is shared by multiple test team
+    members. Consider using a data-driven approach that uncouples test data values from the test scripts that use them, and
+    provides a central point of collection and modification of the test data. This provides two key benefits: it gives
+    visibility of the test data to all test team members (allowing them to avoid potential conflicts in test data use), and
+    it provides a central point of modification for the test data when it needs to be updated.
+</p>
+<p>
+    <strong>Facilitate test state dependencies</strong>
+</p>
+<p>
+    Most tests require the system to be in a specific given state before they are executed, and should return the system to
+    a specific known state when they complete. Common dependencies involve security rights (function or data), dynamic or
+    context sensitive data (for example, system dates, order numbers, user id preferences, and so on), and data expiration
+    cycles (for instance, security passwords, product expiration dates, and so on). Some tests are highly dependent on each
+    other (for example, one test may create a unique order number, and a subsequent test may need to dispatch the same
+    order number).
+</p>
+<p>
+    A common solution is to use test suites to sequence dependent tests in the correct system state order. The test suites
+    can then be coupled with appropriate system recovery and setup utilities. For automated test efforts, some solutions
+    may involve using centralized storage of dynamic system data and the use of variables within the test scripts that
+    reference the centralized information.
+</p>
+<p>
+    <strong>Facilitate derived test data values</strong>
+</p>
+<p>
+    Tests sometimes need to calculate or derive appropriate data values from one or more aspects of the runtime system
+    state. This applies to test data values for both input and expected results. Consider developing utilities that
+    calculate the derived data values, simplifying test execution and eliminating potential inaccuracies introduced through
+    human error. Where possible, develop these utilities so that they can be utilized by both manual and automated test
+    efforts.
+</p>
+<p>
+    <strong>Facilitate common test navigation paths</strong>
+</p>
+<p>
+    For test automation, you should consider isolating common navigation sequences, and implementing them using centralized
+    utility functions or test scripts. You can then reuse these common navigation sequences in many places, providing a
+    central point of modification if the navigation subsequently changes. These common navigation aids simply navigate the
+    application from one point to another; they typically do not perform any tests themselves, other than to verify their
+    start and end states.
+</p>
+<h3>
+    Identify Test-Specific Design Needs
+</h3>
+<p>
+    <strong>Identify test interfaces</strong>
+</p>
+<p>
+    Consider the interfaces identified: Are there additional requirements the test effort will need included in the
+    software design, and subsequently exposed in the implementation? In some cases, additional interfaces will be required
+    specifically to support the test effort, or existing interfaces will require additional operating modes or modified
+    message signatures (changes to input and return parameters).
+</p>
+<p>
+    In relation to the target deployment environments (as captured in the test environment configurations) and the
+    development schedule itself, identify the constraints and dependencies placed on the test effort. These dependencies
+    may necessitate the provision of stubs to simulate elements of the environment that will not be available (or are too
+    resource prohibitive to establish for testing purposes, or to provide the opportunity for the early testing of
+    components of the partially completed system).
+</p>
+<p>
+    <strong>Identify inbuilt test functions</strong>
+</p>
+<p>
+    Some tests are potentially valuable, but prohibitively expensive to implement as true black-box tests. Furthermore, in
+    high-reliability environments, it is important to be able to test for and isolate faults as quickly as possible to
+    enable fast resolution. In these cases, it can be useful to build tests directly into the executable software itself.
+</p>
+<p>
+    There are different approaches that you can take to achieve this: Two of the most common include <i>built-in self
+    tests</i> (where the software uses redundant processing cycles to perform self-integrity tests), and <i>diagnostic
+    routines</i> (which can be performed when the software is sent a diagnostic event message, or when the system is
+    configured to run with diagnostic routines enabled).
+</p>
+<p>
+    <strong>Identify test design constraints</strong>
+</p>
+<p>
+    Some of the design and implementation choices of the development team will either enable or inhibit the test effort.
+    While some of these choices are unavoidably necessary, there are many smaller decisions (especially in the area of
+    implementation) that have minimal impact on the development team, but significant impact on the test team.
+</p>
+<p>
+    Areas to consider include:
+</p>
+<ul>
+    <li>
+        Use of standard, recognized communication protocols
+    </li>
+    <li>
+        Use of UI implementation components that can be recognized by test automation tools
+    </li>
+    <li>
+        Adhering to UI design rules including the naming of UI elements
+    </li>
+    <li>
+        Consistent use of UI navigation conventions
+    </li>
+</ul><br />
+<br />
+ 
+<h3>
+    Define Software Testability Requirements
+</h3>It is important to clearly explain to the development team the reasons why test-specific features are required to be
+built into the software. Key reasons will typically fall into one of the following areas: 
+<ul>
+    <li>
+        To enable both manual and automated tests to be implemented by providing an interface between the target test item
+        and either the manual or automated test. This is typically most relevant as a test automation concern, to help
+        overcome the limitations of test automation tools in being able to access the software application for both
+        information input and output.
+    </li>
+    <li>
+        To enable built-in self-tests to be conducted by the developed software itself.
+    </li>
+    <li>
+        To enable target test items to be isolated from the rest of the developed system, and then tested.
+    </li>
+</ul>
+<p>
+    Test-specific features built into the software need to strike a balance between the value of a built-in test feature
+    and the effort necessary to implement and test it. Examples of built-in test features include producing audit logs,
+    self-diagnostic functions, and interfaces to interrogate the value of internal variables.
+</p>
+<p>
+    Another common use of test-specific functionality is during integration work, where there is the need to provide stubs
+    for components or subsystems that are not yet implemented or incorporated. There are two main implementation styles
+    used for stubs:
+</p>
+<ul>
+    <li>
+        Stubs and drivers that are simply "dummies" with no functionality other than being able to provide a specific
+        predefined value (or values) as either input or as a return value.
+    </li>
+    <li>
+        Stubs and drivers that are more intelligent and can "simulate" or approximate more complex behavior.
+    </li>
+</ul>
+<p>
+    This second style of stub also provides a powerful means of isolating components or groups of components from the rest
+    of the system, thus providing flexibility in the implementation and execution of tests. As with the earlier comment
+    about test-specific features, a balance between the value of a complex stub and the effort necessary to implement and
+    test the stub needs to be considered. Use this second style prudently for two reasons: first, it takes more resources
+    to implement, and second, it is easy to overlook the existence of the stub and forget to subsequently remove it.
+</p>
+<p>
+    Record your findings in terms of test-specific requirements on the design and implementation models directly, or using
+    one or more test interface specifications.
+</p>
+<h3>
+    Define Test Infrastructure
+</h3>
+<p>
+    <strong>Test automation elements</strong>
+</p>
+<p>
+    Key requirements or features of the test automation infrastructure include:
+</p>
+<ul>
+    <li>
+        <b>Navigation model:</b> Common approaches are round-trip, segmented, or hybrid approaches. Other alternatives
+        include using an Action-Word framework or screen navigation tables.
+    </li>
+    <li>
+        <b>External Data Access:</b> A method to access data externally from the test instructions
+    </li>
+    <li>
+        <b>Error Reporting and Recovery:</b> Common error-handling routines and Test Suite recovery execution wrappers
+    </li>
+    <li>
+        <b>Security and Access Profiles:</b> Automated Test Execution User IDs
+    </li>
+    <li>
+        The ability for the software to conduct <b>self-tests</b>
+    </li>
+</ul>
+<p>
+    Record your decisions as definitions in the implementation sections of the Test Automation Architecture, and your
+    process guidance in one or more Test Guidelines (or as Test Scripts, Test Suites, or test library utility routines).
+    See <a class="elementLinkWithType" href="./../../../core.tech.common.extend_supp-ibm/workproducts/test_automation_arch_895C43EA.html" guid="_ZyADgHE8Edy8Ac588DXPCQ">Artifact: Test Automation Architecture</a> for further suggestions.
+</p>
+<p>
+    <strong>Manual test elements</strong>
+</p>
+<p>
+    Key requirements or features of the manual test infrastructure include:
+</p>
+<ul>
+    <li>
+        <b>Test Data Repository:</b> A common repository for the definition of test data
+    </li>
+    <li>
+        <b>Restoration and Recovery:</b> A method to restore or recover the test environment configuration to a known state
+    </li>
+    <li>
+        To enable target test items to be <b>isolated</b> from the rest of the developed system and tested.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

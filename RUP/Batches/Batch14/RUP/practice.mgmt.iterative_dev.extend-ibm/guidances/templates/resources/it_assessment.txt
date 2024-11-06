@@ -1,0 +1,16 @@
+
+=Iteration Assessment
+
+==1. Overview
+*Assessment target
+*Assessment date	
+*Participants	
+*Project status //[for example: green, yellow, or red]	
+
+==2. Assessment against objectives
+
+==3. Work Items: Planned compared to actually completed
+
+// [Alternatively, add a link to Query that shows open vs. closed work items.] 
+
+==4. Other concerns and deviations

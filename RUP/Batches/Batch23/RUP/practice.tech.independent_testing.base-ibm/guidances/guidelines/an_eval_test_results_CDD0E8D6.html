@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Analyzing and Evaluating Test Results</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="an_eval_test_results">
+<meta name="uma.presentationName" content="Analyzing and Evaluating Test Results">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_P-cVQLJXEdyHw6xErAkVmw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Analyzing and Evaluating Test Results</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline provides more details on how to analyze and evaluate the test results.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h4>
+    <a id="IncidentData" name="IncidentData">Incident distribution</a>
+</h4>
+<p>
+    Analyze the incidents based on where they are distributed (such as functional area, quality risk, assigned tester, and
+    assigned developer).
+</p>
+<p>
+    Look for patterns in the distribution (such as functional areas that appear to have above average defects count). Also
+    look for both developers and testers that may be overworked, and where their quality of work is slipping.
+</p>
+<h4>
+    <a id="ExecutionCoverageData" name="ExecutionCoverageData">Test execution coverage</a>
+</h4>
+<p>
+    To evaluate test execution coverage, you need to review the Test Logs and determine:
+</p>
+<ul>
+    <li>
+        The ratio between how many tests (Test Scripts or Test Cases) have been performed in this Test Cycle and a total
+        number of tests for all intended Target Test Items.
+    </li>
+    <li>
+        The ratio of successfully performed test cases.
+    </li>
+</ul>
+<p>
+    The objective is to ensure that a sufficient number of the tests targeted for this Test Cycle have been executed
+    usefully. If this is not possible, or to augment that execution data, one or more additional test coverage criteria can
+    be identified, based upon:
+</p>
+<ul>
+    <li>
+        Quality risk or priority
+    </li>
+    <li>
+        Specification-based coverage (Requirements and so on)
+    </li>
+    <li>
+        Business need or priority
+    </li>
+    <li>
+        Code-based coverage
+    </li>
+</ul>
+<p>
+    See <a class="elementLinkWithType" href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/key_measure_test_2CC7496.html" guid="_AhYiUHHVEdyzS55ez-koKA">Concept: Key Measures of Test</a>.
+</p>
+<p>
+    Record and present the Test Results in a Test Evaluation Report for this Test Cycle.
+</p>
+<h4>
+    <a id="CRData" name="CRData">Change Requests statistics</a>
+</h4>
+<p>
+    To analyze defects, you need to review and analyze the measures chosen as part of your defect analysis strategy. The
+    most common defect measures used include the following different measures (often displayed in the form of a graph):
+</p>
+<ul>
+    <li>
+        <b>Defect Density</b>: The number of defects are shown as a function of one or two defect attributes (such as
+        distribution over functional area or quality risk compared to status or severity)
+    </li>
+    <li>
+        <b>Defect Trend</b>: The defect count is shown as a function over time
+    </li>
+    <li>
+        <b>Defect Aging</b>: A special defect density report in which the defect counts are shown as a function of the
+        length of time a defect remained in a given status (open, new, waiting-for-verification, and so on)
+    </li>
+</ul>
+<p>
+    Compare the measures from this Test Cycle to the running totals for the current Iteration, and those from the analysis
+    of previous iterations, to better understand the emerging trends over time.
+</p>
+<p>
+    It is recommended that you present the results in diagram form, with supporting findings on request.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

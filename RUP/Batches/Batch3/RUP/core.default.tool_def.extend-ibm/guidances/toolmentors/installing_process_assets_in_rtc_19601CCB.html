@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Installing Process Assets in IBM Rational Team Concert</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="installing_process_assets_in_rtc">
+<meta name="uma.presentationName" content="Installing Process Assets in IBM Rational Team Concert">
+<meta name="uma.category" content="Tool:rtc:IBM Rational Team Concert">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="IBM Rational Team Concert">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_9XW3sHWPEd-P3eiLBcUmDw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Installing Process Assets in IBM Rational Team Concert</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor explains how to install process assets in Rational Team Concert.</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.default.tool_def.extend-ibm/tools/rtc_407F3232.html" guid="_58RjIMYhEdyXeo04os5BOw">IBM Rational Team Concert</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.mgmt.project_process_tailoring.base/tasks/setup_tools_93457979.html" guid="_okIOcEmfEd-UYMQAaXd4fQ">Set Up Tools</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This configuration comes with a process template to be used in Rational Team Concert. You need administrator privilege
+    in Rational Team Concert to install a process template. After it is installed, you can use the template to create any
+    number of projects.
+</p>
+<h3>
+    Install the process template
+</h3>
+<p>
+    Install the process template following either of these Rational Software Information Center help topics, depending on
+    which client you use for access to Rational Team Concert:
+</p>
+<ul>
+    <li>
+        <a href="http://publib.boulder.ibm.com/infocenter/clmhelp/v3r0m1/topic/com.ibm.jazz.platform.doc/topics/t_export_import_process_templates.html" target="_blank">Importing process templates in Rational Team Concert Eclipse-based interface</a>
+    </li>
+    <li>
+        <a href="http://publib.boulder.ibm.com/infocenter/clmhelp/v3r0m1/topic/com.ibm.team.platform.doc/topics/t_importing_process_templates_web.html" target="_blank">Import process template in the Rational Team Concert Web interface</a>
+    </li>
+</ul>
+<h3>
+    Install the published process content
+</h3>
+<p>
+    Install the&nbsp;published process&nbsp;content so that team members can consult it easily. The content published from
+    Rational Method Composer should be available as a WAR (Web archive) file named <em>&lt;process_name&gt;.war</em>.
+</p>
+<p>
+    In your Web server, such as the Jazz server (Tomcat), deploy that WAR file to <em>/jazz/server/tomcat/webapps</em>.
+    When the server runs, that&nbsp;should create a folder called&nbsp;<em>&lt;process_name&gt;</em> on the
+    server,&nbsp;such as <em>/jazz/server/tomcat/webapps/&lt;process_name&gt;</em>.
+</p>
+<h3>
+    Set up the process description for your project
+</h3>
+<p>
+    Projects created using Rational Team Concert point to a process description defined by the process template. By
+    default, the process template available with this configuration points to the published process content deployed to the
+    Web server in the previous section, typically at URL with the following format:
+</p>
+<p>
+    <em>-http://&lt;server_name&gt;:&lt;port_number&gt;/&lt;process_name&gt;/index.htm</em>
+</p>
+<p>
+    Depending on your server name, port number, and process name, you&nbsp;may need to change the link to the process
+    description designated in your project area so that it points to the correct URL. For more information on how to
+    customize the process description for your project, see <a href="http://publib.boulder.ibm.com/infocenter/clmhelp/v3r0m1/topic/com.ibm.jazz.platform.doc/topics/t_create_process_temp_doc.html" target="_blank">Creating process template documentation</a>.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.default.tool_def.extend-ibm/guidances/concepts/process_template_9F65D5CB.html" guid="_4IiGJNTyEdy1Dvz54vCgqw">About Jazz Process Templates</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Logical and Physical Components</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="logical_and_physical_components">
+<meta name="uma.presentationName" content="Logical and Physical Components">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_3mMfQIDvEd2z9IawWqZSFw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Logical and Physical Components</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">There are two levels, or types, of components. Logical components are technology independent, and physical components are technology specific.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.component_sw_arch.base-ibm/tasks/detail_component_model_5E34A5FD.html" guid="_1P8IEAruEdy5ib8CxgclIA">Detail Component Model</a>
+</li>
+<li>
+<a href="./../../../practice.tech.component_sw_arch.base-ibm/tasks/outline_component_model_AF2CF5E4.html" guid="_xuokgAruEdy5ib8CxgclIA">Outline Component Model</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/structuring_components_26FC87E6.html" guid="_HI8-gIEcEd2z9IawWqZSFw">Structuring Components</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/transformation_F6C85709.html" guid="_me4cMIDzEd2z9IawWqZSFw">Transformation</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/transforming_components_613F775F.html" guid="_JyRxMIEcEd2z9IawWqZSFw">Transforming Components</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Components can be classified as follows:
+</p>
+<ul>
+    <li>
+        <strong>Logical components</strong>: Represent concepts in the domain being studied, and are independent of the
+        physical aspects of the software or hardware
+    </li>
+    <li>
+        <strong>Physical components</strong>: Represent actual software or hardware technology
+    </li>
+</ul>
+<p>
+    For example, a Message Bus is a logical component responsible for routing and transforming data between applications.
+    IBM&reg; WebSphere&reg; Message Broker is an example of a physical component that implements this logical component.<br />
+    <br />
+    A logical component emphasizes what the component does. For example, the logical Message Bus component defines all of
+    the functionality of the Message Bus, but does not consider how it will deliver this functionality.<br />
+    <br />
+    A physical component emphasizes how the component does its job. For example, the physical WebSphere Message Broker
+    component defines how the logical Message Bus implements its functionality using a specific technology and
+    product.<br />
+    <br />
+    A logical component is <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/transformation_F6C85709.html" guid="_me4cMIDzEd2z9IawWqZSFw">transformed</a> into a physical component by making decisions about what technology will
+    be used.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/component_CB167D48.html" guid="_0YP18MlgEdmt3adZL5Dmdw">Component</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/transformation_F6C85709.html" guid="_me4cMIDzEd2z9IawWqZSFw">Transformation</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Reporting Defect Trends and Status Using Rational ClearQuest</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="report_defect_trends_status_with_ClearQuest">
+<meta name="uma.presentationName" content="Reporting Defect Trends and Status Using Rational ClearQuest">
+<meta name="uma.category" content="Tool:clearquest:Rational ClearQuest">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="Rational ClearQuest">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="__yNP8CEfEd2x1eZC--0C1g"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Reporting Defect Trends and Status Using Rational ClearQuest</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor describes how to create a Rational ClearQuest chart to view defect trends, and to generate a defect status report.</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.default.tool_def.extend-ibm/tools/clearquest_551DA9A8.html" guid="_PWdI0HLhEd2OMZvHF7YFaQ">Rational ClearQuest</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Overview
+</h3>
+<p>
+    ClearQuest has predefined charts and reports so that you can see the status of a project at a glance. It is
+    also easy to modify charts and reports, and to create new ones.
+</p>
+<h4>
+    Charts 
+</h4>
+<p>
+    ClearQuest charts provide a graphical display of change request data. ClearQuest supports three kinds of
+    charts: distribution charts, trend charts, and aging charts.
+</p>
+<p>
+    <b>Distribution charts</b> show how many records fit the categories or criteria of a query. For example, a project
+    manager might generate charts showing:
+</p>
+<ul>
+    <li>
+        The current status of a group of records
+    </li>
+    <li>
+        Who has been assigned the most or least change requests?
+    </li>
+    <li>
+        Which records have the highest priority?
+    </li>
+</ul>
+<p>
+    <b>Trend charts</b> show:
+</p>
+<ul>
+    <li>
+        How many records were transitioned into the selected states by day, week, or month?
+    </li>
+    <li>
+        The rate at which new records are submitted, resolved, or moved into other states
+    </li>
+</ul>
+<p>
+    <b>Aging charts</b> show how many records have been in the selected states for how long. Aging charts answers questions
+    such as:
+</p>
+<ul>
+    <li>
+        How many defects have been open for less than one week?
+    </li>
+    <li>
+        How many defects have been open for more than three weeks?
+    </li>
+    <li>
+        How many defects have been postponed for more than two months?
+    </li>
+</ul>
+<p>
+    The aging and trends of any state-based records (defects, enhancement requests, documentation requests, and more) can
+    be charted.
+</p>
+<p>
+    To create a chart in ClearQuest, see <strong>Help &gt; Help Contents &gt; Understanding the Rational
+    ClearQuest client &gt; Analyzing query results in charts</strong>.
+</p>
+<h4>
+    Reports
+</h4>
+<p>
+    In ClearQuest, you can also generate reports using existing queries. A ClearQuest report consists of a query
+    inserted into a report format created by a third-party tool. A role, such as a manager, creates a report format, then
+    saves the report format in the ClearQuest Workspace. To generate a report, choose a report format, then specify which
+    query will have its results inserted into the report format. Reports are stored in the Workspace, and can be run at any
+    time.
+</p>
+<p>
+    To create a report in ClearQuest, see <b>Help &gt; Help Contents &gt; Understanding the Rational
+    ClearQuest client &gt; Viewing query results in reports</b>. You can also create a report from the currently active
+    query.   
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

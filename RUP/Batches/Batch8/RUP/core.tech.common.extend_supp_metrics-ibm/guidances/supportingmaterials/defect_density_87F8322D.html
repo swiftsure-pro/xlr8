@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Defect Density</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="defect_density">
+<meta name="uma.presentationName" content="Defect Density">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_Yg1bYITBEd2AfZddKTmDRA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Defect Density</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks the number of defects found, closed, and remaining per some unit of measurement.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p>
+    Defect Density&nbsp;indicates the code quality attained in the deliverable, based on the number of defects found,
+    fixed, and remaining (not yet fixed). When comparing data over multiple releases, you should be able to draw
+    conclusions about how well you have managed to identify defects.
+</p>
+<p>
+    While this Defect Density description focuses on pre-release analysis, Defect Density can be monitored post-release to
+    track how many defects are found by customers (not identified during development).
+</p>
+<h3>
+    Definition
+</h3>
+<p>
+    Defect Density = Number of total defects found, closed (fixed), and remaining per some unit (typically SLOC). It can be
+    useful to view defects grouped by:
+</p>
+<ul>
+    <li>
+        <b>Component</b>, to determine whether any particular component has quality issues (this can be called <i>defect
+        density by component</i> or <i>defect distribution by component</i>)
+    </li>
+    <li>
+        <b>Requirement</b>, to determine whether any particular requirement has quality issues (this can be called
+        <i>defect density by requirement</i> or <i>defect distribution by requirement</i>)
+    </li>
+</ul>
+<p>
+    Average Defect Density = Number of total defects found, closed (fixed), and remaining / unit
+</p>
+<p>
+    In this measurement method, <code>unit</code> can be source line of code or SLOC (<code>total</code>, and <code>new or
+    changed <font face="Arial">SLOCs</font></code>), FunctionPoint, use case, or whatever else you measure. It can also be
+    useful to group by component or requirement, and use in conjunction with defect density (mentioned previously).
+</p>
+<p>
+    <strong>Count</strong>
+</p>
+<ul>
+    <li>
+        Total defects found, closed, and remaining
+    </li>
+    <li>
+        Unit: SLOC, FunctionPoint, use case, or whatever else you measure.
+    </li>
+</ul>
+<h3>
+    Analysis
+</h3>
+<p>
+    You can use a bar, stacked bar, or grouped (stacked) bar chart to show the number of defects in each category,
+    depending on whether you are viewing by component or requirement, by severity, or simply totals. To show trends over
+    time, you can use a series of bars, or a line chart.
+</p>
+<p>
+    During development, expect to see the total defect count increase in relation to your testing activities. While you
+    want to see the number of closed defects increasing as well, there may still be a large number of defects remaining (a
+    defect is not closed until the fix has been verified).
+</p>
+<p>
+    As you&nbsp;prepare the deliverable for shipment, you typically want to see a low number of remaining defects, and few
+    or no remaining high-severity defects. Set targets for an acceptable level of remaining defects (usually a percentage
+    of the total, with perhaps zero outstanding high-severity defects).
+</p>
+<p>
+    A high number of total defects is not necessarily bad, as long as your total fixed defects is acceptable. You can set
+    targets for these numbers based on historical data. For example, this could be your historical defect rate per SLOC (or
+    function point, or whatever you are measuring) on previous similar projects, or within the organization.
+</p>
+<p>
+    Defect density should decline over time: 4-6% annually over the long term. Defect density and trending should be used
+    to estimate maintenance effort on a project. As new code is implemented, the defect density should track the existing
+    trends. Once the SLOCs are known, you can estimate the number of defects and multiply by the average repair time to
+    estimate the effort required to implement the maintenance operations. Typical defect densities at customer ship are 0.8
+    to 1.0 defects for new code, and decline rapidly in the first year to 0.08 to 0.1 defects per 1,000 SLOC for existing
+    code. This decline is also an indication of the usage of the product.
+</p>
+<p>
+    Use this measure in conjunction with the <a class="elementLink" href="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/defect_trends_2E2A9ABF.html" guid="_AIQmoITEEd2AfZddKTmDRA">Defect Trends</a>&nbsp;metric.
+</p>
+<p>
+    The following figure is an example of a defect density report.
+</p>
+<p>
+    <img alt="defect density" src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/./resources/defect_density.gif" />
+</p>
+<h3>
+    Collection and reporting tools
+</h3>IBM&reg; Rational&reg; Quality Manager&reg; collects defect density data. IBM&reg; Rational&reg; Insight&reg; reports on this metric. <br />
+<br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/defect_trends_2E2A9ABF.html" guid="_AIQmoITEEd2AfZddKTmDRA">Defect Trends</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Variability Analysis</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="variability_analysis">
+<meta name="uma.presentationName" content="Variability Analysis">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_lP-BoFbREd6MCpkuB85p5g"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Variability Analysis</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Variability analysis creates a model that separates the changing from the more stable aspects of the domain model. This allows the externalization of anticipated types of changes and their corresponding rules, allowing future non-intrusive introduction of changes to the existing design.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/variability_analysis_5DE99340.html" guid="_Tt8JMEo3Ed6D_7XK49c0nw">Variability Analysis</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/variability_analysis_8B6BEC31.html" guid="_f_0xkEo3Ed6D_7XK49c0nw">Variability Analysis</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Many systems are built with very little foresight for incorporating changes resulting from new requirements.
+    Commonality and Variability Analysis creates a resilient design that is far more adaptive to change. This
+    is&nbsp;achieved by avoiding the hard-coding or hard-designing of aspects of the domain that are anticipated to change
+    through the process of <i>externalization</i>: separating out the more rapidly changing aspects of the functional and
+    structural aspects of the domain from the more stable, non-changing aspects. This technique&nbsp;enables the system's
+    design to evolve and grow due to new requirements without intrusive alterations. During analysis, commonalities and
+    variabilities are modeled in terms of Type Hierarchies. Each point of variability is identified and externalized. For
+    example, the instances of variation such as <em>Organizational Customer</em> and <em>Individual Customer</em> can be
+    modeled as two realizations of a <em>Customer Type</em> that can then be expanded as needed. The externalized type (for
+    example,&nbsp;Customer Type) is associated with Customer Rules that span all customers and&nbsp;enable refinements and
+    extensions to be made through specific Rule Types for each type of Customer.
+</p>
+<p>
+    The first step in the analysis is&nbsp;identifying dependencies on Type from both functional (static) and process
+    (dynamic) perspectives. Identifying types of processes that rely on types of entities (functional) is a good heuristic
+    for the design refactoring:
+</p>
+<ul>
+    <li>
+        Identify common elements of function and process (such as,&nbsp;Reservation business process).
+    </li>
+    <li>
+        Separate changing from less changing aspects. Identify key types related to function and process that are
+        anticipated to change or are dependent (Reservation Type varies based on Customer Type&nbsp;-- if Customer Type
+        changes, Reservation Type might change as a result).
+    </li>
+    <li>
+        Externalize the variations and create type hierarchies with known instances (Frequency Type is Preferred or
+        Regular, Party is Organizational or Individual).
+    </li>
+</ul>
+<p>
+    These variability points are a key part of building systems that are resilient and adaptive. By externalizing
+    variability points, we can modify them without impacting the rest of the design. Thus, the ripple effect of change is
+    contained and constrained by the variability points. A UML class diagram showing this hierarchy provides a roadmap for
+    detailed design and ultimately, implementation.
+</p>The basic principles of&nbsp;commonality and variability design are therefore: <br />
+<br />
+<ol style="MARGIN-TOP: 0in" type="1">
+    <li>
+        Separate changing from non-changing aspects of a domain
+    </li>
+    <li>
+        Separate the interface from implementation
+    </li>
+    <li>
+        Reify what changes. If some element of the domain is in constant flux, then it might be warranted to reify that
+        element into a class (or higher layer of reuse).
+    </li>
+    <li>
+        Build assets at each reuse level. The Reuse Levels are: base class, inheritance hierarchy, aggregation hierarchy,
+        cluster, framework, component, pattern, generic architecture.
+    </li>
+    <li>
+        Each reuse element has its own rules of behavior in addition to the meta-data necessary to reflectively and
+        adaptively self-describe the Reuse Element for run-time queries for service capabilities
+    </li>
+</ol></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/variability_analysis_5DE99340.html" guid="_Tt8JMEo3Ed6D_7XK49c0nw">Variability Analysis</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/variability_analysis_8B6BEC31.html" guid="_f_0xkEo3Ed6D_7XK49c0nw">Variability Analysis</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: ServiceInterface (SoaML)</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="service_interface_soaml">
+<meta name="uma.presentationName" content="ServiceInterface (SoaML)">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_N5e2oFbBEd6MCpkuB85p5g"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: ServiceInterface (SoaML)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Defines the interface to a Service Point or Request Point and is the type of a role in a service contract.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/participant_soaml_DAFEB6B7.html" guid="_uO9JIFbBEd6MCpkuB85p5g">Participant (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/request_point_soaml_DD83CF2.html" guid="_5DYKcFbAEd6MCpkuB85p5g">RequestPoint (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_channel_soaml_11F0BAA8.html" guid="_pOTTMGaaEd65K8S2sWS35w">ServiceChannel (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/service_contract_soaml_A448B6E2.html" guid="_RucNoFbPEd6MCpkuB85p5g">ServiceContract (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_contract_soaml_E57B30D4.html" guid="_IhtgsFbBEd6MCpkuB85p5g">ServiceContract (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend-ibm/guidances/termdefinitions/service_oriented_solution_7F01DBE6.html" guid="_w4jVULYUEd-OhPSIhcG3bg">Service Oriented Solution (SO Solution)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/service_point_soaml_92A5C779.html" guid="_4rbIAFbBEd6MCpkuB85p5g">ServicePoint (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_point_soaml_E250D92A.html" guid="_9jRdMFbAEd6MCpkuB85p5g">ServicePoint (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Usage:&nbsp; "ServiceInterface" stereotypes UML Class, Interface
+</p>
+<p>
+    <font size="2">A ServiceInterface defines the interface and responsibilities of a <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/participant_soaml_1A392457.html" guid="_zL3kgFbAEd6MCpkuB85p5g">participant</a> to provide or consume a service. It is used as the type of a <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_point_soaml_E250D92A.html" guid="_9jRdMFbAEd6MCpkuB85p5g">ServicePoint</a> or <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/request_point_soaml_DD83CF2.html" guid="_5DYKcFbAEd6MCpkuB85p5g">RequestPoint</a>. A ServiceInterface is the means for specifying how a participant is to
+    interact to provide or consume a Service. A ServiceInterface&nbsp;can include specific protocols, commands, and
+    information exchange by which actions are initiated and the result of the real world effects are made available as
+    specified through the functionality portion of a service. A ServiceInterface&nbsp;can address the concepts associated
+    with ownership, ownership domains, actions communicated between legal peers, trust, business transactions, authority,
+    delegation, etc.</font>
+</p>
+<p>
+    <font size="2">A ServicePoint or RequestPoint or role&nbsp;can be typed by either a ServiceInterface or a simple UML2
+    Interface. In the latter case, there is no protocol associated with the Service. Consumers simply invoke the operations
+    of the Interface. A ServiceInterface&nbsp;can also specify various protocols for using the functional capabilities
+    defined by the service interface. This provides reusable protocol definitions in different Participants providing or
+    consuming the same Service.</font>
+</p>
+<p>
+    <font size="2">A ServiceInterface&nbsp;can specify "parts" and "owned behaviors" to further define the responsibilities
+    of participants in the service. The parts of a ServiceInterface are typed by the Interfaces realized (provided) and
+    used (required) by the ServiceInterface.&nbsp; They represent the potential consumers and providers of the functional
+    capabilities defined in those interfaces. The owned behaviors of the ServiceInterface specify how the functional
+    capabilities are to be used by consumers and implemented by providers. A ServiceInterface therefore represents a formal
+    agreement between consumer Requests and providers that&nbsp;can be used to match needs and capabilities.</font>
+</p>
+<p>
+    <font size="2">A service interface might itself have service points or request points that define more granular
+    services that serve to make up a larger composite service. This allows "enterprise scale" services to be composed from
+    multiple, smaller services. Internal to a participant, connections can be made for the entire service or any one of the
+    subservices, allowing delegation of responsibility for specific parts of the service contract.</font>
+</p>
+<p>
+    <font size="2">A ServiceInterface&nbsp;can fulfill zero or one ServiceContracts by binding the parts of the service
+    contract to the ServiceInterface. Fulfilled contracts&nbsp;can define the functional and nonfunctional requirements for
+    the service interface, the objectives that are intended to be fulfilled by providers of the service, and the value to
+    consumers. In all cases, the specifications of the ServiceContract and the ServiceInterface must not be in
+    conflict.</font>
+</p>
+<p>
+    <font size="2"><font size="2">There is&nbsp;a stylistic difference between specifying service roles and behavior inside
+    of a service interface or in a service contract. In general, the service contract is used for more involved services,
+    such as <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend-ibm/guidances/termdefinitions/composite_service_2B492DE6.html" guid="_Hm7qcIQnEd6pOcahJ5wBfA">composite services</a>,&nbsp;and where a service architecture is being defined.&nbsp;
+    "Standalone" service interfaces with locally-defined behaviors&nbsp;can be used for context independent services.
+    However, there is some overlap in specification capability, and either or both&nbsp;can be used in some
+    cases.</font></font>
+</p>
+<p>
+    <font size="3"><strong>Semantics</strong></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2">A ServiceInterface defines a semantic interface to a Service or
+    Request.&nbsp;It defines&nbsp;the structural and behavioral semantics of the service necessary for consumers to
+    determine if a service typed by a ServiceInterface meets their needs.&nbsp; It also defines what consumers and
+    providers must do to carry out the service. A ServiceInterface defines the information shown in&nbsp;the following
+    table.&nbsp; All the information listed below is not required for every ServiceInterface.</font></font></font>
+</p><br />
+<br />
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+                Function
+            </th>
+            <th id="" scope="col" abbr="">
+                Metadata
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <font size="2">An indication of what the service does or is about</font>
+                </p>
+            </td>
+            <td>
+                <p>
+                    <font size="2">The ServiceInterface name</font>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <font size="2">The service defined by the ServiceInterface that will be provided by any Participant
+                    having a Service typed by the ServiceInterface, or used by a Participant having a Request typed by the
+                    ServiceInterface.</font>
+                </p>
+            </td>
+            <td>
+                <p>
+                    <font size="2">The provided Interfaces containing Operations modeling the capabilities. As in UML2,
+                    provided interfaces are designated using an InterfaceRealization between the ServiceInterface and other
+                    Interfaces.</font>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <font size="2">Any service interaction consumers are expected to provide or consume in order to use or
+                    interact with a Service typed by this ServiceInterface.</font>
+                </p>
+            </td>
+            <td>
+                <p>
+                    <font size="2"><font size="2">Required Interfaces containing Operations modeling the needs. As in UML2,
+                    required interfaces are designated using a Usage between the ServiceInterface and other
+                    Interfaces.</font></font>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <font size="2"><font size="2">The detailed specification of an interaction providing value as part of a
+                    service including:</font></font>
+                </p>
+                <ol>
+                    <li>
+                        <font size="2"><font size="2">Its name, often a verb phrase indicating what it does.</font></font>
+                    </li>
+                    <li>
+                        <font size="2"><font size="2">Any required or optional service data inputs and
+                        outputs.</font></font>
+                    </li>
+                    <li>
+                        <font size="2"><font size="2">Any preconditions consumers are expected to meet before using the
+                        capability.</font></font>
+                    </li>
+                    <li>
+                        <font size="2"><font size="2">Any post conditions consumers participants can expect, and other
+                        providers must provide upon successful use of the service.</font></font>
+                    </li>
+                    <li>
+                        <font size="2"><font size="2">Any exceptions or fault conditions that might be raised if the
+                        capability cannot be provided for some reason even though the preconditions have been
+                        met.</font></font>
+                    </li>
+                </ol>
+            </td>
+            <td>
+                <p>
+                    <font size="2">Each atomic interaction of a ServiceInterface is modeled as an Operation or event
+                    reception in its provided or required Interfaces. From UML2, an Operation has Parameters defining its
+                    inputs and outputs, preconditions and post-conditions, and&nbsp;can raise Exceptions. Operation
+                    Parameters&nbsp;also can be typed by a MessageType.</font>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <font size="2">Any communication protocol or rules that determine when a consumer can use the
+                    capabilities or in what order.</font>
+                </p>
+            </td>
+            <td>
+                <p>
+                    <font size="2">An ownedBehavior of the ServiceInterface. This behavior expresses the expected
+                    interaction between the consumers and providers of services typed by this ServiceInterface. The
+                    ownedBehavior could be any Behavior including Activity, Interaction, StateMachine,
+                    ProtocolStateMachine, or OpaqueBehavior.</font>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <font size="2">Requirements any implementer must meet when providing the service.</font>
+                </p>
+            </td>
+            <td>
+                <p>
+                    <font size="2">This is the same ownedBehavior that defines the consumer protocol just viewed from an
+                    implementation rather than a usage perspective.</font>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <font size="2">Constraints that reflect what successful use of the service is intended to accomplish
+                    and how it would be evaluated.</font>
+                </p>
+            </td>
+            <td>
+                <p>
+                    <font size="2">UML2 Constraints in ownedRules of the ServiceInterface.</font>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <font size="2">Policies for using the service such as security and transaction scopes for maintaining
+                    integrity or recovering from the inability to successfully perform the service or any required
+                    service.</font>
+                </p>
+            </td>
+            <td>
+                <p>
+                    <font size="2">Policies&nbsp;also can be expressed as constraints.</font>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <font size="2">Qualities of service consumers&nbsp;can expect and providers are expected to provide
+                    such as: cost, availability, performance, footprint, suitability to the task, competitive information,
+                    etc.</font>
+                </p>
+            </td>
+            <td>
+                <p>
+                    <font size="2">The OMG QoS specification&nbsp;can be used to model qualities of service constraints for
+                    a ServiceInterface.</font>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <font size="2">A service composed of other services as a composite service.</font>
+                </p>
+            </td>
+            <td>
+                <p>
+                    <font size="2">Service point or request point ports on the service interface.</font>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<p>
+    <font size="2">A ServiceInterface specifies its provided capabilities through InterfaceRealizations. A ServiceInterface
+    can realize any number of Interfaces. Some platform specific models might restrict the number of realized interfaces to
+    at most one. A ServiceInterface specifies its required needs through Usage dependences to Interfaces. These
+    realizations and usages are used to derive the provided and required interfaces of Request and Service ports typed by
+    the ServiceInterface.</font>
+</p>
+<p>
+    <font size="2">The parts of a ServiceInterface are typed by the interfaces realized or used by the ServiceInterface.
+    These parts (or roles)&nbsp;can be used in the ownedBehaviors to indicate how potential consumers and providers of the
+    service are expected to interact. A ServiceInterface&nbsp;can specify communication protocols or behavioral rules
+    describing how its capabilities and needs must be used. These protocols&nbsp;can be specified using any UML2
+    Behavior.</font>
+</p>
+<p>
+    <font size="2">A ServiceInterface&nbsp;can have ownedRules which determine the successful accomplishment of its service
+    goals. An ownedRule is a UML constraint within any namespace, such as a ServiceInterface.</font>&nbsp;<font     size="2"><font size="2"><br />
+    &nbsp;</font></font>
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/participant_soaml_1A392457.html" guid="_zL3kgFbAEd6MCpkuB85p5g">Participant (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/request_point_soaml_DD83CF2.html" guid="_5DYKcFbAEd6MCpkuB85p5g">RequestPoint (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_contract_soaml_E57B30D4.html" guid="_IhtgsFbBEd6MCpkuB85p5g">ServiceContract (SoaML)</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/concepts/service_point_soaml_E250D92A.html" guid="_9jRdMFbAEd6MCpkuB85p5g">ServicePoint (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp_soa-ibm/guidances/examples/service_interface_soaml_EC252D57.html" guid="_dmG_MFbPEd6MCpkuB85p5g">ServiceInterface (SoaML)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    The above definitions were copied from the <a href="http://www.omg.org/spec/SoaML/Current" target="_blank">Service
+    oriented architecture Modeling Language (SoaML) Specification</a> for the UML Profile and Metamodel Services. <a class="elementLinkWithUserText" href="./../../../core.default.release_copyright.extend-ibm/guidances/supportingmaterials/full_soaml_copyright_3B2FB4F3.html" guid="_GHI_gLgYEd6EUtitpj4XQA">View the full copyright notice</a>.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

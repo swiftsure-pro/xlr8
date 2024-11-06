@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Create Test Scripts Using IBM Rational Manual Tester</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="create_man_test_script">
+<meta name="uma.presentationName" content="Create Test Scripts Using IBM Rational Manual Tester">
+<meta name="uma.category" content="Tool:rup_test_manual_tester:IBM Rational Manual Tester">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="IBM Rational Manual Tester">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_dAngsHj0EdyhRNciHt44hg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Create Test Scripts Using IBM Rational Manual Tester</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor describes how to use IBM Rational Manual Tester to create test scripts.</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.tech.common.extend_rmt-ibm/tools/rup_test_manual_tester_D352FA34.html" guid="_7fE8wLWFEdyTM_aghv_1tQ">IBM Rational Manual Tester</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.independent_testing.base-ibm/tasks/implement_test_4938541C.html" guid="_fajSUHE6Edy8Ac588DXPCQ">Develop Test</a>
+</li>
+<li>
+<a href="./../../../practice.tech.independent_testing.base-ibm/tasks/structure_test_implementation_C85B05B7.html" guid="_PSykkHE6Edy8Ac588DXPCQ">Structure the Test Implementation</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Overview
+</h3>
+<p>
+    IBM&reg; Rational&reg; Manual Tester makes it easy to write scripts to test software applications manually. From the Manual
+    Tester Text Editor, you can type instructions (called <i>statements</i>) into a script. Once you begin writing the
+    script, the Text Editor and Outline View allow you to easily organize the statement. In this tool mentor, you will work
+    with four basic statement types, namely:
+</p>
+<ul>
+    <li>
+        Step
+    </li>
+    <li>
+        Verification point
+    </li>
+    <li>
+        Reporting point
+    </li>
+    <li>
+        Groups
+    </li>
+</ul>
+<h3>
+    Tool Steps
+</h3>
+<p>
+    To write a script using Rational Manual Tester, perform the following steps:
+</p>
+<ol>
+    <li>
+        Create a New Script
+    </li>
+    <li>
+        Write a Step in the Text Editor
+    </li>
+    <li>
+        Set a Step as a Verification Point
+    </li>
+    <li>
+        Use the <strong>Set as Group</strong> and <strong>Remove from Group</strong> Features
+    </li>
+    <li>
+        Set a Reporting Point
+    </li>
+</ol>
+<h4>
+    1. Create a New Script
+</h4>
+<ol>
+    <li>
+        To create a new script, start Rational Manual Tester (click <strong>Start &gt; Programs &gt; IBM Rational Manual
+        Tester &gt; IBM Rational Manual Tester</strong>).
+    </li>
+    <li>
+        Close the Welcome page if present.
+    </li>
+    <li>
+        Select <strong>File &gt; New</strong>. By default, the Text Editor prompts you with a "Begin typing test statement
+        here" statement. The Text Editor is where you begin creating all new test scripts.
+    </li>
+    <li>
+        Simply begin typing your test steps here.
+    </li>
+</ol>
+<h4>
+    2. Write a Step in the Text Editor
+</h4>
+<ol>
+    <li>
+        A script consists of a series of steps. To write a step in the Text Editor, place the cursor to the right of the
+        step icon and begin typing.
+    </li>
+    <li>
+        A new statement is created when the enter key is pressed.
+    </li>
+    <li>
+        As you type your step, the Outline View is populated with the same step. This allows you to easily see the
+        structure of your script. This feature is particularly useful when steps in the script are grouped (see Step 4
+        below), and when you are dealing with large test scripts.
+    </li>
+</ol>
+<h4>
+    3. Set a Step as a Verification Point
+</h4>
+<ol>
+    <li>
+        To create a verification point, place the cursor in a statement.
+    </li>
+    <li>
+        On the Manual Tester toolbar, select the <strong>Set as Verification Point</strong> button. The icon changes from a
+        step icon to a verification point icon.
+    </li>
+    <li>
+        During the run of a test, you will have the option of selecting a result of inconclusive, pass, fail, or error for
+        this point. For more details, see the <a class="elementLinkWithType" href="./../../../core.tech.common.extend_rmt-ibm/guidances/toolmentors/run_man_test_script_5D5D9D02.html" guid="_PP4CwHj2EdyhRNciHt44hg">Tool Mentor: Run Test Scripts Using IBM Rational Manual Tester</a>.
+    </li>
+</ol>
+<h4>
+    4. Use the <strong>Set as Group</strong> and <strong>Remove from Group</strong> Features
+</h4>
+<ol>
+    <li>
+        To use the <strong>Set as Group</strong> feature, simply click to the right of the step icon and click the
+        <strong>Set as Group</strong> button. The succeeding step or steps will now be part of a group of statements.
+    </li>
+    <li>
+        To use the <strong>Remove from Group</strong> feature, click on the <strong>Remove from Group</strong> button.
+    </li>
+</ol>
+<p>
+    The grouping feature is an easy way to create logical groups for related steps in your script. Grouping also can become
+    very useful when dealing with complex logic in a script.
+</p>
+<h4>
+    5. Set a Reporting Point
+</h4>
+<p>
+    Reporting points are essentially higher-level verification points. Like verification points, they are also question
+    type steps. The reporting point is usually included in reports. A reporting point might summarize the result of several
+    verification points.
+</p>
+<ol>
+    <li>
+        To create a reporting point, place the cursor in a statement
+    </li>
+    <li>
+        On the Manual Tester toolbar, select the <strong>Set as Reporting Point Type</strong> button.
+    </li>
+</ol>
+<p>
+    For more details on the difference between verification points and reporting points, see the <a class="elementLinkWithType" href="./../../../core.tech.common.extend_rmt-ibm/guidances/toolmentors/vp_report_points_man_test_8027D8E8.html" guid="_ZkS44Hj2EdyhRNciHt44hg">Tool Mentor: When to Use Verification Points versus Reporting Points</a>.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

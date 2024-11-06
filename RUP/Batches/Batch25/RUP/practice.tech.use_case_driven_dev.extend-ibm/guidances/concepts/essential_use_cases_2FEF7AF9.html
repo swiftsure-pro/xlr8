@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Essential Use Cases</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="essential_use_cases">
+<meta name="uma.presentationName" content="Essential Use Cases">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_LTkYsIWZEd2VjsFXvLgOXg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Essential Use Cases</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Use cases that can be described with coarse granularity because they cover well understood areas of the system and are easily agreed to with stakeholders.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.use_case_driven_dev.base/tasks/detail_use_case_scenarios_3DBC6A10.html" guid="_SL7N0LPdEduocbW-TPTq7A">Detail Use-Case Scenarios</a>
+</li>
+<li>
+<a href="./../../../practice.tech.use_case_driven_dev.extend-ibm/guidances/concepts/functional_decomposition_FB535E8B.html" guid="_ituu8H33Ed2eJPu0NyCdUg">Functional Decomposition</a>
+</li>
+<li>
+<a href="./../../../practice.tech.use_case_driven_dev.extend-ibm/guidances/guidelines/strategies_to_avoid_functional_decomposition_411314E7.html" guid="_F5RdwIWaEd2VjsFXvLgOXg">Strategies to Avoid Functional Decomposition</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Essential use cases express the essence of what a software application or system must do to fulfill the goals of its
+    users. They are at the appropriate level of granularity to optimize communication between stakeholders and developers
+    for areas of the system that are already understood by the team and stakeholders.
+</p>
+<p>
+    Essential use cases are brief and exclude detailed specifications. Any detail is usually provided in the scenarios
+    descriptions or test cases.
+</p>
+<p>
+    Essential use cases are:
+</p>
+<ul>
+    <li>
+        User driven, with one use case covering a high level process (series of steps or interactions) that provides an
+        outcome of value to the users of the system.
+    </li>
+    <li>
+        Strongly focus on getting the flow of user interaction right without being tied to the detail, particular
+        technology, or describing the user interface design.
+    </li>
+    <li>
+        Focused on describing <strong>use</strong> and <strong>user interaction</strong>.
+    </li>
+</ul>
+<p>
+    Stakeholders&nbsp;must be able to clearly see how an essential use case achieves their goals for the system, and
+    developers&nbsp;need to&nbsp;better understand the business context for the functions they need to build. This is true
+    of any use case. Essential use cases can make these benefits even clearer because the team requires less information
+    than a fully detailed use case. This emphasis on processes of value means that essential use cases can also be useful
+    in prioritization and planning.
+</p>
+<p>
+    Essential use cases are good for deriving test cases for both user acceptance test (UAT) and system/integration
+    testing. Unit test cases can potentially be spun off from these higher level test cases without significant extra
+    effort.
+</p>
+<p>
+    Characteristics of Essential Use Cases<br />
+    <br />
+</p>
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <td>
+                <strong>Characteristic</strong>
+            </td>
+            <td>
+                <strong>Description</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Inclusion of Create-Read-Update-Delete (CRUD) functions
+            </td>
+            <td>
+                CRUD functionality is a portion of a use case. All of these operations are covered within the Main Flow or
+                Alternate Flows, usually of the same use case.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Actor generalization
+            </td>
+            <td>
+                Actors in the use case model have been well generalized. Generalized Actors are typically users who inherit
+                the same functionality, even though they&nbsp;can hold different job roles or titles, or access a system
+                through different channels.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Value based flows
+            </td>
+            <td>
+                All use cases' basic flows complete a major interaction with the system – a set of steps or process that
+                provides a result of value to the users.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Technology agnostic
+            </td>
+            <td>
+                Use cases are not associated with system or architectural components, and will often include functionality
+                that spans sub-systems or components.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Not a user interface design
+            </td>
+            <td>
+                Use cases are completely independent of user interface implementations. No reference is made to screens or
+                screen elements such as controls or menus.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Many alternate flows
+            </td>
+            <td>
+                Use cases contain many alternate flows. Any exception processing that may occur as a deviation from the
+                basic flow is included as an alternate flow.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                One Use Case can include many scenarios
+            </td>
+            <td>
+                Use cases represent many concrete examples of scenarios. The main flow will cover the most common
+                occurrence, but other scenarios can be derived by following the main flow and branching off into the
+                different alternate flows.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Higher level test cases can be derived
+            </td>
+            <td>
+                Use cases are useful for usability and system/integration testing. These types of tests typically exercise
+                the system from "end to end", rather than just a subset of functionality.
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <br />
+    <strong>References</strong>
+</p>
+<p>
+    <a class="elementLinkWithUserText" href="./../../../core.default.nav_view.base/guidances/supportingmaterials/references_C6FF2A8D.html#CON99" guid="__nHToFndEd2EdJKkAyeBng">[CON99]</a>, <a class="elementLinkWithUserText" href="./../../../core.default.nav_view.base/guidances/supportingmaterials/references_C6FF2A8D.html#BIT02" guid="__nHToFndEd2EdJKkAyeBng">[BIT02]</a>, <a class="elementLinkWithUserText" href="./../../../core.default.nav_view.base/guidances/supportingmaterials/references_C6FF2A8D.html#AMB04" guid="__nHToFndEd2EdJKkAyeBng">[AMB04]</a>
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.use_case_driven_dev.extend-ibm/guidances/concepts/functional_decomposition_FB535E8B.html" guid="_ituu8H33Ed2eJPu0NyCdUg">Functional Decomposition</a>
+</li>
+<li>
+<a href="./../../../practice.tech.use_case_driven_dev.extend-ibm/guidances/concepts/use_case_granularity_E374ADFF.html" guid="_gbZpYH-LEd2zS8U3DVRSmQ">Use Case Granularity</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.use_case_driven_dev.extend-ibm/guidances/guidelines/strategies_to_avoid_functional_decomposition_411314E7.html" guid="_F5RdwIWaEd2VjsFXvLgOXg">Strategies to Avoid Functional Decomposition</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Task: Implement Unit Tests</title>
+<meta name="uma.type" content="Task">
+<meta name="uma.name" content="implement_unit_tests">
+<meta name="uma.presentationName" content="Implement Unit Tests">
+<meta name="uma.category" content="Discipline:development_discipline:Development">
+<meta name="element_type" content="activity">
+<meta name="filetype" content="description">
+<meta name="role" content="Developer">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, '', true, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_BpwvEAqFEd281qfHUnTumw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Task: Implement Unit Tests</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/task.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Implement tests for an entire component so it can be validated prior to integration.</td>
+</tr>
+<tr>
+<td>Disciplines: <a href="./../../core.default.cat_def.base/disciplines/development_discipline_44C02445.html" guid="_iGSHsVZ-EdyIUdvDLLUdeg">Development</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><ul>
+    <li>
+        To implement one or more tests that validate a component
+    </li>
+    <li>
+        To develop tests that can be executed in conjunction with other tests as part of a larger test infrastructure
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Primary Performer:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base/roles/developer_C633AB7.html" guid="_0YDosMlgEdmt3adZL5Dmdw">Developer</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Additional Performers:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base/roles/tester_9859B590.html" guid="_0ZM4MclgEdmt3adZL5Dmdw">Tester</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Mandatory:
+								</span>
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp/workproducts/implementation_AFFEFC46.html" guid="_JqYbgJ01EdyQ3oTO93enUw">Implementation</a>
+</li>
+</ul>
+<ul></ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Optional:
+								</span>
+<ul>
+<li>
+<a href="./../../core.tech.slot.base/workproducts/technical_design_slot_84295A08.html" guid="_IcQOUEqdEdyi3_jfs__bIQ">[Technical Design]</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Outputs</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp/workproducts/developer_test_6A91CE05.html" guid="_kh9FcJ02EdyQ3oTO93enUw">Developer Test</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Unit testing is a brand of developer testing that performs black-box tests on implementation components after they've
+    been implemented and white-box tested. The goal is to assure that a component functions correctly before it's
+    integrated into the rest of the system.
+</p>
+<p>
+    Developer testing is different from other forms of testing in that it is based on the expected behavior of code units
+    rather than being directly based on the system requirements. Use the demands of the design and the existing
+    implementation to understand what needs to be tested.
+</p>
+<p>
+    Members of the integration testing team can provide insight and direction during this task so robust and reusable tests
+    are written. Testers often have a stake in the quality of unit tests as they're often re-used during integration
+    testing.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Steps</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="sectionTableSingleCell">
+<div class="stepHeading">Refine the scope and identify the tests</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><div align="left">
+    Select a single implementation component and identify appropriate tests that will verify all aspects of the externally
+    observable behavior of the component.
+</div>
+<p>
+    Define the following in each developer test:
+</p>
+<ul>
+    <li>
+        Goal: subsystem/component interface validation, implementation validation, reproduce a defect.
+    </li>
+    <li>
+        Scope: subsystem, component, group of components (a single test should focus on a group of components only if they
+        provide the same function).
+    </li>
+    <li>
+        Test details: pre-conditions, post-conditions, set-up requirements (environment), invariants, input/output and
+        execution conditions, observation/control points, clean-up actions.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Select the appropriate testing approach</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><a id="Refine_the_Scope_and_Identify_the_Tests" name="Refine_the_Scope_and_Identify_the_Tests"></a> 
+<div align="left">
+    <p>
+        Choose an automated testing approach whenever possible. In some cases, for example, usability testing, it may be
+        necessary to test manually by&nbsp;following a sequence of instructions that have been documented in the developer
+        test.
+    </p>
+    <p>
+        Define what kind of test will be implemented and document it in the developer test. Possible options are:
+    </p>
+    <ul>
+        <li>
+            Programmed tests, using either the same software programming techniques and environment as the component under
+            test, or less complex programming languages and tools (&nbsp;for example,&nbsp;scripting languages, tcl, shell
+            based, etc).
+        </li>
+        <li>
+            Recorded or captured tests, built by using test automation tools which capture the interactions between the
+            component under test and the rest of the system, and produce the basic tests
+        </li>
+        <li>
+            Generated tests: some aspects of the test, either procedural or the test data, could be automatically generated
+            using more complex test automation tools
+        </li>
+    </ul>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Implement the test</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    Implement all the elements defined previously. Describe each developer test fully, whether it's automated or manual, so
+    someone else can execute the test without supervision. Assure any manual tests include all the steps necessary to
+    complete the test.
+</p>
+<p>
+    Detail the test environment pre-conditions and what are the steps to get the component under test to the state where
+    the tests can be executed successfully. Identify the clean-up steps to be followed in order to restore the environment
+    to the original state. Pay special attention to the implementation of the observation/control points, as these might
+    need special support that has to be implemented in the component under test.<br />
+    <br />
+    Leverage the design and the existing implementation to understand what's expected of the component from a black-box
+    perspective.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Establish external data sets</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><a id="Establish_External_Data_Sets" name="Establish_External_Data_Sets"></a> 
+<div align="left">
+    In most of the cases, decoupling the test data from the developer test leads to a more maintainable solution. If the
+    test's life span is short, hardcoding the data within the test might be more efficient. If many test execution cycles
+    will be needed using different data sets, it's more efficient to store them externally.
+</div>
+<p>
+    The advantages of decouple the test data from the developer test are:
+</p>
+<ul>
+    <li>
+        More than one test could use the same data set.
+    </li>
+    <li>
+        Easy to modify and reuse the test data.
+    </li>
+    <li>
+        Test data could be used to control the conditional branching logic within the test.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Verify the test implementation</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><a id="Verify_the_Test_Implementation" name="Verify_the_Test_Implementation"></a> 
+<div align="left">
+    Test the developer test. Check the environment setup and clean-up instructions. Run the test, observe its behavior and
+    fix the test's defects. If the test will be long-lived, ask a person with less inside knowledge to run it and check if
+    there is enough support information. Review it with other people within the development team and other interested
+    parties.
+</div></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Maintain traceability relationships as needed</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><div align="left">
+    Depending on the level of formality, you may need to maintain traceability relationships between the tests and the
+    components. Document traces in the developer test or an automated tool.
+</div><br /></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../practice.tech.design_driven_implementation.base-ibm/guidances/concepts/developer_testing.ddi_ABB4E66A.html" guid="_-jhzoHBuEd2VAN1Zr5E20w">Developer Testing</a>
+</li>
+<li>
+<a href="./../../practice.tech.design_driven_implementation.base-ibm/guidances/concepts/stubs_DB23FFE6.html" guid="_0letYAwZEd2FmcoR1ME0CA">Stubs</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp/guidances/guidelines/developer_testing_9974EA47.html" guid="_ByOd4O6pEduvoopEslG-4g">Developer Testing</a>
+</li>
+<li>
+<a href="./../../practice.tech.design_driven_implementation.base-ibm/guidances/guidelines/writing_unit_tests_64CB2443.html" guid="_Lmhl4GmKEd2Hj6WvFgtOug">Writing Unit Tests</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tool Mentors</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../practice.tech.design_driven_implementation.base-ibm/guidances/toolmentors/implement_unit_tests_rad_D2CCCC9E.html" guid="_Z6XjMDidEd-aPZEgxsAQbw">Implement Unit Tests using Rational Application Developer</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

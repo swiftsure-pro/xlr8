@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing a Good Architecture</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="developing_good_architecture">
+<meta name="uma.presentationName" content="Developing a Good Architecture">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_2QW_oJ3gEdye5InZC-5rHQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing a Good Architecture</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Use reference architectures, patterns, and good decision making to build a good architecture.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/workproducts/architectural_decisions_BB9D5123.html" guid="_a0vYAM5bEdu7c6SGcTVf1A">Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Use reference architectures and architectural patterns to assist in making decisions.&nbsp; Good architects know to use
+    the work of others when making decisions and "a good architecture is full of patterns".
+</p>
+<p>
+    Some decisions relate to compliance with standards and policies.&nbsp; These need to be taken into account when
+    understanding the context of the problem as well as justifying the decision. Examples of standards and policies which
+    will affect architectural decisions are:
+</p>
+<ul>
+    <li>
+        Security and privacy policies.&nbsp; For example authentication, authorization, auditing and non-repudiation
+        policies.
+    </li>
+    <li>
+        Operations and recovery policy.&nbsp; For example error handling and reporting, recovery and rollback policies.
+    </li>
+    <li>
+        Data management policies. For example persistence, security and privacy policies.
+    </li>
+    <li>
+        Interoperability standards. For example repository interfaces using SQL, JDBC or adapters that interface to legacy
+        systems.
+    </li>
+</ul>
+<p>
+    Making an architectural decision usually depends on experience as well as a thorough understanding of what qualities
+    constitute a good architecture.&nbsp; Here are some properties to be aware of when making an architectural decision:
+</p>
+<ul>
+    <li>
+        Consistency - All parts of the architecture are in harmony, and there are common approaches to partitioning and
+        allocation.
+    </li>
+    <li>
+        Completeness - Everything has been provided.
+    </li>
+    <li>
+        Correctness - Structure and behavior are consistent with governing principles and concepts; there are no ambiguous
+        properties.
+    </li>
+    <li>
+        Well-formedness - The architecture is well defined, and all aspects can be logically related.&nbsp; All
+        descriptions should be precise, accurate, and traceable to formal constructs. All architectural components should
+        be highly cohesive.
+    </li>
+    <li>
+        Orthogonality - Architectural components are independent and loosely coupled.
+    </li>
+    <li>
+        Generality – Architectural components work in other contexts.
+    </li>
+    <li>
+        Extensibility - The architecture can be extended.
+    </li>
+    <li>
+        Transparency - You can use the system without knowing its implementation.
+    </li>
+    <li>
+        Openness – Architectural components can be modified and integrated in alternate ways.
+    </li>
+    <li>
+        Parsimony - There should be "economy of function" and everything should be needed, that is,&nbsp;there is no
+        unnecessary function or redundancy.
+    </li>
+    <li>
+        Simplicity – A good architecture should be "as simple as possible but no simpler."
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

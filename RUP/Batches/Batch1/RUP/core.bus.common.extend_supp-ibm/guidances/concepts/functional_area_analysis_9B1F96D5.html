@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Functional Area Analysis</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="functional_area_analysis">
+<meta name="uma.presentationName" content="Functional Area Analysis">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_fk1woEo1Ed6D_7XK49c0nw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Functional Area Analysis</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Procedure for describing the functional architecture of a business.  The result is a description that includes functional units of the business, the services the units offer and require, and the relationships between the functional units.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.bus.common.extend_supp-ibm/guidances/concepts/business_subsystem_622C6CDE.html" guid="_zfz4kGpmEd6g0_jzBUWUGg">Business Subsystem (or Business Service Interface)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <font size="4"><strong>Introduction</strong></font>
+</p>
+<p>
+    Functional Area Analysis uses&nbsp;a partitioning of the business, such as a functionally-based organizational model,
+    as a starting point or input. Business domains (such as "Marketing and Customer Management") first are
+    identified.&nbsp; These are further decomposed into sub-domains and ultimately into functional areas (such as "Customer
+    Service"). Further analysis, such as business use case analysis and/or business process definition, can be used to
+    identify (1) the services each functional area offers and requires and (2) the required relationships between the
+    functional areas.
+</p>
+<p>
+    To explain the concept of business domain, consider the following simplified example:
+</p>
+<ul>
+    <li>
+        What the Business is selling? -- Products Domain
+    </li>
+    <li>
+        To whom the Business is selling and how to improve it? -- Customer Relationship Management and Marketing Domain
+    </li>
+    <li>
+        When and how to sell? -- Sales Management Domain
+    </li>
+    <li>
+        How to Manage the Business? -- Business Administration Domain
+    </li>
+</ul>
+<p>
+    Functional Area Analysis begins by creating summary descriptions that identify the major high level functional
+    responsibilities of each domain.&nbsp;Next, each domain is decomposed into smaller, more discrete, functional areas.
+    Each functional area is described in terms of the specific functions it is responsible for, as well as functions it
+    depends on during collaborations with other functional areas.&nbsp; So, the taxonomy of the result of a Functional Area
+    Analysis might be as follows:
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img alt="" src="./../../../core.bus.common.extend_supp-ibm/guidances/concepts/resources/faa_concept_1.gif" width="428" height="319" />
+</p>
+<p>
+    As each functional area is being analyzed and described in terms of its functions, it is also analyzed in the larger
+    context of its relationships to other functional areas (that is,&nbsp;the interactions and collaborations among
+    functional areas are identified).&nbsp;
+</p>
+<p>
+    A final step is to identify one or more&nbsp;candidate <a class="elementLinkWithUserText" href="./../../../core.bus.common.extend_supp-ibm/guidances/concepts/business_subsystem_622C6CDE.html" guid="_zfz4kGpmEd6g0_jzBUWUGg">subsystems (or business service interfaces)</a> for each functional area, to aggregate
+    business functions with strong affinity.&nbsp; In many cases there will be a&nbsp;one-to-one relationship between a
+    functional area and its functional aggregations.&nbsp; If&nbsp;multiple aggregations could be required, this is an
+    indication that the functional area might need to be reassessed, split into one or more additional functional areas,
+    each taking on a subset of the original functional area's functions.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.bus.common.extend_supp-ibm/guidances/concepts/business_subsystem_622C6CDE.html" guid="_zfz4kGpmEd6g0_jzBUWUGg">Business Subsystem (or Business Service Interface)</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.bus.common.extend_supp-ibm/guidances/examples/functional_area_analysis_8A424EC8.html" guid="_zrm1sGpiEd6g0_jzBUWUGg">Functional Area Analysis</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

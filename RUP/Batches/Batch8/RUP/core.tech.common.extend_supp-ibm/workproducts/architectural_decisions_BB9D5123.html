@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: Architectural Decisions</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="architectural_decisions">
+<meta name="uma.presentationName" content="Architectural Decisions">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_a0vYAM5bEdu7c6SGcTVf1A"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: Architectural Decisions</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Documents key decisions about the architecture and the rationale behind those decisions.</td>
+</tr>
+<tr>
+<td>Domains: <a href="./../../core.default.cat_def.base/domains/architecture_domain_7028166D.html" guid="_1r0bcK80Edy9cPK11VzBuQ">Architecture</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The purpose of this artifact is to:
+</p>
+<ul type="disc">
+    <li class="MsoNormal"     style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in">
+        <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Ensure there is a single, authoritative source for communicating
+        key decisions made about the architecture</span>
+    </li>
+    <li class="MsoNormal"     style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in">
+        <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Record the rationale and reasoning behind each decision</span>
+    </li>
+    <li class="MsoNormal"     style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in">
+        <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Maintain the overall architectural integrity of the solution by
+        ensuring all decisions are consistent with each other</span>
+    </li>
+    <li class="MsoNormal"     style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in">
+        <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Ensure the same issues are not addressed more than once because
+        the resolution was forgotten</span>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Fulfilled Slots</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.slot.base/workproducts/technical_architecture_slot_FF074CDD.html" guid="_8OD-cLPTEduocbW-TPTq7A">[Technical Architecture]</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Responsible:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base/roles/architect_E7A12309.html" guid="_0X9iEMlgEdmt3adZL5Dmdw">Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Modified By:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base/roles/architect_E7A12309.html" guid="_0X9iEMlgEdmt3adZL5Dmdw">Architect</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tasks</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Input To:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.component_sw_arch.base-ibm/tasks/detail_component_model_5E34A5FD.html" guid="_1P8IEAruEdy5ib8CxgclIA">Detail Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sw_arch.base-ibm/tasks/outline_component_model_AF2CF5E4.html" guid="_xuokgAruEdy5ib8CxgclIA">Outline Component Model</a>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<a href="./../../practice.tech.component_sw_arch.base-ibm/tasks/envision_the_architecture_D65C0EAD.html" guid="_O7aXoIA_Ed2wUZeNbIIc3w">Envision the Architecture</a>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<a href="./../../practice.tech.independent_testing.base-ibm/tasks/define_test_approach_60A35452.html" guid="_s_hlIHE4Edy8Ac588DXPCQ">Define Test Strategy</a>
+</li>
+<li>
+<a href="./../../practice.tech.evolutionary_design.base/tasks/design_solution_A97CE9EA.html" guid="_0fshwMlgEdmt3adZL5Dmdw">Design the Solution</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design.base-ibm/tasks/detail_logical_data_model_2C3DDB31.html" guid="_FDafkAo5Edygr55FhBZqVw">Detail Logical Data Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sw_arch.base-ibm/tasks/detail_operational_model_3E7A0EE1.html" guid="_ZU-WcCsQEd-pq9tGZ00Zeg">Detail the Operational Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design.base-ibm/tasks/develop_physical_database_design_3AB5F1C6.html" guid="_7CyLUAo8Edygr55FhBZqVw">Develop Physical Database Design</a>
+</li>
+<li>
+<a href="./../../practice.tech.independent_testing.base-ibm/tasks/identify_testability_mechanisms_9F8510DF.html" guid="_A6C9YHE6Edy8Ac588DXPCQ">Identify Testability Mechanisms</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design.base-ibm/tasks/outline_logical_data_model_AD31F6F5.html" guid="_8eAI8Ao4Edygr55FhBZqVw">Outline Logical Data Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sw_arch.base-ibm/tasks/outline_operational_model_80D7B2CF.html" guid="_5XftVysPEd-pq9tGZ00Zeg">Outline the Operational Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.independent_testing.base-ibm/tasks/structure_test_env_configuration_431EBC72.html" guid="_Ij_xUHE6Edy8Ac588DXPCQ">Structure Test Environment Configuration</a>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<a href="./../../practice.tech.test_mgmt.base-ibm/tasks/agree_on_mission_D7A2608C.html" guid="_M1GygH97Ed27jvxgc9zKew">Agree on the Testing Mission</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/assemble_deployment_packages_AC572130.html" guid="_jwd2OCilEd-pq9tGZ00Zeg">Assemble Deployment Packages</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/detail_deployment_plan_84EADECA.html" guid="_Dc1EwINnEd6ZssFTs4b4Eg">Detail Deployment Plan</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/detail_system_management_plan_E3A12E0.html" guid="_L0rggINnEd6ZssFTs4b4Eg">Detail System Management Plan</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sw_arch.base-ibm/tasks/document_architectural_decisions_7F497455.html" guid="_CX_ZsELlEdybnqCALzDDDA">Document Architectural Decisions</a>
+</li>
+<li>
+<a href="./../../practice.tech.independent_testing.base-ibm/tasks/identify_targets_test_4C52E66F.html" guid="_XL4SoHE4Edy8Ac588DXPCQ">Identify Targets of Test</a>
+</li>
+<li>
+<a href="./../../practice.tech.independent_testing.base-ibm/tasks/identify_test_ideas_D97DA26C.html" guid="_eS9qEHE4Edy8Ac588DXPCQ">Identify Test Ideas</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/outline_system_management_plan_18D7F2F0.html" guid="_L0rggYNnEd6ZssFTs4b4Eg">Outline System Management Plan</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.iterative_dev.base/tasks/plan_iteration_957C90DC.html" guid="_0keUEMlgEdmt3adZL5Dmdw">Plan Iteration</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/specify_deployment_packaging_68EE29D9.html" guid="_tvllYHlwEd-Nfb-IE3I5eQ">Specify Deployment Packaging</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Output From:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.component_sw_arch.base-ibm/tasks/detail_component_model_5E34A5FD.html" guid="_1P8IEAruEdy5ib8CxgclIA">Detail Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sw_arch.base-ibm/tasks/document_architectural_decisions_7F497455.html" guid="_CX_ZsELlEdybnqCALzDDDA">Document Architectural Decisions</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sw_arch.base-ibm/tasks/envision_the_architecture_D65C0EAD.html" guid="_O7aXoIA_Ed2wUZeNbIIc3w">Envision the Architecture</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sw_arch.base-ibm/tasks/outline_component_model_AF2CF5E4.html" guid="_xuokgAruEdy5ib8CxgclIA">Outline Component Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
+    This artifact documents key architectural decisions and the rationale behind those decisions.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Brief Outline</th><td class="sectionTableCell"><p class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+    The Architectural Decisions artifact contains the following sections:&nbsp;<br />
+    &nbsp;
+</p>
+<ul>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>Summary and Status</strong> - summarizes all decisions and their status
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>Architecturally Significant Requirements</strong> - lists requirements that must be implemented to
+            realize the architecture
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>Architectural Constraints</strong> - lists any constraints on the way developers must build the system
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>Reusable Assets</strong> - lists any potentially reusable assets; notes whether each asset is to be
+            used as-is, enhanced, or not used; cites reasons for each decision
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>Architectural Mechanisms</strong> - lists the architectural mechanisms and describes the current state
+            of each one
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>General Findings and Recommendations</strong> - lists any other decisions
+        </div>
+    </li>
+</ul>
+<p>
+    Capture the following information for each architectural decision:<br />
+    <br />
+</p>
+<ul>
+    <li>
+        <strong>Problem</strong> - What is being decided or the issue that is being addressed.
+    </li>
+    <li>
+        <strong>Assumptions</strong> - What is believed to be true about the context of the problem.
+    </li>
+    <li>
+        <strong>Motivation</strong> - Why this decision is important.
+    </li>
+    <li>
+        <strong>Alternatives</strong> - A list of options considered and explanations.
+    </li>
+    <li>
+        <strong>Decision</strong> - The decision taken, possibly with references to related artifacts.
+    </li>
+    <li>
+        <strong>Justification</strong> - Why the decision was made together with reference to any supporting principles and
+        explanations of deviations from compliance.<br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Templates</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/templates/architectual_decisions_formal_C8324FAA.html" guid="_JMIQADetEdyrF6K2SkiByg">Architectural Decisions (formal)</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/examples/architectural_decisions_2664E7E2.html" guid="_5pNfQDetEdyrF6K2SkiByg">Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Some important considerations for making and implementing architectural decisions:<br />
+</p>
+<ul>
+    <li>
+        Make sure the process for making decisions has the right level of sponsorship necessary to enforce those decisions
+    </li>
+    <li>
+        Make architecturally significant decisions early and be sure to validate high risk decisions using an executable
+        architecture
+    </li>
+    <li>
+        Review and update architectural decisions as development progresses and update this artifact so it reflects any
+        changes to your decisions
+    </li>
+    <li>
+        It is not necessary to document every minute decision you make when developing the architecture; focus on those
+        that are controversial or are based on reasoning that is not obvious<br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell"><p>
+    If architectural decisions are not recorded, we may see one or more of the following problems:<br />
+</p>
+<ul>
+    <li>
+        Different parties may make decisions more than once, and the decision may be different each time
+    </li>
+    <li>
+        You may have difficulty getting closure on controversial decisions due to unclear rationale
+    </li>
+    <li>
+        Decisions may be inconsistent or contradict other decisions
+    </li>
+    <li>
+        New people on the project may take longer to understand the architecture<br />
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell"><p>
+    When an architecture is under development, there are virtually no reasons not to record architectural decisions. This
+    artifact is not needed if the decisions have been captured elsewhere, but be sure you have captured the additional
+    information such as rationale and options considered.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Representation Options</th><td class="sectionTableCell"><p>
+    You may simply document Architectural Decisions as free format text with headings like problem, alternatives,
+    resolution, and justification.&nbsp;A tabular format in a document or spreadsheet is an effective way to organize
+    Architectural Decisions. A more sophisticated option is to use databases, collaboration tools, or requirements
+    management tools.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Checklists</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/checklists/architectural_decisions_8E0A246E.html" guid="_Dj7t4DesEdyrF6K2SkiByg">Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/guidelines/developing_good_architecture_7152ADD0.html" guid="_2QW_oJ3gEdye5InZC-5rHQ">Developing a Good Architecture</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/estimationconsiderations/architectural_decisions_BCB88E5D.html" guid="_qMfIADesEdyrF6K2SkiByg">Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

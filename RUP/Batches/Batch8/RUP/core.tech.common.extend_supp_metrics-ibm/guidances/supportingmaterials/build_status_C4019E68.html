@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Build Status</title>
+<meta name="uma.type" content="SupportingMaterial">
+<meta name="uma.name" content="build_status">
+<meta name="uma.presentationName" content="Build Status">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_AKYkoNe-Ed60WbHkY9gMng"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Build Status</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/resources/compassl.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This metric tracks product build statistics.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p>
+    Build Status helps the team review product builds statistics, such as the number of attempted builds, the number that
+    were successful, and the number that failed.
+</p>
+<p>
+    Build status is an indicator of project health. Impacts of failed builds include:
+</p>
+<ul>
+    <li>
+        Development blockages - New code cannot be integrated and tested. Developers have to devote time to debug the
+        build, impacting overall productivity.
+    </li>
+    <li>
+        Less Frequent Integration - When builds frequently fail, the continuous integration cycle is impacted. Developers
+        wait longer to integrate their code, and the risk of introducing more integration issues increases.
+    </li>
+    <li>
+        Inability to Assess Progress/ Status - Developers may be creating code, but broken builds limit the ability of the
+        team to measure their true progress.
+    </li>
+</ul>
+<p>
+    Monitoring trends in Build Status over time helps the team identify how successfully they are adopting continuous
+    integration best practices.
+</p>
+<h3>
+    Definition
+</h3>
+<p>
+    Count (in each iteration):
+</p>
+<ul>
+    <li>
+        Number of Failed builds
+    </li>
+    <li>
+        Number of Passed builds
+    </li>
+    <li>
+        Number of Attempted builds
+    </li>
+</ul>
+<h3>
+    Analysis
+</h3>
+<p>
+    A good way to monitor Build Status is with a bar chart. Plot the number of Failed, Passed, and Attempted builds on the
+    Y axis and iterations on the X axis.
+</p>
+<p>
+    <strong>Expected trend</strong> - The number of attempted builds equals the number of passed builds.&nbsp; This trend
+    remains stable or, the number of passed builds is increasing.
+</p>
+<p>
+    <strong>Number of passed builds decreases over time</strong> - Make sure the code has been tested before build
+    integration. Perform impact analysis to identify all dependencies.
+</p>
+<p>
+    Generally a high or increasing number of failures (especially later in a project cycle) might be indicating a problem
+    that should be investigated. Confirm that developers are integrating small change sets frequently, following best
+    practices of Continuous Integration. Automate the build process so that it is fast and repeatable and so that issues
+    are identified and conveyed to the appropriate person for resolution as quickly as possible.
+</p>
+<p>
+    Following is an example of a Build Status chart,&nbsp;which shows the&nbsp;number of builds passed and failed.
+</p>
+<p>
+    <img alt="Build Status" src="./../../../core.tech.common.extend_supp_metrics-ibm/guidances/supportingmaterials/./resources/build_status.gif" width="582" height="298" />
+</p><br />
+<h3>
+    Frequency and reporting
+</h3>
+<p>
+    Build status data should be collected each day of the iteration and reviewed during the iteration assessment to help
+    identify trends.
+</p>
+<h3>
+    Collection and reporting tools
+</h3>
+<p>
+    IBM&reg; Rational&reg; Team Concert&reg;collects Build Status data.&nbsp;IBM&reg; Rational&reg; Insight&reg; reports on this metric.
+</p><br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

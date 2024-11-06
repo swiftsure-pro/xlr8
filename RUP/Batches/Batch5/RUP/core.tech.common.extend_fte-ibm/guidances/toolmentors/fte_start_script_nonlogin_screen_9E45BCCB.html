@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Starting a Script from a Non Login Screen Using Rational Functional Tester Extension</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="fte_start_script_nonlogin_screen">
+<meta name="uma.presentationName" content="Starting a Script from a Non Login Screen Using Rational Functional Tester Extension">
+<meta name="uma.category" content="Tool:rup_functional_tester_extension:IBM Rational Functional Tester Extension">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="IBM Rational Functional Tester Extension">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_mhPCsHjxEdyhRNciHt44hg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Starting a Script from a Non Login Screen Using Rational Functional Tester Extension</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor describes how to start a script from non-login screen using Rational Functional Tester Extension.</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.tech.common.extend_fte-ibm/tools/rup_functional_tester_extension_61EB7E6.html" guid="_VlMxELWGEdyTM_aghv_1tQ">IBM Rational Functional Tester Extension</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.independent_testing.base-ibm/tasks/implement_test_4938541C.html" guid="_fajSUHE6Edy8Ac588DXPCQ">Develop Test</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Overview
+</h3>
+<p>
+    Rational Functional Tester Extension for Terminal-based Applications (FTE) is used to automate the testing of MVS, VM,
+    OS/400 and Unix host applications.&nbsp; This tool mentor assumes you have installed the Rational Functional Tester
+    Extension and have some familiarity with Rational Functional Tester (RFT).
+</p>
+<p>
+    You may want to create a host test script that does not login to the host; for example, for&nbsp;security
+    reasons.&nbsp;This tool mentor describes how to create a script from a non-login screen; that is, a script that is
+    intended to run after the connection to the host has been established.
+</p>
+<h4>
+    Tool Steps
+</h4>
+<ol>
+    <li>
+        Begin the script creation by&nbsp;launching&nbsp;FTE from a Rational Functional Tester project outside of recording
+        a test script.
+    </li>
+    <li>
+        Enter&nbsp;your host connection parameters and connect to the host system.
+    </li>
+    <li>
+        Once the connection is successful, login to&nbsp;your host system.
+    </li>
+    <li>
+        Navigate to&nbsp;the first screen&nbsp;you want to test.
+    </li>
+    <li>
+        With the FTE window still open, start recording a script within Rational Functional Tester by pressing the "Record
+        a Functional Test Script" button.
+    </li>
+    <li>
+        Next, place the&nbsp;focus on the FTE&nbsp;window and perform the host actions you want to test.&nbsp;
+    </li>
+    <li>
+        Logoff from the host and close the FTE window.
+    </li>
+    <li>
+        You may now stop recording of the script.
+    </li>
+    <li>
+        To run the script, launch FTE again.
+    </li>
+    <li>
+        Start a connection to the same host, log into your host system, and navigate to the screen where the script starts.
+    </li>
+    <li>
+        You may now&nbsp;run the script.
+    </li>
+</ol></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

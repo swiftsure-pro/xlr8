@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Tool Assisted Manual Testing</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="tool_assist_manual_testing">
+<meta name="uma.presentationName" content="Tool Assisted Manual Testing">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_J9eCQHHVEdyzS55ez-koKA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Tool Assisted Manual Testing</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline addresses how you can apply automated testing principles to your manual testing.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    The reality of most testing efforts is that there is a little of both manual and automated testing involved. Rarely is
+    testing ever completely manual or completely automated. The truth is that each approach has its own advantages and
+    disadvantages. However, manual testing often gets short shrift. It is often described as being error-prone, incapable
+    of dealing with repetitive testing tasks efficiently, incapable of providing reuse of testing content, not exhaustive,
+    and hard to organize.
+</p>
+<p>
+    This criticism arises in large part from equating manual testing with "testing by hand" or, at best, "testing with
+    Excel&reg;". Recent advances in manual testing tooling, though, have dramatically changed the testing landscape. Such
+    advances allow the tester to employ testing techniques that have until recently only been the concern of the automated
+    testing world. This guideline addresses some of the more prevalent techniques used in the manual testing tooling world.
+</p>
+<h3>
+    Tool-Assisted Manual Testing
+</h3>
+<p>
+    One of the main problems with manual testing is that it is difficult to enforce a standard approach to testing. Without
+    any way of enforcing how you design, run, and analyze tests, the manual testing effort can easily degenerate into a
+    myriad of loosely related files and file types, test data, and ad-hoc reporting formats. A manual testing tool enforces
+    a consistent approach to testing by allowing for script editing, test content reuse, and a consistent test execution
+    mechanism, all from one testing environment.
+</p>
+<p>
+    When designing manual tests, what you need in many cases is the ability to group tests, and have these groupings easily
+    updated and managed. Manual testing tools can enforce a grouping mechanism on your tests. Ideally, a manual testing
+    tool also lets you easily categorize parts of your test into groups. If at some point certain parts of your test no
+    longer need to be grouped, you can easily ungroup test steps as well.
+</p>
+<p>
+    Another major area of concern for manual testing involves executing test scripts. Running a manual test can require a
+    lot of testing resources just to control and track test scripts. This can easily lead to errors introduced in the
+    testing effort. Usually these errors are difficult to identify, and they can require additional resources to track
+    down. With a manual testing tool, the script execution is controlled by the tracking mechanism of the tool. Although
+    the script itself is not run in an automated sense, the way the tester progresses from step to step can be tracked and
+    controlled by the tool.
+</p>
+<p>
+    With tool-assisted manual testing, you can also avail yourself of one of the most powerful aspects of automated
+    testing, namely, reusing test content. A manual testing tool provides a way to reuse test content, preferably in the
+    form of test script content that naturally serves as steps that can be applied to other test scripts.
+</p>
+<p>
+    Much of your time as a tester is spent reviewing test results. In a purely manual testing environment, this can be
+    difficult and time-consuming. Manually maintaining test scripts and test logs can be a daunting task. A manual testing
+    tool can provide a test execution log that usually is accessible through the testing tool itself. The manual testing
+    tool allows you to organize the test logs and analyze them from within one testing environment.
+</p>
+<h3>
+    Summary
+</h3>
+<p>
+    A manual testing approach, supported by the appropriate tool, can include many of the same concepts used in an
+    automated testing approach. Clearly, there are differences. Moreover, there are cases that are naturally more suited to
+    an automated approach, just as there are ones more suited to a manual testing approach. However, simply because a test
+    is manual does not mean that it cannot be designed, run, and analyzed methodically. Automated testing techniques --
+    such as script reuse, grouping mechanisms, and enforcement of a common test run and analysis approach -- need not apply
+    only to the world of automated testing.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Stubs</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="stubs">
+<meta name="uma.presentationName" content="Stubs">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_z9RuwI5LEd2Wvsa4iN6Ysg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Stubs</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Examples of stubs for different circumstances.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.design_driven_implementation.base-ibm/guidances/concepts/developer_testing.ddi_ABB4E66A.html" guid="_-jhzoHBuEd2VAN1Zr5E20w">Developer Testing</a>
+</li>
+<li>
+<a href="./../../../practice.tech.design_driven_implementation.base-ibm/guidances/concepts/stubs_DB23FFE6.html" guid="_0letYAwZEd2FmcoR1ME0CA">Stubs</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Unless the stubs were constructed because the real component wasn't available yet, you should expect to retain them
+    past deployment. The tests they support will likely be important during product maintenance. Stubs, therefore, need to
+    be written to higher standards than throwaway code. While they don't need to meet the standards of product code - for
+    example, most do not need a test suite of their own - later developers will have to maintain them as components of the
+    product change. If that maintenance is too hard, the stubs will be discarded, and the investment in them will be lost.
+</p>
+<p>
+    Especially when they're to be retained, stubs alter component design. For example, suppose your component will use a
+    database to store key/value pairs persistently. Consider two design scenarios:
+</p>
+<p>
+    <b>Scenario 1: The database is used for testing as well as for normal use</b>. The existence of the database needn't be
+    hidden from the component. You might initialize it with the name of the database:
+</p>
+<p>
+    <!--webbot bot="HTMLMarkup" startspan -->
+</p>
+<pre>
+public Component(<b>
+<font color="#ff0000">
+String databaseURL</font></b>) 
+{
+try 
+{  
+databaseConnection = DriverManager.getConnection(databaseURL);
+... 
+} catch (SQLException e) {...}     
+}
+</pre>
+<!--webbot bot="HTMLMarkup" endspan --><br />
+And, while you wouldn't want each location that read or wrote a value to construct a SQL statement, you'd certainly have
+some methods that contain SQL. For example, component code that needs a value might call this component method: <br />
+<!--webbot bot="HTMLMarkup" startspan -->
+<pre>
+public String get(String key) 
+{ 
+try 
+{     
+Statement stmt = databaseConnection.createStatement();
+ResultSet rs = stmt.executeQuery(<b>
+<font color="#ff0000">
+"SELECT value FROM Table1 WHERE key=" + key</font></b>);           
+... 
+} catch (SQLException e) {...} 
+}
+</pre>
+<!--webbot bot="HTMLMarkup" endspan --><br />
+<b>Scenario 2: For testing, the database is replaced by a stub.</b> The component code should look the same whether it's
+running against the real database or the stub. So it needs to be coded to use methods of an abstract interface: <br />
+<!--webbot bot="HTMLMarkup" startspan -->
+<pre>
+<b>
+<font color="#ff0000">
+interface KeyValuePairs</font></b> 
+{ 
+String <b>
+<font color="#ff0000">
+get</font></b>(String key);
+void <b>
+<font color="#ff0000">
+put</font></b>(String key, String value);
+}
+</pre>
+<!--webbot bot="HTMLMarkup" endspan --><br />
+Tests would implement <b>KeyValuePairs</b> with something simple like a hash table: <br />
+<!--webbot bot="HTMLMarkup" startspan -->
+<pre>
+<b>
+<font color="#ff0000">
+class FakeDatabase implements KeyValuePairs</font></b>  
+{ 
+Hashtable table = new Hashtable(); 
+public String <b>
+<font color="#ff0000">
+get</font></b>(String key) {return (String) table.get(key); } 
+public void <b>
+<font color="#ff0000">
+put</font></b>(String key, String value) {table.put(key, value); }
+}
+</pre>
+<!--webbot bot="HTMLMarkup" endspan -->When it is not being used in a test, the component would use an adapter object that
+converted calls to the <font size="+0">KeyValuePairs</font> interface into SQL statements: <br />
+<!--webbot bot="HTMLMarkup" startspan -->
+<pre>
+<b>
+<font color="#ff0000">
+class DatabaseAdapter implements KeyValuePairs</font></b> 
+{ 
+private Connection databaseConnection; 
+public DatabaseAdapter(String databaseURL) 
+{     
+try 
+{         
+databaseConnection = DriverManager.getConnection(databaseURL);
+...     
+} catch (SQLException e) {...} 
+} 
+public String <b>
+<font color="#ff0000">
+get</font></b>(String key) 
+{     
+try 
+{         
+Statement stmt = databaseConnection.createStatement();         
+ResultSet rs = stmt.executeQuery("SELECT value FROM Table1 WHERE key=" + key);         
+...     
+} catch (SQLException e) {...} 
+} 
+public void <b>
+<font color="#ff0000">
+put</font></b>(String key, String value) {... }     
+}
+</pre>
+<!--webbot bot="HTMLMarkup" endspan --><br />
+Your component might have a single constructor for both tests and other clients. That constructor would take an object that
+implements <font size="+0">KeyValuePairs</font>. Or it might provide that interface only for tests, requiring that ordinary
+clients of the component pass in the name of a database: <br />
+<!--webbot bot="HTMLMarkup" startspan -->
+<!-- START NON-TRANSLATABLE -->
+<pre>
+class Component 
+{ 
+<b>
+<font color="#ff0000">
+public</font></b> Component(String databaseURL) 
+{     
+this.valueStash = new DatabaseAdapter(databaseURL); 
+} // For testing. <b>
+<font color="#ff0000">
+protected</font></b> 
+Component(KeyValuePairs valueStash) 
+{     
+this.valueStash = valueStash; 
+}     
+}
+<!-- END NON-TRANSLATABLE -->
+</pre>
+<!--webbot bot="HTMLMarkup" endspan --><br />
+So, from the point of view of client programmers, the two design scenarios yield the same API, but one is more readily
+testable. (Some tests might use the real database and some might use the stub database.)</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.design_driven_implementation.base-ibm/guidances/concepts/stubs_DB23FFE6.html" guid="_0letYAwZEd2FmcoR1ME0CA">Stubs</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

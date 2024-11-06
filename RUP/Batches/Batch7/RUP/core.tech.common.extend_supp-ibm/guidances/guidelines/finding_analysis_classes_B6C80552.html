@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Finding Analysis Classes</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="finding_analysis_classes">
+<meta name="uma.presentationName" content="Finding Analysis Classes">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_QanxsIBtEd2z9IawWqZSFw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Finding Analysis Classes</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline explains how to identify and use the three types of analysis classes: Boundary, control, and entity classes.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.component_sw_arch.base-ibm/tasks/outline_component_model_AF2CF5E4.html" guid="_xuokgAruEdy5ib8CxgclIA">Outline Component Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">By finding <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/analysis_class_DA9AF873.html" guid="_vKGosIBrEd2z9IawWqZSFw">Analysis Classes</a>, you outline the key elements in a system. These elements evolve
+quickly, and remain fluid as you explore different ways to incorporate them into your architecture. Formal documentation
+can impede this process, so be careful how much energy you expend on maintaining this model in a formal sense; you can
+waste a lot of time polishing a model that is largely expendable. Analysis classes rarely survive in the architecture
+unchanged. Many of them represent whole collaborations of objects, often encapsulated by subsystems.<br />
+<p>
+    <strong><font size="3"><font size="4">Finding boundary classes</font><br />
+    </font></strong>
+</p>
+<p>
+    A boundary class remediates the interface to something outside the system. Boundary classes insulate the system from
+    changes in the surroundings (changes in interfaces to other systems, changes in user requirements, and so on), keeping
+    these changes from affecting the rest of the system. Typical types of boundary classes include user interface, system
+    interface, and device interface elements.<br />
+</p>
+<p>
+    Model boundary classes according to what kind of boundary they represent. Communication with another system and
+    communication with a user (through a user interface) have very different objectives. For communication with a user, the
+    most important concern is how the system presents the interface to the user. For communication with another system, the
+    most important concern is the communication protocol.<br />
+</p>
+<p>
+    <strong>Find user interface classes<br />
+    </strong>
+</p>
+<p>
+    Define one boundary class for each "conversation" between the system and a user. This class has the responsibility for
+    coordinating the interaction with the user. You may also define subsidiary boundary classes, to which the primary
+    boundary class delegates some of its responsibilities. This is particularly true for window-based GUI applications,
+    where you may model one boundary class for each window or form. Only model the key abstractions of the system; do not
+    model every button, list, and widget in the GUI. The goal of using analysis classes is to form a good picture of how
+    the system is composed, not to capture every last detail.<br />
+</p>
+<p>
+    <strong>Find system interface classes<br />
+    </strong>
+</p>
+<p>
+    A boundary class that communicates with an external system is responsible for managing the exchange of information with
+    the external system: it provides the interface to that system.<br />
+</p>
+<p>
+    For example, in an Automated Teller Machine, withdrawal of funds must be verified through the ATM Network, a system
+    that verifies the withdrawal with the bank accounting system. A class called ATM Network Interface captures all of the
+    behavior related to communication with the ATM Network.<br />
+</p>
+<p>
+    The interface to an existing system may already be well-defined. If so, derive the responsibilities directly from the
+    interface definition. If a formal interface definition exists, you do not need to formally define it here. Simply make
+    note that the existing interface will be reused.<br />
+</p>
+<p>
+    <strong>Find device interface classes<br />
+    </strong>
+</p>
+<p>
+    The system may contain external devices (such as sensor equipment) that change value spontaneously without any object
+    in the system affecting them. You need to consider the source for all external events, and make sure that you have a
+    way for the system to detect these events.<br />
+</p>
+<p>
+    For each device, create a boundary class to capture its responsibilities. If there is a well-defined interface already
+    existing for the device, make note of it for later reference.<br />
+</p>
+<p>
+    <strong><font size="4">Finding control classes</font><br />
+    </strong>
+</p>
+<p>
+    Control classes provide coordinating behavior in the system. Complex requirements generally require one or more control
+    classes to coordinate the behavior of other objects in the system. Requirements that involve only the simple
+    manipulation of stored information may not require control objects: they can just use entity and boundary
+    objects.<br />
+</p>
+<p>
+    Use control classes to model behavior that:<br />
+</p>
+<ul>
+    <li>
+        Is independent of surroundings;
+    </li>
+    <li>
+        Defines control logic (order between events);
+    </li>
+    <li>
+        Changes little if the internal structure or behavior of entity classes change;
+    </li>
+    <li>
+        Uses or sets the contents of several entity classes, and therefore needs to coordinate their behavior;
+    </li>
+    <li>
+        Is not performed in the same way every time that it is activated.
+    </li>
+</ul>
+<p>
+    Start by identifying one control class for each scenario of system use.<br />
+</p>
+<p>
+    <strong>Determine whether you need a control class<br />
+    </strong>
+</p>
+<p>
+    For each flow of system events, start by investigating if the flow can be handled by the already identified boundary
+    and entity classes. For simple flows of events that primarily enter, retrieve and display, or modify information, a
+    separate control class is not usually justified; the boundary classes should be responsible for coordinating
+    behavior.<br />
+</p>
+<p>
+    Use a separate control class when behavior is complex and dynamic, and may change independently from the interfaces
+    (boundary classes) or information stores (entity classes). By encapsulating a particular flow of events, you can
+    potentially reuse the same control class for a variety of systems that may have different interfaces and different
+    information stores.<br />
+</p>
+<p>
+    <strong>Divide complex classes along lines of similar responsibilities<br />
+    </strong>
+</p>
+<p>
+    Consider a requirement to manage a queue of tasks. You may identify a control class to handle the queue of tasks,
+    ensuring that tasks execute in the right order. It performs the next task in the queue as soon as suitable resources
+    are available. The system can therefore perform several tasks at the same time.<br />
+</p>
+<p>
+    This control object is easier to describe if you split it into two control classes:<br />
+</p>
+<ul>
+    <li>
+        A <strong>Queue Handler</strong> object handles only the queue order and the allocation of transportation
+        equipment. One Queue Handler object manages the whole queue. As soon as the system needs to perform a task, it
+        creates a new Task Performer object.
+    </li>
+    <li>
+        A <strong>Task Performer</strong> object performs tasks. One Task Performer object handles each task the system
+        performs.
+    </li>
+</ul>
+<p>
+    The principal benefit of this split is to separate queue handling responsibilities (something generic to many
+    circumstances) from the specific tasks of task management, which are specific to this scenario. This makes the classes
+    easier to understand, and easier to adapt as the system matures.<br />
+</p>
+<p>
+    <strong>Separate the main flow of events from alternative or exceptional flows of events<br />
+    </strong>
+</p>
+<p>
+    To simplify changes, encapsulate the main flow of events and alternative flows of events in different control classes.
+    If alternative and exception flows are completely independent, separate them from each other as well. This makes the
+    system easier to extend and maintain over time.<br />
+</p>
+<p>
+    <strong>Divide control classes where two actors share the same control class<br />
+    </strong>
+</p>
+<p>
+    Control classes may also need to be divided when several actors (elements outside the system that interact with the
+    system) use the same control class. By doing this, you isolate changes in the requirements of one actor from the rest
+    of the system. In cases where the cost of change is high, identify all of the control classes related to more than one
+    actor and divide them. In the ideal case, each control class should interact (via some boundary object) with one actor
+    or none at all.<br />
+</p>
+<p>
+    You do not have to divide a control class if:
+</p>
+<ul>
+    <li>
+        You can be reasonably sure that the behavior of the actors related to the control class will never change, or
+        change very little.
+    </li>
+    <li>
+        The behavior of the control class toward one actor is very insignificant compared with its behavior toward another
+        actor. In this case, a single class can hold all of the behavior. Combining behavior in this way will have a
+        negligible effect on maintainability.<br />
+    </li>
+</ul>
+<p>
+    For example, consider the requirement to handle local phone calls in a telephone system.
+</p>
+<p>
+    In a local phone call, there are two actors:<br />
+</p>
+<ul>
+    <li>
+        <strong>A-subscriber</strong> initiates the call. This subscriber lifts the receiver, hears the dial tone, and then
+        dials a number of digits, which the system stores and analyzes. When the system has received all of the digits, it
+        sends a ringing tone to A-subscriber, and a ringing signal to B-subscriber.
+    </li>
+    <li>
+        <strong>B-subscriber</strong> receives the call. When B-subscriber hears the ringing tone and answers the call, the
+        tone and the signal stop, and the conversation between the subscribers can begin.
+    </li>
+</ul>
+<p>
+    The call ends when both subscribers hang up.<br />
+</p>
+<p>
+    Initially, you may identify a control class to manage the call itself. However, two behaviors must be controlled: what
+    happens on A-subscriber's end and what happens on B-subscriber's end. For this reason, split the original control
+    object into two control objects, A-behavior and B-behavior.<br />
+</p>
+<p>
+    <strong><font size="4">Finding entity classes</font><br />
+    </strong>
+</p>
+<p>
+    Entity classes represent stores of information in the system. They are typically used to represent the key concepts
+    that the system manages. Entity objects are frequently passive and persistent. Their main responsibilities are to store
+    and manage information in the system.<br />
+</p>
+<p>
+    If your requirements have a glossary or a business-domain model, use this as a source of inspiration for entity
+    classes.<br />
+</p>
+<p>
+    If the concept you wish to model is not used by any other class, you can model it as an attribute of an entity class,
+    or even as a relationship between entity classes. If any other class uses it, model it as a class.<br />
+</p>
+<p>
+    <strong>Enforcing consistency<br />
+    </strong>
+</p>
+<p>
+    When you identify a new behavior, check to see if an existing class has similar responsibilities, reusing classes where
+    possible. Only create new classes when you are sure that no existing object can perform the behavior.<br />
+    <br />
+    As you identify classes, examine them to ensure that they have consistent responsibilities. When class responsibilities
+    are disjoint, split the object into two or more classes.<br />
+    <br />
+    A class with only one responsibility is not a problem, but it should raise questions about why you need it. Challenge
+    and justify the existence of all classes.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/analysis_class_DA9AF873.html" guid="_vKGosIBrEd2z9IawWqZSFw">Analysis Class</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/class_diagram_BA75E9D2.html" guid="_RUkLgEfEEd20avHnviZEkg">Class Diagram</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/visual_modeling_2C089766.html" guid="_0XY6UMlgEdmt3adZL5Dmdw">Visual Modeling</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/guidelines/using_visual_modeling_DA1CA6E4.html" guid="_0SsecNr8EdyXE6np2_hUMA">Using Visual Modeling</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>
