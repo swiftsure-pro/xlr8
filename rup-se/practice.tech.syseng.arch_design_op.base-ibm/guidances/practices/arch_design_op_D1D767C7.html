@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Practice: Architectural Design - Operation Based</title>
+<meta name="uma.type" content="Practice">
+<meta name="uma.name" content="arch_design_op">
+<meta name="uma.presentationName" content="Architectural Design - Operation Based">
+<meta name="element_type" content="Practice">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_0eYpYJi4Ed6JmoH2XFiafA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Practice: Architectural Design - Operation Based</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/practice.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This practice describes an operation-based approach of defining the system architecture.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content References</th><td class="sectionTableCell">
+<ul>
+<li>Work Products</li>
+<ul>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_statechart_diag_B66B1D7B.html" guid="_iEm0UKI9Ed6eYbGGXte97g">System Architecture Statechart Diagram</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_struc_diag_6B92F3A1.html" guid="_dTfs0JgYEd6u7McLcbxIEQ">System Architecture Structure Diagram</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_op_act_diag_A83855CD.html" guid="_zd0bgKJAEd6eYbGGXte97g">System Operation Activity Diagram</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_op_seq_diag_9537D2A3.html" guid="_UVUkYKI-Ed6eYbGGXte97g">System Operation Sequence Diagram</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_uc_act_diag_AF272D7E.html" guid="_CSXS4JNkEd6TXvoh_VAeug">System Use-Case Activity Diagram</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_uc_seq_diag_D591EEA9.html" guid="_F8whAJNkEd6TXvoh_VAeug">System Use-Case Sequence Diagram</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp/workproducts/system_wide_requirements_7D9DD47C.html" guid="_BVh9cL-CEdqb7N6KIeDL8Q">System-Wide Requirements</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_srs_DCEBCA57.html" guid="_Iy0doEWQEd6Js4kKfkp_5Q">Systems Requirements Specification</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/tr_rec_nfr_comp_E6BB03F7.html" guid="_apx9UKJEEd6eYbGGXte97g">Traceability Record [Non-functional Requirements to System Level]</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/viewpoints_list_8A0A3994.html" guid="_nTJCoKIlEd6eYbGGXte97g">Viewpoints List</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Tasks</li>
+<ul>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.arch_design_op.base-ibm/tasks/allocate_nfr.op_396E70.html" guid="_KpDVUKLsEd6XGaN9G5GQxw">Allocate Nonfunctional Requirements</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.arch_design_op.base-ibm/tasks/budget_nfr.op_8F16ABCD.html" guid="_Y0_JYKMJEd6XGaN9G5GQxw">Budget Non-Functional Requirements with the Operations</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.arch_design_op.base-ibm/tasks/create_sc_per_subsys.op_E521B84.html" guid="_hI9KsKMJEd6XGaN9G5GQxw">Create Statecharts for each Subsystem</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.arch_design_op.base-ibm/tasks/prioritize_subsystems.op_D618F281.html" guid="_mqQ3IKMJEd6XGaN9G5GQxw">Prioritize Subsystems</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.arch_design_op.base-ibm/tasks/ver_sc_for_subsys.op_E21A4C90.html" guid="_rbcHIKMJEd6XGaN9G5GQxw">Verify Statecharts for each Subsystem</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.arch_design_op.base-ibm/tasks/verify_collaborations.op_8C3B5C54.html" guid="_vi5EsKMJEd6XGaN9G5GQxw">Verify Collaborations</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/capabilitypattern.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.arch_design_op.base-ibm/capabilitypatterns/arch_dsgn_op_39A07DC4.html" guid="_JUsugaMNEd6XGaN9G5GQxw">Architectural Design - Operation based</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    This practice focuses on the incremental (by operation) derivation of responsibilities for system components and on
+    budgeting non-functional requirements to the architectural structure including interfaces at the lowest level of
+    decomposition.
+</p>
+<p>
+    Value proposition points:
+</p>
+<ul>
+    <li>
+        Enable earlier stabilization of interfaces one level at a time to enable concurrent design and shorten lead time.
+    </li>
+    <li>
+        Promotes early re-use and reduction of unwanted redundancy of responsibilities.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">How to read this practice</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    Start with the main workflow and read each task in detail. As this practice uses the Joint Realization capability
+    pattern defined in the practice with the same name, get a good understanding of viewpoints and the joint realization
+    technique.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

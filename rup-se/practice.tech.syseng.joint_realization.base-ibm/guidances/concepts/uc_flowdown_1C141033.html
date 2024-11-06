@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Use-Case Flowdown</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="uc_flowdown">
+<meta name="uma.presentationName" content="Use-Case Flowdown">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_o_c2gL6MEd6EnZQdp87-CQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Use-Case Flowdown</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Use-case flowdown is the technique for deriving functional requirements for the analysis (and then design) elements.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    Use-case flowdown is the technique for deriving functional requirements for the analysis (and then design) elements.
+    The results of the activity are:
+</p>
+<ul>
+    <li>
+        survey of subsystem operations
+    </li>
+    <li>
+        survey of hosted subsystem operations for localities
+    </li>
+    <li>
+        survey of executed subsystem operations for processes
+    </li>
+    <li>
+        use-case survey for subsystems (optional)
+    </li>
+</ul>
+<p>
+    The technique&nbsp;starts with&nbsp;choosing an architecturally significant set of use cases. For each chosen use case,
+    the flow of events is developed. This is the description of the interactions between the system actors and the system.
+    The system responses are black box; the descriptions make no reference to the architectural elements. Next, a black-box
+    step (which will be performed by a <b>system operation</b>) is expanded into one or more white-box steps, each of which
+    is performed by a named <i>sub</i>system. The white-box steps are also associated with the <b>localities</b> which host
+    them, and the <b>processes</b> that execute them. Each white-box step that spans localities or processes (that is,
+    requires more than one to complete) is split until it can be completed at a single locality, by a single process. A
+    white-box step can be replicated at several localities, but these are independent instances. These white-box steps are
+    candidates to become <i>subsystem operations,</i> which are the equivalent of system operations at this lower level of
+    logical decomposition.
+</p>
+<p>
+    The compositions of unique sequences of subsystem operations for an individual subsystem, participating in the
+    realization of system operations, yields the subsystem use cases (optional step).
+</p>
+<h3>
+    Subsystem-Locality mapping
+</h3>
+<p>
+    At the outset of use-case flowdown, you are dealing with a system which typically spans (and might even encapsulate)
+    several localities; the depth to which decomposition into subsystems (and sub-subsystems) is performed, is a matter for
+    architectural judgment, and depends on the domain and the complexity of the system, among other things. However, for
+    the purposes of performance analysis it is important that you understand the computational load to be imposed at a
+    locality, and this is done in terms of the subsystem operations hosted there. Therefore, consider the following
+    prescription for decomposition: the decomposition must yield a set of subsystem operations that cleanly partitions
+    between localities; that is, a subsystem operation does <i>not</i> span localities, and if a subsystem operation (of,
+    say subsystem A) requires, for its performance, the use of resources at a different locality, then those resources must
+    themselves be made available through a subsystem operation, <i>which might be provided by subsystem A itself at that
+    locality</i>, or another subsystem.
+</p>
+<p>
+    This condition will obviously hold if a subsystem does not span localities, but a subsystem can span localities if its
+    operations can be partitioned as described-otherwise, the subsystem must be decomposed further. The discussion here
+    concerns single instances of a subsystem spanning localities; a subsystem can always be replicated at several
+    localities, but these are separate instances.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

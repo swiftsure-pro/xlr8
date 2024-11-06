@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Creating an Activity Diagram</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="creating_act_diag">
+<meta name="uma.presentationName" content="Creating an Activity Diagram">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_s4PNML2gEd6N54g5903uPw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Creating an Activity Diagram</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes naming and drawing conventions for activity diagrams.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/create_ad_black_box_F4C7F037.html" guid="_XkFqcGKYEd6Ih4GzU1_Daw">Create Black Box Activity Diagrams</a>
+</li>
+<li>
+<a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/create_ad_level_2_CED87C45.html" guid="_U7K1gGKaEd6Ih4GzU1_Daw">Decompose Activity Diagrams</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Guidelines and Drawing Conventions
+</p>
+<ul>
+    <li>
+        An&nbsp;activity diagram is used to describe the functional flow through a use case.&nbsp;
+    </li>
+    <li>
+        Document the pre-conditions in the respective tag of the diagram.
+    </li>
+    <li>
+        Actor swim lanes should not be used. The link of an action node to the actor should be described through action
+        pins.
+    </li>
+    <li>
+        When performing a recursive decomposition of a complex system, the action nodes at one system tier can become the
+        use cases in the next lower system tier.
+    </li>
+    <li>
+        Activity diagrams should flow vertically from top to bottom. The initial node should be located near the top of the
+        diagram and any&nbsp;final nodes&nbsp;should be located near the bottom of the diagram.
+    </li>
+    <li>
+        Use the statechart action language to express guards to provide the best transition&nbsp;to statechart diagrams.
+    </li>
+    <li>
+        All&nbsp;flow lines shall be rectilinear or straight.&nbsp;Flow lines should not cross each other or cross through
+        action nodes.
+    </li>
+    <li>
+        Diagram connectors should only be used when the readability of an activity diagram is disturbed by a direct flow
+        line.
+    </li>
+    <li>
+        Flow lines cannot have triggers.
+    </li>
+    <li>
+        All action nodes should have one exit flow. Any scenarios with multiple flows out of an action node should be drawn
+        using an explicit&nbsp;decision node.
+    </li>
+</ul>
+<p>
+    Naming Conventions
+</p>
+<ul>
+    <li>
+        The diagram shall have the associated use case name in plain text at the top of the diagram.
+    </li>
+    <li>
+        Action node names shall start with a verb, beginning with a lower case letter, and map directly to the names of
+        operations on system blocks.
+    </li>
+</ul>
+<p>
+    <img height="453" alt="" src="./../../../practice.tech.syseng.build_validate_uc.base-ibm/guidances/guidelines/resources/create_activity_diagram.jpg" width="600" />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

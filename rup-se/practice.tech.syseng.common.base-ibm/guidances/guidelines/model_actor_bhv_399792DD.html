@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Modeling Actor Behavior</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="model_actor_bhv">
+<meta name="uma.presentationName" content="Modeling Actor Behavior">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_dKsiwMgTEd67koQUdRbVsg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Modeling Actor Behavior</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes how to model the actor behavior for the purposes of model verification.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/ver_val_func_reqs_5EAA9049.html" guid="_V57uYGKbEd6Ih4GzU1_Daw">Verify and Validate Functional Requirements</a>
+</li>
+<li>
+<a href="./../../../practice.tech.syseng.arch_design.base-ibm/tasks/verify_collaborations_CB6AE887.html" guid="_3vSNgKI8Ed6eYbGGXte97g">Verify Collaborations</a>
+</li>
+<li>
+<a href="./../../../practice.tech.syseng.arch_design_op.base-ibm/tasks/verify_collaborations.op_8C3B5C54.html" guid="_vi5EsKMJEd6XGaN9G5GQxw">Verify Collaborations</a>
+</li>
+<li>
+<a href="./../../../practice.tech.syseng.arch_design_uc.base-ibm/tasks/verify_collaborations.uc_4461E3C2.html" guid="_PJw9EKMQEd6XGaN9G5GQxw">Verify Collaborations</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    In model-based systems engineering an essential part of the model verification/validation process concerns the dynamic,
+    closed-loop interactions between the actors and the model (i.e. the executable use-case model or system architecture
+    model). This interaction is performed via port(s) and associated (logical) interface(s).
+</p>
+<p>
+    With regard to the behavioral description there is an essential difference between the two types of participant:
+</p>
+<ul>
+    <li>
+        The system behavior is captured through statecharts, depicting the different states of the system and the events
+        and actions associated with the relevant transitions.
+    </li>
+    <li>
+        The actor behavior is generally captured by means of a protocol state machine.
+    </li>
+</ul>
+<p>
+    A protocol state machine does not show system states. It focuses on the communication protocol only. Typically, it
+    consists of one state, the reactive behavior of which is described via MOORE syntax (i.e. entering state or in state
+    -&gt; Event[Condition(s)]/Action).&nbsp; <u>Exception:</u> Timeout events. In this case a timeout wait state has to be
+    added to the actor state machine.
+</p>
+<p>
+    Actor behavior may be active (i.e. the actor initiates system behavior) or reactive (i.e. the actor reacts to&nbsp;a
+    stimulus from the system).&nbsp; Model each of these as follows. In either case, a pre-condition is that the Actor
+    ports and interfaces have been defined.
+</p>
+<h4>
+    Modeling active Actor behavior
+</h4>
+<p>
+    If the actor initiates a trigger, create an external triggering event following the naming convention
+    A_&lt;MessageName&gt; and add an action representing the&nbsp;message to be sent to the system and the relevant
+    port.&nbsp; The exact syntax will depend upon the tool in use.&nbsp; For example, a message to the system block
+    syntax&nbsp;may be:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        A_reqOperation1() / OPORT(pUseCase1) -&gt; GEN(reqOperation1());
+    </p>
+</blockquote>
+<h4>
+    Modeling reactive Actor behavior
+</h4>
+<p>
+    If the actor has to react to an incoming message with a guard condition, return the response via the relevant port
+    using MOORE syntax.&nbsp; The exact syntax will depend upon the tool in use.&nbsp; For example, a reactive message to
+    the system block using the Telelogic Rhapsody syntax may be:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        reqGetDataX()[ConditionX==true] / Oport(pUseCase)-&gt; GEN(retDataX();
+    </p>
+</blockquote></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

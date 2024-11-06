@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Roadmap: How to Adopt the Joint Realization Practice</title>
+<meta name="uma.type" content="Roadmap">
+<meta name="uma.name" content="how_to_adopt">
+<meta name="uma.presentationName" content="How to Adopt the Joint Realization Practice">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_mJI04L6FEd6EnZQdp87-CQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Roadmap: How to Adopt the Joint Realization Practice</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/roadmap.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This roadmap describes how to adopt the Joint Realization practice.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Getting Started
+</h3>
+<p>
+    Begin by reviewing Section 5 of the Redbook, "Model Driven Systems Development with Rational Products". Also, the
+    whitepaper "Rational Unified Process for Systems Engineering Part III: Requirements analysis and design". Study the
+    concept of a viewpoint.
+</p>
+<p>
+    Joint realization consists of the following procedure:
+</p>
+<ol>
+    <li>
+        Choose the participating viewpoints. The logical viewpoint is mandatory.
+    </li>
+    <li>
+        For each white-box step in realizing a black-box service, you must:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Specify the logical element that executes it.
+            </li>
+            <li>
+                Model how the additional viewpoints participate. For example, you might include a Distribution viewpoint:
+                specify hosting locality; if there are two localities, then decompose into two steps.
+            </li>
+            <li>
+                Throughout this process, apply the following joint realization rule: If a given logical element white-box
+                step requires more than one element of the other viewpoints, divide that step into further steps so that
+                each step requires exactly one white-box element from each viewpoint.
+            </li>
+        </ul>
+    </li>
+    <li>
+        Create interaction diagrams for each viewpoint:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Architecture Interaction Diagram
+            </li>
+            <li>
+                Maybe a Locality Interaction Diagrams
+            </li>
+        </ul>
+    </li>
+    <li>
+        Budget supplementary requirements for performance, accuracy, and so forth, to each step; evaluate/confirm with
+        interaction diagrams.
+    </li>
+</ol>
+<h3>
+    Common Pitfalls
+</h3>
+<p>
+    <strong>There's only one architecture</strong>
+</p>
+<p>
+    A logical architecture isn't necessarily the same as a distribution architecture. The logical architecture helps one
+    reason about the groupings of functionality. The distribution architecture is used to reason about some of the
+    non-functional requirements and constraints. How a system performs its functions and includes concerns such as quality,
+    quantity, and timeliness. These are just two different viewpoints that are important, but depending on the application
+    other viewpoints such as security may need to be used in the analysis.
+</p>
+<p>
+    <strong>Consider only functional requirements</strong>
+</p>
+<p>
+    A frequent pitfall is to consider only functional requirement during your development activities. A common mistake is
+    to overlook non-functional requirements, as availability, security, performance. Realization of both functional and
+    non-functional requirements will ensure the success of your design.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

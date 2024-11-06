@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Practice: Build and Validate Use Cases</title>
+<meta name="uma.type" content="Practice">
+<meta name="uma.name" content="build_val_uc">
+<meta name="uma.presentationName" content="Build and Validate Use Cases">
+<meta name="element_type" content="Practice">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_oRcK0JNnEd6TXvoh_VAeug"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Practice: Build and Validate Use Cases</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/practice.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">In this practice, each system use case is translated into a model and the underlying requirements verified and validated through model execution. Model execution may lead to the new and/or derived system requirements.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content References</th><td class="sectionTableCell">
+<ul>
+<li>Work Products</li>
+<ul>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_operation_9A580CCC.html" guid="_VY4MkGKXEd6Ih4GzU1_Daw">System Operation</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_use_case_E38E4D84.html" guid="_EUsaQGHQEd6ByZ91UzrddQ">System Use Case</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_uc_act_diag_AF272D7E.html" guid="_CSXS4JNkEd6TXvoh_VAeug">System Use-Case Activity Diagram</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_uc_ib_diag_55A5A02D.html" guid="_UpC6oJM1Ed6TXvoh_VAeug">System Use-Case Internal Block Diagram</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_uc_seq_diag_D591EEA9.html" guid="_F8whAJNkEd6TXvoh_VAeug">System Use-Case Sequence Diagram</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_uc_st_chart_diag_20500510.html" guid="_kv43AJNkEd6TXvoh_VAeug">System Use-Case Statechart Diagram</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp/workproducts/system_wide_requirements_7D9DD47C.html" guid="_BVh9cL-CEdqb7N6KIeDL8Q">System-Wide Requirements</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_srs_DCEBCA57.html" guid="_Iy0doEWQEd6Js4kKfkp_5Q">Systems Requirements Specification</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Tasks</li>
+<ul>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/create_ad_black_box_F4C7F037.html" guid="_XkFqcGKYEd6Ih4GzU1_Daw">Create Black Box Activity Diagrams</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/create_ad_level_2_CED87C45.html" guid="_U7K1gGKaEd6Ih4GzU1_Daw">Decompose Activity Diagrams</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/define_ports_intfcs_DE6BC234.html" guid="_H01RYGKaEd6Ih4GzU1_Daw">Define Ports and Interfaces</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/define_uc_scenarios_E74C17A.html" guid="_rWqqgJJjEd6r-sYlOVc5kQ">Define Use-Case Scenarios</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/define_uc_state_behavior_32DB0096.html" guid="_-_Ie4JJjEd6r-sYlOVc5kQ">Define Use-Case State Behavior</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/define_uc_sys_context_DD487AB0.html" guid="_FcxfwGKYEd6Ih4GzU1_Daw">Define Use-Case System Context</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/derive_uc_func_flow_9789F1CC.html" guid="_3gXAMJJjEd6r-sYlOVc5kQ">Derive Use-Case Functional Flow</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/derive_uc_scenarios_C88C677A.html" guid="_d-YicGKaEd6Ih4GzU1_Daw">Derive Use-Case Scenarios</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/derive_uc_state_behavior_48EF26F9.html" guid="_u-AsUGKaEd6Ih4GzU1_Daw">Derive Use-Case State Behavior</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/perform_rainy_day_analysis_DC914310.html" guid="_k8si8GKbEd6Ih4GzU1_Daw">Perform Rainy-Day Analysis</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/update_maintain_reqs_CA61CFA1.html" guid="_wfWt0GKbEd6Ih4GzU1_Daw">Update and Maintain Requirements</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/ver_val_func_reqs_5EAA9049.html" guid="_V57uYGKbEd6Ih4GzU1_Daw">Verify and Validate Functional Requirements</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Activities</li>
+<ul>
+<li>
+<img src="./../../../images/capabilitypattern.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/capabilitypatterns/val_uc_act_265BF9AF.html" guid="_AYgX0WKcEd6Ih4GzU1_Daw">Build and Validate Use Cases [Activity Driven]</a>
+</li>
+<li>
+<img src="./../../../images/capabilitypattern.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/capabilitypatterns/val_uc_seq_95FC6A43.html" guid="_FWr3QXItEd6TqoTvu90UgA">Build and Validate Use Cases [Scenario Driven]</a>
+</li>
+<li>
+<img src="./../../../images/capabilitypattern.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/capabilitypatterns/val_uc_st_8894B4BD.html" guid="_ZrXtcZJjEd6r-sYlOVc5kQ">Build and Validate Use Cases [State Driven]</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Guidance</li>
+<ul>
+<li>Guidelines</li>
+<ul>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/guidances/guidelines/creating_bdd_7BD459F.html" guid="_wyh-4L2oEd6N54g5903uPw">Creating a Block Definition Diagram</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/guidances/guidelines/creating_seq_diag_983F374C.html" guid="__zbMYL3CEd6N54g5903uPw">Creating a Sequence Diagram</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/guidances/guidelines/creating_act_diag_B79A7356.html" guid="_s4PNML2gEd6N54g5903uPw">Creating an Activity Diagram</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/guidances/guidelines/creating_ibd_584CA00D.html" guid="_1PJUIL2oEd6N54g5903uPw">Creating an Internal Block Diagram</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/guidances/guidelines/der_statecharts_4A5124CB.html" guid="_LeiNkMgUEd67koQUdRbVsg">Deriving Statechart Diagrams</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/guidances/guidelines/model_actor_bhv_399792DD.html" guid="_dKsiwMgTEd67koQUdRbVsg">Modeling Actor Behavior</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/guidances/guidelines/svc_req_modeling_3E98F181.html" guid="_g2qrYOT1Ed6-EtmJBf6mkQ">Service Request Driven Modeling Approach</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.extend_rhapsody_se-ibm/guidances/guidelines/rhapsody_se_act_chart_usage_8A208EE1.html" guid="_QH0L0AwuEd-76ZwF4-fHnw">Usage of the Activity Chart Information in the SE Workflow</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.extend_rhapsody_se-ibm/guidances/guidelines/rhapsody_se_uc_act_diag_B061A3FB.html" guid="_AK94IAwvEd-76ZwF4-fHnw">Logical Decomposition of a Use Case Black-Box Activity Diagram</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.extend_rhapsody_se-ibm/guidances/guidelines/rhapsody_se_action_lang_FBB86CB0.html" guid="_x127IAwrEd-76ZwF4-fHnw">Rhapsody Action Language</a>
+</li>
+</ul>
+</ul>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/tool.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.extend_rhapsody-ibm/tools/ibm_rhapsody_AEEEC08A.html" guid="_QwHeIMNBEd6m9OL8Xjaqqg">IBM Rational Rhapsody</a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/tool.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.extend_rhapsody_se-ibm/tools/ibm_rhapsody_se_538B3C75.html" guid="_feAaEAwrEd-76ZwF4-fHnw">IBM Rational Rhapsody - SE Toolkit</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    The main value proposition of this practice is to accelerate the&nbsp;approval by stakeholder of system requirements.
+</p>
+<p>
+    The main emphasis is on the transformation of the functional system requirements into a coherent description of system
+    functions (operations). The analysis is use case-based, i.e. each system-level use case that was identified in the
+    previous requirements analysis phase is translated into an executable model. The model and the underlying requirements
+    then are verified and validated through model execution.
+</p>
+<p>
+    There are three alternatives on how to perform this practice, depending on the available information and the modeler's
+    preference. The same set of artifacts will be produced, but the order will differ. Regardless of the approach, the
+    central artifact is the statechart diagram.
+</p>
+<p>
+    <strong>Alternative 1</strong> starts with the definition of use case scenarios. Customers often describe sequences of
+    required system usage. Once a set of essential scenarios is captured, the identified functional flow is merged into a
+    common description in an activity diagram. Ports and interfaces are created from the sequence diagrams. The final step
+    in this approach is the definition of the state-based behavior in a statechart diagram.
+</p>
+<p>
+    <strong>Alternative 2</strong> starts with the definition of the use case functional flow. This is a common approach,
+    if systems engineers have to elaborate requirements. Typically, customers like to express their requirements from the
+    "big picture" point of view. Once the overall functional flow is defined, use case scenarios are derived from the
+    activity diagram. Ports and interfaces are created from the sequence diagrams. Lastly, its state-based behavior is
+    captured in a statechart diagram.
+</p>
+<p>
+    <strong>Alternative 3</strong> starts with the definition of the use case state-based behavior. This approach is
+    recommended if the system under design (SuD) is strongly state-based. In this case, the creation of an activity diagram
+    may even be skipped. Use case scenarios then are derived as paths through the statechart diagram. From the sequence
+    diagram then ports and associated interfaces are generated.
+</p>
+<p>
+    Whenever during the use case based functional analysis new requirements are identified or high-level requirements are
+    detailed by derived requirements, they need to be documented. The use case model is analyzed through model execution
+    using the black-box use case scenarios as the basis for respective stimuli.
+</p>
+<p>
+    Once the use case model and the underlying functional requirements are verified and validated, <strong>Rainy Day
+    Analysis</strong> may be performed. This analysis focuses on the identification of system error / fail behavior that
+    was not covered by the initial set of requirements.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">How to read this practice</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    Get familiar with the types of diagrams involved in this practice. Each diagram plays a specific role in the
+    elaboration of the use case behavior. The activity diagram describes the overall functional flow of the use case. It
+    groups functional requirements in actions and shows, how these actions/operations are linked to each other. The
+    sequence diagram describes a specific path through the use case and defines the interactions (messages) between the
+    operations and the actors. The statechart diagram aggregates the information from the activity diagram (functional
+    flow) and the sequence diagrams (actor interactions). It puts this information into the context of system states and
+    adds to it the system behavior due to external stimuli of different priority
+</p>
+<p>
+    The central work product is the state-chart diagram, as it comprises the information of both the black-box sequence
+    diagrams and the use case black-box activity diagrams and can be verified and validated through model execution.
+</p>
+<p>
+    As there are three alternative approaches on how to perform this practice, first identify which one(s) are applicable
+    to your specific environment. Follow the appropriate workflow and focus on the order of producing the main artifacts
+    and on the tasks involved in their production/consumption.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

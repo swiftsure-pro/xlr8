@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Defining the System Context</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="define_sys_context">
+<meta name="uma.presentationName" content="Defining the System Context">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_8AU8UMpGEd6bFqpedVj-LA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Defining the System Context</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes in more detail how to define the system context.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.syseng.det_uc_reqs_analysis.base_ibm/tasks/define_sys_context_9AD0513A.html" guid="_RHM-AGKBEd6Ih4GzU1_Daw">Define System Context</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    Whereas the System Use-Case Model shows the behavioral context for the system,&nbsp;during this activity&nbsp;you
+    create a logical model of the system in its environment in a <i>Context Diagram:</i>
+</p>
+<ul>
+    <li>
+        The interfaces to be <i>realized</i> by the system (in terms of the <i>operations</i> the systems provides, and the
+        associated protocols supported, the <i>state variables</i> and <i>stores</i> that the system realizes, and
+        attributes characterized as <i>Technical Performance Measures</i>).
+    </li>
+    <li>
+        The <i>I/O entities</i> that flow between the system and its actors.
+    </li>
+    <li>
+        The interfaces <i>required</i> by the system (to be realized by the actors which interact with the system) for
+        correct performance. Often, if the actor represents an existing system with which the system must communicate,
+        these required interfaces simply reflect constraints imposed by that other system.
+    </li>
+</ul>
+<p>
+    A context diagram shows the top-level collaboration between the system and its actors. It is the structural analog to
+    the Use-Case Model for the system.
+</p>
+<p>
+    I/O entities (represented for modeling as "I/O" stereotyped classes with attributes but no operations) describe things
+    that flow into or out of the system, and can, in the general system case, include data, mass, energy, or physical
+    parts. I/O entities are associated (during modeling) with actor-system pairs, indicating that these particular I/O
+    entities flow between actor and system. They can optionally be shown on the diagrams, associated with the actor, and
+    the direction of flow is indicated by a stereotype "send"or "receive" on the association, indicating the direction
+    relative to the actor.
+</p>
+<p>
+    A System Operation is a service that can be requested from an object to effect behavior. An operation specifies the
+    name, type, parameters, and constraints for invoking an associated behavior. The Operations are grouped around
+    interfaces along the main responsibilities of the (sub)system under consideration. A system operation invocation
+    represents a finer grained interaction with the system than a use-case instance, and a use-case instance is a
+    composition of operation invocations and responses.
+</p>
+<p>
+    State variables and stores are attributes defined on the interfaces realized by the system. These are abstract and
+    require that the system maintain information corresponding to the type and multiplicity of the attribute and permit
+    storage, retrieval and modification of that information. There is no implication that there an attribute in the system
+    directly corresponds to the attribute defined at the interface. The difference between state variables and stores is
+    not intrinsic, it just reflects the way the attributes are used to control the operation of the system's (abstract)
+    state machine. A "state" persists over a period of time, unlike an event (such as the arrival of a signal) that occurs
+    at a point in time. The state machines mentioned here are finite state machines, and the delineation of "state" is
+    usually decided by relatively few variables; for example, the current state could be specified by the value of a single
+    attribute of an enumeration type. The reaction of the system however, to an event, might depend not only on the nature
+    of the event (and the information it carries, for example, in the operation parameters), and the current state, but
+    also on the value of (perhaps many) other attributes.
+</p>
+<p>
+    A Technical Performance Measure (TPM) is a key technical attribute selected from the Supplementary Specifications or
+    Use-Case Model as a critical indicator of system effectiveness, that, if not achieved, puts the system development at
+    risk of overrunning cost, schedule or performance constraints. The emerging values of such attributes are tracked over
+    the project lifetime. For example, it might be important that the delivered weight of a system be kept below a certain
+    limit, and the achievement of this target needs to be tracked as design and construction proceeds. The weight of the
+    system as delivered is obviously an attribute (which can be sensed in various ways) of an instance of the system, and
+    is not necessarily the same as the target weight during development (for a system to be launched into orbit you would
+    probably like it to be less). A UML tagged value can be used to annotate a TPM attribute to indicate the performance
+    target, for example:
+</p>
+<p>
+    <font face="Arial" size="2">"TPM" weight {maximum_weight = 1000kg} <!--Is this example expressed correctly? --></font>
+</p>
+<p>
+    Technical Performance Measures can also apply to other non-structural characteristics such as operation response time.
+    Tagged values can be applied to system operations, or the system itself, to record these.
+</p>
+<h3>
+    Create Initial Context Diagram
+</h3>
+<p>
+    The following steps show evolving levels of detail of the system in context. The example illustrated is that of a
+    security system, protecting property from unauthorized intrusion, which, in addition to sounding an alarm, has the
+    ability to report breaches to some kind of response service.
+</p>
+<p>
+    As you evolve and add more detail to the Use-Case Model (discovering the actors; or if Business Modeling has been
+    performed, and actors and perhaps operations already identified, elaborating their interaction), you can create the
+    initial collaboration and illustrate this with a Context Diagram. The Context Diagram can be created as shown,
+    initially with the system interfaces abstracted away. The system is depicted as a top-level subsystem (stereotyped
+    "system"), which eventually realizes several interfaces. Actors and their associations are also shown, again, with no
+    detail initially.
+</p>
+<p>
+    <img height="524" alt="" src="./../../../practice.tech.syseng.det_uc_reqs_analysis.base_ibm/guidances/guidelines/resources/init_cntxt_diag.gif" width="534" />
+</p>
+<h3>
+    Refine Associations and Interfaces
+</h3>
+<p>
+    Next, you refine the associations between actors and system, and the system interface. You can start to reason about
+    the system operations and the system attributes as they emerge from other activities around defining the actors and
+    detailing use cases. Note that now the system appears to the actors, by showing the interface. The realization of this
+    can be shown if you wish (highlighted by the dashed circle in the diagram), but can be omitted without much loss of
+    information.
+</p>
+<p>
+    At this stage, only tentatively identify the I/O entities, based on domain knowledge and any work done previously in
+    realizing use cases at the enterprise level. Note that it is not required that the I/O entities be shown on the
+    diagram, but this can be helpful in reasoning about actor-system interactions.
+</p>
+<p>
+    Thus, you can start to characterize the connection(s) between actor and system (for example, record the protocol
+    required) and record the entities that flow between them.
+</p>
+<p>
+    <img height="487" alt="" src="./../../../practice.tech.syseng.det_uc_reqs_analysis.base_ibm/guidances/guidelines/resources/prel_cntxt_diag.gif" width="600" />
+</p>
+<h3>
+    Detail System Operations and other Characteristics
+</h3>
+<p>
+    In this step, you start to construct use-case scenarios (instances of use cases) from which you can describe system
+    operations. The scenarios can be illustrated by interaction or activity diagrams. Each black-box step in a use case
+    represents a finer-grained interaction with the system and maps to an operation invocation (but not necessarily a
+    unique operation; other black-box steps might use the same operation). As well as defining the system operations in the
+    Context Diagram, the use cases are also annotated, for traceability, to the operations invoked. The operations also
+    inherit any performance requirements or other non-functional requirements that have been allocated to the black-box
+    steps. As you examine each black-box step performed in the scenario, you discover the use of names that might suggest
+    state variables and stores that the system must maintain to execute the use-case scenario. You can also refine the I/O
+    entities that are required and associate these with operation invocations to form the signals sent between actor and
+    system.
+</p>
+<p>
+    This analysis might also identify interfaces required by the system, that is, interfaces that must be supported by the
+    actors (to process messages from the system).
+</p>
+<p>
+    This top-level collaboration, captured in the Context Diagram, allows the interfaces, connections, what flows into and
+    out of the system, and associated performance characteristics, to be rigorously specified, enabling system development
+    to proceed somewhat independently from other elements in the system's context.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

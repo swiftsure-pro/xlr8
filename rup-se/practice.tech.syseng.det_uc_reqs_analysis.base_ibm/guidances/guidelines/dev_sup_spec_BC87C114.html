@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Supplementary Specifications</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="dev_sup_spec">
+<meta name="uma.presentationName" content="Developing Supplementary Specifications">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_vnauwMseEd6cx7PyM3aSbw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Supplementary Specifications</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes how to capture the requirements that do not apply to specific use cases.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.syseng.det_uc_reqs_analysis.base_ibm/tasks/refine_system_definition_139B03AF.html" guid="_Y8oCIGKBEd6Ih4GzU1_Daw">Refine System Definition</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h4>
+    1. Capture non-use-case-specific functional requirements
+</h4>
+<p>
+    Functional requirements describe the behaviors (functions or services) of the system that support user goals, tasks or
+    activities [Ruth Malan and Dana Bredemeyer 2001. <i>Defining Non-Functional Requirements</i>. White paper, <a href="http://www.bredemeyer.com/">http://www.bredemeyer.com/</a>].
+</p>
+<p>
+    While many of the functional requirements will be documented in Use Cases, there are some functional requirements that
+    cannot be applied to specific use cases. For example, reporting, auditing, printing, security, licensing
+    support/enforcement, authentication requirements, etc. Such functional requirements should be documented in the
+    Supplementary Specification.
+</p>
+<p>
+    If there are a significant number of system-wide functional requirements, it is important to give some thought into the
+    organization of this section. A typical organization is by feature/feature set, but alternative organization methods
+    are also possible. For example, organization by user or organization by subsystem, may also be appropriate.
+</p>
+<p>
+    Functional requirements represent the 'F' in "FURPS+.
+</p>
+<h4>
+    2. Capture system qualities
+</h4>
+<p>
+    Non-functional requirements include both qualities&nbsp;and constraints [Ruth Malan and Dana Bredemeyer 2001.
+    <i>Defining Non-Functional Requirements</i>. White paper, <a href="http://www.bredemeyer.com/">http://www.bredemeyer.com/</a>].&nbsp; In this step we discuss qualities.&nbsp;
+    Constraints are addressed in a separate step.
+</p>
+<p>
+    [System] qualities are properties or characteristics of the system that its stakeholders care about and hence will
+    affect their degree of satisfaction with the system [Ruth Malan and Dana Bredemeyer 2001. <i>Defining Non-Functional
+    Requirements</i>. White paper, <a href="http://www.bredemeyer.com/">http://www.bredemeyer.com/</a>].
+</p>
+<p>
+    Qualities represent the "URPS" in "FURPS+".&nbsp; The concerns of each of these categories of requirements is as
+    follows:
+</p>
+<ul>
+    <li>
+        <strong>U</strong>sability:&nbsp;&nbsp;Aesthetics and consistency in the user interface.
+    </li>
+    <li>
+        <strong>R</strong>eliability:&nbsp;&nbsp;Availability (the amount of system "up time"), accuracy of system
+        calculations, and the system's ability to recover from failure.
+    </li>
+    <li>
+        <strong>P</strong>erformance: Throughput, response time, recovery time, start-up time, and shutdown time.
+    </li>
+    <li>
+        <strong>S</strong>upportability: Testability, adaptability, maintainability, compatibility, configurability,
+        installability, scalability, and localizability.
+    </li>
+</ul>
+<p>
+    Depending on the number of qualities to be documented for the system, you may want to provide sub-sections for each of
+    these quality types.
+</p>
+<p>
+    The following sections provide some examples of the kids of information you might want to capture for each of these
+    qualities:
+</p>
+<h5>
+    Usability
+</h5>
+<p>
+    When describing usability requirements, you may want to specify:
+</p>
+<ul>
+    <li>
+        Required training time for a normal users and power users to become productive at particular operations
+    </li>
+    <li>
+        Measurable task times for typical tasks
+    </li>
+    <li>
+        Requirements to conform to common usability standards, for example, IBM's CUA standards or Microsoft's GUI
+        standards
+    </li>
+</ul>
+<h5>
+    Reliability
+</h5>
+<p>
+    When describing reliability requirements, you may want to specify:
+</p>
+<ul>
+    <li>
+        Availability – specify percentage of time available ( xx.xx%), hours of use, maintenance access, degraded mode
+        operations, and the like.
+    </li>
+    <li>
+        Mean Time Between Failures (MTBF) – this is usually specified in hours but it could also be specified in terms of
+        days, months or years.
+    </li>
+    <li>
+        Mean Time To Repair (MTTR) – how long is the system allowed to be out of operation after it has failed?
+    </li>
+    <li>
+        Accuracy – specify precision (resolution) and accuracy (by some known standard) that is required in the systems
+        output.
+    </li>
+    <li>
+        Maximum bugs or defect rate – usually expressed in terms of bugs/KLOC (thousands of lines of code), or
+        bugs/function-point.
+    </li>
+    <li>
+        Bugs or defect rate – categorized in terms of minor, significant, and critical bugs: the requirement(s) must define
+        what is meant by a "critical" bug; for example, complete loss of data or complete inability to use certain parts of
+        the functionality of the system.
+    </li>
+</ul>
+<h5>
+    Performance
+</h5>
+<p>
+    When describing performance requirements, you may want to specify:
+</p>
+<ul>
+    <li>
+        Response time for a transaction(average, maximum)
+    </li>
+    <li>
+        Throughput (for example, transactions per second)
+    </li>
+    <li>
+        Capacity (for example, the number of customers or transactions the system can accommodate)
+    </li>
+    <li>
+        Degradation modes (what is the acceptable mode of operation when the system has been degraded in some manner)
+    </li>
+    <li>
+        Resource use: memory, disk, communications, and so forth
+    </li>
+</ul>
+<p>
+    When documenting performance requirements, be sure to include specific response times. Where applicable, reference
+    related use cases&nbsp;by name.
+</p>
+<h5>
+    Supportability
+</h5>
+<p>
+    When describing supportability requirements, you may want to specify:
+</p>
+<ul>
+    <li>
+        Coding standards
+    </li>
+    <li>
+        Naming conventions
+    </li>
+    <li>
+        Class libraries
+    </li>
+    <li>
+        Maintenance access
+    </li>
+    <li>
+        Maintenance utilities
+    </li>
+</ul>
+<h4>
+    3. Capture constraints
+</h4>
+<p>
+    In this step you document any design constraints on the system being built. In general terms,&nbsp;a constraint is a
+    restriction on the degree of freedom we have in providing a solution [Dean Leffingwell and Don Widrig 2000. <i>Managing
+    Software Requirements – a Unified Approach</i>. Addison Wesley Longman]. Design constraints represent design decisions
+    that have been mandated and must be adhered to.
+</p>
+<p>
+    The&nbsp;Constraints represent the '+' in "FURPS+" and&nbsp;can be further categorized, as follows:
+</p>
+<ul>
+    <li>
+        <strong>Design constraint</strong>: Specifies or constrains the options for architecting and/or&nbsp;designing a
+        system. For example, requiring that a&nbsp;relational database be used for persistence.
+    </li>
+    <li>
+        <strong>Implementation constraint</strong>: Specifies or constrains the coding or construction of a system. For
+        example, required standards, processes, tools, implementation languages, hardware platforms, operating systems,
+        third-party components, class libraries, and resource limits (use of memory or disk space).
+    </li>
+    <li>
+        <strong>Interface constraint</strong>: Specifies an external item with which a system must interact, or constraints
+        on formats or other factors used within such an interaction.&nbsp; For example, interfacing with an external system
+        via message queues.
+    </li>
+    <li>
+        <strong>Physical constraint</strong>: Specifies a physical constraint imposed on the hardware used to house the
+        system - shape, size, or weight, for example.
+    </li>
+</ul>
+<p>
+    Depending on the number of constraints to be documented for the system, you may want to provide sub-sections for each
+    of the constraint types. Additionally:
+</p>
+<ul>
+    <li>
+        If the requirements include the purchase of third-party components, be sure to document any applicable licensing or
+        usage restrictions, and any associated compatibility/interoperability or interface standards. A separate section
+        per purchased component is recommended.
+    </li>
+    <li>
+        If the requirements include specific interface requirements, it is recommended that you provide separate sections
+        for the different types of interfaces (e.g., user, hardware, software). For each interface, be sure to include
+        adequate specificity, protocols, ports and logical addresses, and so forth, so that the software can be developed
+        and verified against the interface requirements. Specifically: 
+        <ul>
+            <li>
+                For user interfaces, describe the user interfaces that are to be implemented by the software.
+            </li>
+            <li>
+                For hardware interfaces, include logical structure, physical addresses, expected behavior, and so on.
+            </li>
+            <li>
+                For software interfaces include a description of the interfaces to other components of the software system.
+                These may be purchased components, components reused from another application or components being developed
+                for subsystems outside of the scope of this system, but with which this software application must interact.
+            </li>
+        </ul>
+    </li>
+</ul>
+<h4>
+    4. Capture compliance requirements
+</h4>
+<p>
+    By compliance, we include standards compliance (including regulatory standards, coding standards or user interface
+    style guides), as well as legal disclaimers, warranties, copyright notices, patent notice, wordmark, trademark, and/or
+    logo compliance.
+</p>
+<p>
+    Compliance requirements may be realized in terms of other requirements (functional, non-functional, and
+    constraints).&nbsp; In such cases, the details of those requirements should be documented in the applicable sections of
+    the Supplementary Specification as described in the earlier steps.&nbsp; However, it is important to summarize the
+    standards and policies that a system must comply with.&nbsp; The resulting compliance requirements may refer to the
+    applicable detailed requirements, as necessary.
+</p>
+<p>
+    Depending on the number of compliance requirements to be documented for the system, you may want to provide
+    sub-sections for the different kinds of compliance affecting the system.
+</p>
+<p>
+    The following sections provide some examples of the kids of information you might want to capture for different kinds
+    of compliance:
+</p>
+<h5>
+    Licensing Requirements
+</h5>
+<p>
+    Define any licensing enforcement requirements or other usage restriction requirements that are to be exhibited by the
+    software.
+</p>
+<h5>
+    Legal, Copyright, and Other Notices
+</h5>
+<p>
+    Describe any necessary legal disclaimers, warranties, copyright notices, patent notice, wordmark, trademark, or logo
+    compliance issues for the software.
+</p>
+<h5>
+    Applicable Standards
+</h5>
+<p>
+    Describe (by reference) any applicable standards and the specific sections of any such standards that apply to the
+    system being described. For example, this could include legal, quality and regulatory standards, industry standards for
+    usability, interoperability, internationalization, operating system compliance, and so forth.
+</p>
+<h4>
+    5. Capture documentation requirements
+</h4>
+<p>
+    In this step, you describe the requirements, if any, for documentation. Documentation requirements may include
+    requirements for online help, as well as and end-user documentation (e.g., installation guides, user's guides, training
+    material, etc.).&nbsp;&nbsp;
+</p>
+<p>
+    Like compliance requirements, documentation requirements drive other types of requirements.&nbsp; Specifically
+    functional requirements (the system must provide support functional access to the online help), as well as usability
+    requirements (on demand access to system usage information supports the overall usability of the system).&nbsp;
+</p>
+<p>
+    Thus, like compliance requirements, detailed requirements supporting documentation requirements should be documented in
+    the applicable sections of the Supplementary Specification as described in the earlier steps, but it is also important
+    to document and summarize the overall documentation requirements for the system. The resulting requirements may refer
+    to the applicable detailed requirements.
+</p>
+<p>
+    Depending on the number of documentation requirements to be documented for the system, you may want to provide
+    sub-sections for the different kinds of documentation to be provided for the system.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

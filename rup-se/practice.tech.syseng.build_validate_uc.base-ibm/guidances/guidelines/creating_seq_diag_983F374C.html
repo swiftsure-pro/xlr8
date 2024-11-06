@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Creating a Sequence Diagram</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="creating_seq_diag">
+<meta name="uma.presentationName" content="Creating a Sequence Diagram">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="__zbMYL3CEd6N54g5903uPw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Creating a Sequence Diagram</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes naming and drawing conventions for sequence diagrams.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/derive_uc_scenarios_C88C677A.html" guid="_d-YicGKaEd6Ih4GzU1_Daw">Derive Use-Case Scenarios</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Guidelines and Drawing Conventions
+</p>
+<ul>
+    <li>
+        Pre- and post-conditions should be documented in condition marks on respective lifelines or in respective tags.
+    </li>
+    <li>
+        If possible, arrange lifelines such that the message exchange occurs in a "general" left-to-right flow from the top
+        of the sequence down to the bottom. In other words, arrange the order of lifelines to minimize message zigzagging.
+    </li>
+    <li>
+        For documentation reasons the print-out of a scenario should be captured on one page.
+    </li>
+    <li>
+        Divide complicated scenarios into manageable, well-documented, logically related groups of messages using partition
+        lines.
+    </li>
+    <li>
+        Extract reused portions of scenarios into separate sequence diagrams that are included using interaction
+        occurrences.
+    </li>
+    <li>
+        Limit the usage of interaction operators to a maximum of&nbsp;two layers.
+    </li>
+    <li>
+        All message lines should be horizontal, rather than diagonal. Asynchronous messages between blocks have an open
+        arrowhead and synchronous, reflexive messages have a filled arrowhead.
+    </li>
+    <li>
+        Stereotype messages according to their associated protocol (e.g. M1553, Ethernet, etc …).
+    </li>
+    <li>
+        Use the statechart diagram action language to express constraints to provide the best transition to statechart
+        diagrams.
+    </li>
+    <li>
+        For simplicity, restrict the use of condition marks to represent state changes in reaction to State/Mode Change
+        Operational Contract messages. If used for this purpose, condition marks should match the names of states in
+        statechart diagrams.
+    </li>
+    <li>
+        Do not show operations on the actor lifelines.
+    </li>
+</ul>
+<p>
+    Naming Conventions
+</p>
+<ul>
+    <li>
+        The diagram shall have the associated use case name in plain text at the top of the diagram.
+    </li>
+    <li>
+        Naming convention for sequence diagrams: SD_Ucd&lt;Nr&gt;_Uc&lt;Nr&gt;_&lt;SequenceName&gt;
+    </li>
+    <li>
+        The names of reflexive (loop back) messages (= operations) do not contain a special prefix, though they must begin
+        with a lower-case letter.
+    </li>
+</ul>
+<p>
+    <img height="506" alt="" src="./../../../practice.tech.syseng.build_validate_uc.base-ibm/guidances/guidelines/./resources/sequence_diagram_example.jpg" width="600" />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

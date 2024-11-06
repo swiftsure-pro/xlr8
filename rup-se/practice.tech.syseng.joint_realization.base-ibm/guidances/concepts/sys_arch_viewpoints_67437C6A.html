@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: System Architecture: Viewpoints, Levels, Models</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="sys_arch_viewpoints">
+<meta name="uma.presentationName" content="System Architecture: Viewpoints, Levels, Models">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_UZvWwL6MEd6EnZQdp87-CQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: System Architecture: Viewpoints, Levels, Models</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">A system architecture is a representation of a system in which there is a mapping of functionality onto hardware and software components, a mapping of the software architecture onto the hardware architecture, and human interaction with these components.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    The term <i>architecture</i> is now widely used outside its traditional connotation of building, and there are many
+    definitions of "architecture" (in the context of systems) and "system (or systems) architecture," for example:
+</p>
+<blockquote>
+    <p>
+        "Systems architecture: the fundamental and unifying system structure defined in terms of system elements,
+        interfaces, processes, constraints, and behaviors."&nbsp;<br />
+        [baseline definition approved by the INCOSE Systems Architecture Working Group at INCOSE '96 in Boston, MA on July
+        8, 1996]
+    </p>
+    <p>
+        "System architecture comprises the major physical properties, style, structure, interactions, and purpose of a
+        system."<br />
+        [<i>Process for System Architecture and Requirements Engineering</i>, Derek Hatley, Peter Hruschka, Imtiaz Pirbhai,
+        Dorset House Publishing 2000]
+    </p>
+    <p>
+        "Architecture: the concepts and rules that define the structure, semantic behavior, and relationships among the
+        parts of a system; a plan of something to be constructed. It includes the elements that comprise the thing, the
+        relationships among those elements, the constraints that affect those relationships, a focus on the parts of the
+        thing, and a focus on the thing as a whole."<br />
+        [<i>Architecting with RM-ODP,</i> Janis Putman, Prentice Hall PTR 2001, which references ISO/IEC 10746-2:
+        Information Technology - Open Distributed Processing - Reference Model: Foundations, as the source]
+    </p>
+    <p>
+        "Architecture: the structure of components in a program/system, their interrelationships, and the principles and
+        guidelines governing their design and evolution over time."<br />
+        [DoD 5000.59-P, "Modeling and Simulation Master Plan," October 1995]
+    </p>
+    <p>
+        An architecture is "the structure of components, their relationships, and the principles and guidelines governing
+        their design and evolution over time."<br />
+        [IEEE STD 610.12, extended slightly by the Integrated Architectures Panel (IAP) of the C4ISR Integration Task Force
+        (ITF) in DoD Architecture Framework, Version 1.0]
+    </p>
+</blockquote>
+<p>
+    Different words and constructions are used, and not all the definitions cover <i>exactly</i> the same aspects, but
+    there are significant overlaps. These definitions reveal that system architecture is about the following:
+</p>
+<ul>
+    <li>
+        the <i>structure</i> of the system in terms of the elements, components, and parts.
+    </li>
+    <li>
+        the <i>relationships</i> between these elements.
+    </li>
+    <li>
+        the <i>constraints</i> affecting the elements and their relationships.
+    </li>
+    <li>
+        the <i>behavior</i> exhibited by the system and the <i>interactions</i> that occur between the elements to yield
+        that behavior.
+    </li>
+    <li>
+        the <i>principles, rules</i> and <i>rationale</i> that made the system (and govern its evolution).
+    </li>
+    <li>
+        the system's physical and logical <i>characteristics</i> and <i>properties.</i>
+    </li>
+    <li>
+        the <i>purpose</i> of the system.
+    </li>
+</ul>
+<p>
+    So, to completely convey all these aspects requires a rich and potentially complex information set, but it is necessary
+    to be mindful that not all stakeholders need to see or understand all aspects simultaneously. The idea of
+    <i>viewpoints</i> enables separation of these various concerns and presentation to a class of stakeholders of only what
+    they need for effective participation. From the perspective of a particular viewpoint, you can also view the system at
+    different "resolutions," from low resolution, corresponding to a high <i>level of abstraction</i>, to high resolution,
+    corresponding to a concrete specification (of parts, and so on) for implementation.
+</p>
+<h3>
+    Viewpoints
+</h3>
+<p>
+    A viewpoint (on a system) is "a form of abstraction achieved using a selected set of architectural concepts and
+    structuring rules, in order to focus on particular concerns within a system" [ISO/IEC 10746-2: Information Technology -
+    Open Distributed Processing - Reference Model: Foundations]. The table lists some of the viewpoints chosen to capture
+    the various concerns. These viewpoints are aligned with those found in ISO/IEC 10746-1: Information technology - Open
+    Distributed Processing - Reference Model: Overview.
+</p>
+<div align="center">
+    <center>
+        <table border="1" width="90%">
+            <tbody>
+                <tr>
+                    <td width="19%" align="middle">
+                        <font face="Arial"><b>Viewpoint</b></font>
+                    </td>
+                    <td width="40%" align="middle">
+                        <font face="Arial"><b>Concern</b></font>
+                    </td>
+                    <td width="41%" align="middle">
+                        <font face="Arial"><b>Impact</b></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="19%" align="middle">
+                        Worker
+                    </td>
+                    <td width="40%">
+                        Concerned with the roles and responsibilities of the organization and system workers (and the
+                        policies affecting these).
+                    </td>
+                    <td width="41%">
+                        Worker activities, human/system interaction. Human performance specification and human factors.
+                    </td>
+                </tr>
+                <tr>
+                    <td width="19%" align="middle">
+                        Information
+                    </td>
+                    <td width="40%">
+                        The kinds of information handled by the system and constraints on the use and interpretation of
+                        that information.
+                    </td>
+                    <td width="41%">
+                        Information integrity, capacity limitations.<br />
+                        Information accessibility, timeliness.
+                    </td>
+                </tr>
+                <tr>
+                    <td width="19%" align="middle">
+                        Logical
+                    </td>
+                    <td width="40%">
+                        The decomposition of the system into a set of subsystems that interact at interfaces, collaborating
+                        to provide the system services.
+                    </td>
+                    <td width="41%">
+                        System exhibits desired behavior.<br />
+                        System is extendible, adaptable, maintainable.<br />
+                        Assets are reusable.
+                    </td>
+                </tr>
+                <tr>
+                    <td width="19%" align="middle">
+                        Distribution/Physical
+                    </td>
+                    <td width="40%">
+                        The infrastructure required to support system functionality and distribution.
+                    </td>
+                    <td width="41%">
+                        Adequacy of physical characteristics of system to host functionality and meet non-functional
+                        requirements.
+                    </td>
+                </tr>
+                <tr>
+                    <td width="19%" align="middle">
+                        Process
+                    </td>
+                    <td width="40%">
+                        Concurrency, scalability, performance, throughput, reliability.
+                    </td>
+                    <td width="41%">
+                        Adequacy of system responsiveness, throughput, fault-tolerance.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</div>
+<p align="center">
+    Common System Viewpoints.
+</p>
+<p>
+    These viewpoints are some of the most common for software-intensive systems. Many system architectures also require
+    additional, domain-specific viewpoints. Examples include safety, security, and mechanical viewpoints. Viewpoints
+    represent different areas of concern that must be addressed in the system architecture and design. If there are system
+    stakeholders or experts whose concerns are important to the overall architecture, there is likely to be a need for a
+    set of viewpoint work products to capture their design decisions.&nbsp;
+</p>
+<p>
+    It is important to build a system architecture team with staff who are competent to look after the various viewpoints.
+    The team might consist of business analysts and users who take primary responsibility for the worker viewpoint,
+    software architects who attend to the logical viewpoint, and engineers who concern themselves with the physical
+    viewpoint, as well as experts on domain-specific viewpoints.
+</p>
+<h3>
+    Levels of abstraction
+</h3>
+<p>
+    In addition to viewpoints, a system architecture requires levels of specification. As the architecture is developed, it
+    evolves from a general, abstract specification to a more specific, detailed specification. Four architectural levels
+    are used, as shown in the table below.
+</p>
+<div align="center">
+    <center>
+        <table border="1" width="90%">
+            <tbody>
+                <tr>
+                    <td width="33%" align="middle">
+                        <font face="Arial"><b>Model Level</b></font>
+                    </td>
+                    <td width="67%" align="middle">
+                        <font face="Arial"><b>Expresses</b></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="33%" align="middle">
+                        Context
+                    </td>
+                    <td width="67%">
+                        The system and its actors.
+                    </td>
+                </tr>
+                <tr>
+                    <td width="33%" align="middle">
+                        Analysis
+                    </td>
+                    <td width="67%">
+                        Initial partitioning of the system to establish the conceptual approach.
+                    </td>
+                </tr>
+                <tr>
+                    <td width="33%" align="middle">
+                        Design
+                    </td>
+                    <td width="67%">
+                        Realization of the Analysis Model to hardware, software, and people.
+                    </td>
+                </tr>
+                <tr>
+                    <td width="33%" align="middle">
+                        Implementation
+                    </td>
+                    <td width="67%">
+                        Realization of the Design Model into specific configurations.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Architectural Levels
+        </p>
+    </center>
+</div>
+<p>
+    Through these levels, the design goes from the abstract to the physical. The Context Model captures all of the external
+    entities (actors) that interact with the system. These actors might be external to the enterprise that deploys the
+    system or might be internal to the enterprise. In both cases, the actors might be human workers or other systems. At
+    the Analysis level, the partitions do not reflect choices of hardware, software, and people. Instead, they reflect
+    design approaches for dividing up what the system needs to do and how the effort must be distributed. At the Design
+    level, the decisions are made as to the sorts of hardware and software components and worker roles that are needed. At
+    the Implementation level, specific choices of hardware and software technology are made to implement the design. For
+    example, at the Design level, a data server might be specified. At the Implementation level, the decision is made to
+    use a specific platform running a specific database application.
+</p>
+<h3>
+    Models and diagrams
+</h3>
+<p>
+    A <b>model</b> is a <i>representation</i> of a system, typically addressing some particular area of concern. A system,
+    then, is usually represented by a set of models, because there are multiple concerns for the system's development or
+    use. Each model can be constructed with varying levels of abstraction, from the more general, hiding or encapsulating
+    detail, to the more specific, exposing more detail and explicit design decisions.
+</p>
+<p>
+    A <b>viewpoint</b>, as its name implies, is a notional "position" from which some aspects or concerns about the system
+    are made visible, implying the application of a set of concepts and rules to form a conceptual filter. Usually, it is
+    not sufficient (for understanding) simply to examine the real system-models will have been (or will have to be)
+    constructed to represent and describe the concerns.
+</p>
+<p>
+    <b>Views</b> are projections of models which show entities that are relevant from a particular viewpoint. These
+    projections are typically illustrated by <b>diagrams</b> of some kind.
+</p>
+<p>
+    The intersection of viewpoint and model level of abstraction or specificity contain (or at least identify) views of one
+    or more models relevant to that viewpoint or concern, at that level of abstraction.
+</p>
+<p>
+    The system architecture then is captured in a set of models (and diagrams that visualize them) that express the
+    architecture from various viewpoints and levels. As shown in the model framework table below, there is not a
+    model/diagram for every viewpoint-level combination. At the Implementation level, a single model captures the
+    realization of hardware and software components for each system configuration.
+</p>
+<div align="center">
+    <center>
+        <table border="1" width="90%">
+            <tbody>
+                <tr>
+                    <td rowspan="2" width="13%" align="middle">
+                        <font face="Arial"><b>Model Level</b></font>
+                    </td>
+                    <td colspan="5" align="middle">
+                        <font face="Arial"><b>Viewpoints</b></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="19%" align="middle">
+                        <font size="2" face="Arial"><b>Worker</b></font>
+                    </td>
+                    <td width="14%" align="middle">
+                        <font size="2" face="Arial"><b>Logical</b></font>
+                    </td>
+                    <td width="14%" align="middle">
+                        <font size="2" face="Arial"><b>Information</b></font>
+                    </td>
+                    <td width="22%" align="middle">
+                        <font size="2" face="Arial"><b>Distribution/Physical</b></font>
+                    </td>
+                    <td width="18%" align="middle">
+                        <font size="2" face="Arial"><b>Process</b></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="13%" align="middle">
+                        <b><font size="2" face="Arial">Context</font></b>
+                    </td>
+                    <td width="19%">
+                        UML Organization View
+                    </td>
+                    <td width="14%">
+                        System Context Diagram
+                    </td>
+                    <td width="14%">
+                        Enterprise Data View
+                    </td>
+                    <td width="22%">
+                        Enterprise Locality View
+                    </td>
+                    <td width="18%">
+                        Business Process View
+                    </td>
+                </tr>
+                <tr>
+                    <td width="13%" align="middle">
+                        <b><font size="2" face="Arial">Analysis</font></b>
+                    </td>
+                    <td width="19%">
+                        Generalized System Worker View
+                    </td>
+                    <td width="14%">
+                        Subsystem View
+                    </td>
+                    <td width="14%">
+                        System Data View
+                    </td>
+                    <td width="22%">
+                        System Locality View
+                    </td>
+                    <td width="18%">
+                        System Process View
+                    </td>
+                </tr>
+                <tr>
+                    <td width="13%" align="middle">
+                        <b><font size="2" face="Arial">Design</font></b>
+                    </td>
+                    <td width="19%">
+                        System Worker View
+                    </td>
+                    <td width="14%">
+                        Subsystem Class Views 
+                        <p>
+                            Software Component Views
+                        </p>
+                    </td>
+                    <td width="14%">
+                        System Data Schema
+                    </td>
+                    <td width="22%">
+                        Descriptor Node View
+                    </td>
+                    <td width="18%">
+                        Detailed Process View
+                    </td>
+                </tr>
+                <tr>
+                    <td width="13%" align="middle">
+                        <b><font size="2" face="Arial">Implementation</font></b>
+                    </td>
+                    <td width="19%">
+                        Worker Role Specifications and Instructions
+                    </td>
+                    <td colspan="4">
+                        Configurations: Deployment diagrams with software and hardware system components.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</div>
+<p>
+    Many of the views specified in the table are derived from standard UML models. For example, in the Analysis level of
+    the Logical viewpoint, the system is decomposed into subsystems that collaborate to meet user requirements. The
+    subsystems are used with the same semantics as in the UML standard. These subsystems, in turn, are decomposed into
+    either subsystems or (ultimately) classes. The Design level of the Logical viewpoint is the view of the detailed Class
+    Model. The Process Model is also a standard UML class model, with the focus on active classes in the system. The
+    domain-specific viewpoints need also have views of work products in place for one or more of the levels. The set of
+    project work products , within this framework, needs to be a part of the project's development case.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

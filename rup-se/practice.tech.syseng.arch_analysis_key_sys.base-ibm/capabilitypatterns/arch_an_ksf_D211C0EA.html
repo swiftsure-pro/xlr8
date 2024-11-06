@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Capability Pattern: Architectural Analysis - Key Systems Functions</title>
+<meta name="uma.type" content="CapabilityPattern">
+<meta name="uma.name" content="arch_an_ksf">
+<meta name="uma.presentationName" content="Architectural Analysis - Key Systems Functions">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_49fSMZgZEd6u7McLcbxIEQ&path=_49fSMZgZEd6u7McLcbxIEQ';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_49fSMZgZEd6u7McLcbxIEQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Capability Pattern: Architectural Analysis - Key Systems Functions</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/capabilitypattern.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="10" class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../practice.tech.syseng.arch_analysis_key_sys.base-ibm/capabilitypatterns/arch_an_ksf_D211C0EA.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Work Breakdown Structure</span></td><td width="1"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_TBS" href="./../../practice.tech.syseng.arch_analysis_key_sys.base-ibm/capabilitypatterns/arch_an_ksf_D211C0EA.html_tbs.html"><span style="white-space:nowrap;">Team Allocation</span></a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../practice.tech.syseng.arch_analysis_key_sys.base-ibm/capabilitypatterns/arch_an_ksf_D211C0EA.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="2"><img src="./../../images/shim.gif" height="2" alt="" title=""></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="5"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Workflow</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="sectionTableSingleCell" colspan="2" align="left">
+<p></p>
+<img border="0" diagramType="Activity" id="diagram_Activity" src="./../../practice.tech.syseng.arch_analysis_key_sys.base-ibm/capabilitypatterns/resources/arch_an_ksf_D211C0EA_Activity.jpeg" alt="Activity diagram: Architectural Analysis - Key Systems Functions" title="Activity diagram: Architectural Analysis - Key Systems Functions" usemap="#Activity_arch_an_ksf"><map name="Activity_arch_an_ksf">
+<area href="./../../practice.tech.syseng.arch_analysis_key_sys.base-ibm/capabilitypatterns/id_key_sys_functions_D259415F.html" relpath=",_1J4oQJgaEd6u7McLcbxIEQ" alt="Identify Key System Functions" title="Identify Key System Functions" coords="40, 120, 173, 183" shape="rect" guid="_1J4oQJgaEd6u7McLcbxIEQ"></area>
+<area href="./../../practice.tech.syseng.arch_analysis_key_sys.base-ibm/capabilitypatterns/def_candidate_sols_33060855.html" relpath=",_1y3T0JgaEd6u7McLcbxIEQ" alt="Define Candidate Solutions" title="Define Candidate Solutions" coords="228, 192, 327, 255" shape="rect" guid="_1y3T0JgaEd6u7McLcbxIEQ"></area>
+<area href="./../../practice.tech.syseng.arch_analysis_key_sys.base-ibm/capabilitypatterns/merge_sols_sys_arch_B16D93DB.html" relpath=",_2kovAJgaEd6u7McLcbxIEQ" alt="Merge Solutions into System Architecture" title="Merge Solutions into System Architecture" coords="46, 456, 167, 519" shape="rect" guid="_2kovAJgaEd6u7McLcbxIEQ"></area>
+<area href="./../../practice.tech.syseng.arch_analysis_key_sys.base-ibm/capabilitypatterns/Perform Trade Study_6CAC253E.html" relpath=",_g5FiIJjWEd6JmoH2XFiafA" alt="Perform Trade Study" title="Perform Trade Study" coords="212, 295, 343, 344" shape="rect" guid="_g5FiIJjWEd6JmoH2XFiafA"></area>
+</map>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Work Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Work Breakdown", summary: "Work Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["steps", "Steps"],
+["id", "Index"],
+["predecessors", "Predecessors"],
+["model_info", "Model Info"],
+["type", "Type"],
+["is_planned", "Planned"],
+["is_repeatable", "Repeatable"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_ongoing", "Ongoing"],
+["is_event_driven", "Event Driven"],
+["is_optional", "Optional"],
+["teams", "Team"]],
+rows: [
+		
+{id: "113dd333", parentId: "", relPath: ",_1J4oQJgaEd6u7McLcbxIEQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "1", prefix: "", name: "Identify Key System Functions", title: "Identify Key System Functions", url: "./../../practice.tech.syseng.arch_analysis_key_sys.base-ibm/capabilitypatterns/id_key_sys_functions_D259415F.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true]},
+	
+		
+		
+{id: "6851ded5", parentId: "", relPath: ",_1y3T0JgaEd6u7McLcbxIEQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "2", prefix: "", name: "Define Candidate Solutions", title: "Define Candidate Solutions", url: "./../../practice.tech.syseng.arch_analysis_key_sys.base-ibm/capabilitypatterns/def_candidate_sols_33060855.html", 
+	predecessors: "1", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true]},
+	
+		
+		
+{id: "bebaf0bb", parentId: "", relPath: ",_2kovAJgaEd6u7McLcbxIEQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "3", prefix: "", name: "Merge Solutions into System Architecture", title: "Merge Solutions into System Architecture", url: "./../../practice.tech.syseng.arch_analysis_key_sys.base-ibm/capabilitypatterns/merge_sols_sys_arch_B16D93DB.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true]},
+	
+		
+		
+{id: "132f2525", parentId: "", relPath: ",_g5FiIJjWEd6JmoH2XFiafA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "4", prefix: "", name: "Perform Trade Study", title: "Perform Trade Study", url: "./../../practice.tech.syseng.arch_analysis_key_sys.base-ibm/capabilitypatterns/Perform Trade Study_6CAC253E.html", 
+	predecessors: "2", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "extends",
+	steps: []},
+	
+		
+		
+{id: "73f57216", parentId: "132f2525", relPath: ",_g5FiIJjWEd6JmoH2XFiafA,_-_wFoJjUEd6JmoH2XFiafA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "5", prefix: "", name: "Define Assessment Criteria", title: "Define Assessment Criteria", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/def_criteria_B5178B46.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true]},
+	
+		
+		
+{id: "13c2a528", parentId: "132f2525", relPath: ",_g5FiIJjWEd6JmoH2XFiafA,__m8BcJjUEd6JmoH2XFiafA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "6", prefix: "", name: "Assign Weights to Criteria", title: "Assign Weights to Criteria", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/assign_weights_3D3F8989.html", 
+	predecessors: "5", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true]},
+	
+		
+		
+{id: "74cc83f2", parentId: "132f2525", relPath: ",_g5FiIJjWEd6JmoH2XFiafA,_AUPMUJjVEd6JmoH2XFiafA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "7", prefix: "", name: "Define Utility Curve for each Criterion", title: "Define Utility Curve for each Criterion", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/def_util_curve_729BFF91.html", 
+	predecessors: "6", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true]},
+	
+		
+		
+{id: "61aeb603", parentId: "132f2525", relPath: ",_g5FiIJjWEd6JmoH2XFiafA,_BNAnYJjVEd6JmoH2XFiafA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "8", prefix: "", name: "Assign MoEs to Candidate Solutions", title: "Assign MoEs to Candidate Solutions", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/assign_moes_A3B59675.html", 
+	predecessors: "7", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true]},
+	
+		
+		
+{id: "768fe2ab", parentId: "132f2525", relPath: ",_g5FiIJjWEd6JmoH2XFiafA,_Bn-sIJjVEd6JmoH2XFiafA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "9", prefix: "", name: "Determine Solution", title: "Determine Solution", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/determine_sol_D9654DFE.html", 
+	predecessors: "8", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true]},
+	
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

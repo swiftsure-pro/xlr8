@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Capability Pattern: Architectural Analysis - Operation Based</title>
+<meta name="uma.type" content="CapabilityPattern">
+<meta name="uma.name" content="arch_an_op">
+<meta name="uma.presentationName" content="Architectural Analysis - Operation Based">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_RQ1XgZitEd6JmoH2XFiafA&path=_RQ1XgZitEd6JmoH2XFiafA';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_RQ1XgZitEd6JmoH2XFiafA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Capability Pattern: Architectural Analysis - Operation Based</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/capabilitypattern.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="10" class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../practice.tech.syseng.arch_analysis_op.base-ibm/capabilitypatterns/arch_an_op_7BD727E3.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WBS" href="./../../practice.tech.syseng.arch_analysis_op.base-ibm/capabilitypatterns/arch_an_op_7BD727E3.html_wbs.html"><span style="white-space:nowrap;">Work Breakdown Structure</span></a></td><td width="1"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_TBS" href="./../../practice.tech.syseng.arch_analysis_op.base-ibm/capabilitypatterns/arch_an_op_7BD727E3.html_tbs.html"><span style="white-space:nowrap;">Team Allocation</span></a></td><td width="21"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Work Product Usage</span></td><td width="21"><img src="./../../images/tab_end-a.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="6"><img src="./../../images/shim.gif" height="2" alt="" title=""></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="1"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Work Product Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Work Product Breakdown", summary: "Work Product Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["model_info", "Model Info"],
+["entry_state", "Entry State"],
+["exit_state", "Exit State"],
+["deliverable", "Deliverable"],
+["type", "Type"],
+["is_planned", "Planned"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_optional", "Optional"]],
+rows: [
+			
+{id: "6607f9ef", parentId: "", relPath: ",_5nVCUZo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Candidate Solution", title: "Candidate Solution", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/candidate_sol_5C117EF1.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "638e89b4", parentId: "", relPath: ",_5nXekZo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Key System Function", title: "Key System Function", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/key_sys_function_607F95FB.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "6a41dcfa", parentId: "", relPath: ",_-PVKk5iuEd6JmoH2XFiafA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Stakeholder Needs", title: "Stakeholder Needs", url: "./../../practice.tech.syseng.arch_analysis_op.base-ibm/capabilitypatterns/stakeholder_needs_CA3D1AED.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "c12eee44", parentId: "", relPath: ",_5mLy0Zo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Stakeholder Request", title: "Stakeholder Request", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/stakeholder_request_3C0119F5.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "62f8fd1a", parentId: "", relPath: ",_VZJFUMJdEd6Ame-XMnb0Gg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Stakeholder Requirements Specification", title: "Stakeholder Requirements Specification", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/stk_reqs_spec_24FFF9CD.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "7480e0cb", parentId: "", relPath: ",_5mnQoZo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "System Architecture Model", title: "System Architecture Model", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/sys_arch_model_3CC6F20C.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "74b5fd7d", parentId: "7480e0cb", relPath: ",_5mnQoZo1EeqXaLKNXW_R3Q,_5nKDMZo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "System Context Diagram", title: "System Context Diagram", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/sys_context_diag_113899A5.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "6853dc2a", parentId: "7480e0cb", relPath: ",_5mnQoZo1EeqXaLKNXW_R3Q,_5mlbcZo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "System Architecture Statechart Diagram", title: "System Architecture Statechart Diagram", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/sys_statechart_diag_DEFD29AB.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "1192638c", parentId: "7480e0cb", relPath: ",_5mnQoZo1EeqXaLKNXW_R3Q,_5miYIZo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "System Operation", title: "System Operation", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/sys_operation_F6493F9F.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "13e787b2", parentId: "1192638c", relPath: ",_5mnQoZo1EeqXaLKNXW_R3Q,_5miYIZo1EeqXaLKNXW_R3Q,_5mriEZo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "System Operation Sequence Diagram", title: "System Operation Sequence Diagram", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/sys_op_seq_diag_E3585C8A.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "7495beaf", parentId: "1192638c", relPath: ",_5mnQoZo1EeqXaLKNXW_R3Q,_5miYIZo1EeqXaLKNXW_R3Q,_5mpF0Zo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "System Operation Activity Diagram", title: "System Operation Activity Diagram", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/sys_op_act_diag_D5D1C5DE.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "634064c8", parentId: "7480e0cb", relPath: ",_5mnQoZo1EeqXaLKNXW_R3Q,_5mc4kZo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "System Architecture Structure Diagram", title: "System Architecture Structure Diagram", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/sys_struc_diag_EA3E209E.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "6b073f0c", parentId: "", relPath: ",_5mlbcZo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "System Architecture Statechart Diagram", title: "System Architecture Statechart Diagram", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/sys_statechart_diag_DEFD29AB.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "14fa7771", parentId: "", relPath: ",_Ac4nQJivEd6JmoH2XFiafA_4GCPQL_5Ed6vAIgZHbAJvg_dTfs0JgYEd6u7McLcbxIEQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "System Architecture Structure Diagram", title: "System Architecture Structure Diagram", url: "./../../practice.tech.syseng.arch_analysis_op.base-ibm/capabilitypatterns/sys_struc_diag_DA9186A4.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "15b7360c", parentId: "", relPath: ",_Ac4nQZivEd6JmoH2XFiafA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "System Context Diagram", title: "System Context Diagram", url: "./../../practice.tech.syseng.arch_analysis_op.base-ibm/capabilitypatterns/sys_context_diag_A26E55F1.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "beb4d2f8", parentId: "", relPath: ",_5mpF0Zo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "System Operation Activity Diagram", title: "System Operation Activity Diagram", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/sys_op_act_diag_D5D1C5DE.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "1be3f289", parentId: "", relPath: ",_5mriEZo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "System Operation Sequence Diagram", title: "System Operation Sequence Diagram", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/sys_op_seq_diag_E3585C8A.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "15009888", parentId: "", relPath: ",_Ac4nQJivEd6JmoH2XFiafA_4GCPQL_5Ed6vAIgZHbAJvg_EUsaQGHQEd6ByZ91UzrddQ", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "System Use Case", title: "System Use Case", url: "./../../practice.tech.syseng.arch_analysis_op.base-ibm/capabilitypatterns/sys_use_case_528CE087.html", 
+	predecessors: "", info: "Mandatory Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "78e8da75", parentId: "15009888", relPath: ",_Ac4nQJivEd6JmoH2XFiafA_4GCPQL_5Ed6vAIgZHbAJvg_EUsaQGHQEd6ByZ91UzrddQ,_FSWZ1PM7Ed-Fw-MeaQjkmw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "System Use-Case Statechart Diagram", title: "System Use-Case Statechart Diagram", url: "./../../practice.tech.syseng.arch_analysis_op.base-ibm/capabilitypatterns/sys_uc_st_chart_diag_EB1D0F99.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "c2fc826c", parentId: "15009888", relPath: ",_Ac4nQJivEd6JmoH2XFiafA_4GCPQL_5Ed6vAIgZHbAJvg_EUsaQGHQEd6ByZ91UzrddQ,_FSWZ0fM7Ed-Fw-MeaQjkmw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "System Use-Case Internal Block Diagram", title: "System Use-Case Internal Block Diagram", url: "./../../practice.tech.syseng.arch_analysis_op.base-ibm/capabilitypatterns/sys_uc_ib_diag_15244190.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "19d16ab8", parentId: "15009888", relPath: ",_Ac4nQJivEd6JmoH2XFiafA_4GCPQL_5Ed6vAIgZHbAJvg_EUsaQGHQEd6ByZ91UzrddQ,_Ac4nQJivEd6JmoH2XFiafA_4GCPQL_5Ed6vAIgZHbAJvg_F8whAJNkEd6TXvoh_VAeug", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "System Use-Case Sequence Diagram", title: "System Use-Case Sequence Diagram", url: "./../../practice.tech.syseng.arch_analysis_op.base-ibm/capabilitypatterns/sys_uc_seq_diag_449081AC.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "1aac0f03", parentId: "15009888", relPath: ",_Ac4nQJivEd6JmoH2XFiafA_4GCPQL_5Ed6vAIgZHbAJvg_EUsaQGHQEd6ByZ91UzrddQ,_Ac4nQJivEd6JmoH2XFiafA_4GCPQL_5Ed6vAIgZHbAJvg_CSXS4JNkEd6TXvoh_VAeug", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "System Use-Case Activity Diagram", title: "System Use-Case Activity Diagram", url: "./../../practice.tech.syseng.arch_analysis_op.base-ibm/capabilitypatterns/sys_uc_act_diag_1E25C081.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "e173398", parentId: "", relPath: ",_5mt-UZo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "System Use-Case Sequence Diagram", title: "System Use-Case Sequence Diagram", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/sys_uc_seq_diag_C7CB41FC.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "c5d4bcb6", parentId: "", relPath: ",_5BlxYdOpEd6vXdkWWDj_vQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "System-Wide Requirements", title: "System-Wide Requirements", url: "./../../practice.tech.syseng.arch_analysis_op.base-ibm/capabilitypatterns/system_wide_requirements_B55424B8.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "6b2aac94", parentId: "", relPath: ",_VZJFUsJdEd6Ame-XMnb0Gg", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Traceability Record", title: "Traceability Record", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/trace_record_1E36EDF3.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "6fa81df7", parentId: "", relPath: ",_5mjmQZo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Traceability Record [Non-functional Requirements to System Level]", title: "Traceability Record [Non-functional Requirements to System Level]", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/tr_rec_nfr_comp_13C9CA0A.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "619ffd28", parentId: "", relPath: ",_-_wFoJjUEd6JmoH2XFiafA_4GCPQL_5Ed6vAIgZHbAJvg_v7afoJgXEd6u7McLcbxIEQ", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Trade Study Report", title: "Trade Study Report", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/trade_study_483B5792.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "c4124906", parentId: "619ffd28", relPath: ",_-_wFoJjUEd6JmoH2XFiafA_4GCPQL_5Ed6vAIgZHbAJvg_v7afoJgXEd6u7McLcbxIEQ,_5nXekZo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Key System Function", title: "Key System Function", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/key_sys_function_607F95FB.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "1233c2f2", parentId: "619ffd28", relPath: ",_-_wFoJjUEd6JmoH2XFiafA_4GCPQL_5Ed6vAIgZHbAJvg_v7afoJgXEd6u7McLcbxIEQ,_5nVCUZo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "Candidate Solution", title: "Candidate Solution", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/candidate_sol_5C117EF1.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "172db700", parentId: "", relPath: ",_5mgi8Zo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Viewpoints List", title: "Viewpoints List", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/viewpoints_list_F3FBAAE2.html", 
+	predecessors: "", info: "Mandatory Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "68411d30", parentId: "", relPath: ",_5mJ9oZo1EeqXaLKNXW_R3Q", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Vision", title: "Vision", url: "./../../practice.tech.syseng.arch_trade_study_wom.base-ibm/capabilitypatterns/vision_620BA298.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

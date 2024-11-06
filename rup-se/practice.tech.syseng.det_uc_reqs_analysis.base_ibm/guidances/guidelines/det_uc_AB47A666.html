@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Detailing Use Cases</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="det_uc">
+<meta name="uma.presentationName" content="Detailing Use Cases">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_uQlCMMsfEd6cx7PyM3aSbw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Detailing Use Cases</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes the main aspects you need to consider when you detail a use case.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.syseng.det_uc_reqs_analysis.base_ibm/tasks/refine_system_definition_139B03AF.html" guid="_Y8oCIGKBEd6Ih4GzU1_Daw">Refine System Definition</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h4>
+    1. Review and Refine the Scenarios
+</h4>
+<p>
+    Start by reviewing and refining the scenarios that you will be dealing with in the current development cycle. These may
+    have already been initially identified during the previous activities. Use these enumerated scenarios as a starting
+    point in determining the scope of what flows will need to be described.
+</p>
+<h4>
+    2. Detail the Flow of Events
+</h4>
+<p>
+    Use the outline as a starting point, and gradually make it more detailed.
+</p>
+<p>
+    Describe the use case according to the standards decided for the project. Decide on the following points before
+    describing the use case so that you are consistent across use cases:
+</p>
+<ul>
+    <li>
+        How does the use case start? The start of the use case must clearly describe the signal that activates the use
+        case. Write, for example, "The use case can start when ... happens."
+    </li>
+    <li>
+        How does the use case terminate? You should clearly state whatever happens in the course of the flow to terminate
+        the use case. Write, for example, "When ... happens, the use case terminates."
+    </li>
+    <li>
+        How does the use case interact with actors? To minimize any risk of misunderstanding say exactly what will reside
+        inside the system, and what will reside outside the system. Structure the description as a series of paragraphs, in
+        which each paragraph expresses an action in the format: "When the actor does ..., the system does ...." You can
+        also emphasize interaction by writing that the use case sends and receives signals from actors, for example: "The
+        use case starts when it receives the signal 'start' from the Operator."
+    </li>
+    <li>
+        How does the use case exchange data with an actor? If you like, you can refer to the arguments of the signals, but
+        it might be better to write, for example, "The use case starts when the User logs into the system by giving his
+        name and password."
+    </li>
+    <li>
+        How does the use case repeat some behavior? You should try to express this in natural language. However, in
+        exceptional cases, it might be worthwhile to use code-like constructs, such as "WHILE-END WHILE," "IF-THEN-ELSE,"
+        and "LOOP-END LOOP," if the corresponding natural language terms are difficult to express. In general, however, you
+        should avoid using such code-like constructs in use-case descriptions because they are hard to read and maintain.
+    </li>
+    <li>
+        Are there any optional situations in a use case's flow of events? Sometimes an actor is presented with several
+        options. This should be written in the same way. For example: 
+        <p>
+            "The actor chooses one of the following, one or more times:
+        </p>
+        <blockquote>
+            <p>
+                a) . . .
+            </p>
+            <p>
+                b) . . .
+            </p>
+            <p>
+                c) . . ." etc.
+            </p>
+        </blockquote>
+    </li>
+    <li>
+        How should the use case be described so that the customer and the users can understand it? The use of
+        methodology-specific terminology, such as use case, actor, and signal, might make the text unnecessarily hard to
+        grasp. To make the text easier to read, you might enumerate the actions, or adopt some other strategy. Whatever
+        strategy you use should be specified in the general use-case-modeling guidelines so that you keep it in mind during
+        the entire task of describing use cases.
+    </li>
+</ul>
+<p>
+    Concentrate on describing what is done in the use case, not how specific problems internal to the system should be
+    solved. Those details will be considered when later in the lifecycle, so do not make the description overly detailed at
+    this point. Describe only what you believe will be stable later on.
+</p>
+<p>
+    If a use case's flow of events has become too encompassing or complex, or if it appears to have parts that are
+    independent of one another, split it into two or more use cases.
+</p>
+<p>
+    When you write the descriptive text, refer to a glossary. As fresh terms evolve from new concepts, include them in the
+    glossary. Do not change the definition of a term without informing the appropriate project members.
+</p>
+<p>
+    A flow of events description explores:
+</p>
+<ul>
+    <li>
+        How and when the use case starts.
+    </li>
+    <li>
+        When the use case interacts with the actors, and what data they exchange.
+    </li>
+    <li>
+        How and when the use case uses data stored in the system, or stores data in the system.
+    </li>
+    <li>
+        How and when the use case ends.
+    </li>
+</ul>
+<p>
+    You should also describe odd or exceptional flows of events. An exceptional flow is a subflow of the use case that does
+    not adhere to the use case's normal or basic behavior. This flow may nevertheless be necessary in any complete
+    description of the use case's behavior. A typical example of an exceptional flow is the one given in the first example.
+    If the use case receives some unexpected data (that the actor is not the one expected in that particular context) it
+    terminates. Having the wrong actor and terminating prematurely are not in the typical flow of events.
+</p>
+<p>
+    Other "do's and don'ts" to consider when you describe a use case include:
+</p>
+<ul>
+    <li>
+        Describe the flow of events, not just the use case's functionality or purpose.
+    </li>
+    <li>
+        Describe only flows that belong to the use case, not what is going on in other use cases that work in parallel with
+        it.
+    </li>
+    <li>
+        Do not mention actors who do not communicate with the use case in question.
+    </li>
+    <li>
+        Do not provide too much detail when you describe the use case's interaction with any actor.
+    </li>
+    <li>
+        If the order of the subflows described for the use case does not have to be fixed, do not describe it as if it does
+        have to be fixed.
+    </li>
+    <li>
+        Use the terms in the common glossary and consider the following in writing the text:
+    </li>
+    <li>
+        Use straightforward vocabulary. Don't use a complex term when a simple one will do.
+    </li>
+    <li>
+        Write short, concise sentences.
+    </li>
+    <li>
+        Avoid adverbs, such as very, more, rather, and the like.
+    </li>
+    <li>
+        Use correct punctuation.
+    </li>
+    <li>
+        Avoid compound sentences.
+    </li>
+</ul>
+<p>
+    From a systems engineering perspective, it is better that the use-case description be kept 'black box' at this stage,
+    and constructed around the view of actor action, system input, black-box step (what the system does) and system output
+    (which might flow to other actors). Description of what the system <i>might</i> do internally (to produce the response)
+    might be necessary, but in no way constrains the system design. When such descriptions are written, they typically use
+    terminology well-understood in the domain. They might refer to the <i>state</i> of the system (for example, when the
+    response is conditional upon that state) and <i>stores</i> that the system notionally contains. This, however, reveals
+    nothing about how the system maintains such state or stores internally, only requiring that it behaves (in its history
+    of interactions) as if it did.
+</p>
+<h4>
+    3. Structure the Flow of Events
+</h4>
+<p>
+    A use case's flow of events can be divided into several subflows. When the use case is activated the subflows can
+    combine in various ways if the following holds true:
+</p>
+<ul>
+    <li>
+        The use case can proceed from one of several possible paths, depending on the input from a given actor, or the
+        values of some attribute or object. For example, an actor can decide, from several options, what to do next, or,
+        the flow of events may differ if a value is less or greater than a certain value.
+    </li>
+    <li>
+        The use case can perform some subflows in optional sequences.
+    </li>
+    <li>
+        The use case can perform several subflows at the same time.
+    </li>
+</ul>
+<p>
+    You must describe all these optional or alternative flows. It is recommended that you describe each subflow in a
+    separate supplement to the Flow of Events section, and should be mandatory for the following cases:
+</p>
+<ul>
+    <li>
+        Subflows that occupy a large segment of a given flow of events.
+    </li>
+    <li>
+        Exceptional flows of events. This helps the use case's basic flow of events to stand out more clearly.
+    </li>
+    <li>
+        Any subflow that can be executed at several intervals in the same flow of events.
+    </li>
+</ul>
+<p>
+    If a subflow involves only a minor part of the complete flow of events, it is better to describe it in the body of the
+    text.
+</p>
+<h4>
+    4. Illustrate Relationships with Actors and other Use Cases
+</h4>
+<p>
+    Create use-case diagrams showing the use case and its relationships to actors and other use cases. A diagram of this
+    type functions as a local diagram of the use case, and should be related to it. Note that this kind of local use-case
+    diagram is typically of little value, unless the use case has use-case relationships that need to be explained, or if
+    there is an unusual complexity among the actors involved.
+</p>
+<h4>
+    5. Describe any Special Requirements
+</h4>
+<p>
+    Any requirements that can be related to the use case, but that are not taken into consideration in the Flow of Events
+    of the use case, should be described in the Special Requirements of the use case. Such requirements are likely to be
+    nonfunctional. This step has particular significance in systems engineering: because you intend to flow down
+    non-functional requirements to subsystems, the tracking and allocation of such requirements must be done with some
+    rigor
+</p>
+<h4>
+    6. Define Communication Protocols
+</h4>
+<p>
+    Define the communication protocol to be used for any actor that is another system or external hardware. If some
+    existing protocol (especially recognized protocols or protocols considered standard) is to be used, the description of
+    the use case should simply name the protocol. If the protocol is new, you should point to where the protocol definition
+    can be found which will need to be fully described during object-model development.
+</p>
+<p>
+    This step has special significance in systems engineering, because it is likely that the system will interact with
+    several external systems or pieces of hardware. Previously you produced a broad description of what is exchanged in the
+    actor-system use-case association (with each association). Now you elaborate that description by selecting a protocol
+    for it.
+</p>
+<h4>
+    7. Describe Preconditions
+</h4>
+<p>
+    A precondition on a use case explains the state the system must be in order for the use case to be possible to start.
+</p>
+<p>
+    Take care to describe the system state; avoid describing the detail of other incidental tasks that may have taken place
+    prior to this use case.
+</p>
+<p>
+    Preconditions are not used to create a sequence of use cases. There will never be a case where you have to first
+    perform one use case, then another, in order to have a meaningful flow of events. If you feel there is a need to do
+    this, it is likely that you have decomposed the use-case model too much. Correct this problem by combining the
+    sequentially dependent use cases into a single use case. If this makes the resulting&nbsp; use case too complex,
+    consider techniques for structuring use cases.
+</p>
+<h4>
+    8. Describe Postconditions
+</h4>
+<p>
+    A postcondition on a use case lists possible states the system can be in at the end of the use case. The system must be
+    in one of those states at the end of the execution of the use case. It is also used to state actions that the system
+    performs at the end of the use case, regardless of what occurred in the use case.
+</p>
+<p class="example">
+    Postconditions are used to reduce the complexity and improve the readability of the flow-of-events of the use case.
+</p>
+<p>
+    Under no circumstances should postconditions be used to create a sequence of use cases. There should never be a case
+    where you have to first perform one use case, then another, in order to have a meaningful flow of events. If you feel a
+    need to do this, the sequentially dependent use cases should be combined into a single use case. If this makes the
+    combined use case too complex, consider techniques for structuring use cases.
+</p>
+<h4>
+    9. Describe Extension Points
+</h4>
+<p>
+    If the use case is to be extended by another use case, you need to describe what the extension points are.
+</p>
+<h4>
+    10. Evaluate your Results
+</h4>
+<p>
+    Review and discuss the use case with the stakeholders, so that they have a clear understanding of the use case and
+    agree on its description.
+</p>
+<p>
+    The use-case description is complete only when it describes everything the use case performs, implements, or otherwise
+    allows from beginning to end. Before you finish, check that the use case exhibits the properties that characterize it
+    as a "good" use case.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

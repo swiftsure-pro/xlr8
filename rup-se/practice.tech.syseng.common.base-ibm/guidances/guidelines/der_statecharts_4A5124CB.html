@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Deriving Statechart Diagrams</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="der_statecharts">
+<meta name="uma.presentationName" content="Deriving Statechart Diagrams">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_LeiNkMgUEd67koQUdRbVsg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Deriving Statechart Diagrams</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes how to derive statechart diagrams from a consistent set of activity and sequence diagrams. Here we will discuss how to derive a statechart diagram through the use of an example that includes a Use Case Black-Box Activity Diagram and associated Use Case Scenarios.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.syseng.arch_design.base-ibm/tasks/create_sc_per_subsys_83E80E1D.html" guid="_nDGwoKInEd6eYbGGXte97g">Create Statecharts for each Subsystem</a>
+</li>
+<li>
+<a href="./../../../practice.tech.syseng.arch_design_op.base-ibm/tasks/create_sc_per_subsys.op_E521B84.html" guid="_hI9KsKMJEd6XGaN9G5GQxw">Create Statecharts for each Subsystem</a>
+</li>
+<li>
+<a href="./../../../practice.tech.syseng.arch_design_uc.base-ibm/tasks/create_sc_per_subsys.uc_B6DABC63.html" guid="_Ch0lIKMQEd6XGaN9G5GQxw">Create Statecharts for each Subsystem</a>
+</li>
+<li>
+<a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/derive_uc_state_behavior_48EF26F9.html" guid="_u-AsUGKaEd6Ih4GzU1_Daw">Derive Use-Case State Behavior</a>
+</li>
+<li>
+<a href="./../../../practice.tech.syseng.arch_design.base-ibm/tasks/ver_sc_for_subsys_1452C359.html" guid="_CtEWQKIoEd6eYbGGXte97g">Verify Statecharts for each Subsystem</a>
+</li>
+<li>
+<a href="./../../../practice.tech.syseng.arch_design_op.base-ibm/tasks/ver_sc_for_subsys.op_E21A4C90.html" guid="_rbcHIKMJEd6XGaN9G5GQxw">Verify Statecharts for each Subsystem</a>
+</li>
+<li>
+<a href="./../../../practice.tech.syseng.arch_design_uc.base-ibm/tasks/ver_sc_for_subsys.uc_3715195E.html" guid="_LexSAKMQEd6XGaN9G5GQxw">Verify Statecharts for each Subsystem</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    This guideline describes, by way of an example, how to derive statechart diagrams from a consistent set of activity and
+    sequence diagrams.&nbsp; The example is a security system used to grant&nbsp;exit&nbsp;from a facility to authorized
+    users that swipe a valid security card.&nbsp; The users get three attempts at swiping the card and if the card is not
+    validated by the third attempt&nbsp;exit is denied.&nbsp; The following input information is available:
+</p>
+<ul>
+    <li>
+        An activity diagram specifying the functional flow for the <em>ConrolExit</em> use case(see Figure 1);
+    </li>
+    <li>
+        A&nbsp;sequence diagram illustrating&nbsp;the nominal scenario of the <em>ControlExit</em> use case, in which the
+        user is granted&nbsp;exit (see Figure 2a); and
+    </li>
+    <li>
+        A&nbsp;sequence diagram illustrating an exception scenario of the <em>ControlExit</em> use case, in which the user
+        is denied access (see Figure 2b).
+    </li>
+</ul>
+<p>
+    Each of these diagrams also have associated pre- and post-conditions.
+</p>
+<center>
+    <img alt="UC BB Activity Diagram Uc2 ControlExit" src="./../../../practice.tech.syseng.common.base-ibm/guidances/guidelines/resources/uc_bb_activity_diagram_uc2_controlexit.jpg"     width="406" height="416" /><br />
+    <strong>Figure 1: Use-Case Black-Box Activity Diagram for Uc2 <em>ControlExit</em></strong>
+</center>
+<center>
+    Pre-Condition: the security system (SecSys) is configured and activated<br />
+    Note: Actions stereotyped &lt;&lt;MessageAction&gt;&gt; contain only message(s) to and/or from actors.<br />
+</center><br />
+<br />
+<center>
+    <img alt="Uc2 Nominal Flow" src="./../../../practice.tech.syseng.common.base-ibm/guidances/guidelines/resources/uc2_nominal_flow.jpg" width="473" height="481" /><br />
+    <strong>Figure 2a: Nominal Flow of Uc2_Sc1</strong> <em><strong>ControlExit</strong>&nbsp;</em>
+</center>
+<center>
+    &nbsp;Pre-Condition: SecSys configured and activated
+</center>
+<center>
+    Post-Condition: Access Point locked
+</center><br />
+<center>
+    &nbsp;<img alt="Uc2 Exception Flow" src="./../../../practice.tech.syseng.common.base-ibm/guidances/guidelines/resources/uc2_exception_flow.jpg" width="469" height="502" /><br />
+    <strong>Figure 2b: Exception Flow of Uc2_Sc2 <em>ControlExit</em></strong>&nbsp;
+</center>
+<center>
+    Pre-Condition: SecSys configured and activated, Card validation failed two times
+</center>
+<center>
+    Post-Condition: Alarm reset
+</center><br />
+<br />
+<h3>
+    To derive a statechart diagram:
+</h3>
+<h4>
+    Step 1: Identify wait states and action states
+</h4>
+<h5>
+    1.1 Identify <em>Wait States</em>
+</h5>
+<p>
+    In a wait state an object waits for an event to happen i.e. it&nbsp;just consumes time.
+</p>
+<p>
+    From the use-case black-box activity diagram (Figure 1), identify actions with IN actor pins.&nbsp; From the use-case
+    black-box sequence diagrams (Figure 2a and Figure 2b), identify the messages (<em>receptions</em>) that trigger the
+    selected actions. For each of the identified actions, create a wait state in the statechart diagram named
+    <strong>WaitFor</strong>&lt;<em>ReceptionName</em>&gt;.
+</p>
+<p>
+    In cases where the use-case black-box sequence diagram shows a timeout event (t_Unlocked in Figure 2a), create&nbsp;a
+    wait state in the statechart diagram with a name that describes the actual system status. The results are shown in
+    Figure 3a, below.
+</p>
+<center>
+    <img alt="Wait States of Uc2" src="./../../../practice.tech.syseng.common.base-ibm/guidances/guidelines/resources/uc2_wait_states.jpg" width="337" height="331" /><br />
+    <strong>Figure 3a: Wait States of Uc2 <em>ControlExit</em></strong>
+</center>
+<h5>
+    <br />
+    1.2 Identify <em>Action States</em>
+</h5>
+<p>
+    An action state is a state whose purpose is to execute an entry action, after which it takes a completion transition to
+    another state. It is a kind of dummy state that is useful for organizing state machines into logical structures.
+</p>
+<p>
+    From the use-case black-box activity diagram (Figure 1), identify actions that are followed by a decision node. For
+    each of these actions create&nbsp;an action state in the statechart diagram with the name of the action (naming
+    convention: &lt;<em>ActionName</em>&gt;<strong>ing</strong>) and allocate the relevant action to it using MOORE syntax.
+</p>
+<p>
+    Note: Besides the output-relevant action, an action-state may also have additional context-related actions allocated to
+    it. The results are shown in Figure 3b, below.
+</p>
+<center>
+    <img alt="Action States of Uc2" src="./../../../practice.tech.syseng.common.base-ibm/guidances/guidelines/resources/uc2_action_states.jpg" width="494" height="275" /><br />
+    <strong>Figure 3b: Action States of Uc2 <em>ControlExit</em></strong>
+</center>
+<h4>
+    <br />
+    Step 2: Create a flat statechart
+</h4>
+<h5>
+    2.1 Identify the Initial State
+</h5>
+<p>
+    Identify the initial state&nbsp;by drawing an&nbsp;initial pseudo-state node. If attributes need to be initialized add
+    respective actions to the initial transition. See&nbsp; <em>/ScFailCount=0;</em> in Figure 4, for example.
+</p>
+<h5>
+    2.2 Identify Transitions, Triggering Events, and Associated Actions
+</h5>
+<p>
+    The transitions between the states and associated triggering events – including guarded condition(s) - are identified
+    through analysis of the sequence diagrams (Figure 2a and Figure 2b). With regard to the description in the statechart
+    it is recommended to follow MEALY syntax.
+</p>
+<p>
+    Select a use-case scenario. Replicate the scenario in the statechart diagram as follows:
+</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+    <p>
+        Start from the initial state.
+    </p>
+    <p>
+        In the sequence diagram identify the event (message) and – if needed – guarded condition(s) that trigger a
+        transition and the associated sequence of actions.
+    </p>
+    <p>
+        In the statechart diagram identify the target state.
+    </p>
+    <p>
+        Connect the two states with a transition line.
+    </p>
+    <p>
+        Label the transition following the statechart notation for labeling transitions: <strong>Event [Condition] /
+        Action</strong>.
+    </p>
+    <p>
+        If the target state is an action state, add to the transition label only those actions that are not already
+        allocated to the state.
+    </p>
+    <p>
+        Proceed in the sequence diagram and repeat the previous steps.
+    </p>
+</blockquote>
+<p>
+    Repeat the replication of scenarios in the statechart for all captured use case scenarios.
+</p>
+<p>
+    Figure 4, below,&nbsp;shows the resulting statechart capturing both scenarios in the example.
+</p>
+<h5>
+    2.3 Execute the Statechart
+</h5>
+<p>
+    Verify the correctness of the captured state-based behavior through model execution using the input use case scenarios
+    (Figure 2a and Figure 2b) as the basis for respective stimuli.
+</p>
+<center>
+    <img alt="Flat statechart of Uc2" src="./../../../practice.tech.syseng.common.base-ibm/guidances/guidelines/resources/uc2_flat_statechart.jpg" width="579" height="497" /><br />
+    <strong>Figure 4: Flat Statechart of Uc2 <em>ControlExit</em></strong>
+</center>
+<h4>
+    <br />
+    Step 3: Re-factor the Statechart with regard to hierarchy
+</h4>
+<table title="" border="0" cellspacing="0" cellpadding="2" width="95%" align="center">
+    <tbody>
+        <tr>
+            <td>
+                <h5>
+                    3.1 Identify State Hierarchies
+                </h5>
+                <p>
+                    Once the flat statechart is verified, look for ways to simplify it by structuring it hierarchically.
+                    Identify states that can be aggregated. Grouping criteria could be the following:
+                </p>
+                <ul>
+                    <li>
+                        System modes.
+                    </li>
+                    <li>
+                        System phases.
+                    </li>
+                    <li>
+                        Reuse of state patterns.
+                    </li>
+                </ul>
+                <p>
+                    Also look for situations where the aggregation of state transitions simplifies the statechart.
+                </p>
+                <p>
+                    Inspection of the flat statechart in Figure 4 reveals that the following 3 states can be considered
+                    sub-states of a composite state called <em>ProcessingSecurityCard</em>:
+                </p>
+                <ul>
+                    <li>
+                        <em>ValidatingSecurityCard.</em>
+                    </li>
+                    <li>
+                        <em>FlagingSecurityCardFailure.</em>
+                    </li>
+                    <li>
+                        <em>WaitFor_req_ReadSecurityCard</em> in the case of a card failure.
+                    </li>
+                </ul>
+                <p>
+                    This is depicted in Figure 5b.
+                </p>
+                <p>
+                    As <em>ScFailCount</em> is a local attribute, the initialization is added to the default entry of the
+                    composite state.
+                </p>
+                <p>
+                    Furthermore, the sub-states <em>FlagingSecurityCardFailure</em> and
+                    <em>WaitFor_req_ReadSecurityCard</em> can be aggregated in the composite state <em>ValidationFail</em>,
+                    thus denoting the fail mode within the <em>ProcessingSecurityCard</em> state.
+                </p>
+                <p>
+                    Note the different descriptions of the transitions out of the composite state. In the case of
+                    <em>CardStatus=="Pass"</em> the triggering condition and associated action is captured in the top-level
+                    statechart (Figure 5a) as a high-level interrupt. In the case of a third-time failure the respective
+                    triggering condition and associated action&nbsp;are captured within the <em>ProcessingSecurityCard</em>
+                    state and linked to the top-level statechart via an Exit Point (<em>Fail3Times</em>).<br />
+                    <br />
+                    States on the flat statechart in Figure 4 that relate to the access point control can be aggregated
+                    into a composite state <em>UnlockingAndLockkingAccessPoint</em>, as shown in Figure 5c. This state
+                    includes the messages sent to the access point. Furthermore, the wait states
+                    <em>WaitFor_evAccessPointUnlocked</em> and <em>WaitFor_evAccessPointLocked</em> are merged to one wait
+                    state called <em>WaitForAccessPointFeedback</em>.&nbsp; The exit out of the composite state is captured
+                    in the top-level statechart.
+                </p>
+                <p>
+                    Figure 5a shows the final hierarchical statechart of the use case Uc2 <em>ControlExit</em>.
+                </p>
+                <h5>
+                    3.2 Execute the Statechart
+                </h5>
+                <p>
+                    Verify the correctness of the captured state-based behavior through model execution using the black-box
+                    use case scenarios as the basis for respective stimuli.
+                </p>
+                <p>
+                    <br />
+                    &nbsp;
+                </p><br />
+                <br />
+                <p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    &nbsp;
+                </p><br />
+                <br />
+            </td>
+            <td>
+                <center>
+                    <img alt="Hierarchical Statechart of Uc2" src="./../../../practice.tech.syseng.common.base-ibm/guidances/guidelines/resources/uc2_hierachical_statechart.jpg" width="409"                     height="387" /><br />
+                    <strong>Figure 5a: Hierarchical Statechart of Uc2 <em>ControlExit</em></strong>
+                </center>
+                <center>
+                    <br />
+                    <img alt="Composite ProcessingCardData" src="./../../../practice.tech.syseng.common.base-ibm/guidances/guidelines/resources/composite_processingcarddata.jpg" width="466"                     height="328" /><br />
+                    <strong>Figure 5b: Composite <em>ProcessingCardData</em></strong>
+                </center>
+                <center>
+                    <br />
+                    <img alt="Composite State UnlockingAndLockingAccessPoint"                     src="./../../../practice.tech.syseng.common.base-ibm/guidances/guidelines/resources/cmpst_state_unlock_lock_accesspoint.jpg" width="432" height="278" /><br />
+                    <strong>Figure 5c: Composite State <em>UnlockingAndLockingAccessPoint</em></strong>
+                </center>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

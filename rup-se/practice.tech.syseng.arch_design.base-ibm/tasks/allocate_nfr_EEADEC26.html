@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Task: Allocate Nonfunctional Requirements</title>
+<meta name="uma.type" content="Task">
+<meta name="uma.name" content="allocate_nfr">
+<meta name="uma.presentationName" content="Allocate Nonfunctional Requirements">
+<meta name="uma.category" content="Discipline:systems_engineering_architecture:System Engineering Architecture">
+<meta name="element_type" content="activity">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, '', true, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_GKtVQKI9Ed6eYbGGXte97g"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Task: Allocate Nonfunctional Requirements</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/task.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This task allocates non-functional requirements to each sub-block of the chosen architecture.</td>
+</tr>
+<tr>
+<td>Disciplines: <a href="./../../core.default.cat_def.extend-ibm/disciplines/systems_engineering_architecture_E93397C5.html" guid="_OZAUIMULEd-waY7wyD19YQ">System Engineering Architecture</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">Once functionality and associated performance requirements are allocated to the sub-blocks of a chosen architecture,
+non-functional requirements, such as design constraints, need to be allocated to the appropriate level: system, subsystem,
+component.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Mandatory:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.syseng.common.base-ibm/workproducts/sys_struc_diag_6B92F3A1.html" guid="_dTfs0JgYEd6u7McLcbxIEQ">System Architecture Structure Diagram</a>
+</li>
+<li>
+<a href="./../../practice.tech.syseng.common.base-ibm/workproducts/sys_srs_DCEBCA57.html" guid="_Iy0doEWQEd6Js4kKfkp_5Q">Systems Requirements Specification</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend_supp/workproducts/system_wide_requirements_7D9DD47C.html" guid="_BVh9cL-CEdqb7N6KIeDL8Q">System-Wide Requirements</a>
+</li>
+</ul>
+<ul></ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Optional:
+								</span>
+<ul>
+<li>None</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Outputs</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../practice.tech.syseng.common.base-ibm/workproducts/tr_rec_nfr_comp_E6BB03F7.html" guid="_apx9UKJEEd6eYbGGXte97g">Traceability Record [Non-functional Requirements to System Level]</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Steps</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="sectionTableSingleCell">
+<div class="stepHeading">Link system blocks to non-functional requirements</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    Review the traceability record to determine the non-functional system requirements associated with the subject use
+    case.&nbsp; Associate each non-functional system requirement for the subject use case with the relevant system block(s)
+    by creating&nbsp;SysML &lt;&lt;satisfy&gt;&gt; dependencies from the system block to the requirement.
+</p>
+<p>
+    In some case it may not be possible to allocate the non-functional requirement as-is (for example, a mass
+    constraint).&nbsp; In these cases the system level requirement must first be decomposed to yield&nbsp;derived
+    requirements that together satisfy the system level requirement.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Update traceability records</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Update the Traceability Record to capture the&nbsp;traceability between system blocks and associated non-functional
+requirements.</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../practice.tech.syseng.common.base-ibm/guidances/guidelines/traceability_A1B1901D.html" guid="_0LQm8LNwEd6ufunCNQt1zA">Traceability</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Practice: Architectural Design - Use-Case Based</title>
+<meta name="uma.type" content="Practice">
+<meta name="uma.name" content="arch_design_uc">
+<meta name="uma.presentationName" content="Architectural Design - Use-Case Based">
+<meta name="element_type" content="Practice">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_Ca95AJi5Ed6JmoH2XFiafA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Practice: Architectural Design - Use-Case Based</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/practice.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This practice describes an use-case based approach of defining the system architecture.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content References</th><td class="sectionTableCell">
+<ul>
+<li>Work Products</li>
+<ul>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_statechart_diag_B66B1D7B.html" guid="_iEm0UKI9Ed6eYbGGXte97g">System Architecture Statechart Diagram</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_struc_diag_6B92F3A1.html" guid="_dTfs0JgYEd6u7McLcbxIEQ">System Architecture Structure Diagram</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_operation_9A580CCC.html" guid="_VY4MkGKXEd6Ih4GzU1_Daw">System Operation</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_uc_act_diag_AF272D7E.html" guid="_CSXS4JNkEd6TXvoh_VAeug">System Use-Case Activity Diagram</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_uc_seq_diag_D591EEA9.html" guid="_F8whAJNkEd6TXvoh_VAeug">System Use-Case Sequence Diagram</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp/workproducts/system_wide_requirements_7D9DD47C.html" guid="_BVh9cL-CEdqb7N6KIeDL8Q">System-Wide Requirements</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/sys_srs_DCEBCA57.html" guid="_Iy0doEWQEd6Js4kKfkp_5Q">Systems Requirements Specification</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/tr_rec_nfr_comp_E6BB03F7.html" guid="_apx9UKJEEd6eYbGGXte97g">Traceability Record [Non-functional Requirements to System Level]</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/workproducts/viewpoints_list_8A0A3994.html" guid="_nTJCoKIlEd6eYbGGXte97g">Viewpoints List</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Tasks</li>
+<ul>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.arch_design_uc.base-ibm/tasks/allocate_nfr.uc_8E3EB852.html" guid="_awYv0KLtEd6XGaN9G5GQxw">Allocate Nonfunctional Requirements</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.arch_design_uc.base-ibm/tasks/create_sc_per_subsys.uc_B6DABC63.html" guid="_Ch0lIKMQEd6XGaN9G5GQxw">Create Statecharts for each Subsystem</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.arch_design_uc.base-ibm/tasks/prioritize_subsystems.uc_756E8590.html" guid="_Gbtn0KMQEd6XGaN9G5GQxw">Prioritize Subsystems</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.arch_design_uc.base-ibm/tasks/ver_sc_for_subsys.uc_3715195E.html" guid="_LexSAKMQEd6XGaN9G5GQxw">Verify Statecharts for each Subsystem</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.arch_design_uc.base-ibm/tasks/verify_collaborations.uc_4461E3C2.html" guid="_PJw9EKMQEd6XGaN9G5GQxw">Verify Collaborations</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/capabilitypattern.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.arch_design_uc.base-ibm/capabilitypatterns/arch_dsgn_uc_C2F6DECF.html" guid="_ZaJxkZi5Ed6JmoH2XFiafA">Architectural Design - Use-Case based</a>
+</li>
+</ul>
+<ul>
+<li>Guidance</li>
+<ul>
+<li>Guidelines</li>
+<ul>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/guidances/guidelines/der_statecharts_4A5124CB.html" guid="_LeiNkMgUEd67koQUdRbVsg">Deriving Statechart Diagrams</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/guidances/guidelines/model_actor_bhv_399792DD.html" guid="_dKsiwMgTEd67koQUdRbVsg">Modeling Actor Behavior</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.base-ibm/guidances/guidelines/traceability_A1B1901D.html" guid="_0LQm8LNwEd6ufunCNQt1zA">Traceability</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.extend_rhapsody_se-ibm/guidances/guidelines/rhapsody_se_action_lang_FBB86CB0.html" guid="_x127IAwrEd-76ZwF4-fHnw">Rhapsody Action Language</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.extend_rhapsody_se-ibm/guidances/guidelines/rhapsody_se_act_chart_usage_8A208EE1.html" guid="_QH0L0AwuEd-76ZwF4-fHnw">Usage of the Activity Chart Information in the SE Workflow</a>
+</li>
+</ul>
+</ul>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/tool.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.extend_rhapsody-ibm/tools/ibm_rhapsody_AEEEC08A.html" guid="_QwHeIMNBEd6m9OL8Xjaqqg">IBM Rational Rhapsody</a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/tool.gif" height="16" width="16"><a href="./../../../practice.tech.syseng.common.extend_rhapsody_se-ibm/tools/ibm_rhapsody_se_538B3C75.html" guid="_feAaEAwrEd-76ZwF4-fHnw">IBM Rational Rhapsody - SE Toolkit</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    This practice focuses on the incremental (by use case) allocation of the functional requirements (system operations)
+    and non-functional requirements to an architectural structure including ports and interfaces at the lowest level of
+    decomposition.
+</p>
+<p>
+    The main value proposition is to enable the understanding of&nbsp;the components in the system architecture, including
+    new and legacy components that are impacted by the stakeholder requirements.
+</p>
+<p>
+    Based on the design concept, optionally elaborated in a previous trade study, it starts with the decomposition of the
+    chosen system block into parts. Generally, there are two ways to proceed with regard to the allocation of the system
+    block operations to the parts. If an allocation concept exists, they may be copied directly into the relevant parts.
+    Otherwise, the allocation can be elaborated graphically for each use case by means of the associated Use Case White-Box
+    Activity Diagram. Essentially, this activity diagram is a copy of the use case black-box activity diagram, partitioned
+    into swim lanes, each representing a block of the decomposition hierarchy. Based on the chosen design concept, the
+    operations ( = actions) then are "moved" into respective block swim lanes. An essential requirement for this allocation
+    is that the initial links (functional flow) between the actions are maintained. Use case white-box activity diagrams
+    may be nested, thus reflecting the iterative architectural decompositions of the system under design.
+</p>
+<p>
+    If an operation cannot be allocated to a single block, it must be decomposed. In this case, the associated decomposed
+    SuD operations need to be linked to the parent operation through a respective dependency. A system-level operation may
+    also be allocated to more than one block, e.g. architectural redundancy in order to meet fault tolerance requirements.
+    In this case, the relevant action is copied into the respective block swim lane and integrated into the functional
+    flow.
+</p>
+<p>
+    White-box activity diagrams allow a first estimate of the resulting load on respective communication channels, as links
+    that cross a swim lane correspond to interfaces.
+</p>
+<p>
+    Once all system block operations, that capture system functional requirements are allocated to system parts,
+    non-functional requirements (e.g. design constraints) are allocated to the relevant parts and respective trace links
+    are established.
+</p>
+<p>
+    Next, the focus shifts&nbsp;on the definition of ports and interfaces, as well as on the definition of the state-based
+    behavior of the system blocks at the lowest level of the architectural decomposition. Leaf block ports and interfaces
+    are identified from White-Box Sequence Diagrams. White-box sequence diagrams are derived from the use case white-box
+    activity diagrams that were created in the previous architectural design phase. The focus of black-box sequence
+    diagrams was on the identification of the required sequences of system functions (operations). White-box activity
+    diagrams focus on the collaboration between the different subsystems taking into consideration the allocation of the
+    operations. The received service requests define the (provided) interfaces of a block.
+</p>
+<p>
+    The derivation of white-box sequence diagrams is performed iteratively for each use case white-box activity diagram.
+    Once ports and interfaces are defined, the resulting state-based behavior of each leaf block needs to be captured in a
+    statechart diagram.
+</p>
+<p>
+    The correctness and completeness of the system architecture model is verified through model execution. Once the model
+    functionality is verified, the architectural design may be analyzed with regard to performance and safety requirements.
+    The analysis may include Failure Modes Effects Analysis (FMEA), and Mission Criticality Analysis.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">How to read this practice</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    Start with the description of the practice. Next, understand the overall workflow and the tasks that need to be
+    performed. Shift your focus on the main artifacts produced at each level of the architecture.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

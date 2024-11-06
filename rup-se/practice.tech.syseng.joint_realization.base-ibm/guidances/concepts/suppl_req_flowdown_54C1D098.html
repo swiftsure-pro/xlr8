@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Supplementary Requirements Flowdown</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="suppl_req_flowdown">
+<meta name="uma.presentationName" content="Supplementary Requirements Flowdown">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_7o4PwL6MEd6EnZQdp87-CQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Supplementary Requirements Flowdown</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Supplementary requirements flowdown is the technique for deriving non-functional requirements for the analysis (and then design) elements.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    As a part of the Analysis process, the Architect develops an initial Locality diagram. The Locality view is a synthesis
+    of the non-functional considerations and provides a context for addressing how the non-functional requirements such as
+    reliability and capacity are addressed.
+</p>
+<p>
+    Standard engineering practice allows for the budgeting of capacity, permitted failure rates, and so forth. This effort
+    results in a set of derived supplementary requirements for each locality element. The locality characteristics are
+    determined from these requirements. The derived requirements and characteristics are revisited as the partitioning of
+    subsystems (across localities) is determined and refined.
+</p>
+<p>
+    The system-level Supplementary Requirements also have an impact on the subsystems (hardware, software, people)
+    themselves, with the subsystem characteristics, in combination with locality characteristics, combining to yield the
+    desired system characteristics.
+</p>
+<h3>
+    Quality of service measures
+</h3>
+<p>
+    Quality of service (QoS) is a notion that includes aspects of non-functional requirements. The list of such
+    characteristics is potentially large, including many "abilities," such as reliability, maintainability and usability,
+    and possibly complete engineering specialties such as safety, human factors, and so on. Significant engineering
+    specialty problems are typically addressed by experts in those disciplines. The issues that often fall to the system
+    and software engineer are those to do with:
+</p>
+<ul>
+    <li>
+        Performance - how well, against time, does the system perform its functions, that is, responsiveness, throughput,
+        meeting deadlines.
+    </li>
+    <li>
+        Reliability/Fault Tolerance - how long can the system continue to perform its required functions before a failure,
+        and how well (gracefully) does it cope with partial failures. The system Mean Time Between Failure (MTBF) is a
+        measure of reliability.
+    </li>
+    <li>
+        Maintainability - how easy is it to keep the system running, and diagnose and fix problems in the system. The
+        system Mean Time To Repair (MTTR) is a measure of maintainability.
+    </li>
+</ul>
+<p>
+    Before system construction, the system engineer must often rely on models of the system as a way of defining
+    alternative solutions, and assignment and budgeting of non-functional requirements. These models are analyzed to see
+    how well they meet the desired quality of service levels, and a solution can then be selected (usually with cost as a
+    factor). Such <i>trade studies</i> are important in system design at all levels of refinement. The synthesis of
+    candidate solutions depends very much on the ability and experience of the Architect. The analysis of these solutions
+    (through mathematical modeling, simulation, and so on) should be relatively mechanical. Even so, the reliability of
+    these analyses will vary considerably with the goodness of the input data and the fidelity of the models.
+</p>
+<p>
+    A body of techniques is available to make tractable the analysis of models with respect to the QoS measures listed
+    above - for example, Rate Monotonic Analysis&nbsp; for the examination of the performance of real-time embedded
+    software systems [see Klein, M. H., et al. <i>A Practitioners' Handbook for Real-Time Analysis: Guide to Rate Monotonic
+    Analysis for Real-Time Systems,</i> Kluwer Academic Publishers, 1993], and Failure Mode Effects and Criticality
+    Analysis (FMECA), for hardware failure and safety risk identification and characterization [see Kececioglu, Dimitri,
+    <i>Reliability Engineering Handbook, Vol. 2,</i>&nbsp; <font color="#000000">PTR Prentice Hall</font>, 1991].
+</p>
+<p>
+    Support for these kinds of analyses is being added to the UML through the provision of profiles, notably the <i>"UML
+    Profile for Scheduleability, Performance, and Time Specification"</i> and the <i>"UML Profile for Modeling Quality of
+    Service and Fault Tolerance Characteristics and Mechanisms."</i> These profiles (available from <a href="http://www.omg.org/" target="_blank"><u><font color="#0000ff">www.omg.org</font></u></a>) define annotations for
+    UML models that allow them to be analyzed for the characteristics defined in the profile, and quantitative predictions
+    made regarding these characteristics, using various existing and future model analysis techniques and tools.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

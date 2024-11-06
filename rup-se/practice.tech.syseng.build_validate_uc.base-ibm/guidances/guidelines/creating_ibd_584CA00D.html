@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Creating an Internal Block Diagram</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="creating_ibd">
+<meta name="uma.presentationName" content="Creating an Internal Block Diagram">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_1PJUIL2oEd6N54g5903uPw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Creating an Internal Block Diagram</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes naming and drawing conventions for internal block diagrams.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.syseng.build_validate_uc.base-ibm/tasks/define_uc_sys_context_DD487AB0.html" guid="_FcxfwGKYEd6Ih4GzU1_Daw">Define Use-Case System Context</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Guidelines and Drawing Conventions
+</p>
+<ul>
+    <li>
+        Show part decomposition by placing sub parts inside of their owning part.
+    </li>
+    <li>
+        When possible, try to arrange parts in a vertical fashion. Also, try to place ports that communicate outside of the
+        system tier on the left side of the block and ports that communicate within the system tier on the right side of
+        the block.
+    </li>
+    <li>
+        Keep part names simple within internal block diagrams, even when they are referencing parts or system blocks across
+        packages.
+    </li>
+    <li>
+        Depending on the level of detail you are trying to convey in the diagram, you may hide or show attributes, and
+        operations. All communication between parts occurs through ports and well defined interfaces.
+    </li>
+    <li>
+        Depending on the level of detail you are trying to convey in a specific diagram, you may hide or show the
+        pictograms of port interfaces (lollipop/socket) to avoid clutter.
+    </li>
+</ul>
+<p>
+    Naming Conventions
+</p>
+<ul>
+    <li>
+        The name of an internal block diagram shall have the pre-fix
+        <strong>IBD</strong>:&nbsp;"<strong>IBD</strong>_&lt;Diagram Name&gt;".
+    </li>
+    <li>
+        Name&nbsp;parts&nbsp;with reference to the defining block: <strong>its</strong>&lt;Block Name&gt;.&nbsp;
+    </li>
+    <li>
+        Port names should be prefixed with <strong>p</strong>: <strong>p</strong>&lt;Counterpart Name&gt;.
+    </li>
+    <li>
+        Port names should be placed&nbsp;beside the associated part.
+    </li>
+</ul>
+<p>
+    <img alt="" src="./../../../practice.tech.syseng.build_validate_uc.base-ibm/guidances/guidelines/resources/intnl_block_dgm_ex.jpg" width="600" height="321" />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

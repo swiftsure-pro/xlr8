@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Locality</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="locality">
+<meta name="uma.presentationName" content="Locality">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_IQ-YsL6NEd6EnZQdp87-CQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Locality</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">A locality expresses notionally where processing occurs (the semantics of locality implies a tighter grouping of resources) without defining exact geographic location or how the processing capability is to be realized.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    <a id="Introduction" name="Introduction">Introduction</a>
+</h3>
+<p>
+    In <a class="elementLink" href="./../../../practice.tech.syseng.joint_realization.base-ibm/guidances/concepts/sys_arch_viewpoints_67437C6A.html" guid="_UZvWwL6MEd6EnZQdp87-CQ">System Architecture: Viewpoints, Levels, Models</a>, you find the idea of
+    <i>viewpoints</i> from which a system can be examined; of particular relevance here is the <i>physical</i> viewpoint.
+    This viewpoint "focuses on the distributed interactions between objects in the system, and provides the mechanisms to
+    support distribution" [quote from <i>Architecting with RM-ODP</i>, Janis Putman, Prentice Hall PTR]. At the level
+    described here, the logical objects include subsystem instances. The Deployment Model supports this viewpoint by
+    describing how the system is physically distributed and the physical support for distributed interactions between the
+    logical objects supported by the system.
+</p>
+<p>
+    The purpose of&nbsp;a Deployment Model&nbsp;is to capture the decomposition of the system into elements which host the
+    processing. This is done at several levels of abstraction, namely Locality (the most abstract), Descriptor, and
+    Implementation (the least abstract, at which actual choices of hardware and software are described)- these levels are
+    more or less equivalent to the Conceptual, Specification and Physical levels described for the&nbsp;Deployment
+    Model&nbsp;(which is used&nbsp;mostly in&nbsp;software development). The most familiar manifestation of the&nbsp;a
+    deployment model is at the Design and Implementation levels, through the use of UML deployment diagrams. The following
+    is an introduction to the Analysis level, physical viewpoint concept of <i>Locality.</i>
+</p>
+<h3>
+    <a id="Localities and Connections" name="Localities and Connections">Localities and connections</a>
+</h3>
+<p>
+    The <b>Locality</b> Model represents the initial, abstract, <i>physical</i> partitioning and distribution of the
+    system, and is concerned with the physical resources of the system (nodes, devices, sensors and their physical
+    connections and interfaces, and the physical characteristics of these, for example weight, heat generation, power
+    consumption, vibration, and so on). A locality expresses notionally where processing occurs (the semantics of locality
+    implies a tighter grouping of resources) without defining exact geographic location or how the processing capability is
+    to be realized. It is conceivable for very complex, very large systems, that the initial Locality Model might have
+    localities that decompose to finer-grained localities (just as a subsystem might contain subsystems). At the
+    <b>Descriptor</b> level, the <i>types</i> of processing resources at a locality are specified - these are <i>nodes</i>,
+    which can include computing devices (servers, workstations, and so on), people, or other electro-mechanical devices.
+    Finally, at the <b>Implementation</b> level, the actual hardware selection is made, numbers of role instances (in the
+    case of human resources) determined, with a defined set of configurations, capacity, power and other environmental
+    requirements, cost and performance. For example, a Locality view might show that the system enables processing onboard
+    a space satellite and a ground station. Other examples are shown in the figures in the Locality Diagrams section.
+</p>
+<p>
+    The Deployment Model is also used to record the subsystem operations that are hosted at each locality - this determines
+    the computing requirements to be supported at the locality. Based on the behavior to be supported at the localities,
+    collaborations of localities can be constructed (and represented in interaction diagrams)- these help characterize the
+    connections between the localities.
+</p>
+<p>
+    The locality diagrams show the initial partitioning, how the system processing elements are distributed, and how they
+    are connected. Locality of computing is an issue when considering primarily non-functional requirements and for many
+    systems engineers, this is "the architecture."
+</p>
+<p>
+    Locality diagrams consist of two elements:
+</p>
+<ul>
+    <li>
+        Locality - a locality is a collection of computing, storage, structural, electro-mechanical and human resources
+        that can host processing (in the general sense) and/or interact physically with the environment and other
+        localities.
+    </li>
+    <li>
+        Connections - pathways for information, mass, energy, or discrete physical items to be exchanged between
+        localities.
+    </li>
+</ul>
+<p>
+    The semantics of the locality diagrams are similar to those of deployment diagrams, and localities are represented as
+    stereotyped UML nodes. In the UML standard, a node is a classifier that "... is a physical object that represents a
+    processing resource, generally, having at least a memory and often processing capability as well. Nodes include
+    computing devices but also human resources or mechanical processing resources." UML allows us to extend the semantics
+    of nodes, and the associations that connect them, through stereotyping and the application of tagged values, and these
+    facilities are used to define localities and connections. The icon for a locality is a rounded cube (see the
+    illustrations in&nbsp;the Locality Diagrams section).&nbsp;
+</p>
+<p>
+    Each locality in the Deployment Model needs an attached description of derived supplementary requirements (derived from
+    the supplementary specifications) which specify quality (reliability, maintainability, safety, and so on), physical and
+    environmental requirements, and development constraints (cost, technical risk, and so forth). From these requirements,
+    the actual characteristics (of each locality) are determined; obviously these are chosen to meet the explicit
+    requirements at least, but can exceed the requirements if sound engineering practice dictates this - for example, to
+    cope with unexpected capacity demands.
+</p>
+<p>
+    Localities are characterized with:
+</p>
+<ul>
+    <li>
+        Quality tags, such as reliability, availability, performance, capacity, and so forth.
+    </li>
+    <li>
+        Management tags, such as cost and technical risk
+    </li>
+</ul>
+<p>
+    Connections are characterized by the following:
+</p>
+<ul>
+    <li>
+        Link parameters, such as data rate, supported protocols, physical flow rate.
+    </li>
+    <li>
+        Management tags, such as cost and technical risk.
+    </li>
+</ul>
+<p>
+    As you move to the design model, localities can be refined to one or more nodes, or more than one locality can be
+    mapped to a single node. And, through the freedom given by the UML definition, localities can represent quite disparate
+    things, ultimately realized, for example, as a collection of hardware platforms, part of a computational resource, or
+    groups of collaborating human resources.
+</p>
+<h3>
+    <a id="Locality Diagrams" name="Locality Diagrams">Locality diagrams</a>
+</h3>
+<p>
+    The figures show Locality diagrams that document different engineering approaches to a click-and-mortar enterprise. The
+    enterprise has a number of retail stores, central warehouses, and a web presence. In the first solution, there is
+    processing capability in the stores. In the second solution, all the terminals are connected directly to a central
+    office processor. In each case, characteristics can be set for the localities that are required to realize the design.
+    These days, most people would agree that the first example is a better design. However, the solution in the second
+    example might become superior in a few years.
+</p>
+<p align="center">
+    &nbsp;<img height="595" alt="" src="./../../../practice.tech.syseng.joint_realization.base-ibm/guidances/concepts/./resources/retail_localities_1.jpg" width="600" />
+</p>
+<p class="picturetext" align="center">
+    Locality Diagram, Example 1.
+</p>
+<p align="center">
+    &nbsp;<img height="591" alt="" src="./../../../practice.tech.syseng.joint_realization.base-ibm/guidances/concepts/./resources/retail_localities_2.jpg" width="600" />
+</p>
+<p class="picturetext" align="center">
+    Locality Diagram, Example 2.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2011.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>
