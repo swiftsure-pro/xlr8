@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @swiftsure-pro's agent. From here, you can find examples of processes for:
-- 👀 [Disciplined Agile Development](/dad)
+- 👀 [Disciplined Agile Development](http://github.com/swiftsure-pro/xlr8/dad)
 - 
 - ⚡ Fun fact: ...
 
